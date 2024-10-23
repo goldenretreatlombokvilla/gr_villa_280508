@@ -7,7 +7,7 @@ export default function Home() {
       <main className="flex flex-col gap-4 items-center justify-center">
         <div className="flex flex-col gap-2 items-center py-10">
           <Image
-            className="invert p-0 m-0"
+            className="invert p-0 m-0 drop-shadow-xl"
             src="/gr_logo.png"
             alt="Golden Retreat Lombok Villa"
             width={580}
