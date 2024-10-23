@@ -1,13 +1,15 @@
-"use client"
+//@ts-ignore
 
-import * as React from "react"
-import { ChevronLeftIcon, ChevronRightIcon } from "@radix-ui/react-icons"
-import { DayPicker } from "react-day-picker"
+"use client";
 
-import { cn } from "@/lib/utils"
-import { buttonVariants } from "@/components/ui/button"
+import * as React from "react";
+import { ChevronLeftIcon, ChevronRightIcon } from "@radix-ui/react-icons";
+import { DayPicker } from "react-day-picker";
 
-export type CalendarProps = React.ComponentProps<typeof DayPicker>
+import { cn } from "@/lib/utils";
+import { buttonVariants } from "@/components/ui/button";
+
+export type CalendarProps = React.ComponentProps<typeof DayPicker>;
 
 function Calendar({
   className,
@@ -57,16 +59,16 @@ function Calendar({
         day_range_middle:
           "aria-selected:bg-accent aria-selected:text-accent-foreground",
         day_hidden: "invisible",
-        ...classNames,
+        ...classNames
       }}
       components={{
         IconLeft: ({ ...props }) => <ChevronLeftIcon className="h-4 w-4" />,
-        IconRight: ({ ...props }) => <ChevronRightIcon className="h-4 w-4" />,
+        IconRight: ({ ...props }) => <ChevronRightIcon className="h-4 w-4" />
       }}
       {...props}
     />
-  )
+  );
 }
-Calendar.displayName = "Calendar"
+Calendar.displayName = "Calendar";
 
-export { Calendar }
+export { Calendar };
