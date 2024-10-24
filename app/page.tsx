@@ -1,5 +1,21 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger
+} from "@/components/ui/dialog";
+import { Label } from "@/components/ui/label";
+import Form from "next/form";
 import Image from "next/image";
+
+const handleWaitlist = () => {
+  console.log("Form Submitted");
+};
 
 export default function Home() {
   return (
@@ -14,17 +30,61 @@ export default function Home() {
             height={100}
             priority
           />
-          <p className="opacity-50 italic">Coming Soon!</p>
         </div>
-        <div className="flex flex-row gap-4">
-          <Button variant={"default"}>
-            <a href="mailto:goldenreteat@gmail.com" target="_blank">
-              Get In Contact
-            </a>
-          </Button>
+        <div className="flex flex-col md:flex-row gap-4">
+          <Dialog>
+            <DialogTrigger asChild>
+              <Button variant={"default"}>Join the Waitlist</Button>
+            </DialogTrigger>
+            <DialogContent>
+              <DialogHeader>
+                <DialogTitle>Join the Waitlist</DialogTitle>
+                <DialogDescription>
+                  Become the first few people to get notified about the new
+                  Golden Retreat Lombok Villa!
+                </DialogDescription>
+              </DialogHeader>
+              <div>
+                <form>
+                  <div className="flex flex-col gap-2">
+                    <Label htmlFor="email">Email</Label>
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      className="w-full rounded-md border-2 border-gray-300 p-2 text-sm"
+                      placeholder="Enter your email"
+                    />
+                    <Label htmlFor="name">Name</Label>
+                    <input
+                      type="text"
+                      name="name"
+                      id="name"
+                      className="w-full rounded-md border-2 border-gray-300 p-2 text-sm"
+                      placeholder="Enter your name"
+                    />
+                    <Label htmlFor="message">Message</Label>
+                    <textarea
+                      name="message"
+                      id="message"
+                      className="w-full rounded-md border-2 border-gray-300 p-2 text-sm"
+                      placeholder="Enter your message"
+                    ></textarea>
+                    <Button
+                      variant={"default"}
+                      formAction={() => handleWaitlist()}
+                    >
+                      Submit
+                    </Button>
+                  </div>
+                </form>
+              </div>
+            </DialogContent>
+          </Dialog>
+
           <Button variant={"outline"}>
-            <a href="mailto:goldenreteat@gmail.com" target="_blank">
-              Sign Up For Updates
+            <a href="mailto:goldenreteatvilla@gmail.com" target="_blank">
+              Email Us
             </a>
           </Button>
         </div>
