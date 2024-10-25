@@ -59,9 +59,92 @@ export default function Home() {
   return (
     <div
       className="flex flex-col items-center justify-start min-h-screen font-[family-name:var(--font-geist-sans)]
-    bg-gradient-to-tr from-yellow-700/10 to-transparent"
+    bg-gradient-to-tl from-yellow-700/10 to-white"
     >
       <main className="flex flex-col gap-10 items-center justify-center px-8 pt-10">
+        <div
+          id="villa"
+          className="flex flex-col gap-6 lg:max-w-2xl lg:py-24 lg:pb-32 z-10"
+        >
+          <p className="text-4xl lg:text-5xl font-serif lg:tracking-wide lg:leading-snug font-semibold drop-shadow-md text-pretty">
+            Indulge in Elegence.<br></br> Escape to Lombok.
+          </p>
+          <p className="text-md lg:text-lg text-gray-500 text-balance">
+            Step into a world of elegance in where secluded villas await to
+            redefine your holiday experience. With breathtaking views and
+            sophisticated amenities, each stay is crafted to surpass
+            expectations.
+          </p>
+
+          <div className="flex flex-row gap-4 w-full">
+            <Dialog>
+              <DialogTrigger asChild>
+                <Button
+                  variant={"default"}
+                  className="border-yellow-600 text-white tracking-wider hover:bg-gradient-to-tl hover:from-yellow-800 hover:to-yellow-500 hover:text-white hover:border-transparent hover:shadow-lg"
+                >
+                  Book A Call
+                </Button>
+              </DialogTrigger>
+              <DialogContent>
+                <DialogHeader>
+                  <DialogTitle>Join the Waitlist</DialogTitle>
+                  <DialogDescription>
+                    Become the first few people to get notified about the new
+                    Golden Retreat Lombok Villa!
+                  </DialogDescription>
+                </DialogHeader>
+                <div>
+                  <form>
+                    <div className="flex flex-col gap-6">
+                      <div className="flex flex-col gap-4">
+                        <div className="flex flex-col gap-2">
+                          <Label htmlFor="name">Name</Label>
+                          <input
+                            type="text"
+                            name="name"
+                            id="name"
+                            className="w-full rounded-md border-2 border-gray-300 p-2 text-sm"
+                            placeholder="Enter your name"
+                          />
+                        </div>
+                        <div className="flex flex-col gap-2">
+                          <Label htmlFor="email">Email</Label>
+                          <input
+                            type="email"
+                            name="email"
+                            id="email"
+                            className="w-full rounded-md border-2 border-gray-300 p-2 text-sm"
+                            placeholder="Enter your email"
+                          />
+                        </div>
+                      </div>
+                      <Button
+                        variant={"default"}
+                        formAction={() => handleWaitlist()}
+                      >
+                        Submit
+                      </Button>
+                    </div>
+                  </form>
+                </div>
+              </DialogContent>
+            </Dialog>
+
+            <Link href="/about">
+              <Button variant={"outline"}>Learn More</Button>
+            </Link>
+          </div>
+        </div>
+        <div className="lg:flex flex-col p-0 m-0 w-full -z-2 lg:-mt-[650px] hidden">
+          <Image
+            src="/enter.png"
+            alt="Villa"
+            width={2000}
+            height={1000}
+            className="w-full h-auto p-0 m-0 lg:rounded-b-lg"
+          />
+        </div>
         <div className="flex flex-col gap-4 items-center px-0">
           <Carousel
             plugins={[
@@ -101,72 +184,7 @@ export default function Home() {
             />
           </div>
         </div>
-        <div id="villa" className="flex flex-col gap-4 lg:max-w-2xl lg:py-32">
-          <p className="text-4xl lg:text-6xl font-serif font-semibold">
-            Invest in Lombok.<br></br> Realise your Dream.
-          </p>
-          <p className="text-md text-gray-500">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim labore
-            fugiat non totam qui voluptate maxime unde rem numquam sint?
-          </p>
 
-          <div className="flex flex-row gap-4 w-full">
-            <Dialog>
-              <DialogTrigger asChild>
-                <Button variant={"default"}>Join the Waitlist</Button>
-              </DialogTrigger>
-              <DialogContent>
-                <DialogHeader>
-                  <DialogTitle>Join the Waitlist</DialogTitle>
-                  <DialogDescription>
-                    Become the first few people to get notified about the new
-                    Golden Retreat Lombok Villa!
-                  </DialogDescription>
-                </DialogHeader>
-                <div>
-                  <form>
-                    <div className="flex flex-col gap-6">
-                      <div className="grid grid-cols-2 gap-4">
-                        <div className="flex flex-col gap-2">
-                          <Label htmlFor="name">Name</Label>
-                          <input
-                            type="text"
-                            name="name"
-                            id="name"
-                            className="w-full rounded-md border-2 border-gray-300 p-2 text-sm"
-                            placeholder="Enter your name"
-                          />
-                        </div>
-                        <div className="flex flex-col gap-2">
-                          <Label htmlFor="email">Email</Label>
-                          <input
-                            type="email"
-                            name="email"
-                            id="email"
-                            className="w-full rounded-md border-2 border-gray-300 p-2 text-sm"
-                            placeholder="Enter your email"
-                          />
-                        </div>
-                      </div>
-                      <Button
-                        variant={"default"}
-                        formAction={() => handleWaitlist()}
-                      >
-                        Submit
-                      </Button>
-                    </div>
-                  </form>
-                </div>
-              </DialogContent>
-            </Dialog>
-
-            <Button variant={"outline"}>
-              <Link href="mailto:goldenreteatvilla@gmail.com" target="_blank">
-                Email Us
-              </Link>
-            </Button>
-          </div>
-        </div>
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-4 items-center justify-center px-0 lg:px-32 lg:py-32">
           <p className="text-4xl lg:text-6xl font-serif font-semibold">
             Discover the beauty of Lombok

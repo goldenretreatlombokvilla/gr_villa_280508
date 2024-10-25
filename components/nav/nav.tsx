@@ -61,13 +61,19 @@ export default function Nav() {
           </Link>
         ))}
       </div>
-      <div className="flex flex-row items-center justify-end gap-4">
-        <div className="hidden lg:flex flex-row gap-4 pr-10">
+      <div className="flex flex-row items-center justify-end gap-10">
+        <div className="hidden lg:flex flex-row gap-4">
           <Facebook className="min-w-4 min-h-4 stroke-1 text-yellow-600 hover:text-yellow-900" />
           <Instagram className="min-w-4 min-h-4 stroke-1 text-yellow-600 hover:text-yellow-900" />
           <Linkedin className="min-w-4 min-h-4 stroke-1 text-yellow-600 hover:text-yellow-900" />
           <Youtube className="min-w-4 min-h-4 stroke-1 text-yellow-600 hover:text-yellow-900" />
         </div>
+        <Button
+          variant={"outline"}
+          className="border-yellow-600 text-yellow-600 tracking-wider hover:bg-gradient-to-tl hover:from-yellow-800 hover:to-yellow-500 hover:text-white hover:border-transparent hover:shadow-lg lg:flex hidden"
+        >
+          Enquire
+        </Button>
         <Sheet>
           <SheetTrigger asChild>
             <Menu className="min-w-6 min-h-6 text-yellow-600 hover:text-yellow-900 opacity-70 stroke-2 hover:opacity-100" />
@@ -124,10 +130,10 @@ export default function Nav() {
             <div></div>
             <SheetFooter className="opacity-50 text-sm font-sans bottom-2 items-end justify-end">
               <div className="flex flex-row gap-4">
-                <Facebook className="min-w-6 min-h-6" />
-                <Instagram className="min-w-6 min-h-6" />
-                <Linkedin className="min-w-6 min-h-6" />
-                <Youtube className="min-w-6 min-h-6" />
+                <Facebook className="min-w-6 min-h-6 text-yellow-700 stroke-1" />
+                <Instagram className="min-w-6 min-h-6 text-yellow-700 stroke-1" />
+                <Linkedin className="min-w-6 min-h-6 text-yellow-700 stroke-1" />
+                <Youtube className="min-w-6 min-h-6 text-yellow-700 stroke-1" />
               </div>
             </SheetFooter>
           </SheetContent>
