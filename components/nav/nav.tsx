@@ -53,12 +53,12 @@ export default function Nav() {
         />
       </Link>
       <div className="hidden flex-row items-center justify-end gap-0 w-full">
-        {navItems.map((item) => (
-          <a href={item.link} key={item.name}>
+        {navItems.map((item: any) => (
+          <Link href={item.link} key={item.name}>
             <Button key={item.name} variant="link">
               {item.name}
             </Button>
-          </a>
+          </Link>
         ))}
       </div>
       <div className="flex flex-row items-center justify-end gap-4">
@@ -75,12 +75,12 @@ export default function Nav() {
           <SheetContent className="flex flex-col gap-4 items-start">
             <div className="flex flex-row gap-0 px-4 items-center justify-start">
               <SheetClose asChild>
-                <a href="/" className="text-4xl font-serif drop-shadow-lg">
+                <Link href="/" className="text-4xl font-serif drop-shadow-lg">
                   Golden Retreat Lombok Villa
-                </a>
+                </Link>
               </SheetClose>
               <SheetClose asChild>
-                <a href="/">
+                <Link href="/">
                   <Image
                     className="max-w-44 h-auto aspect-square object-contain -ml-10 drop-shadow-md"
                     src="/brand/petal_gold.png"
@@ -89,7 +89,7 @@ export default function Nav() {
                     height={500}
                     priority
                   />
-                </a>
+                </Link>
               </SheetClose>
             </div>
             <SheetClose />
@@ -97,9 +97,9 @@ export default function Nav() {
               <SheetTitle className="sr-only">GRLV</SheetTitle>
             </SheetHeader>
             <div className="flex flex-col gap-4 items-start h-screen w-full">
-              {navItems.map((item) => (
+              {navItems.map((item: any) => (
                 <SheetClose key={item.name} asChild>
-                  <a href={item.link} className="w-full group">
+                  <Link href={item.link} className="w-full group">
                     <Button
                       key={item.name}
                       variant="link"
@@ -108,7 +108,7 @@ export default function Nav() {
                       {item.name}
                       <ArrowRightCircle className="min-w-6 min-h-6 stroke-1 group-hover:opacity-90 opacity-30 group-hover:rotate-180 transition-all duration-300" />
                     </Button>
-                  </a>
+                  </Link>
                 </SheetClose>
               ))}
               <SheetClose asChild>

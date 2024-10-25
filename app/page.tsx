@@ -21,6 +21,7 @@ import Form from "next/form";
 import Image from "next/image";
 import Autoplay from "embla-carousel-autoplay";
 import { ArrowDown, ArrowDown10, ArrowDownCircle } from "lucide-react";
+import Link from "next/link";
 
 const handleWaitlist = () => {
   console.log("Form Submitted");
@@ -90,7 +91,7 @@ export default function Home() {
             </CarouselContent>
           </Carousel>
           <div className="flex flex-col gap-4 items-center">
-            <p className=" tracking-widest text-yellow-700 text-md ">
+            <p className="tracking-widest text-yellow-700 text-md ">
               Step into peace and luxury
             </p>
 
@@ -160,9 +161,9 @@ export default function Home() {
             </Dialog>
 
             <Button variant={"outline"}>
-              <a href="mailto:goldenreteatvilla@gmail.com" target="_blank">
+              <Link href="mailto:goldenreteatvilla@gmail.com" target="_blank">
                 Email Us
-              </a>
+              </Link>
             </Button>
           </div>
         </div>
