@@ -62,8 +62,8 @@ export default function Footer() {
           </p>
           <p className="text-sm text-balance opacity-70">
             A secluded, luxurious villa offering panoramic ocean views, private
-            pools, and exquisite interiors, set in the heart of Lombok's natural
-            beauty—crafted for the ultimate relaxation and indulgence.
+            pools, and exquisite interiors, set in the heart of Lombok, crafted
+            for the ultimate relaxation and indulgence.
           </p>
         </div>
         <div className="flex flex-col gap-2 ">
