@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <div className="flex flex-col gap-8 items-center justify-start w-full h-screen px-10 max-w-6xl mx-auto">
+    <div className="flex flex-col gap-8 items-center justify-start w-full h-screen p-10 max-w-6xl mx-auto">
       <Image
         src="/villa/grlv_1.webp"
         alt="Golden Retreat Lombok Villa"
