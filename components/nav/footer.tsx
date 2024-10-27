@@ -83,7 +83,7 @@ export default function Footer() {
             <Button variant="ghost" size="icon">
               <DownloadIcon className="w-4 h-4" />
             </Button>
-            <Button variant="ghost" size="icon">
+            <Button variant="ghost" size="icon" className="hidden md:block">
               <Inbox className="w-4 h-4" />
             </Button>
             <Button variant="default">
