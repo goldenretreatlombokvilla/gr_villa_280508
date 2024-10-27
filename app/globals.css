@@ -21,6 +21,7 @@ body {
 
 @layer base {
   :root {
+    --blackish: 0, 0%, 8%;
     --background: 38 73% 97%;
 
     --foreground: 240 10% 3.9%;

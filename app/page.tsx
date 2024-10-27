@@ -20,8 +20,25 @@ import { Label } from "@/components/ui/label";
 import Form from "next/form";
 import Image from "next/image";
 import Autoplay from "embla-carousel-autoplay";
-import { ArrowDown, ArrowDown10, ArrowDownCircle } from "lucide-react";
+import {
+  ArrowDown,
+  ArrowDown10,
+  ArrowDownCircle,
+  House,
+  Scan,
+  Sofa,
+  Waves
+} from "lucide-react";
 import Link from "next/link";
+import { Badge } from "@/components/ui/badge";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle
+} from "@/components/ui/card";
 
 const handleWaitlist = () => {
   console.log("Form Submitted");
@@ -30,28 +47,44 @@ const handleWaitlist = () => {
 const images = [
   {
     src: "/villa/grlv_7.webp",
-    alt: "Golden Retreat Villa"
+    alt: "Spacious Bathroom"
   },
   {
     src: "/villa/grlv_2.webp",
-    alt: "Golden Retreat Villa"
+    alt: "Living Room"
   },
 
   {
     src: "/villa/grlv_3.webp",
-    alt: "Golden Retreat Villa"
+    alt: "Poolside Area"
+  }
+];
+
+const villaImages = [
+  {
+    src: "/villa/grlv_7.webp",
+    alt: "Golden Retreat Lombok Villa"
   },
   {
-    src: "/villa/grlv_6.webp",
-    alt: "Golden Retreat Villa"
+    src: "/villa/grlv_2.webp",
+    alt: "Living Room"
+  },
+
+  {
+    src: "/villa/grlv_3.webp",
+    alt: "Poolside Area"
   },
   {
     src: "/villa/grlv_4.webp",
-    alt: "Golden Retreat Villa"
+    alt: "Kitchen"
   },
   {
     src: "/villa/grlv_5.webp",
-    alt: "Golden Retreat Villa"
+    alt: "Dining Room"
+  },
+  {
+    src: "/villa/grlv_6.webp",
+    alt: "Balcony"
   }
 ];
 
@@ -61,27 +94,33 @@ export default function Home() {
       className="flex flex-col items-center justify-start min-h-screen font-[family-name:var(--font-geist-sans)]
     bg-gradient-to-tl from-yellow-700/10 to-white"
     >
-      <main className="flex flex-col gap-10 items-center justify-center px-8 pt-10">
+      <main className="flex flex-col gap-10 items-center justify-center px-8 lg:px-0 pt-10">
         <div
           id="villa"
           className="flex flex-col gap-6 lg:max-w-2xl lg:py-24 lg:pb-32 z-10"
         >
-          <p className="text-4xl lg:text-5xl font-serif lg:tracking-wide lg:leading-snug font-semibold drop-shadow-md text-pretty">
-            Indulge in Elegence.<br></br> Escape to Lombok.
+          <p className="text-5xl lg:text-6xl font-serif lg:tracking-wide lg:leading-tight font-semibold drop-shadow-md text-balance">
+            Step Into A World Of <span className="text-yellow-500">Luxury</span>
           </p>
-          <p className="text-md lg:text-lg text-gray-500 text-balance">
-            Step into a world of elegance in where secluded villas await to
-            redefine your holiday experience. With breathtaking views and
-            sophisticated amenities, each stay is crafted to surpass
-            expectations.
+          <p className="text-md md:text-lg">
+            <span className="font-bold text-yellow-600">Golden Retreat</span>{" "}
+            houses 33 private holiday villas in west cost of Lombok, beautiful
+            and secluded, offering a perfect blend of luxury and relaxation.
           </p>
+          {/*  <p className="text-md lg:text-lg opacity-60 text-balance flex lg:hidden">
+            With breathtaking views, sophisticated amenities and , each stay is
+            crafted to surpass expectations.
+          </p> */}
 
           <div className="flex flex-row gap-4 w-full">
+            <Link href="/lombok">
+              <Button variant={"default"}>Discover Now</Button>
+            </Link>
             <Dialog>
               <DialogTrigger asChild>
                 <Button
-                  variant={"default"}
-                  className="border-yellow-600 text-white tracking-wider hover:bg-gradient-to-tl hover:from-yellow-800 hover:to-yellow-500 hover:text-white hover:border-transparent hover:shadow-lg"
+                  variant={"outline"}
+                  className="border-yellow-600 text-yellow-600 tracking-wider hover:bg-gradient-to-tl hover:from-yellow-800 hover:to-yellow-500 hover:text-white hover:border-transparent hover:shadow-lg"
                 >
                   Book A Call
                 </Button>
@@ -130,23 +169,20 @@ export default function Home() {
                 </div>
               </DialogContent>
             </Dialog>
-
-            <Link href="/about">
-              <Button variant={"outline"}>Learn More</Button>
-            </Link>
           </div>
         </div>
-        <div className="lg:flex flex-col p-0 m-0 w-full -z-2 lg:-mt-[650px] hidden">
+        <div className="lg:flex flex-col p-0 m-0 w-full -z-2 lg:-mt-[750px] hidden">
           <Image
             src="/enter.png"
             alt="Villa"
             width={2000}
             height={1000}
-            className="w-full h-auto p-0 m-0 lg:rounded-b-lg"
+            className="w-full h-auto p-0 m-0"
           />
         </div>
         <div className="flex flex-col gap-4 items-center px-0">
           <Carousel
+            className="hidden lg:flex"
             plugins={[
               Autoplay({
                 delay: 4000,
@@ -155,11 +191,45 @@ export default function Home() {
             ]}
             opts={{ align: "center", loop: true }}
           >
-            <CarouselContent className="my-8">
+            <CarouselContent className="py-8">
               {images.map((image, index) => (
                 <CarouselItem
                   key={index}
                   className="flex flex-col gap-4 items-center justify-center lg:basis-1/2 lg:pl-14 group rounded-lg"
+                >
+                  <Image
+                    src={image.src}
+                    alt={image.alt}
+                    width={580}
+                    height={200}
+                    loading="eager"
+                    className="object-cover w-full h-full rounded-lg group-hover:scale-105 transition-all duration-300 group-hover:shadow-lg brightness-100 lg:brightness-90 group-hover:brightness-100"
+                  />
+                  <Badge
+                    variant="default"
+                    className="text-md text-center text-white opacity-80 absolute bottom-4 right-4"
+                  >
+                    {image.alt}
+                  </Badge>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+          </Carousel>
+          <Carousel
+            plugins={[
+              Autoplay({
+                delay: 3800,
+                stopOnMouseEnter: true
+              })
+            ]}
+            opts={{ align: "center", loop: true }}
+            className="flex lg:hidden"
+          >
+            <CarouselContent className="my-8">
+              {villaImages.map((image, index) => (
+                <CarouselItem
+                  key={index}
+                  className="flex flex-col gap-4 items-center justify-center basis-1/2 lg:basis-1/4 lg:pl-14 group rounded-lg"
                 >
                   <Image
                     src={image.src}
@@ -191,9 +261,8 @@ export default function Home() {
           </p>
           <div className="flex gap-4 flex-col">
             <p className="text-md text-gray-900">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam
-              non eius consectetur accusantium quod impedit voluptas accusamus
-              corrupti architecto quaerat.
+              With breathtaking views, sophisticated amenities and , each stay
+              is crafted to surpass expectations.
             </p>
             <p className="text-md text-gray-500">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error ea
@@ -214,7 +283,7 @@ export default function Home() {
             opts={{ align: "center", loop: true }}
           >
             <CarouselContent className="my-8">
-              {images.map((image, index) => (
+              {villaImages.map((image, index) => (
                 <CarouselItem
                   key={index}
                   className="flex flex-col gap-4 items-center justify-center basis-1/2 lg:basis-1/4 lg:pl-14 group rounded-lg"
@@ -231,6 +300,96 @@ export default function Home() {
               ))}
             </CarouselContent>
           </Carousel>
+        </div>
+        <div className="flex flex-col gap-4 items-center px-0 py-8">
+          <Card className="flex flex-col w-full">
+            <CardHeader>
+              <CardTitle className="text-2xl font-bold">
+                2 Bedroom Villa
+              </CardTitle>
+              <CardDescription>
+                Parcel Size{" "}
+                <span className="text-yellow-600 font-bold">150 sqm</span>
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="flex flex-col md:flex-row gap-4 items-center justify-center">
+                <Image
+                  src="/villa/grlv_7.webp"
+                  alt="Golden Retreat Lombok Villa"
+                  width={500}
+                  height={200}
+                  className="w-full h-auto aspect-video object-cover rounded-lg"
+                />
+                <div className="grid grid-cols-2 gap-4 w-full px-2 py-4">
+                  <div className="flex flex-row gap-4 items-center justify-start">
+                    <House className="min-w-6 min-h-6 stroke-1 text-yellow-500 opacity-80" />
+                    <p>Single Storey Villa</p>
+                  </div>
+                  <div className="flex flex-row gap-4 items-center justify-start">
+                    <Scan className="min-w-6 min-h-6 stroke-1 text-yellow-500 opacity-80" />
+                    <p>103 sqm (1108 sqft)</p>
+                  </div>
+                  <div className="flex flex-row gap-4 items-center justify-start">
+                    <Sofa className="min-w-6 min-h-6 stroke-1 text-yellow-500 opacity-80" />
+                    <p>Fully Furnished</p>
+                  </div>
+                  <div className="flex flex-row gap-4 items-center justify-start">
+                    <Waves className="min-w-6 min-h-6 stroke-1 text-yellow-500 opacity-80" />
+                    <p>Private Swimming Pool</p>
+                  </div>
+                </div>
+              </div>
+            </CardContent>
+            <CardFooter className=" flex flex-row gap-4 items-center justify-between">
+              <Button variant="default">Book Tour</Button>
+              <Button variant="outline">Learn More</Button>
+            </CardFooter>
+          </Card>
+          <Card className="flex flex-col w-full">
+            <CardHeader>
+              <CardTitle className="text-2xl font-bold">
+                3 Bedroom Villa
+              </CardTitle>
+              <CardDescription>
+                Parcel Size{" "}
+                <span className="text-yellow-600 font-bold">187 sqm</span>
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="flex flex-col md:flex-row gap-4 items-center justify-center">
+                <Image
+                  src="/villa/grlv_7.webp"
+                  alt="Golden Retreat Lombok Villa"
+                  width={500}
+                  height={200}
+                  className="w-full h-auto aspect-video object-cover rounded-lg"
+                />
+                <div className="grid grid-cols-2 gap-4 w-full px-2 py-4">
+                  <div className="flex flex-row gap-4 items-center justify-start">
+                    <House className="min-w-6 min-h-6 stroke-1 text-yellow-500 opacity-80" />
+                    <p>Single Storey Villa</p>
+                  </div>
+                  <div className="flex flex-row gap-4 items-center justify-start">
+                    <Scan className="min-w-6 min-h-6 stroke-1 text-yellow-500 opacity-80" />
+                    <p>135 sqm (1453 sqft)</p>
+                  </div>
+                  <div className="flex flex-row gap-4 items-center justify-start">
+                    <Sofa className="min-w-6 min-h-6 stroke-1 text-yellow-500 opacity-80" />
+                    <p>Fully Furnished</p>
+                  </div>
+                  <div className="flex flex-row gap-4 items-center justify-start">
+                    <Waves className="min-w-6 min-h-6 stroke-1 text-yellow-500 opacity-80" />
+                    <p>Private Swimming Pool</p>
+                  </div>
+                </div>
+              </div>
+            </CardContent>
+            <CardFooter className=" flex flex-row gap-4 items-center justify-between">
+              <Button variant="default">Book Tour</Button>
+              <Button variant="outline">Learn More</Button>
+            </CardFooter>
+          </Card>
         </div>
       </main>
     </div>
