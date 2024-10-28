@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { Button } from "../ui/button";
 import {
+  ArrowRight,
   ArrowRightCircle,
   Facebook,
   Inbox,
@@ -10,6 +11,7 @@ import {
   Linkedin,
   Menu,
   PanelRightOpen,
+  Plus,
   Send,
   Youtube
 } from "lucide-react";
@@ -23,11 +25,25 @@ import {
   SheetTrigger
 } from "../ui/sheet";
 import Link from "next/link";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle
+} from "../ui/card";
+import { Badge } from "../ui/badge";
+import { ScrollArea } from "../ui/scroll-area";
+import { link } from "fs";
 
 const navItems = [
   {
-    name: "Villa",
+    name: "The Villa's",
     link: "/"
+  },
+  {
+    name: "Gallery",
+    link: "/gallery"
   },
   {
     name: "Lombok",
@@ -36,6 +52,48 @@ const navItems = [
   {
     name: "Investment",
     link: "/invest"
+  }
+];
+
+const facilities = [
+  {
+    name: "Pool Club",
+    link: "/villa"
+  },
+  {
+    name: "Wellness Spa",
+    link: "/villa"
+  },
+  {
+    name: "Restaurant",
+    link: "/villa"
+  },
+  {
+    name: "Bar & Lounge",
+    link: "/villa"
+  },
+  {
+    name: "Amphiteatre",
+    link: "/villa"
+  }
+];
+
+const links = [
+  {
+    name: "Our Team",
+    link: "/about"
+  },
+  {
+    name: "Market Studies",
+    link: "/contact"
+  },
+  {
+    name: "Villa Designs",
+    link: "/terms"
+  },
+  {
+    name: "Land Development",
+    link: "/investors"
   }
 ];
 
@@ -78,7 +136,10 @@ export default function Nav() {
           <SheetTrigger asChild>
             <Menu className="min-w-6 min-h-6 text-yellow-600 hover:text-yellow-900 opacity-70 stroke-2 hover:opacity-100" />
           </SheetTrigger>
-          <SheetContent className="flex flex-col gap-4 items-start">
+          <SheetContent
+            className="flex flex-col gap-4 items-start"
+            style={{ minWidth: "30vw" }}
+          >
             <div className="flex flex-row gap-0 px-4 items-center justify-start">
               <SheetClose asChild>
                 <Link href="/" className="text-4xl font-serif drop-shadow-lg">
@@ -112,7 +173,7 @@ export default function Nav() {
                       className="text-md flex flex-row w-full justify-between font-serif tracking-wider"
                     >
                       {item.name}
-                      <ArrowRightCircle className="min-w-6 min-h-6 stroke-1 group-hover:opacity-90 opacity-30 group-hover:rotate-180 transition-all duration-300" />
+                      <ArrowRightCircle className="min-w-6 min-h-6 stroke-1 group-hover:opacity-90 opacity-30 group-hover:scale-125 group-hover:rotate-180 transition-all duration-300 group-hover:text-yellow-600" />
                     </Button>
                   </Link>
                 </SheetClose>
@@ -126,8 +187,42 @@ export default function Nav() {
                   <Send className="min-w-5 min-h-5 stroke-1 mr-1 opacity-70" />
                 </Button>
               </SheetClose>
+
+              <div className="hidden lg:flex flex-col gap-4 pt-8 pl-4">
+                <p className="text-md font-serif font-bold">Our Facilities</p>
+                <div className="flex flex-row flex-wrap gap-0 w-full">
+                  {facilities.map((link: any) => (
+                    <Link href={link.link} key={link.name}>
+                      <Button
+                        variant="link"
+                        key={link.name}
+                        className="pl-0 group opacity-60 hover:opacity-100"
+                      >
+                        <Plus className="max-w-3 max-h-3 group-hover:rotate-45 transition-all duration-300 group-hover:text-yellow-600" />
+                        {link.name}
+                      </Button>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+              <div className="hidden lg:flex flex-col gap-4 pt-4 pl-4">
+                <p className="text-md font-serif font-bold">Quick Links</p>
+                <div className="flex flex-row flex-wrap gap-0 w-full">
+                  {links.map((link: any) => (
+                    <Link href={link.link} key={link.name}>
+                      <Button
+                        variant="link"
+                        key={link.name}
+                        className="pl-0 group opacity-60 hover:opacity-100"
+                      >
+                        <Plus className="max-w-3 max-h-3 group-hover:rotate-45 transition-all duration-300 group-hover:text-yellow-600" />
+                        {link.name}
+                      </Button>
+                    </Link>
+                  ))}
+                </div>
+              </div>
             </div>
-            <div></div>
             <SheetFooter className="opacity-50 text-sm font-sans bottom-2 items-end justify-end">
               <div className="flex flex-row gap-4">
                 <Facebook className="min-w-6 min-h-6 text-yellow-700 stroke-1" />

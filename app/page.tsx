@@ -160,17 +160,20 @@ export default function Home() {
       <main className="flex flex-col gap-10 items-center justify-center px-8 lg:px-0 pt-10">
         <div
           id="villa"
-          className="flex flex-col gap-6 lg:max-w-2xl lg:py-24 lg:pb-32 z-10"
+          className="flex flex-col gap-6 lg:max-w-2xl lg:py-20 lg:pb-40 z-10"
         >
           <p className="text-5xl lg:text-6xl font-serif lg:tracking-wide lg:leading-tight font-semibold drop-shadow-md text-balance">
             Step Into A World Of <span className="text-yellow-500">Luxury</span>
           </p>
           <p className="text-md md:text-lg">
-            <span className="font-bold text-yellow-600">Golden Retreat</span>{" "}
-            houses 33 private holiday villas in west cost of Lombok, beautiful
-            and secluded, offering a perfect blend of luxury and relaxation.
+            <span className="font-bold text-yellow-600">
+              Golden Retreat Lombok Villa
+            </span>{" "}
+            houses private freehold holiday villas in west cost of Lombok,
+            beautiful and secluded, offering a perfect blend of luxury and
+            relaxation.
           </p>
-          {/*  <p className="text-md lg:text-lg opacity-60 text-balance flex lg:hidden">
+          {/* <p className="text-md lg:text-lg opacity-60 text-balance flex lg:hidden">
             With breathtaking views, sophisticated amenities and , each stay is
             crafted to surpass expectations.
           </p> */}
@@ -234,7 +237,7 @@ export default function Home() {
             </Dialog>
           </div>
         </div>
-        <div className="lg:flex flex-col p-0 m-0 w-full -z-2 lg:-mt-[750px] hidden">
+        <div className="lg:flex flex-col p-0 m-0 w-full -z-2 lg:-mt-[725px] hidden">
           <Image
             src="/enter.png"
             alt="Villa"
@@ -318,9 +321,9 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-4 items-center justify-center px-0 lg:px-32 lg:py-32">
-          <p className="text-4xl lg:text-6xl font-serif font-semibold">
-            Discover the beauty of Lombok
+        <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-4 items-center justify-center px-0 lg:px-32 lg:py-32">
+          <p className="text-4xl lg:text-6xl font-serif font-semibold text-balance">
+            Discover the beauty of Telok Kode, Lombok
           </p>
           <div className="flex gap-4 flex-col">
             <p className="text-md text-gray-900">
@@ -498,72 +501,90 @@ export default function Home() {
             </CardContent>
           </Card>
         </div>
-        <div className="flex flex-col gap-4 items-center px-0 lg:px-10 w-full py-10">
+        <div className="flex flex-col gap-4 items-start lg:items-center px-0 lg:px-10 w-full py-10 lg:bg-gradient-to-tl from-yellow-700/10 to-white">
           <p className="text-5xl font-serif font-bold">The Facilities</p>
-          <div className="flex flex-row flex-wrap gap-4 items-center justify-center w-full lg:px-52">
+          <div className="grid grid-cols-2 lg:flex flex-row flex-wrap gap-4 items-center justify-center w-full lg:px-52 py-4">
             {villaFaci.map((item: any) => (
               <div
                 key={item.name}
-                className="flex flex-col gap-4 bg-white rounded-full pr-6 py-2 hover:shadow-md"
+                className="flex flex-col gap-4 bg-white rounded-full pr-6 py-2 hover:bg-gradient-to-tl hover:from-yellow-800 hover:to-yellow-500 hover:text-white hover:border-transparent hover:shadow-lg
+                hover:font-bold transition-all duration-300 group"
               >
                 <div className="flex flex-row gap-4 items-center justify-start pl-4">
-                  <item.icon className="min-w-6 min-h-6 lg:h-8 lg:w-8 stroke-2 lg:stroke-1 text-yellow-500 opacity-80" />
-                  <p className="">{item.name}</p>
+                  <item.icon className="min-w-4 min-h-4 lg:h-8 lg:w-8 stroke-2 lg:stroke-1 text-yellow-500 opacity-80 group-hover:text-white" />
+                  <p className="text-sm lg:text-md group-hover:text-lg">
+                    {item.name}
+                  </p>
                 </div>
               </div>
             ))}
           </div>
-          <Button variant="link" className="w-full">
-            View All
-          </Button>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center px-0 lg:px-10 w-full py-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center px-0 lg:px-24 w-full py-20">
           <div className="flex flex-col gap-4 lg:px-32">
-            <p className="text-5xl font-serif font-bold">Investment Service</p>
+            <p className="text-5xl font-serif font-bold">
+              Investment Opportunity
+            </p>
             <p className="text-md">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo,
-              molestiae? Praesentium maiores unde eos id.
+              By choosing Golden Retreat Lombok Villa, you're not just buying a
+              property; you're securing a lucrative investment opportunity.
             </p>
             <p className="text-md opacity-70">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-              animi ullam adipisci nulla aliquid debitis non soluta nihil
-              mollitia veritatis!
+              Our team of experts will handle all aspects of property
+              management, including rental bookings, maintenance, and financial
+              reporting, ensuring a hassle-free and profitable experience.
             </p>
           </div>
           <div className="flex flex-col gap-4 lg:px-10">
             <Accordion type="single" collapsible>
               <AccordionItem value="item-1">
                 <AccordionTrigger className="text-xl font-semibold">
-                  Investment Options
+                  Foreign Ownership
                 </AccordionTrigger>
-                <AccordionContent className="text-md opacity-80">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Placeat, amet adipisci temporibus sed doloribus aut rerum.
-                  Soluta ullam cupiditate obcaecati sed possimus vitae nam quo
-                  id! Iusto officiis aliquid labore?
+                <AccordionContent className="text-md text-pretty">
+                  We are located within the Mandalika{" "}
+                  <Link
+                    href="#"
+                    className="underline font-semibold hover:text-yellow-800"
+                  >
+                    Tourism Special Economic Zone (TSEZ)
+                  </Link>{" "}
+                  which allows foreign investors to own freehold property in the
+                  area. This means Golden Retreat Lombok Villa the perfect
+                  opportunity for foreign investors who are looking to invest in
+                  luxury properties.
+                  <br></br>
+                  <br></br>
+                  With the area seeing a steady increase in growth in numbers
+                  and developments, we are confident that we will be able to
+                  capitalize on this growth and make a significant return on
+                  investment.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-2">
                 <AccordionTrigger className="text-xl font-semibold">
-                  Visa Application
+                  Application Assistance
                 </AccordionTrigger>
                 <AccordionContent className="text-md opacity-80">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
-                  tempora odit at? Animi, pariatur architecto! Lorem ipsum,
-                  dolor sit amet consectetur adipisicing elit. Odit vitae,
-                  explicabo quod quae id doloremque quia laboriosam distinctio
-                  sequi nesciunt?
+                  We will guide you through the complex visa application
+                  process, ensuring a smooth and efficient experience. Our
+                  dedicated team will provide expert assistance in preparing all
+                  the necessary legal documentation, saving you time and effort.
+                  With our support, you can focus on your purchase and travel
+                  plans with confidence.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-3">
                 <AccordionTrigger className="text-xl font-semibold">
-                  Legal Documents
+                  8-10% Projected Yield
                 </AccordionTrigger>
                 <AccordionContent className="text-md opacity-80">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Consectetur qui quam perferendis aliquid doloremque earum
-                  similique animi eius dolore? Ratione earum unde porro delectus
-                  dolorem quo quidem doloribus provident tenetur?
+                  Our meticulously crafted villas are designed to generate
+                  substantial rental income, with an estimated annual yield of
+                  8-10%. This attractive return on investment is made possible
+                  by the strong demand for high-end holiday accommodations in
+                  Lombok, coupled with our professional property management
+                  services.
                 </AccordionContent>
               </AccordionItem>
             </Accordion>

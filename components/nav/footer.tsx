@@ -66,8 +66,8 @@ export default function Footer() {
   return (
     <footer className="flex flex-col px-10 gap-4 py-8 pt-14 bg-gradient-to-tl from-yellow-700 to-yellow-800 to-60% text-white lg:px-52">
       {/* 1sd Level */}
-      <div className="sticky bottom-0 ">
-        <div className="flex flex-row gap-4 items-center justify-between max-h-100 w-full bg-black text-white bottom-0 left-0 right-0 fixed px-10 py-4 lg:px-52 ">
+      <div className="hidden lg:flex sticky bottom-0 ">
+        <div className="flex flex-row gap-4 items-center justify-between max-h-100 w-full lg:max-w-[75vw] mx-auto bg-black text-white bottom-10 left-0 right-0 fixed px-10 py-4 lg:px-4 lg:pl-12 rounded-full">
           <div className="flex flex-row gap-2 items-center justify-start">
             <MapPin className="w-4 h-4 text-yellow-500 opacity-80" />
             <p className="text-sm italic font-serif font-semibold opacity-80">
@@ -86,7 +86,7 @@ export default function Footer() {
             <Button variant="ghost" size="icon" className="hidden md:block">
               <Inbox className="w-4 h-4" />
             </Button>
-            <Button variant="default">
+            <Button variant="default" className="rounded-full">
               <Phone className="w-4 h-4" />
               Book Call
             </Button>
@@ -153,7 +153,7 @@ export default function Footer() {
         </div>
       </div>
       <hr className="opacity-50 py-4"></hr>
-      <div className="flex flex-row gap-4 items-center justify-between pb-14 lg:pb-16">
+      <div className="flex flex-row gap-4 items-center justify-between pb-14 lg:pb-24">
         <p className="text-sm opacity-70">
           © Golden Retreat Lombok Villa 2024 | All Rights Reserved
         </p>
