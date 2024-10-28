@@ -100,7 +100,7 @@ export default function Footer() {
           <p className="text-4xl font-serif font-bold text-balance">
             Golden Retreat<br></br>Lombok Villa
           </p>
-          <p className="text-sm text-balance opacity-70">
+          <p className="text-sm font-sans text-balance opacity-70">
             A secluded, luxurious villa offering panoramic ocean views, private
             pools, and exquisite interiors, set in the heart of Lombok, crafted
             for the ultimate relaxation and indulgence.
@@ -153,7 +153,7 @@ export default function Footer() {
         </div>
       </div>
       <hr className="opacity-50 py-4"></hr>
-      <div className="flex flex-row gap-4 items-center justify-between pb-14 lg:pb-24">
+      <div className="flex flex-row gap-4 items-center font-sans justify-between lg:pb-24">
         <p className="text-sm opacity-70">
           © Golden Retreat Lombok Villa 2024 | All Rights Reserved
         </p>

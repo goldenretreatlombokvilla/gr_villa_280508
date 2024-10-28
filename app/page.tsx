@@ -1,376 +1,119 @@
-"use client";
-
 import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
 import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious
-} from "@/components/ui/carousel";
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger
-} from "@/components/ui/dialog";
-import { Label } from "@/components/ui/label";
-import Form from "next/form";
-import Image from "next/image";
-import Autoplay from "embla-carousel-autoplay";
-import {
-  ArrowDown,
-  ArrowDown10,
-  ArrowDownCircle,
-  Blocks,
-  ConciergeBell,
-  Dumbbell,
-  FishSymbol,
-  Flower,
-  Grid2X2,
-  HandPlatter,
   House,
-  Key,
-  KeyRound,
-  Martini,
+  Grid2X2,
   Scan,
-  Sofa,
-  Sparkles,
-  Theater,
-  UtensilsCrossed,
   Waves,
-  Wind
+  KeyRound,
+  UtensilsCrossed,
+  ArrowRightCircle,
+  MapPin,
+  Award,
+  FileText
 } from "lucide-react";
-import Link from "next/link";
-import { Badge } from "@/components/ui/badge";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle
-} from "@/components/ui/card";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger
-} from "@/components/ui/accordion";
+import Image from "next/image";
 
-const handleWaitlist = () => {
-  console.log("Form Submitted");
-};
-
-const images = [
-  {
-    src: "/villa/grlv_7.webp",
-    alt: "Spacious Bathroom"
-  },
-  {
-    src: "/villa/grlv_2.webp",
-    alt: "Living Room"
-  },
-
-  {
-    src: "/villa/grlv_3.webp",
-    alt: "Poolside Area"
-  }
-];
-
-const villaImages = [
-  {
-    src: "/villa/grlv_7.webp",
-    alt: "Golden Retreat Lombok Villa"
-  },
-  {
-    src: "/villa/grlv_2.webp",
-    alt: "Living Room"
-  },
-
-  {
-    src: "/villa/grlv_3.webp",
-    alt: "Poolside Area"
-  },
-  {
-    src: "/villa/grlv_4.webp",
-    alt: "Kitchen"
-  },
-  {
-    src: "/villa/grlv_5.webp",
-    alt: "Dining Room"
-  },
-  {
-    src: "/villa/grlv_6.webp",
-    alt: "Balcony"
-  }
-];
-
-const villaFaci = [
-  {
-    icon: ConciergeBell,
-    name: "Lobby"
-  },
-  {
-    icon: UtensilsCrossed,
-    name: "Restaurant"
-  },
-  {
-    icon: Martini,
-    name: "Bar & Lounge"
-  },
-  {
-    icon: Sparkles,
-    name: "Wellness Spa"
-  },
-  {
-    icon: Dumbbell,
-    name: "Gymnasium"
-  },
-  {
-    icon: Theater,
-    name: "Ampitheatre"
-  },
-  {
-    icon: Waves,
-    name: "Pool Club"
-  },
-  {
-    icon: Blocks,
-    name: "Playground"
-  },
-  {
-    icon: Flower,
-    name: "Serenity Garden"
-  },
-  {
-    icon: FishSymbol,
-    name: "Koi Pond"
-  }
-];
-
-export default function Home() {
+export default function LandingPage() {
   return (
-    <div
-      className="flex flex-col items-center justify-start min-h-screen font-[family-name:var(--font-geist-sans)]
-    bg-gradient-to-tl from-yellow-700/10 to-white"
-    >
-      <main className="flex flex-col gap-10 items-center justify-center px-8 lg:px-0 pt-10">
-        <div
-          id="villa"
-          className="flex flex-col gap-6 lg:max-w-2xl lg:py-20 lg:pb-40 z-10"
-        >
-          <p className="text-5xl lg:text-6xl font-serif lg:tracking-wide lg:leading-tight font-semibold drop-shadow-md text-balance">
-            Step Into A World Of <span className="text-yellow-500">Luxury</span>
-          </p>
-          <p className="text-md md:text-lg">
-            <span className="font-bold text-yellow-600">
-              Golden Retreat Lombok Villa
-            </span>{" "}
-            houses private freehold holiday villas in west cost of Lombok,
-            beautiful and secluded, offering a perfect blend of luxury and
-            relaxation.
-          </p>
-          {/* <p className="text-md lg:text-lg opacity-60 text-balance flex lg:hidden">
-            With breathtaking views, sophisticated amenities and , each stay is
-            crafted to surpass expectations.
-          </p> */}
-
-          <div className="flex flex-row gap-4 w-full">
-            <Link href="/lombok">
-              <Button variant={"default"}>Discover Now</Button>
-            </Link>
-            <Dialog>
-              <DialogTrigger asChild>
-                <Button
-                  variant={"outline"}
-                  className="border-yellow-600 text-yellow-600 tracking-wider hover:bg-gradient-to-tl hover:from-yellow-800 hover:to-yellow-500 hover:text-white hover:border-transparent hover:shadow-lg"
-                >
-                  Book A Call
-                </Button>
-              </DialogTrigger>
-              <DialogContent>
-                <DialogHeader>
-                  <DialogTitle>Join the Waitlist</DialogTitle>
-                  <DialogDescription>
-                    Become the first few people to get notified about the new
-                    Golden Retreat Lombok Villa!
-                  </DialogDescription>
-                </DialogHeader>
-                <div>
-                  <form>
-                    <div className="flex flex-col gap-6">
-                      <div className="flex flex-col gap-4">
-                        <div className="flex flex-col gap-2">
-                          <Label htmlFor="name">Name</Label>
-                          <input
-                            type="text"
-                            name="name"
-                            id="name"
-                            className="w-full rounded-md border-2 border-gray-300 p-2 text-sm"
-                            placeholder="Enter your name"
-                          />
-                        </div>
-                        <div className="flex flex-col gap-2">
-                          <Label htmlFor="email">Email</Label>
-                          <input
-                            type="email"
-                            name="email"
-                            id="email"
-                            className="w-full rounded-md border-2 border-gray-300 p-2 text-sm"
-                            placeholder="Enter your email"
-                          />
-                        </div>
-                      </div>
-                      <Button
-                        variant={"default"}
-                        formAction={() => handleWaitlist()}
-                      >
-                        Submit
-                      </Button>
-                    </div>
-                  </form>
-                </div>
-              </DialogContent>
-            </Dialog>
-          </div>
-        </div>
-        <div className="lg:flex flex-col p-0 m-0 w-full -z-2 lg:-mt-[725px] hidden">
+    <main>
+      <div className="flex flex-col gap-8 items-center justify-start w-full min-h-screen lg:p-10 max-w-6xl mx-auto">
+        <div className="absolute w-full h-screen top-10 left-0 -z-10">
           <Image
-            src="/enter.png"
-            alt="Villa"
+            src="/villa/grlv_3.webp"
+            alt="Golden Retreat Lombok Villa"
             width={2000}
-            height={1000}
-            className="w-full h-auto p-0 m-0"
+            height={2000}
+            className="w-full h-[100vh] lg:h-auto  aspect-video object-cover rounded-lg brightness-75 "
           />
         </div>
-        <div className="flex flex-col gap-4 items-center px-0">
-          <Carousel
-            className="hidden lg:flex"
-            plugins={[
-              Autoplay({
-                delay: 4000,
-                stopOnMouseEnter: true
-              })
-            ]}
-            opts={{ align: "center", loop: true }}
-          >
-            <CarouselContent className="py-8">
-              {images.map((image, index) => (
-                <CarouselItem
-                  key={index}
-                  className="flex flex-col gap-4 items-center justify-center lg:basis-1/2 lg:pl-14 group rounded-lg"
-                >
-                  <Image
-                    src={image.src}
-                    alt={image.alt}
-                    width={580}
-                    height={200}
-                    loading="eager"
-                    className="object-cover w-full h-full rounded-lg group-hover:scale-105 transition-all duration-300 group-hover:shadow-lg brightness-100 lg:brightness-90 group-hover:brightness-100"
-                  />
-                  <Badge
-                    variant="default"
-                    className="text-md text-center text-white opacity-80 absolute bottom-4 right-4"
-                  >
-                    {image.alt}
-                  </Badge>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-          </Carousel>
-          <Carousel
-            plugins={[
-              Autoplay({
-                delay: 3800,
-                stopOnMouseEnter: true
-              })
-            ]}
-            opts={{ align: "center", loop: true }}
-            className="flex lg:hidden"
-          >
-            <CarouselContent className="my-8">
-              {villaImages.map((image, index) => (
-                <CarouselItem
-                  key={index}
-                  className="flex flex-col gap-4 items-center justify-center basis-1/2 lg:basis-1/4 lg:pl-14 group rounded-lg"
-                >
-                  <Image
-                    src={image.src}
-                    alt={image.alt}
-                    width={580}
-                    height={200}
-                    loading="eager"
-                    className="object-cover w-full h-full rounded-lg group-hover:scale-105 transition-all duration-300 group-hover:shadow-lg brightness-100 lg:brightness-90 group-hover:brightness-100"
-                  />
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-          </Carousel>
-          <div className="flex flex-col gap-4 items-center">
-            <p className="tracking-widest text-yellow-700 text-md ">
-              Step into peace and luxury
-            </p>
-
-            <ArrowDownCircle
-              className="w-6 h-6 text-yellow-600 stroke-1 stroke-current animate-pulse"
-              onClick={() => window.scrollTo({ top: 800, behavior: "smooth" })}
-            />
-          </div>
-        </div>
-
-        <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-4 items-center justify-center px-0 lg:px-32 lg:py-32">
-          <p className="text-4xl lg:text-6xl font-serif font-semibold text-balance">
-            Discover the beauty of Telok Kode, Lombok
+        <div className="flex flex-col gap-4 items-center justify-center lg:py-32 text-white w-full min-h-screen">
+          <p className="uppercase font-cinzel font-bold text-2xl tracking-widest">
+            Welcome to
           </p>
-          <div className="flex gap-4 flex-col">
-            <p className="text-md text-gray-900">
-              With breathtaking views, sophisticated amenities and , each stay
-              is crafted to surpass expectations.
-            </p>
-            <p className="text-md text-gray-500">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error ea
-              natus ratione neque asperiores sit officiis recusandae corrupti
-              distinctio dolor assumenda alias quae rerum veniam ex, eum
-              deserunt veritatis id!
-            </p>
-          </div>
+          <Image
+            src="/gr_logo.png"
+            alt="Golden Retreat Lombok Villa"
+            width={1000}
+            height={500}
+            className="w-full h-full lg:h-fit object-contain lg:-mb-20 -mb-10 drop-shadow-xl"
+          />
+          <p className="uppercase font-cinzelD font-bold text-2xl lg:text-5xl tracking-widest opacity-70 mb-32">
+            Phase 1
+          </p>
+          <Button variant="default" className="">
+            Learn More
+          </Button>
         </div>
-        <div className="flex flex-col gap-4 items-center px-0">
-          <Carousel
-            plugins={[
-              Autoplay({
-                delay: 3800,
-                stopOnMouseEnter: true
-              })
-            ]}
-            opts={{ align: "center", loop: true }}
-          >
-            <CarouselContent className="my-8">
-              {villaImages.map((image, index) => (
-                <CarouselItem
-                  key={index}
-                  className="flex flex-col gap-4 items-center justify-center basis-1/2 lg:basis-1/4 lg:pl-14 group rounded-lg"
-                >
-                  <Image
-                    src={image.src}
-                    alt={image.alt}
-                    width={580}
-                    height={200}
-                    loading="eager"
-                    className="object-cover w-full h-full rounded-lg group-hover:scale-105 transition-all duration-300 group-hover:shadow-lg brightness-100 lg:brightness-90 group-hover:brightness-100"
-                  />
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-          </Carousel>
+      </div>
+      <div className="grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-10 lg:gap-4 items-center justify-center w-full min-h-screen lg:px-52 px-10 py-20">
+        <div className="flex flex-col gap-6">
+          <p className="font-cinzel text-yellow-800 text-4xl lg:text-5xl tracking-widest opacity-70">
+            Your Luxurious Home Away From Home
+          </p>
+          <p className="font-sans text-md opacity-70">
+            Experience unparalleled luxury and exclusivity at our stunning new
+            luxury villas in Lombok Island, where every detail has been
+            meticulously crafted with the end user in mind.
+          </p>
+          <p className="font-sans text-md opacity-70">
+            Nestled in a pristine location with breathtaking views, our
+            properties stand out from the competition with their exquisite
+            design, top-notch amenities, and exceptional service.
+          </p>
+          <p className="font-sans text-md opacity-70">
+            Trust us to turn your dream of owning a luxurious villa in Lombok
+            into a reality - your perfect getaway awaits!
+          </p>
+          <Button variant="default" className="w-fit">
+            Visit Villas
+          </Button>
         </div>
-        <div className="flex flex-col gap-20 items-center px-0 py-8">
-          <Card className="flex flex-col w-full lg:p-8 bg-transparent shadow-none border-none">
+        <div className="flex flex-col gap-4 items-center h-full text-yellow-700">
+          <Image
+            src="/villa/grlv_7.webp"
+            alt="Golden Retreat Lombok Villa"
+            width={1000}
+            height={700}
+            className="w-full h-[90%] object-left object-cover lg:aspect-[10/14] rounded-lg"
+          />
+        </div>
+      </div>
+      <div className="flex flex-col gap-4 items-center justify-start w-full min-h-screen px-10 lg:px-52 py-20">
+        <p className="font-cinzeldeco text-yellow-800 text-5xl tracking-widest">
+          Luxury Villas
+        </p>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-4">
+          <Card className="flex flex-col w-full lg:p-0 bg-transparent shadow-none border-none">
             <CardContent className="p-4">
-              <div className="flex flex-col md:flex-row gap-6 lg:gap-10 items-center justify-center">
+              <div className="flex flex-col  gap-6 lg:gap-10 items-center justify-center">
+                <Image
+                  src="/villa/grlv_6.webp"
+                  alt="Golden Retreat Lombok Villa"
+                  width={500}
+                  height={300}
+                  className="w-full h-auto  object-cover aspect-video rounded-lg shadow-lg"
+                />
+                <div className="grid grid-cols-2 lg:grid-cols-2  gap-2 w-full p-6 lg:text-xl text-md ring-1 ring-yellow-700">
+                  <p className="text-sm opacity-70 font-sans mb-8">
+                    2 bedroom | 150 sqm
+                  </p>
+                  <p className="text-2xl lg:text-3xl font-bold uppercase col-span-2 text-yellow-700">
+                    Premium Luxury Villa
+                  </p>
+                  <div className="col-span-2 flex flex-row gap-4 items-center justify-between">
+                    <p className="text-sm opacity-70 font-sans">$ 200,000</p>
+                    <Button variant="ghost" size="icon">
+                      <ArrowRightCircle className="min-w-6 min-h-6 stroke-1" />
+                    </Button>
+                  </div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+          <Card className="flex flex-col w-full lg:p-0 bg-transparent shadow-none border-none">
+            <CardContent className="p-4">
+              <div className="flex flex-col  gap-6 lg:gap-10 items-center justify-center">
                 <Image
                   src="/villa/grlv_3.webp"
                   alt="Golden Retreat Lombok Villa"
@@ -378,219 +121,192 @@ export default function Home() {
                   height={300}
                   className="w-full h-auto  object-cover aspect-video rounded-lg shadow-lg"
                 />
-                <div className="grid grid-cols-2 lg:grid-cols-2  gap-6 w-full px-2 lg:text-xl text-md">
-                  <p className="text-2xl lg:text-4xl font-bold uppercase col-span-2">
-                    2 Bedroom Villa
+                <div className="grid grid-cols-2 lg:grid-cols-2  gap-2 w-full p-6 lg:text-xl text-md ring-1 ring-yellow-700 ">
+                  <p className="text-sm opacity-70 font-sans mb-8">
+                    3 bedroom | 187 sqm
                   </p>
-                  <div className="flex flex-row gap-4 items-center justify-start">
-                    <House className="min-w-6 min-h-6 lg:h-12 lg:w-12 stroke-2 lg:stroke-1 text-yellow-500 opacity-80" />
-                    <div className="flex flex-col gap-0 items-start">
-                      <p className="font-bold">2 Bed 2 Bath</p>
-                      <p className="text-sm">Single Storey</p>
-                    </div>
-                  </div>
-
-                  <div className="flex flex-row gap-4 items-center justify-start">
-                    <Grid2X2 className="min-w-6 min-h-6 lg:h-12 lg:w-12 stroke-2 lg:stroke-1 text-yellow-500 opacity-80" />
-                    <div className="flex flex-col gap-0 items-start">
-                      <p className="font-bold">150 sqm</p>
-                      <p className="text-sm">Parcel Area</p>
-                    </div>
-                  </div>
-                  <div className="flex flex-row gap-4 items-center justify-start">
-                    <Scan className="min-w-6 min-h-6 lg:h-12 lg:w-12 stroke-2 lg:stroke-1 text-yellow-500 opacity-80" />
-                    <div className="flex flex-col gap-0 items-start">
-                      <p className="font-bold">103 sqm</p>
-                      <p className="text-sm"> Built-Up Area</p>
-                    </div>
-                  </div>
-
-                  <div className="flex flex-row gap-4 items-center justify-start">
-                    <Waves className="min-w-6 min-h-6 lg:h-12 lg:w-12 stroke-2 lg:stroke-1 text-yellow-500 opacity-80" />
-                    <div className="flex flex-col gap-0 items-start">
-                      <p className="font-bold">47 sqm</p>
-                      <p className="text-sm">Pool Area</p>
-                    </div>
-                  </div>
-                  <div className="flex flex-row gap-4 items-center justify-start">
-                    <KeyRound className="min-w-6 min-h-6 lg:h-12 lg:w-12 stroke-2 lg:stroke-1 text-yellow-500 opacity-80" />
-                    <div className="flex flex-col gap-0 items-start">
-                      <p className="font-bold">Turnkey Villa</p>
-                      <p className="text-sm">Fully Furnished</p>
-                    </div>
-                  </div>
-                  <div className="flex flex-row gap-4 items-center justify-start">
-                    <UtensilsCrossed className="min-w-6 min-h-6 lg:h-12 lg:w-12 stroke-2 lg:stroke-1 text-yellow-500 opacity-80" />
-                    <div className="flex flex-col gap-0 items-start">
-                      <p className="font-bold">Kitchen & Dining</p>
-                      <p className="text-sm">Fully Functional</p>
-                    </div>
-                  </div>
-                  <div className="col-span-2 flex flex-row gap-4 items-center justify-start">
-                    <Button variant="default">Virtual Tour</Button>
-                    <Button variant="outline">Learn More</Button>
+                  <p className="text-2xl lg:text-3xl font-bold uppercase col-span-2 text-yellow-700">
+                    Superior Luxury Villa
+                  </p>
+                  <div className="col-span-2 flex flex-row gap-4 items-center justify-between">
+                    <p className="text-sm opacity-70 font-sans">$ 250,000</p>
+                    <Button variant="ghost" size="icon">
+                      <ArrowRightCircle className="min-w-6 min-h-6 stroke-1" />
+                    </Button>
                   </div>
                 </div>
               </div>
             </CardContent>
           </Card>
-          <Card className="flex flex-col w-full lg:p-8 bg-transparent shadow-none border-none">
+        </div>
+      </div>
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-start justify-start w-full px-10 lg:px-52 py-20">
+        <p className="text-5xl font-cinzel text-yellow-700">The Villa</p>
+        <Image
+          src="/villa/grlv_4.webp"
+          alt="Golden Retreat Lombok Villa"
+          width={500}
+          height={200}
+          className="w-full h-auto aspect-video object-cover rounded-lg"
+        />
+        <p className="text-md font-sans opacity-70">
+          Whether you are an investor seeking a profitable opportunity or a
+          holiday home owner looking for a slice of paradise, our villas offer
+          the perfect blend of sophistication and comfort.{" "}
+        </p>
+        <div className="hidden lg:flex flex-row items-center justify-center py-4 ring-1 ring-yellow-700 text-yellow-700 font-sans text-sm opacity-70 italic">
+          Exquisite villa with private pool and deck, perfect for luxury living.
+        </div>
+      </div>
+      <div className="grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-4 items-center justify-center w-full px-10 lg:px-52 lg:py-20 -mt-14 ">
+        <Image
+          src="/villa/grlv_7.webp"
+          alt="Golden Retreat Lombok Villa"
+          width={500}
+          height={200}
+          className="w-full h-full aspect-video object-cover object-right rounded-lg"
+        />
+        <Image
+          src="/villa/grlv_2.webp"
+          alt="Golden Retreat Lombok Villa"
+          width={500}
+          height={200}
+          className="w-full h-auto aspect-video object-cover rounded-lg"
+        />
+        <div className="hidden lg:flex flex-row items-center justify-center py-4 ring-1 ring-yellow-700 text-yellow-700 font-sans text-sm opacity-70 italic">
+          A lavishly designed bespoke bathroom.
+        </div>
+        <div className="hidden lg:flex flex-row items-center justify-center py-4 ring-1 ring-yellow-700 text-yellow-700 font-sans text-sm opacity-70 italic">
+          Luxury living room, with top of the line furniture, wide screen TV,
+          best in class sound system.{" "}
+        </div>
+      </div>
+      <div className="flex flex-col gap-4 items-center justify-start w-full px-10 lg:px-52 py-20">
+        <p className="text-5xl font-cinzel text-yellow-700">
+          In House Facilities
+        </p>
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-4 ">
+          <Card className="flex flex-col w-full lg:p-0 bg-transparent shadow-none border-none">
             <CardContent className="p-4">
-              <div className="flex flex-col md:flex-row gap-6 lg:gap-10 items-center justify-center">
+              <div className="flex flex-col  gap-6 lg:gap-10 items-center justify-center">
                 <Image
-                  src="/villa/grlv_5.webp"
+                  src="/brand/restaurant.jpg"
                   alt="Golden Retreat Lombok Villa"
                   width={500}
                   height={300}
-                  className="w-full h-full  object-cover aspect-video rounded-lg shadow-lg"
+                  className="w-full h-auto  object-cover aspect-video rounded-lg shadow-lg"
                 />
-                <div className="grid grid-cols-2 lg:grid-cols-2  gap-6 w-full px-2 lg:text-xl text-md">
-                  <p className="text-2xl lg:text-4xl font-bold uppercase col-span-2">
-                    3 Bedroom Villa
+                <div className="flex flex-col gap-2 w-full p-6 lg:text-xl text-md ring-1 ring-yellow-700 ">
+                  <p className="text-2xl lg:text-2xl font-bold uppercase col-span-2 text-yellow-700">
+                    Restaurant, Bar & Lounge{" "}
                   </p>
-                  <div className="flex flex-row gap-4 items-center justify-start">
-                    <House className="min-w-6 min-h-6 lg:h-12 lg:w-12 stroke-2 lg:stroke-1 text-yellow-500 opacity-80" />
-                    <div className="flex flex-col gap-0 items-start">
-                      <p className="font-bold">3 Bed 3 Bath</p>
-                      <p className="text-sm">Single Storey</p>
-                    </div>
-                  </div>
-
-                  <div className="flex flex-row gap-4 items-center justify-start">
-                    <Grid2X2 className="min-w-6 min-h-6 lg:h-12 lg:w-12 stroke-2 lg:stroke-1 text-yellow-500 opacity-80" />
-                    <div className="flex flex-col gap-0 items-start">
-                      <p className="font-bold">187 sqm</p>
-                      <p className="text-sm">Parcel Area</p>
-                    </div>
-                  </div>
-                  <div className="flex flex-row gap-4 items-center justify-start">
-                    <Scan className="min-w-6 min-h-6 lg:h-12 lg:w-12 stroke-2 lg:stroke-1 text-yellow-500 opacity-80" />
-                    <div className="flex flex-col gap-0 items-start">
-                      <p className="font-bold">135 sqm</p>
-                      <p className="text-sm"> Built-Up Area</p>
-                    </div>
-                  </div>
-
-                  <div className="flex flex-row gap-4 items-center justify-start">
-                    <Waves className="min-w-6 min-h-6 lg:h-12 lg:w-12 stroke-2 lg:stroke-1 text-yellow-500 opacity-80" />
-                    <div className="flex flex-col gap-0 items-start">
-                      <p className="font-bold">52 sqm</p>
-                      <p className="text-sm">Pool Area</p>
-                    </div>
-                  </div>
-                  <div className="flex flex-row gap-4 items-center justify-start">
-                    <KeyRound className="min-w-6 min-h-6 lg:h-12 lg:w-12 stroke-2 lg:stroke-1 text-yellow-500 opacity-80" />
-                    <div className="flex flex-col gap-0 items-start">
-                      <p className="font-bold">Turnkey Villa</p>
-                      <p className="text-sm">Fully Furnished</p>
-                    </div>
-                  </div>
-                  <div className="flex flex-row gap-4 items-center justify-start">
-                    <UtensilsCrossed className="min-w-6 min-h-6 lg:h-12 lg:w-12 stroke-2 lg:stroke-1 text-yellow-500 opacity-80" />
-                    <div className="flex flex-col gap-0 items-start">
-                      <p className="font-bold">Kitchen & Dining</p>
-                      <p className="text-sm">Fully Functional</p>
-                    </div>
-                  </div>
-                  <div className="col-span-2 flex flex-row gap-4 items-center justify-start">
-                    <Button variant="default">Virtual Tour</Button>
-                    <Button variant="outline">Learn More</Button>
-                  </div>
+                  <p className="text-sm opacity-70 font-sans">
+                    Dine in luxury in our 5 star restaurant with a delicious
+                    menu by Chef Ramsey or spend the evening in our private
+                    lounge.{" "}
+                  </p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+          <Card className="flex flex-col w-full lg:p-0 bg-transparent shadow-none border-none">
+            <CardContent className="p-4">
+              <div className="flex flex-col  gap-6 lg:gap-10 items-center justify-center">
+                <Image
+                  src="/brand/spa.jpg"
+                  alt="Golden Retreat Lombok Villa"
+                  width={500}
+                  height={300}
+                  className="w-full h-auto  object-cover aspect-video rounded-lg shadow-lg"
+                />
+                <div className="flex flex-col gap-2 w-full h-full p-6 lg:text-xl text-md ring-1 ring-yellow-700 ">
+                  <p className="text-2xl lg:text-2xl font-bold uppercase col-span-2 text-yellow-700">
+                    Wellness Spa & Gymnasium
+                  </p>
+                  <p className="text-sm opacity-70 font-sans">
+                    Never miss a beat with you gym equiped with your favourite
+                    machines and then get a message in our local 5-star spa.
+                  </p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+          <Card className="flex flex-col w-full lg:p-0 bg-transparent shadow-none border-none">
+            <CardContent className="p-4">
+              <div className="flex flex-col  gap-6 lg:gap-10 items-center justify-center">
+                <Image
+                  src="/brand/pond.jpg"
+                  alt="Golden Retreat Lombok Villa"
+                  width={500}
+                  height={300}
+                  className="w-full h-auto  object-cover aspect-video rounded-lg shadow-lg"
+                />
+                <div className="flex flex-col gap-2 w-full h-full p-6 lg:text-xl text-md ring-1 ring-yellow-700 ">
+                  <p className="text-2xl lg:text-2xl font-bold uppercase col-span-2 text-yellow-700">
+                    Serenity Garden & Koi Pond
+                  </p>
+                  <p className="text-sm opacity-70 font-sans">
+                    Be at peace with the sound of water and a beautiful sight in
+                    our gardens, where memories of a lifetime are made.
+                  </p>
                 </div>
               </div>
             </CardContent>
           </Card>
         </div>
-        <div className="flex flex-col gap-4 items-start lg:items-center px-0 lg:px-10 w-full py-10 lg:bg-gradient-to-tl from-yellow-700/10 to-white">
-          <p className="text-5xl font-serif font-bold">The Facilities</p>
-          <div className="grid grid-cols-2 lg:flex flex-row flex-wrap gap-4 items-center justify-center w-full lg:px-52 py-4">
-            {villaFaci.map((item: any) => (
-              <div
-                key={item.name}
-                className="flex flex-col gap-4 bg-white rounded-full pr-6 py-2 hover:bg-gradient-to-tl hover:from-yellow-800 hover:to-yellow-500 hover:text-white hover:border-transparent hover:shadow-lg
-                hover:font-bold transition-all duration-300 group"
-              >
-                <div className="flex flex-row gap-4 items-center justify-start pl-4">
-                  <item.icon className="min-w-4 min-h-4 lg:h-8 lg:w-8 stroke-2 lg:stroke-1 text-yellow-500 opacity-80 group-hover:text-white" />
-                  <p className="text-sm lg:text-md group-hover:text-lg">
-                    {item.name}
+      </div>
+      <div className="flex flex-col gap-4 items-center justify-start w-full px-10 lg:px-52 py-20 bg-black text-white">
+        <p className="text-5xl font-cinzel text-white">Benefits</p>
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-4 ">
+          <Card className="flex flex-col w-full lg:p-0 bg-transparent shadow-none border-none">
+            <CardContent className="p-4">
+              <div className="flex flex-col  gap-6 lg:gap-10 items-center justify-center">
+                <div className="flex flex-col gap-10 w-full p-6 lg:text-xl text-md ">
+                  <MapPin className="w-16 h-16 fill-yellow-600 stroke-1" />
+                  <p className="text-md  font-sans text-white">
+                    Heart of the latest tourist destination, in Lombok Island.
+                    Located 300 meters away from Bangsal Beach, Bangsal Fast
+                    Boat Port and Boat service to the famous Gili Terawangan.
                   </p>
                 </div>
               </div>
-            ))}
-          </div>
+            </CardContent>
+          </Card>
+          <Card className="flex flex-col w-full lg:p-0 bg-transparent shadow-none border-none">
+            <CardContent className="p-4">
+              <div className="flex flex-col  gap-6 lg:gap-10 items-center justify-center">
+                <div className="flex flex-col gap-10 w-full p-6 lg:text-xl text-md ">
+                  <Award className="w-16 h-16 fill-yellow-600 stroke-1" />
+                  <p className="text-md  font-sans text-white">
+                    Established developer project that is the first of it’s
+                    kind, while being made with the experience of successful
+                    past projects. Desiged with the end user in mind, and has
+                    everything that you need.
+                  </p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+          <Card className="flex flex-col w-full lg:p-0 bg-transparent shadow-none border-none">
+            <CardContent className="p-4">
+              <div className="flex flex-col  gap-6 lg:gap-10 items-center justify-center">
+                <div className="flex flex-col gap-10 w-full p-6 lg:text-xl text-md ">
+                  <FileText className="w-16 h-16 fill-yellow-600 stroke-1" />
+                  <p className="text-md  font-sans text-white">
+                    5-year long stay visas for foreign purchasers. Visa
+                    application assistance provided. Visa renewal are for every
+                    5 years. 12 months progressive payments with an initial
+                    deposit of 20% of purchase price.
+                  </p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center px-0 lg:px-24 w-full py-20">
-          <div className="flex flex-col gap-4 lg:px-32">
-            <p className="text-5xl font-serif font-bold">
-              Investment Opportunity
-            </p>
-            <p className="text-md">
-              By choosing Golden Retreat Lombok Villa, you're not just buying a
-              property; you're securing a lucrative investment opportunity.
-            </p>
-            <p className="text-md opacity-70">
-              Our team of experts will handle all aspects of property
-              management, including rental bookings, maintenance, and financial
-              reporting, ensuring a hassle-free and profitable experience.
-            </p>
-          </div>
-          <div className="flex flex-col gap-4 lg:px-10">
-            <Accordion type="single" collapsible>
-              <AccordionItem value="item-1">
-                <AccordionTrigger className="text-xl font-semibold">
-                  Foreign Ownership
-                </AccordionTrigger>
-                <AccordionContent className="text-md text-pretty">
-                  We are located within the Mandalika{" "}
-                  <Link
-                    href="#"
-                    className="underline font-semibold hover:text-yellow-800"
-                  >
-                    Tourism Special Economic Zone (TSEZ)
-                  </Link>{" "}
-                  which allows foreign investors to own freehold property in the
-                  area. This means Golden Retreat Lombok Villa the perfect
-                  opportunity for foreign investors who are looking to invest in
-                  luxury properties.
-                  <br></br>
-                  <br></br>
-                  With the area seeing a steady increase in growth in numbers
-                  and developments, we are confident that we will be able to
-                  capitalize on this growth and make a significant return on
-                  investment.
-                </AccordionContent>
-              </AccordionItem>
-              <AccordionItem value="item-2">
-                <AccordionTrigger className="text-xl font-semibold">
-                  Application Assistance
-                </AccordionTrigger>
-                <AccordionContent className="text-md opacity-80">
-                  We will guide you through the complex visa application
-                  process, ensuring a smooth and efficient experience. Our
-                  dedicated team will provide expert assistance in preparing all
-                  the necessary legal documentation, saving you time and effort.
-                  With our support, you can focus on your purchase and travel
-                  plans with confidence.
-                </AccordionContent>
-              </AccordionItem>
-              <AccordionItem value="item-3">
-                <AccordionTrigger className="text-xl font-semibold">
-                  8-10% Projected Yield
-                </AccordionTrigger>
-                <AccordionContent className="text-md opacity-80">
-                  Our meticulously crafted villas are designed to generate
-                  substantial rental income, with an estimated annual yield of
-                  8-10%. This attractive return on investment is made possible
-                  by the strong demand for high-end holiday accommodations in
-                  Lombok, coupled with our professional property management
-                  services.
-                </AccordionContent>
-              </AccordionItem>
-            </Accordion>
-          </div>
-        </div>
-      </main>
-    </div>
+        <Button variant="default" className="w-fit">
+          Apply Now
+        </Button>
+      </div>
+    </main>
   );
 }
