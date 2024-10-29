@@ -1,4 +1,6 @@
+import Adstrat from "@/components/dashboard/adstrat";
 import Presentation from "@/components/dashboard/presentation";
+import Socmed from "@/components/dashboard/socmed";
 import TodoList from "@/components/dashboard/todolist";
 import { Button } from "@/components/ui/button";
 import {
@@ -22,6 +24,8 @@ export default function Dashboard() {
       <section className="grid grid-cols-1 lg:grid-cols-2 gap-10 pb-8 items-start justify-center ">
         <TodoList />
         <Presentation />
+        <Socmed />
+        <Adstrat />
       </section>
     </div>
   );
