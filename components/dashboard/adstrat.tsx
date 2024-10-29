@@ -66,6 +66,19 @@ export default function Adstrat() {
               <li>Villa Features</li>
             </ul>
           </div>
+          <div className="flex flex-col col-span-2 gap-2">
+            <p className="font-bold">Targeted Audience</p>
+            <ul className="list-inside list-disc">
+              <li>Gender: Male</li>
+              <li>Age: 35+ years old</li>
+              <li>Net Worth: Mid to High</li>
+              <li>Occupation: C-suite, Entreprenuers & Celebrities</li>
+              <li>Interest: MotoGP, Travel, Luxury</li>
+              <li>
+                Behaviour: Frequent Flyers, Investment Property, Private Living
+              </li>
+            </ul>
+          </div>
         </CardContent>
         <hr></hr>
         <CardFooter className="flex flex-col gap-2 items-start pt-4">
