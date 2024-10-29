@@ -11,6 +11,7 @@ import {
   Linkedin,
   Menu,
   PanelRightOpen,
+  Phone,
   Plus,
   Send,
   Youtube
@@ -99,17 +100,17 @@ const links = [
 
 export default function Nav() {
   return (
-    <nav className="flex flex-row items-center justify-between w-full mx-auto lg:px-52 bg-background max-h-[80px] pr-8 sticky top-0 z-50  shadow-sm">
-      <Link href="/">
+    <nav className="flex flex-row items-center justify-end w-full mx-auto lg:px-8 max-h-[80px] px-2 absolute top-0 z-50 h-32 bg-transparent">
+      {/* <Link href="/">
         <Image
-          className="max-w-32 max-h-32 p-0 m-0 drop-shadow-sm"
-          src="/brand/logo_gr.png"
+          className="w-12 h-12 object-contain drop-shadow-sm"
+          src="/brand/logo_icon.png"
           alt="Golden Retreat Lombok Villa"
           width={200}
           height={200}
           priority
         />
-      </Link>
+      </Link> */}
       <div className="hidden flex-row items-center justify-end gap-0 w-full">
         {navItems.map((item: any) => (
           <Link href={item.link} key={item.name}>
@@ -120,119 +121,131 @@ export default function Nav() {
         ))}
       </div>
       <div className="flex flex-row items-center justify-end gap-10">
-        <div className="hidden lg:flex flex-row gap-4">
-          <Facebook className="min-w-4 min-h-4 stroke-1 text-yellow-600 hover:text-yellow-900" />
-          <Instagram className="min-w-4 min-h-4 stroke-1 text-yellow-600 hover:text-yellow-900" />
-          <Linkedin className="min-w-4 min-h-4 stroke-1 text-yellow-600 hover:text-yellow-900" />
-          <Youtube className="min-w-4 min-h-4 stroke-1 text-yellow-600 hover:text-yellow-900" />
-        </div>
-        <Button
+        {/* <div className="hidden lg:flex flex-row gap-4">
+          <Facebook className="min-w-4 min-h-4 stroke-1 text-yellow-600 hover:text-yellow-400" />
+          <Instagram className="min-w-4 min-h-4 stroke-1 text-yellow-600 hover:text-yellow-400" />
+          <Linkedin className="min-w-4 min-h-4 stroke-1 text-yellow-600 hover:text-yellow-400" />
+          <Youtube className="min-w-4 min-h-4 stroke-1 text-yellow-600 hover:text-yellow-400" />
+        </div> */}
+        {/*   <Button
           variant={"outline"}
-          className="border-yellow-600 text-yellow-600 tracking-wider hover:bg-gradient-to-tl hover:from-yellow-800 hover:to-yellow-500 hover:text-white hover:border-transparent hover:shadow-lg lg:flex hidden"
+          className="border-yellow-600 text-yellow-600 tracking-wider hover:bg-gradient-to-tl hover:from-yellow-800 hover:to-yellow-500 hover:text-white hover:border-transparent hover:shadow-lg lg:flex hidden font-sans uppercase"
         >
           Enquire
-        </Button>
-        <Sheet>
-          <SheetTrigger asChild>
-            <Menu className="min-w-6 min-h-6 text-yellow-600 hover:text-yellow-900 opacity-70 stroke-2 hover:opacity-100" />
-          </SheetTrigger>
-          <SheetContent
-            className="flex flex-col gap-4 items-start"
-            style={{ minWidth: "30vw" }}
-          >
-            <div className="flex flex-row gap-0 px-4 items-center justify-start">
-              <SheetClose asChild>
-                <Link href="/" className="text-4xl font-serif drop-shadow-lg">
-                  Golden Retreat Lombok Villa
-                </Link>
-              </SheetClose>
-              <SheetClose asChild>
-                <Link href="/">
-                  <Image
-                    className="max-w-44 h-auto aspect-square object-contain -ml-10 drop-shadow-md"
-                    src="/brand/petal_gold.png"
-                    alt="Golden Retreat Lombok Villa"
-                    width={500}
-                    height={500}
-                    priority
-                  />
-                </Link>
-              </SheetClose>
-            </div>
-            <SheetClose />
-            <SheetHeader className="hidden">
-              <SheetTitle className="sr-only">GRLV</SheetTitle>
-            </SheetHeader>
-            <div className="flex flex-col gap-4 items-start h-screen w-full">
-              {navItems.map((item: any) => (
-                <SheetClose key={item.name} asChild>
-                  <Link href={item.link} className="w-full group">
-                    <Button
-                      key={item.name}
-                      variant="link"
-                      className="text-md flex flex-row w-full justify-between font-serif tracking-wider"
-                    >
-                      {item.name}
-                      <ArrowRightCircle className="min-w-6 min-h-6 stroke-1 group-hover:opacity-90 opacity-30 group-hover:scale-125 group-hover:rotate-180 transition-all duration-300 group-hover:text-yellow-600" />
-                    </Button>
+        </Button> */}
+        <div className="fixed p-2">
+          <Sheet>
+            <SheetTrigger asChild>
+              <div className="p-2 bg-stone-900 rounded-full hover:ring-1 ring-yellow-600 group">
+                <Menu className="min-w-6 min-h-6 text-white group-hover:text-yellow-600 opacity-70 stroke-2 hover:opacity-100" />
+              </div>
+            </SheetTrigger>
+            <SheetContent
+              className="flex flex-col gap-4 items-start border-none bg-stone-900 text-white pt-10"
+              style={{ minWidth: "30vw" }}
+            >
+              <div className="flex flex-row gap-0 px-4 items-center justify-start">
+                <SheetClose asChild>
+                  <Link href="/">
+                    <Image
+                      src="/brand/logo_icon.png"
+                      alt="Golden Retreat Lombok Villa"
+                      width={1000}
+                      height={500}
+                      className="lg:w-20 h-20 object-contain mb-10 drop-shadow-xl"
+                    />
                   </Link>
                 </SheetClose>
-              ))}
-              <SheetClose asChild>
-                <Button
-                  variant={"default"}
-                  className="font-thin text-md flex flex-row w-full justify-between group"
-                >
-                  Enquire
-                  <Send className="min-w-5 min-h-5 stroke-1 mr-1 opacity-70" />
-                </Button>
-              </SheetClose>
-
-              <div className="hidden lg:flex flex-col gap-4 pt-8 pl-4">
-                <p className="text-md font-serif font-bold">Our Facilities</p>
-                <div className="flex flex-row flex-wrap gap-0 w-full">
-                  {facilities.map((link: any) => (
-                    <Link href={link.link} key={link.name}>
+                {/*  <SheetClose asChild>
+                  <Link href="/">
+                    <Image
+                      className="max-w-44 h-auto aspect-square object-contain -ml-10 drop-shadow-md"
+                      src="/brand/petal_gold.png"
+                      alt="Golden Retreat Lombok Villa"
+                      width={500}
+                      height={500}
+                      priority
+                    />
+                  </Link>
+                </SheetClose> */}
+              </div>
+              <SheetClose />
+              <SheetHeader className="hidden">
+                <SheetTitle className="sr-only">GRLV</SheetTitle>
+              </SheetHeader>
+              <div className="flex flex-col gap-4 items-start h-screen w-full">
+                {navItems.map((item: any) => (
+                  <SheetClose key={item.name} asChild>
+                    <Link href={item.link} className="w-full group">
                       <Button
+                        key={item.name}
                         variant="link"
-                        key={link.name}
-                        className="pl-0 group opacity-60 hover:opacity-100"
+                        className="text-md flex flex-row w-full justify-between font-serif tracking-wider"
                       >
-                        <Plus className="max-w-3 max-h-3 group-hover:rotate-45 transition-all duration-300 group-hover:text-yellow-600" />
-                        {link.name}
+                        {item.name}
+                        <ArrowRightCircle className="min-w-6 min-h-6 stroke-1 group-hover:opacity-90 opacity-30 group-hover:scale-125 group-hover:rotate-180 transition-all duration-300 group-hover:text-yellow-600" />
                       </Button>
                     </Link>
-                  ))}
+                  </SheetClose>
+                ))}
+                <SheetClose asChild>
+                  <Button
+                    variant={"default"}
+                    className="font-thin text-md flex flex-row w-full justify-between group"
+                  >
+                    Enquire
+                    <Send className="min-w-5 min-h-5 stroke-1 mr-1 opacity-70" />
+                  </Button>
+                </SheetClose>
+                <div className="hidden lg:flex flex-col gap-4 pt-8 pl-4">
+                  <p className="text-md font-serif font-bold">Our Facilities</p>
+                  <div className="flex flex-row flex-wrap gap-0 w-full">
+                    {facilities.map((link: any) => (
+                      <Link href={link.link} key={link.name}>
+                        <Button
+                          variant="link"
+                          key={link.name}
+                          className="pl-0 group opacity-70 hover:opacity-100"
+                        >
+                          <Plus className="max-w-3 max-h-3 group-hover:rotate-45 transition-all duration-300 group-hover:text-yellow-600" />
+                          {link.name}
+                        </Button>
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+                <div className="hidden lg:flex flex-col gap-4 pt-4 pl-4">
+                  <p className="text-md font-serif font-bold">Quick Links</p>
+                  <div className="flex flex-row flex-wrap gap-0 w-full">
+                    {links.map((link: any) => (
+                      <Link href={link.link} key={link.name}>
+                        <Button
+                          variant="link"
+                          key={link.name}
+                          className="pl-0 group opacity-60 hover:opacity-100"
+                        >
+                          <Plus className="max-w-3 max-h-3 group-hover:rotate-45 transition-all duration-300 group-hover:text-yellow-600" />
+                          {link.name}
+                        </Button>
+                      </Link>
+                    ))}
+                  </div>
                 </div>
               </div>
-              <div className="hidden lg:flex flex-col gap-4 pt-4 pl-4">
-                <p className="text-md font-serif font-bold">Quick Links</p>
-                <div className="flex flex-row flex-wrap gap-0 w-full">
-                  {links.map((link: any) => (
-                    <Link href={link.link} key={link.name}>
-                      <Button
-                        variant="link"
-                        key={link.name}
-                        className="pl-0 group opacity-60 hover:opacity-100"
-                      >
-                        <Plus className="max-w-3 max-h-3 group-hover:rotate-45 transition-all duration-300 group-hover:text-yellow-600" />
-                        {link.name}
-                      </Button>
-                    </Link>
-                  ))}
+              <SheetFooter className="text-sm font-sans bottom-2 items-end justify-end w-full">
+                <div className="flex flex-row gap-4">
+                  <Facebook className="min-w-6 min-h-6 text-white/70 hover:text-yellow-600 stroke-1" />
+                  <Instagram className="min-w-6 min-h-6 text-white/70 hover:text-yellow-600 stroke-1" />
+                  <Linkedin className="min-w-6 min-h-6 text-white/70 hover:text-yellow-600 stroke-1" />
+                  <Youtube className="min-w-6 min-h-6 text-white/70 hover:text-yellow-600 stroke-1" />
+                  |
+                  <Inbox className="min-w-6 min-h-6 text-white/70 hover:text-yellow-600 stroke-1" />
+                  <Phone className="min-w-6 min-h-6 text-white/70 hover:text-yellow-600 stroke-1" />
                 </div>
-              </div>
-            </div>
-            <SheetFooter className="opacity-50 text-sm font-sans bottom-2 items-end justify-end">
-              <div className="flex flex-row gap-4">
-                <Facebook className="min-w-6 min-h-6 text-yellow-700 stroke-1" />
-                <Instagram className="min-w-6 min-h-6 text-yellow-700 stroke-1" />
-                <Linkedin className="min-w-6 min-h-6 text-yellow-700 stroke-1" />
-                <Youtube className="min-w-6 min-h-6 text-yellow-700 stroke-1" />
-              </div>
-            </SheetFooter>
-          </SheetContent>
-        </Sheet>
+              </SheetFooter>
+            </SheetContent>
+          </Sheet>
+        </div>
       </div>
     </nav>
   );

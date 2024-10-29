@@ -17,31 +17,40 @@ import Image from "next/image";
 export default function LandingPage() {
   return (
     <main>
-      <div className="flex flex-col gap-8 items-center justify-start w-full min-h-screen lg:p-10 max-w-6xl mx-auto">
-        <div className="absolute w-full h-screen top-10 left-0 -z-10">
+      <div className="flex flex-col gap-8 items-center justify-start w-full min-h-screen p-0 max-w-6xl mx-auto">
+        <div className="absolute w-full h-screen top-0 left-0 -z-10">
           <Image
             src="/villa/grlv_3.webp"
             alt="Golden Retreat Lombok Villa"
             width={2000}
             height={2000}
-            className="w-full h-[100vh] lg:h-auto  aspect-video object-cover rounded-lg brightness-75 "
+            className="w-full h-[100vh] lg:h-auto  aspect-video object-cover rounded-lg brightness-50"
           />
         </div>
-        <div className="flex flex-col gap-4 items-center justify-center lg:py-32 text-white w-full min-h-screen">
-          <p className="uppercase font-cinzel font-bold text-2xl tracking-widest">
-            Welcome to
-          </p>
+        <div className="flex flex-col gap-4 items-center lg:justify-start justify-between px-0 lg:pb-32 text-white w-full min-h-[90vh] py-10">
           <Image
-            src="/gr_logo.png"
+            src="/brand/logo_full.png"
             alt="Golden Retreat Lombok Villa"
             width={1000}
             height={500}
-            className="w-full h-full lg:h-fit object-contain lg:-mb-20 -mb-10 drop-shadow-xl"
+            className="lg:w-80 w-60 h-fit lg:h-fit object-contain mb-20 drop-shadow-xl"
           />
-          <p className="uppercase font-cinzelD font-bold text-2xl lg:text-5xl tracking-widest opacity-70 mb-32">
-            Phase 1
-          </p>
-          <Button variant="default" className="">
+          <div className="flex flex-col items-center justify-center gap-4 -mt-40 lg:mt-20">
+            <p className="uppercase font-cinzel font-bold text-xl lg:text-2xl tracking-widest">
+              Welcome to
+            </p>
+            <Image
+              src="/gr_logo.png"
+              alt="Golden Retreat Lombok Villa"
+              width={1000}
+              height={500}
+              className="lg:w-[80vw] w-[100vw] h-full lg:h-fit object-contain drop-shadow-xl lg:-mb-20 -mb-10"
+            />
+            <p className="uppercase font-cinzelD font-bold text-2xl lg:text-5xl tracking-widest opacity-70">
+              Phase 1
+            </p>
+          </div>
+          <Button variant="default" className="lg:hidden flex">
             Learn More
           </Button>
         </div>
