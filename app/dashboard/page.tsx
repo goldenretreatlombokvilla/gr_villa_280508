@@ -1,3 +1,4 @@
+import Presentation from "@/components/dashboard/presentation";
 import TodoList from "@/components/dashboard/todolist";
 import { Button } from "@/components/ui/button";
 import {
@@ -12,17 +13,15 @@ import { Inbox, Plus } from "lucide-react";
 
 export default function Dashboard() {
   return (
-    <div className="flex flex-col items-start justify-start min-h-screen font-[family-name:var(--font-geist-sans)] px-4 lg:px-10">
-      <main className="flex flex-col gap-4 items-center justify-center">
+    <div className="flex flex-col items-center justify-start min-h-screen px-10 lg:px-52 mx-auto font-sans">
+      <main className="flex flex-col gap-4 items-start justify-center">
         <div className="flex flex-col gap-2 items-start py-10">
-          <h1 className="text-4xl font-bold">
-            Golden Retreat Marketing Project
-          </h1>
-          <p className="text-lg opacity-70">Dashboard</p>
+          <p className="text-3xl font-bold">Dashboard</p>
         </div>
       </main>
-      <section className="flex flex-col gap-4 items-center justify-center">
+      <section className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start justify-center">
         <TodoList />
+        <Presentation />
       </section>
     </div>
   );

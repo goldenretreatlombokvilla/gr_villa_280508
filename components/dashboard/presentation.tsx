@@ -20,49 +20,39 @@ const todoList = [
     status: "completed"
   },
   {
-    title: "Website Design & Wireframing",
-    date: "23 Oct",
-    status: "completed"
-  },
-  {
-    title: "Development & Coding",
+    title: "Design & CopyWriting",
     date: "28 Oct",
     status: "inprogress"
   },
   {
-    title: "Testing & Troubleshooting",
-    date: "1 Nov",
+    title: "Final Client Review",
+    date: "4 Nov",
     status: "pending"
   },
   {
-    title: "Client Review",
+    title: "Adjustment & Finalization",
     date: "5 Nov",
     status: "pending"
   },
   {
-    title: "Website Launch",
-    date: "15 Nov",
-    status: "pending"
-  },
-  {
-    title: "Post-Launch Support",
-    date: "16 Nov",
+    title: "Handover",
+    date: "11 Nov",
     status: "pending"
   }
 ];
 
-export default function TodoList() {
+export default function Presentation() {
   return (
     <div className="flex flex-col gap-4 items-center justify-center w-full">
       <Card className="w-full">
         <CardHeader>
           <CardTitle className="text-xl font-bold">
-            Website Development
+            Presentation Design
           </CardTitle>
           <CardDescription>Task List</CardDescription>
         </CardHeader>
         <CardContent>
-          <ul className="flex flex-col gap-4 items-start w-full list-disc">
+          <ul className="flex flex-col gap-4 items-start w-full">
             {todoList.map((item) => (
               <li key={item.title} className="flex flex-row gap-4 w-full">
                 <div className="flex flex-row items-center justify-between gap-4 w-full">
@@ -92,24 +82,13 @@ export default function TodoList() {
         <CardFooter className="flex flex-col gap-2 items-start pt-4">
           <p className="text-md font-bold">Remarks</p>
           <p className="text-sm opacity-70">
-            The website development is currently under progress. I am currently
-            designing the homepage and trying out several designs. Can view the
-            WIP through the links below.
+            Currently designing the presentation deck to match website design.
+            Will share the first draft of the design on the 30th of Nov
           </p>
           <p className="text-md font-bold pt-4">Links</p>
           <div className="flex flex-row gap-2">
             <p className="text-sm opacity-70 underline">
-              <Link href="https://grvilla.vercel.app/" target="_blank">
-                Homepage 1
-              </Link>
-            </p>
-            <p className="text-sm opacity-70 underline">
-              <Link
-                href="https://grvilla.vercel.app/landing-page"
-                target="_blank"
-              >
-                Homepage 2 (alternate design)
-              </Link>
+              <Link href="#">Presentation File (TBC)</Link>
             </p>
           </div>
         </CardFooter>
