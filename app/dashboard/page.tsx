@@ -19,7 +19,7 @@ export default function Dashboard() {
           <p className="text-3xl font-bold">Dashboard</p>
         </div>
       </main>
-      <section className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start justify-center">
+      <section className="grid grid-cols-1 lg:grid-cols-2 gap-10 pb-8 items-start justify-center ">
         <TodoList />
         <Presentation />
       </section>
