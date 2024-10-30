@@ -34,12 +34,22 @@ const gallery = [
 export default function Gallery() {
   return (
     <div className="flex flex-col gap-8 items-center justify-start w-full p-10 max-w-6xl mx-auto">
-      <div className="flex flex-col gap-4 items-start w-full">
-        <h1 className="text-4xl font-bold font-cinzel">Gallery</h1>
-        <p className="text-md font-sans text-gray-600">
-          A glimpse into the idyllic lifestyle that awaits you at Golden Retreat
-          Lombok Villa.
-        </p>
+      <div className="bg-stone-900 rounded-lg py-8 px-8 flex flex-row gap-6 items-center justify-start w-full divide-x-2 divide-white/50">
+        <div className="flex items-center justify-center px-2">
+          <Image
+            src="/brand/logo_icon.png"
+            alt="Golden Retreat Lombok Villa"
+            width={200}
+            height={200}
+            className="w-14 h-14 object-contain aspect-square drop-shadow-xl"
+          />
+        </div>
+        <div className="flex flex-col gap-0 items-start w-full pl-10">
+          <h1 className="text-5xl font-bold font-cinzel text-white ">
+            Gallery
+          </h1>
+          <p className="text-white ">The Villa</p>
+        </div>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-3 items-center justify-center gap-8">
         {gallery.map((item) => (

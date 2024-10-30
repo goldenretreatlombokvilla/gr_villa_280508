@@ -19,6 +19,25 @@ export default function Invest() {
         height={200}
         className="w-full h-auto aspect-video object-cover rounded-lg"
       />
+      <div className="flex flex-col gap-4 items-center justify-center w-full py-10 relative">
+        <Image
+          src="/lombok/beach-sand.jpg"
+          alt="Lombok Beautiful Sandy Beaches and Mountain Views"
+          width={1000}
+          height={700}
+          className="w-full h-96 object-cover aspect-video rounded-lg brightness-50"
+        />
+        <div className="flex flex-col gap-4 items-center text-center justify-between w-full absolute px-20">
+          <p className="text-yellow-600 font-cinzel font-bold uppercase text-lg">
+            Did You Know
+          </p>
+          <p className="text-white font-cinzel text-5xl font-extrabold drop-shadow-lg">
+            Lombok receives over{" "}
+            <span className="text-yellow-600">A MILLION</span> tourist every
+            year, but only has enough hotels and resorts to lodge 24,000!
+          </p>
+        </div>
+      </div>
     </div>
   );
 }

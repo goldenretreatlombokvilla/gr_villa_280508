@@ -136,7 +136,7 @@ export default function Nav() {
         <div className="fixed p-2">
           <Sheet>
             <SheetTrigger asChild>
-              <div className="p-2 bg-stone-900 rounded-full hover:ring-1 ring-yellow-600 group">
+              <div className="p-2 bg-stone-900 rounded-full ring-1 ring-stone-300/20 hover:ring-yellow-600 group">
                 <Menu className="min-w-6 min-h-6 text-white group-hover:text-yellow-600 opacity-70 stroke-2 hover:opacity-100" />
               </div>
             </SheetTrigger>

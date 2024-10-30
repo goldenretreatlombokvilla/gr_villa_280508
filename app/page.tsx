@@ -18,16 +18,16 @@ export default function LandingPage() {
   return (
     <main>
       <div className="flex flex-col gap-8 items-center justify-start w-full min-h-screen p-0 max-w-6xl mx-auto">
-        <div className="absolute w-full h-screen top-0 left-0 -z-10">
+        <div className="absolute w-full h-[100vh] top-0 left-0 -z-10">
           <Image
             src="/villa/grlv_3.webp"
             alt="Golden Retreat Lombok Villa"
             width={2000}
             height={2000}
-            className="w-full h-[100vh] lg:h-auto  aspect-video object-cover rounded-lg brightness-50"
+            className="w-full h-[100vh] lg:h-auto  aspect-video object-cover brightness-50"
           />
         </div>
-        <div className="flex flex-col gap-4 items-center lg:justify-start justify-between px-0 lg:pb-32 text-white w-full min-h-[90vh] py-10">
+        <div className="flex flex-col gap-4 items-center lg:justify-start justify-between px-0 lg:pb-32 text-white w-full min-h-[100vh] py-10">
           <Image
             src="/brand/logo_full.png"
             alt="Golden Retreat Lombok Villa"
@@ -36,7 +36,7 @@ export default function LandingPage() {
             className="lg:w-80 w-60 h-fit lg:h-fit object-contain mb-20 drop-shadow-xl"
           />
           <div className="flex flex-col items-center justify-center gap-4 -mt-40 lg:mt-20">
-            <p className="uppercase font-cinzel font-bold text-xl lg:text-2xl tracking-widest">
+            <p className="uppercase font-cinzel font-bold text-lg lg:text-2xl tracking-widest text-yellow-600">
               Welcome to
             </p>
             <Image
@@ -46,8 +46,8 @@ export default function LandingPage() {
               height={500}
               className="lg:w-[80vw] w-[100vw] h-full lg:h-fit object-contain drop-shadow-xl lg:-mb-20 -mb-10"
             />
-            <p className="uppercase font-cinzelD font-bold text-2xl lg:text-5xl tracking-widest opacity-70">
-              Phase 1
+            <p className="uppercase font-cinzelD font-bold text-xl lg:text-2xl tracking-widest text-yellow-600">
+              - Phase 1 -
             </p>
           </div>
           <Button variant="default" className="lg:hidden flex">
@@ -56,23 +56,23 @@ export default function LandingPage() {
         </div>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-10 lg:gap-4 items-center justify-center w-full min-h-screen lg:px-52 px-10 py-20">
-        <div className="flex flex-col gap-6">
-          <p className="font-cinzel text-yellow-800 text-4xl lg:text-5xl tracking-widest opacity-70">
-            Your Luxurious Home Away From Home
+        <div className="flex flex-col gap-6 text-balance">
+          <p className="font-cinzel text-yellow-800 text-4xl  lg:text-7xl tracking-wide">
+            <span className="font-bold">Luxurious</span> Home Away From Home
           </p>
-          <p className="font-sans text-md opacity-70">
+          <p className="font-sans font-semibold text-stone-900 text-md leading-7">
             Experience unparalleled luxury and exclusivity at our stunning new
             luxury villas in Lombok Island, where every detail has been
             meticulously crafted with the end user in mind.
           </p>
-          <p className="font-sans text-md opacity-70">
+          <p className="font-sans text-md text-stone-900/50 leading-7">
             Nestled in a pristine location with breathtaking views, our
             properties stand out from the competition with their exquisite
             design, top-notch amenities, and exceptional service.
           </p>
-          <p className="font-sans text-md opacity-70">
+          <p className="font-sans text-md text-stone-900/50 leading-7">
             Trust us to turn your dream of owning a luxurious villa in Lombok
-            into a reality - your perfect getaway awaits!
+            into a reality - your home away from home!
           </p>
           <Button variant="default" className="w-fit">
             Visit Villas
@@ -89,11 +89,11 @@ export default function LandingPage() {
         </div>
       </div>
       <div className="flex flex-col gap-4 items-center justify-start w-full min-h-screen px-10 lg:px-52 py-20">
-        <p className="font-cinzeldeco text-yellow-800 text-5xl tracking-widest">
+        <p className="font-cinzel text-yellow-800 font-bold text-5xl tracking-widest">
           Luxury Villas
         </p>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-4">
-          <Card className="flex flex-col w-full lg:p-0 bg-transparent shadow-none border-none">
+          <Card className="flex flex-col w-full lg:p-0 bg-transparent shadow-none border-none group">
             <CardContent className="p-4">
               <div className="flex flex-col  gap-6 lg:gap-10 items-center justify-center">
                 <Image
@@ -103,24 +103,26 @@ export default function LandingPage() {
                   height={300}
                   className="w-full h-auto  object-cover aspect-video rounded-lg shadow-lg"
                 />
-                <div className="grid grid-cols-2 lg:grid-cols-2  gap-2 w-full p-6 lg:text-xl text-md ring-1 ring-yellow-700">
-                  <p className="text-sm opacity-70 font-sans mb-8">
+                <div className="grid grid-cols-2 lg:grid-cols-2 rounded-lg  gap-2 w-full p-6 lg:text-xl text-md ring-1 ring-yellow-600 group-hover:shadow-lg">
+                  <p className="text-sm text-yellow-700 font-sans mb-8">
                     2 bedroom | 150 sqm
                   </p>
                   <p className="text-2xl lg:text-3xl font-bold uppercase col-span-2 text-yellow-700">
                     Premium Luxury Villa
                   </p>
                   <div className="col-span-2 flex flex-row gap-4 items-center justify-between">
-                    <p className="text-sm opacity-70 font-sans">$ 200,000</p>
+                    <p className="text-sm text-yellow-700 font-sans">
+                      USD 200,000
+                    </p>
                     <Button variant="ghost" size="icon">
-                      <ArrowRightCircle className="min-w-6 min-h-6 stroke-1" />
+                      <ArrowRightCircle className="min-w-6 min-h-6 stroke-1 text-yellow-600 hover:text-yellow-400 group-hover:animate-bounce" />
                     </Button>
                   </div>
                 </div>
               </div>
             </CardContent>
           </Card>
-          <Card className="flex flex-col w-full lg:p-0 bg-transparent shadow-none border-none">
+          <Card className="flex flex-col w-full lg:p-0 bg-transparent shadow-none border-none group">
             <CardContent className="p-4">
               <div className="flex flex-col  gap-6 lg:gap-10 items-center justify-center">
                 <Image
@@ -130,17 +132,19 @@ export default function LandingPage() {
                   height={300}
                   className="w-full h-auto  object-cover aspect-video rounded-lg shadow-lg"
                 />
-                <div className="grid grid-cols-2 lg:grid-cols-2  gap-2 w-full p-6 lg:text-xl text-md ring-1 ring-yellow-700 ">
-                  <p className="text-sm opacity-70 font-sans mb-8">
+                <div className="grid grid-cols-2 lg:grid-cols-2 rounded-lg  gap-2 w-full p-6 lg:text-xl text-md ring-1 ring-yellow-600 group-hover:shadow-lg">
+                  <p className="text-sm text-yellow-700 font-sans mb-8">
                     3 bedroom | 187 sqm
                   </p>
                   <p className="text-2xl lg:text-3xl font-bold uppercase col-span-2 text-yellow-700">
                     Superior Luxury Villa
                   </p>
                   <div className="col-span-2 flex flex-row gap-4 items-center justify-between">
-                    <p className="text-sm opacity-70 font-sans">$ 250,000</p>
+                    <p className="text-sm text-yellow-700 font-sans">
+                      USD 250,000
+                    </p>
                     <Button variant="ghost" size="icon">
-                      <ArrowRightCircle className="min-w-6 min-h-6 stroke-1" />
+                      <ArrowRightCircle className="min-w-6 min-h-6 stroke-1 text-yellow-600 hover:text-yellow-400 group-hover:animate-bounce" />
                     </Button>
                   </div>
                 </div>
@@ -150,7 +154,9 @@ export default function LandingPage() {
         </div>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-start justify-start w-full px-10 lg:px-52 py-20">
-        <p className="text-5xl font-cinzel text-yellow-700">The Villa</p>
+        <p className="text-7xl font-cinzel font-bold text-yellow-700">
+          The Villa
+        </p>
         <Image
           src="/villa/grlv_4.webp"
           alt="Golden Retreat Lombok Villa"
@@ -158,12 +164,12 @@ export default function LandingPage() {
           height={200}
           className="w-full h-auto aspect-video object-cover rounded-lg"
         />
-        <p className="text-md font-sans opacity-70">
+        <p className="text-md font-sans text-stone-900 text-pretty">
           Whether you are an investor seeking a profitable opportunity or a
           holiday home owner looking for a slice of paradise, our villas offer
           the perfect blend of sophistication and comfort.{" "}
         </p>
-        <div className="hidden lg:flex flex-row items-center justify-center py-4 ring-1 ring-yellow-700 text-yellow-700 font-sans text-sm opacity-70 italic">
+        <div className="hidden lg:flex flex-row items-center justify-center py-4 ring-1 ring-yellow-700 text-yellow-700 font-sans text-sm italic rounded-lg">
           Exquisite villa with private pool and deck, perfect for luxury living.
         </div>
       </div>
@@ -182,16 +188,16 @@ export default function LandingPage() {
           height={200}
           className="w-full h-auto aspect-video object-cover rounded-lg"
         />
-        <div className="hidden lg:flex flex-row items-center justify-center py-4 ring-1 ring-yellow-700 text-yellow-700 font-sans text-sm opacity-70 italic">
+        <div className="hidden lg:flex flex-row items-center justify-center py-4 ring-1 ring-yellow-700 text-yellow-700 font-sans text-sm italic rounded-lg">
           A lavishly designed bespoke bathroom.
         </div>
-        <div className="hidden lg:flex flex-row items-center justify-center py-4 ring-1 ring-yellow-700 text-yellow-700 font-sans text-sm opacity-70 italic">
+        <div className="hidden lg:flex flex-row items-center justify-center py-4 ring-1 ring-yellow-700 text-yellow-700 font-sans text-sm italic rounded-lg">
           Luxury living room, with top of the line furniture, wide screen TV,
           best in class sound system.{" "}
         </div>
       </div>
       <div className="flex flex-col gap-4 items-center justify-start w-full px-10 lg:px-52 py-20">
-        <p className="text-5xl font-cinzel text-yellow-700">
+        <p className="text-5xl font-cinzel text-yellow-700 font-semibold">
           In House Facilities
         </p>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-4 ">
@@ -205,8 +211,8 @@ export default function LandingPage() {
                   height={300}
                   className="w-full h-auto  object-cover aspect-video rounded-lg shadow-lg"
                 />
-                <div className="flex flex-col gap-2 w-full p-6 lg:text-xl text-md ring-1 ring-yellow-700 ">
-                  <p className="text-2xl lg:text-2xl font-bold uppercase col-span-2 text-yellow-700">
+                <div className="flex flex-col gap-2 w-full p-6 lg:text-xl text-md ring-1 ring-yellow-700 rounded-lg">
+                  <p className="text-2xl font-bold uppercase text-yellow-700">
                     Restaurant, Bar & Lounge{" "}
                   </p>
                   <p className="text-sm opacity-70 font-sans">
@@ -228,8 +234,8 @@ export default function LandingPage() {
                   height={300}
                   className="w-full h-auto  object-cover aspect-video rounded-lg shadow-lg"
                 />
-                <div className="flex flex-col gap-2 w-full h-full p-6 lg:text-xl text-md ring-1 ring-yellow-700 ">
-                  <p className="text-2xl lg:text-2xl font-bold uppercase col-span-2 text-yellow-700">
+                <div className="flex flex-col gap-2 w-full h-full p-6 lg:text-xl text-md ring-1 ring-yellow-700 rounded-lg">
+                  <p className="text-2xl font-bold uppercase text-yellow-700">
                     Wellness Spa & Gymnasium
                   </p>
                   <p className="text-sm opacity-70 font-sans">
@@ -250,8 +256,8 @@ export default function LandingPage() {
                   height={300}
                   className="w-full h-auto  object-cover aspect-video rounded-lg shadow-lg"
                 />
-                <div className="flex flex-col gap-2 w-full h-full p-6 lg:text-xl text-md ring-1 ring-yellow-700 ">
-                  <p className="text-2xl lg:text-2xl font-bold uppercase col-span-2 text-yellow-700">
+                <div className="flex flex-col gap-2 w-full h-full p-6 lg:text-xl text-md ring-1 ring-yellow-700 rounded-lg">
+                  <p className="text-2xl font-bold uppercase text-yellow-700">
                     Serenity Garden & Koi Pond
                   </p>
                   <p className="text-sm opacity-70 font-sans">
