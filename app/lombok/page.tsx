@@ -56,7 +56,13 @@ const villaImages = [
 export default function Lombok() {
   return (
     <div className="flex flex-col gap-8 items-center justify-start w-full p-10 max-w-6xl mx-auto">
-      <div className="bg-stone-900 rounded-lg py-8 px-8 flex flex-row gap-6 items-center justify-start w-full divide-x-2 divide-white/50">
+      <div className="bg-gradient-to-br from-yellow-800 to-stone-900 rounded-lg py-8 px-8 flex flex-row gap-6 items-center justify-start w-full">
+        <div className="flex flex-col gap-0 items-start w-full">
+          <h1 className="text-3xl lg:text-5xl  font-bold font-cinzel text-white ">
+            Lombok
+          </h1>
+          <p className="text-white ">A Thriving Tourist Destination</p>
+        </div>
         <div className="flex items-center justify-center px-2">
           <Image
             src="/brand/logo_icon.png"
@@ -65,10 +71,6 @@ export default function Lombok() {
             height={200}
             className="w-14 h-14 object-contain aspect-square drop-shadow-xl"
           />
-        </div>
-        <div className="flex flex-col gap-0 items-start w-full pl-10">
-          <h1 className="text-5xl font-bold font-cinzel text-white ">Lombok</h1>
-          <p className="text-white ">A Triving Tourist Destination</p>
         </div>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-10 lg:gap-10 items-center justify-center w-full">

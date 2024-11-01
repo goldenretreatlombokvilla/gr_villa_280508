@@ -34,7 +34,13 @@ const gallery = [
 export default function Gallery() {
   return (
     <div className="flex flex-col gap-8 items-center justify-start w-full p-10 max-w-6xl mx-auto">
-      <div className="bg-stone-900 rounded-lg py-8 px-8 flex flex-row gap-6 items-center justify-start w-full divide-x-2 divide-white/50">
+      <div className="bg-gradient-to-br from-yellow-800 to-stone-900  rounded-lg py-8 px-8 flex flex-row gap-6 items-center justify-start w-full">
+        <div className="flex flex-col gap-0 items-start w-full">
+          <h1 className="text-3xl lg:text-5xl  font-bold font-cinzel text-white ">
+            Gallery
+          </h1>
+          <p className="text-white ">Luxury Villas</p>
+        </div>
         <div className="flex items-center justify-center px-2">
           <Image
             src="/brand/logo_icon.png"
@@ -44,14 +50,8 @@ export default function Gallery() {
             className="w-14 h-14 object-contain aspect-square drop-shadow-xl"
           />
         </div>
-        <div className="flex flex-col gap-0 items-start w-full pl-10">
-          <h1 className="text-5xl font-bold font-cinzel text-white ">
-            Gallery
-          </h1>
-          <p className="text-white ">The Villa</p>
-        </div>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-3 items-center justify-center gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-center gap-8">
         {gallery.map((item) => (
           <div
             key={item.title}
