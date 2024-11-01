@@ -12,6 +12,7 @@ import {
 } from "../ui/card";
 import { Input } from "../ui/input";
 import Link from "next/link";
+import { Badge } from "../ui/badge";
 
 const todoList = [
   {
@@ -22,12 +23,12 @@ const todoList = [
   {
     title: "Design & CopyWriting",
     date: "28 Oct",
-    status: "inprogress"
+    status: "completed"
   },
   {
-    title: "Final Client Review",
+    title: "Client Review",
     date: "4 Nov",
-    status: "pending"
+    status: "inprogress"
   },
   {
     title: "Adjustment & Finalization",
@@ -63,9 +64,15 @@ export default function Presentation() {
                     </p>
                   )}
                   <div className="flex flex-row gap-4">
-                    <p className="text-xs font-normal opacity-70">
-                      {item.date}
-                    </p>
+                    {item.status === "completed" ? (
+                      <p className="text-xs font-normal line-through opacity-70 text-red-600">
+                        {item.date}
+                      </p>
+                    ) : (
+                      <p className="text-xs font-normal opacity-70">
+                        {item.date}
+                      </p>
+                    )}
                     <Input
                       type="checkbox"
                       className="w-4 h-4"
@@ -82,14 +89,18 @@ export default function Presentation() {
         <CardFooter className="flex flex-col gap-2 items-start pt-4">
           <p className="text-md font-bold">Remarks</p>
           <p className="text-sm opacity-70">
-            Currently designing the presentation deck to match website design.
-            Will share the first draft of the design on the 30th of Nov
+            Waiting feedback from client - 1 Nov 2024
           </p>
           <p className="text-md font-bold pt-4">Links</p>
           <div className="flex flex-row gap-2">
             <p className="text-sm opacity-70 underline">
-              <Link href="#">Presentation File (TBC)</Link>
+              <Link href="/dashboard/presentation" target="_blank">
+                Presentation Deck
+              </Link>{" "}
             </p>
+            <Badge variant={"default"} className="text-green-700 bg-green-100">
+              New!
+            </Badge>
           </div>
         </CardFooter>
       </Card>

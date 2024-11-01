@@ -30,13 +30,13 @@ const todoList = [
     status: "inprogress"
   },
   {
-    title: "Testing & Troubleshooting",
-    date: "1 Nov",
+    title: "Client Review",
+    date: "7 Nov",
     status: "pending"
   },
   {
-    title: "Client Review",
-    date: "5 Nov",
+    title: "Testing & Troubleshooting",
+    date: "10 Nov",
     status: "pending"
   },
   {
@@ -73,9 +73,15 @@ export default function TodoList() {
                     </p>
                   )}
                   <div className="flex flex-row gap-4">
-                    <p className="text-xs font-normal opacity-70">
-                      {item.date}
-                    </p>
+                    {item.status === "completed" ? (
+                      <p className="text-xs font-normal line-through opacity-70 text-red-600">
+                        {item.date}
+                      </p>
+                    ) : (
+                      <p className="text-xs font-normal opacity-70">
+                        {item.date}
+                      </p>
+                    )}
                     <Input
                       type="checkbox"
                       className="w-4 h-4"
