@@ -28,17 +28,23 @@ export default function Creatives() {
           </p>
         </div>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
-        {creatives.map((item: any) => (
-          <Image
-            src={item.link}
-            alt={item.title}
-            key={item.title}
-            width={500}
-            height={200}
-            className="w-full h-auto aspect-square object-contain shadow-md"
-          />
-        ))}
+      <div className="flex flex-col gap-4">
+        <p className="text-xl opacity-70 font-bold">
+          Week 1 - Creative Content
+        </p>
+        <p className="font-sans text-md opacity-70">4 Nov - 8 Nov 2024</p>
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
+          {creatives.map((item: any) => (
+            <Image
+              src={item.link}
+              alt={item.title}
+              key={item.title}
+              width={500}
+              height={200}
+              className="w-full h-auto aspect-square object-contain shadow-md"
+            />
+          ))}
+        </div>
       </div>
     </div>
   );
