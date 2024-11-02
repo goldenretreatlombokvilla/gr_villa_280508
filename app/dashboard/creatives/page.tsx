@@ -33,6 +33,7 @@ export default function Creatives() {
           <Image
             src={item.link}
             alt={item.title}
+            key={item.title}
             width={500}
             height={200}
             className="w-full h-auto aspect-square object-contain shadow-md"
