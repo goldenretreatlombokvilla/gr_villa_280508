@@ -10,10 +10,6 @@ const creatives = [
   {
     title: "draft 2",
     link: "/creatives/post2.jpg"
-  },
-  {
-    title: "draft 3",
-    link: "/creatives/post3.jpg"
   }
 ];
 
@@ -33,7 +29,7 @@ export default function Creatives() {
           Week 1 - Creative Content
         </p>
         <p className="font-sans text-md opacity-70">4 Nov - 8 Nov 2024</p>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 w-full gap-10">
           {creatives.map((item: any) => (
             <Image
               src={item.link}

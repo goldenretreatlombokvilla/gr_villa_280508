@@ -12,6 +12,7 @@ import {
 } from "../ui/card";
 import { Input } from "../ui/input";
 import Link from "next/link";
+import { Badge } from "../ui/badge";
 
 const todoList = [
   {
@@ -75,19 +76,38 @@ export default function Socmed() {
         <CardFooter className="flex flex-col gap-2 items-start pt-4">
           <p className="text-md font-bold">Remarks</p>
           <p className="text-sm opacity-70">
-            Working on calendar and schedule - 1 Nov 2024
+            <span className="text-red-700">Pending payment (USD 750)</span>{" "}
+            refer to{" "}
+            <Button
+              variant="secondary"
+              size="sm"
+              className="h-4 text-sm font-normal opacity-70 underline p-0 m-0 tracking-normal"
+              onClick={() => window.open("/onboarding.pdf")}
+            >
+              Onboarding Document
+            </Button>
           </p>
           <p className="text-md font-bold pt-4">Designs Links</p>
           <div className="flex flex-row gap-2">
+            <Button
+              variant="secondary"
+              size="sm"
+              className="h-4 text-sm font-normal opacity-70 underline p-0 m-0 tracking-normal"
+              onClick={() => window.open("/strat.pdf")}
+            >
+              Content Marketing Strategy
+            </Button>
+            <Badge variant={"default"} className="text-green-700 bg-green-100">
+              New!
+            </Badge>
+          </div>
+          <div className="flex flex-row gap-2">
             <p className="text-sm opacity-70 underline">
-              <Link href="#">Post 1</Link>
+              <Link href="/dashboard/creatives">Week 1 Creatives</Link>
             </p>
-            <p className="text-sm opacity-70 underline">
-              <Link href="#">Post 2</Link>
-            </p>
-            <p className="text-sm opacity-70 underline">
-              <Link href="#">Post 3</Link>
-            </p>
+            <Badge variant={"default"} className="text-green-700 bg-green-100">
+              New!
+            </Badge>
           </div>
         </CardFooter>
       </Card>

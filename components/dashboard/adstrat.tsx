@@ -12,6 +12,7 @@ import {
 } from "../ui/card";
 import { Input } from "../ui/input";
 import Link from "next/link";
+import { Badge } from "../ui/badge";
 
 const todoList = [
   {
@@ -66,31 +67,37 @@ export default function Adstrat() {
               <li>Villa Features</li>
             </ul>
           </div>
-          <div className="flex flex-col col-span-2 gap-2">
-            <p className="font-bold">Targeted Audience</p>
-            <ul className="list-inside list-disc">
-              <li>Gender: Male</li>
-              <li>Age: 35+ years old</li>
-              <li>Net Worth: Mid to High</li>
-              <li>Occupation: C-suite, Entreprenuers & Celebrities</li>
-              <li>Interest: MotoGP, Travel, Luxury</li>
-              <li>
-                Behaviour: Frequent Flyers, Investment Property, Private Living
-              </li>
-            </ul>
-          </div>
         </CardContent>
         <hr></hr>
         <CardFooter className="flex flex-col gap-2 items-start pt-4">
           <p className="text-md font-bold">Remarks</p>
           <p className="text-sm opacity-70">
-            Working on ad spend strategy and targeting document - 1 Nov 2024
+            <span className="">
+              Next payment for Ad Spend : USD 750 (by 16 NOV 2024)
+            </span>{" "}
+            {/* refer to{" "}
+            <Button
+              variant="secondary"
+              size="sm"
+              className="h-4 text-sm font-normal opacity-70 underline p-0 m-0 tracking-normal"
+              onClick={() => window.open("/onboarding.pdf")}
+            >
+              Onboarding Document
+            </Button> */}
           </p>
           <p className="text-md font-bold pt-4">Links</p>
           <div className="flex flex-row gap-2">
-            <p className="text-sm opacity-70 underline">
-              <Link href="#">Ad Spend Strategy File (TBC)</Link>
-            </p>
+            <Button
+              variant="secondary"
+              size="sm"
+              className="h-4 text-sm font-normal opacity-70 underline p-0 m-0 tracking-normal"
+              onClick={() => window.open("/strat.pdf")}
+            >
+              Paid Marketing Strategy (from page 6)
+            </Button>
+            <Badge variant={"default"} className="text-green-700 bg-green-100">
+              New!
+            </Badge>
           </div>
         </CardFooter>
       </Card>

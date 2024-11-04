@@ -12,6 +12,7 @@ import {
 } from "../ui/card";
 import { Input } from "../ui/input";
 import Link from "next/link";
+import { Badge } from "../ui/badge";
 
 const todoList = [
   {
@@ -97,26 +98,44 @@ export default function TodoList() {
         <hr></hr>
         <CardFooter className="flex flex-col gap-2 items-start pt-4">
           <p className="text-md font-bold">Remarks</p>
-          <p className="text-sm opacity-70">
-            The website development is currently under progress. I am currently
-            designing the homepage and trying out several designs. Can view the
-            WIP through the links below.
+          <p className="text-sm">Domain Options:</p>
+          <ul className="list-disc text-sm list-inside">
+            <li>
+              <span className="line-through pr-4">goldenretreat.com</span>
+              <Badge variant={"destructive"}>Taken</Badge>
+            </li>
+            <li>goldenretreat.villas</li>
+            <li>goldenretreatlombok.com</li>
+            <li>goldenretreatvillas.com</li>
+            <li>goldenretreat.in</li>
+          </ul>
+          <p className="text-sm italic">
+            Send Sulaiman a message to pick which one to register as the
+            official Golden Retreat Lombok Villa domain name.
           </p>
           <p className="text-md font-bold pt-4">Links</p>
           <div className="flex flex-row gap-2">
             <p className="text-sm opacity-70 underline">
-              <Link href="https://grvilla.vercel.app/" target="_blank">
-                Homepage 1
+              <Link href="/" target="_blank">
+                Homepage
               </Link>
             </p>
             <p className="text-sm opacity-70 underline">
-              <Link
-                href="https://grvilla.vercel.app/landing-page"
-                target="_blank"
-              >
-                Homepage 2 (alternate design)
+              <Link href="/gallery" target="_blank">
+                Gallery
               </Link>
             </p>
+            <Badge variant={"default"} className="text-green-700 bg-green-100">
+              New!
+            </Badge>
+            <p className="text-sm opacity-70 underline">
+              <Link href="/lombok" target="_blank">
+                Lombok
+              </Link>
+            </p>
+            <Badge variant={"default"} className="text-green-700 bg-green-100">
+              New!
+            </Badge>
           </div>
         </CardFooter>
       </Card>
