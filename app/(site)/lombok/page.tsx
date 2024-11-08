@@ -17,6 +17,7 @@ import {
   Waves
 } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const villaImages = [
   {
@@ -64,13 +65,15 @@ export default function Lombok() {
           <p className="text-white ">A Thriving Tourist Destination</p>
         </div>
         <div className="flex items-center justify-center px-2">
-          <Image
-            src="/brand/logo_icon.png"
-            alt="Golden Retreat Lombok Villa"
-            width={200}
-            height={200}
-            className="w-14 h-14 object-contain aspect-square drop-shadow-xl"
-          />
+          <Link href="/">
+            <Image
+              src="/brand/logo_icon.png"
+              alt="Golden Retreat Lombok Villa"
+              width={200}
+              height={200}
+              className="w-14 h-14 object-contain aspect-square drop-shadow-xl"
+            />
+          </Link>
         </div>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-10 lg:gap-10 items-center justify-center w-full">
@@ -121,7 +124,7 @@ export default function Lombok() {
 
       <div className="flex flex-col gap-8 items-center justify-start w-full py-32">
         <p className="font-cinzel text-center text-5xl font-bold text-yellow-700">
-          Reasons to Travel to Lombok
+          Reasons to Invest In Lombok
         </p>
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-10 lg:gap-10 justify-center items-center py-4">
           <div className="flex flex-row lg:flex-col gap-4 items-center">

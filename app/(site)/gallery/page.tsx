@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const gallery = [
   {
@@ -42,13 +43,15 @@ export default function Gallery() {
           <p className="text-white ">Luxury Villas</p>
         </div>
         <div className="flex items-center justify-center px-2">
-          <Image
-            src="/brand/logo_icon.png"
-            alt="Golden Retreat Lombok Villa"
-            width={200}
-            height={200}
-            className="w-14 h-14 object-contain aspect-square drop-shadow-xl"
-          />
+          <Link href="/">
+            <Image
+              src="/brand/logo_icon.png"
+              alt="Golden Retreat Lombok Villa"
+              width={200}
+              height={200}
+              className="w-14 h-14 object-contain aspect-square drop-shadow-xl"
+            />
+          </Link>
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-center gap-8">

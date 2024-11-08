@@ -39,8 +39,12 @@ import { link } from "fs";
 
 const navItems = [
   {
-    name: "The Villa's",
+    name: "Home",
     link: "/"
+  },
+  {
+    name: "Villas",
+    link: "/villas"
   },
   {
     name: "Gallery",
