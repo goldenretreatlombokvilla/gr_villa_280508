@@ -19,46 +19,54 @@ const navCorp = [
     link: "/about"
   },
   {
-    name: "Our Team",
+    name: "Developer Profile",
     link: "/about"
   },
   {
-    name: "Sustainability",
+    name: "Management Profile",
     link: "/about"
+  },
+  {
+    name: "Contact Us",
+    link: "/contact"
   }
 ];
 
 const navServices = [
   {
-    name: "Investor Services",
+    name: "Overview",
     link: "/invest"
   },
   {
-    name: "Land Development",
+    name: "Services",
     link: "/invest"
   },
   {
-    name: "Villa Designs",
+    name: "Payment Structure",
+    link: "/invest"
+  },
+  {
+    name: "Legal Documentation",
     link: "/invest"
   }
 ];
 
 const navResources = [
   {
-    name: "Market Studies",
-    link: "/invest"
+    name: "Villa Design",
+    link: "/villa"
   },
   {
-    name: "Lombok Guide",
-    link: "/invest"
+    name: "The Land",
+    link: "/villa"
   },
   {
-    name: "News & Events",
-    link: "/invest"
+    name: "Facilities",
+    link: "/villa"
   },
   {
-    name: "Contact Us",
-    link: "/contact"
+    name: "Gallery",
+    link: "/gallery"
   }
 ];
 
@@ -76,7 +84,8 @@ export default function Footer() {
           </div>
           <div className="md:flex flex-row gap-2 items-center justify-start hidden">
             <p className="text-md italic font-serif text-secondary opacity-80">
-              Guarenteed ROI, Invest Now!
+              High Projected Yield;{" "}
+              <span className="font-bold">Invest Now!</span>
             </p>
           </div>
           <div className="flex flex-row gap-2 lg:gap-4 text-secondary">
@@ -107,9 +116,9 @@ export default function Footer() {
           </p>
         </div>
         <div className="flex flex-col gap-2 ">
-          <p className="text-xl font-serif font-bold ">The Company</p>
+          <p className="text-xl font-serif font-bold ">The Villas</p>
           <ul className="list-none space-y-2">
-            {navCorp.map((item: any) => (
+            {navResources.map((item: any) => (
               <li key={item.name}>
                 <Link
                   href={item.link}
@@ -122,7 +131,7 @@ export default function Footer() {
           </ul>
         </div>
         <div className="flex flex-col gap-2 ">
-          <p className="text-xl font-serif font-bold ">Services</p>
+          <p className="text-xl font-serif font-bold ">Investment</p>
           <ul className="list-none space-y-2">
             {navServices.map((item: any) => (
               <li key={item.name}>
@@ -137,9 +146,9 @@ export default function Footer() {
           </ul>
         </div>
         <div className="flex flex-col gap-2 ">
-          <p className="text-xl font-serif font-bold ">Resources</p>
+          <p className="text-xl font-serif font-bold ">The Company</p>
           <ul className="list-none space-y-2">
-            {navResources.map((item: any) => (
+            {navCorp.map((item: any) => (
               <li key={item.name}>
                 <Link
                   href={item.link}

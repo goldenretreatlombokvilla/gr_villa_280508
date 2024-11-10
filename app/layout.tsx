@@ -16,9 +16,10 @@ const geistMono = localFont({
   weight: "100 900"
 });
 
-const cinzeldeco = Cinzel_Decorative({
+const deco = Cinzel_Decorative({
   subsets: ["latin"],
   weight: ["400", "700", "900"],
+  preload: true,
   display: "swap"
 });
 
@@ -41,7 +42,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${cinzeldeco.className} ${cinzel.className} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${deco.className} ${cinzel.className} antialiased`}
       >
         <Nav />
         {children}

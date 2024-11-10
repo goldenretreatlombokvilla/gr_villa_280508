@@ -150,7 +150,7 @@ export default function Nav() {
             >
               <div className="flex flex-row gap-0 px-4 items-center justify-start">
                 <SheetClose asChild>
-                  <Link href="/">
+                  <Link href="/" prefetch={true}>
                     <Image
                       src="/brand/logo_icon.png"
                       alt="Golden Retreat Lombok Villa"
@@ -180,7 +180,11 @@ export default function Nav() {
               <div className="flex flex-col gap-4 items-start h-screen w-full">
                 {navItems.map((item: any) => (
                   <SheetClose key={item.name} asChild>
-                    <Link href={item.link} className="w-full group">
+                    <Link
+                      href={item.link}
+                      className="w-full group"
+                      prefetch={true}
+                    >
                       <Button
                         key={item.name}
                         variant="link"
@@ -192,7 +196,7 @@ export default function Nav() {
                     </Link>
                   </SheetClose>
                 ))}
-                <SheetClose asChild>
+                {/* <SheetClose asChild>
                   <Button
                     variant={"default"}
                     className="font-thin text-md flex flex-row w-full justify-between group"
@@ -200,38 +204,42 @@ export default function Nav() {
                     Enquire
                     <Send className="min-w-5 min-h-5 stroke-1 mr-1 opacity-70" />
                   </Button>
-                </SheetClose>
-                <div className="hidden lg:flex flex-col gap-4 pt-8 pl-4">
+                </SheetClose> */}
+                <div className="hidden flex-col gap-4 pt-8 pl-4">
                   <p className="text-md font-serif font-bold">Our Facilities</p>
                   <div className="flex flex-row flex-wrap gap-0 w-full">
                     {facilities.map((link: any) => (
-                      <Link href={link.link} key={link.name}>
-                        <Button
-                          variant="link"
-                          key={link.name}
-                          className="pl-0 group opacity-70 hover:opacity-100"
-                        >
-                          <Plus className="max-w-3 max-h-3 group-hover:rotate-45 transition-all duration-300 group-hover:text-yellow-600" />
-                          {link.name}
-                        </Button>
-                      </Link>
+                      <SheetClose key={link.name} asChild>
+                        <Link href={link.link} key={link.name} prefetch={true}>
+                          <Button
+                            variant="link"
+                            key={link.name}
+                            className="pl-0 group opacity-70 hover:opacity-100"
+                          >
+                            <Plus className="max-w-3 max-h-3 group-hover:rotate-45 transition-all duration-300 group-hover:text-yellow-600" />
+                            {link.name}
+                          </Button>
+                        </Link>
+                      </SheetClose>
                     ))}
                   </div>
                 </div>
-                <div className="hidden lg:flex flex-col gap-4 pt-4 pl-4">
+                <div className="flex flex-col gap-4 pt-4 pl-4">
                   <p className="text-md font-serif font-bold">Quick Links</p>
                   <div className="flex flex-row flex-wrap gap-0 w-full">
                     {links.map((link: any) => (
-                      <Link href={link.link} key={link.name}>
-                        <Button
-                          variant="link"
-                          key={link.name}
-                          className="pl-0 group opacity-60 hover:opacity-100"
-                        >
-                          <Plus className="max-w-3 max-h-3 group-hover:rotate-45 transition-all duration-300 group-hover:text-yellow-600" />
-                          {link.name}
-                        </Button>
-                      </Link>
+                      <SheetClose key={link.name} asChild>
+                        <Link href={link.link} key={link.name} prefetch={true}>
+                          <Button
+                            variant="link"
+                            key={link.name}
+                            className="pl-0 group opacity-60 hover:opacity-100"
+                          >
+                            <Plus className="max-w-3 max-h-3 group-hover:rotate-45 transition-all duration-300 group-hover:text-yellow-600" />
+                            {link.name}
+                          </Button>
+                        </Link>
+                      </SheetClose>
                     ))}
                   </div>
                 </div>
