@@ -67,7 +67,8 @@ export default function LandingPage() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center justify-center w-full lg:px-52 px-10 py-52">
+      {/* Hero Section */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center justify-center w-full lg:px-52 px-10 py-20 lg:py-52">
         <div className="flex flex-col gap-4 items-center justify-center h-full w-full">
           <Image
             src="https://utfs.io/f/dJLJpH9Hrkw3FRpIu8Y3NDtBULj4yZxze2nb6wR7gl1iPYX0"
@@ -79,8 +80,10 @@ export default function LandingPage() {
           />
         </div>
         <div className="flex flex-col gap-4  w-full">
-          <p className="font-cinzel text-yellow-700 text-4xl  lg:text-3xl tracking-wide flex flex-col">
-            <span className="font-bold lg:text-6xl ">33 Luxury Villas</span>{" "}
+          <p className="font-cinzel text-yellow-700 text-3xl  lg:text-3xl tracking-wide flex flex-col">
+            <span className="font-bold text-5xl lg:text-6xl ">
+              33 Luxury Villas
+            </span>{" "}
             Private & Exclusive
           </p>
           <p className="font-sans font-semibold text-stone-900 text-md leading-7">
@@ -89,9 +92,9 @@ export default function LandingPage() {
             the highest standards.
           </p>
           <p className="font-sans text-md text-stone-900/50 leading-7">
-            Nestled in the pristine west cost of Lombok with breathtaking views,
-            our property stand for exquisite design, top-notch amenities, and
-            exceptional service.
+            Nestled in the pristine west coast of Lombok with breathtaking
+            views, our property stand for exquisite design, top-notch amenities,
+            and exceptional service.
           </p>
           {/* <Button variant="default" className="w-fit">
             Visit Villas
@@ -101,7 +104,7 @@ export default function LandingPage() {
 
       {/* Villas Section  */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-start justify-start w-full px-10 lg:px-52 py-20">
-        <p className="text-6xl font-cinzel font-bold text-yellow-700">
+        <p className="text-5xl lg:text-6xl font-cinzel font-bold text-yellow-700">
           The Villas
         </p>
         <Image
@@ -109,7 +112,7 @@ export default function LandingPage() {
           alt="Golden Retreat Lombok Villa"
           width={500}
           height={200}
-          className="w-full h-auto aspect-video object-cover rounded-lg"
+          className="hidden lg:flex w-full h-auto aspect-video object-cover rounded-lg"
         />
         <p className="text-md font-sans text-stone-900 text-pretty">
           The result of a collaboration between the land owners, experienced
@@ -121,7 +124,14 @@ export default function LandingPage() {
           Exquisite villa with private pool and deck, perfect for luxury living.
         </div>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-4 items-center justify-center w-full px-10 lg:px-52 lg:py-20 -mt-14 ">
+      <div className="grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-4 items-center justify-center w-full px-10 lg:px-52 lg:py-20 -mt-14 pb-14">
+        <Image
+          src="https://utfs.io/f/dJLJpH9Hrkw3wcK398eUX3BuqFPzTD5Kh1H9QyUilcWfbY6d"
+          alt="Golden Retreat Lombok Villa"
+          width={500}
+          height={200}
+          className="flex lg:hidden w-full h-auto aspect-video object-cover rounded-lg"
+        />
         <Image
           src="https://utfs.io/f/dJLJpH9Hrkw3fmFEKjqhLDqapUrcI5X2oh8B9JvKe1ET4tzC"
           alt="Golden Retreat Lombok Villa"
@@ -246,8 +256,8 @@ export default function LandingPage() {
                   </p>
                   <p className="text-sm opacity-70 font-sans">
                     Dine in luxury in our 5 star restaurant with a delicious
-                    menu by Chef Ramsey or spend the evening in our private
-                    lounge.{" "}
+                    variety of dishes or spend the evening in our private
+                    lounge.
                   </p>
                 </div>
               </div>
@@ -268,8 +278,9 @@ export default function LandingPage() {
                     Wellness Spa & Gymnasium
                   </p>
                   <p className="text-sm opacity-70 font-sans">
-                    Never miss a beat with you gym equiped with your favourite
-                    machines and then get a message in our local 5-star spa.
+                    Never miss a beat with our on-site gymnasium equipped with
+                    your favourite machines and then get a message in our local
+                    5-star spa.
                   </p>
                 </div>
               </div>
@@ -299,55 +310,60 @@ export default function LandingPage() {
           </Card>
         </div>
       </div>
+
+      {/* Benefits Section */}
       <div className="flex flex-col gap-4 items-center justify-start w-full px-10 lg:px-52 py-20 bg-black text-white">
         <p className="text-5xl font-cinzel text-white">Benefits</p>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-4 ">
+
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-0 lg:gap-4 ">
           <Card className="flex flex-col w-full lg:p-0 bg-transparent shadow-none border-none">
             <CardContent className="p-4">
               <div className="flex flex-col  gap-6 lg:gap-10 items-center justify-center">
-                <div className="flex flex-col gap-10 w-full p-6 lg:text-xl text-md ">
-                  <MapPin className="w-16 h-16 fill-yellow-600 stroke-1" />
+                <div className="flex flex-row lg:flex-col gap-10 w-full p-6 lg:text-xl text-md ">
+                  <MapPin className="min-w-16 min-h-16 fill-yellow-600 stroke-1" />
                   <p className="text-md  font-sans text-white">
                     Heart of the latest tourist destination, in Lombok Island.
-                    Located 300 meters away from Bangsal Beach, Bangsal Fast
-                    Boat Port and Boat service to the famous Gili Terawangan.
+                    Located 300m away from Bangsal Beach, Bangsal Fast Boat Port
+                    and Boat service to the famous Gili Terawangan.
                   </p>
                 </div>
               </div>
             </CardContent>
           </Card>
+
           <Card className="flex flex-col w-full lg:p-0 bg-transparent shadow-none border-none">
             <CardContent className="p-4">
               <div className="flex flex-col  gap-6 lg:gap-10 items-center justify-center">
-                <div className="flex flex-col gap-10 w-full p-6 lg:text-xl text-md ">
-                  <Award className="w-16 h-16 fill-yellow-600 stroke-1" />
-                  <p className="text-md  font-sans text-white">
+                <div className="flex flex-row lg:flex-col gap-10 w-full p-6 lg:text-xl text-md ">
+                  <Award className="min-w-16 min-h-16 fill-yellow-600 stroke-1" />
+                  <p className="text-md font-sans text-white">
                     Established developer project that is the first of it’s
                     kind, while being made with the experience of successful
-                    past projects. Desiged with the end user in mind, and has
+                    past projects. Desinged with the end user in mind, and has
                     everything that you need.
                   </p>
                 </div>
               </div>
             </CardContent>
           </Card>
+
           <Card className="flex flex-col w-full lg:p-0 bg-transparent shadow-none border-none">
             <CardContent className="p-4">
               <div className="flex flex-col  gap-6 lg:gap-10 items-center justify-center">
-                <div className="flex flex-col gap-10 w-full p-6 lg:text-xl text-md ">
-                  <FileText className="w-16 h-16 fill-yellow-600 stroke-1" />
+                <div className="flex flex-row lg:flex-col gap-10 w-full p-6 lg:text-xl text-md ">
+                  <FileText className="min-w-16 min-h-16 fill-yellow-600 stroke-1" />
                   <p className="text-md  font-sans text-white">
-                    5-year long stay visas for foreign purchasers. Visa
-                    application assistance provided. Visa renewal are for every
-                    5 years. 12 months progressive payments with an initial
-                    deposit of 20% of purchase price.
+                    Long stay visas for foreign purchasers. Visa application
+                    assistance provided. Visa renewal are for every 5 years. 12
+                    months progressive payments with an initial deposit of 20%
+                    of purchase price.
                   </p>
                 </div>
               </div>
             </CardContent>
           </Card>
         </div>
-        <Button variant="default" className="w-fit">
+        <Button variant="default" className="lg:w-fit w-full">
           Apply Now
         </Button>
       </div>

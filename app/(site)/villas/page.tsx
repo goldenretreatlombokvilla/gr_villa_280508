@@ -67,7 +67,7 @@ const villaImages = [
 
 export default function Invest() {
   return (
-    <div className="flex flex-col gap-8 items-center justify-start w-full min-h-screen p-10 max-w-6xl mx-auto">
+    <div className="flex flex-col gap-8 items-center justify-center w-full p-10 max-w-6xl mx-auto">
       <div className="bg-gradient-to-br from-yellow-800 to-stone-900  rounded-lg py-8 px-8 flex flex-row gap-6 items-center justify-start w-full">
         <div className="flex flex-col gap-0 items-start w-full">
           <h1 className="text-3xl lg:text-5xl  font-bold font-cinzel text-white ">
@@ -87,7 +87,7 @@ export default function Invest() {
           </Link>
         </div>
       </div>
-      <div className="flex flex-col gap-4 items-center justify-center w-full h-[50vh]">
+      <div className="flex flex-col gap-4 items-center justify-center w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center justify-center gap-8">
           <div className="flex flex-col gap-4">
             <p className="text-3xl lg:text-6xl  font-bold font-cinzel text-yellow-700">
