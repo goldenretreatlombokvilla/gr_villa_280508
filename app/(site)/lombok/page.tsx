@@ -124,7 +124,7 @@ export default function Lombok() {
 
       <div className="flex flex-col gap-8 items-center justify-start w-full py-32">
         <p className="font-cinzel text-center text-5xl font-bold text-yellow-700">
-          Reasons to Invest In Lombok
+          Reasons Tourist Are Visitng Lombok
         </p>
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-10 lg:gap-10 justify-center items-center py-4">
           <div className="flex flex-row lg:flex-col gap-4 items-center">

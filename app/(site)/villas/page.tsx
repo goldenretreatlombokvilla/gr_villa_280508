@@ -20,19 +20,26 @@ import {
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger
+} from "@/components/ui/accordion";
+import Cta from "@/components/cta";
 
 const images = [
   {
-    src: "/villa/grlv_7.webp",
+    src: "https://utfs.io/f/dJLJpH9Hrkw3fmFEKjqhLDqapUrcI5X2oh8B9JvKe1ET4tzC",
     alt: "Spacious Bathroom"
   },
   {
-    src: "/villa/grlv_2.webp",
+    src: "https://utfs.io/f/dJLJpH9Hrkw3Y1KKJxnLOdMUqSH08tvDTRnX1xNaPBF3YW5c",
     alt: "Living Room"
   },
 
   {
-    src: "/villa/grlv_3.webp",
+    src: "https://utfs.io/f/dJLJpH9Hrkw3pXyUf0A8fDXoAL2Jay9kEY7gbmpj3CvcG0Pu",
     alt: "Poolside Area"
   }
 ];
@@ -67,8 +74,8 @@ const villaImages = [
 
 export default function Invest() {
   return (
-    <div className="flex flex-col gap-8 items-center justify-center w-full p-10 max-w-6xl mx-auto">
-      <div className="bg-gradient-to-br from-yellow-800 to-stone-900  rounded-lg py-8 px-8 flex flex-row gap-6 items-center justify-start w-full">
+    <div className="flex flex-col gap-8 items-center justify-center w-full px-8 pt-10 max-w-6xl mx-auto">
+      <div className="bg-gradient-to-br from-yellow-800 to-stone-900  rounded-lg px-8 flex flex-row gap-6 items-center justify-start w-full py-8">
         <div className="flex flex-col gap-0 items-start w-full">
           <h1 className="text-3xl lg:text-5xl  font-bold font-cinzel text-white ">
             The Villas
@@ -87,30 +94,30 @@ export default function Invest() {
           </Link>
         </div>
       </div>
-      <div className="flex flex-col gap-4 items-center justify-center w-full">
+      <div className="flex flex-col gap-4 py-20 items-center justify-center w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center justify-center gap-8">
           <div className="flex flex-col gap-4">
-            <p className="text-3xl lg:text-6xl  font-bold font-cinzel text-yellow-700">
+            <p className="text-5xl lg:text-6xl  font-bold font-cinzel text-yellow-700">
               Get To Know The Villas
             </p>
-            <p className="font-sans">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consectetur nisi possimus ratione veritatis dolor eum laborum ipsa
-              tempore. Error, nulla?
+            <p className="font-sans text-sm">
+              Golden Retreat Lombok Villa is a turnkey project, where the villas
+              are designed, built and furnished with everything that you would
+              need before moving in. From the furniture, to the kitchen utensils
+              and the bedding.
             </p>
-            <p className="opacity-60 font-sans">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
-              facere inventore, nesciunt laborum fugit, vero saepe, expedita
-              perferendis cupiditate ipsum tempore debitis. Consequuntur dolores
-              doloribus provident exercitationem nihil repudiandae ducimus?
+            <p className="opacity-60 text-sm font-sans">
+              Once everything is ready, all you need to do to move in is bring
+              your clothes and a toothbrush. We will take care of the rest.
             </p>
             <div className="flex flex-row gap-4 justify-start">
-              <Button variant={"default"}>Discover Now</Button>
-              <Button variant="outline">Our Facilities</Button>
+              <Button variant={"default"}>Learn More</Button>
+              <Button variant="link">View Gallery</Button>
             </div>
           </div>
 
           <div className="flex flex-col gap-4 items-center px-0">
+            {/* Carousel Desktop */}
             <Carousel
               className="hidden lg:flex"
               plugins={[
@@ -120,20 +127,20 @@ export default function Invest() {
               ]}
               opts={{ align: "start", loop: true }}
             >
-              <CarouselContent className="py-8">
+              <CarouselContent className="">
                 {images.map((image, index) => (
                   <CarouselItem
                     key={index}
-                    className="flex flex-col gap-4 items-center justify-center lg:pl-14 group rounded-lg"
+                    className="flex flex-col gap-4 items-center justify-center lg:pl-14 w-full group rounded-lg"
                   >
                     <div className="relative">
                       <Image
                         src={image.src}
                         alt={image.alt}
                         width={580}
-                        height={400}
+                        height={580}
                         loading="eager"
-                        className="object-cover w-full h-full rounded-lg transition-all duration-300 group-hover:shadow-lg brightness-100 lg:brightness-90 group-hover:brightness-100"
+                        className="object-cover aspect-square min-w-full min-h-full rounded-lg"
                       />
                       <Badge
                         variant="default"
@@ -146,6 +153,8 @@ export default function Invest() {
                 ))}
               </CarouselContent>
             </Carousel>
+
+            {/* Carousel Mobile */}
             <Carousel
               plugins={[
                 Autoplay({
@@ -178,28 +187,30 @@ export default function Invest() {
         </div>
       </div>
 
-      <div className="flex flex-col gap-20 items-center px-0 py-8">
-        <Card className="flex flex-col w-full lg:p-8 bg-transparent shadow-none border-none">
-          <CardContent className="p-4">
+      <div className="flex flex-col gap-40 items-center px-0 py-8 lg:py-20">
+        {/* 2 Bed */}
+        <Card className="flex flex-col w-full lg:p-0 bg-transparent shadow-none border-none">
+          <CardContent className="p-0">
             <div className="flex flex-col md:flex-row gap-6 lg:gap-24 items-center justify-center">
               <Image
                 src="/villa/grlv_3.webp"
                 alt="Golden Retreat Lombok Villa"
                 width={500}
                 height={300}
-                className="w-full h-auto  object-cover aspect-square rounded-lg shadow-lg"
+                className="w-full h-auto object-cover aspect-video lg:aspect-square rounded-lg shadow-lg"
               />
-              <div className="grid grid-cols-2 lg:grid-cols-2  gap-6 lg:gap-8 w-full px-2 lg:text-xl text-md">
+              <div className="grid grid-cols-2 gap-6 lg:gap-8 w-full px-2 lg:text-xl text-md">
                 <div className="flex flex-col gap-2 col-span-2">
-                  <p className="text-2xl lg:text-5xl text-yellow-700 font-bold uppercase ">
+                  <p className="text-5xl text-yellow-700 font-bold uppercase ">
                     Premium
                   </p>
-                  <p className="text-2xl opacity-50 font-bold uppercase tracking-widest -mt-1">
+                  <p className="text-2xl lg:text-3xl text-yellow-700 opacity-50 font-bold uppercase -mt-1">
                     Luxury Villa
                   </p>
                   <p className="opacity-80  font-sans text-sm">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Illum ut, dolores voluptas tenetur deleniti cumque.
+                    Spacious 2 bedroom holiday villa that can comfortably
+                    accomodate a family of 4 that comes complete with dining
+                    room, lounge area, parking garage, and a private pool area.
                   </p>
                 </div>
                 <div className="flex flex-row gap-4 items-center justify-start">
@@ -262,27 +273,30 @@ export default function Invest() {
             </div>
           </CardContent>
         </Card>
-        <Card className="flex flex-col w-full lg:p-8 bg-transparent shadow-none border-none">
-          <CardContent className="p-4">
+
+        {/* 3 Bed */}
+        <Card className="flex flex-col w-full lg:p-0 bg-transparent shadow-none border-none">
+          <CardContent className="p-0">
             <div className="flex flex-col md:flex-row-reverse gap-6 lg:gap-24 items-center justify-center">
               <Image
                 src="/villa/grlv_5.webp"
                 alt="Golden Retreat Lombok Villa"
                 width={500}
                 height={300}
-                className="w-full h-full  object-cover aspect-square rounded-lg shadow-lg"
+                className="w-full h-full  object-cover aspect-video lg:aspect-square rounded-lg shadow-lg"
               />
               <div className="grid grid-cols-2 lg:grid-cols-2  gap-6 w-full px-2 lg:text-xl text-md">
                 <div className="flex flex-col gap-2 col-span-2">
-                  <p className="text-2xl lg:text-5xl text-yellow-700 font-bold uppercase ">
+                  <p className="text-5xl text-yellow-700 font-bold uppercase ">
                     Superior
                   </p>
-                  <p className="text-2xl opacity-50 font-bold uppercase tracking-widest -mt-1">
+                  <p className="text-3xl text-yellow-700 opacity-50 font-bold uppercase -mt-1">
                     Luxury Villa
                   </p>
                   <p className="opacity-80  font-sans text-sm">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Illum ut, dolores voluptas tenetur deleniti cumque.
+                    Spacious 3 bedroom holiday villa that can comfortably
+                    accomodate a family of 6 that comes complete with dining
+                    room, lounge area, parking garage, and a private pool area.
                   </p>
                 </div>
                 <div className="flex flex-row gap-4 items-center justify-start">
@@ -347,9 +361,152 @@ export default function Invest() {
         </Card>
       </div>
 
-      <div className="flex flex-col gap-4 items-center px-0">
+      {/* Furnishings Section */}
+      <div className="grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-4 items-start px-0  w-full py-20">
+        <div className="flex flex-col gap-4">
+          <p className="text-5xl font-cinzel text-yellow-700 font-bold">
+            Room Furnishings
+          </p>
+          <p className="text-sm font-sans">
+            Each villa comes with a complete set of furnishings which includes
+            everything you would need to make your stay a comfortable one.
+          </p>
+        </div>
+        <div className="flex flex-col gap-4 lg:px-10">
+          <Accordion type="single" collapsible>
+            <AccordionItem value="item-1">
+              <AccordionTrigger className="text-xl font-semibold">
+                Master Bedroom
+              </AccordionTrigger>
+              <AccordionContent className="text-sm font-sans">
+                <div className="grid grid-cols-2 justify-between">
+                  <ul className="list-disc list-inside">
+                    <li>Bedsheet (180x200)</li>
+                    <li>King Size Matress</li>
+                    <li>Pillow</li>
+                    <li>Side Table (x2)</li>
+                    <li>Wardrobe</li>
+                    <li>Working Table</li>
+                    <li>Working Chair</li>
+                  </ul>
+                  <ul className="list-disc list-inside">
+                    <li>Cardensa</li>
+                    <li>Side Lamp (x2)</li>
+                    <li>Standing Lamp</li>
+                    <li>Carpet</li>
+                    <li>Artwork</li>
+                    <li>Mirror</li>
+                    <li>AC 1 PK</li>
+                  </ul>
+                </div>
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-2">
+              <AccordionTrigger className="text-xl font-semibold">
+                2nd Bedroom
+              </AccordionTrigger>
+              <AccordionContent className="text-sm font-sans">
+                <div className="grid grid-cols-2 justify-between">
+                  <ul className="list-disc list-inside">
+                    <li>Bedsheet (160x200)</li>
+                    <li>Queen Size Matress</li>
+                    <li>Pillow (x4)</li>
+                    <li>Side Table (x2)</li>
+                    <li>Wardrobe (x2)</li>
+                    <li>Working Table</li>
+                  </ul>
+                  <ul className="list-disc list-inside">
+                    <li>Working Chair</li>
+                    <li>Cardensa</li>
+                    <li>Carpet</li>
+                    <li>Artwork</li>
+                    <li>Mirror</li>
+                    <li>AC 1 PK</li>
+                  </ul>
+                </div>
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-3">
+              <AccordionTrigger className="text-xl font-semibold flex flex-row gap-2">
+                <p>
+                  3rd Bedroom{" "}
+                  <span className="font-sans text-xs opacity-50 italic font-normal">
+                    (Superior villa only)
+                  </span>
+                </p>
+              </AccordionTrigger>
+              <AccordionContent className="text-sm font-sans">
+                <div className="grid grid-cols-2 justify-between">
+                  <ul className="list-disc list-inside">
+                    <li>Bedsheet (160x200)</li>
+                    <li>Queen Size Matress</li>
+                    <li>Pillow (x4)</li>
+                    <li>Side Table</li>
+                    <li>Wardrobe</li>
+                  </ul>
+                  <ul className="list-disc list-inside">
+                    <li>Working Table</li>
+                    <li>Working Chair</li>
+                    <li>Artwork</li>
+                    <li>Mirror</li>
+                    <li>AC 1 PK</li>
+                  </ul>
+                </div>
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-4">
+              <AccordionTrigger className="text-xl font-semibold">
+                Living Area
+              </AccordionTrigger>
+              <AccordionContent className="text-sm font-sans">
+                <div className="grid grid-cols-2 justify-between">
+                  <ul className="list-disc list-inside">
+                    <li>Sofa L Shape</li>
+                    <li>Coffee Table</li>
+                    <li>Single Chair</li>
+                    <li>Carpet</li>
+                    <li>Decorative Lamp (x3)</li>
+                  </ul>
+                  <ul className="list-disc list-inside">
+                    <li>TV Cabinet</li>
+                    <li>Standing Lamp</li>
+                    <li>Artwork</li>
+                    <li>AC 2 PK</li>
+                    <li>TV 42 inch</li>
+                  </ul>
+                </div>
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-5">
+              <AccordionTrigger className="text-xl font-semibold">
+                Dining Area
+              </AccordionTrigger>
+              <AccordionContent className="text-sm font-sans">
+                <div className="grid grid-cols-2 justify-start">
+                  <ul className="list-disc list-inside">
+                    <p className="font-bold">Kitchen Set</p>
+                    <li>Freezer</li>
+                    <li>Stove</li>
+                    <li>Sink</li>
+                    <li>Microwave</li>
+                  </ul>
+                  <ul className="list-disc list-inside">
+                    <li>Dining Table</li>
+                    <li>Dining Chair (x6)</li>
+                    <li>Decorative Lamp (x3)</li>
+                    <li>Painting</li>
+                  </ul>
+                </div>
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
+        </div>
+      </div>
+
+      {/* Gallery Section */}
+      <div className="flex flex-col gap-4 items-center px-0 pb-20">
         <div className="flex flex-col gap-4 items-center">
-          <p className="tracking-widest text-yellow-700 text-2xl lg:text-5xl font-bold">
+          <p className="text-yellow-700 text-2xl lg:text-5xl font-bold">
             Step into peace and luxury
           </p>
         </div>
@@ -422,81 +579,7 @@ export default function Invest() {
           </div>
         </div>
       </div>
-
-      <div className="flex flex-col gap-4 items-center justify-start w-full py-20">
-        <p className="text-5xl font-cinzel text-yellow-700 font-semibold">
-          In House Facilities
-        </p>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-4 ">
-          <Card className="flex flex-col w-full lg:p-0 bg-transparent shadow-none border-none">
-            <CardContent className="p-4">
-              <div className="flex flex-col  gap-6 lg:gap-10 items-center justify-center">
-                <Image
-                  src="/brand/restaurant.jpg"
-                  alt="Golden Retreat Lombok Villa"
-                  width={500}
-                  height={300}
-                  className="w-full h-auto  object-cover aspect-video rounded-lg shadow-lg"
-                />
-                <div className="flex flex-col gap-2 w-full p-6 lg:text-xl text-md ring-1 ring-yellow-700 rounded-lg">
-                  <p className="text-2xl font-bold uppercase text-yellow-700">
-                    Restaurant, Bar & Lounge{" "}
-                  </p>
-                  <p className="text-sm opacity-70 font-sans">
-                    Dine in luxury in our 5 star restaurant with a delicious
-                    menu by Chef Ramsey or spend the evening in our private
-                    lounge.{" "}
-                  </p>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-          <Card className="flex flex-col w-full lg:p-0 bg-transparent shadow-none border-none">
-            <CardContent className="p-4">
-              <div className="flex flex-col  gap-6 lg:gap-10 items-center justify-center">
-                <Image
-                  src="/brand/spa.jpg"
-                  alt="Golden Retreat Lombok Villa"
-                  width={500}
-                  height={300}
-                  className="w-full h-auto  object-cover aspect-video rounded-lg shadow-lg"
-                />
-                <div className="flex flex-col gap-2 w-full h-full p-6 lg:text-xl text-md ring-1 ring-yellow-700 rounded-lg">
-                  <p className="text-2xl font-bold uppercase text-yellow-700">
-                    Wellness Spa & Gymnasium
-                  </p>
-                  <p className="text-sm opacity-70 font-sans">
-                    Never miss a beat with you gym equiped with your favourite
-                    machines and then get a message in our local 5-star spa.
-                  </p>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-          <Card className="flex flex-col w-full lg:p-0 bg-transparent shadow-none border-none">
-            <CardContent className="p-4">
-              <div className="flex flex-col  gap-6 lg:gap-10 items-center justify-center">
-                <Image
-                  src="/brand/pond.jpg"
-                  alt="Golden Retreat Lombok Villa"
-                  width={500}
-                  height={300}
-                  className="w-full h-auto  object-cover aspect-video rounded-lg shadow-lg"
-                />
-                <div className="flex flex-col gap-2 w-full h-full p-6 lg:text-xl text-md ring-1 ring-yellow-700 rounded-lg">
-                  <p className="text-2xl font-bold uppercase text-yellow-700">
-                    Serenity Garden & Koi Pond
-                  </p>
-                  <p className="text-sm opacity-70 font-sans">
-                    Be at peace with the sound of water and a beautiful sight in
-                    our gardens, where memories of a lifetime are made.
-                  </p>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
-      </div>
+      <Cta />
     </div>
   );
 }

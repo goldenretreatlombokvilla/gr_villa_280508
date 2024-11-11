@@ -51,10 +51,6 @@ const navItems = [
     link: "/gallery"
   },
   {
-    name: "Lombok",
-    link: "/lombok"
-  },
-  {
     name: "Investment",
     link: "/invest"
   }
@@ -85,20 +81,28 @@ const facilities = [
 
 const links = [
   {
+    name: "Discover Lombok",
+    link: "/lombok"
+  },
+  {
+    name: "Presentation Deck",
+    link: "/dashboard/presentation"
+  },
+  {
+    name: "Booking Form",
+    link: "/"
+  },
+  {
+    name: "About Us",
+    link: "/about"
+  },
+  {
     name: "Our Team",
     link: "/about"
   },
   {
-    name: "Market Studies",
+    name: "Contact Us",
     link: "/contact"
-  },
-  {
-    name: "Villa Designs",
-    link: "/terms"
-  },
-  {
-    name: "Land Development",
-    link: "/investors"
   }
 ];
 
@@ -242,6 +246,14 @@ export default function Nav() {
                       </SheetClose>
                     ))}
                   </div>
+                </div>
+                <div className="py-4 w-full flex flex-col gap-4">
+                  <Button variant="default" className="w-full">
+                    Book Discovery Call
+                  </Button>
+                  <Button variant="link" className="w-full">
+                    Download Brochure
+                  </Button>
                 </div>
               </div>
               <SheetFooter className="text-sm font-sans bottom-2 items-end justify-end w-full">
