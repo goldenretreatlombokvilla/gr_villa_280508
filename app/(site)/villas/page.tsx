@@ -94,6 +94,7 @@ export default function Invest() {
           </Link>
         </div>
       </div>
+
       <div className="flex flex-col gap-4 py-20 items-center justify-center w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center justify-center gap-8">
           <div className="flex flex-col gap-4">
