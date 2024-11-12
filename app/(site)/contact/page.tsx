@@ -1,5 +1,6 @@
 import CountrySelect from "@/components/form/country-select";
-import { PhoneInput } from "@/components/form/phone-input";
+import InterestSelect from "@/components/form/interest-select";
+import PhoneInputComp from "@/components/form/phone-input";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -128,13 +129,9 @@ export default function Contact() {
               <Input type="text" name="name" id="name" />
               <Label htmlFor="email">E-mail</Label>
               <Input type="email" name="email" id="email" />
-              <Label htmlFor="phone">Phone Number</Label>
-              <PhoneInput defaultCountry="MY" />
-              <Label htmlFor="location">Location</Label>
-              <CountrySelect
-                placeholder="Select Country"
-                priorityOptions={["MY", "SG", "ID"]}
-              />
+              <PhoneInputComp />
+              <Label htmlFor="interest">Select Interest</Label>
+              <InterestSelect />
 
               <Button
                 variant={"outline"}
