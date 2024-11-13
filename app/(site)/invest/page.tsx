@@ -39,7 +39,7 @@ export default function Invest() {
       <div className="max-w-6xl mx-auto p-10 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-3 items-center justify-center py-20">
           <div className="flex flex-col gap-4 col-span-2">
-            <p className="text-3xl lg:text-6xl  font-bold font-cinzel text-yellow-700">
+            <p className="text-3xl lg:text-6xl  font-bold font-cinzel text-yellow-900">
               Your Investment Journey Made Easy
             </p>
             <p className="font-sans text-sm text-balance">
@@ -68,10 +68,10 @@ export default function Invest() {
             className="rounded-lg object-cover aspect-square object-bottom"
           />
           <div className="flex flex-col items-start gap-4 py-20">
-            <p className="text-md uppercase font-cinzel text-yellow-700">
+            <p className="text-md uppercase font-cinzel text-yellow-900">
               Did You Know?
             </p>
-            <p className="text-3xl  font-bold font-cinzel text-yellow-700">
+            <p className="text-3xl  font-bold font-cinzel text-yellow-900">
               Lombok receives over 1 million tourist every year but only has
               enough hotels and resorts to lodge 24,000 only.
             </p>
@@ -88,7 +88,7 @@ export default function Invest() {
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-start justify-start w-full py-20">
           <div className="flex flex-col gap-4">
-            <p className="text-5xl font-cinzel font-bold text-yellow-700">
+            <p className="text-5xl font-cinzel font-bold text-yellow-900">
               Investment Opportunity
             </p>
             <p className="text-sm font-sans">
@@ -160,7 +160,7 @@ export default function Invest() {
 
       {/*Articles*/}
       <div className="flex flex-col gap-8 items-center justify-center w-full px-8 lg:px-52 py-10 lg:py-40">
-        <p className="text-4xl lg:text-5xl font-cinzel text-yellow-700 font-bold">
+        <p className="text-4xl lg:text-5xl font-cinzel text-yellow-900 font-bold">
           Latest Market Indicators
         </p>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-12 w-full">
@@ -175,7 +175,7 @@ export default function Invest() {
                   className="w-full h-auto  object-cover aspect-video rounded-lg shadow-lg"
                 />
                 <div className="flex flex-col gap-2 w-full p-6 lg:text-xl text-sm items-start ring-1 ring-yellow-700 rounded-lg group">
-                  <p className="text-xl font-bold font-sans text-yellow-700">
+                  <p className="text-xl font-bold font-sans text-yellow-900">
                     Why are foreigners Investing in Lombok instead of Bali this
                     year?{" "}
                   </p>
@@ -202,7 +202,7 @@ export default function Invest() {
                   className="w-full h-auto  object-cover aspect-video rounded-lg shadow-lg"
                 />
                 <div className="flex flex-col gap-2 w-full p-6 lg:text-xl text-sm items-start ring-1 ring-yellow-700 rounded-lg group">
-                  <p className="text-xl font-bold font-sans text-yellow-700">
+                  <p className="text-xl font-bold font-sans text-yellow-900">
                     Lombok sees fast growth in foreign tourist arrivals.
                   </p>
                   <p className="text-sm opacity-50 italic">The Jakarta Post</p>
@@ -228,7 +228,7 @@ export default function Invest() {
                   className="w-full h-auto  object-cover aspect-video rounded-lg shadow-lg"
                 />
                 <div className="flex flex-col gap-2 w-full p-6 lg:text-xl text-sm items-start ring-1 ring-yellow-700 rounded-lg group">
-                  <p className="text-xl font-bold font-sans text-yellow-700">
+                  <p className="text-xl font-bold font-sans text-yellow-900">
                     MotoGP Mandalika 2022 Revives Tourism for West Nusa Tenggara
                   </p>
                   <p className="text-sm opacity-50 italic">Global Expat</p>

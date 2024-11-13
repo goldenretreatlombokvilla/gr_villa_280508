@@ -48,7 +48,7 @@ export default function Contact() {
       <div className="max-w-6xl mx-auto w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center justify-center py-20">
           <div className="flex flex-col gap-4 px-8 lg:px-4">
-            <p className="text-5xl lg:text-6xl  font-extrabold font-cinzel text-balance text-yellow-700">
+            <p className="text-5xl lg:text-6xl  font-extrabold font-cinzel text-balance text-yellow-900">
               Get in touch
             </p>
             <p className="font-sans text-sm text-balance">
@@ -57,7 +57,7 @@ export default function Contact() {
             </p>
           </div>
           <div className="flex flex-col gap-4 px-4 items-center justify-center">
-            <ArrowDownCircle className="hidden lg:flex w-52 h-52 text-yellow-700 stroke-1 opacity-10" />
+            <ArrowDownCircle className="hidden lg:flex w-52 h-52 text-yellow-900 stroke-1 opacity-10" />
           </div>
         </div>
       </div>
@@ -68,10 +68,10 @@ export default function Contact() {
           <CardContent className="p-0">
             <div className="flex flex-col gap-2 items-start justify-center">
               <p className="text-md font-sans flex flex-row gap-2">
-                <MessageCircle className="min-w-4 min-h-4 stroke-1 text-yellow-700" />
+                <MessageCircle className="min-w-4 min-h-4 stroke-1 text-yellow-900" />
                 Send a Whatsapp message
               </p>
-              <Link href="/" className=" text-yellow-700 font-sans">
+              <Link href="/" className=" text-yellow-900 font-sans">
                 <Button variant={"link"} className="p-0 text-2xl lg:text-3xl">
                   +0123456789
                 </Button>
@@ -83,10 +83,10 @@ export default function Contact() {
           <CardContent className="p-0">
             <div className="flex flex-col gap-2 items-start justify-center">
               <p className="text-md font-sans flex flex-row gap-2">
-                <Mail className="min-w-4 min-h-4 stroke-1 text-yellow-700" />
+                <Mail className="min-w-4 min-h-4 stroke-1 text-yellow-900" />
                 Send an Email
               </p>
-              <Link href="/" className=" text-yellow-700 font-sans">
+              <Link href="/" className=" text-yellow-900 font-sans">
                 <Button variant={"link"} className="p-0 text-2xl lg:text-3xl">
                   info@goldenretreatinternational.com
                 </Button>
@@ -98,7 +98,7 @@ export default function Contact() {
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 w-full lg:py-40 bg-yellow-900/10 items-start justify-start lg:px-52 px-10 py-20">
         <div className="flex flex-col gap-4">
-          <p className="text-5xl lg:text-7xl font-extrabold text-yellow-700 font-cinzel">
+          <p className="text-5xl lg:text-7xl font-extrabold text-yellow-900 font-cinzel">
             Contact <br className="hidden lg:block"></br>Form
           </p>
           <p className="text-sm font-sans text-balance">
@@ -108,21 +108,13 @@ export default function Contact() {
           </p>
 
           <div className="hidden lg:flex flex-row py-20 items-end justify-start gap-8">
-            <Facebook className="min-w-12 min-h-12 stroke-1 text-yellow-700/50 hover:text-yellow-700" />
-            <Instagram className="min-w-12 min-h-12 stroke-1 text-yellow-700/50 hover:text-yellow-700" />
-            <Linkedin className="min-w-12 min-h-12 stroke-1 text-yellow-700/50 hover:text-yellow-700" />
-            <Youtube className="min-w-12 min-h-12 stroke-1 text-yellow-700/50 hover:text-yellow-700" />
+            <Facebook className="min-w-12 min-h-12 stroke-1 text-yellow-900/50 hover:text-yellow-900" />
+            <Instagram className="min-w-12 min-h-12 stroke-1 text-yellow-900/50 hover:text-yellow-900" />
+            <Linkedin className="min-w-12 min-h-12 stroke-1 text-yellow-900/50 hover:text-yellow-900" />
+            <Youtube className="min-w-12 min-h-12 stroke-1 text-yellow-900/50 hover:text-yellow-900" />
           </div>
         </div>
         <Card className="flex flex-col w-full lg:col-start-2 bg-transparent border-none shadow-none p-0">
-          {/* <CardHeader className="pl-8">
-            <CardTitle className="text-4xl text-yellow-700">
-              Contact Form
-            </CardTitle>
-            <CardDescription className="text-sm font-sans text-balance">
-              Fill out the form below to get in touch with us
-            </CardDescription>
-          </CardHeader> */}
           <CardContent className="p-0">
             <form className="flex flex-col gap-4 font-sans py-6 px-0">
               <Label htmlFor="name">Full Name</Label>

@@ -1,3 +1,4 @@
+import Cta from "@/components/cta";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -20,7 +21,8 @@ import {
   ArrowRightCircle,
   MapPin,
   Award,
-  FileText
+  FileText,
+  Dock
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -80,39 +82,21 @@ export default function LandingPage() {
           />
         </div>
         <div className="flex flex-col gap-4 px-8 lg:px-0 w-full">
-          <p className="font-cinzel text-yellow-700 text-3xl  lg:text-3xl tracking-wide flex flex-col">
+          <p className="font-cinzel text-yellow-900 text-3xl  lg:text-3xl tracking-wide flex flex-col">
             <span className="font-bold text-4xl lg:text-7xl ">
-              Luxury. Getaway. Paradise.
+              33 Luxury Villas
             </span>{" "}
+            Private & Exclusive
           </p>
           <p className="font-sans text-stone-900 text-sm">
-            Experience unparalleled luxury and exclusivity with{" "}
-            <span className="text-yellow-700 italic font-bold">
-              Golden Retreat Lombok Villas
-            </span>
-            ; a private getaway paradise and a place where you and your family
-            can call home when visiting Lombok.
+            Experience a rare combination of luxury, exclusivity and value with
+            our latest development, Golden Retreat Lombok, where every Villa has
+            been meticulously designed with you in mind.
           </p>
-          <p className="font-sans text-sm">
-            Located 2 minutes away from{" "}
-            <Link
-              href="https://maps.app.goo.gl/ZLkiZBWyVheaUjNC6"
-              target="_blank"
-              className="text-yellow-700 font-bold hover:underline hover:opacity-100 underline-offset-2"
-            >
-              Pangsal Port
-            </Link>{" "}
-            and 7 minutes away from the famous{" "}
-            <Link
-              href="https://maps.app.goo.gl/YUubKCJEWsde2P4f7"
-              target="_blank"
-              className="text-yellow-700 hover:underline font-bold underline-offset-2"
-            >
-              Gili Islands
-            </Link>
-            , Golden Retreat Lombok Villas is the perfect place to escape the
-            hustle and bustle of the city and enjoy the serenity of a luxurious
-            peaceful getaway.
+          <p className="font-sans text-sm text-stone-900/50">
+            Nestled in the beautiful west coast of Lombok, Golden Retreat Lombok
+            showcases exquisite design, a quality build, 5-star amenities, and
+            exceptional service.
           </p>
           <div className="flex flex-row gap-4">
             <Button variant="default" className="w-fit">
@@ -127,24 +111,39 @@ export default function LandingPage() {
 
       {/* Villas Section  */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-x-14 items-start justify-start w-full px-8 lg:px-52 py-20">
-        <p className="text-4xl lg:text-5xl font-cinzel font-bold text-yellow-700">
-          The Villas
-        </p>
-        <Image
-          src="https://utfs.io/f/dJLJpH9Hrkw3wcK398eUX3BuqFPzTD5Kh1H9QyUilcWfbY6d"
-          alt="Golden Retreat Lombok Villa"
-          width={500}
-          height={200}
-          className="hidden lg:flex w-full h-auto aspect-video object-cover rounded-lg"
-        />
-        <p className="text-sm font-sans opacity-50 text-pretty">
-          The result of a collaboration between the land owners, experienced
-          developers and excellent management teams, this project is designed to
-          provide a unique opportunity for investors to tap into the rising
-          demand in Lombok Island.
-        </p>
-        <div className="hidden lg:flex flex-row items-center justify-center py-4 ring-1 ring-yellow-700 text-yellow-700 font-sans text-sm italic rounded-lg">
-          Exquisite villa with private pool and deck, perfect for luxury living.
+        <div className="flex flex-col gap-4">
+          <p className="text-4xl lg:text-5xl font-cinzel font-bold text-yellow-900">
+            An Unparalleled Opportunity
+          </p>
+          <p className="text-sm font-sans opacity-50 text-pretty">
+            Golden Retreat Lombok brings forth an opportunity to tap Lombok’s
+            fast-growing tourism industry. Already ranked one of the world's top
+            destinations for nature tourism, Lombok Island’s need for quality
+            holiday accommodation continues to soar.
+          </p>
+          <p className="text-sm font-sans italic text-pretty">
+            What if you could turn back time?
+          </p>
+          <p className="text-sm font-sans opacity-50 text-pretty">
+            What Lombok truly represents for the astute investor is the
+            opportunity to invest in a Bali-like destination 15 to 20 years ago,
+            having been first in a rapidly growing market. .
+          </p>
+        </div>
+        <div className="flex flex-col gap-4">
+          <Image
+            src="https://utfs.io/f/dJLJpH9Hrkw3wcK398eUX3BuqFPzTD5Kh1H9QyUilcWfbY6d"
+            alt="Golden Retreat Lombok Villa"
+            width={500}
+            height={200}
+            className="hidden lg:flex w-full h-auto aspect-video object-cover rounded-lg"
+          />
+          <div className="hidden lg:flex flex-row items-center justify-center py-4 ring-1 ring-yellow-700 text-yellow-900 font-sans text-sm italic rounded-lg">
+            <p>
+              Exquisite villa with private pool and deck, perfect for luxury
+              living.
+            </p>
+          </div>
         </div>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-[2fr_3fr] gap-4 items-center justify-center w-full px-8 lg:px-52 lg:py-20 -mt-14 pb-14">
@@ -169,10 +168,10 @@ export default function LandingPage() {
           height={200}
           className="w-full h-auto aspect-video object-cover rounded-lg"
         />
-        <div className="hidden lg:flex flex-row items-center justify-center py-4 ring-1 ring-yellow-700 text-yellow-700 font-sans text-sm italic rounded-lg">
+        <div className="hidden lg:flex flex-row items-center justify-center py-4 ring-1 ring-yellow-700 text-yellow-900 font-sans text-sm italic rounded-lg">
           A lavishly designed bespoke bathroom.
         </div>
-        <div className="hidden lg:flex flex-row items-center justify-center py-4 ring-1 ring-yellow-700 text-yellow-700 font-sans text-sm italic rounded-lg">
+        <div className="hidden lg:flex flex-row items-center justify-center py-4 ring-1 ring-yellow-700 text-yellow-900 font-sans text-sm italic rounded-lg">
           Spacious living room with high-end finishings, wide screen TV, bar and
           more.{" "}
         </div>
@@ -186,7 +185,7 @@ export default function LandingPage() {
       </div>
 
       <div className="flex flex-col gap-12 items-center justify-center w-full min-h-screen px-8 lg:px-52 py-20 bg-yellow-800/10">
-        {/*  <p className="font-cinzel text-yellow-700 font-bold text-5xl">
+        {/*  <p className="font-cinzel text-yellow-900 font-bold text-5xl">
           The Villas
         </p> */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center justify-between w-full lg:gap-14">
@@ -210,7 +209,7 @@ export default function LandingPage() {
                     {/* <p className="text-sm font-sans mb-8 opacity-50">
                       2 bedroom | 150 sqm
                     </p> */}
-                    <p className="text-2xl lg:text-3xl font-bold uppercase col-span-2 text-yellow-700">
+                    <p className="text-2xl lg:text-3xl font-bold uppercase col-span-2 text-yellow-900">
                       Premium Luxury Villa
                     </p>
                     <div className="col-span-2 flex flex-row gap-4 items-center justify-between">
@@ -245,7 +244,7 @@ export default function LandingPage() {
                       <Badge variant={"default"}>187 sqm</Badge>
                     </div>
 
-                    <p className="text-2xl lg:text-3xl font-bold uppercase col-span-2 text-yellow-700">
+                    <p className="text-2xl lg:text-3xl font-bold uppercase col-span-2 text-yellow-900">
                       Superior Luxury Villa
                     </p>
                     <div className="col-span-2 flex flex-row gap-4 items-center justify-between">
@@ -266,7 +265,7 @@ export default function LandingPage() {
 
       {/* In House Facilities */}
       <div className="flex flex-col gap-8 items-center justify-center w-full px-8 lg:px-52 py-10 lg:py-40">
-        <p className="text-4xl lg:text-5xl font-cinzel text-yellow-700 font-bold">
+        <p className="text-4xl lg:text-5xl font-cinzel text-yellow-900 font-bold">
           In House Facilities
         </p>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-12 w-full">
@@ -281,7 +280,7 @@ export default function LandingPage() {
                   className="w-full h-auto  object-cover aspect-video rounded-lg shadow-lg"
                 />
                 <div className="flex flex-col gap-2 w-full p-6 lg:text-xl text-sm ring-1 ring-yellow-700 rounded-lg">
-                  <p className="text-xl font-bold font-cinzel text-yellow-700">
+                  <p className="text-xl font-bold font-cinzel text-yellow-900">
                     Restaurant, Bar & Lounge{" "}
                   </p>
                   <p className="text-sm opacity-70 font-sans">
@@ -305,7 +304,7 @@ export default function LandingPage() {
                   className="w-full h-auto  object-cover aspect-video rounded-lg shadow-lg"
                 />
                 <div className="flex flex-col gap-2 w-full h-full p-6 lg:text-xl text-sm ring-1 ring-yellow-700 rounded-lg">
-                  <p className="text-xl font-bold font-cinzel text-yellow-700">
+                  <p className="text-xl font-bold font-cinzel text-yellow-900">
                     Wellness Spa & Gymnasium
                   </p>
                   <p className="text-sm opacity-70 font-sans">
@@ -329,7 +328,7 @@ export default function LandingPage() {
                   className="w-full h-auto  object-cover aspect-video rounded-lg shadow-lg"
                 />
                 <div className="flex flex-col gap-2 w-full h-full p-6 lg:text-xl text-sm ring-1 ring-yellow-700 rounded-lg">
-                  <p className="text-xl font-bold font-cinzel text-yellow-700">
+                  <p className="text-xl font-bold font-cinzel text-yellow-900">
                     Serenity Garden & Koi Pond
                   </p>
                   <p className="text-sm opacity-70 font-sans">
@@ -355,24 +354,10 @@ export default function LandingPage() {
               <div className="flex flex-row lg:flex-col gap-4 lg:gap-10 w-full p-0 lg:text-xl text-sm items-center lg:items-start">
                 <MapPin className="min-w-16 min-h-16 fill-yellow-600 stroke-1" />
                 <p className="text-sm  font-sans text-white border-l-2 border-yellow-600/50 pl-4">
-                  Located at the heart of the rising tourist destination in
-                  Lombok. The villas are placed just 300m away from Bangsal
-                  Beach, Bangsal Fast Boat Port and nearby the boat service to
-                  the famous Gili Islands.
-                </p>
-              </div>
-            </CardContent>
-          </Card>
-
-          <Card className="flex flex-col w-full lg:p-0 bg-transparent shadow-none border-none">
-            <CardContent className="p-0">
-              <div className="flex flex-row lg:flex-col gap-4 lg:gap-10 w-full p-0 lg:text-xl text-sm items-center lg:items-start">
-                <KeyRound className="min-w-16 min-h-16 fill-yellow-600 stroke-1" />
-                <p className="text-sm font-sans text-white border-l-2 border-yellow-600/50 pl-4">
-                  Turnkey project where we will prepare everything for you, down
-                  to the furniture, finishings and maintenance. Once your villa
-                  is ready to move in, all you need to do is bring your
-                  toothbrush, we will take care of the rest.
+                  Heart of the latest tourist destination, in Lombok Island.
+                  Located 300m away from Bangsal Beach, Bangsal Fast Boat Port
+                  and Boat service to the famous Gili Terawangan, Gili Air and
+                  Gili Meno.
                 </p>
               </div>
             </CardContent>
@@ -382,11 +367,21 @@ export default function LandingPage() {
             <CardContent className="p-0">
               <div className="flex flex-row lg:flex-col gap-4 lg:gap-10 w-full p-0 lg:text-xl text-sm items-center lg:items-start">
                 <Award className="min-w-16 min-h-16 fill-yellow-600 stroke-1" />
+                <p className="text-sm font-sans text-white border-l-2 border-yellow-600/50 pl-4">
+                  Established developer with the experience of successful past
+                  projects. Designed with you in mind.
+                </p>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card className="flex flex-col w-full lg:p-0 bg-transparent shadow-none border-none">
+            <CardContent className="p-0">
+              <div className="flex flex-row lg:flex-col gap-4 lg:gap-10 w-full p-0 lg:text-xl text-sm items-center lg:items-start">
+                <Dock className="min-w-16 min-h-16 fill-yellow-600 stroke-1" />
                 <p className="text-sm  font-sans text-white border-l-2 border-yellow-600/50 pl-4">
-                  Managed by experienced team that will help you throughout the
-                  entire process. This includes any legal documentation, visa
-                  application plus progressive payments with an initial deposit
-                  of 5% of purchase price.
+                  Long stay visas for foreign purchasers. Visa application
+                  assistance provided.
                 </p>
               </div>
             </CardContent>
@@ -396,6 +391,7 @@ export default function LandingPage() {
           Apply Now
         </Button>
       </div>
+      <Cta />
     </main>
   );
 }

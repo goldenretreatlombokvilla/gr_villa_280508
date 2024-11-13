@@ -50,6 +50,7 @@ const navItems = [
     name: "Gallery",
     link: "/gallery"
   },
+  { name: "About Us", link: "/about" },
   {
     name: "Investment",
     link: "/invest"
@@ -91,14 +92,6 @@ const links = [
   {
     name: "Booking Form",
     link: "/"
-  },
-  {
-    name: "About Us",
-    link: "/about"
-  },
-  {
-    name: "Our Team",
-    link: "/about"
   },
   {
     name: "Contact Us",

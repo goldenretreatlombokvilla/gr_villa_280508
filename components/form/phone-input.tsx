@@ -24,6 +24,7 @@ export default function PhoneInputComp({
       <Label htmlFor="phone">{label}</Label>
       <div className="relative w-full">
         <PhoneInput
+          required
           international
           defaultCountry="MY"
           value={value}

@@ -77,7 +77,7 @@ export default function Lombok() {
         </div>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-10 lg:gap-10 items-center justify-center w-full">
-        <div className="flex flex-col gap-4 items-center text-yellow-700 relative">
+        <div className="flex flex-col gap-4 items-center text-yellow-900 relative">
           <Image
             src="/lombok/ariel-island.jpg"
             alt="Lombok Island Ariel View"
@@ -123,31 +123,31 @@ export default function Lombok() {
       </div>
 
       <div className="flex flex-col gap-8 items-center justify-start w-full py-32">
-        <p className="font-cinzel text-center text-5xl font-bold text-yellow-700">
+        <p className="font-cinzel text-center text-5xl font-bold text-yellow-900">
           Reasons Tourist Are Visitng Lombok
         </p>
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-10 lg:gap-10 justify-center items-center py-4">
           <div className="flex flex-row lg:flex-col gap-4 items-center">
             <Waves className="w-16 h-16 text-yellow-600 stroke-1" />
-            <p className="font-cinzel text-xl text-stone-900 hover:text-yellow-700 font-bold">
+            <p className="font-cinzel text-xl text-stone-900 hover:text-yellow-900 font-bold">
               Stunning Beaches
             </p>
           </div>
           <div className="flex flex-row lg:flex-col gap-4 items-center">
             <Mountain className="w-16 h-16 text-yellow-600 stroke-1" />
-            <p className="font-cinzel text-xl text-stone-900 hover:text-yellow-700 font-bold">
+            <p className="font-cinzel text-xl text-stone-900 hover:text-yellow-900 font-bold">
               Hiking Trails
             </p>
           </div>
           <div className="flex flex-row lg:flex-col gap-4 items-center">
             <TreePalm className="w-16 h-16 text-yellow-600 stroke-1" />
-            <p className="font-cinzel text-xl text-stone-900 hover:text-yellow-700 font-bold">
+            <p className="font-cinzel text-xl text-stone-900 hover:text-yellow-900 font-bold">
               Island Hoping
             </p>
           </div>
           <div className="flex flex-row lg:flex-col gap-4 items-center">
             <Bike className="w-16 h-16 text-yellow-600 stroke-1" />
-            <p className="font-cinzel text-xl text-stone-900 hover:text-yellow-700 font-bold">
+            <p className="font-cinzel text-xl text-stone-900 hover:text-yellow-900 font-bold">
               MotoGP Racing
             </p>
           </div>
@@ -156,19 +156,19 @@ export default function Lombok() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-10 justify-center items-center py-4">
           <div className="flex flex-row lg:flex-col gap-4 items-center">
             <Fish className="w-16 h-16 text-yellow-600 stroke-1" />
-            <p className="font-cinzel text-xl text-stone-900 hover:text-yellow-700 font-bold">
+            <p className="font-cinzel text-xl text-stone-900 hover:text-yellow-900 font-bold">
               Snorkeling Spots
             </p>
           </div>
           <div className="flex flex-row lg:flex-col gap-4 items-center">
             <ImageIcon className="w-16 h-16 text-yellow-600 stroke-1" />
-            <p className="font-cinzel text-xl text-stone-900 hover:text-yellow-700 font-bold">
+            <p className="font-cinzel text-xl text-stone-900 hover:text-yellow-900 font-bold">
               Art Galleries
             </p>
           </div>
           <div className="flex flex-row lg:flex-col gap-4 items-center">
             <CircleDashed className="w-16 h-16 text-yellow-600 stroke-1" />
-            <p className="font-cinzel text-xl text-stone-900 hover:text-yellow-700 font-bold">
+            <p className="font-cinzel text-xl text-stone-900 hover:text-yellow-900 font-bold">
               Local Culture
             </p>
           </div>

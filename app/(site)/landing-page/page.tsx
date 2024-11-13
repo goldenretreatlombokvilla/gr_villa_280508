@@ -310,7 +310,7 @@ export default function Home() {
             </CarouselContent>
           </Carousel>
           <div className="flex flex-col gap-4 items-center">
-            <p className="tracking-widest text-yellow-700 text-md ">
+            <p className="tracking-widest text-yellow-900 text-md ">
               Step into peace and luxury
             </p>
 
