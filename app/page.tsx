@@ -22,7 +22,10 @@ import {
   MapPin,
   Award,
   FileText,
-  Dock
+  Dock,
+  Phone,
+  Images,
+  FolderCheck
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -77,33 +80,50 @@ export default function LandingPage() {
             alt="Front Enterence of Golden Retreat Lombok Villa"
             width={700}
             height={700}
-            className="w-full h-full object-cover rounded-none lg:rounded-r-lg object-center"
+            className="w-full h-full object-cover rounded-none lg:rounded-r-lg object-center shadow-2xl shadow-yellow-900"
             /*  unoptimized={true} */
           />
         </div>
-        <div className="flex flex-col gap-4 px-8 lg:px-0 w-full">
-          <p className="font-cinzel text-yellow-900 text-3xl  lg:text-3xl tracking-wide flex flex-col">
-            <span className="font-bold text-4xl lg:text-7xl ">
-              33 Luxury Villas
-            </span>{" "}
+        <div className="flex flex-col gap-6 px-8 lg:px-0 w-full">
+          {/* <p className="text-md font-sans -mb-4 font-bold uppercase">
+            The Home of
+          </p> */}
+          <p className="font-cinzel text-xl lg:text-2xl font-extrabold tracking-wide flex flex-col text-yellow-800 uppercase opacity-50 -mb-4">
             Private & Exclusive
           </p>
-          <p className="font-sans text-stone-900 text-sm">
+          <h3 className="font-extrabold text-4xl lg:text-8xl font-cinzel text-yellow-800">
+            Luxury Villas
+          </h3>
+          {/* <p className="font-cinzel text-3xl lg:text-4xl font-medium tracking-wide flex flex-col uppercase opacity-70 -mt-4">
+            Private & Exclusive
+          </p> */}
+          <p className="font-sans text-stone-900 text-md">
             Experience a rare combination of luxury, exclusivity and value with
-            our latest development, Golden Retreat Lombok, where every Villa has
-            been meticulously designed with you in mind.
+            our latest development,{" "}
+            <span className="font-extrabold text-yellow-800">
+              Golden Retreat Lombok
+            </span>
+            , where every Villa has been meticulously designed with you in mind.
           </p>
-          <p className="font-sans text-sm text-stone-900/50">
+          <p className="font-sans text-md text-stone-900/50">
             Nestled in the beautiful west coast of Lombok, Golden Retreat Lombok
             showcases exquisite design, a quality build, 5-star amenities, and
             exceptional service.
           </p>
           <div className="flex flex-row gap-4">
-            <Button variant="default" className="w-fit">
-              Discover Lombok
-            </Button>
-            <Button variant="link" className="w-fit">
-              Book A Call
+            <Link href="/lombok" prefetch={true}>
+              <Button
+                variant="default"
+                className="w-fit font-extrabold uppercase tracking-wider hover:drop-shadow-md"
+              >
+                Destination Lombok
+              </Button>
+            </Link>
+            <Button variant="link" className="w-fit group ">
+              <Phone className="min-w-6 min-h-6 stroke-1 text-yellow-700 group-hover:animate-ping" />{" "}
+              <p className="opacity-0 group-hover:opacity-100 transisition-all duration-500 ease-in-out text-yellow-800">
+                Book A Call
+              </p>
             </Button>
           </div>
         </div>
@@ -111,24 +131,40 @@ export default function LandingPage() {
 
       {/* Villas Section  */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-x-14 items-start justify-start w-full px-8 lg:px-52 py-20">
-        <div className="flex flex-col gap-4">
-          <p className="text-4xl lg:text-5xl font-cinzel font-bold text-yellow-900">
-            An Unparalleled Opportunity
-          </p>
-          <p className="text-sm font-sans opacity-50 text-pretty">
+        <div className="flex flex-col gap-6">
+          <h2 className="text-4xl lg:text-5xl font-cinzel font-extrabold text-yellow-900">
+            <span className="font-cinzel text-xl lg:text-2xl font-extrabold tracking-wide flex flex-col uppercase opacity-50">
+              An Unparalleled
+            </span>
+            Investment Opportunity
+          </h2>
+          <p className="text-md font-sans text-balance">
             Golden Retreat Lombok brings forth an opportunity to tap Lombok’s
-            fast-growing tourism industry. Already ranked one of the world's top
-            destinations for nature tourism, Lombok Island’s need for quality
-            holiday accommodation continues to soar.
+            fast-growing tourism industry. Already ranked{" "}
+            <span className="font-bold">
+              one of the world's top destinations for nature tourism
+            </span>
+            , Lombok Island’s need for quality holiday accommodation continues
+            to soar.
           </p>
-          <p className="text-sm font-sans italic text-pretty">
-            What if you could turn back time?
-          </p>
-          <p className="text-sm font-sans opacity-50 text-pretty">
-            What Lombok truly represents for the astute investor is the
-            opportunity to invest in a Bali-like destination 15 to 20 years ago,
-            having been first in a rapidly growing market. .
-          </p>
+          <div className="flex flex-row gap-4 items-end justify-start">
+            <Link href="/invest" prefetch={true}>
+              <Button
+                variant="default"
+                className="w-fit font-extrabold uppercase tracking-wider hover:drop-shadow-md"
+              >
+                Investment Opportunity
+              </Button>
+            </Link>
+            <Link href="/gallery" prefetch={true}>
+              <Button variant="link" className="w-fit group ">
+                <Images className="min-w-6 min-h-6 stroke-1 text-yellow-700 group-hover:animate-ping" />{" "}
+                <p className="opacity-0 group-hover:opacity-100 transisition-all duration-500 ease-in-out text-yellow-800">
+                  View Gallery
+                </p>
+              </Button>
+            </Link>
+          </div>
         </div>
         <div className="flex flex-col gap-4">
           <Image
@@ -175,13 +211,7 @@ export default function LandingPage() {
           Spacious living room with high-end finishings, wide screen TV, bar and
           more.{" "}
         </div>
-        <div className="flex flex-row gap-4 lg:col-span-2 items-center justify-center pt-8 ">
-          <Link href="/gallery" prefetch={true}>
-            <Button variant="link" className="w-fit">
-              View Gallery
-            </Button>
-          </Link>
-        </div>
+        <div className="flex flex-row gap-4 lg:col-span-2 items-center justify-end pt-8 "></div>
       </div>
 
       <div className="flex flex-col gap-12 items-center justify-center w-full min-h-screen px-8 lg:px-52 py-20 bg-yellow-800/10">
@@ -199,7 +229,7 @@ export default function LandingPage() {
                     alt="Bedroom in the Premium Luxury Villa"
                     width={500}
                     height={300}
-                    className="w-full h-auto z-10 object-cover aspect-video rounded-t-lg lg:rounded-lg group-hover:shadow-lg"
+                    className="w-full h-auto z-10 object-cover aspect-video rounded-t-lg lg:rounded-lg group-hover:shadow-lg shadow-yellow-900"
                   />
                   <div className="grid grid-cols-1 lg:grid-cols-2 rounded-lg  gap-2 w-full p-6 lg:text-xl text-sm ring-1 ring-yellow-600 group-hover:shadow-lg bg-background -mt-5 pt-12  lg:mt-0">
                     <div className="flex flex-row gap-4 mb-8">
@@ -264,8 +294,8 @@ export default function LandingPage() {
       </div>
 
       {/* In House Facilities */}
-      <div className="flex flex-col gap-8 items-center justify-center w-full px-8 lg:px-52 py-10 lg:py-40">
-        <p className="text-4xl lg:text-5xl font-cinzel text-yellow-900 font-bold">
+      <div className="flex flex-col gap-8 items-center justify-center w-full px-8 lg:px-32 py-10 lg:py-40">
+        <p className="text-4xl lg:text-5xl font-cinzel font-extrabold text-yellow-900 font-bold">
           In House Facilities
         </p>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-12 w-full">
@@ -279,11 +309,11 @@ export default function LandingPage() {
                   height={300}
                   className="w-full h-auto  object-cover aspect-video rounded-lg shadow-lg"
                 />
-                <div className="flex flex-col gap-2 w-full p-6 lg:text-xl text-sm ring-1 ring-yellow-700 rounded-lg">
-                  <p className="text-xl font-bold font-cinzel text-yellow-900">
+                <div className="flex flex-col gap-2 w-full p-6 ring-1 ring-yellow-700 rounded-lg">
+                  <p className="text-2xl font-bold font-cinzel text-yellow-900">
                     Restaurant, Bar & Lounge{" "}
                   </p>
-                  <p className="text-sm opacity-70 font-sans">
+                  <p className="text-md opacity-70 font-sans">
                     Dine in luxury in our 5 star restaurant with a delicious
                     variety of dishes or spend the evening in our private
                     lounge.
@@ -303,11 +333,11 @@ export default function LandingPage() {
                   height={300}
                   className="w-full h-auto  object-cover aspect-video rounded-lg shadow-lg"
                 />
-                <div className="flex flex-col gap-2 w-full h-full p-6 lg:text-xl text-sm ring-1 ring-yellow-700 rounded-lg">
-                  <p className="text-xl font-bold font-cinzel text-yellow-900">
+                <div className="flex flex-col gap-2 w-full h-full p-6 ring-1 ring-yellow-700 rounded-lg">
+                  <p className="text-2xl font-bold font-cinzel text-yellow-900">
                     Wellness Spa & Gymnasium
                   </p>
-                  <p className="text-sm opacity-70 font-sans">
+                  <p className="text-md opacity-70 font-sans">
                     Never miss a beat with you fitness routine with our
                     gymnasium or take a break at the wellness spa for a nice day
                     of relaxation.
@@ -327,11 +357,11 @@ export default function LandingPage() {
                   height={300}
                   className="w-full h-auto  object-cover aspect-video rounded-lg shadow-lg"
                 />
-                <div className="flex flex-col gap-2 w-full h-full p-6 lg:text-xl text-sm ring-1 ring-yellow-700 rounded-lg">
-                  <p className="text-xl font-bold font-cinzel text-yellow-900">
+                <div className="flex flex-col gap-2 w-full h-full p-6 ring-1 ring-yellow-700 rounded-lg">
+                  <p className="text-2xl font-bold font-cinzel text-yellow-900">
                     Serenity Garden & Koi Pond
                   </p>
-                  <p className="text-sm opacity-70 font-sans">
+                  <p className="text-md opacity-70 font-sans">
                     Be at peace with the sound of water and a beautiful sight in
                     our gardens, where memories of a lifetime are made.
                   </p>
@@ -344,20 +374,20 @@ export default function LandingPage() {
 
       {/* Benefits Section */}
       <div className="flex flex-col gap-10 items-center justify-start w-full px-8 lg:px-52 py-20 bg-black text-white">
-        <p className="text-4xl lg:text-5xl font-cinzel text-white">
+        <p className="text-4xl lg:text-5xl font-cinzel font-extrabold text-white">
           Investment Benefits
         </p>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-16">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 pl-8 lg:gap-20 py-6">
           <Card className="flex flex-col w-full lg:p-0 bg-transparent shadow-none border-none">
             <CardContent className="p-0">
-              <div className="flex flex-row lg:flex-col gap-4 lg:gap-10 w-full p-0 lg:text-xl text-sm items-center lg:items-start">
-                <MapPin className="min-w-16 min-h-16 fill-yellow-600 stroke-1" />
-                <p className="text-sm  font-sans text-white border-l-2 border-yellow-600/50 pl-4">
-                  Heart of the latest tourist destination, in Lombok Island.
-                  Located 300m away from Bangsal Beach, Bangsal Fast Boat Port
-                  and Boat service to the famous Gili Terawangan, Gili Air and
-                  Gili Meno.
+              <div className="flex flex-row lg:flex-col gap-4 lg:gap-10 w-full p-0 items-center lg:items-start group">
+                <MapPin className="min-w-24 min-h-24 fill-yellow-700 group-hover:fill-yellow-600 stroke-1 lg:-ml-12" />
+                <p className="text-md  font-sans text-white border-l-2 border-yellow-600/50 pl-8">
+                  The land is situated in the heart of the latest tourist
+                  destination, the west coast of Lombok Island. Located 300m
+                  away from Bangsal Beach, Bangsal Fast Boat Port and Boat
+                  service to the famous Gili Terawangan, Gili Air and Gili Meno.
                 </p>
               </div>
             </CardContent>
@@ -365,11 +395,12 @@ export default function LandingPage() {
 
           <Card className="flex flex-col w-full lg:p-0 bg-transparent shadow-none border-none">
             <CardContent className="p-0">
-              <div className="flex flex-row lg:flex-col gap-4 lg:gap-10 w-full p-0 lg:text-xl text-sm items-center lg:items-start">
-                <Award className="min-w-16 min-h-16 fill-yellow-600 stroke-1" />
-                <p className="text-sm font-sans text-white border-l-2 border-yellow-600/50 pl-4">
+              <div className="flex flex-row lg:flex-col gap-4 lg:gap-10 w-full p-0 items-center lg:items-start group">
+                <Award className="min-w-24 min-h-24 fill-yellow-700 group-hover:fill-yellow-600 stroke-1 lg:-ml-12" />
+                <p className="text-md font-sans text-white border-l-2 border-yellow-600/50 pl-8">
                   Established developer with the experience of successful past
-                  projects. Designed with you in mind.
+                  projects. Project is designed with you; the end user in mind.
+                  Investment includes premium furnishings and 5-star amenities.
                 </p>
               </div>
             </CardContent>
@@ -377,17 +408,21 @@ export default function LandingPage() {
 
           <Card className="flex flex-col w-full lg:p-0 bg-transparent shadow-none border-none">
             <CardContent className="p-0">
-              <div className="flex flex-row lg:flex-col gap-4 lg:gap-10 w-full p-0 lg:text-xl text-sm items-center lg:items-start">
-                <Dock className="min-w-16 min-h-16 fill-yellow-600 stroke-1" />
-                <p className="text-sm  font-sans text-white border-l-2 border-yellow-600/50 pl-4">
-                  Long stay visas for foreign purchasers. Visa application
-                  assistance provided.
+              <div className="flex flex-row lg:flex-col gap-4 lg:gap-10 w-full p-0 items-center lg:items-start group">
+                <FolderCheck className="min-w-24 min-h-24 fill-yellow-700 group-hover:fill-yellow-600 stroke-1 lg:-ml-12" />
+                <p className="text-md  font-sans text-white border-l-2 border-yellow-600/50 pl-8 ">
+                  We will assist you in every step of the way, with whatever you
+                  would need. Long stay visas for foreign purchasers. Visa
+                  application assistance provided.
                 </p>
               </div>
             </CardContent>
           </Card>
         </div>
-        <Button variant="default" className="lg:w-fit w-full">
+        <Button
+          variant="default"
+          className="w-fit font-extrabold uppercase tracking-wider hover:drop-shadow-md"
+        >
           Apply Now
         </Button>
       </div>

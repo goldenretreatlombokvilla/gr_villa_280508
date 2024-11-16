@@ -42,7 +42,7 @@ export default function About() {
         <div className="flex flex-col gap-4 items-center justify-center w-full px-0 py-10 lg:pt-20 lg:py-0">
           <div className="flex flex-col gap-4 items-start justify-center">
             <p className="text-xl font-bold uppercase">Primary Developer</p>
-            <p className="text-4xl lg:text-6xl font-cinzel font-bold text-yellow-900">
+            <p className="text-4xl lg:text-6xl font-cinzel font-extrabold text-yellow-900">
               PT Propil Land Development
             </p>
             <div className="flex flex-col lg:w-1/2 gap-2">
@@ -76,7 +76,7 @@ export default function About() {
                   />
                   <Badge
                     variant={"default"}
-                    className="text-sm font-sans absolute bottom-6"
+                    className="text-sm font-sans -mt-6"
                   >
                     The Chandi Boutique Resort & Spa
                   </Badge>
@@ -95,7 +95,7 @@ export default function About() {
                   />
                   <Badge
                     variant={"default"}
-                    className="text-sm font-sans absolute bottom-6"
+                    className="text-sm font-sans -mt-6"
                   >
                     The Mora Royal Villa
                   </Badge>
@@ -114,7 +114,7 @@ export default function About() {
                   />
                   <Badge
                     variant={"default"}
-                    className="text-sm font-sans absolute bottom-6"
+                    className="text-sm font-sans -mt-6"
                   >
                     Malibu Cliff Villa{" "}
                   </Badge>
@@ -133,7 +133,7 @@ export default function About() {
                   />
                   <Badge
                     variant={"default"}
-                    className="text-sm font-sans absolute bottom-6"
+                    className="text-sm font-sans -mt-6"
                   >
                     Villa Matahari Terbenam{" "}
                   </Badge>

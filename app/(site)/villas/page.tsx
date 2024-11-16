@@ -12,6 +12,7 @@ import {
   ArrowDownCircle,
   Grid2X2,
   House,
+  Images,
   KeyRound,
   MapPin,
   Scan,
@@ -100,24 +101,24 @@ export default function Invest() {
         <div className="flex flex-col gap-4 py-20 items-center justify-center w-full">
           <div className="grid grid-cols-1 lg:grid-cols-2 items-center justify-center gap-8">
             <div className="flex flex-col gap-4">
-              <p className="text-5xl lg:text-6xl  font-bold font-cinzel text-yellow-900">
-                Get To Know The Villas
+              <p className="text-5xl lg:text-7xl  font-extrabold font-cinzel text-yellow-900">
+                The Villas
               </p>
-              <p className="font-sans text-sm">
+              <p className="font-sans text-md">
                 Golden Retreat Lombok Villa is a turnkey project, where the
                 villas are designed, built and furnished with everything that
                 you would need before moving in. From the furniture, to the
                 kitchen utensils and the bedding.
               </p>
-              <p className="opacity-60 text-sm font-sans">
+              {/* <p className="opacity-60 text-md font-sans">
                 Once everything is ready, all you need to do to move in is bring
                 your clothes and a toothbrush. We will take care of the rest.
-              </p>
+              </p> */}
               <div className="grid grid-cols-1 lg:flex flex-col gap-6 lg:gap-4 lg:py-8 py-4 items-start">
                 <Card className="flex flex-col w-full lg:p-0 bg-transparent shadow-none border-none">
                   <CardContent className="p-0">
                     <div className="flex flex-row  gap-4 lg:gap-10 w-full p-0 lg:text-xl text-sm items-start lg:items-start">
-                      <MapPin className="min-w-8 min-h-8 text-yellow-700 stroke-1" />
+                      <MapPin className="min-w-8 min-h-8 text-yellow-800 stroke-1" />
                       <p className="text-sm font-sans">
                         <span className="font-bold">From Airport</span> - 1 hour
                         30 minute drive
@@ -128,9 +129,9 @@ export default function Invest() {
                 <Card className="flex flex-col w-full lg:p-0 bg-transparent shadow-none border-none">
                   <CardContent className="p-0">
                     <div className="flex flex-row  gap-4 lg:gap-10 w-full p-0 lg:text-xl text-sm items-start lg:items-start">
-                      <SquareDashed className="min-w-8 min-h-8 text-yellow-700 stroke-1" />
+                      <SquareDashed className="min-w-8 min-h-8 text-yellow-800 stroke-1" />
                       <p className="text-sm font-sans">
-                        <span className="font-bold">Land Parcel Size</span> -
+                        <span className="font-bold">Project Parcel Size</span> -
                         10, 000 sqm
                       </p>
                     </div>
@@ -138,8 +139,22 @@ export default function Invest() {
                 </Card>
               </div>
               <div className="flex flex-row gap-4 justify-start">
-                <Button variant={"default"}>Learn More</Button>
-                <Button variant="link">View Gallery</Button>
+                <Link href="#">
+                  <Button
+                    variant={"default"}
+                    className="w-fit font-extrabold uppercase tracking-wider hover:drop-shadow-md"
+                  >
+                    Learn More
+                  </Button>
+                </Link>
+                <Link href="/gallery" prefetch={true}>
+                  <Button variant="link" className="w-fit group ">
+                    <Images className="min-w-6 min-h-6 stroke-1 text-yellow-700 group-hover:animate-ping" />{" "}
+                    <p className="opacity-0 group-hover:opacity-100 transisition-all duration-500 ease-in-out text-yellow-800">
+                      View Gallery
+                    </p>
+                  </Button>
+                </Link>
               </div>
             </div>
             <div className="flex flex-col gap-4 items-center px-0">
@@ -269,7 +284,7 @@ export default function Invest() {
                     <Waves className="min-w-6 min-h-6 lg:min-h-12 lg:min-w-12 stroke-2 lg:stroke-1 text-yellow-900 opacity-80" />
                     <div className="flex flex-col gap-0 items-start">
                       <p className="font-semibold font-cinzel text-lg text-nowrap">
-                        47 sqm
+                        32.5 sqm
                       </p>
                       <p className="text-sm font-sans">Pool Area</p>
                     </div>
@@ -353,7 +368,7 @@ export default function Invest() {
                     <Waves className="min-w-6 min-h-6 lg:min-h-12 lg:min-w-12 stroke-2 lg:stroke-1 text-yellow-900 opacity-80" />
                     <div className="flex flex-col gap-0 items-start">
                       <p className="font-semibold font-cinzel text-lg text-nowrap">
-                        52 sqm
+                        42 sqm
                       </p>
                       <p className="text-sm font-sans">Pool Area</p>
                     </div>

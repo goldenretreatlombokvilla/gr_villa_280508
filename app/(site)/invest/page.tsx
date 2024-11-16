@@ -38,23 +38,28 @@ export default function Invest() {
 
       <div className="max-w-6xl mx-auto p-10 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-3 items-center justify-center py-20">
-          <div className="flex flex-col gap-4 col-span-2">
+          <div className="flex flex-col gap-6 col-span-2">
             <p className="text-3xl lg:text-6xl  font-bold font-cinzel text-yellow-900">
               Your Investment Journey Made Easy
             </p>
-            <p className="font-sans text-sm text-balance">
+            <p className="font-sans text-md text-balance">
               Golden Retreat Lombok Villa offers a unique opportunity for
               foreign investors to tap into a growing market with indicators
               showing a high potential for growth and high projected yield.
             </p>
-            <p className="opacity-60 font-sans text-sm text-balance">
+            <p className="opacity-60 font-sans text-md text-balance">
               With our experienced team, we will guide you through the complex
               visa application process, ensuring a smooth and efficient
               experience. With our support, you can focus on your purchase and
               travel plans with confidence.
             </p>
             <div className="flex flex-row gap-4 justify-start">
-              <Button variant={"default"}>Invest Now</Button>
+              <Button
+                variant={"default"}
+                className="w-fit font-extrabold uppercase tracking-wider hover:drop-shadow-md"
+              >
+                Invest Now
+              </Button>
             </div>
           </div>
         </div>
@@ -65,15 +70,23 @@ export default function Invest() {
             alt="Lombok Beach and Boats"
             width={500}
             height={500}
-            className="rounded-lg object-cover aspect-square object-bottom"
+            className="rounded-lg object-cover aspect-square object-bottom shadow-lg shadow-yellow-900"
           />
           <div className="flex flex-col items-start gap-4 py-20">
             <p className="text-md uppercase font-cinzel text-yellow-900">
               Did You Know?
             </p>
-            <p className="text-3xl  font-bold font-cinzel text-yellow-900">
+            <p className="text-4xl font-bold font-cinzel text-yellow-900">
               Lombok receives over 1 million tourist every year but only has
               enough hotels and resorts to lodge 24,000 only.
+            </p>
+            <p className="text-sm font-sans italic text-pretty">
+              What if you could turn back time?
+            </p>
+            <p className="text-sm font-sans opacity-50 text-pretty">
+              What Lombok truly represents for the astute investor is the
+              opportunity to invest in a Bali-like destination 15 to 20 years
+              ago, having been first in a rapidly growing market. .
             </p>
             <p className="opacity-50 text-sm font-sans">
               With the rising demand for accomodation and tourist attractions in
