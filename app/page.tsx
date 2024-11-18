@@ -80,7 +80,7 @@ export default function LandingPage() {
             alt="Front Enterence of Golden Retreat Lombok Villa"
             width={700}
             height={700}
-            className="w-full h-full object-cover rounded-none lg:rounded-r-lg object-center shadow-2xl shadow-yellow-900"
+            className="w-full h-full object-cover rounded-none lg:rounded-r-lg object-center lg:shadow-2xl shadow-yellow-900"
             /*  unoptimized={true} */
           />
         </div>

@@ -152,7 +152,7 @@ export default function About() {
           </p>
         </div>{" "}
         <div className="flex flex-col gap-4 items-center justify-center text-center">
-          <p className="text-xl font-bold">Jointly manager by</p>
+          <p className="text-xl font-bold">Jointly managed by</p>
           <p className="text-4xl lg:text-6xl font-cinzel font-bold text-yellow-900">
             Metrolalis Indonesia
           </p>

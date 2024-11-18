@@ -107,13 +107,12 @@ export default function Invest() {
               <p className="font-sans text-md">
                 Golden Retreat Lombok Villa is a turnkey project, where the
                 villas are designed, built and furnished with everything that
-                you would need before moving in. From the furniture, to the
-                kitchen utensils and the bedding.
+                you would need before moving in.
               </p>
-              {/* <p className="opacity-60 text-md font-sans">
+              <p className="opacity-60 text-md font-sans">
                 Once everything is ready, all you need to do to move in is bring
                 your clothes and a toothbrush. We will take care of the rest.
-              </p> */}
+              </p>
               <div className="grid grid-cols-1 lg:flex flex-col gap-6 lg:gap-4 lg:py-8 py-4 items-start">
                 <Card className="flex flex-col w-full lg:p-0 bg-transparent shadow-none border-none">
                   <CardContent className="p-0">
@@ -195,7 +194,7 @@ export default function Invest() {
                 </CarouselContent>
               </Carousel>
               {/* Carousel Mobile */}
-              <Carousel
+              {/* <Carousel
                 plugins={[
                   Autoplay({
                     delay: 3800,
@@ -203,7 +202,7 @@ export default function Invest() {
                   })
                 ]}
                 opts={{ align: "center", loop: true }}
-                className="flex lg:hidden"
+                className="hidden"
               >
                 <CarouselContent className="my-8">
                   {villaImages.map((image, index) => (
@@ -222,7 +221,7 @@ export default function Invest() {
                     </CarouselItem>
                   ))}
                 </CarouselContent>
-              </Carousel>
+              </Carousel> */}
             </div>
           </div>
         </div>
@@ -230,7 +229,7 @@ export default function Invest() {
           {/* 2 Bed */}
           <Card className="flex flex-col w-full lg:p-0 bg-transparent shadow-none border-none">
             <CardContent className="p-0">
-              <div className="flex flex-col md:flex-row gap-6 lg:gap-24 items-center justify-center">
+              <div className="flex flex-col md:flex-row gap-16 lg:gap-24 items-center justify-center">
                 <Image
                   src="/villa/grlv_3.webp"
                   alt="Golden Retreat Lombok Villa"
@@ -254,57 +253,68 @@ export default function Invest() {
                     </p>
                   </div>
                   <div className="flex flex-row gap-4 items-center justify-start">
-                    <House className="min-w-6 min-h-6 lg:min-h-12 lg:min-w-12 stroke-2 lg:stroke-1 text-yellow-900 opacity-80" />
+                    <House className="min-w-8 min-h-8 lg:min-h-12 lg:min-w-12 stroke-1 text-yellow-900 opacity-80" />
                     <div className="flex flex-col gap-0 items-start">
                       <p className="font-semibold font-cinzel text-lg text-nowrap">
                         2 Bed 2 Bath
                       </p>
-                      <p className="text-sm font-sans">Single Storey</p>
+                      <p className="text-sm font-sans opacity-50">
+                        Single Storey
+                      </p>
                     </div>
                   </div>
                   <div className="flex flex-row gap-4 items-center justify-start">
-                    <Grid2X2 className="min-w-6 min-h-6 lg:min-h-12 lg:min-w-12 stroke-2 lg:stroke-1 text-yellow-900 opacity-80" />
+                    <Grid2X2 className="min-w-8 min-h-8 lg:min-h-12 lg:min-w-12 stroke-1 text-yellow-900 opacity-80" />
                     <div className="flex flex-col gap-0 items-start">
                       <p className="font-semibold font-cinzel text-lg text-nowrap">
                         150 sqm
                       </p>
-                      <p className="text-sm font-sans">Parcel Area</p>
+                      <p className="text-sm font-sans opacity-50">
+                        Parcel Area
+                      </p>
                     </div>
                   </div>
                   <div className="flex flex-row gap-4 items-center justify-start">
-                    <Scan className="min-w-6 min-h-6 lg:min-h-12 lg:min-w-12 stroke-2 lg:stroke-1 text-yellow-900 opacity-80" />
+                    <Scan className="min-w-8 min-h-8 lg:min-h-12 lg:min-w-12 stroke-1 text-yellow-900 opacity-80" />
                     <div className="flex flex-col gap-0 items-start">
                       <p className="font-semibold font-cinzel text-lg text-nowrap">
                         103 sqm
                       </p>
-                      <p className="text-sm font-sans"> Built-Up Area</p>
+                      <p className="text-sm font-sans opacity-50">
+                        {" "}
+                        Built-Up Area
+                      </p>
                     </div>
                   </div>
                   <div className="flex flex-row gap-4 items-center justify-start">
-                    <Waves className="min-w-6 min-h-6 lg:min-h-12 lg:min-w-12 stroke-2 lg:stroke-1 text-yellow-900 opacity-80" />
+                    <Waves className="min-w-8 min-h-8 lg:min-h-12 lg:min-w-12 stroke-1 text-yellow-900 opacity-80" />
                     <div className="flex flex-col gap-0 items-start">
                       <p className="font-semibold font-cinzel text-lg text-nowrap">
                         32.5 sqm
                       </p>
-                      <p className="text-sm font-sans">Pool Area</p>
+                      <p className="text-sm font-sans opacity-50">Pool Area</p>
                     </div>
                   </div>
                   <div className="flex flex-row gap-4 items-center justify-start">
-                    <KeyRound className="min-w-6 min-h-6 lg:min-h-12 lg:min-w-12 stroke-2 lg:stroke-1 text-yellow-900 opacity-80" />
+                    <KeyRound className="min-w-8 min-h-8 lg:min-h-12 lg:min-w-12 stroke-1 text-yellow-900 opacity-80" />
                     <div className="flex flex-col gap-0 items-start">
                       <p className="font-semibold font-cinzel text-lg text-nowrap">
                         Turnkey Villa
                       </p>
-                      <p className="text-sm font-sans">Fully Furnished</p>
+                      <p className="text-sm font-sans opacity-50">
+                        Fully Furnished
+                      </p>
                     </div>
                   </div>
                   <div className="flex flex-row gap-4 items-center justify-start">
-                    <UtensilsCrossed className="min-w-6 min-h-6 lg:min-h-12 lg:min-w-12 stroke-2 lg:stroke-1 text-yellow-900 opacity-80" />
+                    <UtensilsCrossed className="min-w-8 min-h-8 lg:min-h-12 lg:min-w-12 stroke-1 text-yellow-900 opacity-80" />
                     <div className="flex flex-col gap-0 items-start">
                       <p className="font-semibold font-cinzel text-lg text-nowrap">
                         Kitchen
                       </p>
-                      <p className="text-sm font-sans">Fully Functional</p>
+                      <p className="text-sm font-sans opacity-50">
+                        Fully Functional
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -314,7 +324,7 @@ export default function Invest() {
           {/* 3 Bed */}
           <Card className="flex flex-col w-full lg:p-0 bg-transparent shadow-none border-none">
             <CardContent className="p-0">
-              <div className="flex flex-col md:flex-row-reverse gap-6 lg:gap-24 items-center justify-center">
+              <div className="flex flex-col md:flex-row-reverse gap-16 lg:gap-24 items-center justify-center">
                 <Image
                   src="/villa/grlv_5.webp"
                   alt="Golden Retreat Lombok Villa"
@@ -338,57 +348,68 @@ export default function Invest() {
                     </p>
                   </div>
                   <div className="flex flex-row gap-4 items-center justify-start">
-                    <House className="min-w-6 min-h-6 lg:min-h-12 lg:min-w-12 stroke-2 lg:stroke-1 text-yellow-900 opacity-80" />
+                    <House className="min-w-8 min-h-8 lg:min-h-12 lg:min-w-12 stroke-1 text-yellow-900 opacity-80" />
                     <div className="flex flex-col gap-0 items-start">
                       <p className="font-semibold font-cinzel text-lg text-nowrap">
                         3 Bed 3 Bath
                       </p>
-                      <p className="text-sm font-sans">Single Storey</p>
+                      <p className="text-sm font-sans opacity-50">
+                        Single Storey
+                      </p>
                     </div>
                   </div>
                   <div className="flex flex-row gap-4 items-center justify-start">
-                    <Grid2X2 className="min-w-6 min-h-6 lg:min-h-12 lg:min-w-12 stroke-2 lg:stroke-1 text-yellow-900 opacity-80" />
+                    <Grid2X2 className="min-w-8 min-h-8 lg:min-h-12 lg:min-w-12 stroke-1 text-yellow-900 opacity-80" />
                     <div className="flex flex-col gap-0 items-start">
                       <p className="font-semibold font-cinzel text-lg text-nowrap">
                         187 sqm
                       </p>
-                      <p className="text-sm font-sans">Parcel Area</p>
+                      <p className="text-sm font-sans opacity-50">
+                        Parcel Area
+                      </p>
                     </div>
                   </div>
                   <div className="flex flex-row gap-4 items-center justify-start">
-                    <Scan className="min-w-6 min-h-6 lg:min-h-12 lg:min-w-12 stroke-2 lg:stroke-1 text-yellow-900 opacity-80" />
+                    <Scan className="min-w-8 min-h-8 lg:min-h-12 lg:min-w-12 stroke-1 text-yellow-900 opacity-80" />
                     <div className="flex flex-col gap-0 items-start">
                       <p className="font-semibold font-cinzel text-lg text-nowrap">
                         135 sqm
                       </p>
-                      <p className="text-sm font-sans"> Built-Up Area</p>
+                      <p className="text-sm font-sans opacity-50">
+                        {" "}
+                        Built-Up Area
+                      </p>
                     </div>
                   </div>
                   <div className="flex flex-row gap-4 items-center justify-start">
-                    <Waves className="min-w-6 min-h-6 lg:min-h-12 lg:min-w-12 stroke-2 lg:stroke-1 text-yellow-900 opacity-80" />
+                    <Waves className="min-w-8 min-h-8 lg:min-h-12 lg:min-w-12 stroke-1 text-yellow-900 opacity-80" />
                     <div className="flex flex-col gap-0 items-start">
                       <p className="font-semibold font-cinzel text-lg text-nowrap">
                         42 sqm
                       </p>
-                      <p className="text-sm font-sans">Pool Area</p>
+                      <p className="text-sm font-sans opacity-50">Pool Area</p>
                     </div>
                   </div>
                   <div className="flex flex-row gap-4 items-center justify-start">
-                    <KeyRound className="min-w-6 min-h-6 lg:min-h-12 lg:min-w-12 stroke-2 lg:stroke-1 text-yellow-900 opacity-80" />
+                    <KeyRound className="min-w-8 min-h-8 lg:min-h-12 lg:min-w-12 stroke-1 text-yellow-900 opacity-80" />
                     <div className="flex flex-col gap-0 items-start">
                       <p className="font-semibold font-cinzel text-lg text-nowrap">
                         Turnkey Villa
                       </p>
-                      <p className="text-sm font-sans">Fully Furnished</p>
+                      <p className="text-sm font-sans opacity-50">
+                        Fully Furnished
+                      </p>
                     </div>
                   </div>
                   <div className="flex flex-row gap-4 items-center justify-start">
-                    <UtensilsCrossed className="min-w-6 min-h-6 lg:min-h-12 lg:min-w-12 stroke-2 lg:stroke-1 text-yellow-900 opacity-80" />
+                    <UtensilsCrossed className="min-w-8 min-h-8 lg:min-h-12 lg:min-w-12 stroke-1 text-yellow-900 opacity-80" />
                     <div className="flex flex-col gap-0 items-start">
                       <p className="font-semibold font-cinzel text-lg text-nowrap">
                         Kitchen
                       </p>
-                      <p className="text-sm font-sans">Fully Functional</p>
+                      <p className="text-sm font-sans opacity-50">
+                        Fully Functional
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -539,9 +560,9 @@ export default function Invest() {
         </div>
         {/* Gallery Section */}
         <div className="flex flex-col gap-4 items-center px-0 pb-20">
-          <div className="flex flex-col gap-4 items-center">
-            <p className="text-yellow-900 text-2xl lg:text-5xl font-bold">
-              Step into peace and luxury
+          <div className="flex flex-col gap-8 lg:gap-4 items-center justify-center">
+            <p className="text-yellow-900 text-center text-balance text-4xl lg:text-5xl font-extrabold">
+              Step into Peace & Luxury
             </p>
           </div>
           <Carousel
@@ -578,37 +599,47 @@ export default function Invest() {
               ))}
             </CarouselContent>
           </Carousel>
+
           <Carousel
+            className="flex lg:hidden"
             plugins={[
               Autoplay({
-                delay: 3800,
-                stopOnMouseEnter: true
+                delay: 3000
               })
             ]}
-            opts={{ align: "center", loop: true }}
-            className="flex lg:hidden"
+            opts={{ align: "start", loop: true }}
           >
-            <CarouselContent className="my-8">
-              {villaImages.map((image, index) => (
+            <CarouselContent className="">
+              {images.map((image, index) => (
                 <CarouselItem
                   key={index}
-                  className="flex flex-col gap-4 items-center justify-center basis-1/2 lg:basis-1/4 lg:pl-14 group rounded-lg"
+                  className="flex flex-col gap-4 items-center justify-center lg:pl-14 w-full group rounded-lg"
                 >
-                  <Image
-                    src={image.src}
-                    alt={image.alt}
-                    width={580}
-                    height={200}
-                    loading="eager"
-                    className="object-cover w-full h-full rounded-lg group-hover:scale-105 transition-all duration-300 group-hover:shadow-lg brightness-100 lg:brightness-90 group-hover:brightness-100"
-                  />
+                  <div className="relative">
+                    <Image
+                      src={image.src}
+                      alt={image.alt}
+                      width={580}
+                      height={580}
+                      loading="eager"
+                      className="object-cover aspect-square min-w-full min-h-full rounded-lg"
+                    />
+                    <Badge
+                      variant="default"
+                      className="text-md text-center text-white opacity-80 absolute bottom-4 right-4"
+                    >
+                      {image.alt}
+                    </Badge>
+                  </div>
                 </CarouselItem>
               ))}
             </CarouselContent>
           </Carousel>
           <div className="flex flex-col ">
             <div className="flex flex-row gap-4 items-center justify-center w-full">
-              <Button variant="link">Book A Discovery Call</Button>
+              <Link href="/gallery">
+                <Button variant="link">View Gallery</Button>
+              </Link>
             </div>
           </div>
         </div>
