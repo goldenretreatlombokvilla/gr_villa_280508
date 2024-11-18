@@ -187,7 +187,8 @@ export default function Invest() {
 
       <div className="bg-yellow-900/10 rounded-lg py-20 px-8 lg:px-52 grid lg:grid-cols-2 lg:gap-24 items-center justify-start w-full text-left">
         <div className="flex flex-col w-full h-full items-center justify-center">
-          <Tchart />
+          {/*           <Tchart />
+           */}{" "}
           {/*  <Image
             src="https://utfs.io/f/dJLJpH9Hrkw3sumPK6dtfQDR1ujgW04bv39US6XzVqYOLryH"
             alt="Golden Retreat Lombok Villa"
