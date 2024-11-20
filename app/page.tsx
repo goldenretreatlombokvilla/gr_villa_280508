@@ -119,12 +119,14 @@ export default function LandingPage() {
                 Destination Lombok
               </Button>
             </Link>
-            <Button variant="link" className="w-fit group ">
-              <Phone className="min-w-6 min-h-6 stroke-1 text-yellow-700 group-hover:animate-ping" />{" "}
-              <p className="opacity-0 group-hover:opacity-100 transisition-all duration-500 ease-in-out text-yellow-800">
-                Book A Call
-              </p>
-            </Button>
+            <Link href="/book">
+              <Button variant="link" className="w-fit group ">
+                <Phone className="min-w-6 min-h-6 stroke-1 text-yellow-700 group-hover:animate-ping" />{" "}
+                <p className="opacity-0 group-hover:opacity-100 transisition-all duration-500 ease-in-out text-yellow-800">
+                  Book A Call
+                </p>
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
@@ -295,7 +297,7 @@ export default function LandingPage() {
 
       {/* In House Facilities */}
       <div className="flex flex-col gap-8 items-center justify-center w-full px-8 lg:px-32 py-10 lg:py-40">
-        <p className="text-4xl lg:text-5xl font-cinzel font-extrabold text-yellow-900 font-bold">
+        <p className="text-4xl lg:text-5xl font-cinzel font-extrabold text-yellow-900">
           In House Facilities
         </p>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-12 w-full">

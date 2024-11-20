@@ -34,7 +34,7 @@ export default function Bookacall() {
             <Label htmlFor="date-time">
               Date & Time{" "}
               <Badge variant="default" className="ml-2">
-                Local Time
+                IND Local Time
               </Badge>
             </Label>
 

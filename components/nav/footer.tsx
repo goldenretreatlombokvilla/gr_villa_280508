@@ -107,7 +107,7 @@ export default function Footer() {
               <Tooltip>
                 <TooltipTrigger>
                   <Link
-                    href="https://utfs.io/f/dJLJpH9Hrkw3sRFhnDdtfQDR1ujgW04bv39US6XzVqYOLryH"
+                    href="https://utfs.io/f/dJLJpH9Hrkw3Mq16Mft7lJKSRYnQdpH4WNEgjBGiyz65xtM9"
                     target="_blank"
                   >
                     <Button

@@ -58,11 +58,7 @@ export function DateTimePicker() {
           )}
         >
           <CalendarIcon className="mr-2 h-4 w-4" />
-          {date ? (
-            format(date, "PPPP hh:mm aa")
-          ) : (
-            <span>MM/DD/YYYY hh:mm aa</span>
-          )}
+          {date ? format(date, "PP (ccc) p") : <span>MM/DD/YYYY hh:mm aa</span>}
         </Button>
       </PopoverTrigger>
       <PopoverContent align="end" side="bottom" className="w-auto p-0">
