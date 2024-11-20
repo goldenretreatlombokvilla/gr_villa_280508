@@ -36,14 +36,14 @@ const navCorp = [
     name: "About Us",
     link: "/about"
   },
-  {
+  /* {
     name: "Developer Profile",
     link: "/about"
   },
   {
     name: "Management Profile",
     link: "/about"
-  },
+  }, */
   {
     name: "Contact Us",
     link: "/contact"
@@ -52,11 +52,7 @@ const navCorp = [
 
 const navServices = [
   {
-    name: "Overview",
-    link: "/invest"
-  },
-  {
-    name: "Services",
+    name: "Opportunity",
     link: "/invest"
   },
   {
@@ -64,23 +60,23 @@ const navServices = [
     link: "/invest"
   },
   {
-    name: "Legal Documentation",
-    link: "/invest"
+    name: "Book A Call",
+    link: "/book"
   }
 ];
 
 const navResources = [
   {
-    name: "Villa Design",
-    link: "/villa"
+    name: "Villas",
+    link: "/villas"
   },
   {
-    name: "The Land",
-    link: "/villa"
+    name: "Destination Lombok",
+    link: "/lombok"
   },
   {
-    name: "Facilities",
-    link: "/villa"
+    name: "Site Plan",
+    link: "/villas"
   },
   {
     name: "Gallery",

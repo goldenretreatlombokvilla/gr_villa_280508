@@ -6,6 +6,7 @@ import PhoneInputComp from "@/components/form/phone-input";
 import { Button } from "@/components/ui/button";
 import { DateTimePicker } from "@/components/form/datetime";
 import { Badge } from "@/components/ui/badge";
+import { Checkbox } from "@/components/ui/checkbox";
 
 export default function Bookacall() {
   return (
@@ -36,9 +37,31 @@ export default function Bookacall() {
                 Local Time
               </Badge>
             </Label>
+
             <DateTimePicker />
-            <Label htmlFor="email">E-mail</Label>
+            <Label htmlFor="email" className="mt-4">
+              E-mail
+            </Label>
             <Input type="email" name="email" id="email" required />
+
+            <div className="flex items-center space-x-2 px-6 ">
+              <Checkbox id="contact" />
+              <label
+                htmlFor="contact"
+                className="text-sm font-normal leading-none opacity-70"
+              >
+                I agree to be contacted at the selected date and time.
+              </label>
+            </div>
+            <div className="flex items-center space-x-2 px-6 ">
+              <Checkbox id="terms" />
+              <label
+                htmlFor="terms"
+                className="text-sm font-normal leading-none opacity-70"
+              >
+                Accept terms and conditions
+              </label>
+            </div>
 
             <Button
               variant={"outline"}

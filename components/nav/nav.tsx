@@ -50,7 +50,7 @@ const navItems = [
     name: "Gallery",
     link: "/gallery"
   },
-  { name: "About Us", link: "/about" },
+  { name: "Lombok", link: "/lombok" },
   {
     name: "Investment",
     link: "/invest"
@@ -82,20 +82,24 @@ const facilities = [
 
 const links = [
   {
-    name: "Destination Lombok",
-    link: "/lombok"
-  },
-  {
-    name: "Presentation Deck",
-    link: "/dashboard/presentation"
+    name: "Info Pack",
+    link: "https://utfs.io/f/dJLJpH9Hrkw3Mq16Mft7lJKSRYnQdpH4WNEgjBGiyz65xtM9",
+    target: "_blank"
   },
   {
     name: "Booking Form",
-    link: "/"
+    link: "https://utfs.io/f/dJLJpH9Hrkw3sRFhnDdtfQDR1ujgW04bv39US6XzVqYOLryH",
+    target: "_blank"
+  },
+  {
+    name: "About Us",
+    link: "/about",
+    target: "_self"
   },
   {
     name: "Contact Us",
-    link: "/contact"
+    link: "/contact",
+    target: "_self"
   }
 ];
 
@@ -226,7 +230,12 @@ export default function Nav() {
                   <div className="flex flex-row flex-wrap gap-0 w-full">
                     {links.map((link: any) => (
                       <SheetClose key={link.name} asChild>
-                        <Link href={link.link} key={link.name} prefetch={true}>
+                        <Link
+                          href={link.link}
+                          target={link.target}
+                          key={link.name}
+                          prefetch={true}
+                        >
                           <Button
                             variant="link"
                             key={link.name}
@@ -241,19 +250,23 @@ export default function Nav() {
                   </div>
                 </div>
                 <div className="py-4 w-full flex flex-col gap-4">
-                  <Link href="/book">
-                    <Button variant="default" className="w-full">
-                      Book Discovery Call
-                    </Button>
-                  </Link>
-                  <Link
-                    href="https://utfs.io/f/dJLJpH9Hrkw3BasnUblcXTk7SfiUKBuzqNOW3Hw01dEptmVg"
-                    target="_blank"
-                  >
-                    <Button variant="link" className="w-full">
-                      Download Brochure
-                    </Button>
-                  </Link>
+                  <SheetClose asChild>
+                    <Link href="/book">
+                      <Button variant="default" className="w-full">
+                        Book Discovery Call
+                      </Button>
+                    </Link>
+                  </SheetClose>
+                  <SheetClose asChild>
+                    <Link
+                      href="https://utfs.io/f/dJLJpH9Hrkw3Mq16Mft7lJKSRYnQdpH4WNEgjBGiyz65xtM9"
+                      target="_blank"
+                    >
+                      <Button variant="link" className="w-full">
+                        Download Info Pack
+                      </Button>
+                    </Link>
+                  </SheetClose>
                 </div>
               </div>
               <SheetFooter className="text-sm font-sans bottom-2 items-end justify-end w-full">
