@@ -28,7 +28,7 @@ export default function Bookacall() {
           <Youtube className="min-w-12 min-h-12 stroke-1 text-yellow-900/50 hover:text-yellow-900" />
         </div>
       </div>
-      <Card className="flex flex-col w-full lg:col-start-2 bg-transparent border-none shadow-none p-0">
+      <Card className="flex flex-col w-full lg:col-start-2 bg-transparent border-none shadow-none p-0 mt-20 lg:mt-0">
         <CardContent className="p-0">
           <form className="flex flex-col gap-4 font-sans py-6 px-0">
             <Label htmlFor="date-time">
@@ -50,7 +50,7 @@ export default function Bookacall() {
                 htmlFor="contact"
                 className="text-sm font-normal leading-none opacity-70"
               >
-                I agree to be contacted at the selected date and time.
+                I agree to be contacted at the selected date and time
               </label>
             </div>
             <div className="flex items-center space-x-2 px-6 ">
