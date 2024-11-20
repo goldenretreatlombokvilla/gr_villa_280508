@@ -18,7 +18,8 @@ import {
   Scan,
   SquareDashed,
   UtensilsCrossed,
-  Waves
+  Waves,
+  XCircleIcon
 } from "lucide-react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
@@ -30,6 +31,16 @@ import {
   AccordionTrigger
 } from "@/components/ui/accordion";
 import Cta from "@/components/cta";
+import {
+  Dialog,
+  DialogClose,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogPortal,
+  DialogTitle,
+  DialogTrigger
+} from "@/components/ui/dialog";
 
 const images = [
   {
@@ -138,14 +149,37 @@ export default function Invest() {
                 </Card>
               </div>
               <div className="flex flex-row gap-4 justify-start">
-                <Link href="#">
-                  <Button
-                    variant={"default"}
-                    className="w-fit font-extrabold uppercase tracking-wider hover:drop-shadow-md"
-                  >
-                    Learn More
-                  </Button>
-                </Link>
+                <Dialog>
+                  <DialogTrigger asChild>
+                    <Button
+                      variant={"default"}
+                      className="w-fit font-extrabold uppercase tracking-wider hover:drop-shadow-md"
+                    >
+                      View Siteplan
+                    </Button>
+                  </DialogTrigger>
+                  <DialogPortal>
+                    <DialogContent className=" border-none shadow-none w-full h-full items-center justify-center bg-transparent">
+                      <DialogHeader>
+                        <DialogTitle className="sr-only">
+                          Official Siteplan for Golden Retreat Lombok Villa
+                        </DialogTitle>
+                        {/*  <DialogDescription>
+                        This action cannot be undone. This will permanently
+                        delete your account and remove your data from our
+                        servers.
+                        </DialogDescription> */}
+                        <Image
+                          src="https://utfs.io/f/dJLJpH9Hrkw34gqO32iILXvxRHuJgz8cqy2TD5QokmWfjNes"
+                          alt="Siteplan for Golden Retreat Lombok Villa"
+                          width={1000}
+                          height={600}
+                          className="min-w-[50vw] h-auto object-contain rounded-lg shadow-lg"
+                        />
+                      </DialogHeader>
+                    </DialogContent>
+                  </DialogPortal>
+                </Dialog>
                 <Link href="/gallery" prefetch={true}>
                   <Button variant="link" className="w-fit group ">
                     <Images className="min-w-6 min-h-6 stroke-1 text-yellow-700 group-hover:animate-ping" />{" "}

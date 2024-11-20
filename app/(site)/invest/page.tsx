@@ -185,30 +185,28 @@ export default function Invest() {
         </div>
       </div>
 
-      <div className="bg-yellow-900/10 rounded-lg py-20 px-8 lg:px-52 grid lg:grid-cols-2 lg:gap-24 items-center justify-start w-full text-left">
+      <div className="bg-yellow-900/10 rounded-lg py-20 px-8 lg:px-52 grid lg:grid-cols-2 gap-12 lg:gap-24 items-center justify-start w-full text-left">
         <div className="flex flex-col w-full h-full items-center justify-center">
           {/*           <Tchart />
            */}{" "}
-          {/*  <Image
+          <Image
             src="https://utfs.io/f/dJLJpH9Hrkw3sumPK6dtfQDR1ujgW04bv39US6XzVqYOLryH"
             alt="Golden Retreat Lombok Villa"
             width={500}
             height={300}
             className="w-full h-full object-cover aspect-video rounded-lg shadow-lg"
             loading="eager"
-          /> */}
+          />
         </div>
-        <div className="flex flex-col gap-2 font-medium">
+        <div className="flex flex-col gap-2 font-medium text-center">
           <p className="text-xl font-sans text-balance">Lombok receives over</p>
           <p className="font-extrabold text-5xl font-cinzel text-yellow-800">
             1,000,000 tourist
           </p>
-          {/*           <p className="text-xl font-sans text-balance">every year but</p>
-           */}{" "}
           <p className="text-xl font-sans text-balance">
             every year only has enough hotels and resorts to lodge
           </p>
-          <p className="font-extrabold text-7xl font-cinzel text-red-500">
+          <p className="font-extrabold text-5xl lg:text-7xl font-cinzel text-red-500">
             24,000 people!
           </p>
         </div>

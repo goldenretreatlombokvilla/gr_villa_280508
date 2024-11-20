@@ -82,7 +82,7 @@ const facilities = [
 
 const links = [
   {
-    name: "Discover Lombok",
+    name: "Destination Lombok",
     link: "/lombok"
   },
   {
@@ -241,12 +241,19 @@ export default function Nav() {
                   </div>
                 </div>
                 <div className="py-4 w-full flex flex-col gap-4">
-                  <Button variant="default" className="w-full">
-                    Book Discovery Call
-                  </Button>
-                  <Button variant="link" className="w-full">
-                    Download Brochure
-                  </Button>
+                  <Link href="/book">
+                    <Button variant="default" className="w-full">
+                      Book Discovery Call
+                    </Button>
+                  </Link>
+                  <Link
+                    href="https://utfs.io/f/dJLJpH9Hrkw3BasnUblcXTk7SfiUKBuzqNOW3Hw01dEptmVg"
+                    target="_blank"
+                  >
+                    <Button variant="link" className="w-full">
+                      Download Brochure
+                    </Button>
+                  </Link>
                 </div>
               </div>
               <SheetFooter className="text-sm font-sans bottom-2 items-end justify-end w-full">

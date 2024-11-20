@@ -5,6 +5,7 @@ import {
   Inbox,
   Instagram,
   Linkedin,
+  Mail,
   MapPin,
   Phone,
   Youtube
@@ -12,6 +13,23 @@ import {
 import Link from "next/link";
 import { Button } from "../ui/button";
 import Image from "next/image";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger
+} from "../ui/tooltip";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogPortal,
+  DialogTitle,
+  DialogTrigger
+} from "../ui/dialog";
+import Cta from "../cta";
+import Bookacall from "../bookcall";
 
 const navCorp = [
   {
@@ -89,16 +107,52 @@ export default function Footer() {
             </p>
           </div>
           <div className="flex flex-row gap-2 lg:gap-4 text-secondary">
-            <Button variant="ghost" size="icon">
-              <DownloadIcon className="w-4 h-4" />
-            </Button>
-            <Button variant="ghost" size="icon" className="hidden md:block">
-              <Inbox className="w-4 h-4" />
-            </Button>
-            <Button variant="default" className="rounded-full">
-              <Phone className="w-4 h-4" />
-              Book Call
-            </Button>
+            <TooltipProvider delayDuration={0}>
+              <Tooltip>
+                <TooltipTrigger>
+                  <Link
+                    href="https://utfs.io/f/dJLJpH9Hrkw3sRFhnDdtfQDR1ujgW04bv39US6XzVqYOLryH"
+                    target="_blank"
+                  >
+                    <Button
+                      variant="ghost"
+                      size="icon"
+                      className=" opacity-50 hover:opacity-100"
+                    >
+                      <DownloadIcon className="w-4 h-4" />
+                    </Button>
+                  </Link>
+                </TooltipTrigger>
+                <TooltipContent className="bg-black rounded-full shadow-sm shadow-yellow-500 py-1 px-6 text-sm text-white">
+                  <p className="text-sm font-sans">Info Pack</p>
+                </TooltipContent>
+              </Tooltip>
+            </TooltipProvider>
+            <TooltipProvider delayDuration={0}>
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <Link href="/contact">
+                    <Button
+                      variant="ghost"
+                      size="icon"
+                      className="hidden md:block opacity-50 hover:opacity-100"
+                    >
+                      <Mail className="w-4 h-4" />
+                    </Button>
+                  </Link>
+                </TooltipTrigger>
+                <TooltipContent className="bg-black rounded-full shadow-sm shadow-yellow-500 py-1 px-6 text-sm text-white mr-4">
+                  <p className="text-sm font-sans">Contact Us</p>
+                </TooltipContent>
+              </Tooltip>
+            </TooltipProvider>
+
+            <Link href="/book">
+              <Button variant="default" className="rounded-full">
+                <Phone className="w-4 h-4" />
+                Book A Call
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

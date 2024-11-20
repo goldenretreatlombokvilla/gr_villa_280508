@@ -6,6 +6,14 @@ import {
   CarouselNext,
   CarouselPrevious
 } from "@/components/ui/carousel";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogPortal,
+  DialogTitle,
+  DialogTrigger
+} from "@/components/ui/dialog";
 import Autoplay from "embla-carousel-autoplay";
 import {
   Bike,
@@ -116,9 +124,37 @@ export default function Lombok() {
             ancient Hindu temples, or embark on a thrilling adventure up Mount
             Rinjani.
           </p>
-          <Button variant="default" className="w-fit">
-            Discover Lombok
-          </Button>
+          <Dialog>
+            <DialogTrigger asChild>
+              <Button
+                variant={"default"}
+                className="w-fit font-extrabold uppercase tracking-wider hover:drop-shadow-md"
+              >
+                Surrounding Islands
+              </Button>
+            </DialogTrigger>
+            <DialogPortal>
+              <DialogContent className=" border-none shadow-none w-full h-full items-center justify-center bg-transparent">
+                <DialogHeader>
+                  <DialogTitle className="sr-only">
+                    Map location of Lombok and surrounding islands.
+                  </DialogTitle>
+                  {/*  <DialogDescription>
+                        This action cannot be undone. This will permanently
+                        delete your account and remove your data from our
+                        servers.
+                        </DialogDescription> */}
+                  <Image
+                    src="https://utfs.io/f/dJLJpH9Hrkw3hoWVZA2LaOUmx7jw6JrqKBblDskWdPvTZoSg"
+                    alt="Map location of Lombok and surrounding areas"
+                    width={1000}
+                    height={600}
+                    className="min-w-[50vw] max-h-[80vh] object-contain rounded-lg shadow-lg"
+                  />
+                </DialogHeader>
+              </DialogContent>
+            </DialogPortal>
+          </Dialog>
         </div>
       </div>
 
