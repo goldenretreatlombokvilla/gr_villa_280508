@@ -61,18 +61,10 @@ export default function LandingPage() {
                 Lombok Villas
               </span>
             </h1>
-            {/*  <Image
-              src="/gr_logo.png"
-              alt="Golden Retreat Lombok Villa"
-              width={1000}
-              height={500}
-              className="lg:w-[80vw] w-[100vw] lg:h-fit object-cover drop-shadow-xl lg:-mb-20 "
-            /> */}
           </div>
         </div>
       </div>
 
-      {/* Hero Section */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-20 items-center justify-center w-full lg:pl-0 lg:ml-0 lg:pr-52  pb-20 lg:py-52">
         <div className="flex flex-col gap-4 items-center justify-center h-full w-full lg:col-span-2">
           <Image
@@ -81,22 +73,15 @@ export default function LandingPage() {
             width={700}
             height={700}
             className="w-full h-full object-cover rounded-none lg:rounded-r-lg object-center lg:shadow-2xl shadow-yellow-900"
-            /*  unoptimized={true} */
           />
         </div>
         <div className="flex flex-col gap-6 px-8 lg:px-0 w-full">
-          {/* <p className="text-md font-sans -mb-4 font-bold uppercase">
-            The Home of
-          </p> */}
           <p className="font-cinzel text-xl lg:text-2xl font-extrabold tracking-wide flex flex-col text-yellow-800 uppercase opacity-50 -mb-4">
             Private & Exclusive
           </p>
           <h3 className="font-extrabold text-4xl lg:text-8xl font-cinzel text-yellow-800">
             Luxury Villas
           </h3>
-          {/* <p className="font-cinzel text-3xl lg:text-4xl font-medium tracking-wide flex flex-col uppercase opacity-70 -mt-4">
-            Private & Exclusive
-          </p> */}
           <p className="font-sans text-stone-900 text-md">
             Experience a rare combination of luxury, exclusivity and value with
             our latest development,{" "}
@@ -131,7 +116,6 @@ export default function LandingPage() {
         </div>
       </div>
 
-      {/* Villas Section  */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-x-14 items-start justify-start w-full px-8 lg:px-52 py-20">
         <div className="flex flex-col gap-6">
           <h2 className="text-4xl lg:text-5xl font-cinzel font-extrabold text-yellow-900">
@@ -158,14 +142,6 @@ export default function LandingPage() {
                 Investment Opportunity
               </Button>
             </Link>
-            <Link href="/gallery" prefetch={true}>
-              <Button variant="link" className="w-fit group ">
-                <Images className="min-w-6 min-h-6 stroke-1 text-yellow-700 group-hover:animate-ping" />{" "}
-                <p className="opacity-0 group-hover:opacity-100 transisition-all duration-500 ease-in-out text-yellow-800">
-                  View Gallery
-                </p>
-              </Button>
-            </Link>
           </div>
         </div>
         <div className="flex flex-col gap-4">
@@ -184,6 +160,7 @@ export default function LandingPage() {
           </div>
         </div>
       </div>
+
       <div className="grid grid-cols-1 lg:grid-cols-[2fr_3fr] gap-4 items-center justify-center w-full px-8 lg:px-52 lg:py-20 -mt-14 pb-14">
         <Image
           src="https://utfs.io/f/dJLJpH9Hrkw3wcK398eUX3BuqFPzTD5Kh1H9QyUilcWfbY6d"
@@ -217,11 +194,7 @@ export default function LandingPage() {
       </div>
 
       <div className="flex flex-col gap-12 items-center justify-center w-full min-h-screen px-8 lg:px-52 py-20 bg-yellow-800/10">
-        {/*  <p className="font-cinzel text-yellow-900 font-bold text-5xl">
-          The Villas
-        </p> */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center justify-between w-full lg:gap-14">
-          {/* Premium Luxury Villa */}
           <Link href="/villas">
             <Card className="flex flex-col w-full bg-transparent shadow-none border-none group">
               <CardContent className="px-0">
@@ -238,9 +211,7 @@ export default function LandingPage() {
                       <Badge variant={"default"}>2 Bedroom</Badge>
                       <Badge variant={"default"}>150 sqm</Badge>
                     </div>
-                    {/* <p className="text-sm font-sans mb-8 opacity-50">
-                      2 bedroom | 150 sqm
-                    </p> */}
+
                     <p className="text-2xl lg:text-3xl font-bold uppercase col-span-2 text-yellow-900">
                       Premium Luxury Villa
                     </p>
@@ -258,7 +229,6 @@ export default function LandingPage() {
             </Card>
           </Link>
 
-          {/* Superior Luxury Villa */}
           <Link href="/villas">
             <Card className="flex flex-col w-full lg:p-0 bg-transparent shadow-none border-none group">
               <CardContent className="px-0">
@@ -295,7 +265,6 @@ export default function LandingPage() {
         </div>
       </div>
 
-      {/* In House Facilities */}
       <div className="flex flex-col gap-8 items-center justify-center w-full px-8 lg:px-32 py-10 lg:py-40">
         <p className="text-4xl lg:text-5xl font-cinzel font-extrabold text-yellow-900">
           In House Facilities
@@ -373,8 +342,6 @@ export default function LandingPage() {
           </Card>
         </div>
       </div>
-
-      {/* Benefits Section */}
       <div className="flex flex-col gap-10 items-center justify-start w-full px-8 lg:px-52 py-20 bg-black text-white">
         <p className="text-4xl lg:text-5xl font-cinzel font-extrabold text-white">
           Investment Benefits

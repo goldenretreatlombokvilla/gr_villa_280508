@@ -56,8 +56,8 @@ const navServices = [
     link: "/invest"
   },
   {
-    name: "Payment Structure",
-    link: "/invest"
+    name: "Destination Lombok",
+    link: "/lombok"
   },
   {
     name: "Book A Call",
@@ -69,10 +69,6 @@ const navResources = [
   {
     name: "Villas",
     link: "/villas"
-  },
-  {
-    name: "Destination Lombok",
-    link: "/lombok"
   },
   {
     name: "Site Plan",
