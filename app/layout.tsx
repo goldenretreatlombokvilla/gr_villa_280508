@@ -4,6 +4,7 @@ import "./globals.css";
 import Nav from "@/components/nav/nav";
 import Footer from "@/components/nav/footer";
 import { Cinzel, Cinzel_Decorative } from "next/font/google";
+import { Toaster } from "@/components/ui/toaster";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -47,6 +48,7 @@ export default function RootLayout({
         <Nav />
         {children}
         <Footer />
+        <Toaster />
       </body>
     </html>
   );
