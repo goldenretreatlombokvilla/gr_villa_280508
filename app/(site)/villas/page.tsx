@@ -5,7 +5,9 @@ import { Card, CardContent } from "@/components/ui/card";
 import {
   Carousel,
   CarouselContent,
-  CarouselItem
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import {
@@ -41,6 +43,7 @@ import {
   DialogTitle,
   DialogTrigger
 } from "@/components/ui/dialog";
+import { cn } from "@/lib/utils";
 
 const images = [
   {
@@ -263,7 +266,7 @@ export default function Invest() {
           {/* 2 Bed */}
           <Card className="flex flex-col w-full lg:p-0 bg-transparent shadow-none border-none">
             <CardContent className="p-0">
-              <div className="flex flex-col md:flex-row gap-16 lg:gap-24 items-center justify-center">
+              <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-center justify-center">
                 <Image
                   src="/villa/grlv_3.webp"
                   alt="Golden Retreat Lombok Villa"
@@ -274,7 +277,7 @@ export default function Invest() {
                 <div className="grid grid-cols-2 gap-6 lg:gap-8 w-full px-2 lg:text-xl text-md">
                   <div className="flex flex-col gap-2 col-span-2">
                     <p className="text-5xl text-yellow-900 font-bold uppercase ">
-                      Premium
+                      Superior
                     </p>
                     <p className="text-2xl lg:text-3xl text-yellow-900 opacity-50 font-bold uppercase -mt-1">
                       Luxury Villa
@@ -358,7 +361,7 @@ export default function Invest() {
           {/* 3 Bed */}
           <Card className="flex flex-col w-full lg:p-0 bg-transparent shadow-none border-none">
             <CardContent className="p-0">
-              <div className="flex flex-col md:flex-row-reverse gap-16 lg:gap-24 items-center justify-center">
+              <div className="flex flex-col lg:flex-row-reverse gap-16 lg:gap-24 items-center justify-center">
                 <Image
                   src="/villa/grlv_5.webp"
                   alt="Golden Retreat Lombok Villa"
@@ -369,7 +372,7 @@ export default function Invest() {
                 <div className="grid grid-cols-2 lg:grid-cols-2  gap-6 w-full px-2 lg:text-xl text-md">
                   <div className="flex flex-col gap-2 col-span-2">
                     <p className="text-5xl text-yellow-900 font-bold uppercase ">
-                      Superior
+                      Premium
                     </p>
                     <p className="text-3xl text-yellow-900 opacity-50 font-bold uppercase -mt-1">
                       Luxury Villa
@@ -625,7 +628,7 @@ export default function Invest() {
                   />
                   <Badge
                     variant="default"
-                    className="text-md text-center text-white opacity-80 absolute bottom-4 right-4"
+                    className="text-md text-center text-white bg-yellow-900/80 absolute bottom-4 right-4"
                   >
                     {image.alt}
                   </Badge>
@@ -635,10 +638,12 @@ export default function Invest() {
           </Carousel>
 
           <Carousel
-            className="flex lg:hidden"
+            className="flex lg:hidden max-w-[70vw] mx-auto"
             plugins={[
               Autoplay({
-                delay: 3000
+                delay: 3000,
+                stopOnMouseEnter: true,
+                playOnInit: true
               })
             ]}
             opts={{ align: "start", loop: true }}
@@ -660,7 +665,7 @@ export default function Invest() {
                     />
                     <Badge
                       variant="default"
-                      className="text-md text-center text-white opacity-80 absolute bottom-4 right-4"
+                      className="text-md text-center text-white bg-yellow-900/80 absolute bottom-4 right-4"
                     >
                       {image.alt}
                     </Badge>
@@ -668,7 +673,10 @@ export default function Invest() {
                 </CarouselItem>
               ))}
             </CarouselContent>
+            <CarouselNext />
+            <CarouselPrevious />
           </Carousel>
+
           <div className="flex flex-col ">
             <div className="flex flex-row gap-4 items-center justify-center w-full">
               <Link href="/gallery">

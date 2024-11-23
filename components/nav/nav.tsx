@@ -87,7 +87,7 @@ const links = [
     target: "_blank"
   },
   {
-    name: "Booking Form",
+    name: "Book Now",
     link: "https://utfs.io/f/dJLJpH9Hrkw3sRFhnDdtfQDR1ujgW04bv39US6XzVqYOLryH",
     target: "_blank"
   },
@@ -106,38 +106,7 @@ const links = [
 export default function Nav() {
   return (
     <nav className="flex flex-row items-center justify-end w-full mx-auto lg:px-8 max-h-[80px] px-2 absolute md:top-0 bottom-0 z-50 h-32 bg-transparent">
-      {/* <Link href="/">
-        <Image
-          className="w-12 h-12 object-contain drop-shadow-sm"
-          src="/brand/logo_icon.png"
-          alt="Golden Retreat Lombok Villa"
-          width={200}
-          height={200}
-          priority
-        />
-      </Link> */}
-      <div className="hidden flex-row items-center justify-end gap-0 w-full">
-        {navItems.map((item: any) => (
-          <Link href={item.link} key={item.name}>
-            <Button key={item.name} variant="link">
-              {item.name}
-            </Button>
-          </Link>
-        ))}
-      </div>
       <div className="flex flex-row items-center justify-end gap-10">
-        {/* <div className="hidden lg:flex flex-row gap-4">
-          <Facebook className="min-w-4 min-h-4 stroke-1 text-yellow-600 hover:text-yellow-400" />
-          <Instagram className="min-w-4 min-h-4 stroke-1 text-yellow-600 hover:text-yellow-400" />
-          <Linkedin className="min-w-4 min-h-4 stroke-1 text-yellow-600 hover:text-yellow-400" />
-          <Youtube className="min-w-4 min-h-4 stroke-1 text-yellow-600 hover:text-yellow-400" />
-        </div> */}
-        {/*   <Button
-          variant={"outline"}
-          className="border-yellow-600 text-yellow-600 tracking-wider hover:bg-gradient-to-tl hover:from-yellow-800 hover:to-yellow-500 hover:text-white hover:border-transparent hover:shadow-lg lg:flex hidden font-sans uppercase"
-        >
-          Enquire
-        </Button> */}
         <div className="fixed p-2">
           <Sheet>
             <SheetTrigger asChild>
@@ -146,7 +115,7 @@ export default function Nav() {
               </div>
             </SheetTrigger>
             <SheetContent
-              className="flex flex-col gap-4 items-start border-none bg-stone-900 text-white pt-10"
+              className="flex flex-col gap-4 max-h-screen items-start border-none bg-stone-900 text-white pt-10"
               style={{ minWidth: "30vw" }}
             >
               <div className="flex flex-row gap-0 px-4 items-center justify-start">
@@ -157,7 +126,7 @@ export default function Nav() {
                       alt="Golden Retreat Lombok Villa"
                       width={1000}
                       height={500}
-                      className="lg:w-20 h-20 object-contain mb-10 drop-shadow-xl"
+                      className="max-w-12 max-h-12 lg:w-20 lg:h-20 object-contain lg:mb-10 drop-shadow-xl"
                     />
                   </Link>
                 </SheetClose>
@@ -178,7 +147,7 @@ export default function Nav() {
               <SheetHeader className="hidden">
                 <SheetTitle className="sr-only">GRLV</SheetTitle>
               </SheetHeader>
-              <div className="flex flex-col gap-4 items-start h-screen w-full">
+              <div className="flex flex-col gap-2 lg:gap-4 items-start h-screen w-full">
                 {navItems.map((item: any) => (
                   <SheetClose key={item.name} asChild>
                     <Link
@@ -197,36 +166,9 @@ export default function Nav() {
                     </Link>
                   </SheetClose>
                 ))}
-                {/* <SheetClose asChild>
-                  <Button
-                    variant={"default"}
-                    className="font-thin text-md flex flex-row w-full justify-between group"
-                  >
-                    Enquire
-                    <Send className="min-w-5 min-h-5 stroke-1 mr-1 opacity-70" />
-                  </Button>
-                </SheetClose> */}
-                <div className="hidden flex-col gap-4 pt-8 pl-4">
-                  <p className="text-md font-serif font-bold">Our Facilities</p>
-                  <div className="flex flex-row flex-wrap gap-0 w-full">
-                    {facilities.map((link: any) => (
-                      <SheetClose key={link.name} asChild>
-                        <Link href={link.link} key={link.name} prefetch={true}>
-                          <Button
-                            variant="link"
-                            key={link.name}
-                            className="pl-0 group opacity-70 hover:opacity-100"
-                          >
-                            <Plus className="max-w-3 max-h-3 group-hover:rotate-45 transition-all duration-300 group-hover:text-yellow-600" />
-                            {link.name}
-                          </Button>
-                        </Link>
-                      </SheetClose>
-                    ))}
-                  </div>
-                </div>
-                <div className="flex flex-col gap-4 pt-4 pl-4">
-                  <p className="text-md font-serif font-bold">Quick Links</p>
+
+                <div className="flex flex-col gap-2 lg:gap-4 pt-2 lg:pt-4 pl-4">
+                  <p className="text-md font-serif ">Quick Links</p>
                   <div className="flex flex-row flex-wrap gap-0 w-full">
                     {links.map((link: any) => (
                       <SheetClose key={link.name} asChild>

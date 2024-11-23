@@ -139,7 +139,7 @@ export default function Bookacall() {
         </p>
         <p className="text-sm font-sans text-balance text-stone-800">
           Select your prefered date and time that you would be comfortable with.
-          Give us just 30 minutes of your time to present your next investment
+          Give us a few minutes of your time to present your next investment
           opportunity and answer any of your questions.
         </p>
 
@@ -150,50 +150,6 @@ export default function Bookacall() {
           <Youtube className="min-w-12 min-h-12 stroke-1 text-yellow-900/50 hover:text-yellow-900" />
         </div>
       </div>
-      {/* <Card className="flex flex-col w-full lg:col-start-2 bg-transparent border-none shadow-none p-0 mt-20 lg:mt-0">
-        <CardContent className="p-0">
-          <form className="flex flex-col gap-4 font-sans py-6 px-0">
-            <Label htmlFor="date-time">
-              Date & Time{" "}
-              <Badge variant="default" className="ml-2">
-                IND Local Time
-              </Badge>
-            </Label>
-
-            <DateTimePicker />
-            <Label htmlFor="email" className="mt-4">
-              E-mail
-            </Label>
-            <Input type="email" name="email" id="email" required />
-
-            <div className="flex items-center space-x-2 px-6 ">
-              <Checkbox id="contact" />
-              <label
-                htmlFor="contact"
-                className="text-sm font-normal leading-none opacity-70"
-              >
-                I agree to be contacted at the selected date and time
-              </label>
-            </div>
-            <div className="flex items-center space-x-2 px-6 ">
-              <Checkbox id="terms" />
-              <label
-                htmlFor="terms"
-                className="text-sm font-normal leading-none opacity-70"
-              >
-                Accept terms and conditions
-              </label>
-            </div>
-
-            <Button
-              variant={"outline"}
-              className="mt-6 text-lg rounded-full h-14"
-            >
-              Submit
-            </Button>
-          </form>
-        </CardContent>
-      </Card> */}
 
       {/*New Form */}
       <Card className="flex flex-col w-full lg:col-start-2 bg-transparent border-none shadow-none p-0 mt-20 lg:mt-0">
@@ -325,36 +281,6 @@ export default function Bookacall() {
               type="hidden"
             />
 
-            {/* Purchase Intent */}
-            {/*  <Label htmlFor="purpose" className="mt-4">
-              Purchase Intent
-            </Label>
-            <Select name="intent" value={userInput.intent}>
-              <SelectTrigger className="w-full font-mono">
-                <SelectValue />
-              </SelectTrigger>
-              <SelectContent
-                className=" font-mono bg-black text-white"
-                position="popper"
-              >
-                <SelectGroup className="flex flex-col gap-4 px-4 py-2">
-                  <SelectItem value="selfstay">
-                    Self Stay (Holiday Home)
-                  </SelectItem>
-                  <SelectItem value="investment">
-                    Investment Property
-                  </SelectItem>
-                  <SelectItem value="curious">Just Curious</SelectItem>
-                </SelectGroup>
-              </SelectContent>
-            </Select>
-
-            <Input
-              name="intent"
-              value={userInput.intent}
-              onChange={handleChange}
-            /> */}
-
             {/*  Email Input  */}
             <Label htmlFor="email" className="mt-4">
               E-mail
@@ -373,15 +299,6 @@ export default function Bookacall() {
                 className="text-sm font-normal leading-none opacity-70"
               >
                 I agree to be contacted at the selected date and time
-              </label>
-            </div>
-            <div className="flex items-center space-x-2 px-6 ">
-              <Checkbox id="terms" />
-              <label
-                htmlFor="terms"
-                className="text-sm font-normal leading-none opacity-70"
-              >
-                Accept terms and conditions
               </label>
             </div>
             <Button

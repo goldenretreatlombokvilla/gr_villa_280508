@@ -76,7 +76,7 @@ export default function About() {
                   />
                   <Badge
                     variant={"default"}
-                    className="text-sm font-sans -mt-2 lg:-mt-6"
+                    className="text-sm font-sans -mt-2 lg:-mt-6 bg-transparent italic shadow-none text-stone-800/50"
                   >
                     The Chandi Boutique Resort & Spa
                   </Badge>
@@ -95,7 +95,7 @@ export default function About() {
                   />
                   <Badge
                     variant={"default"}
-                    className="text-sm font-sans -mt-2 lg:-mt-6"
+                    className="text-sm font-sans -mt-2 lg:-mt-6 bg-transparent italic shadow-none text-stone-800/50"
                   >
                     The Mora Royal Villa
                   </Badge>
@@ -114,7 +114,7 @@ export default function About() {
                   />
                   <Badge
                     variant={"default"}
-                    className="text-sm font-sans -mt-2 lg:-mt-6"
+                    className="text-sm font-sans -mt-2 lg:-mt-6 bg-transparent italic shadow-none text-stone-800/50"
                   >
                     Malibu Cliff Villa{" "}
                   </Badge>
@@ -133,7 +133,7 @@ export default function About() {
                   />
                   <Badge
                     variant={"default"}
-                    className="text-sm font-sans -mt-2 lg:-mt-6"
+                    className="text-sm font-sans -mt-2 lg:-mt-6 bg-transparent italic shadow-none text-stone-800/50"
                   >
                     Villa Matahari Terbenam{" "}
                   </Badge>

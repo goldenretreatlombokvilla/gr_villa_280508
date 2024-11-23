@@ -71,11 +71,27 @@ export default function Contact() {
                 <MessageCircle className="min-w-4 min-h-4 stroke-1 text-yellow-900" />
                 Send a Whatsapp message
               </p>
-              <Link href="/" className=" text-yellow-900 font-sans">
-                <Button variant={"link"} className="p-0 text-2xl lg:text-3xl">
-                  +0123456789
-                </Button>
-              </Link>
+              <div className="flex flex-row gap-4 items-center justify-center">
+                <Link
+                  href="https://wa.link/z42apg"
+                  target="_blank"
+                  className=" text-yellow-900 font-sans"
+                >
+                  <Button variant={"link"} className="p-0 text-2xl lg:text-3xl">
+                    +6 012 411 2260
+                  </Button>
+                </Link>
+                <p className="text-sm opacity-50 font-sans">or</p>
+                <Link
+                  href="https://wa.link/52f5vb"
+                  target="_blank"
+                  className=" text-yellow-900 font-sans"
+                >
+                  <Button variant={"link"} className="p-0 text-2xl lg:text-3xl">
+                    +65 9366 1372
+                  </Button>
+                </Link>
+              </div>
             </div>
           </CardContent>
         </Card>

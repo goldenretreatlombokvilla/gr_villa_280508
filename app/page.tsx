@@ -55,9 +55,9 @@ export default function LandingPage() {
             <p className="uppercase font-serif text-lg lg:text-2xl tracking-widest opacity-60 ">
               Welcome to
             </p>
-            <h1 className="font-cinzel text-3xl lg:text-4xl flex flex-col gap-0 text-center font-semibold text-nowrap">
+            <h1 className="font-cinzel text-3xl md:text-4xl flex flex-col gap-0 text-center font-semibold text-nowrap">
               Golden Retreat{" "}
-              <span className="text-5xl lg:text-8xl font-deco font-bold">
+              <span className="text-5xl md:text-8xl font-deco font-bold">
                 Lombok Villas
               </span>
             </h1>
@@ -65,7 +65,7 @@ export default function LandingPage() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-20 items-center justify-center w-full lg:pl-0 lg:ml-0 lg:pr-52  pb-20 lg:py-52">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-16 lg:gap-20 items-center justify-center w-full lg:pl-0 lg:ml-0 lg:pr-52 py-20 lg:py-52">
         <div className="flex flex-col gap-4 items-center justify-center h-full w-full lg:col-span-2">
           <Image
             src="https://utfs.io/f/dJLJpH9Hrkw3hbSz8Z2LaOUmx7jw6JrqKBblDskWdPvTZoSg"
@@ -75,11 +75,11 @@ export default function LandingPage() {
             className="w-full h-full object-cover rounded-none lg:rounded-r-lg object-center lg:shadow-2xl shadow-yellow-900"
           />
         </div>
-        <div className="flex flex-col gap-6 px-8 lg:px-0 w-full">
+        <div className="flex flex-col gap-6 px-8 lg:px-0 w-full order-first lg:order-last">
           <p className="font-cinzel text-xl lg:text-2xl font-extrabold tracking-wide flex flex-col text-yellow-800 uppercase opacity-50 -mb-4">
             Private & Exclusive
           </p>
-          <h3 className="font-extrabold text-4xl lg:text-8xl font-cinzel text-yellow-800">
+          <h3 className="font-extrabold text-4xl md:text-6xl lg:text-8xl font-cinzel text-yellow-800">
             Luxury Villas
           </h3>
           <p className="font-sans text-stone-900 text-md">
@@ -206,19 +206,24 @@ export default function LandingPage() {
                     height={300}
                     className="w-full h-auto z-10 object-cover aspect-video rounded-t-lg lg:rounded-lg group-hover:shadow-lg shadow-yellow-900"
                   />
-                  <div className="grid grid-cols-1 lg:grid-cols-2 rounded-lg  gap-2 w-full p-6 lg:text-xl text-sm ring-1 ring-yellow-600 group-hover:shadow-lg bg-background -mt-5 pt-12  lg:mt-0">
-                    <div className="flex flex-row gap-4 mb-8">
-                      <Badge variant={"default"}>2 Bedroom</Badge>
-                      <Badge variant={"default"}>150 sqm</Badge>
-                    </div>
-
+                  <div className="grid grid-cols-1 lg:grid-cols-2 rounded-lg  gap-2 w-full p-6 lg:text-xl text-sm ring-1 ring-yellow-600 group-hover:shadow-lg bg-background -mt-5 pt-12 lg:mt-0">
                     <p className="text-2xl lg:text-3xl font-bold uppercase col-span-2 text-yellow-900">
-                      Premium Luxury Villa
+                      Superior Luxury Villa
                     </p>
-                    <div className="col-span-2 flex flex-row gap-4 items-center justify-between">
-                      <p className="text-sm  font-sans">
-                        <span className="opacity-50">starting at</span> $180,000
+                    <div className="flex flex-row gap-4 mb-8">
+                      <p className="text-sm font-sans uppercase font-bold text-yellow-900 opacity-80">
+                        2 Bedroom | 150 sqm
                       </p>
+                      {/*  <Badge variant={"default"}>3 Bedroom</Badge>
+                      <Badge variant={"default"}>187 sqm</Badge> */}
+                    </div>
+                    <div className="col-span-2 flex flex-row gap-4 items-center justify-between">
+                      <div className="flex flex-row gap-2 items-center">
+                        <p className="text-sm font-sans opacity-80">
+                          starting at{" "}
+                        </p>
+                        <Badge variant={"default"}>$180,000</Badge>
+                      </div>
                       <Button variant="ghost" size="icon">
                         <ArrowRightCircle className="min-w-6 min-h-6 stroke-1 text-yellow-600 group-hover:text-white group-hover:fill-yellow-800 group-hover:-rotate-45 transition-all duration-500 ease-in-out group-hover:scale-110" />
                       </Button>
@@ -241,18 +246,23 @@ export default function LandingPage() {
                     className="w-full h-auto z-10 object-cover aspect-video  rounded-t-lg lg:rounded-lg group-hover:shadow-lg"
                   />
                   <div className="grid grid-cols-1 lg:grid-cols-2 rounded-lg  gap-2 w-full p-6 lg:text-xl text-sm ring-1 ring-yellow-600 group-hover:shadow-lg bg-background -mt-5 pt-12 lg:mt-0">
-                    <div className="flex flex-row gap-4 mb-8">
-                      <Badge variant={"default"}>3 Bedroom</Badge>
-                      <Badge variant={"default"}>187 sqm</Badge>
-                    </div>
-
                     <p className="text-2xl lg:text-3xl font-bold uppercase col-span-2 text-yellow-900">
-                      Superior Luxury Villa
+                      Premium Luxury Villa
                     </p>
-                    <div className="col-span-2 flex flex-row gap-4 items-center justify-between">
-                      <p className="text-sm font-sans">
-                        <span className="opacity-50">starting at</span> $200,000
+                    <div className="flex flex-row gap-4 mb-8">
+                      <p className="text-sm font-sans uppercase font-bold text-yellow-900 opacity-80">
+                        3 Bedroom | 187 sqm
                       </p>
+                      {/*  <Badge variant={"default"}>3 Bedroom</Badge>
+                      <Badge variant={"default"}>187 sqm</Badge> */}
+                    </div>
+                    <div className="col-span-2 flex flex-row gap-4 items-center justify-between">
+                      <div className="flex flex-row gap-2 items-center">
+                        <p className="text-sm font-sans opacity-80">
+                          starting at{" "}
+                        </p>
+                        <Badge variant={"default"}>$200,000</Badge>
+                      </div>
                       <Button variant="ghost" size="icon">
                         <ArrowRightCircle className="min-w-6 min-h-6 stroke-1 text-yellow-600 group-hover:text-white group-hover:fill-yellow-800 group-hover:-rotate-45 transition-all duration-500 ease-in-out group-hover:scale-110" />
                       </Button>
@@ -341,59 +351,6 @@ export default function LandingPage() {
             </CardContent>
           </Card>
         </div>
-      </div>
-      <div className="flex flex-col gap-10 items-center justify-start w-full px-8 lg:px-52 py-20 bg-black text-white">
-        <p className="text-4xl lg:text-5xl font-cinzel font-extrabold text-white">
-          Investment Benefits
-        </p>
-
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 pl-8 lg:gap-20 py-6">
-          <Card className="flex flex-col w-full lg:p-0 bg-transparent shadow-none border-none">
-            <CardContent className="p-0">
-              <div className="flex flex-row lg:flex-col gap-4 lg:gap-10 w-full p-0 items-center lg:items-start group">
-                <MapPin className="min-w-24 min-h-24 fill-yellow-700 group-hover:fill-yellow-600 stroke-1 lg:-ml-12" />
-                <p className="text-md  font-sans text-white border-l-2 border-yellow-600/50 pl-8">
-                  The land is situated in the heart of the latest tourist
-                  destination, the west coast of Lombok Island. Located 300m
-                  away from Bangsal Beach, Bangsal Fast Boat Port and Boat
-                  service to the famous Gili Terawangan, Gili Air and Gili Meno.
-                </p>
-              </div>
-            </CardContent>
-          </Card>
-
-          <Card className="flex flex-col w-full lg:p-0 bg-transparent shadow-none border-none">
-            <CardContent className="p-0">
-              <div className="flex flex-row lg:flex-col gap-4 lg:gap-10 w-full p-0 items-center lg:items-start group">
-                <Award className="min-w-24 min-h-24 fill-yellow-700 group-hover:fill-yellow-600 stroke-1 lg:-ml-12" />
-                <p className="text-md font-sans text-white border-l-2 border-yellow-600/50 pl-8">
-                  Established developer with the experience of successful past
-                  projects. Project is designed with you; the end user in mind.
-                  Investment includes premium furnishings and 5-star amenities.
-                </p>
-              </div>
-            </CardContent>
-          </Card>
-
-          <Card className="flex flex-col w-full lg:p-0 bg-transparent shadow-none border-none">
-            <CardContent className="p-0">
-              <div className="flex flex-row lg:flex-col gap-4 lg:gap-10 w-full p-0 items-center lg:items-start group">
-                <FolderCheck className="min-w-24 min-h-24 fill-yellow-700 group-hover:fill-yellow-600 stroke-1 lg:-ml-12" />
-                <p className="text-md  font-sans text-white border-l-2 border-yellow-600/50 pl-8 ">
-                  We will assist you in every step of the way, with whatever you
-                  would need. Long stay visas for foreign purchasers. Visa
-                  application assistance provided.
-                </p>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
-        <Button
-          variant="default"
-          className="w-fit font-extrabold uppercase tracking-wider hover:drop-shadow-md"
-        >
-          Apply Now
-        </Button>
       </div>
       <Cta />
     </main>

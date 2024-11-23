@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ExternalLink } from "lucide-react";
+import { Award, ExternalLink, FolderCheck, MapPin } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -80,15 +80,6 @@ export default function Invest() {
             className="rounded-lg object-cover aspect-square object-bottom lg:shadow-2xl shadow-lg shadow-yellow-900/20"
           />
           <div className="flex flex-col items-start gap-8 lg:gap-4 py-20">
-            {/* <p className="font-cinzel text-xl lg:text-2xl font-extrabold tracking-wide flex flex-col text-yellow-800 uppercase opacity-50 -mb-4">
-              Did You Know
-            </p>
-            <p className="text-3xl text-balance font-bold font-cinzel text-yellow-900 flex flex-col gap-1">
-              Lombok receives over{" "}
-              <span className="text-7xl font-extrabold">1,000,000</span>
-              tourist every year but only has enough hotels and resorts to lodge
-              <span className="text-5xl text-red-700">24,000 people!</span>
-            </p> */}
             <div className="flex flex-col gap-8 lg:gap-4">
               <p className="text-5xl font-cinzel font-extrabold text-yellow-800  text-pretty">
                 What if you could turn back time?
@@ -185,7 +176,7 @@ export default function Invest() {
         </div>
       </div>
 
-      <div className="bg-yellow-900/10 rounded-lg py-20 px-8 lg:px-52 grid lg:grid-cols-2 gap-12 lg:gap-24 items-center justify-start w-full text-left">
+      <div className="bg-yellow-900/10 rounded-lg py-20 px-8 lg:px-52 grid lg:grid-cols-2 gap-12 lg:gap-24 items-center justify-center w-full text-left">
         <div className="flex flex-col w-full h-full items-center justify-center">
           {/*           <Tchart />
            */}{" "}
@@ -204,10 +195,13 @@ export default function Invest() {
             1,000,000 tourist
           </p>
           <p className="text-xl font-sans text-balance">
-            every year only has enough hotels and resorts to lodge
+            every year but only has enough hotels and resorts to lodge
           </p>
-          <p className="font-extrabold text-5xl lg:text-7xl font-cinzel text-red-500">
-            24,000 people!
+          <p className="font-extrabold text-5xl lg:text-6xl font-cinzel text-red-500">
+            24,000 visitors
+          </p>
+          <p className="text-xl font-sans text-balance -mt-2">
+            at any one time!
           </p>
         </div>
       </div>
@@ -298,6 +292,61 @@ export default function Invest() {
             </CardContent>
           </Card>
         </div>
+      </div>
+
+      {/* Benefits */}
+      <div className="flex flex-col gap-10 items-center justify-start w-full px-8 lg:px-52 py-20 bg-black text-white">
+        <p className="text-4xl lg:text-5xl font-cinzel font-extrabold text-white">
+          Investment Benefits
+        </p>
+
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 pl-8 lg:gap-20 py-6">
+          <Card className="flex flex-col w-full lg:p-0 bg-transparent shadow-none border-none">
+            <CardContent className="p-0">
+              <div className="flex flex-row lg:flex-col gap-4 lg:gap-10 w-full p-0 items-center lg:items-start group">
+                <MapPin className="min-w-20 min-h-20 lg:w-24 lg:h-24 fill-yellow-700 group-hover:fill-yellow-600 stroke-1 lg:-ml-12" />
+                <p className="text-md  font-sans text-white border-l-2 border-yellow-600/50 pl-8">
+                  The land is situated in the heart of the latest tourist
+                  destination, the west coast of Lombok Island. Located 300m
+                  away from Bangsal Beach, Bangsal Fast Boat Port and Boat
+                  service to the famous Gili Terawangan, Gili Air and Gili Meno.
+                </p>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card className="flex flex-col w-full lg:p-0 bg-transparent shadow-none border-none">
+            <CardContent className="p-0">
+              <div className="flex flex-row lg:flex-col gap-4 lg:gap-10 w-full p-0 items-center lg:items-start group">
+                <Award className="min-w-20 min-h-20 lg:w-24 lg:h-24 fill-yellow-700 group-hover:fill-yellow-600 stroke-1 lg:-ml-12" />
+                <p className="text-md font-sans text-white border-l-2 border-yellow-600/50 pl-8">
+                  Established developer with the experience of successful past
+                  projects. Project is designed with you; the end user in mind.
+                  Investment includes premium furnishings and 5-star amenities.
+                </p>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card className="flex flex-col w-full lg:p-0 bg-transparent shadow-none border-none">
+            <CardContent className="p-0">
+              <div className="flex flex-row lg:flex-col gap-4 lg:gap-10 w-full p-0 items-center lg:items-start group">
+                <FolderCheck className="min-w-20 min-h-20 lg:w-24 lg:h-24 fill-yellow-700 group-hover:fill-yellow-600 stroke-1 lg:-ml-12" />
+                <p className="text-md  font-sans text-white border-l-2 border-yellow-600/50 pl-8 ">
+                  We will assist you in every step of the way, with whatever you
+                  would need. Long stay visas for foreign purchasers. Visa
+                  application assistance provided.
+                </p>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+        <Button
+          variant="default"
+          className="w-fit font-extrabold uppercase tracking-wider hover:drop-shadow-md"
+        >
+          Apply Now
+        </Button>
       </div>
       <Cta />
     </div>
