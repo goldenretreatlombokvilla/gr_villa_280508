@@ -120,7 +120,7 @@ export default function LandingPage() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-x-14 items-center justify-center w-full px-8 lg:px-52 py-10 my-10 lg:py-40 bg-yellow-900/10">
         <div className="flex flex-col gap-4">
           <p className="font-cinzel text-xl lg:text-2xl font-extrabold tracking-wide flex flex-col uppercase text-yellow-900/50">
-            Natural Paradise
+            Paradise on Earth
           </p>
           <h2 className="text-5xl lg:text-7xl font-cinzel font-extrabold text-yellow-900">
             Lombok Island
@@ -186,7 +186,7 @@ export default function LandingPage() {
             height={200}
             className="hidden lg:flex w-full h-auto aspect-video object-cover rounded-lg"
           />
-          <div className="hidden lg:flex flex-row items-center justify-center py-4 ring-1 ring-yellow-700 text-yellow-900 font-sans text-sm italic rounded-lg">
+          <div className="hidden lg:flex flex-row items-center justify-center py-0 text-stone-900/50 font-sans text-sm italic rounded-lg">
             <p>
               Exquisite villa with private pool and deck, perfect for luxury
               living.
@@ -217,10 +217,10 @@ export default function LandingPage() {
           height={200}
           className="w-full h-auto aspect-video object-cover rounded-lg"
         />
-        <div className="hidden lg:flex flex-row items-center justify-center py-4 ring-1 ring-yellow-700 text-yellow-900 font-sans text-sm italic rounded-lg">
+        <div className="hidden lg:flex flex-row items-center justify-center py-0 text-stone-900/50 font-sans text-sm italic rounded-lg">
           A lavishly designed bespoke bathroom.
         </div>
-        <div className="hidden lg:flex flex-row items-center justify-center py-4 ring-1 ring-yellow-700 text-yellow-900 font-sans text-sm italic rounded-lg">
+        <div className="hidden lg:flex flex-row items-center justify-center py-0 text-stone-900/50 font-sans text-sm italic rounded-lg">
           Spacious living room with high-end finishings, wide screen TV, bar and
           more.{" "}
         </div>
@@ -246,7 +246,7 @@ export default function LandingPage() {
                     </p>
                     <div className="flex flex-row gap-4 mb-8">
                       <p className="text-sm font-sans uppercase font-bold text-yellow-900 opacity-80">
-                        2 Bedroom
+                        2 Bedroom | 150 sqm (1,615 sqft)
                       </p>
                       {/*  <Badge variant={"default"}>3 Bedroom</Badge>
                       <Badge variant={"default"}>187 sqm</Badge> */}
@@ -285,7 +285,7 @@ export default function LandingPage() {
                     </p>
                     <div className="flex flex-row gap-4 mb-8">
                       <p className="text-sm font-sans uppercase font-bold text-yellow-900 opacity-80">
-                        3 Bedroom
+                        3 Bedroom | 187 sqm (2,013 sqft)
                       </p>
                       {/*  <Badge variant={"default"}>3 Bedroom</Badge>
                       <Badge variant={"default"}>187 sqm</Badge> */}

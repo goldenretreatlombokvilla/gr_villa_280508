@@ -60,14 +60,13 @@ export default function Gallery() {
             The Gallery
           </p>
           <p className="text-6xl lg:text-7xl font-cinzel font-extrabold text-yellow-900">
-            Luxury Paradise Getaway
+            Tropical Island Paradise
           </p>
           <div className="flex flex-col gap-2">
             <p className="text-md font-sans">
-              Indulge in the luxury paradise of Lombok, a tropical paradise that
-              offers a unique blend of natural beauty and exotic adventures. Our
-              luxury villas are designed to provide a comfortable and relaxing
-              stay, with all the amenities you could ever ask for.
+              Indulge in a tropical island paradise that offers a unique blend
+              of natural beauty with luxury living. Our Villas are designed to
+              make every stay a memorable one.
             </p>
           </div>
         </div>

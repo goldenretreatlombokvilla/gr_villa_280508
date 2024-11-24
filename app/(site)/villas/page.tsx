@@ -1,6 +1,7 @@
 "use client";
 
 import { Badge } from "@/components/ui/badge";
+import Video from "next-video";
 import { Card, CardContent } from "@/components/ui/card";
 import {
   Carousel,
@@ -58,6 +59,21 @@ const images = [
   {
     src: "https://utfs.io/f/dJLJpH9Hrkw3pXyUf0A8fDXoAL2Jay9kEY7gbmpj3CvcG0Pu",
     alt: "Poolside Area"
+  }
+];
+const siteplan = [
+  {
+    src: "https://utfs.io/f/dJLJpH9Hrkw34gqO32iILXvxRHuJgz8cqy2TD5QokmWfjNes",
+    alt: "Siteplan for Golden Retreat Lombok Villa"
+  },
+  {
+    src: "https://utfs.io/f/dJLJpH9Hrkw3q0bMIVSMBd9KPxAmiZ46NFaSwGRqO2hJYQuW",
+    alt: "Pool Club Layout"
+  },
+
+  {
+    src: "https://utfs.io/f/dJLJpH9Hrkw3lsdxzU6aQ6vkUNZnYhO7eAcj2iwCBSMy1b3p",
+    alt: "Spa & Gym Layout"
   }
 ];
 
@@ -162,18 +178,36 @@ export default function Invest() {
                         <DialogTitle className="sr-only">
                           Official Siteplan for Golden Retreat Lombok Villa
                         </DialogTitle>
-                        {/*  <DialogDescription>
-                        This action cannot be undone. This will permanently
-                        delete your account and remove your data from our
-                        servers.
-                        </DialogDescription> */}
-                        <Image
-                          src="https://utfs.io/f/dJLJpH9Hrkw34gqO32iILXvxRHuJgz8cqy2TD5QokmWfjNes"
-                          alt="Siteplan for Golden Retreat Lombok Villa"
-                          width={1000}
-                          height={600}
-                          className="min-w-[50vw] h-auto object-contain rounded-lg shadow-lg"
-                        />
+                        <div className="flex flex-col gap-2 px-10 w-full items-center justify-center">
+                          <Carousel
+                            className="w-full max-w-5xl lg:mx-auto -mx-20 "
+                            /* plugins={[
+                              Autoplay({
+                                delay: 3000
+                              })
+                            ]}
+                            opts={{ align: "start", loop: true }} */
+                          >
+                            <CarouselNext />
+                            <CarouselPrevious />
+                            <CarouselContent className="">
+                              {siteplan.map((image, index) => (
+                                <CarouselItem key={index} className="lg:px-20">
+                                  <div className="">
+                                    <Image
+                                      src={image.src}
+                                      alt={image.alt}
+                                      width={580}
+                                      height={580}
+                                      loading="eager"
+                                      className="w-full h-full object-contain rounded-lg shadow-lg"
+                                    />
+                                  </div>
+                                </CarouselItem>
+                              ))}
+                            </CarouselContent>
+                          </Carousel>
+                        </div>
                       </DialogHeader>
                     </DialogContent>
                   </DialogPortal>
@@ -221,6 +255,9 @@ export default function Invest() {
               </Carousel>
             </div>
           </div>
+        </div>
+        <div className="flex flex-col gap-40 items-center px-8 py-6 lg:pt-20 lg:py-20 max-w-6xl mx-auto ">
+          <Video src="https://utfs.io/f/dJLJpH9Hrkw3hFSyAj2LaOUmx7jw6JrqKBblDskWdPvTZoSg" />
         </div>
         <div className="flex flex-col gap-40 items-center px-8 py-6 lg:pt-20 lg:py-20 max-w-6xl mx-auto">
           {/* 2 Bed */}

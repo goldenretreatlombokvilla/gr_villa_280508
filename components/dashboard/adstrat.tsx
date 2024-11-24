@@ -23,17 +23,17 @@ const todoList = [
   {
     title: "Design & CopyWriting",
     date: "28 Oct",
-    status: "inprogress"
+    status: "completed"
   },
   {
     title: "Final Client Review",
     date: "4 Nov",
-    status: "pending"
+    status: "completed"
   },
   {
     title: "Adjustment & Finalization",
     date: "5 Nov",
-    status: "pending"
+    status: "completed"
   },
   {
     title: "Handover",

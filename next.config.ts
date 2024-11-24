@@ -1,9 +1,11 @@
 import type { NextConfig } from "next";
+import { withNextVideo } from "next-video/process";
 
 const nextConfig: NextConfig = {
   /* config options here */
   experimental: {
-    typedRoutes: true
+    typedRoutes: true,
+    urlImports: ["https://utfs.io/f/**"]
   },
   images: {
     remotePatterns: [
@@ -16,4 +18,4 @@ const nextConfig: NextConfig = {
   }
 };
 
-export default nextConfig;
+export default withNextVideo(nextConfig);
