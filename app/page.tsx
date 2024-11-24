@@ -95,7 +95,7 @@ export default function LandingPage() {
             showcases exquisite design, a quality build, 5-star amenities, and
             exceptional service.
           </p>
-          <div className="flex flex-row gap-4">
+          <div className="flex flex-row flex-wrap gap-4">
             <Link href="/lombok" prefetch={true}>
               <Button
                 variant="default"

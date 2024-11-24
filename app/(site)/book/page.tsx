@@ -29,14 +29,6 @@ import { Calendar } from "@/components/ui/calendar";
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 import { cn } from "@/lib/utils";
 import emailjs from "@emailjs/browser";
-import {
-  Select,
-  SelectContent,
-  SelectGroup,
-  SelectItem,
-  SelectTrigger,
-  SelectValue
-} from "@/components/ui/select";
 
 export default function Bookacall() {
   const [date, setDate] = React.useState<Date>();
@@ -135,7 +127,7 @@ export default function Bookacall() {
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 w-full lg:py-40 bg-yellow-900/10 items-start justify-start lg:px-52 px-10 py-20">
       <div className="flex flex-col gap-4">
         <p className="text-5xl lg:text-7xl font-extrabold text-yellow-900 font-cinzel">
-          Book A Discover Call
+          Book A Discovery Call
         </p>
         <p className="text-sm font-sans text-balance text-stone-800">
           Select your prefered date and time that you would be comfortable with.
@@ -196,7 +188,9 @@ export default function Bookacall() {
                     initialFocus
                   />
                   <div className="flex flex-col sm:flex-row sm:h-[300px] divide-y sm:divide-y-0 sm:divide-x font-mono">
-                    <p className="mx-auto pb-1 text-sm">Time (GMT +8:00)</p>
+                    <p className="mx-auto pb-2 text-sm block lg:hidden">
+                      Time (GMT +8:00)
+                    </p>
                     <ScrollArea className="w-64 sm:w-auto">
                       <div className="flex sm:flex-col p-2">
                         {hours.reverse().map((hour) => (
