@@ -151,9 +151,9 @@ export default function Bookacall() {
             Book A Discovery Call
           </p>
           <p className="text-sm font-sans text-balance text-stone-800">
-            Select your prefered date and time that you would be comfortable
-            with. Give us a few minutes of your time to present your next
-            investment opportunity and answer any of your questions.
+            Select your preferred date and time that you would be comfortable
+            withfor us to touch base with you. We will be on hand to take you
+            through the details and answer any questions you might have.
           </p>
           <div className="hidden lg:flex flex-row py-20 items-end justify-start gap-8">
             <Facebook className="min-w-12 min-h-12 stroke-1 text-yellow-900/50 hover:text-yellow-900" />

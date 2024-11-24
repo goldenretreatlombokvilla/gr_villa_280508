@@ -89,7 +89,7 @@ export default function LandingPage() {
             <span className="font-extrabold text-yellow-800">
               Golden Retreat Lombok
             </span>
-            , where every Villa has been meticulously designed with you in mind.
+            , where every Villa has been designed with you in mind.
           </p>
           <p className="font-sans text-md text-stone-900/50">
             Nestled in the beautiful west coast of Lombok, Golden Retreat Lombok
@@ -126,10 +126,11 @@ export default function LandingPage() {
             Lombok Island
           </h2>
           <p className="text-md font-sans text-balance">
-            A rising tourist destination, Lombok is fast becoming a popular
-            choice for nature lovers. With its pristine beaches, lush
-            rainforests, and abundant wildlife, Lombok offers a unique and
-            unforgettable experience for adventure seekers.
+            Lombok Island is fast becoming a popular choice for nature lovers
+            and holiday makers. With its pristine beaches, lush rainforests, and
+            abundant attractions, the Island offers a unique and unforgettable
+            experience for anyone seeking serenity and adventure in equal
+            measure.
           </p>
           <div className="flex flex-row gap-4 items-end justify-start">
             <Link href="/lombok" prefetch={true}>
@@ -164,7 +165,7 @@ export default function LandingPage() {
           <p className="text-md font-sans text-balance">
             Golden Retreat Lombok presents an opportunity for you to capitalise
             on Lombok’s fast-growing tourism industry. Already ranked one of the
-            world's top destinations for nature tourism, Lombok Island’s need
+            world's top destinations for nature tourism, Lombok Island’s demand
             for quality holiday accommodation continues to soar!
           </p>
           <div className="flex flex-row gap-4 items-end justify-start">

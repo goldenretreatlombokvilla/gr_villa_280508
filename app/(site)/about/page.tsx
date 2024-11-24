@@ -38,14 +38,14 @@ export default function About() {
             </p>
             <div className="flex flex-col lg:w-1/2 gap-2">
               <p className="text-md font-sans">
-                With a distinguished portfolio of successful luxury villas in
-                the region, PT Propil Land Development brings unparalleled
-                expertise to this project.
+                With a distinguished portfolio of successful luxury property
+                developments in the region, PT Propil Land Development brings
+                unparalleled expertise to this project.
               </p>
               <p className="text-md font-sans opacity-50">
                 Their proven track record for delivering exceptional quality and
                 their deep understanding of the local market make them the ideal
-                partner in crafting an extraordinary experience.
+                partner in building an extraordinary experience.
               </p>
             </div>
           </div>
