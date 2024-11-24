@@ -19,10 +19,10 @@ export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
       There is a new contact request for you from Golden Retreat Lombok Villas
       website. The details are as follows.
     </p>
-    <table>
+    <table className="ml-10">
       <tr>
         <td>Name:</td>
-        <td>{name}</td>
+        <td className="font-bold">{name}</td>
       </tr>
       <tr>
         <td>Email:</td>
@@ -38,6 +38,9 @@ export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
       </tr>
     </table>
 
-    <p>Please follow up with {name} to begin the contact process.</p>
+    <p>
+      Please follow up with <span className="font-bold">{name}</span> to begin
+      the contact process.
+    </p>
   </div>
 );

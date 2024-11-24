@@ -9,10 +9,10 @@ export async function POST(request: any) {
     console.log(body);
     const { name, email, phone, interest } = body;
     const { data, error } = await resend.emails.send({
-      from: "GRLV <contact@goldenretreatinternational.com>",
+      from: name + " <" + email + ">",
       to: ["contact@goldenretreatinternational.com"],
-      cc: ["sulaiman@slmcreatives.com"],
-      subject: "Discovery Call Booking",
+      bcc: ["sulaiman@slmcreatives.com", "warrenchelvan@gmail.com"],
+      subject: "Contact Form Submission",
       react: EmailTemplate({
         name: name,
         email: email,
