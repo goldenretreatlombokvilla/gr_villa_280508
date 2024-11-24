@@ -37,27 +37,35 @@ export default function Invest() {
           <div className="grid grid-cols-1 lg:grid-cols-3 items-center justify-center lg:py-20 py-10">
             <div className="flex flex-col gap-6 col-span-2">
               <p className="font-cinzel text-xl lg:text-2xl font-extrabold tracking-wide flex flex-col text-yellow-800 uppercase opacity-50 -mb-4">
-                The Numbers
+                A Superior Investment
               </p>
               <h2 className="text-6xl lg:text-6xl  font-extrabold font-cinzel text-yellow-800">
-                10 - 16% Projected Yield
+                10 - 16% per annum projected yield
               </h2>
               <p className="font-sans text-md text-balance">
-                Golden Retreat Lombok Villa offers a unique opportunity for
-                foreign investors to tap into a growing market with indicators
-                showing a high potential for{" "}
-                <span className="font-bold text-yellow-800">growth</span> and
-                high{" "}
-                <span className="font-bold text-yellow-800">
-                  projected yield
-                </span>
-                .
+                Golden Retreat Lombok Villa represents a unique opportunity to
+                capitalise on Lombok’s rise as a top destination for holiday
+                makers who seek out the island’s unspoilt natural beauty. Just
+                an hour's boat ride from Bali, Lombok attracts thousands of
+                visitors each year looking for a change of pace. As a result,
+                the demand for quality holiday accommodation on the island
+                continues to soar!
               </p>
               <p className="opacity-60 font-sans text-md text-balance">
-                With our experienced team, we will guide you through the complex
-                visa application process, ensuring a smooth and efficient
-                experience. With our support, you can focus on your purchase and
-                travel plans with confidence.
+                Our experienced onsite property management team will assist with
+                the management of your Villa. Ensuring that you maximise your
+                rental yield, while ensuring you have easy access to your
+                property whenever you desire.
+              </p>
+              <p className="opacity-60 font-sans text-md text-balance">
+                Our team will also guide you through visa applications where
+                needed, should you choose to stay with us for longer stretches
+                at a time. With our support, we endeavour to make the decision
+                to purchase with us, your best one yet.
+              </p>
+              <p className="opacity-60 font-sans text-md text-balance">
+                Contact our team to find out how you can benefit by purchasing a
+                Villa with us today.
               </p>
               <div className="flex flex-row gap-4 justify-start">
                 <Button
@@ -83,16 +91,11 @@ export default function Invest() {
                   What if you could turn back time?
                 </p>
                 <p className="text-md font-sans text-pretty">
-                  What Lombok truly represents for the astute investor is the
-                  opportunity to invest in a Bali-like destination 15 to 20
-                  years ago, an apportunity to be the first in a rapidly growing
-                  market.
-                </p>
-                <p className="opacity-50 text-md font-sans">
-                  With the rising demand for accomodation and tourist
-                  attractions in Lombok, it is the perfect time to invest with
-                  all indicators showing promising returns and high projected
-                  yield in the coming years.
+                  Imagine foreseeing the meteoric rise of South-East Asia’s most
+                  popular destinations like Bali or Phuket. Well don’t feel like
+                  you’ve missed the boat, this is precisely the opportunity you
+                  have today. Be counted as a first-mover and tap into Lombok’s
+                  rapidly rising profile as a top-tier destination.
                 </p>
               </div>
               <Button
@@ -110,7 +113,7 @@ export default function Invest() {
               </p>
               <p className="text-md font-sans">
                 By choosing Golden Retreat Lombok Villa, you're not just buying
-                a property; you're securing a lucrative investment opportunity.
+                a property; you're securing a lucrative opportunity.
               </p>
               <p className="text-md font-sans opacity-50">
                 Our team of experts will handle all aspects of property
@@ -126,23 +129,9 @@ export default function Invest() {
                     Foreign Ownership
                   </AccordionTrigger>
                   <AccordionContent className="text-sm font-sans text-pretty">
-                    We are located within the Mandalika{" "}
-                    <Link
-                      href="#"
-                      className="underline font-semibold hover:text-yellow-800"
-                    >
-                      Tourism Special Economic Zone (TSEZ)
-                    </Link>{" "}
-                    which allows foreign investors to own leasehold property in
-                    the area. This means Golden Retreat Lombok Villa the perfect
-                    opportunity for foreign investors who are looking to invest
-                    in luxury properties.
-                    <br></br>
-                    <br></br>
-                    With the area seeing a steady increase in growth in numbers
-                    and developments, we are confident that we will be able to
-                    capitalize on this growth and make a significant return on
-                    investment.
+                    Foreigners will be issued leasehold beneficiary titles of up
+                    to 80 years. With the area seeing year-on-year growth in
+                    tourism numbers, positive rental yield is all but assured.
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-2">
@@ -150,25 +139,25 @@ export default function Invest() {
                     Application Assistance
                   </AccordionTrigger>
                   <AccordionContent className="text-sm font-sans text-pretty">
-                    We will guide you through the complex visa application
-                    process, ensuring a smooth and efficient experience. Our
-                    dedicated team will provide expert assistance in preparing
-                    all the necessary legal documentation, saving you time and
-                    effort. With our support, you can focus on your purchase and
-                    travel plans with confidence.
+                    We will guide you through visa applications, ensuring a
+                    smooth and efficient experience. Our dedicated team will
+                    provide expert assistance in preparing all the necessary
+                    legal documentation, saving you time and effort. With our
+                    support, we endeavour to make your experience with us both
+                    profitable and hassle-free.
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-3">
                   <AccordionTrigger className="text-xl font-semibold">
-                    High Projected Yield
+                    Attractive Rental Yield
                   </AccordionTrigger>
                   <AccordionContent className="text-sm font-sans text-pretty">
-                    Our meticulously crafted villas are designed to generate
-                    substantial rental income, with an estimated annual yield of
-                    10-16%. This attractive return on investment is made
-                    possible by the strong demand for high-end holiday
-                    accommodations in Lombok, coupled with our professional
-                    property management services.
+                    Our Villas are designed to generate substantial rental
+                    income, with an estimated annual yield of 10-16%. This
+                    attractive return on investment is made possible by a strong
+                    demand for quality holiday accommodation, coupled with an
+                    experienced team to help you meet that demand month in,
+                    month out.
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>

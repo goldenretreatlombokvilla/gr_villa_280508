@@ -118,13 +118,9 @@ export default function Invest() {
                 The Villas
               </p>
               <p className="font-sans text-md">
-                Golden Retreat Lombok Villa is a turnkey project, where the
-                villas are designed, built and furnished with everything that
-                you would need before moving in.
-              </p>
-              <p className="opacity-60 text-md font-sans">
-                Once everything is ready, all you need to do to move in is bring
-                your clothes and a toothbrush. We will take care of the rest.
+                Golden Retreat Lombok is a turnkey project, where each Villa is
+                designed, built and fully-furnished with all the comforts of
+                home.
               </p>
               <div className="grid grid-cols-1 lg:flex flex-col gap-6 lg:gap-4 lg:py-8 py-4 items-start">
                 <Card className="flex flex-col w-full lg:p-0 bg-transparent shadow-none border-none">
@@ -144,7 +140,7 @@ export default function Invest() {
                       <SquareDashed className="min-w-8 min-h-8 text-yellow-800 stroke-1" />
                       <p className="text-sm font-sans">
                         <span className="font-bold">Project Parcel Size</span> -
-                        10, 000 sqm (107, 640 sqft)
+                        10, 000 sqm (107,640 sqft)
                       </p>
                     </div>
                   </CardContent>
@@ -247,10 +243,9 @@ export default function Invest() {
                       Luxury Villa
                     </p>
                     <p className="opacity-80  font-sans text-sm">
-                      Spacious 2 bedroom holiday villa that can comfortably
-                      accomodate a family of 4 that comes complete with dining
-                      room, lounge area, parking garage, and a private pool
-                      area.
+                      Our spacious 2 bedroom Villa comfortably accommodates a
+                      family of 4 and comes complete with dining room, lounge
+                      area, parking garage, and a private pool deck.
                     </p>
                   </div>
                   <div className="flex flex-row gap-4 items-center justify-start">
@@ -351,10 +346,9 @@ export default function Invest() {
                       Luxury Villa
                     </p>
                     <p className="opacity-80  font-sans text-sm">
-                      Spacious 3 bedroom holiday villa that can comfortably
-                      accomodate a family of 6 that comes complete with dining
-                      room, lounge area, parking garage, and a private pool
-                      area.
+                      Our spacious 3 bedroom Villa comfortably accommodates a
+                      family of 6 and comes complete with dining room, lounge
+                      area, parking garage, and a private pool deck.
                     </p>
                   </div>
                   <div className="flex flex-row gap-4 items-center justify-start">
@@ -443,8 +437,8 @@ export default function Invest() {
               Room Furnishings
             </p>
             <p className="text-sm font-sans">
-              Each villa comes with a complete set of furnishings which includes
-              everything you would need to make your stay a comfortable one.
+              Each Villa comes with a complete set of quality furnishings,
+              making it home away from home. Holiday memories not included.
             </p>
           </div>
           <div className="flex flex-col gap-4 lg:px-10">

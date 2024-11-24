@@ -84,7 +84,7 @@ export default function LandingPage() {
             Luxury Villas
           </h3>
           <p className="font-sans text-stone-900 text-md text-balance">
-            Experience a rare combination of luxury, exclusivity and value with
+            Experience a rare coalescence of luxury and exceptional value with
             our latest development,{" "}
             <span className="font-extrabold text-yellow-800">
               Golden Retreat Lombok
@@ -93,8 +93,8 @@ export default function LandingPage() {
           </p>
           <p className="font-sans text-md text-stone-900/50">
             Nestled in the beautiful west coast of Lombok, Golden Retreat Lombok
-            showcases exquisite design, a quality build, 5-star amenities, and
-            exceptional service.
+            showcases exquisite design, a quality build and 5-star amenities
+            with first-class service.
           </p>
           <div className="flex flex-row flex-wrap gap-4">
             <Link href="/villas" prefetch={true}>
@@ -162,13 +162,10 @@ export default function LandingPage() {
             Investment Opportunity
           </h2>
           <p className="text-md font-sans text-balance">
-            Golden Retreat Lombok brings forth an opportunity to tap Lombok’s
-            fast-growing tourism industry. Already ranked{" "}
-            <span className="font-bold">
-              one of the world's top destinations for nature tourism
-            </span>
-            , Lombok Island’s need for quality holiday accommodation continues
-            to soar.
+            Golden Retreat Lombok presents an opportunity for you to capitalise
+            on Lombok’s fast-growing tourism industry. Already ranked one of the
+            world's top destinations for nature tourism, Lombok Island’s need
+            for quality holiday accommodation continues to soar!
           </p>
           <div className="flex flex-row gap-4 items-end justify-start">
             <Link href="/invest" prefetch={true}>
@@ -332,9 +329,9 @@ export default function LandingPage() {
                     Restaurant, Bar & Lounge{" "}
                   </p>
                   <p className="text-md font-sans">
-                    Dine in luxury in our 5 star restaurant with a delicious
-                    variety of dishes or spend the evening in our private
-                    lounge.
+                    Dine-in luxury in our 5 star restaurant with a delicious
+                    variety of dishes, both local and international cuisines, or
+                    spend the evening in our private lounge.
                   </p>
                 </div>
               </div>
@@ -356,9 +353,9 @@ export default function LandingPage() {
                     Wellness Spa & Gymnasium
                   </p>
                   <p className="text-md font-sans">
-                    Never miss a beat with you fitness routine with our
-                    gymnasium or take a break at the wellness spa for a nice day
-                    of relaxation.
+                    Never miss a beat with our on-site gymnasium equipped with
+                    your favourite machines and then get a message in our local
+                    5-star spa.
                   </p>
                 </div>
               </div>
@@ -380,8 +377,8 @@ export default function LandingPage() {
                     Serenity Garden & Koi Pond
                   </p>
                   <p className="text-md font-sans">
-                    Be at peace with the sound of water and a beautiful sight in
-                    our gardens, where memories of a lifetime are made.
+                    Centre body and mind with the sound of water in our serenity
+                    garden.
                   </p>
                 </div>
               </div>
