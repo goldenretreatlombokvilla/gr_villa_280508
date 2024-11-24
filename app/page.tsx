@@ -66,24 +66,24 @@ export default function LandingPage() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-16 lg:gap-20 items-center justify-center w-full lg:pl-0 lg:ml-0 lg:pr-52 py-20 lg:py-52">
-        <div className="flex flex-col gap-4 items-center justify-center h-full w-full lg:col-span-2">
+      <div className="grid grid-cols-1 gap-16 lg:gap-20 items-center justify-center w-full px-8 pt-14 lg:pt-20 lg:py-20 max-w-6xl mx-auto">
+        <div className="flex flex-col gap-4 items-center justify-center h-full w-full">
           <Image
             src="https://utfs.io/f/dJLJpH9Hrkw3hbSz8Z2LaOUmx7jw6JrqKBblDskWdPvTZoSg"
             alt="Front Enterence of Golden Retreat Lombok Villa"
             width={700}
             height={700}
-            className="w-full h-full object-cover rounded-none lg:rounded-r-lg object-center lg:shadow-2xl shadow-yellow-900"
+            className="w-full h-full object-cover rounded-lg object-center lg:shadow-2xl shadow-yellow-900"
           />
         </div>
-        <div className="flex flex-col gap-6 px-8 lg:px-0 w-full order-first lg:order-last">
+        <div className="flex flex-col gap-4 px-0 lg:px-0 w-full order-first lg:w-2/3">
           <p className="font-cinzel text-xl lg:text-2xl font-extrabold tracking-wide flex flex-col text-yellow-800/50 uppercase -mb-4">
             Private & Exclusive
           </p>
-          <h3 className="font-extrabold text-4xl md:text-6xl lg:text-8xl font-cinzel text-yellow-800">
+          <h3 className="font-extrabold text-5xl md:text-6xl lg:text-8xl font-cinzel text-yellow-800">
             Luxury Villas
           </h3>
-          <p className="font-sans text-stone-900 text-md">
+          <p className="font-sans text-stone-900 text-md text-balance">
             Experience a rare combination of luxury, exclusivity and value with
             our latest development,{" "}
             <span className="font-extrabold text-yellow-800">
@@ -97,6 +97,41 @@ export default function LandingPage() {
             exceptional service.
           </p>
           <div className="flex flex-row flex-wrap gap-4">
+            <Link href="/villas" prefetch={true}>
+              <Button
+                variant="default"
+                className="w-fit font-extrabold uppercase tracking-wider hover:drop-shadow-md"
+              >
+                The Villas
+              </Button>
+            </Link>
+            {/*  <Link href="/book">
+              <Button variant="link" className="w-fit group ">
+                <Phone className="min-w-6 min-h-6 stroke-1 text-yellow-700 group-hover:animate-ping" />{" "}
+                <p className="opacity-0 group-hover:opacity-100 transisition-all duration-500 ease-in-out text-yellow-800">
+                  Book A Call
+                </p>
+              </Button>
+            </Link> */}
+          </div>
+        </div>
+      </div>
+
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-x-14 items-center justify-center w-full px-8 lg:px-52 py-10 my-10 lg:py-40 bg-yellow-900/10">
+        <div className="flex flex-col gap-4">
+          <p className="font-cinzel text-xl lg:text-2xl font-extrabold tracking-wide flex flex-col uppercase text-yellow-900/50">
+            Natural Paradise
+          </p>
+          <h2 className="text-5xl lg:text-7xl font-cinzel font-extrabold text-yellow-900">
+            Lombok Island
+          </h2>
+          <p className="text-md font-sans text-balance">
+            A rising tourist destination, Lombok is fast becoming a popular
+            choice for nature lovers. With its pristine beaches, lush
+            rainforests, and abundant wildlife, Lombok offers a unique and
+            unforgettable experience for adventure seekers.
+          </p>
+          <div className="flex flex-row gap-4 items-end justify-start">
             <Link href="/lombok" prefetch={true}>
               <Button
                 variant="default"
@@ -105,24 +140,25 @@ export default function LandingPage() {
                 Destination Lombok
               </Button>
             </Link>
-            <Link href="/book">
-              <Button variant="link" className="w-fit group ">
-                <Phone className="min-w-6 min-h-6 stroke-1 text-yellow-700 group-hover:animate-ping" />{" "}
-                <p className="opacity-0 group-hover:opacity-100 transisition-all duration-500 ease-in-out text-yellow-800">
-                  Book A Call
-                </p>
-              </Button>
-            </Link>
           </div>
+        </div>
+        <div className="flex flex-col gap-4 lg:order-first h-full w-full">
+          <Image
+            src="https://utfs.io/f/dJLJpH9Hrkw3s7ADYDdtfQDR1ujgW04bv39US6XzVqYOLryH"
+            alt="Destination Lombok: A Rising Tourist Destination"
+            width={500}
+            height={200}
+            className="flex w-full h-full object-cover rounded-lg"
+          />
         </div>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-x-14 items-start justify-start w-full px-8 lg:px-52 py-20">
-        <div className="flex flex-col gap-6">
-          <h2 className="text-4xl lg:text-5xl font-cinzel font-extrabold text-yellow-900">
-            <span className="font-cinzel text-xl lg:text-2xl font-extrabold tracking-wide flex flex-col uppercase opacity-50">
-              An Unparalleled
-            </span>
+        <div className="flex flex-col gap-4">
+          <p className="font-cinzel text-xl lg:text-2xl font-extrabold tracking-wide flex flex-col uppercase text-yellow-900/50">
+            An Unparalleled
+          </p>
+          <h2 className="text-5xl lg:text-7xl font-cinzel font-extrabold text-yellow-900">
             Investment Opportunity
           </h2>
           <p className="text-md font-sans text-balance">
@@ -213,7 +249,7 @@ export default function LandingPage() {
                     </p>
                     <div className="flex flex-row gap-4 mb-8">
                       <p className="text-sm font-sans uppercase font-bold text-yellow-900 opacity-80">
-                        2 Bedroom | 150 sqm
+                        2 Bedroom
                       </p>
                       {/*  <Badge variant={"default"}>3 Bedroom</Badge>
                       <Badge variant={"default"}>187 sqm</Badge> */}
@@ -252,7 +288,7 @@ export default function LandingPage() {
                     </p>
                     <div className="flex flex-row gap-4 mb-8">
                       <p className="text-sm font-sans uppercase font-bold text-yellow-900 opacity-80">
-                        3 Bedroom | 187 sqm
+                        3 Bedroom
                       </p>
                       {/*  <Badge variant={"default"}>3 Bedroom</Badge>
                       <Badge variant={"default"}>187 sqm</Badge> */}
@@ -295,7 +331,7 @@ export default function LandingPage() {
                   <p className="text-2xl font-bold font-cinzel text-yellow-900">
                     Restaurant, Bar & Lounge{" "}
                   </p>
-                  <p className="text-md opacity-70 font-sans">
+                  <p className="text-md font-sans">
                     Dine in luxury in our 5 star restaurant with a delicious
                     variety of dishes or spend the evening in our private
                     lounge.
@@ -319,7 +355,7 @@ export default function LandingPage() {
                   <p className="text-2xl font-bold font-cinzel text-yellow-900">
                     Wellness Spa & Gymnasium
                   </p>
-                  <p className="text-md opacity-70 font-sans">
+                  <p className="text-md font-sans">
                     Never miss a beat with you fitness routine with our
                     gymnasium or take a break at the wellness spa for a nice day
                     of relaxation.
@@ -343,7 +379,7 @@ export default function LandingPage() {
                   <p className="text-2xl font-bold font-cinzel text-yellow-900">
                     Serenity Garden & Koi Pond
                   </p>
-                  <p className="text-md opacity-70 font-sans">
+                  <p className="text-md font-sans">
                     Be at peace with the sound of water and a beautiful sight in
                     our gardens, where memories of a lifetime are made.
                   </p>

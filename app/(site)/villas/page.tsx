@@ -106,7 +106,7 @@ export default function Invest() {
               className="w-10 h-10 object-contain aspect-square drop-shadow-sm"
             />
           </Link>
-          <h1 className="text-xl font-sans text-yellow-800 pt-1 font-light">
+          <h1 className="sr-only text-xl font-sans text-yellow-800 pt-1 font-light">
             The Villas
           </h1>
         </div>
@@ -144,7 +144,7 @@ export default function Invest() {
                       <SquareDashed className="min-w-8 min-h-8 text-yellow-800 stroke-1" />
                       <p className="text-sm font-sans">
                         <span className="font-bold">Project Parcel Size</span> -
-                        10, 000 sqm
+                        10, 000 sqm (107, 640 sqft)
                       </p>
                     </div>
                   </CardContent>
@@ -268,7 +268,10 @@ export default function Invest() {
                     <Grid2X2 className="min-w-8 min-h-8 lg:min-h-12 lg:min-w-12 stroke-1 text-yellow-900 opacity-80" />
                     <div className="flex flex-col gap-0 items-start">
                       <p className="font-semibold font-cinzel text-lg text-nowrap">
-                        150 sqm
+                        150 sqm{" "}
+                        <span className="text-xs italic font-normal font-sans">
+                          (1,615 sqft)
+                        </span>
                       </p>
                       <p className="text-sm font-sans opacity-50">
                         Parcel Area
@@ -279,7 +282,10 @@ export default function Invest() {
                     <Scan className="min-w-8 min-h-8 lg:min-h-12 lg:min-w-12 stroke-1 text-yellow-900 opacity-80" />
                     <div className="flex flex-col gap-0 items-start">
                       <p className="font-semibold font-cinzel text-lg text-nowrap">
-                        103 sqm
+                        103 sqm{" "}
+                        <span className="text-xs italic font-normal font-sans">
+                          (1,108 sqft)
+                        </span>
                       </p>
                       <p className="text-sm font-sans opacity-50">
                         {" "}
@@ -291,7 +297,10 @@ export default function Invest() {
                     <Waves className="min-w-8 min-h-8 lg:min-h-12 lg:min-w-12 stroke-1 text-yellow-900 opacity-80" />
                     <div className="flex flex-col gap-0 items-start">
                       <p className="font-semibold font-cinzel text-lg text-nowrap">
-                        32.5 sqm
+                        32.5 sqm{" "}
+                        <span className="text-xs italic font-normal font-sans">
+                          (350 sqft)
+                        </span>{" "}
                       </p>
                       <p className="text-sm font-sans opacity-50">Pool Area</p>
                     </div>
@@ -363,7 +372,10 @@ export default function Invest() {
                     <Grid2X2 className="min-w-8 min-h-8 lg:min-h-12 lg:min-w-12 stroke-1 text-yellow-900 opacity-80" />
                     <div className="flex flex-col gap-0 items-start">
                       <p className="font-semibold font-cinzel text-lg text-nowrap">
-                        187 sqm
+                        187 sqm{" "}
+                        <span className="text-xs italic font-normal font-sans">
+                          (2,013 sqft)
+                        </span>
                       </p>
                       <p className="text-sm font-sans opacity-50">
                         Parcel Area
@@ -374,7 +386,10 @@ export default function Invest() {
                     <Scan className="min-w-8 min-h-8 lg:min-h-12 lg:min-w-12 stroke-1 text-yellow-900 opacity-80" />
                     <div className="flex flex-col gap-0 items-start">
                       <p className="font-semibold font-cinzel text-lg text-nowrap">
-                        135 sqm
+                        135 sqm{" "}
+                        <span className="text-xs italic font-normal font-sans">
+                          (1,453 sqft)
+                        </span>
                       </p>
                       <p className="text-sm font-sans opacity-50">
                         {" "}
@@ -386,7 +401,10 @@ export default function Invest() {
                     <Waves className="min-w-8 min-h-8 lg:min-h-12 lg:min-w-12 stroke-1 text-yellow-900 opacity-80" />
                     <div className="flex flex-col gap-0 items-start">
                       <p className="font-semibold font-cinzel text-lg text-nowrap">
-                        42 sqm
+                        42 sqm{" "}
+                        <span className="text-xs italic font-normal font-sans">
+                          (452 sqft)
+                        </span>
                       </p>
                       <p className="text-sm font-sans opacity-50">Pool Area</p>
                     </div>

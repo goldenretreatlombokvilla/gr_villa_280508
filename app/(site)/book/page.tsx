@@ -140,7 +140,7 @@ export default function Bookacall() {
             className="w-10 h-10 object-contain aspect-square drop-shadow-sm"
           />
         </Link>
-        <h1 className="text-xl font-sans text-yellow-800 pt-1 font-light">
+        <h1 className="sr-only text-xl font-sans text-yellow-800 pt-1 font-light">
           Book A Call
         </h1>
       </div>

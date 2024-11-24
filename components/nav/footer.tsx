@@ -82,10 +82,10 @@ const navResources = [
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col px-10 gap-4 py-8 pt-14 bg-gradient-to-tl from-yellow-700 to-yellow-800 to-60% text-white lg:px-52">
+    <footer className="flex flex-col px-10 gap-4 py-8 pt-14 bg-beige text-white lg:px-52">
       {/* 1sd Level */}
       <div className="hidden lg:flex sticky bottom-0 z-50 shadow-xl">
-        <div className="flex flex-row gap-4 items-center justify-between max-h-100 w-full lg:max-w-[75vw] mx-auto bg-black text-white bottom-10 left-0 right-0 fixed px-10 py-4 lg:px-4 lg:pl-12 rounded-full">
+        <div className="flex flex-row gap-4 items-center justify-between max-h-100 w-full lg:max-w-[75vw] mx-auto bg-black  bottom-10 left-0 right-0 fixed px-10 py-4 lg:px-4 lg:pl-12 rounded-full">
           <div className="flex flex-row gap-2 items-center justify-start">
             <MapPin className="w-4 h-4 text-yellow-500 opacity-80" />
             <p className="text-sm italic font-serif font-semibold opacity-80">
@@ -110,7 +110,7 @@ export default function Footer() {
                     <DownloadIcon className="w-4 h-4" />
                   </Link>
                 </TooltipTrigger>
-                <TooltipContent className="bg-black rounded-full shadow-sm shadow-yellow-500 py-1 px-6 text-sm text-white">
+                <TooltipContent className="bg-black rounded-full shadow-sm shadow-yellow-500 py-1 px-6 text-sm ">
                   <p className="text-sm font-sans">Info Pack</p>
                 </TooltipContent>
               </Tooltip>
@@ -125,7 +125,7 @@ export default function Footer() {
                     <Mail className="w-4 h-4" />
                   </Link>
                 </TooltipTrigger>
-                <TooltipContent className="bg-black rounded-full shadow-sm shadow-yellow-500 py-1 px-6 text-sm text-white mr-4">
+                <TooltipContent className="bg-black rounded-full shadow-sm shadow-yellow-500 py-1 px-6 text-sm  mr-4">
                   <p className="text-sm font-sans">Contact Us</p>
                 </TooltipContent>
               </Tooltip>
@@ -147,7 +147,7 @@ export default function Footer() {
           <p className="text-4xl font-serif font-bold text-balance">
             Golden Retreat<br></br>Lombok Villa
           </p>
-          <p className="text-sm font-sans text-balance opacity-70">
+          <p className="text-sm font-sans text-balance">
             A secluded, luxurious villa offering panoramic ocean views, private
             pools, and exquisite interiors, set in the heart of Lombok, crafted
             for the ultimate relaxation and indulgence.
@@ -201,14 +201,14 @@ export default function Footer() {
       </div>
       <hr className="opacity-50 py-4"></hr>
       <div className="flex flex-row gap-4 items-center font-sans justify-between lg:pb-24">
-        <p className="text-sm opacity-70">
+        <p className="text-sm">
           © Golden Retreat Lombok Villa 2024 | All Rights Reserved
         </p>
         <div className="hidden lg:flex flex-row gap-4">
-          <Facebook className="min-w-4 min-h-4 stroke-1 text-white hover:text-yellow-900" />
-          <Instagram className="min-w-4 min-h-4 stroke-1 text-white hover:text-yellow-900" />
-          <Linkedin className="min-w-4 min-h-4 stroke-1 text-white hover:text-yellow-900" />
-          <Youtube className="min-w-4 min-h-4 stroke-1 text-white hover:text-yellow-900" />
+          <Facebook className="min-w-4 min-h-4 stroke-1  hover:text-yellow-900" />
+          <Instagram className="min-w-4 min-h-4 stroke-1  hover:text-yellow-900" />
+          <Linkedin className="min-w-4 min-h-4 stroke-1  hover:text-yellow-900" />
+          <Youtube className="min-w-4 min-h-4 stroke-1  hover:text-yellow-900" />
         </div>
       </div>
     </footer>
