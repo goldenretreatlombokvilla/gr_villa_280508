@@ -82,16 +82,6 @@ const facilities = [
 
 const links = [
   {
-    name: "Info Pack",
-    link: "https://utfs.io/f/dJLJpH9Hrkw3Mq16Mft7lJKSRYnQdpH4WNEgjBGiyz65xtM9",
-    target: "_blank"
-  },
-  {
-    name: "Book Now",
-    link: "https://utfs.io/f/dJLJpH9Hrkw3sRFhnDdtfQDR1ujgW04bv39US6XzVqYOLryH",
-    target: "_blank"
-  },
-  {
     name: "About Us",
     link: "/about",
     target: "_self"
@@ -100,6 +90,16 @@ const links = [
     name: "Contact Us",
     link: "/contact",
     target: "_self"
+  },
+  {
+    name: "Info Pack",
+    link: "https://utfs.io/f/dJLJpH9Hrkw3Mq16Mft7lJKSRYnQdpH4WNEgjBGiyz65xtM9",
+    target: "_blank"
+  },
+  {
+    name: "Book Now",
+    link: "https://utfs.io/f/dJLJpH9Hrkw3sRFhnDdtfQDR1ujgW04bv39US6XzVqYOLryH",
+    target: "_blank"
   }
 ];
 
@@ -115,7 +115,7 @@ export default function Nav() {
               </div>
             </SheetTrigger>
             <SheetContent
-              className="flex flex-col gap-4 max-h-screen items-start border-none bg-stone-900 text-white pt-10"
+              className="flex flex-col gap-4  items-start border-none bg-stone-900 text-white pt-10"
               style={{ minWidth: "30vw" }}
             >
               <div className="flex flex-row gap-0 px-4 items-center justify-start">

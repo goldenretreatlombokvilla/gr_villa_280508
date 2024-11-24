@@ -1,3 +1,4 @@
+import Cta from "@/components/cta";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -34,27 +35,45 @@ const gallery = [
 
 export default function Gallery() {
   return (
-    <div className="flex flex-col gap-8 items-center justify-start w-full p-10 max-w-6xl mx-auto">
-      <div className="bg-gradient-to-br from-yellow-800 to-stone-900  rounded-lg py-8 px-8 flex flex-row gap-6 items-center justify-start w-full">
-        <div className="flex flex-col gap-0 items-start w-full">
-          <h1 className="text-3xl lg:text-5xl  font-bold font-cinzel text-white ">
-            Gallery
-          </h1>
-          <p className="text-white ">Luxury Villas</p>
-        </div>
-        <div className="flex items-center justify-center px-2">
-          <Link href="/">
-            <Image
-              src="/brand/logo_icon.png"
-              alt="Golden Retreat Lombok Villa"
-              width={200}
-              height={200}
-              className="w-14 h-14 object-contain aspect-square drop-shadow-xl"
-            />
-          </Link>
+    <div className="flex flex-col gap-8 items-center justify-start w-full bg-gradient-to-b from-yellow-900/10 to-5% to-background ">
+      <div className=" py-6 px-8 flex flex-row gap-6 items-center md:justify-start justify-between w-full sticky top-0 z-40">
+        <Link
+          href="/"
+          className="flex flex-row gap-8 items-center justify-center"
+        >
+          <Image
+            src="/brand/logo_icon.png"
+            alt="Golden Retreat Lombok Villa"
+            width={200}
+            height={200}
+            className="w-10 h-10 object-contain aspect-square drop-shadow-sm"
+          />
+        </Link>
+        <h1 className="text-xl font-sans text-yellow-800 pt-1 font-light">
+          Gallery
+        </h1>
+      </div>
+
+      <div className="flex flex-col gap-4 items-start justify-center w-full px-8 py-6 lg:pt-20 lg:py-20 max-w-6xl mx-auto">
+        <div className="flex flex-col gap-4 items-start justify-center lg:w-2/3">
+          <p className="font-cinzel text-xl lg:text-2xl font-extrabold tracking-wide flex flex-col text-yellow-800/50 uppercase ">
+            The Gallery
+          </p>
+          <p className="text-6xl lg:text-7xl font-cinzel font-extrabold text-yellow-900">
+            Luxury Paradise Getaway
+          </p>
+          <div className="flex flex-col gap-2">
+            <p className="text-md font-sans">
+              Indulge in the luxury paradise of Lombok, a tropical paradise that
+              offers a unique blend of natural beauty and exotic adventures. Our
+              luxury villas are designed to provide a comfortable and relaxing
+              stay, with all the amenities you could ever ask for.
+            </p>
+          </div>
         </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-center gap-8">
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-center gap-8 max-w-6xl px-10 lg:py-20 mx-auto">
         {gallery.map((item) => (
           <div
             key={item.title}
@@ -71,6 +90,7 @@ export default function Gallery() {
           </div>
         ))}
       </div>
+      <Cta />
     </div>
   );
 }

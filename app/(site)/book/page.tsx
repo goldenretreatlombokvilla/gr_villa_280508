@@ -2,6 +2,8 @@
 
 import * as React from "react";
 import { useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
 import { useToast } from "@/hooks/use-toast";
 import {
   CalendarIcon,
@@ -125,6 +127,24 @@ export default function Bookacall() {
   };
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 w-full lg:py-40 bg-yellow-900/10 items-start justify-start lg:px-52 px-10 py-20">
+      <div className=" py-6 px-8 flex flex-row gap-6 items-center md:justify-start justify-between w-full sticky top-0 z-40">
+        <Link
+          href="/"
+          className="flex flex-row gap-8 items-center justify-center"
+        >
+          <Image
+            src="/brand/logo_icon.png"
+            alt="Golden Retreat Lombok Villa"
+            width={200}
+            height={200}
+            className="w-10 h-10 object-contain aspect-square drop-shadow-sm"
+          />
+        </Link>
+        <h1 className="text-xl font-sans text-yellow-800 pt-1 font-light">
+          Book A Call
+        </h1>
+      </div>
+
       <div className="flex flex-col gap-4">
         <p className="text-5xl lg:text-7xl font-extrabold text-yellow-900 font-cinzel">
           Book A Discovery Call

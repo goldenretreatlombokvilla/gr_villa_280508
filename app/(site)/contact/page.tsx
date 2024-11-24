@@ -63,34 +63,30 @@ export default function Contact() {
   };
 
   return (
-    <div className="flex flex-col gap-8 items-center justify-start w-full">
-      <div className="px-10 flex flex-row w-full">
-        <div className="bg-gradient-to-br from-yellow-800 to-stone-900  rounded-lg py-8 px-8 flex flex-row gap-6 items-center justify-start w-full max-w-6xl mx-auto mt-10">
-          <div className="flex flex-col gap-0 items-start w-full ">
-            <h1 className="text-3xl lg:text-5xl  font-bold font-cinzel text-white ">
-              Contact Us
-            </h1>
-            <p className="text-white ">General Information</p>
-          </div>
-          <div className="flex items-center justify-center px-2">
-            <Link href="/">
-              <Image
-                src="/brand/logo_icon.png"
-                alt="Golden Retreat Lombok Villa"
-                width={200}
-                height={200}
-                className="w-14 h-14 object-contain aspect-square drop-shadow-xl"
-              />
-            </Link>
-          </div>
-        </div>
+    <div className="flex flex-col gap-8 items-center justify-start w-full bg-gradient-to-b from-yellow-900/10 to-5% to-background ">
+      <div className=" py-6 px-8 flex flex-row gap-6 items-center md:justify-start justify-between w-full sticky top-0 z-40">
+        <Link
+          href="/"
+          className="flex flex-row gap-8 items-center justify-center"
+        >
+          <Image
+            src="/brand/logo_icon.png"
+            alt="Golden Retreat Lombok Villa"
+            width={200}
+            height={200}
+            className="w-10 h-10 object-contain aspect-square drop-shadow-sm"
+          />
+        </Link>
+        <h1 className="text-xl font-sans text-yellow-800 pt-1 font-light">
+          Contact Us
+        </h1>
       </div>
 
-      <div className="flex flex-col w-full px-10">
+      <div className="flex flex-col w-full px-8">
         <div className="max-w-6xl mx-auto w-full">
           <div className="grid grid-cols-1 lg:grid-cols-2 items-center justify-center py-20">
-            <div className="flex flex-col gap-4 px-8 lg:px-4">
-              <p className="text-5xl lg:text-6xl  font-extrabold font-cinzel text-balance text-yellow-900">
+            <div className="flex flex-col gap-4">
+              <p className="text-6xl lg:text-8xl  font-extrabold font-cinzel text-balance text-yellow-900">
                 Get in touch
               </p>
               <p className="font-sans text-sm text-balance">
@@ -104,7 +100,7 @@ export default function Contact() {
           </div>
         </div>
         {/* Contact Info */}
-        <div className="flex flex-col gap-14 items-start justify-center w-full max-w-6xl mx-auto pb-20 px-10 lg:px-0">
+        <div className="flex flex-col gap-14 items-start justify-center w-full max-w-6xl mx-auto pb-20 px-4 lg:px-0">
           <Card className="flex flex-col w-full lg:p-0 bg-transparent shadow-none border-none">
             <CardContent className="p-0">
               <div className="flex flex-col gap-2 items-start justify-center">
@@ -120,7 +116,7 @@ export default function Contact() {
                   >
                     <Button
                       variant={"link"}
-                      className="p-0 text-2xl lg:text-3xl"
+                      className="p-0 text-xl lg:text-3xl"
                     >
                       +6 012 411 2260
                     </Button>
@@ -133,7 +129,7 @@ export default function Contact() {
                   >
                     <Button
                       variant={"link"}
-                      className="p-0 text-2xl lg:text-3xl"
+                      className="p-0 text-xl lg:text-3xl"
                     >
                       +65 9366 1372
                     </Button>
@@ -150,8 +146,11 @@ export default function Contact() {
                   Send an Email
                 </p>
                 <Link href="/" className=" text-yellow-900 font-sans">
-                  <Button variant={"link"} className="p-0 text-2xl lg:text-3xl">
-                    info@goldenretreatinternational.com
+                  <Button
+                    variant={"link"}
+                    className="p-0 text-xl lg:text-3xl truncate"
+                  >
+                    contact@goldenretreatinternational.com
                   </Button>
                 </Link>
               </div>

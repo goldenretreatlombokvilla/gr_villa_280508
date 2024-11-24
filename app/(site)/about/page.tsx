@@ -9,39 +9,30 @@ import Link from "next/link";
 export default function About() {
   return (
     <main>
-      <div className="flex flex-col gap-8 items-center justify-start w-full min-h-screen p-10 max-w-6xl mx-auto">
-        <div className="bg-gradient-to-br from-yellow-800 to-stone-900  rounded-lg py-8 px-8 flex flex-row gap-6 items-center justify-start w-full">
-          <div className="flex flex-col gap-0 items-start w-full">
-            <h1 className="text-3xl lg:text-5xl  font-bold font-cinzel text-white ">
-              About Us
-            </h1>
-          </div>
-          <div className="flex items-center justify-center px-2">
-            <Link href="/">
-              <Image
-                src="/brand/logo_icon.png"
-                alt="Golden Retreat Lombok Villa"
-                width={200}
-                height={200}
-                className="w-14 h-14 object-contain aspect-square drop-shadow-xl"
-              />
-            </Link>
-          </div>
+      <div className="flex flex-col gap-8 items-center justify-start w-full bg-gradient-to-b from-yellow-900/10 to-5% to-background ">
+        <div className=" py-6 px-8 flex flex-row gap-6 items-center md:justify-start justify-between w-full sticky top-0 z-40">
+          <Link
+            href="/"
+            className="flex flex-row gap-8 items-center justify-center"
+          >
+            <Image
+              src="/brand/logo_icon.png"
+              alt="Golden Retreat Lombok Villa"
+              width={200}
+              height={200}
+              className="w-10 h-10 object-contain aspect-square drop-shadow-sm"
+            />
+          </Link>
+          <h1 className="text-xl font-sans text-yellow-800 pt-1 font-light">
+            About Us
+          </h1>
         </div>
 
-        {/*  <div className="grid grid-cols-2 gap-10 py-20">
-          <div className="flex flex-col gap-4">
-            <p className="text-lg font-sans">
-              This project is the result of a collaboration between four
-              companies that share the same vision and work together to achieve
-              a common goal.{" "}
-            </p>
-          </div>
-        </div>
- */}
-        <div className="flex flex-col gap-4 items-center justify-center w-full px-0 py-10 lg:pt-20 lg:py-0">
+        <div className="flex flex-col gap-4 items-center justify-center w-full px-8 py-10 lg:pt-20 lg:py-0 max-w-6xl mx-auto">
           <div className="flex flex-col gap-4 items-start justify-center">
-            <p className="text-xl font-bold uppercase">Primary Developer</p>
+            <p className="font-cinzel text-xl lg:text-2xl font-extrabold tracking-wide flex flex-col text-yellow-800/50 uppercase ">
+              Primary Developer
+            </p>
             <p className="text-4xl lg:text-6xl font-cinzel font-extrabold text-yellow-900">
               PT Propil Land Development
             </p>
@@ -59,7 +50,7 @@ export default function About() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-8 items-center justify-center w-full py-10 lg:py-20">
+        <div className="flex flex-col gap-8 items-center justify-center w-full px-8 max-w-6xl mx-auto py-10 lg:py-20">
           <p className="text-4xl lg:text-5xl font-cinzel text-yellow-900 font-bold">
             Successful Projects
           </p>
@@ -146,13 +137,17 @@ export default function About() {
 
       <div className="flex flex-col gap-8 items-center justify-center w-full px-0 py-10 lg:py-20">
         <div className="flex flex-col gap-4 items-center justify-center text-center">
-          <p className="text-xl font-bold">Secondary Developer</p>
+          <p className="font-cinzel text-xl lg:text-2xl font-extrabold tracking-wide flex flex-col text-yellow-800/50 uppercase ">
+            Secondary Developer
+          </p>
           <p className="text-4xl lg:text-6xl font-cinzel font-bold text-yellow-900">
             PT Tri Karya Safani
           </p>
         </div>{" "}
         <div className="flex flex-col gap-4 items-center justify-center text-center">
-          <p className="text-xl font-bold">Jointly managed by</p>
+          <p className="font-cinzel text-xl lg:text-2xl font-extrabold tracking-wide flex flex-col text-yellow-800/50 uppercase ">
+            Jointly Managed By
+          </p>
           <p className="text-4xl lg:text-6xl font-cinzel font-bold text-yellow-900">
             Metrolalis Indonesia
           </p>

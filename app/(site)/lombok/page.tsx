@@ -64,101 +64,104 @@ const villaImages = [
 
 export default function Lombok() {
   return (
-    <div className="flex flex-col gap-8 items-center justify-start w-full p-10 max-w-6xl mx-auto">
-      <div className="bg-gradient-to-br from-yellow-800 to-stone-900 rounded-lg py-8 px-8 flex flex-row gap-6 items-center justify-start w-full">
-        <div className="flex flex-col gap-0 items-start w-full">
-          <h1 className="text-3xl lg:text-5xl  font-bold font-cinzel text-white ">
-            Lombok
-          </h1>
-          <p className="text-white ">A Thriving Tourist Destination</p>
-        </div>
-        <div className="flex items-center justify-center px-2">
-          <Link href="/">
+    <main>
+      <div className="flex flex-col gap-8 items-center justify-start w-full bg-gradient-to-b from-yellow-900/10 to-5% to-background ">
+        <div className=" py-6 px-8 flex flex-row gap-6 items-center md:justify-start justify-between w-full sticky top-0 z-40">
+          <Link
+            href="/"
+            className="flex flex-row gap-8 items-center justify-center"
+          >
             <Image
               src="/brand/logo_icon.png"
               alt="Golden Retreat Lombok Villa"
               width={200}
               height={200}
-              className="w-14 h-14 object-contain aspect-square drop-shadow-xl"
+              className="w-10 h-10 object-contain aspect-square drop-shadow-sm"
             />
           </Link>
+          <h1 className="text-xl font-sans text-yellow-800 pt-1 font-light">
+            Destination Lombok
+          </h1>
         </div>
-      </div>
-      <div className="grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-10 lg:gap-10 items-center justify-center w-full">
-        <div className="flex flex-col gap-4 items-center text-yellow-900 relative">
-          <Image
-            src="/lombok/ariel-island.jpg"
-            alt="Lombok Island Ariel View"
-            width={1000}
-            height={700}
-            className="w-full h-[70vh] object-cover lg:aspect-[10/14] rounded-lg"
-          />
-          <Image
-            src="/lombok/tc_award.png"
-            alt="Tripadvisor Award"
-            width={200}
-            height={200}
-            className="w-28 h-28 absolute bottom-5 right-5 object-contain"
-          />
-        </div>
-        <div className="flex flex-col gap-6 text-balance items-start justify-center">
-          <p className="font-cinzel text-yellow-800 text-4xl font-semibold lg:text-5xl tracking-wide">
-            <span className="font-bold">Lombok</span> - 5th Best World Nature
-            Destination
-          </p>
-          <div className="flex flex-row gap-4">
-            <p className="text-xl font-sans font-bold">
-              Tripadvisors Travelers' Choice Award
-            </p>
+
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-10 lg:gap-10 items-center justify-center w-full px-8 pb-16 lg:pb-20 max-w-6xl mx-auto">
+          <div className="flex flex-col gap-4 items-center text-yellow-900 relative">
+            <Image
+              src="/lombok/ariel-island.jpg"
+              alt="Lombok Island Ariel View"
+              width={1000}
+              height={700}
+              className="w-full max-h-96 lg:max-h-[70vh] object-cover lg:aspect-[10/14] rounded-lg"
+            />
+            <Image
+              src="/lombok/tc_award.png"
+              alt="Tripadvisor Award"
+              width={200}
+              height={200}
+              className="w-28 h-28 absolute bottom-5 right-5 object-contain"
+            />
           </div>
-          <p className="font-sans font-semibold text-stone-900 text-md leading-7">
-            Discover the unspoiled beauty of Lombok, a tropical paradise nestled
-            in the heart of Indonesia. This enchanting island offers a
-            captivating blend of stunning natural landscapes, vibrant culture,
-            and warm hospitality.
-          </p>
-          <p className="font-sans text-md text-stone-900/50 leading-7">
-            From pristine beaches and crystal-clear waters to majestic mountains
-            and lush rainforests, Lombok has something to offer every traveler.
-            Immerse yourself in the tranquility of the Gili Islands, explore the
-            ancient Hindu temples, or embark on a thrilling adventure up Mount
-            Rinjani.
-          </p>
-          <Dialog>
-            <DialogTrigger asChild>
-              <Button
-                variant={"default"}
-                className="w-fit font-extrabold uppercase tracking-wider hover:drop-shadow-md"
-              >
-                Surrounding Islands
-              </Button>
-            </DialogTrigger>
-            <DialogPortal>
-              <DialogContent className=" border-none shadow-none w-full h-full items-center justify-center bg-transparent">
-                <DialogHeader>
-                  <DialogTitle className="sr-only">
-                    Map location of Lombok and surrounding islands.
-                  </DialogTitle>
-                  {/*  <DialogDescription>
+          <div className="flex flex-col gap-6 text-balance items-start justify-center">
+            <p className="font-cinzel text-yellow-800 text-5xl font-extrabold lg:text-7xl tracking-wide">
+              Lombok
+            </p>
+            <p className="font-cinzel text-yellow-800 text-4xl font-semibold lg:text-5xl tracking-wide">
+              5th Best World Nature Destination
+            </p>
+            <div className="flex flex-row gap-4">
+              <p className="font-sans font-semibold text-yellow-800 text-xl uppercase">
+                Tripadvisors Travelers' Choice Award
+              </p>
+            </div>
+            <p className="font-sans font-semibold text-stone-900 text-md leading-7">
+              Discover the unspoiled beauty of Lombok, a tropical paradise
+              nestled in the heart of Indonesia. This enchanting island offers a
+              captivating blend of stunning natural landscapes, vibrant culture,
+              and warm hospitality.
+            </p>
+            <p className="font-sans text-md text-stone-900/50 leading-7">
+              From pristine beaches and crystal-clear waters to majestic
+              mountains and lush rainforests, Lombok has something to offer
+              every traveler. Immerse yourself in the tranquility of the Gili
+              Islands, explore the ancient Hindu temples, or embark on a
+              thrilling adventure up Mount Rinjani.
+            </p>
+            <Dialog>
+              <DialogTrigger asChild>
+                <Button
+                  variant={"default"}
+                  className="w-fit font-extrabold uppercase tracking-wider hover:drop-shadow-md"
+                >
+                  Surrounding Islands
+                </Button>
+              </DialogTrigger>
+              <DialogPortal>
+                <DialogContent className=" border-none shadow-none w-full h-full items-center justify-center bg-transparent">
+                  <DialogHeader>
+                    <DialogTitle className="sr-only">
+                      Map location of Lombok and surrounding islands.
+                    </DialogTitle>
+                    {/*  <DialogDescription>
                         This action cannot be undone. This will permanently
                         delete your account and remove your data from our
                         servers.
                         </DialogDescription> */}
-                  <Image
-                    src="https://utfs.io/f/dJLJpH9Hrkw3hoWVZA2LaOUmx7jw6JrqKBblDskWdPvTZoSg"
-                    alt="Map location of Lombok and surrounding areas"
-                    width={1000}
-                    height={600}
-                    className="min-w-[50vw] max-h-[80vh] object-contain rounded-lg shadow-lg"
-                  />
-                </DialogHeader>
-              </DialogContent>
-            </DialogPortal>
-          </Dialog>
+                    <Image
+                      src="https://utfs.io/f/dJLJpH9Hrkw3hoWVZA2LaOUmx7jw6JrqKBblDskWdPvTZoSg"
+                      alt="Map location of Lombok and surrounding areas"
+                      width={1000}
+                      height={600}
+                      className="min-w-[50vw] max-h-[80vh] object-contain rounded-lg shadow-lg"
+                    />
+                  </DialogHeader>
+                </DialogContent>
+              </DialogPortal>
+            </Dialog>
+          </div>
         </div>
       </div>
 
-      <div className="flex flex-col gap-8 items-center justify-start w-full py-32">
+      <div className="flex flex-col gap-8 items-center justify-start w-full  px-8 py-6 lg:pt-20 lg:py-20 max-w-6xl mx-auto">
         <p className="font-cinzel text-center text-5xl font-bold text-yellow-900">
           Reasons Tourist Are Visitng Lombok
         </p>
@@ -210,7 +213,7 @@ export default function Lombok() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col w-full px-4 lg:px-0">
+      <div className="flex flex-col w-full px-20 py-6 lg:pt-20 lg:py-20 max-w-6xl mx-auto">
         <Carousel
           /* plugins={[
             Autoplay({
@@ -220,7 +223,7 @@ export default function Lombok() {
           ]}
           */
           opts={{ align: "center", loop: true }}
-          className="w-full flex "
+          className="w-full flex"
         >
           <CarouselContent className="my-8">
             {villaImages.map((image, index) => (
@@ -243,6 +246,6 @@ export default function Lombok() {
           <CarouselNext />
         </Carousel>
       </div>
-    </div>
+    </main>
   );
 }

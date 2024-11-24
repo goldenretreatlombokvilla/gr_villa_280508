@@ -36,22 +36,23 @@ export default function LandingPage() {
       <div className="flex flex-col gap-8 items-center justify-start w-full min-h-screen p-0 max-w-6xl mx-auto">
         <div className="absolute w-full h-[100vh] top-0 left-0 -z-10">
           <Image
-            src="/villa/grlv_3.webp"
+            src="https://utfs.io/f/dJLJpH9Hrkw3pXyUf0A8fDXoAL2Jay9kEY7gbmpj3CvcG0Pu"
             alt="Golden Retreat Lombok Villa"
             width={2000}
             height={2000}
+            loading="eager"
             className="w-full h-[100vh] lg:h-auto  aspect-video object-cover brightness-50"
           />
         </div>
-        <div className="flex flex-col gap-4 items-center justify-start px-0 lg:pb-32 text-white w-full min-h-[100vh] py-10 ">
+        <div className="flex flex-col gap-4 items-center justify-start px-0 lg:pb-32 text-white w-full h-[100vh] py-10 ">
           <Image
-            src="/brand/logo_full.png"
+            src="https://utfs.io/f/dJLJpH9Hrkw31JUxKmNSAE1eLPCn7ZqI4KBDlfHwUhJit380"
             alt="Golden Retreat Lombok Villa"
             width={1000}
             height={500}
             className="lg:w-80 w-60 h-fit lg:h-fit object-contain mb-20 drop-shadow-xl"
           />
-          <div className="flex flex-col items-center justify-center gap-4 mt-40 lg:mt-20">
+          <div className="flex flex-col items-center justify-center gap-4 py-[20vh] lg:py-24">
             <p className="uppercase font-serif text-lg lg:text-2xl tracking-widest opacity-60 ">
               Welcome to
             </p>
@@ -76,7 +77,7 @@ export default function LandingPage() {
           />
         </div>
         <div className="flex flex-col gap-6 px-8 lg:px-0 w-full order-first lg:order-last">
-          <p className="font-cinzel text-xl lg:text-2xl font-extrabold tracking-wide flex flex-col text-yellow-800 uppercase opacity-50 -mb-4">
+          <p className="font-cinzel text-xl lg:text-2xl font-extrabold tracking-wide flex flex-col text-yellow-800/50 uppercase -mb-4">
             Private & Exclusive
           </p>
           <h3 className="font-extrabold text-4xl md:text-6xl lg:text-8xl font-cinzel text-yellow-800">

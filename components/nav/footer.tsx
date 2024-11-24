@@ -98,21 +98,16 @@ export default function Footer() {
               <span className="font-bold">Invest Now!</span>
             </p>
           </div>
-          <div className="flex flex-row gap-2 lg:gap-4 text-secondary">
+          <div className="flex flex-row gap-2 lg:gap-8 text-secondary items-center justify-center">
             <TooltipProvider delayDuration={0}>
               <Tooltip>
                 <TooltipTrigger>
                   <Link
                     href="https://utfs.io/f/dJLJpH9Hrkw3Mq16Mft7lJKSRYnQdpH4WNEgjBGiyz65xtM9"
                     target="_blank"
+                    className="hidden md:flex opacity-50 hover:opacity-100"
                   >
-                    <Button
-                      variant="ghost"
-                      size="icon"
-                      className=" opacity-50 hover:opacity-100"
-                    >
-                      <DownloadIcon className="w-4 h-4" />
-                    </Button>
+                    <DownloadIcon className="w-4 h-4" />
                   </Link>
                 </TooltipTrigger>
                 <TooltipContent className="bg-black rounded-full shadow-sm shadow-yellow-500 py-1 px-6 text-sm text-white">
@@ -123,14 +118,11 @@ export default function Footer() {
             <TooltipProvider delayDuration={0}>
               <Tooltip>
                 <TooltipTrigger asChild>
-                  <Link href="/contact">
-                    <Button
-                      variant="ghost"
-                      size="icon"
-                      className="hidden md:block opacity-50 hover:opacity-100"
-                    >
-                      <Mail className="w-4 h-4" />
-                    </Button>
+                  <Link
+                    href="/contact"
+                    className="hidden md:flex opacity-50 hover:opacity-100"
+                  >
+                    <Mail className="w-4 h-4" />
                   </Link>
                 </TooltipTrigger>
                 <TooltipContent className="bg-black rounded-full shadow-sm shadow-yellow-500 py-1 px-6 text-sm text-white mr-4">

@@ -92,27 +92,26 @@ const villaImages = [
 export default function Invest() {
   return (
     <main>
-      <div className="flex flex-col gap-8 items-center justify-center w-full px-8 pt-10 max-w-6xl mx-auto">
-        <div className="bg-gradient-to-br from-yellow-800 to-stone-900  rounded-lg px-8 flex flex-row gap-6 items-center justify-start w-full py-8">
-          <div className="flex flex-col gap-0 items-start w-full">
-            <h1 className="text-3xl lg:text-5xl  font-bold font-cinzel text-white ">
-              The Villas
-            </h1>
-            <p className="text-white ">Luxury Getaway Paradise</p>
-          </div>
-          <div className="flex items-center justify-center px-2">
-            <Link href="/">
-              <Image
-                src="/brand/logo_icon.png"
-                alt="Golden Retreat Lombok Villa"
-                width={200}
-                height={200}
-                className="w-14 h-14 object-contain aspect-square drop-shadow-xl"
-              />
-            </Link>
-          </div>
+      <div className="flex flex-col gap-8 items-center justify-start w-full bg-gradient-to-b from-yellow-900/10 to-5% to-background ">
+        <div className=" py-6 px-8 flex flex-row gap-6 items-center md:justify-start justify-between w-full sticky top-0 z-40">
+          <Link
+            href="/"
+            className="flex flex-row gap-8 items-center justify-center"
+          >
+            <Image
+              src="/brand/logo_icon.png"
+              alt="Golden Retreat Lombok Villa"
+              width={200}
+              height={200}
+              className="w-10 h-10 object-contain aspect-square drop-shadow-sm"
+            />
+          </Link>
+          <h1 className="text-xl font-sans text-yellow-800 pt-1 font-light">
+            The Villas
+          </h1>
         </div>
-        <div className="flex flex-col gap-4 py-20 items-center justify-center w-full">
+
+        <div className="flex flex-col gap-4 items-center justify-center w-full px-8 py-6 lg:pt-20 lg:py-20 max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 items-center justify-center gap-8">
             <div className="flex flex-col gap-4">
               <p className="text-5xl lg:text-7xl  font-extrabold font-cinzel text-yellow-900">
@@ -219,50 +218,15 @@ export default function Invest() {
                           loading="eager"
                           className="object-cover aspect-square min-w-full min-h-full rounded-lg"
                         />
-                        <Badge
-                          variant="default"
-                          className="text-md text-center text-white opacity-80 absolute bottom-4 right-4"
-                        >
-                          {image.alt}
-                        </Badge>
                       </div>
                     </CarouselItem>
                   ))}
                 </CarouselContent>
               </Carousel>
-              {/* Carousel Mobile */}
-              {/* <Carousel
-                plugins={[
-                  Autoplay({
-                    delay: 3800,
-                    stopOnMouseEnter: true
-                  })
-                ]}
-                opts={{ align: "center", loop: true }}
-                className="hidden"
-              >
-                <CarouselContent className="my-8">
-                  {villaImages.map((image, index) => (
-                    <CarouselItem
-                      key={index}
-                      className="flex flex-col gap-4 items-center justify-center basis-1/2 lg:basis-1/4 lg:pl-14 group rounded-lg"
-                    >
-                      <Image
-                        src={image.src}
-                        alt={image.alt}
-                        width={580}
-                        height={200}
-                        loading="eager"
-                        className="object-cover w-full h-full rounded-lg group-hover:scale-105 transition-all duration-300 group-hover:shadow-lg brightness-100 lg:brightness-90 group-hover:brightness-100"
-                      />
-                    </CarouselItem>
-                  ))}
-                </CarouselContent>
-              </Carousel> */}
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-40 items-center px-0 py-8 lg:py-20">
+        <div className="flex flex-col gap-40 items-center px-8 py-6 lg:pt-20 lg:py-20 max-w-6xl mx-auto">
           {/* 2 Bed */}
           <Card className="flex flex-col w-full lg:p-0 bg-transparent shadow-none border-none">
             <CardContent className="p-0">
@@ -455,7 +419,7 @@ export default function Invest() {
           </Card>
         </div>
         {/* Furnishings Section */}
-        <div className="grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-4 items-start px-0  w-full py-20">
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-4 items-start px-8 py-6 lg:pt-20 lg:py-20 max-w-6xl mx-auto w-full">
           <div className="flex flex-col gap-4">
             <p className="text-5xl font-cinzel text-yellow-900 font-bold">
               Room Furnishings
@@ -596,7 +560,7 @@ export default function Invest() {
           </div>
         </div>
         {/* Gallery Section */}
-        <div className="flex flex-col gap-4 items-center px-0 pb-20">
+        <div className="flex flex-col gap-4 items-center w-full px-8 py-6 lg:pt-20 lg:py-20 max-w-6xl mx-auto">
           <div className="flex flex-col gap-8 lg:gap-4 items-center justify-center">
             <p className="text-yellow-900 text-center text-balance text-4xl lg:text-5xl font-extrabold">
               Step into Peace & Luxury
