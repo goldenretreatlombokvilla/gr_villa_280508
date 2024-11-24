@@ -21,6 +21,8 @@ import {
   SelectValue
 } from "./ui/select";
 import { toast } from "@/hooks/use-toast";
+import "react-phone-number-input/style.css";
+
 import { redirect } from "next/navigation";
 
 export default function Cta() {
