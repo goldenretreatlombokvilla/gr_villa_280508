@@ -126,7 +126,7 @@ export default function Bookacall() {
     }
   };
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 w-full lg:py-40 bg-yellow-900/10 items-start justify-start lg:px-52 px-10 py-20">
+    <main>
       <div className=" py-6 px-8 flex flex-row gap-6 items-center md:justify-start justify-between w-full sticky top-0 z-40">
         <Link
           href="/"
@@ -145,186 +145,189 @@ export default function Bookacall() {
         </h1>
       </div>
 
-      <div className="flex flex-col gap-4">
-        <p className="text-5xl lg:text-7xl font-extrabold text-yellow-900 font-cinzel">
-          Book A Discovery Call
-        </p>
-        <p className="text-sm font-sans text-balance text-stone-800">
-          Select your prefered date and time that you would be comfortable with.
-          Give us a few minutes of your time to present your next investment
-          opportunity and answer any of your questions.
-        </p>
-
-        <div className="hidden lg:flex flex-row py-20 items-end justify-start gap-8">
-          <Facebook className="min-w-12 min-h-12 stroke-1 text-yellow-900/50 hover:text-yellow-900" />
-          <Instagram className="min-w-12 min-h-12 stroke-1 text-yellow-900/50 hover:text-yellow-900" />
-          <Linkedin className="min-w-12 min-h-12 stroke-1 text-yellow-900/50 hover:text-yellow-900" />
-          <Youtube className="min-w-12 min-h-12 stroke-1 text-yellow-900/50 hover:text-yellow-900" />
+      <div className="grid grid-cols-1 lg:grid-cols-2 w-full px-8 max-w-6xl mx-auto py-10 lg:py-20">
+        <div className="flex flex-col gap-8 items-center justify-start">
+          <p className="text-5xl lg:text-7xl font-extrabold text-yellow-900 font-cinzel">
+            Book A Discovery Call
+          </p>
+          <p className="text-sm font-sans text-balance text-stone-800">
+            Select your prefered date and time that you would be comfortable
+            with. Give us a few minutes of your time to present your next
+            investment opportunity and answer any of your questions.
+          </p>
+          <div className="hidden lg:flex flex-row py-20 items-end justify-start gap-8">
+            <Facebook className="min-w-12 min-h-12 stroke-1 text-yellow-900/50 hover:text-yellow-900" />
+            <Instagram className="min-w-12 min-h-12 stroke-1 text-yellow-900/50 hover:text-yellow-900" />
+            <Linkedin className="min-w-12 min-h-12 stroke-1 text-yellow-900/50 hover:text-yellow-900" />
+            <Youtube className="min-w-12 min-h-12 stroke-1 text-yellow-900/50 hover:text-yellow-900" />
+          </div>
         </div>
-      </div>
-
-      {/*New Form */}
-      <Card className="flex flex-col w-full lg:col-start-2 bg-transparent border-none shadow-none p-0 mt-20 lg:mt-0">
-        <CardContent className="p-0">
-          <form
-            className="flex flex-col gap-4 font-sans py-6 px-0"
-            onSubmit={handleSubmit}
-          >
-            {/* Date & Time Input */}
-            <Label htmlFor="date-time">
-              Date & Time{" "}
-              <Badge variant="default" className="ml-2">
-                GMT +08:00
-              </Badge>
-            </Label>
-            <Popover open={isOpen} onOpenChange={setIsOpen}>
-              <PopoverTrigger asChild>
-                <Button
-                  variant="ghost"
-                  className={cn(
-                    "w-full justify-start text-left font-normal h-12 px-6 py-1 rounded-full border-none bg-stone-50 hover:bg-stone-50 font-mono",
-                    !date && "text-muted-foreground"
-                  )}
+        {/*New Form */}
+        <Card className="flex flex-col w-full lg:col-start-2 bg-transparent border-none shadow-none p-0 mt-20 lg:mt-0">
+          <CardContent className="p-0">
+            <form
+              className="flex flex-col gap-4 font-sans py-6 px-0"
+              onSubmit={handleSubmit}
+            >
+              {/* Date & Time Input */}
+              <Label htmlFor="date-time">
+                Date & Time{" "}
+                <Badge variant="default" className="ml-2">
+                  GMT +08:00
+                </Badge>
+              </Label>
+              <Popover open={isOpen} onOpenChange={setIsOpen}>
+                <PopoverTrigger asChild>
+                  <Button
+                    variant="ghost"
+                    className={cn(
+                      "w-full justify-start text-left font-normal h-12 px-6 py-1 rounded-full border-none bg-stone-50 hover:bg-stone-50 font-mono",
+                      !date && "text-muted-foreground"
+                    )}
+                  >
+                    <CalendarIcon className="mr-2 h-4 w-4" />
+                    {date ? (
+                      format(date, "PP p O")
+                    ) : (
+                      <span>MM/DD/YYYY hh:mm aa</span>
+                    )}
+                  </Button>
+                </PopoverTrigger>
+                <PopoverContent
+                  align="end"
+                  side="bottom"
+                  className="w-auto p-0"
                 >
-                  <CalendarIcon className="mr-2 h-4 w-4" />
-                  {date ? (
-                    format(date, "PP p O")
-                  ) : (
-                    <span>MM/DD/YYYY hh:mm aa</span>
-                  )}
-                </Button>
-              </PopoverTrigger>
-              <PopoverContent align="end" side="bottom" className="w-auto p-0">
-                <div className="sm:flex">
-                  <Calendar
-                    mode="single"
-                    selected={date}
-                    onSelect={handleDateSelect}
-                    disabled={{ before: new Date() }}
-                    modifiersClassNames={{
-                      selected: "border border-yellow-600 text-yellow-600",
-                      today: "bg-yellow-900/10"
-                    }}
-                    initialFocus
-                  />
-                  <div className="flex flex-col sm:flex-row sm:h-[300px] divide-y sm:divide-y-0 sm:divide-x font-mono">
-                    <p className="mx-auto pb-2 text-sm block lg:hidden">
-                      Time (GMT +8:00)
-                    </p>
-                    <ScrollArea className="w-64 sm:w-auto">
-                      <div className="flex sm:flex-col p-2">
-                        {hours.reverse().map((hour) => (
-                          <Button
-                            key={hour}
-                            size="icon"
-                            variant={
-                              date && date.getHours() % 12 === hour % 12
-                                ? "outline"
-                                : "ghost"
-                            }
-                            className="sm:w-full shrink-0 aspect-square"
-                            onClick={() =>
-                              handleTimeChange("hour", hour.toString())
-                            }
-                          >
-                            {hour}
-                          </Button>
-                        ))}
-                      </div>
-                      <ScrollBar
-                        orientation="horizontal"
-                        className="sm:hidden"
-                      />
-                    </ScrollArea>
-                    <ScrollArea className="w-64 sm:w-auto">
-                      <div className="flex sm:flex-col p-2">
-                        {Array.from({ length: 4 }, (_, i) => i * 15).map(
-                          (minute) => (
+                  <div className="sm:flex">
+                    <Calendar
+                      mode="single"
+                      selected={date}
+                      onSelect={handleDateSelect}
+                      disabled={{ before: new Date() }}
+                      modifiersClassNames={{
+                        selected: "border border-yellow-600 text-yellow-600",
+                        today: "bg-yellow-900/10"
+                      }}
+                      initialFocus
+                    />
+                    <div className="flex flex-col sm:flex-row sm:h-[300px] divide-y sm:divide-y-0 sm:divide-x font-mono">
+                      <p className="mx-auto pb-2 text-sm block lg:hidden">
+                        Time (GMT +8:00)
+                      </p>
+                      <ScrollArea className="w-64 sm:w-auto">
+                        <div className="flex sm:flex-col p-2">
+                          {hours.reverse().map((hour) => (
                             <Button
-                              key={minute}
+                              key={hour}
                               size="icon"
                               variant={
-                                date && date.getMinutes() === minute
+                                date && date.getHours() % 12 === hour % 12
                                   ? "outline"
                                   : "ghost"
                               }
                               className="sm:w-full shrink-0 aspect-square"
                               onClick={() =>
-                                handleTimeChange("minute", minute.toString())
+                                handleTimeChange("hour", hour.toString())
                               }
                             >
-                              {minute}
+                              {hour}
                             </Button>
-                          )
-                        )}
-                      </div>
-                      <ScrollBar
-                        orientation="horizontal"
-                        className="sm:hidden"
-                      />
-                    </ScrollArea>
-                    <ScrollArea className="">
-                      <div className="flex sm:flex-col p-2">
-                        {["AM", "PM"].map((ampm) => (
-                          <Button
-                            key={ampm}
-                            size="icon"
-                            variant={
-                              date &&
-                              ((ampm === "AM" && date.getHours() < 12) ||
-                                (ampm === "PM" && date.getHours() >= 12))
-                                ? "outline"
-                                : "ghost"
-                            }
-                            className="sm:w-full shrink-0 aspect-square"
-                            onClick={() => handleTimeChange("ampm", ampm)}
-                          >
-                            {ampm}
-                          </Button>
-                        ))}
-                      </div>
-                    </ScrollArea>
+                          ))}
+                        </div>
+                        <ScrollBar
+                          orientation="horizontal"
+                          className="sm:hidden"
+                        />
+                      </ScrollArea>
+                      <ScrollArea className="w-64 sm:w-auto">
+                        <div className="flex sm:flex-col p-2">
+                          {Array.from({ length: 4 }, (_, i) => i * 15).map(
+                            (minute) => (
+                              <Button
+                                key={minute}
+                                size="icon"
+                                variant={
+                                  date && date.getMinutes() === minute
+                                    ? "outline"
+                                    : "ghost"
+                                }
+                                className="sm:w-full shrink-0 aspect-square"
+                                onClick={() =>
+                                  handleTimeChange("minute", minute.toString())
+                                }
+                              >
+                                {minute}
+                              </Button>
+                            )
+                          )}
+                        </div>
+                        <ScrollBar
+                          orientation="horizontal"
+                          className="sm:hidden"
+                        />
+                      </ScrollArea>
+                      <ScrollArea className="">
+                        <div className="flex sm:flex-col p-2">
+                          {["AM", "PM"].map((ampm) => (
+                            <Button
+                              key={ampm}
+                              size="icon"
+                              variant={
+                                date &&
+                                ((ampm === "AM" && date.getHours() < 12) ||
+                                  (ampm === "PM" && date.getHours() >= 12))
+                                  ? "outline"
+                                  : "ghost"
+                              }
+                              className="sm:w-full shrink-0 aspect-square"
+                              onClick={() => handleTimeChange("ampm", ampm)}
+                            >
+                              {ampm}
+                            </Button>
+                          ))}
+                        </div>
+                      </ScrollArea>
+                    </div>
                   </div>
-                </div>
-              </PopoverContent>
-            </Popover>
-            <Input
-              name="datetime"
-              value={userInput.datetime}
-              onChange={handleChange}
-              type="hidden"
-            />
-
-            {/*  Email Input  */}
-            <Label htmlFor="email" className="mt-4">
-              E-mail
-            </Label>
-            <Input
-              type="email"
-              name="email"
-              value={userInput.email}
-              onChange={handleChange}
-              required
-            />
-            <div className="flex items-center space-x-2 px-6 ">
-              <Checkbox id="contact" />
-              <label
-                htmlFor="contact"
-                className="text-sm font-normal leading-none opacity-70"
+                </PopoverContent>
+              </Popover>
+              <Input
+                name="datetime"
+                value={userInput.datetime}
+                onChange={handleChange}
+                type="hidden"
+              />
+              {/*  Email Input  */}
+              <Label htmlFor="email" className="mt-4">
+                E-mail
+              </Label>
+              <Input
+                type="email"
+                name="email"
+                value={userInput.email}
+                onChange={handleChange}
+                required
+              />
+              <div className="flex items-center space-x-2 px-6 ">
+                <Checkbox id="contact" />
+                <label
+                  htmlFor="contact"
+                  className="text-sm font-normal leading-none opacity-70"
+                >
+                  I agree to be contacted at the selected date and time
+                </label>
+              </div>
+              <Button
+                type="submit"
+                variant={"outline"}
+                className="mt-6 text-lg rounded-full h-14"
               >
-                I agree to be contacted at the selected date and time
-              </label>
-            </div>
-            <Button
-              type="submit"
-              variant={"outline"}
-              className="mt-6 text-lg rounded-full h-14"
-            >
-              Submit
-            </Button>
-          </form>
-        </CardContent>
-      </Card>
-    </div>
+                Submit
+              </Button>
+            </form>
+          </CardContent>
+        </Card>
+      </div>
+    </main>
   );
 }
