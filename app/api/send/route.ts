@@ -9,7 +9,7 @@ export async function POST(request: any) {
     console.log(body);
     const { name, email, phone, interest } = body;
     const { data, error } = await resend.emails.send({
-      from: name + " <" + email + ">",
+      from: "GRLV <contact@goldenretreatinternational.com>", // change this
       to: ["contact@goldenretreatinternational.com"],
       bcc: ["sulaiman@slmcreatives.com", "warrenchelvan@gmail.com"],
       subject: "Contact Form Submission",
