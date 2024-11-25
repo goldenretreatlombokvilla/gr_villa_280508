@@ -701,13 +701,13 @@ export default function Invest() {
 
       <div className="lg:grid flex flex-col lg:grid-cols-2 gap-8 items-center justify-start w-full px-8 lg:px-32 py-10 lg:py-40 ">
         <p className="text-yellow-900 text-center text-balance text-4xl lg:text-5xl font-extrabold">
-          Our Location
+          Where We Are Located
         </p>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3947.0465431403145!2d116.09684177583974!3d-8.397083291641211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwMjMnNDkuNSJTIDExNsKwMDUnNTcuOSJF!5e0!3m2!1sen!2smy!4v1732538310231!5m2!1sen!2smy"
           width="600"
           height="450"
-          className="border-0 rounded-lg px-20"
+          className="w-full border-0 rounded-lg"
           allowFullScreen={true}
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
