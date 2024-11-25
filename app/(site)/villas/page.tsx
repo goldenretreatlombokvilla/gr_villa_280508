@@ -222,13 +222,13 @@ export default function Invest() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-4 items-center px-8 py-6 lg:pt-20 lg:py-20 max-w-6xl mx-auto ">
+        {/*  <div className="flex flex-col gap-4 items-center px-8 py-6 lg:pt-20 lg:py-20 max-w-6xl mx-auto ">
           <Video
             src="https://utfs.io/f/dJLJpH9Hrkw3hFSyAj2LaOUmx7jw6JrqKBblDskWdPvTZoSg"
             className="w-full h-full rounded-lg"
           />
           <p className="text-sm font-sans opacity-70 italic">Discover Lombok</p>
-        </div>
+        </div> */}
         <div className="flex flex-col gap-40 items-center px-8 py-6 lg:pt-20 lg:py-20 max-w-6xl mx-auto">
           {/* 2 Bed */}
           <Card className="flex flex-col w-full lg:p-0 bg-transparent shadow-none border-none">
