@@ -164,85 +164,6 @@ export default function Lombok() {
         </div>
       </div>
 
-      <div className="flex flex-col gap-8 items-center justify-start w-full  px-8 py-6 lg:pt-20 lg:py-20 max-w-6xl mx-auto">
-        <p className="font-cinzel text-center text-5xl font-bold text-yellow-900">
-          Reasons Why Tourists are Flocking to Lombok
-        </p>
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-10 lg:gap-10 justify-center items-center py-4">
-          <div className="flex flex-row lg:flex-col gap-4 items-center">
-            <Waves className="w-16 h-16 text-yellow-600 stroke-1" />
-            <p className="font-cinzel text-xl text-stone-900 hover:text-yellow-900 font-bold">
-              Stunning Beaches
-            </p>
-          </div>
-          <div className="flex flex-row lg:flex-col gap-4 items-center">
-            <Mountain className="w-16 h-16 text-yellow-600 stroke-1" />
-            <p className="font-cinzel text-xl text-stone-900 hover:text-yellow-900 font-bold">
-              Hiking Trails
-            </p>
-          </div>
-          <div className="flex flex-row lg:flex-col gap-4 items-center">
-            <TreePalm className="w-16 h-16 text-yellow-600 stroke-1" />
-            <p className="font-cinzel text-xl text-stone-900 hover:text-yellow-900 font-bold">
-              Island Hoping
-            </p>
-          </div>
-          <div className="flex flex-row lg:flex-col gap-4 items-center">
-            <Bike className="w-16 h-16 text-yellow-600 stroke-1" />
-            <p className="font-cinzel text-xl text-stone-900 hover:text-yellow-900 font-bold">
-              MotoGP Racing
-            </p>
-          </div>
-        </div>
-
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-10 justify-center items-center py-4">
-          <div className="flex flex-row lg:flex-col gap-4 items-center">
-            <Fish className="w-16 h-16 text-yellow-600 stroke-1" />
-            <p className="font-cinzel text-xl text-stone-900 hover:text-yellow-900 font-bold">
-              Snorkeling Spots
-            </p>
-          </div>
-          <div className="flex flex-row lg:flex-col gap-4 items-center">
-            <ImageIcon className="w-16 h-16 text-yellow-600 stroke-1" />
-            <p className="font-cinzel text-xl text-stone-900 hover:text-yellow-900 font-bold">
-              Art Galleries
-            </p>
-          </div>
-          <div className="flex flex-row lg:flex-col gap-4 items-center">
-            <CircleDashed className="w-16 h-16 text-yellow-600 stroke-1" />
-            <p className="font-cinzel text-xl text-stone-900 hover:text-yellow-900 font-bold">
-              Local Culture
-            </p>
-          </div>
-          <div className="flex flex-row lg:flex-col gap-4 items-center">
-            <LandPlot className="w-16 h-16 text-yellow-600 stroke-1" />
-            <p className="font-cinzel text-xl text-stone-900 hover:text-yellow-900 font-bold">
-              Emaculate Golf Courses
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div className="flex flex-col gap-4 items-center px-8 py-6 lg:pt-20 lg:py-20 max-w-6xl mx-auto ">
-        <p className="font-cinzel text-center text-5xl font-bold text-yellow-900">
-          Expedia: Lombok Vacation Travel Guide
-        </p>
-        <iframe
-          width="560"
-          height="315"
-          className="w-full h-full aspect-video rounded-lg"
-          src="https://www.youtube.com/embed/bl1k2-cLdV8?si=TIneix6MCQHYVpHU"
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerPolicy="strict-origin-when-cross-origin"
-          allowFullScreen
-        ></iframe>
-        <p className="text-sm font-sans opacity-70 italic">
-          Source: Expedia (Youtube){" "}
-        </p>
-      </div>
-
       <div className="flex flex-col w-full px-20 py-6 lg:pt-20 lg:py-20 max-w-6xl mx-auto">
         <Carousel
           /* plugins={[
@@ -275,6 +196,154 @@ export default function Lombok() {
           <CarouselPrevious />
           <CarouselNext />
         </Carousel>
+      </div>
+
+      <div className="flex flex-col gap-8 items-center justify-start w-full  px-8 py-6 lg:pt-20 lg:py-20 max-w-6xl mx-auto">
+        <p className="font-cinzel text-center text-5xl font-bold text-yellow-900">
+          Reasons Why Tourist are Flocking To Lombok
+        </p>
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-10 lg:gap-10 justify-center w-full items-center py-4">
+          <div className="flex flex-row lg:flex-col gap-4 items-center justify-between">
+            <Waves className="w-16 h-16 text-yellow-600 stroke-1" />
+            <p className="font-cinzel text-xl text-stone-900 hover:text-yellow-900 font-bold">
+              Stunning Beaches
+            </p>
+          </div>
+          <div className="flex flex-row lg:flex-col gap-4 items-center justify-between">
+            <Mountain className="w-16 h-16 text-yellow-600 stroke-1" />
+            <p className="font-cinzel text-xl text-stone-900 hover:text-yellow-900 font-bold">
+              Hiking Trails
+            </p>
+          </div>
+          <div className="flex flex-row lg:flex-col gap-4 items-center justify-between">
+            <TreePalm className="w-16 h-16 text-yellow-600 stroke-1" />
+            <p className="font-cinzel text-xl text-stone-900 hover:text-yellow-900 font-bold">
+              Island Hoping
+            </p>
+          </div>
+          <div className="flex flex-row lg:flex-col gap-4 items-center justify-between">
+            <Bike className="w-16 h-16 text-yellow-600 stroke-1" />
+            <p className="font-cinzel text-xl text-stone-900 hover:text-yellow-900 font-bold">
+              MotoGP Racing
+            </p>
+          </div>
+          <div className="lg:hidden grid grid-cols-1 gap-10 justify-center items-center py-4">
+            <div className="flex flex-row lg:flex-col gap-4 items-center justify-between">
+              <Fish className="w-16 h-16 text-yellow-600 stroke-1" />
+              <p className="font-cinzel text-xl text-stone-900 hover:text-yellow-900 font-bold">
+                Snorkeling Spots
+              </p>
+            </div>
+            <div className="flex flex-row lg:flex-col gap-4 items-center justify-between">
+              <ImageIcon className="w-16 h-16 text-yellow-600 stroke-1" />
+              <p className="font-cinzel text-xl text-stone-900 hover:text-yellow-900 font-bold">
+                Art Galleries
+              </p>
+            </div>
+            <div className="flex flex-row lg:flex-col gap-4 items-center justify-between">
+              <CircleDashed className="w-16 h-16 text-yellow-600 stroke-1" />
+              <p className="font-cinzel text-xl text-stone-900 hover:text-yellow-900 font-bold">
+                Local Culture
+              </p>
+            </div>
+            <div className="flex flex-row lg:flex-col gap-4 items-center justify-between">
+              <LandPlot className="w-16 h-16 text-yellow-600 stroke-1" />
+              <p className="font-cinzel text-xl text-stone-900 hover:text-yellow-900 font-bold">
+                Emaculate Golf Courses
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="lg:grid grid-cols-1 lg:grid-cols-4 gap-10 justify-center items-center py-4 hidden">
+          <div className="flex flex-row lg:flex-col gap-4 items-center">
+            <Fish className="w-16 h-16 text-yellow-600 stroke-1" />
+            <p className="font-cinzel text-xl text-stone-900 hover:text-yellow-900 font-bold">
+              Snorkeling Spots
+            </p>
+          </div>
+          <div className="flex flex-row lg:flex-col gap-4 items-center">
+            <ImageIcon className="w-16 h-16 text-yellow-600 stroke-1" />
+            <p className="font-cinzel text-xl text-stone-900 hover:text-yellow-900 font-bold">
+              Art Galleries
+            </p>
+          </div>
+          <div className="flex flex-row lg:flex-col gap-4 items-center">
+            <CircleDashed className="w-16 h-16 text-yellow-600 stroke-1" />
+            <p className="font-cinzel text-xl text-stone-900 hover:text-yellow-900 font-bold">
+              Local Culture
+            </p>
+          </div>
+          <div className="flex flex-row lg:flex-col gap-4 items-center justify-center text-center">
+            <LandPlot className="w-16 h-16 text-yellow-600 stroke-1" />
+            <p className="font-cinzel text-xl text-stone-900 hover:text-yellow-900 font-bold">
+              Emaculate Golf Courses
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div className="flex flex-col gap-4 items-center px-8 py-6 lg:pt-20 lg:py-20 max-w-6xl mx-auto ">
+        <p className="font-cinzel text-center text-5xl font-bold text-yellow-900">
+          Expedia: Lombok Vacation Travel Guide
+        </p>
+        <iframe
+          width="560"
+          height="315"
+          className="w-full h-full aspect-video rounded-lg"
+          src="https://www.youtube.com/embed/bl1k2-cLdV8?si=TIneix6MCQHYVpHU"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+        ></iframe>
+        <p className="text-sm font-sans opacity-70 italic">
+          Source: Expedia (Youtube){" "}
+        </p>
+      </div>
+
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-x-14 items-center justify-center w-full px-8 lg:px-52 py-10 mt-10 lg:py-40 bg-yellow-900/10">
+        <div className="flex flex-col gap-4">
+          <p className="font-cinzel text-xl lg:text-2xl font-extrabold tracking-wide flex flex-col uppercase text-yellow-900/50">
+            Mandalika 2024
+          </p>
+          <h2 className="text-5xl lg:text-7xl font-cinzel font-extrabold text-yellow-900">
+            MotoGP Premier
+          </h2>
+          <p className="text-md font-sans text-balance">
+            Over 121,252 people attended the 2024 MotoGP race at the Mandalika
+            International Circuit in Lombok, Indonesia.
+          </p>
+          <p className="text-md font-sans text-balance">
+            The event was a showcase for Lombok's tourism potential and real
+            estate investment opportunities. The circuit is located in an
+            integrated entertainment and sports area, surrounded by beaches and
+            natural scenery.
+          </p>
+          <div className="flex flex-row gap-4 items-end justify-start">
+            <Link
+              href="/https://www.youtube.com/watch?v=4X_pxppWkSQ&t=66s"
+              target="_blank"
+            >
+              <Button
+                variant="default"
+                className="w-fit font-extrabold uppercase tracking-wider hover:drop-shadow-md"
+              >
+                Watch Highlight Video
+              </Button>
+            </Link>
+          </div>
+        </div>
+        <div className="flex flex-col gap-4 h-full w-full">
+          <Image
+            src="https://utfs.io/f/dJLJpH9Hrkw34DUHLIiILXvxRHuJgz8cqy2TD5QokmWfjNes"
+            alt="MotoGP Mandalika 2024"
+            width={500}
+            height={200}
+            className="w-full h-full object-cover rounded-lg"
+          />
+        </div>
       </div>
     </main>
   );

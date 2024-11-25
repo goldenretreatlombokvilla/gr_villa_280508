@@ -148,9 +148,9 @@ export default function Footer() {
             Golden Retreat<br></br>Lombok Villa
           </p>
           <p className="text-sm font-sans text-balance">
-            A secluded, luxurious villa offering panoramic ocean views, private
-            pools, and exquisite interiors, set in the heart of Lombok, crafted
-            for the ultimate relaxation and indulgence.
+            A property development offering luxurious Villas set in the heart of
+            Lombok’s best attractions. With private pools, and exquisite
+            interiors, designed for the ultimate in luxury island living.
           </p>
         </div>
         <div className="flex flex-col gap-2 ">

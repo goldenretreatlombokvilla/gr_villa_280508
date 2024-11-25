@@ -42,7 +42,7 @@ export default function Invest() {
               <h2 className="text-6xl lg:text-6xl  font-extrabold font-cinzel text-yellow-800">
                 10 - 16% per annum projected yield
               </h2>
-              <p className="font-sans text-md text-balance">
+              {/* <p className="font-sans text-md text-balance">
                 Golden Retreat Lombok Villas presents a unique opportunity to
                 capitalise on Lombok’s rise as a top destination for holiday
                 makers who seek out the island’s unspoilled natural beauty. Just
@@ -51,17 +51,17 @@ export default function Invest() {
                 boost to tourism is Lombok’s International Airport, attracting
                 more direct flights each year. As a result, the demand for
                 quality holiday accommodation on the island continues to soar!
-              </p>
+              </p> */}
             </div>
           </div>
 
           <div className="lg:grid flex flex-col lg:grid-cols-2 gap-4 lg:gap-10 items-start justify-start pb-20">
-            <p className="font-sans text-md text-pretty">
+            {/* <p className="font-sans text-md text-pretty">
               Our experienced on-site property management team will assist with
               the management of your Villa. Ensuring that you maximise rental
               yield, while also securing easy access to your property whenever
               you desire.
-            </p>
+            </p> */}
             {/* <p className="font-sans text-md text-pretty">
               Our team will also guide you through visa applications where
               needed, should you choose to stay with us for longer stretches at
@@ -69,6 +69,26 @@ export default function Invest() {
               purchase with us, your best one yet.
             </p> */}
             <div className="flex flex-col gap-4">
+              <p className="font-sans text-md text-pretty">
+                Golden Retreat Lombok Villas presents a unique opportunity to
+                capitalise on Lombok’s rise as a top destination for holiday
+                makers who seek out the island’s unspoilled natural beauty.
+              </p>
+              <p className="font-sans text-md text-pretty">
+                Just an hour's boat ride from Bali, Lombok attracts thousands of
+                visitors each year looking for a change of pace. Another major
+                boost to tourism is Lombok’s International Airport, attracting
+                more direct flights each year. As a result, the demand for
+                quality holiday accommodation on the island continues to soar!
+              </p>
+            </div>
+            <div className="flex flex-col gap-4">
+              <p className="font-sans text-md text-pretty">
+                Our experienced on-site property management team will assist
+                with the management of your Villa. Ensuring that you maximise
+                rental yield, while also securing easy access to your property
+                whenever you desire.
+              </p>
               <p className="font-sans text-md text-pretty">
                 Our team will also guide you through visa applications where
                 needed, should you choose to stay for longer stretches at a
@@ -112,9 +132,12 @@ export default function Invest() {
                 <p className="text-md font-sans text-pretty">
                   Imagine foreseeing the meteoric rise of South-East Asia’s most
                   popular destinations like Bali and Phuket. Well, don’t feel
-                  like you’ve missed the boat. This is precisely the opportunity
-                  you have today. Be counted as a first-mover and tap into
-                  Lombok’s rapidly growing tourism industry.
+                  like you’ve missed the boat.
+                </p>
+                <p className="text-md font-sans text-pretty">
+                  This is precisely the opportunity you have today. Be counted
+                  as a first-mover and tap into Lombok’s rapidly growing tourism
+                  industry.
                 </p>
               </div>
               <Link href="/book">
