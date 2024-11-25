@@ -108,7 +108,7 @@ export default function Lombok() {
               Lombok
             </p>
             <p className="font-cinzel text-yellow-800 text-4xl font-semibold lg:text-5xl tracking-wide">
-              5th Best World Nature Destination
+              The World's 5th Best Nature Destination
             </p>
             <div className="flex flex-row gap-4">
               <p className="font-sans font-semibold text-yellow-800 text-xl uppercase">
@@ -166,7 +166,7 @@ export default function Lombok() {
 
       <div className="flex flex-col gap-8 items-center justify-start w-full  px-8 py-6 lg:pt-20 lg:py-20 max-w-6xl mx-auto">
         <p className="font-cinzel text-center text-5xl font-bold text-yellow-900">
-          Reasons Tourist Are Visitng Lombok
+          Reasons Why Tourists are Flocking to Lombok
         </p>
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-10 lg:gap-10 justify-center items-center py-4">
           <div className="flex flex-row lg:flex-col gap-4 items-center">

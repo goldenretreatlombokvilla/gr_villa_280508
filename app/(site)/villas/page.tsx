@@ -252,7 +252,7 @@ export default function Invest() {
                     </p>
                     <p className="opacity-80  font-sans text-sm">
                       Our spacious 2 bedroom Villa comfortably accommodates a
-                      family of 4 and comes complete with dining room, lounge
+                      family of 4 and comes complete with dining room, living
                       area, parking garage, and a private pool deck.
                     </p>
                   </div>
@@ -446,7 +446,7 @@ export default function Invest() {
                     </p>
                     <p className="opacity-80  font-sans text-sm">
                       Our spacious 3 bedroom Villa comfortably accommodates a
-                      family of 6 and comes complete with dining room, lounge
+                      family of 6 and comes complete with dining room, living
                       area, parking garage, and a private pool deck.
                     </p>
                   </div>
@@ -654,7 +654,7 @@ export default function Invest() {
                     </p>
                     <p className="opacity-80  font-sans text-sm">
                       Our spacious 3 bedroom Villa comfortably accommodates a
-                      family of 6 and comes complete with dining room, lounge
+                      family of 6 and comes complete with dining room, living
                       area, parking garage, and a private pool deck.
                     </p>
                   </div>
@@ -895,7 +895,7 @@ export default function Invest() {
         <div className="flex flex-col gap-4 items-center w-full px-8 py-6 lg:pt-20 lg:py-20 max-w-6xl mx-auto">
           <div className="flex flex-col gap-8 lg:gap-4 items-center justify-center">
             <p className="text-yellow-900 text-center text-balance text-4xl lg:text-5xl font-extrabold">
-              Step into Peace & Luxury
+              Experience Luxury Living
             </p>
           </div>
           <Carousel
