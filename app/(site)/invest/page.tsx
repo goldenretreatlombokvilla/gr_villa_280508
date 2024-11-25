@@ -97,7 +97,7 @@ export default function Invest() {
                   popular destinations like Bali and Phuket. Well don’t feel
                   like you’ve missed the boat. This is precisely the opportunity
                   you have today. Be counted as a first-mover and tap into
-                  Lombok’s rapidly rising profile as a top-tier destination.
+                  Lombok’s rapidly growing tourism industry.
                 </p>
               </div>
               <Button
@@ -114,9 +114,9 @@ export default function Invest() {
                 Investment Opportunity
               </p>
               <p className="text-md font-sans">
-                By choosing a Golden Retreat Lombok Villa, you aren’t just
+                By choosing a Golden Retreat Lombok Villa, you are not just
                 purchasing a holiday home, you’re securing a lucrative
-                opportunity.
+                investment opportunity.
               </p>
               <p className="text-md font-sans opacity-50">
                 Our team of experts will handle all aspects of property
@@ -134,7 +134,7 @@ export default function Invest() {
                   <AccordionContent className="text-sm font-sans text-pretty">
                     Foreigners will be issued leasehold beneficiary titles of up
                     to 80 years. With Lombok seeing year-on-year growth in
-                    tourism numbers, positive rental yield is all but assured.
+                    tourism a rewarding rental yield is all but assured.
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-2">
@@ -145,9 +145,7 @@ export default function Invest() {
                     We will guide you through visa applications, ensuring a
                     smooth and efficient experience. Our dedicated team will
                     provide expert assistance in preparing all the necessary
-                    legal documentation, saving you time and effort. With our
-                    support, we endeavour to make your experience with us as
-                    hassle-free as possible.
+                    documentation, saving you time and effort.
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-3">
@@ -155,12 +153,11 @@ export default function Invest() {
                     Attractive Rental Yield
                   </AccordionTrigger>
                   <AccordionContent className="text-sm font-sans text-pretty">
-                    Our Villas market placement is designed to generate
+                    Our Villas’ market placement is designed to generate
                     substantial rental income, with an estimated annual yield of
                     10-16%. This attractive return on investment is made
-                    possible by a strong demand for quality holiday
-                    accommodation, coupled with an experienced team to help you
-                    meet that demand month in, month out.
+                    possible by ever-increasing demand and a dedicated on-site
+                    team primed to meet it.
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>
@@ -299,11 +296,14 @@ export default function Invest() {
                 <div className="flex flex-row lg:flex-col gap-4 lg:gap-10 w-full p-0 items-center lg:items-start group">
                   <MapPin className="min-w-20 min-h-20 lg:w-24 lg:h-24 fill-yellow-700 group-hover:fill-yellow-600 stroke-1 lg:-ml-12" />
                   <p className="text-md  font-sans text-white border-l-2 border-yellow-600/50 pl-8">
-                    The land is situated in the heart of the latest tourist
-                    destination, the west coast of Lombok Island. Located 300m
-                    away from Bangsal Beach, Bangsal Fast Boat Port and Boat
-                    service to the famous smaller Islands just off Lombok,
-                    namely Gili Terawangan, Gili Air and Gili Meno.
+                    The land is situated in the heart of Lombok’s most popular
+                    attractions. Nestled in the west coast of Lombok Island and
+                    located 300m away from Bangsal Beach, Bangsal Fast Boat
+                    Port, we are a stones throw away from the fast boat services
+                    that ferry tourists to the famous smaller Islands just off
+                    Lombok, namely Gili Terawangan, Gili Air and Gili Meno. This
+                    is by far one of the more popular attractions, and THE
+                    reason why many tourists visit Lombok.
                   </p>
                 </div>
               </CardContent>
@@ -313,10 +313,10 @@ export default function Invest() {
                 <div className="flex flex-row lg:flex-col gap-4 lg:gap-10 w-full p-0 items-center lg:items-start group">
                   <Award className="min-w-20 min-h-20 lg:w-24 lg:h-24 fill-yellow-700 group-hover:fill-yellow-600 stroke-1 lg:-ml-12" />
                   <p className="text-md font-sans text-white border-l-2 border-yellow-600/50 pl-8">
-                    Established developer with the experience and success of
-                    five sold-out projects. Designed with you in mind, Golden
-                    Retreat Lombok Villas includes premium furnishings and
-                    5-star amenities.
+                    Established developer with the experience and success of 4
+                    sold-out projects. Designed with you in mind, Golden Retreat
+                    Lombok Villas includes premium furnishings and 5-star
+                    amenities.
                   </p>
                 </div>
               </CardContent>
@@ -326,7 +326,7 @@ export default function Invest() {
                 <div className="flex flex-row lg:flex-col gap-4 lg:gap-10 w-full p-0 items-center lg:items-start group">
                   <FolderCheck className="min-w-20 min-h-20 lg:w-24 lg:h-24 fill-yellow-700 group-hover:fill-yellow-600 stroke-1 lg:-ml-12" />
                   <p className="text-md  font-sans text-white border-l-2 border-yellow-600/50 pl-8 ">
-                    We will assist you every step of the way. Including
+                    We will lend assistance at every step of the way. Including
                     long-stay visa applications where required for foreign
                     purchasers.
                   </p>

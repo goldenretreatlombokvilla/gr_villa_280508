@@ -43,9 +43,9 @@ export default function About() {
                 unparalleled expertise to this project.
               </p>
               <p className="text-md font-sans opacity-50">
-                Their proven track record for delivering exceptional quality and
-                their deep understanding of the local market make them the ideal
-                partner in building an extraordinary experience.
+                With a proven track record for delivering exceptional quality,
+                and deep understanding of the local market, your investment is
+                in safe and assured hands.
               </p>
             </div>
           </div>

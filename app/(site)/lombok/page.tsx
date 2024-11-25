@@ -21,6 +21,7 @@ import {
   CircleDashed,
   Fish,
   ImageIcon,
+  LandPlot,
   Mountain,
   TreePalm,
   Waves
@@ -123,9 +124,10 @@ export default function Lombok() {
             <p className="font-sans text-md text-stone-900/50 leading-7">
               From pristine beaches and crystal-clear waters to majestic
               mountains and lush rainforests, Lombok has something to offer
-              every traveler. Immerse yourself in the tranquility of the Gili
+              every traveller. Immerse yourself in the tranquillity of the Gili
               Islands, explore the ancient Hindu temples, or embark on a
-              thrilling adventure up Mount Rinjani.
+              thrilling adventure up Mount Rinjani, Lombok offers something for
+              everyone.
             </p>
             <Dialog>
               <DialogTrigger asChild>
@@ -210,6 +212,12 @@ export default function Lombok() {
             <CircleDashed className="w-16 h-16 text-yellow-600 stroke-1" />
             <p className="font-cinzel text-xl text-stone-900 hover:text-yellow-900 font-bold">
               Local Culture
+            </p>
+          </div>
+          <div className="flex flex-row lg:flex-col gap-4 items-center">
+            <LandPlot className="w-16 h-16 text-yellow-600 stroke-1" />
+            <p className="font-cinzel text-xl text-stone-900 hover:text-yellow-900 font-bold">
+              Emaculate Golf Courses
             </p>
           </div>
         </div>

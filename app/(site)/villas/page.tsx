@@ -102,7 +102,8 @@ export default function Invest() {
               </p>
               <p className="font-sans text-md">
                 Golden Retreat Lombok is a turnkey project, where each Villa is
-                designed and furnished with all the comforts of home.
+                designed with attention to detail, and furnished with all the
+                comforts of home.
               </p>
               <div className="grid grid-cols-1 lg:flex flex-col gap-6 lg:gap-4 lg:py-8 py-4 items-start">
                 <Card className="flex flex-col w-full lg:p-0 bg-transparent shadow-none border-none">
