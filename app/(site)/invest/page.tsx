@@ -349,6 +349,9 @@ export default function Invest() {
             <p className="text-5xl font-cinzel font-bold text-yellow-900">
               Payment Structure
             </p>
+            <p className="text-md font-sans">
+              Find out more about our payment structure and management fees.
+            </p>
           </div>
           <div className="flex flex-col gap-4 lg:px-10">
             <Accordion type="single" collapsible>
@@ -357,8 +360,9 @@ export default function Invest() {
                   Progressive Payment Plan
                 </AccordionTrigger>
                 <AccordionContent className="text-sm font-sans text-pretty">
-                  We have a clearly defined and progressive payment structure
-                  that in dependent on the project progress.
+                  We have a defined progressive payment structure in place to
+                  ensure your Villa is completed on schedule. Our in-house team
+                  is on-hand take you through the process.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-2">
@@ -366,20 +370,20 @@ export default function Invest() {
                   Quaterly Reports
                 </AccordionTrigger>
                 <AccordionContent className="text-sm font-sans text-pretty">
-                  Stay informed every step of the process with quarterly
-                  reports. From the groundbreaking to completion, we will keep
-                  you informed, ensuring transparency and peace of mind.
+                  Stay informed through every step of the process with quarterly
+                  reports. From groundbreaking to completion, ensuring
+                  transparency and peace of mind.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-3">
                 <AccordionTrigger className="text-xl font-semibold">
-                  Maintenance Fees
+                  Management Fees
                 </AccordionTrigger>
                 <AccordionContent className="text-sm font-sans text-pretty">
-                  Upon completion, your villas will be maintained in pristine
-                  condition by our comprehensive maintenance services. Monthly
-                  fees range from $130 for the Premium (2 bedroom) Villa) to
-                  $150 for the Superior Villa (3 bedroom).
+                  Upon completion, your Villa will be managed by an experienced
+                  team of in-house professionals, ensuring the best maintenance
+                  and property management services. Here again, owners can rely
+                  on a comprehensive and fair fee structure.
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
