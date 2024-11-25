@@ -196,7 +196,7 @@ export default function Invest() {
           </div>
         </div>
         {/*Articles*/}
-        <div className="flex flex-col gap-8 items-center justify-center w-full px-8 lg:px-52 py-10 lg:py-40">
+        <div className="flex flex-col gap-8 items-center justify-center w-full px-8 lg:px-52 py-10 lg:py-40 ">
           <p className="text-4xl lg:text-5xl font-cinzel text-yellow-900 font-bold">
             Latest Market Indicators
           </p>
@@ -283,6 +283,61 @@ export default function Invest() {
                 </div>
               </CardContent>
             </Card>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-start justify-start w-full px-8 lg:px-52 py-10 lg:py-40">
+          <div className="flex flex-col gap-4">
+            <p className="text-5xl font-cinzel font-bold text-yellow-900">
+              Additional Information
+            </p>
+            <p className="text-md font-sans">
+              By choosing a Golden Retreat Lombok Villa, you are not just
+              purchasing a holiday home, you’re securing a lucrative investment
+              opportunity.
+            </p>
+            <p className="text-md font-sans opacity-50">
+              Our team of experts will handle all aspects of property
+              management, including rental bookings, maintenance, and financial
+              reporting, ensuring a hassle-free and profitable experience.
+            </p>
+          </div>
+          <div className="flex flex-col gap-4 lg:px-10">
+            <Accordion type="single" collapsible>
+              <AccordionItem value="item-1">
+                <AccordionTrigger className="text-xl font-semibold">
+                  Progressive Payments
+                </AccordionTrigger>
+                <AccordionContent className="text-sm font-sans text-pretty">
+                  We make owning your dream villa effortless with our
+                  progressive payment plans. Tailored to your convenience, our
+                  approach ensures a seamless journey toward luxury living in
+                  Lombok.
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-2">
+                <AccordionTrigger className="text-xl font-semibold">
+                  Quaterly Reports
+                </AccordionTrigger>
+                <AccordionContent className="text-sm font-sans text-pretty">
+                  Stay informed every step of the way with our quarterly
+                  updates. From groundbreaking to completion, we’ll keep you
+                  updated on construction progress, ensuring transparency and
+                  peace of mind.
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-3">
+                <AccordionTrigger className="text-xl font-semibold">
+                  Monthly Maintenance Fees
+                </AccordionTrigger>
+                <AccordionContent className="text-sm font-sans text-pretty">
+                  Ensure your villa remains pristine with our comprehensive
+                  maintenance services. Monthly charges are $130 (Premium Villa)
+                  and $150 (Superior Villa). These fees cover essential upkeep
+                  to maintain the luxury and comfort you deserve.
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
           </div>
         </div>
         {/* Benefits */}
