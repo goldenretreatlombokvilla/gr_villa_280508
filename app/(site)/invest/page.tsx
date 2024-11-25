@@ -34,8 +34,8 @@ export default function Invest() {
           </h1>
         </div>
         <div className="max-w-6xl mx-auto px-10 lg:p-10 w-full">
-          <div className="grid grid-cols-1 lg:grid-cols-3 items-center justify-center lg:py-20 py-10">
-            <div className="flex flex-col gap-6 col-span-2">
+          <div className="grid grid-cols-1 lg:grid-cols-2 items-center justify-center lg:py-20 py-10">
+            <div className="flex flex-col gap-6 lg:col-span-1">
               <p className="font-cinzel text-xl lg:text-2xl font-extrabold tracking-wide flex flex-col text-yellow-800 uppercase opacity-50 -mb-4">
                 A Superior Investment
               </p>
@@ -49,36 +49,56 @@ export default function Invest() {
                 an hour's boat ride from Bali, Lombok attracts thousands of
                 visitors each year looking for a change of pace. Another major
                 boost to tourism is Lombok’s International Airport, attracting
-                more direct flights throughout the region each year. As a
-                result, the demand for quality holiday accommodation on the
-                island continues to soar!
+                more direct flights each year. As a result, the demand for
+                quality holiday accommodation on the island continues to soar!
               </p>
-              <p className="opacity-60 font-sans text-md text-balance">
-                Our experienced on-site property management team will assist
-                with the management of your Villa. Ensuring that you maximise
-                rental yield, also securing easy access to your property
-                whenever you desire.
-              </p>
-              <p className="opacity-60 font-sans text-md text-balance">
+            </div>
+          </div>
+
+          <div className="lg:grid flex flex-col lg:grid-cols-2 gap-4 lg:gap-10 items-start justify-start pb-20">
+            <p className="font-sans text-md text-pretty">
+              Our experienced on-site property management team will assist with
+              the management of your Villa. Ensuring that you maximise rental
+              yield, while also securing easy access to your property whenever
+              you desire. Our team will also guide you through visa applications
+              where needed, should you choose to stay with us for longer
+              stretches at a time. With our support, we endeavour to make the
+              decision to purchase with us, your best one yet.
+            </p>
+            {/* <p className="font-sans text-md text-pretty">
+              Our team will also guide you through visa applications where
+              needed, should you choose to stay with us for longer stretches at
+              a time. With our support, we endeavour to make the decision to
+              purchase with us, your best one yet.
+            </p> */}
+            <div className="flex flex-col gap-4">
+              <p className="font-sans text-md text-pretty">
                 Our team will also guide you through visa applications where
-                needed, should you choose to stay with us for longer stretches
-                at a time. With our support, we endeavour to make the decision
-                to purchase with us, your best one yet.
+                needed, should you choose to stay for longer stretches at a
+                time. With our support, we endeavour to make the decision to
+                purchase with us, your best one yet.
               </p>
-              <p className="opacity-60 font-sans text-md text-balance">
+              <p className="font-sans text-md text-pretty">
                 Contact our team to find out how you can benefit by purchasing a
                 Villa with us today.
               </p>
-              <div className="flex flex-row gap-4 justify-start">
+            </div>
+            {/* <p className="font-sans text-md text-pretty">
+              Contact our team to find out how you can benefit by purchasing a
+              Villa with us today.
+            </p> */}
+            <div className="flex flex-row gap-4 col-span-2 justify-end">
+              <Link href="/book">
                 <Button
                   variant={"default"}
                   className="w-fit font-extrabold uppercase tracking-wider hover:drop-shadow-md"
                 >
-                  Invest Now
+                  Book A Discovery Call
                 </Button>
-              </div>
+              </Link>
             </div>
           </div>
+
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center justify-center py-20">
             <Image
               src="/lombok/boats.jpg"
@@ -94,18 +114,20 @@ export default function Invest() {
                 </p>
                 <p className="text-md font-sans text-pretty">
                   Imagine foreseeing the meteoric rise of South-East Asia’s most
-                  popular destinations like Bali and Phuket. Well don’t feel
+                  popular destinations like Bali and Phuket. Well, don’t feel
                   like you’ve missed the boat. This is precisely the opportunity
                   you have today. Be counted as a first-mover and tap into
                   Lombok’s rapidly growing tourism industry.
                 </p>
               </div>
-              <Button
-                variant={"default"}
-                className="w-fit font-extrabold uppercase tracking-wider hover:drop-shadow-md"
-              >
-                Invest Now
-              </Button>
+              <Link href="/book">
+                <Button
+                  variant={"default"}
+                  className="w-fit font-extrabold uppercase tracking-wider hover:drop-shadow-md"
+                >
+                  Invest Now
+                </Button>
+              </Link>
             </div>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-start justify-start w-full py-20">
@@ -114,7 +136,7 @@ export default function Invest() {
                 Investment Opportunity
               </p>
               <p className="text-md font-sans">
-                By choosing a Golden Retreat Lombok Villa, you are not just
+                By choosing a Golden Retreat Lombok Villa, you’re not just
                 purchasing a holiday home, you’re securing a lucrative
                 investment opportunity.
               </p>
@@ -134,7 +156,7 @@ export default function Invest() {
                   <AccordionContent className="text-sm font-sans text-pretty">
                     Foreigners will be issued leasehold beneficiary titles of up
                     to 80 years. With Lombok seeing year-on-year growth in
-                    tourism a rewarding rental yield is all but assured.
+                    tourism, a rewarding rental yield is all but assured.
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-2">
@@ -216,14 +238,20 @@ export default function Invest() {
                       Why are foreigners Investing in Lombok instead of Bali
                       this year?{" "}
                     </p>
-                    <p className="text-sm opacity-50 italic">Emerhub</p>
-                    <Button
-                      variant="link"
-                      className="p-0 w-full font-sans justify-between"
+                    <p className="text-sm font-sans text-stone-900/80">
+                      Emerhub
+                    </p>
+                    <Link
+                      href="https://emerhub.com/indonesia/why-are-foreigners-investing-in-lombok-instead-of-bali-this-year/"
+                      target="_blank"
                     >
-                      Read Full Article
-                      <ExternalLink className="min-w-4 min-h-4 stroke-1 text-yellow-600 group-last:hover:text-yellow-400" />
-                    </Button>
+                      <Button
+                        variant="link"
+                        className="p-0 w-full font-sans justify-between"
+                      >
+                        Read Full Article
+                      </Button>
+                    </Link>
                   </div>
                 </div>
               </CardContent>
@@ -242,16 +270,20 @@ export default function Invest() {
                     <p className="text-xl font-bold font-sans text-yellow-900">
                       Lombok sees fast growth in foreign tourist arrivals.
                     </p>
-                    <p className="text-sm opacity-50 italic">
+                    <p className="text-sm font-sans text-stone-900/80">
                       The Jakarta Post
                     </p>
-                    <Button
-                      variant="link"
-                      className="p-0 w-full font-sans justify-between"
+                    <Link
+                      href="https://www.thejakartapost.com/news/2017/04/20/lombok-airport-gears-up-to-attract-more-tourists.html"
+                      target="_blank"
                     >
-                      Read Full Article
-                      <ExternalLink className="min-w-4 min-h-4 stroke-1 text-yellow-600 group-last:hover:text-yellow-400" />
-                    </Button>
+                      <Button
+                        variant="link"
+                        className="p-0 w-full font-sans justify-between"
+                      >
+                        Read Full Article
+                      </Button>
+                    </Link>
                   </div>
                 </div>
               </CardContent>
@@ -271,14 +303,20 @@ export default function Invest() {
                       MotoGP Mandalika 2022 Revives Tourism for West Nusa
                       Tenggara
                     </p>
-                    <p className="text-sm opacity-50 italic">Global Expat</p>
-                    <Button
-                      variant="link"
-                      className="p-0 w-full font-sans justify-between"
+                    <p className="text-sm font-sans text-stone-900/80">
+                      Global Expat
+                    </p>
+                    <Link
+                      href="https://globalexpatrecruiting.com/motogp-mandalika-2022-revives-tourism-for-west-nusa-tenggara/"
+                      target="_blank"
                     >
-                      Read Full Article
-                      <ExternalLink className="min-w-4 min-h-4 stroke-1 text-yellow-600 group-last:hover:text-yellow-400" />
-                    </Button>
+                      <Button
+                        variant="link"
+                        className="p-0 w-full font-sans justify-between"
+                      >
+                        Read Full Article
+                      </Button>
+                    </Link>
                   </div>
                 </div>
               </CardContent>
@@ -289,20 +327,18 @@ export default function Invest() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-start justify-start w-full px-8 lg:px-52 py-10 lg:py-40">
           <div className="flex flex-col gap-4">
             <p className="text-5xl font-cinzel font-bold text-yellow-900">
-              Additional Information
+              Payment Structure
             </p>
           </div>
           <div className="flex flex-col gap-4 lg:px-10">
             <Accordion type="single" collapsible>
               <AccordionItem value="item-1">
                 <AccordionTrigger className="text-xl font-semibold">
-                  Progressive Payments
+                  Progressive Payment Plan
                 </AccordionTrigger>
                 <AccordionContent className="text-sm font-sans text-pretty">
-                  We make owning your dream villa effortless with our
-                  progressive payment plans. Tailored to your convenience, our
-                  approach ensures a seamless journey toward luxury living in
-                  Lombok.
+                  We have a clearly defined and progressive payment structure
+                  that in dependent on the project progress.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-2">
@@ -310,24 +346,31 @@ export default function Invest() {
                   Quaterly Reports
                 </AccordionTrigger>
                 <AccordionContent className="text-sm font-sans text-pretty">
-                  Stay informed every step of the way with our quarterly
-                  updates. From groundbreaking to completion, we’ll keep you
-                  updated on construction progress, ensuring transparency and
-                  peace of mind.
+                  Stay informed every step of the process with quarterly
+                  reports. From the groundbreaking to completion, we will keep
+                  you informed, ensuring transparency and peace of mind.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-3">
                 <AccordionTrigger className="text-xl font-semibold">
-                  Monthly Maintenance Fees
+                  Maintenance Fees
                 </AccordionTrigger>
                 <AccordionContent className="text-sm font-sans text-pretty">
-                  Ensure your villa remains pristine with our comprehensive
-                  maintenance services. Monthly charges are $130 (Premium Villa)
-                  and $150 (Superior Villa). These fees cover essential upkeep
-                  to maintain the luxury and comfort you deserve.
+                  Upon completion, your villas will be maintained in pristine
+                  condition by our comprehensive maintenance services. Monthly
+                  fees range from $130 for the Premium (2 bedroom) Villa) to
+                  $150 for the Superior Villa (3 bedroom).
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
+            <Link href="/book">
+              <Button
+                variant="default"
+                className="w-fit font-extrabold uppercase tracking-wider hover:drop-shadow-md"
+              >
+                Book A Discovery Call
+              </Button>
+            </Link>
           </div>
         </div>
         {/* Benefits */}

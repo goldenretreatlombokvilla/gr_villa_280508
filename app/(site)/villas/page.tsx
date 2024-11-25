@@ -230,14 +230,14 @@ export default function Invest() {
           />
           <p className="text-sm font-sans opacity-70 italic">Discover Lombok</p>
         </div> */}
-        <div className="flex flex-col gap-40 items-center px-8 py-6 lg:pt-20 lg:py-20 max-w-6xl mx-auto">
+        <div className="flex flex-col gap-10 lg:gap-40 items-center px-8 py-6 lg:pt-20 lg:py-20 max-w-6xl mx-auto">
           {/* 2 Bed */}
           <Card className="flex flex-col w-full lg:p-0 bg-transparent shadow-none border-none">
             <CardContent className="p-0">
               <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-center justify-center">
                 <Image
-                  src="/villa/grlv_3.webp"
-                  alt="Golden Retreat Lombok Villa"
+                  src="https://utfs.io/f/dJLJpH9Hrkw3pXyUf0A8fDXoAL2Jay9kEY7gbmpj3CvcG0Pu"
+                  alt="Superior Luxury Villa"
                   width={500}
                   height={300}
                   className="w-full h-auto object-cover aspect-video lg:aspect-square rounded-lg shadow-lg"
@@ -281,6 +281,7 @@ export default function Invest() {
                       </p>
                     </div>
                   </div>
+
                   <div className="flex flex-row gap-4 items-center justify-start">
                     <Scan className="min-w-8 min-h-8 lg:min-h-12 lg:min-w-12 stroke-1 text-yellow-900 opacity-80" />
                     <div className="flex flex-col gap-0 items-start">
@@ -334,13 +335,27 @@ export default function Invest() {
               </div>
             </CardContent>
           </Card>
+
+          <div className="flex flex-col gap-4 items-center lg:w-2/3 justify-start pb-20">
+            <Image
+              src="https://utfs.io/f/dJLJpH9Hrkw3uuft60bSOoWvunMekl0ACfLj2rIG8cQDzZmT"
+              alt="2 Bedroom Layout Plan"
+              width={500}
+              height={200}
+              className="w-full h-full object-contain rounded-lg hover:shadow-lg hover:scale-105 trasition-all duration-300"
+            />
+            <p className="text-sm font-sans opacity-70 italic">
+              Superior Villa Layout Plan
+            </p>
+          </div>
+
           {/* 3 Bed */}
           <Card className="flex flex-col w-full lg:p-0 bg-transparent shadow-none border-none">
             <CardContent className="p-0">
               <div className="flex flex-col lg:flex-row-reverse gap-16 lg:gap-24 items-center justify-center">
                 <Image
-                  src="/villa/grlv_5.webp"
-                  alt="Golden Retreat Lombok Villa"
+                  src="https://utfs.io/f/dJLJpH9Hrkw3STzbTcM0TP839gFjLVe25vnd4qspYbylGHrX"
+                  alt="Premium Luxury Villa"
                   width={500}
                   height={300}
                   className="w-full h-full  object-cover aspect-video lg:aspect-square rounded-lg shadow-lg"
@@ -437,6 +452,19 @@ export default function Invest() {
               </div>
             </CardContent>
           </Card>
+
+          <div className="flex flex-col gap-4 items-center lg:w-2/3 justify-start pb-20">
+            <Image
+              src="https://utfs.io/f/dJLJpH9Hrkw3fFMByQhLDqapUrcI5X2oh8B9JvKe1ET4tzCf"
+              alt="3 Bedroom Layout Plan"
+              width={500}
+              height={200}
+              className="w-full h-full object-contain rounded-lg hover:shadow-lg hover:scale-105 trasition-all duration-300"
+            />
+            <p className="text-sm font-sans opacity-70 italic">
+              Premium Villa Layout Plan
+            </p>
+          </div>
         </div>
         {/* Furnishings Section */}
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-4 items-start px-8 py-6 lg:pt-20 lg:py-20 max-w-6xl mx-auto w-full">
@@ -669,6 +697,21 @@ export default function Invest() {
             </div>
           </div>
         </div>
+      </div>
+
+      <div className="lg:grid flex flex-col lg:grid-cols-2 gap-8 items-center justify-start w-full px-8 lg:px-32 py-10 lg:py-40 ">
+        <p className="text-yellow-900 text-center text-balance text-4xl lg:text-5xl font-extrabold">
+          Our Location
+        </p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3947.0465431403145!2d116.09684177583974!3d-8.397083291641211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwMjMnNDkuNSJTIDExNsKwMDUnNTcuOSJF!5e0!3m2!1sen!2smy!4v1732538310231!5m2!1sen!2smy"
+          width="600"
+          height="450"
+          className="border-0 rounded-lg px-20"
+          allowFullScreen={true}
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        ></iframe>
       </div>
 
       <Cta />
