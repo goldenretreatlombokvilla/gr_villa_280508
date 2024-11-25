@@ -37,7 +37,7 @@ export default function LandingPage() {
         <div className="absolute w-full h-[100vh] top-0 left-0 -z-10">
           <Image
             src="https://utfs.io/f/dJLJpH9Hrkw3pXyUf0A8fDXoAL2Jay9kEY7gbmpj3CvcG0Pu"
-            alt="Golden Retreat Lombok Villa"
+            alt="Poolside View of Golden Retreat Lombok Villa"
             width={2000}
             height={2000}
             loading="eager"
@@ -47,7 +47,7 @@ export default function LandingPage() {
         <div className="flex flex-col gap-4 items-center justify-start px-0 lg:pb-32 text-white w-full h-[100vh] py-10 ">
           <Image
             src="https://utfs.io/f/dJLJpH9Hrkw31JUxKmNSAE1eLPCn7ZqI4KBDlfHwUhJit380"
-            alt="Golden Retreat Lombok Villa"
+            alt="Golden Retreat Lombok Villa Logo"
             width={1000}
             height={500}
             className="lg:w-80 w-60 h-fit lg:h-fit object-contain mb-20 drop-shadow-xl"
