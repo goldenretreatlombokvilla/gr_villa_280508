@@ -242,8 +242,8 @@ export default function Invest() {
                   height={300}
                   className="w-full h-auto object-cover aspect-video lg:aspect-square rounded-lg shadow-lg"
                 />
-                <div className="grid grid-cols-2 gap-6 lg:gap-8 w-full px-2 lg:text-xl text-md">
-                  <div className="flex flex-col gap-2 col-span-2">
+                <div className="md:grid md:grid-cols-2 flex flex-col gap-6 lg:gap-8 w-full px-2 lg:text-xl text-md">
+                  <div className="flex flex-col gap-2 md:col-span-2">
                     <p className="text-5xl text-yellow-900 font-bold uppercase ">
                       Superior
                     </p>
@@ -345,8 +345,8 @@ export default function Invest() {
                   height={300}
                   className="w-full h-full  object-cover aspect-video lg:aspect-square rounded-lg shadow-lg"
                 />
-                <div className="grid grid-cols-2 lg:grid-cols-2  gap-6 w-full px-2 lg:text-xl text-md">
-                  <div className="flex flex-col gap-2 col-span-2">
+                <div className="md:grid flex flex-col md:grid-cols-2 gap-6 w-full px-2 lg:text-xl text-md">
+                  <div className="flex flex-col gap-2 md:col-span-2">
                     <p className="text-5xl text-yellow-900 font-bold uppercase ">
                       Premium
                     </p>

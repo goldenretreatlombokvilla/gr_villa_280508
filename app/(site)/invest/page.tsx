@@ -43,7 +43,7 @@ export default function Invest() {
                 10 - 16% per annum projected yield
               </h2>
               <p className="font-sans text-md text-balance">
-                Golden Retreat Lombok Villa represents a unique opportunity to
+                Golden Retreat Lombok Villa presents a unique opportunity to
                 capitalise on Lombok’s rise as a top destination for holiday
                 makers who seek out the island’s unspoilt natural beauty. Just
                 an hour's boat ride from Bali, Lombok attracts thousands of
