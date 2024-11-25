@@ -291,16 +291,6 @@ export default function Invest() {
             <p className="text-5xl font-cinzel font-bold text-yellow-900">
               Additional Information
             </p>
-            <p className="text-md font-sans">
-              By choosing a Golden Retreat Lombok Villa, you are not just
-              purchasing a holiday home, you’re securing a lucrative investment
-              opportunity.
-            </p>
-            <p className="text-md font-sans opacity-50">
-              Our team of experts will handle all aspects of property
-              management, including rental bookings, maintenance, and financial
-              reporting, ensuring a hassle-free and profitable experience.
-            </p>
           </div>
           <div className="flex flex-col gap-4 lg:px-10">
             <Accordion type="single" collapsible>
