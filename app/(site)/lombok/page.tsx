@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import Video from "next-video";
 import {
   Carousel,
   CarouselContent,
@@ -213,6 +214,27 @@ export default function Lombok() {
           </div>
         </div>
       </div>
+
+      <div className="flex flex-col gap-4 items-center px-8 py-6 lg:pt-20 lg:py-20 max-w-6xl mx-auto ">
+        <p className="font-cinzel text-center text-5xl font-bold text-yellow-900">
+          Expedia: Lombok Vacation Travel Guide
+        </p>
+        <iframe
+          width="560"
+          height="315"
+          className="w-full h-full aspect-video rounded-lg"
+          src="https://www.youtube.com/embed/bl1k2-cLdV8?si=TIneix6MCQHYVpHU"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+        ></iframe>
+        <p className="text-sm font-sans opacity-70 italic">
+          Source: Expedia (Youtube){" "}
+        </p>
+      </div>
+
       <div className="flex flex-col w-full px-20 py-6 lg:pt-20 lg:py-20 max-w-6xl mx-auto">
         <Carousel
           /* plugins={[

@@ -12,7 +12,6 @@ import {
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import {
-  ArrowDownCircle,
   Grid2X2,
   House,
   Images,
@@ -21,8 +20,7 @@ import {
   Scan,
   SquareDashed,
   UtensilsCrossed,
-  Waves,
-  XCircleIcon
+  Waves
 } from "lucide-react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
@@ -36,15 +34,12 @@ import {
 import Cta from "@/components/cta";
 import {
   Dialog,
-  DialogClose,
   DialogContent,
-  DialogDescription,
   DialogHeader,
   DialogPortal,
   DialogTitle,
   DialogTrigger
 } from "@/components/ui/dialog";
-import { cn } from "@/lib/utils";
 
 const images = [
   {
@@ -74,34 +69,6 @@ const siteplan = [
   {
     src: "https://utfs.io/f/dJLJpH9Hrkw3lsdxzU6aQ6vkUNZnYhO7eAcj2iwCBSMy1b3p",
     alt: "Spa & Gym Layout"
-  }
-];
-
-const villaImages = [
-  {
-    src: "/villa/grlv_7.webp",
-    alt: "Golden Retreat Lombok Villa"
-  },
-  {
-    src: "/villa/grlv_2.webp",
-    alt: "Living Room"
-  },
-
-  {
-    src: "/villa/grlv_3.webp",
-    alt: "Poolside Area"
-  },
-  {
-    src: "/villa/grlv_4.webp",
-    alt: "Kitchen"
-  },
-  {
-    src: "/villa/grlv_5.webp",
-    alt: "Dining Room"
-  },
-  {
-    src: "/villa/grlv_6.webp",
-    alt: "Balcony"
   }
 ];
 
@@ -255,8 +222,12 @@ export default function Invest() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-40 items-center px-8 py-6 lg:pt-20 lg:py-20 max-w-6xl mx-auto ">
-          <Video src="https://utfs.io/f/dJLJpH9Hrkw3hFSyAj2LaOUmx7jw6JrqKBblDskWdPvTZoSg" />
+        <div className="flex flex-col gap-4 items-center px-8 py-6 lg:pt-20 lg:py-20 max-w-6xl mx-auto ">
+          <Video
+            src="https://utfs.io/f/dJLJpH9Hrkw3hFSyAj2LaOUmx7jw6JrqKBblDskWdPvTZoSg"
+            className="w-full h-full rounded-lg"
+          />
+          <p className="text-sm font-sans opacity-70 italic">Discover Lombok</p>
         </div>
         <div className="flex flex-col gap-40 items-center px-8 py-6 lg:pt-20 lg:py-20 max-w-6xl mx-auto">
           {/* 2 Bed */}
