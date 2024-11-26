@@ -72,7 +72,7 @@ export default function Invest() {
               <p className="font-sans text-md text-pretty">
                 Golden Retreat Lombok Villas presents a unique opportunity to
                 capitalise on Lombok’s rise as a top destination for holiday
-                makers who seek out the island’s unspoilled natural beauty.
+                makers who seek out the island’s unspoilt natural beauty.
               </p>
               <p className="font-sans text-md text-pretty">
                 Just an hour's boat ride from Bali, Lombok attracts thousands of
@@ -174,7 +174,7 @@ export default function Invest() {
                     Foreign Ownership
                   </AccordionTrigger>
                   <AccordionContent className="text-sm font-sans text-pretty">
-                    Foreigners will be issued leasehold beneficiary titles of up
+                    Foreigners will be issued leasehold beneficiary title of up
                     to 80 years. With Lombok seeing year-on-year growth in
                     tourism, a rewarding rental yield is all but assured.
                   </AccordionContent>

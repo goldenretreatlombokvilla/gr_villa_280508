@@ -50,15 +50,15 @@ export default function LandingPage() {
             alt="Golden Retreat Lombok Villa Logo"
             width={1000}
             height={500}
-            className="lg:w-80 w-60 h-fit lg:h-fit object-contain mb-20 drop-shadow-xl"
+            className="lg:w-40 w-28 h-fit lg:h-fit object-contain mb-20 drop-shadow-xl"
           />
           <div className="flex flex-col items-center justify-center gap-4 py-[20vh] lg:py-24">
             <p className="uppercase font-serif text-lg lg:text-2xl tracking-widest opacity-60 ">
               Welcome to
             </p>
-            <h1 className="font-cinzel text-3xl md:text-4xl flex flex-col gap-0 text-center font-semibold text-nowrap">
+            <h1 className="font-cinzel text-4xl md:text-4xl flex flex-col gap-0 text-center font-extrabold text-wrap">
               Golden Retreat{" "}
-              <span className="text-5xl md:text-8xl font-deco font-bold">
+              <span className="text-6xl md:text-8xl tracking-widest font-cinzel font-bold uppercase">
                 Lombok Villas
               </span>
             </h1>
@@ -116,7 +116,7 @@ export default function LandingPage() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-x-14 items-center justify-center w-full px-8 lg:px-52 py-10 my-10 lg:py-40 bg-yellow-900/10">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-x-14 items-center justify-center w-full px-8 lg:px-32 py-10 my-10 lg:py-40 bg-yellow-900/10">
         <div className="flex flex-col gap-4">
           <p className="font-cinzel text-xl lg:text-2xl font-extrabold tracking-wide flex flex-col uppercase text-yellow-900/50">
             Paradise on Earth
@@ -127,8 +127,9 @@ export default function LandingPage() {
           <p className="text-md font-sans text-balance">
             Lombok Island is fast becoming a popular choice for nature lovers
             and holiday makers. With its pristine beaches, lush rainforests, and
-            abundant attractions, the Island offers a unique and unforgettable
-            experience for anyone seeking adventure and serenity.
+            abundant attractions, the Island offers unique and unforgettable
+            experiences for all tastes. From adventure to soul-healing serenity,
+            and everything in between, Lombok has it all.
           </p>
           <div className="flex flex-row gap-4 items-end justify-start">
             <Link href="/lombok" prefetch={true}>
@@ -152,12 +153,12 @@ export default function LandingPage() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-x-14 items-start justify-start w-full px-8 lg:px-52 py-20">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-x-14 items-start justify-start w-full px-8  lg:px-20 xl:px-52 py-20">
         <div className="flex flex-col gap-4">
           <p className="font-cinzel text-xl lg:text-2xl font-extrabold tracking-wide flex flex-col uppercase text-yellow-900/50">
             An Unparalleled
           </p>
-          <h2 className="text-5xl lg:text-7xl font-cinzel font-extrabold text-yellow-900">
+          <h2 className="text-4xl lg:text-6xl font-cinzel font-extrabold text-yellow-900">
             Investment Opportunity
           </h2>
           <p className="text-md font-sans text-balance">
@@ -194,7 +195,7 @@ export default function LandingPage() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-[2fr_3fr] gap-4 items-center justify-center w-full px-8 lg:px-52 lg:py-20 -mt-14 pb-14">
+      <div className="grid grid-cols-1 lg:grid-cols-[2fr_3fr] gap-4 items-center justify-center w-full px-8 lg:px-20 xl:px-52 lg:py-20 -mt-14 pb-14">
         <Image
           src="https://utfs.io/f/dJLJpH9Hrkw3wcK398eUX3BuqFPzTD5Kh1H9QyUilcWfbY6d"
           alt="Golden Retreat Lombok Villa"
@@ -226,7 +227,7 @@ export default function LandingPage() {
         <div className="flex flex-row gap-4 lg:col-span-2 items-center justify-end pt-8 "></div>
       </div>
 
-      <div className="flex flex-col gap-12 items-center justify-center w-full min-h-screen px-8 lg:px-52 py-20 bg-yellow-800/10">
+      <div className="flex flex-col gap-12 items-center justify-center w-full min-h-screen px-8 lg:px-20 xl:px-52 py-20 bg-yellow-800/10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center justify-between w-full lg:gap-14">
           <Link href="/villas">
             <Card className="flex flex-col w-full bg-transparent shadow-none border-none group">
@@ -266,7 +267,6 @@ export default function LandingPage() {
               </CardContent>
             </Card>
           </Link>
-
           <Link href="/villas">
             <Card className="flex flex-col w-full lg:p-0 bg-transparent shadow-none border-none group">
               <CardContent className="px-0">
@@ -328,7 +328,7 @@ export default function LandingPage() {
                     Restaurant, Bar & Lounge{" "}
                   </p>
                   <p className="text-md font-sans">
-                    Dine-in luxury in our 5 star restaurant with a delicious
+                    Dine in luxury in our 5 star restaurant with a delicious
                     variety of dishes, both local and international cuisines, or
                     spend the evening in our private lounge.
                   </p>

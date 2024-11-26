@@ -58,7 +58,7 @@ export default function Cta() {
   };
 
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 w-full lg:py-40 bg-yellow-900/10 items-start justify-start lg:px-52 px-10 py-20">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 w-full lg:py-40 bg-yellow-900/10 items-start justify-start lg:px-20 xl:px-52 px-10 py-20">
       <div className="flex flex-col gap-4">
         <p className="text-5xl lg:text-7xl font-extrabold text-yellow-900 font-cinzel">
           Contact <br className="hidden lg:block"></br>Form

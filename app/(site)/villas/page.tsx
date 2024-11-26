@@ -47,8 +47,8 @@ const images = [
     alt: "Spacious Bathroom"
   },
   {
-    src: "https://utfs.io/f/dJLJpH9Hrkw3Y1KKJxnLOdMUqSH08tvDTRnX1xNaPBF3YW5c",
-    alt: "Living Room"
+    src: "https://utfs.io/f/dJLJpH9Hrkw3ZbJhQuj5zPGMQWt0kmvD298SjxYqTRlnKLFE",
+    alt: "Master Bedroom"
   },
 
   {
@@ -820,7 +820,7 @@ export default function Invest() {
                   <p>
                     3rd Bedroom{" "}
                     <span className="font-sans text-xs opacity-50 italic font-normal">
-                      (Superior villa only)
+                      (Premium villa only)
                     </span>
                   </p>
                 </AccordionTrigger>

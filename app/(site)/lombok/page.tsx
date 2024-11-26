@@ -116,7 +116,7 @@ export default function Lombok() {
               </p>
             </div>
             <p className="font-sans font-semibold text-stone-900 text-md leading-7">
-              Discover the unspoiled beauty of Lombok, a tropical paradise
+              Discover the unspoilt beauty of Lombok, a tropical paradise
               nestled in the heart of Indonesia. This enchanting island offers a
               captivating blend of stunning natural landscapes, vibrant culture,
               and warm hospitality.
@@ -200,7 +200,7 @@ export default function Lombok() {
 
       <div className="flex flex-col gap-8 items-center justify-start w-full  px-8 py-6 lg:pt-20 lg:py-20 max-w-6xl mx-auto">
         <p className="font-cinzel text-center text-5xl font-bold text-yellow-900">
-          Reasons Why Tourist are Flocking To Lombok
+          Reasons Why Tourists are Flocking To Lombok
         </p>
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-10 lg:gap-10 justify-center w-full items-center py-4">
           <div className="flex flex-row lg:flex-col gap-4 items-center justify-between">
@@ -283,9 +283,24 @@ export default function Lombok() {
         </div>
       </div>
 
+      <div className="lg:grid flex flex-col lg:grid-cols-2 gap-8 items-center justify-start w-full px-8 lg:px-32 py-10 lg:py-40 ">
+        <p className="text-yellow-900 text-center text-balance text-4xl lg:text-5xl font-extrabold">
+          Surrounding Attractions
+        </p>
+        <div className="flex flex-col gap-4 h-full w-full">
+          <Image
+            src="https://utfs.io/f/dJLJpH9Hrkw3JMbcGuFGm1t394BWXOQz0jM2pHhDZeVrkKli"
+            alt="Map of attractions around Golden Retreat Lombok Villa"
+            width={500}
+            height={200}
+            className="w-full h-full object-cover rounded-lg"
+          />
+        </div>
+      </div>
+
       <div className="flex flex-col gap-4 items-center px-8 py-6 lg:pt-20 lg:py-20 max-w-6xl mx-auto ">
         <p className="font-cinzel text-center text-5xl font-bold text-yellow-900">
-          Expedia: Lombok Vacation Travel Guide
+          Expedia: Vacation Travel Guide
         </p>
         <iframe
           width="560"
@@ -316,10 +331,10 @@ export default function Lombok() {
             International Circuit in Lombok, Indonesia.
           </p>
           <p className="text-md font-sans text-balance">
-            The event was a showcase for Lombok's tourism potential and real
-            estate investment opportunities. The circuit is located in an
-            integrated entertainment and sports area, surrounded by beaches and
-            natural scenery.
+            The event is proof-positive of Lombok's tourism and investment
+            potential. The circuit is located within Lombok’s Special Economic
+            Zone, a Federal Government initiative to boost economic development
+            on the Island.
           </p>
           <div className="flex flex-row gap-4 items-end justify-start">
             <Link
