@@ -42,11 +42,11 @@ export default function Gallery() {
           className="flex flex-row gap-8 items-center justify-center"
         >
           <Image
-            src="/brand/logo_icon.png"
+            src="https://utfs.io/f/dJLJpH9Hrkw3HQH8eio47KGLVT5JMX0nbiCWRIZyzPwUDrcp"
             alt="Golden Retreat Lombok Villa"
-            width={200}
-            height={200}
-            className="w-10 h-10 object-contain aspect-square drop-shadow-sm"
+            width={500}
+            height={500}
+            className="max-w-32 -my-8 h-full object-cover"
           />
         </Link>
         <h1 className="sr-only text-xl font-sans text-yellow-800 pt-1 font-light">

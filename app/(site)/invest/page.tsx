@@ -22,11 +22,11 @@ export default function Invest() {
             className="flex flex-row gap-8 items-center justify-center"
           >
             <Image
-              src="/brand/logo_icon.png"
+              src="https://utfs.io/f/dJLJpH9Hrkw3HQH8eio47KGLVT5JMX0nbiCWRIZyzPwUDrcp"
               alt="Golden Retreat Lombok Villa"
-              width={200}
-              height={200}
-              className="w-10 h-10 object-contain aspect-square drop-shadow-sm"
+              width={500}
+              height={500}
+              className="max-w-32 -my-8 h-full object-cover"
             />
           </Link>
           <h1 className="sr-only text-xl font-sans text-yellow-800 pt-1 font-light">
@@ -70,7 +70,7 @@ export default function Invest() {
             </p> */}
             <div className="flex flex-col gap-4">
               <p className="font-sans text-md text-pretty">
-                Golden Retreat Lombok Villas presents a unique opportunity to
+                Golden Retreat Lombok presents a unique opportunity to
                 capitalise on Lombok’s rise as a top destination for holiday
                 makers who seek out the island’s unspoilt natural beauty.
               </p>
@@ -94,11 +94,11 @@ export default function Invest() {
                 Our team will also guide you through visa applications where
                 needed, should you choose to stay for longer stretches at a
                 time. With our support, we endeavour to make the decision to
-                purchase with us, your best one yet.
+                purchase with us your best one yet.
               </p>
               <p className="font-sans text-md text-pretty">
-                Contact our team to find out how you can benefit by purchasing a
-                Villa with us today.
+                Contact our team to find out how you can benefit from purchasing
+                a Golden Retreat Villa with us today.
               </p>
             </div>
             {/* <p className="font-sans text-md text-pretty">
@@ -136,9 +136,12 @@ export default function Invest() {
                   like you’ve missed the boat.
                 </p>
                 <p className="text-md font-sans text-pretty">
-                  This is precisely the opportunity you have today. Be counted
-                  as a first-mover and tap into Lombok’s rapidly growing tourism
-                  industry.
+                  Lombok’s rapidly growing tourism industry presents the perfect
+                  opportunity to be counted as a first-mover primed for success.
+                </p>
+                <p className="text-md font-sans text-pretty">
+                  To find out more about investment yields, speak with our
+                  in-house team of property consultants.
                 </p>
               </div>
               <Link href="/book">
@@ -175,9 +178,10 @@ export default function Invest() {
                     Foreign Ownership
                   </AccordionTrigger>
                   <AccordionContent className="text-sm font-sans text-pretty">
-                    Foreigners will be issued leasehold beneficiary title of up
+                    Foreigners will be issued leasehold beneficiary titles of up
                     to 80 years. With Lombok seeing year-on-year growth in
-                    tourism, a rewarding rental yield is all but assured.
+                    tourism, you can rely on a lucrative, long term rental
+                    income stream.
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-2">

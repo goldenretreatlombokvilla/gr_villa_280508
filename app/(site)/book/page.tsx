@@ -133,7 +133,7 @@ export default function Bookacall() {
           className="flex flex-row gap-8 items-center justify-center"
         >
           <Image
-            src="/brand/logo_icon.png"
+            src="https://utfs.io/f/dJLJpH9Hrkw3HQH8eio47KGLVT5JMX0nbiCWRIZyzPwUDrcp"
             alt="Golden Retreat Lombok Villa"
             width={200}
             height={200}

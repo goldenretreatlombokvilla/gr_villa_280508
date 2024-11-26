@@ -3,14 +3,8 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Nav from "@/components/nav/nav";
 import Footer from "@/components/nav/footer";
-import { Cinzel, Cinzel_Decorative, Teachers } from "next/font/google";
+import { Cinzel, Cinzel_Decorative } from "next/font/google";
 import { Toaster } from "@/components/ui/toaster";
-
-const teachers = Teachers({
-  subsets: ["latin"],
-  weight: ["400", "600", "800"],
-  display: "swap"
-});
 
 const deco = Cinzel_Decorative({
   subsets: ["latin"],
@@ -37,9 +31,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={` ${deco.className} ${cinzel.className} ${teachers.className} antialiased`}
-      >
+      <body className={` ${deco.className} ${cinzel.className} antialiased`}>
         <Nav />
         {children}
         <Footer />

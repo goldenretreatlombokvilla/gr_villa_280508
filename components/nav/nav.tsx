@@ -47,10 +47,6 @@ const navItems = [
     link: "/villas"
   },
   {
-    name: "Location",
-    link: "/location"
-  },
-  {
     name: "Gallery",
     link: "/gallery"
   },
@@ -96,6 +92,10 @@ const links = [
     target: "_self"
   },
   {
+    name: "Location",
+    link: "/location"
+  },
+  {
     name: "Info Pack",
     link: "https://utfs.io/f/dJLJpH9Hrkw3Mq16Mft7lJKSRYnQdpH4WNEgjBGiyz65xtM9",
     target: "_blank"
@@ -126,11 +126,11 @@ export default function Nav() {
                 <SheetClose asChild>
                   <Link href="/" prefetch={true}>
                     <Image
-                      src="/brand/logo_icon.png"
+                      src="https://utfs.io/f/dJLJpH9Hrkw3zAIITcj3GaV6XFRQrue8z9wSd3Dysx0bTKlA"
                       alt="Golden Retreat Lombok Villa"
                       width={1000}
                       height={500}
-                      className="max-w-12 max-h-12 lg:w-20 lg:h-20 object-contain lg:mb-10 drop-shadow-xl"
+                      className="max-w-52 max-h-52 lg:min-w-60 lg:min-h-60 object-contain drop-shadow-xl -my-10 lg:-ml-8 -ml-4"
                     />
                   </Link>
                 </SheetClose>

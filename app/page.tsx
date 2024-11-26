@@ -33,7 +33,7 @@ import Link from "next/link";
 export default function LandingPage() {
   return (
     <main>
-      <div className="flex flex-col gap-8 items-center justify-start w-full xl:min-h-screen p-0 max-w-6xl mx-auto pb-52">
+      <div className="flex flex-col gap-8 items-center justify-start w-full xl:min-h-screen p-0 max-w-6xl mx-auto">
         <div className="absolute w-full h-[100vh] top-0 left-0 -z-10">
           <Image
             src="https://utfs.io/f/dJLJpH9Hrkw3pXyUf0A8fDXoAL2Jay9kEY7gbmpj3CvcG0Pu"
@@ -44,24 +44,26 @@ export default function LandingPage() {
             className="w-full h-[100vh] lg:h-full  aspect-video object-cover brightness-50"
           />
         </div>
-        <div className="flex flex-col gap-4 items-center justify-start px-0 lg:pb-20 text-white w-full h-fit py-10">
-          <Image
-            src="https://utfs.io/f/dJLJpH9Hrkw31JUxKmNSAE1eLPCn7ZqI4KBDlfHwUhJit380"
+        <div className="flex flex-col gap-4 items-center justify-start px-0 text-white w-full h-fit py-10">
+          {/* <Image
+            src="https://utfs.io/f/dJLJpH9Hrkw3bjCf2sqfwy05AzFLkTvmpo63dsY7VXnlRD8G"
             alt="Golden Retreat Lombok Villa Logo"
             width={1000}
             height={500}
-            className="lg:w-52 w-40 h-fit lg:h-fit object-contain mb-20 drop-shadow-xl"
-          />
-          <div className="flex flex-col items-center justify-center gap-0 md:gap-1 py-[20vh] lg:py-24">
+            className="hidden lg:w-96 w-40 h-fit lg:h-fit object-contain mb-20 drop-shadow-xl"
+          /> */}
+          <div className="flex flex-col items-center lg:justify-around justify-center gap-0 lg:h-screen h-[100vh] py-20 lg:py-0 ">
             <p className="uppercase font-serif text-lg lg:text-2xl tracking-widest">
               Welcome to
             </p>
-            <h1 className="font-cinzel text-4xl md:text-7xl lg:text-8xl flex flex-col gap-0 text-center font-extrabold text-nowrap">
-              Golden Retreat{" "}
-              <span className="text-2xl md:text-4xl tracking-widest font-cinzel font-bold uppercase">
-                Lombok Villas
-              </span>
-            </h1>
+            <Image
+              src="https://utfs.io/f/dJLJpH9Hrkw3NY5ZlAWU4OPIEwVFZ5iQqGhebHWv0sAKrnSo"
+              alt="Golden Retreat Lombok Villas"
+              width={2432}
+              height={1071}
+              className="lg:w-screen h-fit object-contain mb-20 drop-shadow-2xl"
+            />
+            <h1 className=" sr-only">Golden Retreat Lombok Villas</h1>
           </div>
         </div>
       </div>
