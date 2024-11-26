@@ -47,6 +47,10 @@ const navItems = [
     link: "/villas"
   },
   {
+    name: "Location",
+    link: "/location"
+  },
+  {
     name: "Gallery",
     link: "/gallery"
   },

@@ -75,11 +75,12 @@ export default function Invest() {
                 makers who seek out the island’s unspoilt natural beauty.
               </p>
               <p className="font-sans text-md text-pretty">
-                Just an hour's boat ride from Bali, Lombok attracts thousands of
-                visitors each year looking for a change of pace. Another major
-                boost to tourism is Lombok’s International Airport, attracting
-                more direct flights each year. As a result, the demand for
-                quality holiday accommodation on the island continues to soar!
+                Just a two hour boat ride from Bali, Lombok attracts thousands
+                of visitors each year looking for a change of pace. Another
+                major boost to tourism is Lombok’s International Airport,
+                attracting more direct flights each year. As a result, the
+                demand for quality holiday accommodation on the island continues
+                to soar!
               </p>
             </div>
             <div className="flex flex-col gap-4">
@@ -396,6 +397,18 @@ export default function Invest() {
               </Button>
             </Link>
           </div>
+        </div>
+
+        <div className="lg:grid flex flex-col lg:grid-cols-2 gap-8 items-center justify-start w-full px-8 lg:px-32 py-10 lg:py-40 ">
+          <p className="text-yellow-900 text-center text-balance text-4xl lg:text-5xl font-extrabold">
+            Current Progress
+          </p>
+          <video width="1080" height="1920" controls preload="none">
+            <source
+              src="https://utfs.io/f/dJLJpH9Hrkw3HSjkmUyo47KGLVT5JMX0nbiCWRIZyzPwUDrc"
+              type="video/mp4"
+            />
+          </video>
         </div>
         {/* Benefits */}
         <div className="flex flex-col gap-10 items-center justify-start w-full px-8 lg:px-52 py-20 bg-black text-white">

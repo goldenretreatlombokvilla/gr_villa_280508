@@ -392,9 +392,9 @@ export default function Invest() {
                   <Waves className="min-w-8 min-h-8 lg:min-h-12 lg:min-w-12 stroke-1 text-yellow-900 opacity-80" />
                   <div className="flex flex-col gap-0 items-start">
                     <p className="font-semibold font-cinzel text-lg text-nowrap">
-                      32.5 sqm{" "}
+                      2.5m x 6m{" "}
                       <span className="text-xs italic font-normal font-sans">
-                        (350 sqft)
+                        (8ft x 19.6ft)
                       </span>{" "}
                     </p>
                     <p className="text-sm font-sans opacity-50">Pool Area</p>
@@ -586,9 +586,9 @@ export default function Invest() {
                   <Waves className="min-w-8 min-h-8 lg:min-h-12 lg:min-w-12 stroke-1 text-yellow-900 opacity-80" />
                   <div className="flex flex-col gap-0 items-start">
                     <p className="font-semibold font-cinzel text-lg text-nowrap">
-                      42 sqm{" "}
+                      3m x 6m{" "}
                       <span className="text-xs italic font-normal font-sans">
-                        (452 sqft)
+                        (9.8ft x 19.6ft)
                       </span>{" "}
                     </p>
                     <p className="text-sm font-sans opacity-50">Pool Area</p>
@@ -983,20 +983,21 @@ export default function Invest() {
         </div>
       </div>
 
+      {/*
       <div className="lg:grid flex flex-col lg:grid-cols-2 gap-8 items-center justify-start w-full px-8 lg:px-32 py-10 lg:py-40 ">
         <p className="text-yellow-900 text-center text-balance text-4xl lg:text-5xl font-extrabold">
-          Our Location
+          Surrounding Attractions
         </p>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3947.0465431403145!2d116.09684177583974!3d-8.397083291641211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwMjMnNDkuNSJTIDExNsKwMDUnNTcuOSJF!5e0!3m2!1sen!2smy!4v1732538310231!5m2!1sen!2smy"
-          width="600"
-          height="450"
-          className="w-full border-0 rounded-lg"
-          allowFullScreen={true}
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </div>
+        <div className="flex flex-col gap-4 h-full w-full">
+          <Image
+            src="https://utfs.io/f/dJLJpH9Hrkw3JMbcGuFGm1t394BWXOQz0jM2pHhDZeVrkKli"
+            alt="Map of attractions around Golden Retreat Lombok Villa"
+            width={500}
+            height={200}
+            className="w-full h-full object-cover rounded-lg"
+          />
+        </div>
+      </div> */}
 
       <Cta />
     </main>

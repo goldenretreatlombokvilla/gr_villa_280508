@@ -283,21 +283,6 @@ export default function Lombok() {
         </div>
       </div>
 
-      <div className="lg:grid flex flex-col lg:grid-cols-2 gap-8 items-center justify-start w-full px-8 lg:px-32 py-10 lg:py-40 ">
-        <p className="text-yellow-900 text-center text-balance text-4xl lg:text-5xl font-extrabold">
-          Surrounding Attractions
-        </p>
-        <div className="flex flex-col gap-4 h-full w-full">
-          <Image
-            src="https://utfs.io/f/dJLJpH9Hrkw3JMbcGuFGm1t394BWXOQz0jM2pHhDZeVrkKli"
-            alt="Map of attractions around Golden Retreat Lombok Villa"
-            width={500}
-            height={200}
-            className="w-full h-full object-cover rounded-lg"
-          />
-        </div>
-      </div>
-
       <div className="flex flex-col gap-4 items-center px-8 py-6 lg:pt-20 lg:py-20 max-w-6xl mx-auto ">
         <p className="font-cinzel text-center text-5xl font-bold text-yellow-900">
           Expedia: Vacation Travel Guide

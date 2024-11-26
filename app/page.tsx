@@ -50,13 +50,13 @@ export default function LandingPage() {
             alt="Golden Retreat Lombok Villa Logo"
             width={1000}
             height={500}
-            className="lg:w-40 w-28 h-fit lg:h-fit object-contain mb-20 drop-shadow-xl"
+            className="lg:w-52 w-40 h-fit lg:h-fit object-contain mb-20 drop-shadow-xl"
           />
           <div className="flex flex-col items-center justify-center gap-0 md:gap-1 py-[20vh] lg:py-24">
             <p className="uppercase font-serif text-lg lg:text-2xl tracking-widest">
               Welcome to
             </p>
-            <h1 className="font-cinzel text-[2.75rem] md:text-7xl lg:text-8xl flex flex-col gap-0 text-center font-extrabold text-nowrap">
+            <h1 className="font-cinzel text-4xl md:text-7xl lg:text-8xl flex flex-col gap-0 text-center font-extrabold text-nowrap">
               Golden Retreat{" "}
               <span className="text-2xl md:text-4xl tracking-widest font-cinzel font-bold uppercase">
                 Lombok Villas
@@ -128,8 +128,8 @@ export default function LandingPage() {
             Lombok Island is fast becoming a popular choice for nature lovers
             and holiday makers. With its pristine beaches, lush rainforests, and
             abundant attractions, the Island offers unique and unforgettable
-            experiences for all tastes. From adventure to soul-healing serenity,
-            and everything in between, Lombok has it all.
+            experiences for all tastes. From heart-racing adventure to
+            soul-healing serenity, and everything in between, Lombok has it all.
           </p>
           <div className="flex flex-row gap-4 items-end justify-start">
             <Link href="/lombok" prefetch={true}>
