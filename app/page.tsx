@@ -162,8 +162,8 @@ export default function LandingPage() {
             Investment Opportunity
           </h2>
           <p className="text-md font-sans text-balance">
-            Golden Retreat Lombok presents an opportunity for you to capitalise
-            on Lombok’s fast-growing tourism industry. Already ranked one of the
+            Golden Retreat Lombok presents an opportunity to capitalise on
+            Lombok’s fast-growing tourism industry. Already ranked one of the
             world's top destinations for nature tourism, Lombok Island’s demand
             for quality holiday accommodation continues to soar!
           </p>
