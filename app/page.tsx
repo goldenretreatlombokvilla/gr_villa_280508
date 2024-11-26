@@ -33,7 +33,7 @@ import Link from "next/link";
 export default function LandingPage() {
   return (
     <main>
-      <div className="flex flex-col gap-8 items-center justify-start w-full min-h-screen p-0 max-w-6xl mx-auto">
+      <div className="flex flex-col gap-8 items-center justify-start w-full xl:min-h-screen p-0 max-w-6xl mx-auto pb-52">
         <div className="absolute w-full h-[100vh] top-0 left-0 -z-10">
           <Image
             src="https://utfs.io/f/dJLJpH9Hrkw3pXyUf0A8fDXoAL2Jay9kEY7gbmpj3CvcG0Pu"
@@ -41,10 +41,10 @@ export default function LandingPage() {
             width={2000}
             height={2000}
             loading="eager"
-            className="w-full h-[100vh] lg:h-auto  aspect-video object-cover brightness-50"
+            className="w-full h-[100vh] lg:h-full  aspect-video object-cover brightness-50"
           />
         </div>
-        <div className="flex flex-col gap-4 items-center justify-start px-0 lg:pb-32 text-white w-full h-[100vh] py-10 ">
+        <div className="flex flex-col gap-4 items-center justify-start px-0 lg:pb-20 text-white w-full h-fit py-10">
           <Image
             src="https://utfs.io/f/dJLJpH9Hrkw31JUxKmNSAE1eLPCn7ZqI4KBDlfHwUhJit380"
             alt="Golden Retreat Lombok Villa Logo"
