@@ -53,12 +53,12 @@ export default function LandingPage() {
             className="lg:w-40 w-28 h-fit lg:h-fit object-contain mb-20 drop-shadow-xl"
           />
           <div className="flex flex-col items-center justify-center gap-4 py-[20vh] lg:py-24">
-            <p className="uppercase font-serif text-lg lg:text-2xl tracking-widest opacity-60 ">
+            <p className="uppercase font-serif text-lg lg:text-2xl tracking-widest">
               Welcome to
             </p>
-            <h1 className="font-cinzel text-4xl md:text-4xl flex flex-col gap-0 text-center font-extrabold text-wrap">
+            <h1 className="font-cinzel text-5xl md:text-7xl lg:text-8xl flex flex-col gap-0 text-center font-extrabold text-nowrap">
               Golden Retreat{" "}
-              <span className="text-6xl md:text-8xl tracking-widest font-cinzel font-bold uppercase">
+              <span className="text-3xl md:text-4xl tracking-widest font-cinzel font-bold uppercase">
                 Lombok Villas
               </span>
             </h1>
