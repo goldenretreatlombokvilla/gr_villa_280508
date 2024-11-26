@@ -149,10 +149,10 @@ export default function About() {
             Jointly Managed By
           </p>
           <p className="text-4xl lg:text-6xl font-cinzel font-bold text-yellow-900">
-            Metrolalis Indonesia
+            Metropalis Indonesia
           </p>
           <p className="text-4xl lg:text-6xl font-cinzel font-bold text-yellow-900">
-            Metrolalis Thailand
+            Metropalis Thailand
           </p>
           {/* <div className="flex flex-col gap-2 px-10 text-balance">
             <p className="text-md font-sans">

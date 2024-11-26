@@ -363,7 +363,7 @@ export default function Invest() {
                 <AccordionContent className="text-sm font-sans text-pretty">
                   We have a defined progressive payment structure in place to
                   ensure your Villa is completed on schedule. Our in-house team
-                  is on-hand take you through the process.
+                  is on hand take you through the process.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-2">

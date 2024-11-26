@@ -203,50 +203,50 @@ export default function Lombok() {
           Reasons Why Tourists are Flocking To Lombok
         </p>
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-10 lg:gap-10 justify-center w-full items-center py-4">
-          <div className="flex flex-row lg:flex-col gap-4 items-center justify-between">
+          <div className="flex flex-row lg:flex-col gap-4 items-center justify-center">
             <Waves className="w-16 h-16 text-yellow-600 stroke-1" />
             <p className="font-cinzel text-xl text-stone-900 hover:text-yellow-900 font-bold">
               Stunning Beaches
             </p>
           </div>
-          <div className="flex flex-row lg:flex-col gap-4 items-center justify-between">
+          <div className="flex flex-row lg:flex-col gap-4 items-center justify-center">
             <Mountain className="w-16 h-16 text-yellow-600 stroke-1" />
             <p className="font-cinzel text-xl text-stone-900 hover:text-yellow-900 font-bold">
               Hiking Trails
             </p>
           </div>
-          <div className="flex flex-row lg:flex-col gap-4 items-center justify-between">
+          <div className="flex flex-row lg:flex-col gap-4 items-center justify-center">
             <TreePalm className="w-16 h-16 text-yellow-600 stroke-1" />
             <p className="font-cinzel text-xl text-stone-900 hover:text-yellow-900 font-bold">
               Island Hoping
             </p>
           </div>
-          <div className="flex flex-row lg:flex-col gap-4 items-center justify-between">
+          <div className="flex flex-row lg:flex-col gap-4 items-center justify-center">
             <Bike className="w-16 h-16 text-yellow-600 stroke-1" />
             <p className="font-cinzel text-xl text-stone-900 hover:text-yellow-900 font-bold">
               MotoGP Racing
             </p>
           </div>
           <div className="lg:hidden grid grid-cols-1 gap-10 justify-center items-center py-4">
-            <div className="flex flex-row lg:flex-col gap-4 items-center justify-between">
+            <div className="flex flex-row lg:flex-col gap-4 items-center justify-center">
               <Fish className="w-16 h-16 text-yellow-600 stroke-1" />
               <p className="font-cinzel text-xl text-stone-900 hover:text-yellow-900 font-bold">
                 Snorkeling Spots
               </p>
             </div>
-            <div className="flex flex-row lg:flex-col gap-4 items-center justify-between">
+            <div className="flex flex-row lg:flex-col gap-4 items-center justify-center">
               <ImageIcon className="w-16 h-16 text-yellow-600 stroke-1" />
               <p className="font-cinzel text-xl text-stone-900 hover:text-yellow-900 font-bold">
                 Art Galleries
               </p>
             </div>
-            <div className="flex flex-row lg:flex-col gap-4 items-center justify-between">
+            <div className="flex flex-row lg:flex-col gap-4 items-center justify-center">
               <CircleDashed className="w-16 h-16 text-yellow-600 stroke-1" />
               <p className="font-cinzel text-xl text-stone-900 hover:text-yellow-900 font-bold">
                 Local Culture
               </p>
             </div>
-            <div className="flex flex-row lg:flex-col gap-4 items-center justify-between">
+            <div className="flex flex-row lg:flex-col gap-4 items-center justify-center">
               <LandPlot className="w-16 h-16 text-yellow-600 stroke-1" />
               <p className="font-cinzel text-xl text-stone-900 hover:text-yellow-900 font-bold">
                 Emaculate Golf Courses
