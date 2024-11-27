@@ -894,12 +894,9 @@ export default function Invest() {
                     loading="eager"
                     className="object-cover w-full h-full rounded-lg group-hover:scale-105 transition-all duration-300 group-hover:shadow-lg brightness-100 lg:brightness-90 group-hover:brightness-100"
                   />
-                  <Badge
-                    variant="default"
-                    className="text-md text-center text-white bg-yellow-900/80 absolute bottom-4 right-4"
-                  >
+                  <p className="text-sm font-sans opacity-70 italic">
                     {image.alt}
-                  </Badge>
+                  </p>
                 </CarouselItem>
               ))}
             </CarouselContent>
@@ -931,12 +928,15 @@ export default function Invest() {
                       loading="eager"
                       className="object-cover aspect-square min-w-full min-h-full rounded-lg"
                     />
-                    <Badge
+                    <p className="text-sm font-sans opacity-70 italic">
+                      {image.alt}
+                    </p>
+                    {/* <Badge
                       variant="default"
                       className="text-md text-center text-white bg-yellow-900/80 absolute bottom-4 right-4"
                     >
                       {image.alt}
-                    </Badge>
+                    </Badge> */}
                   </div>
                 </CarouselItem>
               ))}
@@ -955,7 +955,7 @@ export default function Invest() {
         </div>
       </div>
 
-      <div className=" flex flex-col gap-8 items-center justify-start w-full px-8 lg:px-32 py-10 lg:py-40 ">
+      <div className=" flex flex-col gap-8 items-center justify-start w-full px-8 lg:px-32 py-10 lg:py-10 ">
         <p className="text-yellow-900 text-center text-balance text-4xl lg:text-5xl font-extrabold">
           Current Progress
         </p>

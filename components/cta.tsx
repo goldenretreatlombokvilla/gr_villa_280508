@@ -108,6 +108,7 @@ export default function Cta() {
               type="text"
               name="name"
               id="name"
+              required
               value={data.name}
               onChange={(e) => setdata({ ...data, name: e.target.value })}
             />
@@ -116,6 +117,7 @@ export default function Cta() {
               type="email"
               name="email"
               id="email"
+              required
               value={data.email}
               onChange={(e) => setdata({ ...data, email: e.target.value })}
             />
