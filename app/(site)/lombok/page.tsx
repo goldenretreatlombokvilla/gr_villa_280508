@@ -95,7 +95,7 @@ const lombokft = [
   },
   {
     icon: LandPlot,
-    name: "Emaculate Golf Courses"
+    name: "Golf Courses"
   }
 ];
 
@@ -238,17 +238,19 @@ export default function Lombok() {
           Reasons Why Tourists are Flocking To Lombok
         </p>
 
-        {lombokft.map((item, index) => (
-          <div
-            key={index}
-            className="grid grid-cols-[70px_1fr] lg:flex-col gap-4 items-center justify-centers ring-2 w-full"
-          >
-            <item.icon className="w-16 h-16 text-yellow-600 stroke-1" />
-            <p className="font-cinzel text-lg lg:text-xl text-stone-900 hover:text-yellow-900 font-bold">
-              {item.name}
-            </p>
-          </div>
-        ))}
+        <div className="flex flex-col md:flex-row gap-8 lg:gap-y-10 flex-wrap items-center justify-center px-10 lg:px-20 w-full">
+          {lombokft.map((item, index) => (
+            <div
+              key={index}
+              className="flex md:flex-col flex-row flex-wrap gap-4 items-center justify-between w-full md:w-fit"
+            >
+              <item.icon className="w-16 h-16 text-yellow-600 stroke-1" />
+              <p className="font-cinzel text-lg lg:text-xl text-stone-900 hover:text-yellow-900 font-bold">
+                {item.name}
+              </p>
+            </div>
+          ))}
+        </div>
         {/* 
         <div className="lg:hidden grid grid-cols-1 md:grid-cols-2 col-span-2 gap-10 justify-center items-center lg:py-4">
           <div className="flex flex-row lg:flex-col gap-4 items-center justify-center">
@@ -397,10 +399,7 @@ export default function Lombok() {
             on the Island.
           </p>
           <div className="flex flex-row gap-4 items-end justify-start">
-            <Link
-              href="https://www.youtube.com/watch?v=4X_pxppWkSQ&t=66s"
-              target="_blank"
-            >
+            <Link href="https://youtu.be/O9P4PtEyivU" target="_blank">
               <Button
                 variant="default"
                 className="w-fit font-extrabold uppercase tracking-wider hover:drop-shadow-md"

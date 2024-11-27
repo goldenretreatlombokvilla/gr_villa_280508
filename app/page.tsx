@@ -146,7 +146,7 @@ export default function LandingPage() {
         </div>
         <div className="flex flex-col gap-4 lg:order-first h-full w-full">
           <Image
-            src="https://utfs.io/f/dJLJpH9Hrkw3s7ADYDdtfQDR1ujgW04bv39US6XzVqYOLryH"
+            src="/lombok/lombok.jpg"
             alt="Destination Lombok: A Rising Tourist Destination"
             width={500}
             height={200}
