@@ -130,7 +130,7 @@ export default function Nav() {
                       alt="Golden Retreat Lombok Villa"
                       width={1000}
                       height={500}
-                      className="max-w-52 max-h-52 lg:min-w-60 lg:min-h-60 object-contain drop-shadow-xl -my-10 lg:-ml-8 -ml-4"
+                      className="max-w-52 max-h-52 lg:min-w-60 lg:min-h-60 object-contain drop-shadow-xl -my-10 lg:-ml-8 -ml-6"
                     />
                   </Link>
                 </SheetClose>

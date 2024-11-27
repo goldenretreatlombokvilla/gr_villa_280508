@@ -257,93 +257,41 @@ export default function Invest() {
                     </p>
                   </div>
                   <div className="flex flex-col gap-4 items-center justify-start md:col-span-2 pb-10 lg:pb-20">
-                    <Image
-                      src="https://utfs.io/f/dJLJpH9Hrkw3uuft60bSOoWvunMekl0ACfLj2rIG8cQDzZmT"
-                      alt="2 Bedroom Layout Plan"
-                      width={500}
-                      height={200}
-                      className="w-full h-full object-contain rounded-lg hover:shadow-lg hover:scale-105 trasition-all duration-300"
-                    />
-                    <p className="text-sm font-sans opacity-70 italic">
-                      Superior Villa Layout Plan
-                    </p>
+                    <Dialog>
+                      <DialogTrigger asChild>
+                        <div className="flex flex-col gap-2 items-center">
+                          <Image
+                            src="https://utfs.io/f/dJLJpH9Hrkw3uuft60bSOoWvunMekl0ACfLj2rIG8cQDzZmT"
+                            alt="2 Bedroom Layout Plan"
+                            width={500}
+                            height={200}
+                            className="w-full h-full object-contain rounded-lg hover:shadow-lg hover:scale-105 trasition-all duration-300"
+                          />
+                          <p className="text-sm font-sans opacity-70 italic">
+                            Superior Villa Layout Plan
+                          </p>
+                        </div>
+                      </DialogTrigger>
+                      <DialogPortal>
+                        <DialogContent className=" border-none shadow-none w-full h-full items-center justify-center bg-transparent">
+                          <DialogHeader>
+                            <DialogTitle className="sr-only">
+                              Official Siteplan for Superior Villa
+                            </DialogTitle>
+                            <div className="flex flex-col gap-2 w-full h-full items-center justify-center">
+                              <Image
+                                src="https://utfs.io/f/dJLJpH9Hrkw3uuft60bSOoWvunMekl0ACfLj2rIG8cQDzZmT"
+                                alt="2 Bedroom Layout Plan"
+                                width={500}
+                                height={200}
+                                className="w-full h-full object-contain rounded-lg"
+                              />
+                            </div>
+                          </DialogHeader>
+                        </DialogContent>
+                      </DialogPortal>
+                    </Dialog>
                   </div>
-
-                  {/*  <div className="flex flex-row gap-4 items-center justify-start">
-                    <House className="min-w-8 min-h-8 lg:min-h-12 lg:min-w-12 stroke-1 text-yellow-900 opacity-80" />
-                    <div className="flex flex-col gap-0 items-start">
-                      <p className="font-semibold font-cinzel text-lg text-nowrap">
-                        2 Bed 2 Bath
-                      </p>
-                      <p className="text-sm font-sans opacity-50">
-                        Single Storey
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex flex-row gap-4 items-center justify-start">
-                    <Grid2X2 className="min-w-8 min-h-8 lg:min-h-12 lg:min-w-12 stroke-1 text-yellow-900 opacity-80" />
-                    <div className="flex flex-col gap-0 items-start">
-                      <p className="font-semibold font-cinzel text-lg text-nowrap">
-                        150 sqm{" "}
-                        <span className="text-xs italic font-normal font-sans">
-                          (1,615 sqft)
-                        </span>
-                      </p>
-                      <p className="text-sm font-sans opacity-50">
-                        Parcel Area
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="flex flex-row gap-4 items-center justify-start">
-                    <Scan className="min-w-8 min-h-8 lg:min-h-12 lg:min-w-12 stroke-1 text-yellow-900 opacity-80" />
-                    <div className="flex flex-col gap-0 items-start">
-                      <p className="font-semibold font-cinzel text-lg text-nowrap">
-                        103 sqm{" "}
-                        <span className="text-xs italic font-normal font-sans">
-                          (1,108 sqft)
-                        </span>
-                      </p>
-                      <p className="text-sm font-sans opacity-50">
-                        {" "}
-                        Built-Up Area
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex flex-row gap-4 items-center justify-start">
-                    <Waves className="min-w-8 min-h-8 lg:min-h-12 lg:min-w-12 stroke-1 text-yellow-900 opacity-80" />
-                    <div className="flex flex-col gap-0 items-start">
-                      <p className="font-semibold font-cinzel text-lg text-nowrap">
-                        32.5 sqm{" "}
-                        <span className="text-xs italic font-normal font-sans">
-                          (350 sqft)
-                        </span>{" "}
-                      </p>
-                      <p className="text-sm font-sans opacity-50">Pool Area</p>
-                    </div>
-                  </div>
-                  <div className="flex flex-row gap-4 items-center justify-start">
-                    <KeyRound className="min-w-8 min-h-8 lg:min-h-12 lg:min-w-12 stroke-1 text-yellow-900 opacity-80" />
-                    <div className="flex flex-col gap-0 items-start">
-                      <p className="font-semibold font-cinzel text-lg text-nowrap">
-                        Turnkey Villa
-                      </p>
-                      <p className="text-sm font-sans opacity-50">
-                        Fully Furnished
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex flex-row gap-4 items-center justify-start">
-                    <UtensilsCrossed className="min-w-8 min-h-8 lg:min-h-12 lg:min-w-12 stroke-1 text-yellow-900 opacity-80" />
-                    <div className="flex flex-col gap-0 items-start">
-                      <p className="font-semibold font-cinzel text-lg text-nowrap">
-                        Kitchen
-                      </p>
-                      <p className="text-sm font-sans opacity-50">
-                        Fully Functional
-                      </p>
-                    </div>
-                  </div> */}
                 </div>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 gap-y-10 items-center justify-center pb-20 ">
@@ -451,16 +399,40 @@ export default function Invest() {
                     </p>
                   </div>
                   <div className="flex flex-col gap-4 items-center justify-start md:col-span-2 pb-10 lg:pb-20">
-                    <Image
-                      src="https://utfs.io/f/dJLJpH9Hrkw3fFMByQhLDqapUrcI5X2oh8B9JvKe1ET4tzCf"
-                      alt="3 Bedroom Layout Plan"
-                      width={500}
-                      height={200}
-                      className="w-full h-full object-contain rounded-lg hover:shadow-lg hover:scale-105 trasition-all duration-300"
-                    />
-                    <p className="text-sm font-sans opacity-70 italic">
-                      Premium Villa Layout Plan
-                    </p>
+                    <Dialog>
+                      <DialogTrigger asChild>
+                        <div className="flex flex-col gap-2 items-center">
+                          <Image
+                            src="https://utfs.io/f/dJLJpH9Hrkw3fFMByQhLDqapUrcI5X2oh8B9JvKe1ET4tzCf"
+                            alt="3 Bedroom Layout Plan"
+                            width={500}
+                            height={200}
+                            className="w-full h-full object-contain rounded-lg hover:shadow-lg hover:scale-105 trasition-all duration-300"
+                          />
+                          <p className="text-sm font-sans opacity-70 italic">
+                            Premium Villa Layout Plan
+                          </p>
+                        </div>
+                      </DialogTrigger>
+                      <DialogPortal>
+                        <DialogContent className=" border-none shadow-none w-full h-full items-center justify-center bg-transparent">
+                          <DialogHeader>
+                            <DialogTitle className="sr-only">
+                              Official Siteplan for Golden Retreat Lombok Villa
+                            </DialogTitle>
+                            <div className="flex flex-col gap-2 w-full items-center justify-center">
+                              <Image
+                                src="https://utfs.io/f/dJLJpH9Hrkw3fFMByQhLDqapUrcI5X2oh8B9JvKe1ET4tzCf"
+                                alt="3 Bedroom Layout Plan"
+                                width={500}
+                                height={200}
+                                className="w-full h-full object-contain rounded-lg"
+                              />
+                            </div>
+                          </DialogHeader>
+                        </DialogContent>
+                      </DialogPortal>
+                    </Dialog>
                   </div>
 
                   {/*  <div className="flex flex-row gap-4 items-center justify-start">
@@ -981,6 +953,25 @@ export default function Invest() {
             </div>
           </div>
         </div>
+      </div>
+
+      <div className=" flex flex-col gap-8 items-center justify-start w-full px-8 lg:px-32 py-10 lg:py-40 ">
+        <p className="text-yellow-900 text-center text-balance text-4xl lg:text-5xl font-extrabold">
+          Current Progress
+        </p>
+        <video
+          className="w-auto h-full md:h-[70vh] rounded-lg"
+          width="1080"
+          height="1920"
+          controls
+          preload="none"
+          poster="https://utfs.io/f/dJLJpH9Hrkw3aINp6gzVNOG2SrpjuDZU3Iwen5yqf7ETJbki"
+        >
+          <source
+            src="https://utfs.io/f/dJLJpH9Hrkw3HSjkmUyo47KGLVT5JMX0nbiCWRIZyzPwUDrc"
+            type="video/mp4"
+          />
+        </video>
       </div>
 
       {/*

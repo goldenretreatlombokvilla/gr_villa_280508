@@ -53,11 +53,11 @@ export default function LandingPage() {
             className="hidden lg:w-96 w-40 h-fit lg:h-fit object-contain mb-20 drop-shadow-xl"
           /> */}
           <div className="flex flex-col items-center lg:justify-around justify-center gap-0 lg:h-screen h-[100vh] py-20 lg:py-0 ">
-            <p className="uppercase font-serif text-lg lg:text-2xl tracking-widest">
+            <p className="uppercase font-sans text-lg lg:text-2xl tracking-[0.5em]">
               Welcome to
             </p>
             <Image
-              src="https://utfs.io/f/dJLJpH9Hrkw3NY5ZlAWU4OPIEwVFZ5iQqGhebHWv0sAKrnSo"
+              src="https://utfs.io/f/dJLJpH9Hrkw33GmsrrpTdrJVe6Xx1zuEqfmI3Dn2OagRU8op"
               alt="Golden Retreat Lombok Villas"
               width={2432}
               height={1071}
@@ -175,7 +175,7 @@ export default function LandingPage() {
                 variant="default"
                 className="w-fit font-extrabold uppercase tracking-wider hover:drop-shadow-md"
               >
-                Investment Opportunity
+                Find Out More
               </Button>
             </Link>
           </div>
@@ -205,7 +205,7 @@ export default function LandingPage() {
           height={200}
           className="flex lg:hidden w-full h-auto aspect-video object-cover rounded-lg"
         />
-        <Image
+        {/* <Image
           src="https://utfs.io/f/dJLJpH9Hrkw3fmFEKjqhLDqapUrcI5X2oh8B9JvKe1ET4tzC"
           alt="Golden Retreat Lombok Villa"
           width={500}
@@ -226,7 +226,7 @@ export default function LandingPage() {
           Spacious living room with high-end finishings, wide screen TV, bar and
           more.{" "}
         </div>
-        <div className="flex flex-row gap-4 lg:col-span-2 items-center justify-end pt-8 "></div>
+        <div className="flex flex-row gap-4 lg:col-span-2 items-center justify-end pt-8 "></div> */}
       </div>
 
       <div className="flex flex-col gap-12 items-center justify-center w-full min-h-screen px-8 lg:px-20 xl:px-52 py-20 bg-yellow-800/10">
@@ -258,7 +258,7 @@ export default function LandingPage() {
                         <p className="text-sm font-sans opacity-80">
                           starting at{" "}
                         </p>
-                        <Badge variant={"default"}>$180,000</Badge>
+                        <Badge variant={"default"}>USD 180,000</Badge>
                       </div>
                       <Button variant="ghost" size="icon">
                         <ArrowRightCircle className="min-w-6 min-h-6 stroke-1 text-yellow-600 group-hover:text-white group-hover:fill-yellow-800 group-hover:-rotate-45 transition-all duration-500 ease-in-out group-hover:scale-110" />
@@ -296,7 +296,7 @@ export default function LandingPage() {
                         <p className="text-sm font-sans opacity-80">
                           starting at{" "}
                         </p>
-                        <Badge variant={"default"}>$200,000</Badge>
+                        <Badge variant={"default"}>USD 200,000</Badge>
                       </div>
                       <Button variant="ghost" size="icon">
                         <ArrowRightCircle className="min-w-6 min-h-6 stroke-1 text-yellow-600 group-hover:text-white group-hover:fill-yellow-800 group-hover:-rotate-45 transition-all duration-500 ease-in-out group-hover:scale-110" />
@@ -312,7 +312,7 @@ export default function LandingPage() {
 
       <div className="flex flex-col gap-8 items-center justify-center w-full px-8 lg:px-32 py-10 lg:py-40">
         <p className="text-4xl lg:text-5xl font-cinzel font-extrabold text-yellow-900">
-          In House Facilities
+          In-House Facilities
         </p>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-12 w-full">
           <Card className="flex flex-col w-full lg:p-0 bg-transparent shadow-none border-none">
@@ -330,9 +330,10 @@ export default function LandingPage() {
                     Restaurant, Bar & Lounge{" "}
                   </p>
                   <p className="text-md font-sans">
-                    Dine in luxury in our 5 star restaurant with a delicious
-                    variety of dishes, both local and international cuisines, or
-                    spend the evening in our private lounge.
+                    Dine in our 5-star restaurant, mouth-watering local and
+                    international dishes. Spending time in our exclusive lounge
+                    is the perfect way to socialise with fellow residents and
+                    travellers.
                   </p>
                 </div>
               </div>
@@ -354,9 +355,9 @@ export default function LandingPage() {
                     Wellness Spa & Gymnasium
                   </p>
                   <p className="text-md font-sans">
-                    Never miss a beat with our on-site gymnasium equipped with
-                    your favourite machines and treat yourself to a message in
-                    our local 5-star spa.
+                    Never miss a beat with our exclusive gymnasium, equipped
+                    with your favourite machines. Or treat yourself to a message
+                    in our local 5-star spa.
                   </p>
                 </div>
               </div>
@@ -378,8 +379,8 @@ export default function LandingPage() {
                     Serenity Garden & Koi Pond
                   </p>
                   <p className="text-md font-sans">
-                    Centre body, mind and spirit with the sound of water in our
-                    serenity garden.
+                    Centre body, mind and spirit with the tranquil sound of
+                    flowing water in our serenity garden.
                   </p>
                 </div>
               </div>

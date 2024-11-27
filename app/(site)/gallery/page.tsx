@@ -1,4 +1,12 @@
 import Cta from "@/components/cta";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogPortal,
+  DialogTitle,
+  DialogTrigger
+} from "@/components/ui/dialog";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -78,14 +86,46 @@ export default function Gallery() {
             key={item.title}
             className="flex flex-col gap-4 items-center justify-center lg:first:col-span-3"
           >
-            <Image
+            <Dialog>
+              <DialogTrigger asChild>
+                <div className="flex flex-col gap-2 items-center">
+                  <Image
+                    src={item.image}
+                    alt="Golden Retreat Lombok Villa"
+                    width={500}
+                    height={200}
+                    className="w-full h-auto aspect-video object-cover rounded-lg hover:shadow-lg hover:scale-105 trasition-all duration-300"
+                  />
+                  <p className="text-sm font-sans opacity-70 italic">
+                    {item.title}
+                  </p>
+                </div>
+              </DialogTrigger>
+              <DialogPortal>
+                <DialogContent className=" border-none shadow-none w-full h-full items-center justify-center bg-transparent">
+                  <DialogHeader>
+                    <DialogTitle className="sr-only">{item.title}</DialogTitle>
+                    <div className="flex flex-col gap-2 w-full items-center justify-center">
+                      <Image
+                        src={item.image}
+                        alt="Golden Retreat Lombok Villa"
+                        width={1000}
+                        height={500}
+                        className="min-w-full min-h-full aspect-video object-cover rounded-lg"
+                      />
+                    </div>
+                  </DialogHeader>
+                </DialogContent>
+              </DialogPortal>
+            </Dialog>
+            {/* <Image
               src={item.image}
               alt="Golden Retreat Lombok Villa"
               width={500}
               height={200}
               className="w-full h-auto aspect-video object-cover rounded-lg hover:shadow-lg hover:scale-105 trasition-all duration-300"
             />
-            <p className="text-sm font-sans opacity-70 italic">{item.title}</p>
+            <p className="text-sm font-sans opacity-70 italic">{item.title}</p> */}
           </div>
         ))}
       </div>

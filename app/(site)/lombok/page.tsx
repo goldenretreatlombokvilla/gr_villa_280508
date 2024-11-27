@@ -199,63 +199,65 @@ export default function Lombok() {
       </div>
 
       <div className="flex flex-col gap-8 items-center justify-start w-full  px-8 py-6 lg:pt-20 lg:py-20 max-w-6xl mx-auto">
-        <p className="font-cinzel text-center text-5xl font-bold text-yellow-900">
+        <p className="font-cinzel text-center text-5xl font-bold text-yellow-900 text-balance">
           Reasons Why Tourists are Flocking To Lombok
         </p>
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-10 lg:gap-10 justify-center w-full items-center py-4">
+
+        <div className="flex flex-col md:grid md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-10 justify-center w-full items-center py-4">
           <div className="flex flex-row lg:flex-col gap-4 items-center justify-center">
             <Waves className="w-16 h-16 text-yellow-600 stroke-1" />
-            <p className="font-cinzel text-xl text-stone-900 hover:text-yellow-900 font-bold">
+            <p className="font-cinzel text-lg lg:text-xl text-stone-900 hover:text-yellow-900 font-bold">
               Stunning Beaches
             </p>
           </div>
           <div className="flex flex-row lg:flex-col gap-4 items-center justify-center">
             <Mountain className="w-16 h-16 text-yellow-600 stroke-1" />
-            <p className="font-cinzel text-xl text-stone-900 hover:text-yellow-900 font-bold">
+            <p className="font-cinzel text-lg lg:text-xl text-stone-900 hover:text-yellow-900 font-bold">
               Hiking Trails
             </p>
           </div>
           <div className="flex flex-row lg:flex-col gap-4 items-center justify-center">
             <TreePalm className="w-16 h-16 text-yellow-600 stroke-1" />
-            <p className="font-cinzel text-xl text-stone-900 hover:text-yellow-900 font-bold">
+            <p className="font-cinzel text-lg lg:text-xl text-stone-900 hover:text-yellow-900 font-bold">
               Island Hoping
             </p>
           </div>
           <div className="flex flex-row lg:flex-col gap-4 items-center justify-center">
             <Bike className="w-16 h-16 text-yellow-600 stroke-1" />
-            <p className="font-cinzel text-xl text-stone-900 hover:text-yellow-900 font-bold">
+            <p className="font-cinzel text-lg lg:text-xl text-stone-900 hover:text-yellow-900 font-bold">
               MotoGP Racing
             </p>
           </div>
-          <div className="lg:hidden grid grid-cols-1 gap-10 justify-center items-center py-4">
+
+          <div className="lg:hidden grid grid-cols-1 md:grid-cols-2 col-span-2 gap-10 justify-center items-center lg:py-4">
             <div className="flex flex-row lg:flex-col gap-4 items-center justify-center">
               <Fish className="w-16 h-16 text-yellow-600 stroke-1" />
-              <p className="font-cinzel text-xl text-stone-900 hover:text-yellow-900 font-bold">
+              <p className="font-cinzel text-lg lg:text-xl text-stone-900 hover:text-yellow-900 font-bold">
                 Snorkeling Spots
               </p>
             </div>
             <div className="flex flex-row lg:flex-col gap-4 items-center justify-center">
               <ImageIcon className="w-16 h-16 text-yellow-600 stroke-1" />
-              <p className="font-cinzel text-xl text-stone-900 hover:text-yellow-900 font-bold">
+              <p className="font-cinzel text-lg lg:text-xl text-stone-900 hover:text-yellow-900 font-bold">
                 Art Galleries
               </p>
             </div>
             <div className="flex flex-row lg:flex-col gap-4 items-center justify-center">
               <CircleDashed className="w-16 h-16 text-yellow-600 stroke-1" />
-              <p className="font-cinzel text-xl text-stone-900 hover:text-yellow-900 font-bold">
+              <p className="font-cinzel text-lg lg:text-xl text-stone-900 hover:text-yellow-900 font-bold">
                 Local Culture
               </p>
             </div>
             <div className="flex flex-row lg:flex-col gap-4 items-center justify-center">
               <LandPlot className="w-16 h-16 text-yellow-600 stroke-1" />
-              <p className="font-cinzel text-xl text-stone-900 hover:text-yellow-900 font-bold">
+              <p className="font-cinzel text-lg lg:text-xl text-stone-900 hover:text-yellow-900 font-bold text-center text-balance">
                 Emaculate Golf Courses
               </p>
             </div>
           </div>
         </div>
 
-        <div className="lg:grid grid-cols-1 lg:grid-cols-4 gap-10 justify-center items-center py-4 hidden">
+        <div className="lg:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 justify-center items-center py-4 hidden">
           <div className="flex flex-row lg:flex-col gap-4 items-center">
             <Fish className="w-16 h-16 text-yellow-600 stroke-1" />
             <p className="font-cinzel text-xl text-stone-900 hover:text-yellow-900 font-bold">
@@ -284,7 +286,7 @@ export default function Lombok() {
       </div>
 
       <div className="flex flex-col gap-4 items-center px-8 py-6 lg:pt-20 lg:py-20 max-w-6xl mx-auto ">
-        <p className="font-cinzel text-center text-5xl font-bold text-yellow-900">
+        <p className="font-cinzel text-center text-5xl font-bold text-balance text-yellow-900">
           Expedia: Vacation Travel Guide
         </p>
         <iframe
@@ -305,12 +307,16 @@ export default function Lombok() {
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-x-14 items-center justify-center w-full px-8 lg:px-52 py-10 mt-10 lg:py-40 bg-yellow-900/10">
         <div className="flex flex-col gap-4">
+          <Image
+            src="/mgp_logo.svg"
+            alt="MotoGP Logo"
+            width={500}
+            height={500}
+            className="w-full h-auto object-contain"
+          />
           <p className="font-cinzel text-xl lg:text-2xl font-extrabold tracking-wide flex flex-col uppercase text-yellow-900/50">
-            Mandalika 2024
+            Pertamina Mandalika Circuit
           </p>
-          <h2 className="text-5xl lg:text-7xl font-cinzel font-extrabold text-yellow-900">
-            MotoGP Premier
-          </h2>
           <p className="text-md font-sans text-balance">
             Over 121,252 people attended the 2024 MotoGP race at the Mandalika
             International Circuit in Lombok, Indonesia.
@@ -323,7 +329,7 @@ export default function Lombok() {
           </p>
           <div className="flex flex-row gap-4 items-end justify-start">
             <Link
-              href="/https://www.youtube.com/watch?v=4X_pxppWkSQ&t=66s"
+              href="https://www.youtube.com/watch?v=4X_pxppWkSQ&t=66s"
               target="_blank"
             >
               <Button

@@ -403,11 +403,18 @@ export default function Invest() {
           </div>
         </div>
 
-        <div className="lg:grid flex flex-col lg:grid-cols-2 gap-8 items-center justify-start w-full px-8 lg:px-32 py-10 lg:py-40 ">
+        <div className="flex flex-col gap-8 items-center justify-start w-full px-8 lg:px-32 py-10 lg:py-40 ">
           <p className="text-yellow-900 text-center text-balance text-4xl lg:text-5xl font-extrabold">
             Current Progress
           </p>
-          <video width="1080" height="1920" controls preload="none">
+          <video
+            className="w-auto h-full md:h-[70vh] rounded-lg"
+            width="1080"
+            height="1920"
+            controls
+            preload="none"
+            poster="https://utfs.io/f/dJLJpH9Hrkw3aINp6gzVNOG2SrpjuDZU3Iwen5yqf7ETJbki"
+          >
             <source
               src="https://utfs.io/f/dJLJpH9Hrkw3HSjkmUyo47KGLVT5JMX0nbiCWRIZyzPwUDrc"
               type="video/mp4"
@@ -455,7 +462,7 @@ export default function Invest() {
                 <div className="flex flex-row lg:flex-col gap-4 lg:gap-10 w-full p-0 items-center lg:items-start group">
                   <FolderCheck className="min-w-20 min-h-20 lg:w-24 lg:h-24 fill-yellow-700 group-hover:fill-yellow-600 stroke-1 lg:-ml-12" />
                   <p className="text-md  font-sans text-white border-l-2 border-yellow-600/50 pl-8 ">
-                    We will lend assistance at every step of the way. Including
+                    We will lend assistance every step of the way. Including
                     long-stay visa applications where required for foreign
                     purchasers.
                   </p>
