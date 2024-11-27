@@ -63,10 +63,11 @@ export default function Cta() {
         <p className="text-5xl lg:text-7xl font-extrabold text-yellow-900 font-cinzel">
           Contact <br className="hidden lg:block"></br>Form
         </p>
+        <p className="font-cinzel text-xl lg:text-2xl font-extrabold tracking-wide flex flex-col uppercase text-yellow-900/50">
+          Have Questions?
+        </p>
         <p className="text-sm font-sans text-balance">
-          Fill out this form and we will get back to you as soon as possible. If
-          you have any questions, please don't hesitate to contact us on any of
-          our social media platforms.
+          Speak to a member of our in-house team of professionals today.
         </p>
 
         <div className="hidden lg:flex flex-row py-20 items-end justify-start gap-8">

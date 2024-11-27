@@ -259,7 +259,7 @@ export default function Invest() {
                   <div className="flex flex-col gap-4 items-center justify-start md:col-span-2 pb-10 lg:pb-20">
                     <Dialog>
                       <DialogTrigger asChild>
-                        <div className="flex flex-col gap-2 items-center">
+                        <div className="flex flex-col gap-2 items-center py-10 lg:py-0 cursor-pointer">
                           <Image
                             src="https://utfs.io/f/dJLJpH9Hrkw3uuft60bSOoWvunMekl0ACfLj2rIG8cQDzZmT"
                             alt="2 Bedroom Layout Plan"
@@ -401,7 +401,7 @@ export default function Invest() {
                   <div className="flex flex-col gap-4 items-center justify-start md:col-span-2 pb-10 lg:pb-20">
                     <Dialog>
                       <DialogTrigger asChild>
-                        <div className="flex flex-col gap-2 items-center">
+                        <div className="flex flex-col gap-2 items-center py-10 lg:py-0  cursor-pointer">
                           <Image
                             src="https://utfs.io/f/dJLJpH9Hrkw3fFMByQhLDqapUrcI5X2oh8B9JvKe1ET4tzCf"
                             alt="3 Bedroom Layout Plan"

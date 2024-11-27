@@ -28,9 +28,12 @@ export default function About() {
           </h1>
         </div>
 
-        <div className="flex flex-col w-full gap-4 items-start md:items-center justify-center px-8 py-20 md:py-50 lg:py-52 max-w-6xl mx-auto">
-          <p className="font-cinzel text-xl lg:text-2xl font-extrabold tracking-wide flex flex-col text-yellow-800/50 uppercase ">
-            Jointly Developed By
+        <div className="flex flex-col w-full gap-4 items-start md:items-center justify-center px-8 py-20 md:py-52 lg:py-52 max-w-6xl mx-auto">
+          <p className="font-cinzel text-3xl lg:text-3xl font-extrabold tracking-wide flex flex-col text-yellow-900 uppercase text-balance">
+            Golden Retreat Lombok Villas
+          </p>
+          <p className="font-cinzel text-xl lg:text-2xl font-bold tracking-wide flex flex-col text-yellow-800/50 uppercase text-balance">
+            is Jointly Developed By
           </p>
           <p className="text-4xl md:text-5xl lg:text-6xl font-cinzel font-extrabold md:text-center text-yellow-900">
             PT Propil Land Development
@@ -45,9 +48,9 @@ export default function About() {
 
         <div className="flex flex-col gap-4 items-center justify-center w-full px-8 py-10 lg:pt-20 lg:py-0 max-w-6xl mx-auto">
           <div className="flex flex-col gap-4 items-start justify-center">
-            {/* <p className="font-cinzel text-xl lg:text-2xl font-extrabold tracking-wide flex flex-col text-yellow-800/50 uppercase ">
+            <p className="font-cinzel text-xl lg:text-2xl font-extrabold tracking-wide flex flex-col text-yellow-800/50 uppercase ">
               Developer Profile
-            </p> */}
+            </p>
             <p className="text-5xl lg:text-6xl font-cinzel font-extrabold text-yellow-900">
               PT Propil Land Development
             </p>
@@ -187,23 +190,13 @@ export default function About() {
               </div>
             </div>
             <div className="grid grid-cols-2 gap-10 items-center justify-center lg:text-center py-32">
+              <p className="font-cinzel text-xl lg:text-2xl font-extrabold tracking-wide col-span-2 text-yellow-800/50 uppercase text-center -mb-10">
+                Management Team
+              </p>
               <p className="font-cinzel text-3xl lg:text-5xl font-extrabold flex flex-col text-yellow-900 uppercase  col-span-2 text-center">
                 Metropalis Hospitality
               </p>
-              <p className="text-md font-sans col-span-2 text-pretty">
-                Metropalis Hospitality combines a blend of technical skills,
-                operational expertise as well as creative vision for the 21st
-                century. To give unique authentic hospitality services by making
-                a difference in the lives of the people we meet and greet every
-                day.
-              </p>
-              <p className="text-md font-sans text-pretty col-span-2">
-                The team is equipped to provide pre-opening operational support,
-                sales and marketing services, from their experiences working
-                with several international hospitality chains; Accor, Sheraton,
-                Holiday Inn, Best Western at Corporate, Regional, and Hotel
-                level in Asia.
-              </p>
+
               <div className="flex flex-col col-span-2 lg:col-span-1 gap-4 items-center justify-center">
                 <Image
                   src="https://utfs.io/f/dJLJpH9Hrkw3D8zwK5IsYNhnRFiP9UlSuprcb35Jy4X12x7m"
@@ -215,7 +208,7 @@ export default function About() {
                 <p className="font-cinzel text-3xl lg:text-4xl font-extrabold flex flex-col text-yellow-900 uppercase ">
                   Glenn de Souza
                 </p>
-                <p className="font-sans text-xl lg:text-2xl flex flex-col text-yellow-800/50 -mt-2">
+                <p className="font-sans text-xl lg:text-2xl flex flex-col text-yellow-800/50 -mt-4">
                   Chief Executive Officer (CEO)
                 </p>
               </div>
@@ -230,10 +223,25 @@ export default function About() {
                 <p className="font-cinzel text-3xl lg:text-4xl font-extrabold flex flex-col text-yellow-900 uppercase ">
                   Dominique de Souza
                 </p>
-                <p className="font-sans text-xl lg:text-2xl flex flex-col text-yellow-800/50 -mt-2">
+                <p className="font-sans text-xl lg:text-2xl flex flex-col text-yellow-800/50 -mt-4">
                   Director of Operations
                 </p>
               </div>
+
+              <p className="text-md font-sans col-span-2 text-pretty">
+                Metropalis Hospitality combines a blend of technical skills,
+                operational expertise as well as creative vision for the 21st
+                century. To give unique authentic hospitality services by making
+                a difference in the lives of the people we meet and greet every
+                day.
+              </p>
+              <p className="text-md font-sans text-pretty col-span-2">
+                The team is equipped to provide pre-opening operational support,
+                sales and marketing services, from their experiences working
+                with several international hospitality chains; Accor, Sheraton,
+                Holiday Inn, Best Western at Corporate, Regional, and Hotel
+                level in Asia.
+              </p>
             </div>
           </div>
         </div>

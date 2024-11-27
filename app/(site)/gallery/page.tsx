@@ -88,7 +88,7 @@ export default function Gallery() {
           >
             <Dialog>
               <DialogTrigger asChild>
-                <div className="flex flex-col gap-2 items-center">
+                <div className="flex flex-col gap-2 items-center cursor-pointer">
                   <Image
                     src={item.image}
                     alt="Golden Retreat Lombok Villa"

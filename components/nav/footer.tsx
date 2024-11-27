@@ -150,7 +150,8 @@ export default function Footer() {
           <p className="text-sm font-sans text-balance">
             A property development offering luxurious Villas set in the heart of
             Lombok’s best attractions. With private pools, and exquisite
-            interiors, designed for the ultimate in luxury island living.
+            interiors, each Villa is designed for the ultimate in luxury island
+            living.
           </p>
         </div>
         <div className="flex flex-col gap-2 ">

@@ -330,10 +330,10 @@ export default function LandingPage() {
                     Restaurant, Bar & Lounge{" "}
                   </p>
                   <p className="text-md font-sans">
-                    Dine in our 5-star restaurant, mouth-watering local and
-                    international dishes. Spending time in our exclusive lounge
-                    is the perfect way to socialise with fellow residents and
-                    travellers.
+                    Dine in our 5-star restaurant, serving mouth-watering local
+                    and international dishes. Spending time in our exclusive
+                    lounge is the perfect way to socialise with fellow residents
+                    and travellers.
                   </p>
                 </div>
               </div>
@@ -357,7 +357,7 @@ export default function LandingPage() {
                   <p className="text-md font-sans">
                     Never miss a beat with our exclusive gymnasium, equipped
                     with your favourite machines. Or treat yourself to a message
-                    in our local 5-star spa.
+                    in our very own local 5-star spa.
                   </p>
                 </div>
               </div>
