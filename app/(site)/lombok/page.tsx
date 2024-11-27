@@ -64,6 +64,41 @@ const villaImages = [
   }
 ];
 
+const lombokft = [
+  {
+    icon: Waves,
+    name: "Stunning Beaches"
+  },
+  {
+    icon: Mountain,
+    name: "Hiking Trails"
+  },
+  {
+    icon: TreePalm,
+    name: "Island Hoping"
+  },
+  {
+    icon: Bike,
+    name: "MotoGP Racing"
+  },
+  {
+    icon: Fish,
+    name: "Snorkeling Spots"
+  },
+  {
+    icon: ImageIcon,
+    name: "Art Galleries"
+  },
+  {
+    icon: CircleDashed,
+    name: "Local Culture"
+  },
+  {
+    icon: LandPlot,
+    name: "Emaculate Golf Courses"
+  }
+];
+
 export default function Lombok() {
   return (
     <main>
@@ -203,7 +238,19 @@ export default function Lombok() {
           Reasons Why Tourists are Flocking To Lombok
         </p>
 
-        <div className="flex flex-col md:grid md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-10 justify-center w-full items-center py-4">
+        {lombokft.map((item, index) => (
+          <div
+            key={index}
+            className="grid grid-cols-[70px_1fr] lg:flex-col gap-4 items-center justify-centers ring-2 w-full"
+          >
+            <item.icon className="w-16 h-16 text-yellow-600 stroke-1" />
+            <p className="font-cinzel text-lg lg:text-xl text-stone-900 hover:text-yellow-900 font-bold">
+              {item.name}
+            </p>
+          </div>
+        ))}
+        {/* 
+        <div className="lg:hidden grid grid-cols-1 md:grid-cols-2 col-span-2 gap-10 justify-center items-center lg:py-4">
           <div className="flex flex-row lg:flex-col gap-4 items-center justify-center">
             <Waves className="w-16 h-16 text-yellow-600 stroke-1" />
             <p className="font-cinzel text-lg lg:text-xl text-stone-900 hover:text-yellow-900 font-bold">
@@ -229,31 +276,53 @@ export default function Lombok() {
             </p>
           </div>
 
-          <div className="lg:hidden grid grid-cols-1 md:grid-cols-2 col-span-2 gap-10 justify-center items-center lg:py-4">
-            <div className="flex flex-row lg:flex-col gap-4 items-center justify-center">
-              <Fish className="w-16 h-16 text-yellow-600 stroke-1" />
-              <p className="font-cinzel text-lg lg:text-xl text-stone-900 hover:text-yellow-900 font-bold">
-                Snorkeling Spots
-              </p>
-            </div>
-            <div className="flex flex-row lg:flex-col gap-4 items-center justify-center">
-              <ImageIcon className="w-16 h-16 text-yellow-600 stroke-1" />
-              <p className="font-cinzel text-lg lg:text-xl text-stone-900 hover:text-yellow-900 font-bold">
-                Art Galleries
-              </p>
-            </div>
-            <div className="flex flex-row lg:flex-col gap-4 items-center justify-center">
-              <CircleDashed className="w-16 h-16 text-yellow-600 stroke-1" />
-              <p className="font-cinzel text-lg lg:text-xl text-stone-900 hover:text-yellow-900 font-bold">
-                Local Culture
-              </p>
-            </div>
-            <div className="flex flex-row lg:flex-col gap-4 items-center justify-center">
-              <LandPlot className="w-16 h-16 text-yellow-600 stroke-1" />
-              <p className="font-cinzel text-lg lg:text-xl text-stone-900 hover:text-yellow-900 font-bold text-center text-balance">
-                Emaculate Golf Courses
-              </p>
-            </div>
+          <div className="flex flex-row lg:flex-col gap-4 items-center justify-center">
+            <Waves className="w-16 h-16 text-yellow-600 stroke-1" />
+            <p className="font-cinzel text-lg lg:text-xl text-stone-900 hover:text-yellow-900 font-bold">
+              Stunning Beaches
+            </p>
+          </div>
+          <div className="flex flex-row lg:flex-col gap-4 items-center justify-center">
+            <Mountain className="w-16 h-16 text-yellow-600 stroke-1" />
+            <p className="font-cinzel text-lg lg:text-xl text-stone-900 hover:text-yellow-900 font-bold">
+              Hiking Trails
+            </p>
+          </div>
+          <div className="flex flex-row lg:flex-col gap-4 items-center justify-center">
+            <TreePalm className="w-16 h-16 text-yellow-600 stroke-1" />
+            <p className="font-cinzel text-lg lg:text-xl text-stone-900 hover:text-yellow-900 font-bold">
+              Island Hoping
+            </p>
+          </div>
+          <div className="flex flex-row lg:flex-col gap-4 items-center justify-center">
+            <Bike className="w-16 h-16 text-yellow-600 stroke-1" />
+            <p className="font-cinzel text-lg lg:text-xl text-stone-900 hover:text-yellow-900 font-bold">
+              MotoGP Racing
+            </p>
+          </div>
+          <div className="flex flex-row lg:flex-col gap-4 items-center justify-center">
+            <Fish className="w-16 h-16 text-yellow-600 stroke-1" />
+            <p className="font-cinzel text-lg lg:text-xl text-stone-900 hover:text-yellow-900 font-bold">
+              Snorkeling Spots
+            </p>
+          </div>
+          <div className="flex flex-row lg:flex-col gap-4 items-center justify-center">
+            <ImageIcon className="w-16 h-16 text-yellow-600 stroke-1" />
+            <p className="font-cinzel text-lg lg:text-xl text-stone-900 hover:text-yellow-900 font-bold">
+              Art Galleries
+            </p>
+          </div>
+          <div className="flex flex-row lg:flex-col gap-4 items-center justify-center">
+            <CircleDashed className="w-16 h-16 text-yellow-600 stroke-1" />
+            <p className="font-cinzel text-lg lg:text-xl text-stone-900 hover:text-yellow-900 font-bold">
+              Local Culture
+            </p>
+          </div>
+          <div className="flex flex-row lg:flex-col gap-4 items-center justify-center">
+            <LandPlot className="w-16 h-16 text-yellow-600 stroke-1" />
+            <p className="font-cinzel text-lg lg:text-xl text-stone-900 hover:text-yellow-900 font-bold text-center text-balance">
+              Emaculate Golf Courses
+            </p>
           </div>
         </div>
 
@@ -282,7 +351,7 @@ export default function Lombok() {
               Emaculate Golf Courses
             </p>
           </div>
-        </div>
+        </div> */}
       </div>
 
       <div className="flex flex-col gap-4 items-center px-8 py-6 lg:pt-20 lg:py-20 max-w-6xl mx-auto ">

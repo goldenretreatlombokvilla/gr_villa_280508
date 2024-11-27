@@ -408,10 +408,11 @@ export default function Invest() {
             Current Progress
           </p>
           <video
-            className="w-auto h-full md:h-[70vh] rounded-lg"
+            className="w-full lg:w-fit h-full md:h-[70vh] rounded-lg"
             width="1080"
             height="1920"
             controls
+            playsInline
             preload="none"
             poster="https://utfs.io/f/dJLJpH9Hrkw3aINp6gzVNOG2SrpjuDZU3Iwen5yqf7ETJbki"
           >

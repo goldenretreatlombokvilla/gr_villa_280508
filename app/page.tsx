@@ -57,7 +57,7 @@ export default function LandingPage() {
               Welcome to
             </p>
             <Image
-              src="https://utfs.io/f/dJLJpH9Hrkw33GmsrrpTdrJVe6Xx1zuEqfmI3Dn2OagRU8op"
+              src="/brand/logo_white_long_big.png"
               alt="Golden Retreat Lombok Villas"
               width={2432}
               height={1071}
@@ -357,7 +357,7 @@ export default function LandingPage() {
                   <p className="text-md font-sans">
                     Never miss a beat with our exclusive gymnasium, equipped
                     with your favourite machines. Or treat yourself to a message
-                    in our very own local 5-star spa.
+                    in our very own 5-star spa.
                   </p>
                 </div>
               </div>

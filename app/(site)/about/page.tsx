@@ -154,7 +154,7 @@ export default function About() {
             <p className="text-5xl lg:text-6xl font-cinzel font-extrabold text-yellow-900 py-10">
               Our Team
             </p>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center justify-center pb-32">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center justify-center pb-10 lg:pb-32">
               <Image
                 src="https://utfs.io/f/dJLJpH9Hrkw3rSGToQZO6nDLhfspaqg5QwWEVzocUxRXKdkT"
                 alt="Jaswin Sawirin"
@@ -189,7 +189,7 @@ export default function About() {
                 </p>
               </div>
             </div>
-            <div className="grid grid-cols-2 gap-10 items-center justify-center lg:text-center py-32">
+            <div className="grid grid-cols-2 gap-10 items-center justify-center lg:text-center py-0">
               <p className="font-cinzel text-xl lg:text-2xl font-extrabold tracking-wide col-span-2 text-yellow-800/50 uppercase text-center -mb-10">
                 Management Team
               </p>
@@ -199,7 +199,7 @@ export default function About() {
 
               <div className="flex flex-col col-span-2 lg:col-span-1 gap-4 items-center justify-center">
                 <Image
-                  src="https://utfs.io/f/dJLJpH9Hrkw3D8zwK5IsYNhnRFiP9UlSuprcb35Jy4X12x7m"
+                  src="/glenn_square.jpeg"
                   alt="Glenn de Souza"
                   width={500}
                   height={500}
