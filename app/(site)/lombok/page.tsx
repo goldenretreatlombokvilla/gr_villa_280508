@@ -244,7 +244,7 @@ export default function Lombok() {
               key={index}
               className="flex md:flex-col flex-row flex-wrap gap-4 items-center justify-between w-full md:w-fit"
             >
-              <item.icon className="w-16 h-16 text-yellow-600 stroke-1" />
+              <item.icon className="lg:w-16 w-12 h-12 lg:h-16 text-yellow-600 stroke-1" />
               <p className="font-cinzel text-lg lg:text-xl text-stone-900 hover:text-yellow-900 font-bold">
                 {item.name}
               </p>
