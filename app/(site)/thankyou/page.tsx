@@ -32,7 +32,7 @@ export default function Thankyou() {
                   Back to Homepage
                 </Button>
               </Link>
-              <p className="text-5xl lg:text-6xl  font-extrabold font-cinzel text-balance text-yellow-900">
+              <p className="text-5xl lg:text-6xl pt-20 font-extrabold font-cinzel text-balance text-yellow-900">
                 Thank you!
               </p>
               <p className="font-sans text-sm text-balance">

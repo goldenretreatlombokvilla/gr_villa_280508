@@ -31,6 +31,7 @@ import { Calendar } from "@/components/ui/calendar";
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 import { cn } from "@/lib/utils";
 import emailjs from "@emailjs/browser";
+import { redirect } from "next/navigation";
 
 export default function Bookacall() {
   const [date, setDate] = React.useState<Date>();
@@ -75,6 +76,8 @@ export default function Bookacall() {
     datetime: ""
   });
 
+  const [isLoading, setIsLoading] = useState(false);
+
   const handleChange = (e: any) => {
     const { name, value } = e.target;
     setUserInput({
@@ -84,46 +87,34 @@ export default function Bookacall() {
     console.log(userInput);
   };
 
-  const handleSubmit = async (e: any) => {
+  const sendEmail = async (e: any) => {
     e.preventDefault();
-
-    const serviceID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || "";
-    const templateID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || "";
-    const userID = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || "";
-
-    try {
-      const emailParams = {
-        email: userInput.email,
-        datetime: userInput.datetime
-      };
-
-      const res = await emailjs.send(
-        serviceID,
-        templateID,
-        {
-          email: emailParams.email,
-          datetime: emailParams.datetime
-        },
-        userID
-      );
-
-      if (res.status === 200) {
-        toast({
-          title: "Success!",
-          description: "Your message has been sent successfully."
-        });
-        setUserInput({
-          email: "",
-          datetime: ""
-        });
-        setDate(undefined);
-      }
-    } catch (error) {
+    setIsLoading(true);
+    const res = await fetch("/api/book", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(userInput)
+    });
+    console.log(res);
+    setUserInput({
+      datetime: "",
+      email: ""
+    });
+    setDate(new Date());
+    if (res.status === 500) {
       toast({
-        title: "Error!",
-        description: "Something went wrong. Please try again."
+        title: "Something went wrong!",
+        description: "Please try again later."
+      });
+    } else if (res.status === 200) {
+      toast({
+        title: "Success!",
+        description: "Your message has been sent successfully."
       });
     }
+    redirect("/thankyou");
   };
   return (
     <main>
@@ -166,7 +157,7 @@ export default function Bookacall() {
           <CardContent className="p-0">
             <form
               className="flex flex-col gap-4 font-sans py-6 px-0"
-              onSubmit={handleSubmit}
+              onSubmit={sendEmail}
             >
               {/* Date & Time Input */}
               <Label htmlFor="date-time">
@@ -179,6 +170,7 @@ export default function Bookacall() {
                 <PopoverTrigger asChild>
                   <Button
                     variant="ghost"
+                    aria-required
                     className={cn(
                       "w-full justify-start text-left font-normal h-12 px-6 py-1 rounded-full border-none bg-stone-50 hover:bg-stone-50 font-mono",
                       !date && "text-muted-foreground"
@@ -308,7 +300,7 @@ export default function Bookacall() {
                 required
               />
               <div className="flex items-center space-x-2 px-6 ">
-                <Checkbox id="contact" />
+                <Checkbox id="contact" required />
                 <label
                   htmlFor="contact"
                   className="text-sm font-normal leading-none opacity-70"
@@ -320,10 +312,15 @@ export default function Bookacall() {
                 type="submit"
                 variant={"outline"}
                 className="mt-6 text-lg rounded-full h-14"
+                disabled={isLoading}
               >
-                Submit
+                {isLoading ? "Submitting..." : "Submit"}
               </Button>
             </form>
+            <p className="text-xs italic font-sans text-stone-800">
+              *We value your privacy. We will not share any personal information
+              with any third party.
+            </p>
           </CardContent>
         </Card>
       </div>

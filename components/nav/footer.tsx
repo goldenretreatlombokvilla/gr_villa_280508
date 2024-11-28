@@ -47,6 +47,10 @@ const navCorp = [
   {
     name: "Contact Us",
     link: "/contact"
+  },
+  {
+    name: "Privacy Policy",
+    link: "/privacypolicy"
   }
 ];
 

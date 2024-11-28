@@ -27,6 +27,7 @@ import { redirect } from "next/navigation";
 
 export default function Cta() {
   const [isValid, setIsValid] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   const [data, setdata] = useState({
     name: "",
@@ -37,6 +38,7 @@ export default function Cta() {
 
   const sendEmail = async (e: any) => {
     e.preventDefault();
+    setIsLoading(true);
     const res = await fetch("/api/send", {
       method: "POST",
       headers: {
@@ -51,12 +53,19 @@ export default function Cta() {
       interest: "",
       phone: ""
     });
-    toast({
-      title: "Success!",
-      description: "Your message has been sent successfully."
-    });
+    if (res.status === 500) {
+      toast({
+        title: "Something went wrong!",
+        description: "Please try again later."
+      });
+    } else if (res.status === 200) {
+      toast({
+        title: "Success!",
+        description: "Your message has been sent successfully."
+      });
+    }
+    redirect("/thankyou");
   };
-
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 w-full lg:py-40 bg-yellow-900/10 items-start justify-start lg:px-20 xl:px-52 px-10 py-20">
       <div className="flex flex-col gap-4">
@@ -77,26 +86,6 @@ export default function Cta() {
           <Youtube className="min-w-12 min-h-12 stroke-1 text-yellow-900/50 hover:text-yellow-900" />
         </div>
       </div>
-      {/* <Card className="flex flex-col w-full lg:col-start-2 bg-transparent border-none shadow-none p-0">
-        <CardContent className="p-0">
-          <form className="flex flex-col gap-4 font-sans py-6 px-0">
-            <Label htmlFor="name">Full Name</Label>
-            <Input type="text" name="name" id="name" required />
-            <Label htmlFor="email">E-mail</Label>
-            <Input type="email" name="email" id="email" required />
-            <PhoneInputComp />
-            <Label htmlFor="interest">Select Interest</Label>
-            <InterestSelect />
-
-            <Button
-              variant={"outline"}
-              className="mt-6 text-lg rounded-full h-14"
-            >
-              Submit
-            </Button>
-          </form>
-        </CardContent>
-      </Card> */}
       <Card className="flex flex-col w-full lg:col-start-2 bg-transparent border-none shadow-none p-0">
         <CardContent className="p-0">
           <form
@@ -172,8 +161,9 @@ export default function Cta() {
               type="submit"
               variant={"outline"}
               className="mt-6 text-lg rounded-full h-14"
+              disabled={isLoading}
             >
-              Submit
+              {isLoading ? "Submitting..." : "Submit"}
             </Button>
           </form>
         </CardContent>
