@@ -10,9 +10,9 @@ export async function POST(request: any) {
     const { datetime, email } = body;
     const { data, error } = await resend.emails.send({
       from: "GRLV <contact@goldenretreatinternational.com>", // change this
-      to: ["sulaiman@slmcreatives.com"],
-      /*       bcc: ["sulaiman@slmcreatives.com"],
-       */ replyTo: email,
+      to: ["contact@goldenretreatinternational.com"],
+      bcc: ["sulaiman@slmcreatives.com", "warrenchelvan@gmail.com"],
+      replyTo: email,
       subject: "New Booking Appointment",
       react: BookTemplate({
         date: datetime,
