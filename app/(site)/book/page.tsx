@@ -318,8 +318,8 @@ export default function Bookacall() {
               </Button>
             </form>
             <p className="text-xs italic font-sans text-stone-800">
-              *We value your privacy. We will not share any personal information
-              with any third party.
+              *We value your privacy. Your information will not be shared with
+              third parties.
             </p>
           </CardContent>
         </Card>

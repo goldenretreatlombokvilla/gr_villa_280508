@@ -128,7 +128,7 @@ export default function Invest() {
             <div className="flex flex-col items-start gap-8 lg:gap-4 py-20">
               <div className="flex flex-col gap-8 lg:gap-4">
                 <p className="text-5xl font-cinzel font-extrabold text-yellow-800  text-pretty">
-                  What if you could turn back time?
+                  First-Mover Advantage
                 </p>
                 <p className="text-md font-sans text-pretty">
                   Imagine foreseeing the meteoric rise of South-East Asia’s most
