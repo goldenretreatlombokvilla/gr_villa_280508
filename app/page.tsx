@@ -146,7 +146,7 @@ export default function LandingPage() {
         </div>
         <div className="flex flex-col gap-4 lg:order-first h-full w-full">
           <Image
-            src="/lombok/lombok.jpg"
+            src="https://utfs.io/f/dJLJpH9Hrkw3Ybu6yZnLOdMUqSH08tvDTRnX1xNaPBF3YW5c"
             alt="Destination Lombok: A Rising Tourist Destination"
             width={500}
             height={200}
@@ -319,8 +319,8 @@ export default function LandingPage() {
             <CardContent className="p-0">
               <div className="flex flex-col gap-6 lg:gap-10 items-center justify-center">
                 <Image
-                  src="/brand/restaurant.jpg"
-                  alt="Golden Retreat Lombok Villa"
+                  src="https://utfs.io/f/dJLJpH9Hrkw3moN2JRuPGHJjQ8nxT942uMiz5tb01mZLvRlc"
+                  alt="Restaurant & Bar Lounge"
                   width={500}
                   height={300}
                   className="w-full h-auto  object-cover aspect-video rounded-lg shadow-lg"
@@ -344,8 +344,8 @@ export default function LandingPage() {
             <CardContent className="p-0">
               <div className="flex flex-col  gap-6 lg:gap-10 items-center justify-center">
                 <Image
-                  src="/brand/spa.jpg"
-                  alt="Golden Retreat Lombok Villa"
+                  src="https://utfs.io/f/dJLJpH9Hrkw3pm2IgBA8fDXoAL2Jay9kEY7gbmpj3CvcG0Pu"
+                  alt="Wellness Spa & Gymnasium"
                   width={500}
                   height={300}
                   className="w-full h-auto  object-cover aspect-video rounded-lg shadow-lg"
@@ -368,8 +368,8 @@ export default function LandingPage() {
             <CardContent className="p-0">
               <div className="flex flex-col  gap-6 lg:gap-10 items-center justify-center">
                 <Image
-                  src="/brand/pond.jpg"
-                  alt="Golden Retreat Lombok Villa"
+                  src="https://utfs.io/f/dJLJpH9Hrkw3iaWS2DHx0PXMUmBT5CtaFQIhuNYZcH98kjo2"
+                  alt="Serenity Garden & Koi Pond"
                   width={500}
                   height={300}
                   className="w-full h-auto  object-cover aspect-video rounded-lg shadow-lg"

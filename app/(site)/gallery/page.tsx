@@ -12,31 +12,31 @@ import Link from "next/link";
 
 const gallery = [
   {
-    image: "/villa/grlv_1.webp",
+    image: "https://utfs.io/f/dJLJpH9Hrkw3DhFmCTQIsYNhnRFiP9UlSuprcb35Jy4X12x7",
     title: "Front Enterence"
   },
   {
-    image: "/villa/grlv_2.webp",
+    image: "https://utfs.io/f/dJLJpH9Hrkw3Y1KKJxnLOdMUqSH08tvDTRnX1xNaPBF3YW5c",
     title: "Living Room"
   },
   {
-    image: "/villa/grlv_3.webp",
+    image: "https://utfs.io/f/dJLJpH9Hrkw3pXyUf0A8fDXoAL2Jay9kEY7gbmpj3CvcG0Pu",
     title: "Private Pool View"
   },
   {
-    image: "/villa/grlv_4.webp",
+    image: "https://utfs.io/f/dJLJpH9Hrkw3wcK398eUX3BuqFPzTD5Kh1H9QyUilcWfbY6d",
     title: "Yoga Deck"
   },
   {
-    image: "/villa/grlv_5.webp",
+    image: "https://utfs.io/f/dJLJpH9Hrkw3STzbTcM0TP839gFjLVe25vnd4qspYbylGHrX",
     title: "Bedroom Front View"
   },
   {
-    image: "/villa/grlv_6.webp",
+    image: "https://utfs.io/f/dJLJpH9Hrkw3ZbJhQuj5zPGMQWt0kmvD298SjxYqTRlnKLFE",
     title: "Bedroom Side View"
   },
   {
-    image: "/villa/grlv_7.webp",
+    image: "https://utfs.io/f/dJLJpH9Hrkw3fmFEKjqhLDqapUrcI5X2oh8B9JvKe1ET4tzC",
     title: "Bathroom"
   }
 ];

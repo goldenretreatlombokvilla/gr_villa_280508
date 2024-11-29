@@ -199,7 +199,7 @@ export default function About() {
 
               <div className="flex flex-col col-span-2 lg:col-span-1 gap-4 items-center justify-center">
                 <Image
-                  src="/glenn_square.jpeg"
+                  src="https://utfs.io/f/dJLJpH9Hrkw3zC1gnF3GaV6XFRQrue8z9wSd3Dysx0bTKlAn"
                   alt="Glenn de Souza"
                   width={500}
                   height={500}

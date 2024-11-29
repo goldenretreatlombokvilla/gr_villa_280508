@@ -119,7 +119,7 @@ export default function Invest() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center justify-center py-20">
             <Image
-              src="/lombok/boats.jpg"
+              src="https://utfs.io/f/dJLJpH9Hrkw33szOgdpTdrJVe6Xx1zuEqfmI3Dn2OagRU8op"
               alt="Lombok Beach and Boats"
               width={500}
               height={500}

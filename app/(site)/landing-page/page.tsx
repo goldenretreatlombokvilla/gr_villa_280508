@@ -66,44 +66,44 @@ const handleWaitlist = () => {
 
 const images = [
   {
-    src: "/villa/grlv_7.webp",
+    src: "https://utfs.io/f/dJLJpH9Hrkw3fmFEKjqhLDqapUrcI5X2oh8B9JvKe1ET4tzC",
     alt: "Spacious Bathroom"
   },
   {
-    src: "/villa/grlv_2.webp",
+    src: "https://utfs.io/f/dJLJpH9Hrkw3Y1KKJxnLOdMUqSH08tvDTRnX1xNaPBF3YW5c",
     alt: "Living Room"
   },
 
   {
-    src: "/villa/grlv_3.webp",
+    src: "https://utfs.io/f/dJLJpH9Hrkw3pXyUf0A8fDXoAL2Jay9kEY7gbmpj3CvcG0Pu",
     alt: "Poolside Area"
   }
 ];
 
 const villaImages = [
   {
-    src: "/villa/grlv_7.webp",
+    src: "https://utfs.io/f/dJLJpH9Hrkw3fmFEKjqhLDqapUrcI5X2oh8B9JvKe1ET4tzC",
     alt: "Golden Retreat Lombok Villa"
   },
   {
-    src: "/villa/grlv_2.webp",
+    src: "https://utfs.io/f/dJLJpH9Hrkw3Y1KKJxnLOdMUqSH08tvDTRnX1xNaPBF3YW5c",
     alt: "Living Room"
   },
 
   {
-    src: "/villa/grlv_3.webp",
+    src: "https://utfs.io/f/dJLJpH9Hrkw3pXyUf0A8fDXoAL2Jay9kEY7gbmpj3CvcG0Pu",
     alt: "Poolside Area"
   },
   {
-    src: "/villa/grlv_4.webp",
+    src: "https://utfs.io/f/dJLJpH9Hrkw3wcK398eUX3BuqFPzTD5Kh1H9QyUilcWfbY6d",
     alt: "Kitchen"
   },
   {
-    src: "/villa/grlv_5.webp",
+    src: "https://utfs.io/f/dJLJpH9Hrkw3STzbTcM0TP839gFjLVe25vnd4qspYbylGHrX",
     alt: "Dining Room"
   },
   {
-    src: "/villa/grlv_6.webp",
+    src: "https://utfs.io/f/dJLJpH9Hrkw3ZbJhQuj5zPGMQWt0kmvD298SjxYqTRlnKLFE",
     alt: "Balcony"
   }
 ];
@@ -372,7 +372,7 @@ export default function Home() {
             <CardContent className="p-4">
               <div className="flex flex-col md:flex-row gap-6 lg:gap-10 items-center justify-center">
                 <Image
-                  src="/villa/grlv_3.webp"
+                  src="https://utfs.io/f/dJLJpH9Hrkw3pXyUf0A8fDXoAL2Jay9kEY7gbmpj3CvcG0Pu"
                   alt="Golden Retreat Lombok Villa"
                   width={500}
                   height={300}
@@ -438,7 +438,7 @@ export default function Home() {
             <CardContent className="p-4">
               <div className="flex flex-col md:flex-row gap-6 lg:gap-10 items-center justify-center">
                 <Image
-                  src="/villa/grlv_5.webp"
+                  src="https://utfs.io/f/dJLJpH9Hrkw3STzbTcM0TP839gFjLVe25vnd4qspYbylGHrX"
                   alt="Golden Retreat Lombok Villa"
                   width={500}
                   height={300}

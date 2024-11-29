@@ -31,35 +31,35 @@ import Link from "next/link";
 
 const villaImages = [
   {
-    src: "/lombok/beach-sand.jpg",
+    src: "https://utfs.io/f/dJLJpH9Hrkw3pBurfA8fDXoAL2Jay9kEY7gbmpj3CvcG0Pue",
     alt: "Living Room"
   },
   {
-    src: "/lombok/beach.jpg",
+    src: "https://utfs.io/f/dJLJpH9Hrkw3lyFrap6aQ6vkUNZnYhO7eAcj2iwCBSMy1b3p",
     alt: "Secluded Private Beach"
   },
   {
-    src: "/lombok/surf.jpg",
+    src: "https://utfs.io/f/dJLJpH9Hrkw3WYnkqIyJ3Fxs4EgfPMq8SWJAXkNKRLa6jYo5",
     alt: "Surfing"
   },
   {
-    src: "/lombok/volcano.jpg",
+    src: "https://utfs.io/f/dJLJpH9Hrkw3Bsk6UJlcXTk7SfiUKBuzqNOW3Hw01dEptmVg",
     alt: "Volcano Lake"
   },
   {
-    src: "/lombok/boats.jpg",
-    alt: "Living Room"
+    src: "https://utfs.io/f/dJLJpH9Hrkw33szOgdpTdrJVe6Xx1zuEqfmI3Dn2OagRU8op",
+    alt: "Boats and Beach"
   },
   {
-    src: "/lombok/peak.jpg",
-    alt: "Secluded Private Beach"
+    src: "https://utfs.io/f/dJLJpH9Hrkw3s7ADYDdtfQDR1ujgW04bv39US6XzVqYOLryH",
+    alt: "Mountain Peak"
   },
   {
-    src: "/lombok/waterfall.jpg",
+    src: "https://utfs.io/f/dJLJpH9Hrkw34bzSm8iILXvxRHuJgz8cqy2TD5QokmWfjNes",
     alt: "Surfing"
   },
   {
-    src: "/lombok/bluesky.jpg",
+    src: "https://utfs.io/f/dJLJpH9Hrkw3Fv3nFgY3NDtBULj4yZxze2nb6wR7gl1iPYX0",
     alt: "Volcano Lake"
   }
 ];
@@ -124,7 +124,7 @@ export default function Lombok() {
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-10 lg:gap-10 items-center justify-center w-full px-8 pb-16 lg:pb-20 max-w-6xl mx-auto">
           <div className="flex flex-col gap-4 items-center text-yellow-900 relative">
             <Image
-              src="/lombok/ariel-island.jpg"
+              src="https://utfs.io/f/dJLJpH9Hrkw3yc3Ly5ChO0bGNmuXl6cVZrTJE2qfHkvI1R8Q"
               alt="Lombok Island Ariel View"
               width={1000}
               height={700}
