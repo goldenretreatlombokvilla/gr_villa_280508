@@ -118,7 +118,7 @@ export default function Bookacall() {
   };
   return (
     <main>
-      <div className=" py-6 px-8 flex flex-row gap-6 items-center md:justify-start justify-between w-full sticky top-0 z-40">
+      <div className=" py-6 px-8 flex flex-row gap-6 items-center md:justify-start justify-between w-full   z-40">
         <Link
           href="/"
           className="flex flex-row gap-8 items-center justify-center"
