@@ -743,7 +743,7 @@ export default function Invest() {
                   <div className="grid grid-cols-2 justify-between">
                     <ul className="list-disc list-inside">
                       <li>Bedsheet (180x200)</li>
-                      <li>King Size Matress</li>
+                      <li>King Size Mattress</li>
                       <li>Pillow</li>
                       <li>Side Table (x2)</li>
                       <li>Wardrobe</li>
@@ -770,7 +770,7 @@ export default function Invest() {
                   <div className="grid grid-cols-2 justify-between">
                     <ul className="list-disc list-inside">
                       <li>Bedsheet (160x200)</li>
-                      <li>Queen Size Matress</li>
+                      <li>Queen Size Mattress</li>
                       <li>Pillow (x4)</li>
                       <li>Side Table (x2)</li>
                       <li>Wardrobe (x2)</li>
@@ -800,7 +800,7 @@ export default function Invest() {
                   <div className="grid grid-cols-2 justify-between">
                     <ul className="list-disc list-inside">
                       <li>Bedsheet (160x200)</li>
-                      <li>Queen Size Matress</li>
+                      <li>Queen Size Mattress</li>
                       <li>Pillow (x4)</li>
                       <li>Side Table</li>
                       <li>Wardrobe</li>
