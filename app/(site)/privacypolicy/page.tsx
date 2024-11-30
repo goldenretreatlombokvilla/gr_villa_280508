@@ -5,7 +5,7 @@ export default function PrivacyPolicy() {
         Privacy Policy
       </h1>
       <p className="text-sm font-sans">
-        <span className="font-bold">Last updated:</span> November 27, 2024
+        <span className="font-bold">Last updated:</span> November 30, 2024
       </p>
       <p>
         This Privacy Policy describes Our policies and procedures on the
@@ -16,27 +16,19 @@ export default function PrivacyPolicy() {
       <p>
         We use Your Personal data to provide and improve the Service. By using
         the Service, You agree to the collection and use of information in
-        accordance with this Privacy Policy. This Privacy Policy has been
-        created with the help of the{" "}
-        <a
-          href="https://www.freeprivacypolicy.com/free-privacy-policy-generator/"
-          target="_blank"
-        >
-          Free Privacy Policy Generator
-        </a>
-        .
+        accordance with this Privacy Policy. .
       </p>
-      <h2 className="font-bold text-xl pt-8">Interpretation and Definitions</h2>
-      <h3 className="font-bold text-lg">Interpretation</h3>
+      <h2>Interpretation and Definitions</h2>
+      <h3>Interpretation</h3>
       <p>
         The words of which the initial letter is capitalized have meanings
         defined under the following conditions. The following definitions shall
         have the same meaning regardless of whether they appear in singular or
         in plural.
       </p>
-      <h3 className="font-bold text-lg">Definitions</h3>
+      <h3>Definitions</h3>
       <p>For the purposes of this Privacy Policy:</p>
-      <ul className="">
+      <ul>
         <li>
           <p>
             <strong>Account</strong> means a unique account created for You to
@@ -111,12 +103,8 @@ export default function PrivacyPolicy() {
           <p>
             <strong>Website</strong> refers to Golden Retreat Lombok Villas,
             accessible from{" "}
-            <a
-              href="goldenretreatinternational.com"
-              rel="external nofollow noopener"
-              target="_blank"
-            >
-              goldenretreatinternational.com
+            <a href="/" rel="external nofollow noopener" target="_blank">
+              https://goldenretreatinternational.com
             </a>
           </p>
         </li>
@@ -128,18 +116,16 @@ export default function PrivacyPolicy() {
           </p>
         </li>
       </ul>
-      <h2 className="font-bold text-xl pt-8">
-        Collecting and Using Your Personal Data
-      </h2>
-      <h3 className="font-bold text-lg">Types of Data Collected</h3>
-      <h4 className="font-bold text-md">Personal Data</h4>
+      <h2>Collecting and Using Your Personal Data</h2>
+      <h3>Types of Data Collected</h3>
+      <h4>Personal Data</h4>
       <p>
         While using Our Service, We may ask You to provide Us with certain
         personally identifiable information that can be used to contact or
         identify You. Personally identifiable information may include, but is
         not limited to:
       </p>
-      <ul className="">
+      <ul>
         <li>
           <p>Email address</p>
         </li>
@@ -153,7 +139,7 @@ export default function PrivacyPolicy() {
           <p>Usage Data</p>
         </li>
       </ul>
-      <h4 className="font-bold text-md">Usage Data</h4>
+      <h4>Usage Data</h4>
       <p>Usage Data is collected automatically when using the Service.</p>
       <p>
         Usage Data may include information such as Your Device's Internet
@@ -175,14 +161,14 @@ export default function PrivacyPolicy() {
         visit our Service or when You access the Service by or through a mobile
         device.
       </p>
-      <h4 className="font-bold text-md">Tracking Technologies and Cookies</h4>
+      <h4>Tracking Technologies and Cookies</h4>
       <p>
         We use Cookies and similar tracking technologies to track the activity
         on Our Service and store certain information. Tracking technologies used
         are beacons, tags, and scripts to collect and track information and to
         improve and analyze Our Service. The technologies We use may include:
       </p>
-      <ul className="">
+      <ul>
         <li>
           <strong>Cookies or Browser Cookies.</strong> A cookie is a small file
           placed on Your Device. You can instruct Your browser to refuse all
@@ -205,20 +191,13 @@ export default function PrivacyPolicy() {
         Cookies can be &quot;Persistent&quot; or &quot;Session&quot; Cookies.
         Persistent Cookies remain on Your personal computer or mobile device
         when You go offline, while Session Cookies are deleted as soon as You
-        close Your web browser. Learn more about cookies on the{" "}
-        <a
-          href="https://www.freeprivacypolicy.com/blog/sample-privacy-policy-template/#Use_Of_Cookies_And_Tracking"
-          target="_blank"
-        >
-          Free Privacy Policy website
-        </a>{" "}
-        article.
+        close Your web browser.
       </p>
       <p>
         We use both Session and Persistent Cookies for the purposes set out
         below:
       </p>
-      <ul className="">
+      <ul>
         <li>
           <p>
             <strong>Necessary / Essential Cookies</strong>
@@ -265,9 +244,9 @@ export default function PrivacyPolicy() {
         cookies, please visit our Cookies Policy or the Cookies section of our
         Privacy Policy.
       </p>
-      <h3 className="font-bold text-lg">Use of Your Personal Data</h3>
+      <h3>Use of Your Personal Data</h3>
       <p>The Company may use Personal Data for the following purposes:</p>
-      <ul className="">
+      <ul>
         <li>
           <p>
             <strong>To provide and maintain our Service</strong>, including to
@@ -337,7 +316,7 @@ export default function PrivacyPolicy() {
         </li>
       </ul>
       <p>We may share Your personal information in the following situations:</p>
-      <ul className="">
+      <ul>
         <li>
           <strong>With Service Providers:</strong> We may share Your personal
           information with Service Providers to monitor and analyze the use of
@@ -372,7 +351,7 @@ export default function PrivacyPolicy() {
           information for any other purpose with Your consent.
         </li>
       </ul>
-      <h3 className="font-bold text-lg">Retention of Your Personal Data</h3>
+      <h3>Retention of Your Personal Data</h3>
       <p>
         The Company will retain Your Personal Data only for as long as is
         necessary for the purposes set out in this Privacy Policy. We will
@@ -388,7 +367,7 @@ export default function PrivacyPolicy() {
         functionality of Our Service, or We are legally obligated to retain this
         data for longer time periods.
       </p>
-      <h3 className="font-bold text-lg">Transfer of Your Personal Data</h3>
+      <h3>Transfer of Your Personal Data</h3>
       <p>
         Your information, including Personal Data, is processed at the Company's
         operating offices and in any other places where the parties involved in
@@ -408,7 +387,7 @@ export default function PrivacyPolicy() {
         a country unless there are adequate controls in place including the
         security of Your data and other personal information.
       </p>
-      <h3 className="font-bold text-lg">Delete Your Personal Data</h3>
+      <h3>Delete Your Personal Data</h3>
       <p>
         You have the right to delete or request that We assist in deleting the
         Personal Data that We have collected about You.
@@ -428,26 +407,26 @@ export default function PrivacyPolicy() {
         Please note, however, that We may need to retain certain information
         when we have a legal obligation or lawful basis to do so.
       </p>
-      <h3 className="font-bold text-lg">Disclosure of Your Personal Data</h3>
-      <h4 className="font-bold text-md">Business Transactions</h4>
+      <h3>Disclosure of Your Personal Data</h3>
+      <h4>Business Transactions</h4>
       <p>
         If the Company is involved in a merger, acquisition or asset sale, Your
         Personal Data may be transferred. We will provide notice before Your
         Personal Data is transferred and becomes subject to a different Privacy
         Policy.
       </p>
-      <h4 className="font-bold text-md">Law enforcement</h4>
+      <h4>Law enforcement</h4>
       <p>
         Under certain circumstances, the Company may be required to disclose
         Your Personal Data if required to do so by law or in response to valid
         requests by public authorities (e.g. a court or a government agency).
       </p>
-      <h4 className="font-bold text-md">Other legal requirements</h4>
+      <h4>Other legal requirements</h4>
       <p>
         The Company may disclose Your Personal Data in the good faith belief
         that such action is necessary to:
       </p>
-      <ul className="">
+      <ul>
         <li>Comply with a legal obligation</li>
         <li>Protect and defend the rights or property of the Company</li>
         <li>
@@ -459,7 +438,7 @@ export default function PrivacyPolicy() {
         </li>
         <li>Protect against legal liability</li>
       </ul>
-      <h3 className="font-bold text-lg">Security of Your Personal Data</h3>
+      <h3>Security of Your Personal Data</h3>
       <p>
         The security of Your Personal Data is important to Us, but remember that
         no method of transmission over the Internet, or method of electronic
@@ -467,7 +446,7 @@ export default function PrivacyPolicy() {
         means to protect Your Personal Data, We cannot guarantee its absolute
         security.
       </p>
-      <h2 className="font-bold text-xl pt-8">Children's Privacy</h2>
+      <h2>Children's Privacy</h2>
       <p>
         Our Service does not address anyone under the age of 13. We do not
         knowingly collect personally identifiable information from anyone under
@@ -483,7 +462,7 @@ export default function PrivacyPolicy() {
         require Your parent's consent before We collect and use that
         information.
       </p>
-      <h2 className="font-bold text-xl pt-8">Links to Other Websites</h2>
+      <h2>Links to Other Websites</h2>
       <p>
         Our Service may contain links to other websites that are not operated by
         Us. If You click on a third party link, You will be directed to that
@@ -494,7 +473,7 @@ export default function PrivacyPolicy() {
         We have no control over and assume no responsibility for the content,
         privacy policies or practices of any third party sites or services.
       </p>
-      <h2 className="font-bold text-xl pt-8">Changes to this Privacy Policy</h2>
+      <h2>Changes to this Privacy Policy</h2>
       <p>
         We may update Our Privacy Policy from time to time. We will notify You
         of any changes by posting the new Privacy Policy on this page.
@@ -509,12 +488,12 @@ export default function PrivacyPolicy() {
         changes. Changes to this Privacy Policy are effective when they are
         posted on this page.
       </p>
-      <h2 className="font-bold text-xl pt-8">Contact Us</h2>
+      <h2>Contact Us</h2>
       <p>
         If you have any questions about this Privacy Policy, You can contact us:
       </p>
-      <ul className="">
-        <li>By email: info@goldenretreatinternational.com</li>
+      <ul>
+        <li>By email: contact@goldenretreatinternational.com</li>
       </ul>
     </div>
   );

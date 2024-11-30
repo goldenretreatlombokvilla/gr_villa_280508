@@ -39,12 +39,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.5
     },
     {
-      url: "https://goldenretreatinternational.com/privacypolicy",
-      lastModified: new Date(),
-      changeFrequency: "yearly",
-      priority: 0.2
-    },
-    {
       url: "https://goldenretreatinternational.com/gallery",
       lastModified: new Date(),
       changeFrequency: "monthly",
