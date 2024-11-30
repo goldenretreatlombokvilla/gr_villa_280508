@@ -1,43 +1,10 @@
-"use client";
-
-import CountrySelect from "@/components/form/country-select";
-import InterestSelect from "@/components/form/interest-select";
-import PhoneInputComp from "@/components/form/phone-input";
 import { Button } from "@/components/ui/button";
-import PhoneInput from "react-phone-number-input";
-import { cn } from "@/lib/utils";
 import "react-phone-number-input/style.css";
 
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle
-} from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import {
-  Select,
-  SelectContent,
-  SelectGroup,
-  SelectItem,
-  SelectLabel,
-  SelectTrigger,
-  SelectValue
-} from "@/components/ui/select";
-import {
-  ArrowDownCircle,
-  Facebook,
-  Instagram,
-  Linkedin,
-  Mail,
-  MessageCircle,
-  Youtube
-} from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
+import { ArrowDownCircle, Mail, MessageCircle } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
 import Cta from "@/components/cta";
 import { Metadata } from "next";
 
@@ -48,27 +15,6 @@ export const metadata: Metadata = {
 };
 
 export default function Contact() {
-  const [isValid, setIsValid] = useState(false);
-
-  const [data, setdata] = useState({
-    name: "",
-    email: "",
-    interest: "",
-    phone: ""
-  });
-
-  const sendEmail = async (e: any) => {
-    e.preventDefault();
-    const res = await fetch("/api/send", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(data)
-    });
-    console.log(res);
-  };
-
   return (
     <div className="flex flex-col gap-8 items-center justify-start w-full bg-gradient-to-b from-yellow-900/10 to-5% to-background ">
       <div className=" py-6 px-8 flex flex-row gap-6 items-center md:justify-start justify-between w-full   z-40">

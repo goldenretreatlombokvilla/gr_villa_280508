@@ -1,5 +1,3 @@
-"use client";
-
 import { Badge } from "@/components/ui/badge";
 import Video from "next-video";
 import { Card, CardContent } from "@/components/ui/card";

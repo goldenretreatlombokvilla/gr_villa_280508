@@ -1,77 +1,7 @@
-"use client";
-
-import { Badge } from "@/components/ui/badge";
-import Video from "next-video";
-import { Card, CardContent } from "@/components/ui/card";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious
-} from "@/components/ui/carousel";
-import Autoplay from "embla-carousel-autoplay";
-import {
-  Grid2X2,
-  House,
-  Images,
-  KeyRound,
-  MapPin,
-  Scan,
-  SquareDashed,
-  UtensilsCrossed,
-  Waves
-} from "lucide-react";
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger
-} from "@/components/ui/accordion";
 import Cta from "@/components/cta";
-import {
-  Dialog,
-  DialogContent,
-  DialogHeader,
-  DialogPortal,
-  DialogTitle,
-  DialogTrigger
-} from "@/components/ui/dialog";
 import { Metadata } from "next";
-
-const images = [
-  {
-    src: "https://utfs.io/f/dJLJpH9Hrkw3fmFEKjqhLDqapUrcI5X2oh8B9JvKe1ET4tzC",
-    alt: "Spacious Bathroom"
-  },
-  {
-    src: "https://utfs.io/f/dJLJpH9Hrkw3ZbJhQuj5zPGMQWt0kmvD298SjxYqTRlnKLFE",
-    alt: "Master Bedroom"
-  },
-
-  {
-    src: "https://utfs.io/f/dJLJpH9Hrkw3pXyUf0A8fDXoAL2Jay9kEY7gbmpj3CvcG0Pu",
-    alt: "Poolside Area"
-  }
-];
-const siteplan = [
-  {
-    src: "https://utfs.io/f/dJLJpH9Hrkw34gqO32iILXvxRHuJgz8cqy2TD5QokmWfjNes",
-    alt: "Siteplan for Golden Retreat Lombok Villa"
-  },
-  {
-    src: "https://utfs.io/f/dJLJpH9Hrkw3q0bMIVSMBd9KPxAmiZ46NFaSwGRqO2hJYQuW",
-    alt: "Pool Club Layout"
-  },
-
-  {
-    src: "https://utfs.io/f/dJLJpH9Hrkw3lsdxzU6aQ6vkUNZnYhO7eAcj2iwCBSMy1b3p",
-    alt: "Spa & Gym Layout"
-  }
-];
 
 export const metadata: Metadata = {
   title: "Location",
@@ -79,7 +9,7 @@ export const metadata: Metadata = {
   keywords: `golden retreat lombok villa, luxury villa, lombok villas, private pool, villas, island villas, island villa, private pools, poolside villa, pool villa, poolside villas, gold retreat lombok, gold retreat lombok villas, gold retreat lombok villa`
 };
 
-export default function Invest() {
+export default function Location() {
   return (
     <main>
       <div className="flex flex-col gap-8 items-center justify-start w-full bg-gradient-to-b from-yellow-900/10 to-5% to-background ">
