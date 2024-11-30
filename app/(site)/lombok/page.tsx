@@ -28,6 +28,7 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { Metadata } from "next";
 
 const villaImages = [
   {
@@ -98,6 +99,12 @@ const lombokft = [
     name: "Golf Courses"
   }
 ];
+
+export const metadata: Metadata = {
+  title: "Destination Lombok",
+  description: `Golden Retreat Lombok Villas is a property development offering luxurious Villas set in the heart of Lombok’s best attractions.`,
+  keywords: `golden retreat lombok villa, luxury villa, lombok villas, private pool, villas, island villas, island villa, private pools, poolside villa, pool villa, poolside villas, gold retreat lombok, gold retreat lombok villas, gold retreat lombok villa`
+};
 
 export default function Lombok() {
   return (

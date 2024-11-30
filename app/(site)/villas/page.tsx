@@ -40,6 +40,7 @@ import {
   DialogTitle,
   DialogTrigger
 } from "@/components/ui/dialog";
+import { Metadata } from "next";
 
 const images = [
   {
@@ -72,7 +73,13 @@ const siteplan = [
   }
 ];
 
-export default function Invest() {
+export const metadata: Metadata = {
+  title: "Villas",
+  description: `Golden Retreat Lombok Villas is a property development offering luxurious Villas set in the heart of Lombok’s best attractions.`,
+  keywords: `golden retreat lombok villa, luxury villa, lombok villas, private pool, villas, island villas, island villa, private pools, poolside villa, pool villa, poolside villas, gold retreat lombok, gold retreat lombok villas, gold retreat lombok villa`
+};
+
+export default function Villas() {
   return (
     <main>
       <div className="flex flex-col gap-8 items-center justify-start w-full bg-gradient-to-b from-yellow-900/10 to-5% to-background ">
