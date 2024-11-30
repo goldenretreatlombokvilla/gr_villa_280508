@@ -178,28 +178,6 @@ export default function LandingPage() {
           height={200}
           className="flex lg:hidden w-full h-auto aspect-video object-cover rounded-lg"
         />
-        {/* <Image
-          src="https://utfs.io/f/dJLJpH9Hrkw3fmFEKjqhLDqapUrcI5X2oh8B9JvKe1ET4tzC"
-          alt="Golden Retreat Lombok Villa"
-          width={500}
-          height={200}
-          className="w-full h-full aspect-video object-cover object-right rounded-lg"
-        />
-        <Image
-          src="https://utfs.io/f/dJLJpH9Hrkw3Y1KKJxnLOdMUqSH08tvDTRnX1xNaPBF3YW5c"
-          alt="Golden Retreat Lombok Villa"
-          width={500}
-          height={200}
-          className="w-full h-auto aspect-video object-cover rounded-lg"
-        />
-        <div className="hidden lg:flex flex-row items-center justify-center py-0 text-stone-900/50 font-sans text-sm italic rounded-lg">
-          A lavishly designed bespoke bathroom.
-        </div>
-        <div className="hidden lg:flex flex-row items-center justify-center py-0 text-stone-900/50 font-sans text-sm italic rounded-lg">
-          Spacious living room with high-end finishings, wide screen TV, bar and
-          more.{" "}
-        </div>
-        <div className="flex flex-row gap-4 lg:col-span-2 items-center justify-end pt-8 "></div> */}
       </div>
 
       <div className="flex flex-col gap-12 items-center justify-center w-full min-h-screen px-8 lg:px-20 xl:px-52 py-20 bg-yellow-800/10">
@@ -223,8 +201,6 @@ export default function LandingPage() {
                       <p className="text-sm font-sans uppercase font-bold text-yellow-900 opacity-80">
                         2 Bedroom | 150 sqm (1,615 sqft)
                       </p>
-                      {/*  <Badge variant={"default"}>3 Bedroom</Badge>
-                      <Badge variant={"default"}>187 sqm</Badge> */}
                     </div>
                     <div className="col-span-2 flex flex-row gap-4 items-center justify-between">
                       <div className="flex flex-row gap-2 items-center">
@@ -258,11 +234,9 @@ export default function LandingPage() {
                       Premium Luxury Villa
                     </p>
                     <div className="flex flex-row gap-4 mb-8">
-                      <p className="text-sm font-sans uppercase font-bold text-yellow-900 opacity-80">
+                      <p className="text-sm font-sans uppercase text-nowrap font-bold text-yellow-900 opacity-80">
                         3 Bedroom | 187 sqm (2,013 sqft)
                       </p>
-                      {/*  <Badge variant={"default"}>3 Bedroom</Badge>
-                      <Badge variant={"default"}>187 sqm</Badge> */}
                     </div>
                     <div className="col-span-2 flex flex-row gap-4 items-center justify-between">
                       <div className="flex flex-row gap-2 items-center">
