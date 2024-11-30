@@ -109,7 +109,7 @@ const links = [
 
 export default function Nav() {
   return (
-    <nav className="flex flex-row items-center justify-end w-full mx-auto lg:px-8 max-h-[80px] px-2 absolute md:top-0 bottom-0 z-50 h-32 bg-transparent">
+    <nav className="flex flex-row items-center justify-end w-full mx-auto lg:px-8 max-h-[80px] px-2 absolute md:top-0 bottom-0 z-20 h-32 bg-transparent">
       <div className="flex flex-row items-center justify-end gap-10">
         <div className="fixed p-2">
           <Sheet>

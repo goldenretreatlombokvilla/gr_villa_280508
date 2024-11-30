@@ -118,7 +118,7 @@ export default function Bookacall() {
   };
   return (
     <main>
-      <div className=" py-6 px-8 flex flex-row gap-6 items-center md:justify-start justify-between w-full   z-40">
+      <div className=" py-6 px-8 flex flex-row gap-6 items-center md:justify-start justify-between w-full">
         <Link
           href="/"
           className="flex flex-row gap-8 items-center justify-center"
@@ -128,7 +128,7 @@ export default function Bookacall() {
             alt="Golden Retreat Lombok Villa"
             width={200}
             height={200}
-            className="w-10 h-10 object-contain aspect-square drop-shadow-sm"
+            className="max-w-32 z-40 -my-8 h-full object-cover"
           />
         </Link>
         <h1 className="sr-only text-xl font-sans text-yellow-800 pt-1 font-light">

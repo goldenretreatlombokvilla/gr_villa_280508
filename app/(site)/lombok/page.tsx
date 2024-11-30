@@ -110,7 +110,7 @@ export default function Lombok() {
   return (
     <main>
       <div className="flex flex-col gap-8 items-center justify-start w-full bg-gradient-to-b from-yellow-900/10 to-5% to-background ">
-        <div className=" py-6 px-8 flex flex-row gap-6 items-center md:justify-start justify-between w-full   z-40">
+        <div className=" py-6 px-8 flex flex-row gap-6 items-center md:justify-start justify-between w-full ">
           <Link
             href="/"
             className="flex flex-row gap-8 items-center justify-center"
@@ -120,7 +120,7 @@ export default function Lombok() {
               alt="Golden Retreat Lombok Villa"
               width={500}
               height={500}
-              className="max-w-32 -my-8 h-full object-cover"
+              className="max-w-32 z-40 -my-8 h-full object-cover"
             />
           </Link>
           <h1 className="sr-only text-xl font-sans text-yellow-800 pt-1 font-light">
