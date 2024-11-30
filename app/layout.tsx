@@ -69,10 +69,6 @@ export const metadata: Metadata = {
       "https://utfs.io/f/dJLJpH9Hrkw3F8fdEjY3NDtBULj4yZxze2nb6wR7gl1iPYX0"
     ]
   },
-  viewport: {
-    width: "device-width",
-    initialScale: 1
-  },
   icons: {
     icon: "/favicon.ico",
     apple: [{ url: "/apple-icon.png" }]
