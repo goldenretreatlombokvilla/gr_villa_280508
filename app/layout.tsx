@@ -52,12 +52,7 @@ export const metadata: Metadata = {
     description:
       "Discover exclusive villa investment opportunities in Teluk Kode, Lombok. Modern tropical villas with private pools in a pristine beachfront location.",
     images: [
-      {
-        url: "https://utfs.io/f/dJLJpH9Hrkw3F8fdEjY3NDtBULj4yZxze2nb6wR7gl1iPYX0",
-        width: 1200,
-        height: 630,
-        alt: "Golden Retreat Lombok Villas"
-      }
+      "https://utfs.io/f/dJLJpH9Hrkw3F8fdEjY3NDtBULj4yZxze2nb6wR7gl1iPYX0"
     ]
   },
   twitter: {
