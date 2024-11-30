@@ -47,7 +47,7 @@ export default function Invest() {
                 A Superior Investment
               </p>
               <h2 className="text-6xl lg:text-6xl  font-extrabold font-cinzel text-yellow-800">
-                10 - 16% per annum projected yield
+                15 - 20% per annum projected yield
               </h2>
               {/* <p className="font-sans text-md text-balance">
                 Golden Retreat Lombok Villas presents a unique opportunity to
@@ -209,7 +209,7 @@ export default function Invest() {
                   <AccordionContent className="text-sm font-sans text-pretty">
                     Our Villas’ market placement is designed to generate
                     substantial rental income, with an estimated annual yield of
-                    10-16%. This attractive return on investment is made
+                    15-20%. This attractive return on investment is made
                     possible by ever-increasing demand and a dedicated on-site
                     team primed to meet it.
                   </AccordionContent>
