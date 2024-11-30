@@ -2,31 +2,7 @@ import Cta from "@/components/cta";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger
-} from "@/components/ui/dialog";
-import { Label } from "@/components/ui/label";
-import {
-  House,
-  Grid2X2,
-  Scan,
-  Waves,
-  KeyRound,
-  UtensilsCrossed,
-  ArrowRightCircle,
-  MapPin,
-  Award,
-  FileText,
-  Dock,
-  Phone,
-  Images,
-  FolderCheck
-} from "lucide-react";
+import { ArrowRightCircle } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -41,17 +17,12 @@ export default function LandingPage() {
             width={2000}
             height={2000}
             loading="eager"
+            placeholder="blur"
+            blurDataURL="https://utfs.io/f/dJLJpH9Hrkw3bjYjbfsqfwy05AzFLkTvmpo63dsY7VXnlRD8"
             className="w-full h-[100vh] lg:h-full  aspect-video object-cover brightness-50"
           />
         </div>
         <div className="flex flex-col gap-4 items-center justify-start px-0 text-white w-full h-fit py-10">
-          {/* <Image
-            src="https://utfs.io/f/dJLJpH9Hrkw3bjCf2sqfwy05AzFLkTvmpo63dsY7VXnlRD8G"
-            alt="Golden Retreat Lombok Villa Logo"
-            width={1000}
-            height={500}
-            className="hidden lg:w-96 w-40 h-fit lg:h-fit object-contain mb-20 drop-shadow-xl"
-          /> */}
           <div className="flex flex-col items-center lg:justify-around justify-center gap-0 lg:h-screen h-[100vh] py-20 lg:py-0 ">
             <p className="uppercase font-sans text-lg lg:text-2xl tracking-[0.5em]">
               Welcome to
@@ -61,6 +32,8 @@ export default function LandingPage() {
               alt="Golden Retreat Lombok Villas"
               width={2432}
               height={1071}
+              loading="eager"
+              unoptimized
               className="lg:w-screen h-fit object-contain mb-20 drop-shadow-2xl"
             />
             <h1 className=" sr-only">Golden Retreat Lombok Villas</h1>

@@ -5,7 +5,7 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: "*",
       allow: "/",
-      disallow: ["/private/", "/admin/"]
+      disallow: ["/dashboard/", "/api/"]
     },
     sitemap: "https://goldenretreatinternational.com/sitemap.xml"
   };
