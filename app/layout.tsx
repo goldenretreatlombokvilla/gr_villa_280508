@@ -6,6 +6,7 @@ import Footer from "@/components/nav/footer";
 import { Cinzel, Cinzel_Decorative } from "next/font/google";
 import { Toaster } from "@/components/ui/toaster";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import ReactPixel from "react-facebook-pixel";
 
 const deco = Cinzel_Decorative({
   subsets: ["latin"],

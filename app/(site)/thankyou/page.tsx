@@ -1,23 +1,12 @@
-"use client";
-
 import { Button } from "@/components/ui/button";
-import "react-phone-number-input/style.css";
-
-import { Card, CardContent } from "@/components/ui/card";
 import {
-  ArrowDownCircle,
   ChevronLeft,
   Facebook,
   Instagram,
   Linkedin,
-  Mail,
-  MessageCircle,
   Youtube
 } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
-import Cta from "@/components/cta";
 
 export default function Thankyou() {
   return (

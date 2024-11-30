@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import Video from "next-video";
 import {
   Carousel,
   CarouselContent,
@@ -15,7 +14,6 @@ import {
   DialogTitle,
   DialogTrigger
 } from "@/components/ui/dialog";
-import Autoplay from "embla-carousel-autoplay";
 import {
   Bike,
   CircleDashed,
@@ -29,6 +27,7 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from "next";
+import Cta from "@/components/cta";
 
 const villaImages = [
   {
@@ -186,11 +185,6 @@ export default function Lombok() {
                     <DialogTitle className="sr-only">
                       Map location of Lombok and surrounding islands.
                     </DialogTitle>
-                    {/*  <DialogDescription>
-                        This action cannot be undone. This will permanently
-                        delete your account and remove your data from our
-                        servers.
-                        </DialogDescription> */}
                     <Image
                       src="https://utfs.io/f/dJLJpH9Hrkw3hoWVZA2LaOUmx7jw6JrqKBblDskWdPvTZoSg"
                       alt="Map location of Lombok and surrounding areas"
@@ -208,13 +202,6 @@ export default function Lombok() {
 
       <div className="flex flex-col w-full px-20 py-6 lg:pt-20 lg:py-20 max-w-6xl mx-auto">
         <Carousel
-          /* plugins={[
-            Autoplay({
-              delay: 3800,
-              stopOnMouseEnter: true
-            })
-          ]}
-          */
           opts={{ align: "center", loop: true }}
           className="w-full flex"
         >
@@ -326,6 +313,7 @@ export default function Lombok() {
           />
         </div>
       </div>
+      <Cta />
     </main>
   );
 }
