@@ -1,7 +1,8 @@
 import type { NextConfig } from "next";
-import { withNextVideo } from "next-video/process";
+import createMDX from "@next/mdx";
 
 const nextConfig: NextConfig = {
+  pageExtensions: ["js", "jsx", "md", "mdx", "ts", "tsx"],
   /* config options here */
   experimental: {
     typedRoutes: true,
@@ -18,4 +19,6 @@ const nextConfig: NextConfig = {
   }
 };
 
-export default withNextVideo(nextConfig);
+const withMDX = createMDX({});
+
+export default withMDX(nextConfig);
