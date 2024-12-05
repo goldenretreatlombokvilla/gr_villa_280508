@@ -5,7 +5,8 @@ import {
   SelectTrigger,
   SelectValue
 } from "@/components/ui/select";
-import { filterCountries } from "@/lib/helpers";
+import { filterRegions } from "@/lib/helpers";
+
 //@ts-ignore
 import countryRegionData from "country-region-data/dist/data-umd";
 import { useEffect, useState } from "react";
@@ -21,7 +22,8 @@ export interface CountryRegion {
   regions: Region[];
 }
 
-interface CountrySelectProps {
+interface RegionSelectProps {
+  countryCode: string;
   priorityOptions?: string[];
   whitelist?: string[];
   blacklist?: string[];
@@ -30,21 +32,28 @@ interface CountrySelectProps {
   placeholder?: string;
 }
 
-function CountrySelect({
+function RegionSelect({
+  countryCode,
   priorityOptions = [],
   whitelist = [],
   blacklist = [],
   onChange = () => {},
   className,
-  placeholder = "Country"
-}: CountrySelectProps) {
-  const [countries, setCountries] = useState<CountryRegion[]>([]);
+  placeholder = "Region"
+}: RegionSelectProps) {
+  const [regions, setRegions] = useState<Region[]>([]);
 
   useEffect(() => {
-    setCountries(
-      filterCountries(countryRegionData, priorityOptions, whitelist, blacklist)
+    const regions = countryRegionData.find(
+      (country: CountryRegion) => country.countryShortCode === countryCode
     );
-  }, []);
+
+    if (regions) {
+      setRegions(
+        filterRegions(regions.regions, priorityOptions, whitelist, blacklist)
+      );
+    }
+  }, [countryCode]);
 
   return (
     <Select
@@ -56,9 +65,9 @@ function CountrySelect({
         <SelectValue placeholder={placeholder} />
       </SelectTrigger>
       <SelectContent>
-        {countries.map(({ countryName, countryShortCode }) => (
-          <SelectItem key={countryShortCode} value={countryShortCode}>
-            {countryName}
+        {regions.map(({ name, shortCode }) => (
+          <SelectItem key={shortCode} value={name}>
+            {name}
           </SelectItem>
         ))}
       </SelectContent>
@@ -66,4 +75,4 @@ function CountrySelect({
   );
 }
 
-export default CountrySelect;
+export default RegionSelect;
