@@ -18,7 +18,7 @@ import {
   DialogTitle,
   DialogTrigger
 } from "@/components/ui/dialog";
-import { MapPin, SquareDashed } from "lucide-react";
+import { ArrowRightCircle, House, MapPin, SquareDashed } from "lucide-react";
 import Image from "next/image";
 
 const villaImages = [
@@ -122,69 +122,61 @@ export default function LpOne() {
         <div className="grid grid-cols-1 lg:flex flex-col gap-6 lg:gap-4 lg:py-8 py-4 items-start">
           <Card className="flex flex-col w-full lg:p-0 bg-transparent shadow-none border-none">
             <CardContent className="p-0">
-              <div className="flex flex-row  gap-4 lg:gap-10 w-full p-0 lg:text-xl text-sm items-start lg:items-start">
-                <MapPin className="min-w-8 min-h-8 text-yellow-800 stroke-1" />
+              <div className="flex flex-row  gap-4 lg:gap-10 w-full p-0 lg:text-xl text-sm items-center ">
+                <ArrowRightCircle className="min-w-6 min-h-6 text-yellow-800 stroke-1" />
                 <p className="text-sm font-sans">
-                  <span className="font-bold">From Airport</span> - 1 hour 30
-                  minute drive
+                  <span className="font-bold">Superior Villa</span> - 2 Bedroom
                 </p>
               </div>
             </CardContent>
           </Card>
           <Card className="flex flex-col w-full lg:p-0 bg-transparent shadow-none border-none">
             <CardContent className="p-0">
-              <div className="flex flex-row  gap-4 lg:gap-10 w-full p-0 lg:text-xl text-sm items-start lg:items-start">
-                <SquareDashed className="min-w-8 min-h-8 text-yellow-800 stroke-1" />
+              <div className="flex flex-row  gap-4 lg:gap-10 w-full p-0 lg:text-xl text-sm items-center">
+                <ArrowRightCircle className="min-w-6 min-h-6 text-yellow-800 stroke-1" />
                 <p className="text-sm font-sans">
-                  <span className="font-bold">Project Parcel Size</span> - 10,
-                  000 sqm (107,640 sqft)
+                  <span className="font-bold">Premium Villa</span> - 3 Bedroom
                 </p>
               </div>
             </CardContent>
           </Card>
         </div>
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 items-center justify-center gap-8 max-w-6xl px-8 bg-yellow-900/10">
-        {villaImages.map((item) => (
-          <div
-            key={item.alt}
-            className="flex flex-col gap-4 items-center justify-center"
-          >
-            <Dialog>
-              <DialogTrigger asChild>
-                <div className="flex flex-col gap-2 items-center cursor-pointer w-full">
-                  <Image
-                    src={item.src}
-                    alt="Golden Retreat Lombok Villa"
-                    width={1000}
-                    height={500}
-                    loading="eager"
-                    className="w-full h-full aspect-video object-cover rounded-lg hover:shadow-lg hover:scale-105 trasition-all duration-300"
-                  />
-                  <p className="text-sm sr-only font-sans opacity-70 italic">
-                    {item.alt}
-                  </p>
-                </div>
-              </DialogTrigger>
-              <DialogPortal>
-                <DialogContent className=" border-none shadow-none w-full h-full items-center justify-center bg-transparent">
-                  <DialogHeader>
-                    <DialogTitle className="sr-only">{item.alt}</DialogTitle>
-                    <div className="flex flex-col gap-2 w-full items-center justify-center">
-                      <Image
-                        src={item.src}
-                        alt="Golden Retreat Lombok Villa"
-                        width={1000}
-                        height={500}
-                        className="min-w-full min-h-full aspect-video object-cover rounded-lg"
-                      />
-                    </div>
-                  </DialogHeader>
-                </DialogContent>
-              </DialogPortal>
-            </Dialog>
-          </div>
-        ))}
+      <div className="grid grid-cols-1 items-center justify-center gap-8 max-w-6xl px-8 bg-yellow-900/10">
+        <div className="flex flex-col gap-4 items-center justify-center">
+          <Dialog>
+            <DialogTrigger asChild>
+              <div className="flex flex-col gap-2 items-center cursor-pointer w-full">
+                <Image
+                  src="https://utfs.io/f/dJLJpH9Hrkw3pXyUf0A8fDXoAL2Jay9kEY7gbmpj3CvcG0Pu"
+                  alt="Poolside View Of Villa"
+                  width={1000}
+                  height={500}
+                  loading="eager"
+                  className="w-full h-full aspect-video object-cover rounded-lg hover:shadow-lg hover:scale-105 trasition-all duration-300"
+                />
+              </div>
+            </DialogTrigger>
+            <DialogPortal>
+              <DialogContent className=" border-none shadow-none w-full h-full items-center justify-center bg-transparent">
+                <DialogHeader>
+                  <DialogTitle className="sr-only">
+                    Poolside View Of Villa
+                  </DialogTitle>
+                  <div className="flex flex-col gap-2 w-full items-center justify-center">
+                    <Image
+                      src="https://utfs.io/f/dJLJpH9Hrkw3pXyUf0A8fDXoAL2Jay9kEY7gbmpj3CvcG0Pu"
+                      alt="Poolside View Of Villa"
+                      width={1000}
+                      height={500}
+                      className="min-w-full min-h-full aspect-video object-cover rounded-lg"
+                    />
+                  </div>
+                </DialogHeader>
+              </DialogContent>
+            </DialogPortal>
+          </Dialog>
+        </div>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-start justify-start w-full py-20 px-8 bg-yellow-900/10">
         <div className="flex flex-col gap-4">
@@ -202,7 +194,7 @@ export default function LpOne() {
             ensuring a hassle-free and profitable experience.
           </p>
         </div>
-        <div className="flex flex-col gap-4 lg:px-10">
+        {/*  <div className="flex flex-col gap-4 lg:px-10">
           <Accordion type="single" collapsible>
             <AccordionItem value="item-1">
               <AccordionTrigger className="text-xl font-semibold">
@@ -238,9 +230,9 @@ export default function LpOne() {
               </AccordionContent>
             </AccordionItem>
           </Accordion>
-        </div>
+        </div> */}
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-start justify-start w-full py-20 px-8 bg-yellow-900/10">
+      {/* <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-start justify-start w-full py-20 px-8 bg-yellow-900/10">
         <div className="flex flex-col gap-4">
           <p className="text-5xl font-cinzel font-bold text-yellow-900">
             Launch Promo!
@@ -249,7 +241,7 @@ export default function LpOne() {
             Early investors get to enjoy our launch prices.
           </p>
         </div>
-      </div>
+      </div> */}
       <Book />
     </main>
   );

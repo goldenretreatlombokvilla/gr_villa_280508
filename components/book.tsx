@@ -31,6 +31,8 @@ export default function Book() {
     name: "",
     email: "",
     interest: "",
+    type: "",
+    time: "",
     phone: ""
   });
 
@@ -49,6 +51,8 @@ export default function Book() {
       name: "",
       email: "",
       interest: "",
+      type: "",
+      time: "",
       phone: ""
     });
     if (res.status === 500) {
@@ -75,8 +79,7 @@ export default function Book() {
           Have Questions?
         </p>
         <p className="text-sm font-sans text-balance">
-          Schedule a private meeting with our in-house team of professionals
-          today.
+          Schedule a 1 on 1 call with our in-house team of professionals today.
         </p>
       </div>
       <Card className="flex flex-col w-full lg:col-start-2 bg-transparent border-none shadow-none p-0">
@@ -85,12 +88,12 @@ export default function Book() {
             onSubmit={sendEmail}
             className="flex flex-col gap-4 font-sans py-6 px-0"
           >
-            <Label htmlFor="interest">Select Interest</Label>
+            <Label htmlFor="interest">Purpose</Label>
             <Select
               value={data.interest}
               onValueChange={(e) => setdata({ ...data, interest: e })}
             >
-              <SelectTrigger className="w-full font-mono">
+              <SelectTrigger className="w-full font-mono mb-4">
                 <SelectValue />
               </SelectTrigger>
               <SelectContent
@@ -98,13 +101,54 @@ export default function Book() {
                 position="popper"
               >
                 <SelectGroup className="flex flex-col gap-4 px-4 py-2">
+                  <SelectItem value="self-stay">Self Stay</SelectItem>
                   <SelectItem value="investment">
-                    Property Investment
+                    Investment Property
                   </SelectItem>
-                  <SelectItem value="self-stay">
-                    Self Stay (Holiday Villa)
+                  <SelectItem value="self-stay-investment">
+                    Self Stay & Investment Property
                   </SelectItem>
-                  <SelectItem value="just-curious">Just Curious</SelectItem>
+                </SelectGroup>
+              </SelectContent>
+            </Select>
+            <Label htmlFor="type">Villa Model Type</Label>
+            <Select
+              value={data.type}
+              onValueChange={(e) => setdata({ ...data, type: e })}
+            >
+              <SelectTrigger className="w-full font-mono mb-4">
+                <SelectValue />
+              </SelectTrigger>
+              <SelectContent
+                className=" font-mono bg-black text-white"
+                position="popper"
+              >
+                <SelectGroup className="flex flex-col gap-4 px-4 py-2">
+                  <SelectItem value="2-bedroom">
+                    Superior - 2 Bedroom Villa
+                  </SelectItem>
+                  <SelectItem value="3-bedroom">
+                    Premium - 3 Bedroom Villa
+                  </SelectItem>
+                </SelectGroup>
+              </SelectContent>
+            </Select>
+            <Label htmlFor="time">Prefered Time Of Contact</Label>
+            <Select
+              value={data.time}
+              onValueChange={(e) => setdata({ ...data, time: e })}
+            >
+              <SelectTrigger className="w-full font-mono mb-4">
+                <SelectValue />
+              </SelectTrigger>
+              <SelectContent
+                className=" font-mono bg-black text-white"
+                position="popper"
+              >
+                <SelectGroup className="flex flex-col gap-4 px-4 py-2">
+                  <SelectItem value="Morning">Morning</SelectItem>
+                  <SelectItem value="afternoon">Afternoon</SelectItem>
+                  <SelectItem value="night">Night</SelectItem>
                 </SelectGroup>
               </SelectContent>
             </Select>
