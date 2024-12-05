@@ -20,6 +20,7 @@ import {
 } from "@/components/ui/dialog";
 import { ArrowRightCircle, House, MapPin, SquareDashed } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const villaImages = [
   {
@@ -89,24 +90,10 @@ export default function LpOne() {
                 Destination Lombok
               </Link>
             </Button> */}
-            <Dialog>
-              <DialogTrigger asChild>
-                <Button variant={"default"} className="w-fit">
-                  Book A Discovery Call
-                </Button>
-              </DialogTrigger>
-              <DialogContent>
-                <DialogHeader className="hidden">
-                  <DialogTitle>Join the Waitlist</DialogTitle>
-                  <DialogDescription>
-                    Become the first few people to get notified about the new
-                    Golden Retreat Lombok Villa!
-                  </DialogDescription>
-                </DialogHeader>
-                <DialogClose />
-                <Book />
-              </DialogContent>
-            </Dialog>
+
+            <Button variant={"default"} className="w-fit">
+              <Link href="#book">Book A Discovery Call</Link>
+            </Button>
           </div>
         </div>
       </div>
@@ -242,7 +229,9 @@ export default function LpOne() {
           </p>
         </div>
       </div> */}
-      <Book />
+      <div id="book">
+        <Book />
+      </div>
     </main>
   );
 }
