@@ -7,6 +7,7 @@ import { Cinzel, Cinzel_Decorative } from "next/font/google";
 import { Toaster } from "@/components/ui/toaster";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { FacebookPixelEvents } from "../components/pixel-events";
+import { Suspense } from "react";
 
 const deco = Cinzel_Decorative({
   subsets: ["latin"],
@@ -82,11 +83,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={` ${deco.className} ${cinzel.className} antialiased`}>
-        <FacebookPixelEvents />
         <Nav />
         {children}
         <Footer />
         <Toaster />
+        <Suspense fallback={null}>
+          <FacebookPixelEvents />
+        </Suspense>{" "}
       </body>
       <GoogleAnalytics gaId="G-D6ZSFR1KNS" />
     </html>
