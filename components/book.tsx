@@ -224,57 +224,60 @@ export default function Book() {
               </Select>
             </div>
             {data.time !== "" && data.type !== "" && data.purpose !== "" && (
-              <div className="flex flex-col gap-4 pt-8 px-4 border border-y-0 border-r-0 border-beige relative rounded-xl">
-                <p className="font-sans font-thin text-lg absolute -top-4 px-2 rounded-full">
-                  Your Information
-                </p>
-                <Label htmlFor="name">Full Name</Label>
-                <Input
-                  type="text"
-                  name="name"
-                  id="name"
-                  required
-                  value={data.name}
-                  onChange={(e) => setdata({ ...data, name: e.target.value })}
-                />
-                <Label htmlFor="email">E-mail</Label>
-                <Input
-                  type="email"
-                  name="email"
-                  id="email"
-                  required
-                  value={data.email}
-                  onChange={(e) => setdata({ ...data, email: e.target.value })}
-                />
-                <Label htmlFor="phone">Phone Number</Label>
-                <div className="relative w-full">
-                  <PhoneInput
-                    required
-                    international
-                    defaultCountry="AU"
-                    value={data.phone}
-                    onChange={(e) => {
-                      setdata({ ...data, phone: e || "" });
-                      setIsValid(!!e && e.length > 8);
-                    }}
-                    className={cn(
-                      "flex h-12 w-full rounded-full border border-input bg-stone-50 px-6 py-2 text-sm ring-offset-background font-mono file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 mb-4"
-                    )}
-                  />
-                </div>
-                {data.phone && !isValid && (
-                  <p className="text-xs italic -mt-4 text-red-500 text-right">
-                    Please enter a valid phone number
+              <div>
+                <div className="flex flex-col gap-4 pt-8 px-4 border border-y-0 border-r-0 border-beige relative rounded-xl">
+                  <p className="font-sans font-thin text-lg absolute -top-4 px-2 rounded-full">
+                    Your Information
                   </p>
-                )}
-                <Label>Country</Label>
-                <CountrySelect
-                  className="mb-4  font-mono"
-                  onChange={(value) => handleCountryChange(value)}
-                  priorityOptions={["AU", "CN", "GB", "MY", "RU", "SG"]}
-                  placeholder="Select Country"
-                ></CountrySelect>
-                {/*  <Input
+                  <Label htmlFor="name">Full Name</Label>
+                  <Input
+                    type="text"
+                    name="name"
+                    id="name"
+                    required
+                    value={data.name}
+                    onChange={(e) => setdata({ ...data, name: e.target.value })}
+                  />
+                  <Label htmlFor="email">E-mail</Label>
+                  <Input
+                    type="email"
+                    name="email"
+                    id="email"
+                    required
+                    value={data.email}
+                    onChange={(e) =>
+                      setdata({ ...data, email: e.target.value })
+                    }
+                  />
+                  <Label htmlFor="phone">Phone Number</Label>
+                  <div className="relative w-full">
+                    <PhoneInput
+                      required
+                      international
+                      defaultCountry="AU"
+                      value={data.phone}
+                      onChange={(e) => {
+                        setdata({ ...data, phone: e || "" });
+                        setIsValid(!!e && e.length > 8);
+                      }}
+                      className={cn(
+                        "flex h-12 w-full rounded-full border border-input bg-stone-50 px-6 py-2 text-sm ring-offset-background font-mono file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 mb-4"
+                      )}
+                    />
+                  </div>
+                  {data.phone && !isValid && (
+                    <p className="text-xs italic -mt-4 text-red-500 text-right">
+                      Please enter a valid phone number
+                    </p>
+                  )}
+                  <Label htmlFor="country">Country</Label>
+                  <CountrySelect
+                    className="mb-4 font-mono"
+                    onChange={(value) => handleCountryChange(value)}
+                    priorityOptions={["AU", "CN", "GB", "MY", "RU", "SG"]}
+                    placeholder="Select Country"
+                  ></CountrySelect>
+                  {/*  <Input
                 type="hidden"
                 name="countryCode"
                 value={countryCode}
@@ -282,33 +285,33 @@ export default function Book() {
                   setdata({ ...data, countryCode: e.target.value })
                 }
               /> */}
-                {regionshow !== false && (
-                  <div>
-                    <Label>Region</Label>
-                    <RegionSelect
-                      onChange={(value) => handleRegionChange(value)}
-                      className="my-4"
-                      placeholder="Select Country First"
-                      countryCode={countryCode}
-                    ></RegionSelect>
-                  </div>
-                )}
+                  {regionshow !== false && (
+                    <div>
+                      <Label>Region</Label>
+                      <RegionSelect
+                        onChange={(value) => handleRegionChange(value)}
+                        className="my-4"
+                        countryCode={countryCode}
+                      ></RegionSelect>
+                    </div>
+                  )}
+                </div>
+                <div className="flex flex-col gap-4 pt-6 px-4">
+                  <Button
+                    type="submit"
+                    variant={"outline"}
+                    className="text-lg rounded-full h-14"
+                    disabled={isLoading}
+                  >
+                    {isLoading ? "Submitting..." : "Submit"}
+                  </Button>
+                  <p className="text-xs italic font-sans text-stone-800">
+                    *We value your privacy. Your information will not be shared
+                    with third parties.
+                  </p>
+                </div>
               </div>
             )}
-            <div className="flex flex-col gap-4 -mt-10">
-              <Button
-                type="submit"
-                variant={"outline"}
-                className="text-lg rounded-full h-14"
-                disabled={isLoading}
-              >
-                {isLoading ? "Submitting..." : "Submit"}
-              </Button>
-              <p className="text-xs italic font-sans text-stone-800">
-                *We value your privacy. Your information will not be shared with
-                third parties.
-              </p>
-            </div>
           </form>
         </CardContent>
       </Card>
