@@ -6,6 +6,7 @@ import Footer from "@/components/nav/footer";
 import { Cinzel, Cinzel_Decorative } from "next/font/google";
 import { Toaster } from "@/components/ui/toaster";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import { FacebookPixelEvents } from "../components/pixel-events";
 
 const deco = Cinzel_Decorative({
   subsets: ["latin"],
@@ -81,6 +82,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={` ${deco.className} ${cinzel.className} antialiased`}>
+        <FacebookPixelEvents />
         <Nav />
         {children}
         <Footer />
