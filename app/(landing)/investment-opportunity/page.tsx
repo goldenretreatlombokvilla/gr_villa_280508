@@ -16,8 +16,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Investment Opportunity",
-  description:
-    "A property development offering luxurious Villas set in the heart of Lombok’s best attractions. With private pools, and exquisite interiors, each Villa is designed for the ultimate in luxury island living."
+  description: "Landing Page for Meta and Google Ads"
 };
 
 export default function LpOne() {
