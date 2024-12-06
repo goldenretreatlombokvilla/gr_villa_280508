@@ -98,7 +98,7 @@ export default function Footer() {
           </div>
           <div className="md:flex flex-row gap-2 items-center justify-start hidden">
             <p className="text-md italic font-serif text-secondary opacity-80">
-              High Projected Yield;{" "}
+              Limited Villas Available{" "}
               <span className="font-bold">Invest Now!</span>
             </p>
           </div>

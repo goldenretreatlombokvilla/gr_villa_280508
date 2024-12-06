@@ -1,53 +1,24 @@
 import Book from "@/components/book";
-import Cta from "@/components/cta";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger
-} from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import {
   Dialog,
-  DialogClose,
   DialogContent,
-  DialogDescription,
   DialogHeader,
   DialogPortal,
   DialogTitle,
   DialogTrigger
 } from "@/components/ui/dialog";
-import { ArrowRightCircle, House, MapPin, SquareDashed } from "lucide-react";
+import { ArrowRightCircle } from "lucide-react";
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
-const villaImages = [
-  {
-    src: "/villa/grlv_5.webp",
-    alt: "Master Bedroom Front View"
-  },
-  {
-    src: "/villa/grlv_3.webp",
-    alt: "Private Swimming Pool"
-  },
-  /* {
-    src: "/villa/grlv_4.webp",
-    alt: "Yoga Deck"
-  }, */
-  {
-    src: "/villa/grlv_7.webp",
-    alt: "Bathroom"
-  },
-  /* {
-    src: "/villa/grlv_2.webp",
-    alt: "Living Room"
-  }, */
-  {
-    src: "/villa/grlv_6.webp",
-    alt: "Master Bedroom Side View"
-  }
-];
+export const metadata: Metadata = {
+  title: "Investment Opportunity",
+  description:
+    "A property development offering luxurious Villas set in the heart of Lombok’s best attractions. With private pools, and exquisite interiors, each Villa is designed for the ultimate in luxury island living."
+};
 
 export default function LpOne() {
   return (
