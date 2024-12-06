@@ -173,8 +173,8 @@ export default function Book() {
                 >
                   <SelectGroup className="flex flex-col gap-4 px-4 py-2">
                     <SelectItem value="Morning">Morning</SelectItem>
-                    <SelectItem value="afternoon">Afternoon</SelectItem>
-                    <SelectItem value="night">Night</SelectItem>
+                    <SelectItem value="Afternoon">Afternoon</SelectItem>
+                    <SelectItem value="Evening">Evening</SelectItem>
                   </SelectGroup>
                 </SelectContent>
               </Select>
@@ -206,7 +206,7 @@ export default function Book() {
                 <PhoneInput
                   required
                   international
-                  defaultCountry="MY"
+                  defaultCountry="AU"
                   value={data.phone}
                   onChange={(e) => {
                     setdata({ ...data, phone: e || "" });
@@ -244,18 +244,20 @@ export default function Book() {
                 countryCode={countryCode}
               ></RegionSelect>
             </div>
-            <p className="text-xs italic -py-10 font-sans text-stone-800">
-              *We value your privacy. Your information will not be shared with
-              third parties.
-            </p>
-            <Button
-              type="submit"
-              variant={"outline"}
-              className="mt-6 text-lg rounded-full h-14"
-              disabled={isLoading}
-            >
-              {isLoading ? "Submitting..." : "Submit"}
-            </Button>
+            <div className="flex flex-col gap-4 -mt-10">
+              <Button
+                type="submit"
+                variant={"outline"}
+                className="text-lg rounded-full h-14"
+                disabled={isLoading}
+              >
+                {isLoading ? "Submitting..." : "Submit"}
+              </Button>
+              <p className="text-xs italic font-sans text-stone-800">
+                *We value your privacy. Your information will not be shared with
+                third parties.
+              </p>
+            </div>
           </form>
         </CardContent>
       </Card>

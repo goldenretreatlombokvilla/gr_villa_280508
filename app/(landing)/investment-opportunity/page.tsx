@@ -91,7 +91,7 @@ export default function LpOne() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col lg:grid grid-cols-2 gap-20 lg:gap-4 pb-40 lg:py-10 px-8 bg-yellow-900/10 lg:px-52 items-center justify-center lg:min-h-screen">
+      <div className="flex flex-col lg:grid grid-cols-2 gap-20 lg:gap-4 pb-20 lg:py-10 px-8 bg-yellow-900/10 lg:px-52 items-center justify-center lg:min-h-screen">
         <div className="flex flex-col gap-4">
           <p className="text-5xl lg:text-7xl  font-extrabold font-cinzel text-yellow-900">
             The Villas
@@ -160,7 +160,7 @@ export default function LpOne() {
           </Dialog>
         </div>
       </div>
-      <div className="grid grid-cols-1 gap-4 lg:items-center lg:justify-center w-full pt-20 pb-40 px-8 mx-auto bg-yellow-900/10 lg:text-center lg:px-72">
+      <div className="grid grid-cols-1 gap-4 lg:items-center lg:justify-center w-full pt-20 pb-20 px-8 mx-auto bg-yellow-900/10 lg:text-center lg:px-72">
         <div className="flex flex-col gap-4">
           <p className="text-5xl lg:text-7xl font-cinzel font-extrabold text-yellow-900">
             Investment Opportunity
@@ -175,6 +175,9 @@ export default function LpOne() {
             including rental bookings, maintenance, and financial reporting,
             ensuring a hassle-free and profitable experience.
           </p>
+          <Button variant={"default"} className="w-fit">
+            <Link href="#book">Limited Villas Available</Link>
+          </Button>
         </div>
       </div>
       <div id="book">
