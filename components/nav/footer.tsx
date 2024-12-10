@@ -107,7 +107,7 @@ export default function Footer() {
               <Tooltip>
                 <TooltipTrigger>
                   <Link
-                    href="https://utfs.io/f/dJLJpH9Hrkw3Mq16Mft7lJKSRYnQdpH4WNEgjBGiyz65xtM9"
+                    href="https://utfs.io/f/dJLJpH9Hrkw3jTMTgKyOLU25km13CFhvApqxP8E60TKIStfD"
                     target="_blank"
                     className="hidden md:flex opacity-50 hover:opacity-100"
                   >

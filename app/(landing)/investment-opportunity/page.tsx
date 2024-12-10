@@ -145,7 +145,7 @@ export default function LpOne() {
             including rental bookings, maintenance, and financial reporting,
             ensuring a hassle-free and profitable experience.
           </p>
-          <Button variant={"default"} className="w-fit">
+          <Button variant={"default"} className="w-fit place-self-center">
             <Link href="#book">Limited Villas Available</Link>
           </Button>
         </div>
