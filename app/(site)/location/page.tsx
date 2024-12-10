@@ -34,7 +34,7 @@ export default function Location() {
 
       <div className="flex flex-col gap-8 items-center justify-start w-full px-8 lg:px-32 ">
         <video
-          className="max-w-6xl h-full rounded-lg"
+          className="lg:max-w-6xl w-full h-full rounded-lg"
           width="1920"
           height="1080"
           controls
