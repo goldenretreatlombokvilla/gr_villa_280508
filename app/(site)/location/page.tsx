@@ -32,6 +32,23 @@ export default function Location() {
         </div>
       </div>
 
+      <div className="flex flex-col gap-8 items-center justify-start w-full px-8 lg:px-32 ">
+        <video
+          className="max-w-6xl h-full rounded-lg"
+          width="1920"
+          height="1080"
+          controls
+          playsInline
+          preload="none"
+          poster="https://utfs.io/f/dJLJpH9Hrkw3Paabqs1clERpursMSoUGgjFXvWt7KzqYwIyP"
+        >
+          <source
+            src="https://utfs.io/f/dJLJpH9Hrkw3Cp5F9i4zaSZ0xtQTPKHdJGMu9sFyjezgDAWE"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+
       <div className="lg:grid flex flex-col lg:grid-cols-2 gap-8 items-center justify-start w-full px-8 lg:px-32 py-10 lg:py-40 ">
         <p className="text-yellow-900 text-center text-balance text-4xl lg:text-5xl font-extrabold">
           Our Location
