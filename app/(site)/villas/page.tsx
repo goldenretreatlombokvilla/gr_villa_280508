@@ -744,7 +744,7 @@ export default function Villas() {
           height="1920"
           controls
           playsInline
-          preload="none"
+          preload="auto"
           poster="https://utfs.io/f/dJLJpH9Hrkw3aINp6gzVNOG2SrpjuDZU3Iwen5yqf7ETJbki"
         >
           <source

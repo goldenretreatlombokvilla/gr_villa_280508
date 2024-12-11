@@ -39,7 +39,7 @@ export default function Location() {
           height="1080"
           controls
           playsInline
-          preload="none"
+          preload="auto"
           poster="https://utfs.io/f/dJLJpH9Hrkw3Paabqs1clERpursMSoUGgjFXvWt7KzqYwIyP"
         >
           <source
