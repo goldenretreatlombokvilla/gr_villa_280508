@@ -127,14 +127,14 @@ export default function Lombok() {
           </h1>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-10 lg:gap-10 items-center justify-center w-full px-8 pb-16 lg:pb-20 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-10 lg:gap-10 items-center justify-center w-full  pb-16 lg:pb-20 max-w-6xl mx-auto">
           <div className="flex flex-col gap-4 items-center text-yellow-900 relative">
             <Image
               src="https://utfs.io/f/dJLJpH9Hrkw3yc3Ly5ChO0bGNmuXl6cVZrTJE2qfHkvI1R8Q"
               alt="Lombok Island Ariel View"
               width={1000}
               height={700}
-              className="w-full max-h-96 lg:max-h-[70vh] object-cover lg:aspect-[10/14] rounded-lg"
+              className="w-full max-h-96 lg:max-h-[70vh] object-cover lg:aspect-[10/14]"
             />
             <Image
               src="/lombok/tc_award.png"
@@ -144,7 +144,7 @@ export default function Lombok() {
               className="w-28 h-28 absolute bottom-5 right-5 object-contain"
             />
           </div>
-          <div className="flex flex-col gap-6 text-balance items-start justify-center">
+          <div className="flex flex-col gap-6 text-balance items-start justify-center px-8">
             <p className="font-cinzel text-yellow-800 text-5xl font-extrabold lg:text-7xl tracking-wide">
               Lombok
             </p>
@@ -267,8 +267,8 @@ export default function Lombok() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-x-14 items-center justify-center w-full px-8 lg:px-52 py-10 mt-10 lg:py-40 bg-yellow-900/10">
-        <div className="flex flex-col gap-4">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-x-14 items-center justify-center w-full py-10 mt-10 lg:py-40 bg-yellow-900/10">
+        <div className="flex flex-col gap-4 px-8 lg:px-52">
           <Image
             src="/mgp_logo.svg"
             alt="MotoGP Logo"
@@ -309,7 +309,7 @@ export default function Lombok() {
             alt="MotoGP Mandalika 2024"
             width={500}
             height={200}
-            className="w-full h-full object-cover rounded-lg"
+            className="w-full h-full object-cover"
           />
         </div>
       </div>
