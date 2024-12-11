@@ -88,7 +88,7 @@ export default function Footer() {
   return (
     <footer className="flex flex-col px-10 gap-4 py-8 pt-14 bg-beige text-white lg:px-52">
       {/* 1sd Level */}
-      <div className="hidden lg:flex sticky bottom-0 z-50 shadow-xl">
+      <div className="hidden lg:flex sticky bottom-0 z-40 shadow-xl">
         <div className="flex flex-row gap-4 items-center justify-between max-h-100 w-full lg:max-w-[75vw] mx-auto bg-black  bottom-10 left-0 right-0 fixed px-10 py-4 lg:px-4 lg:pl-12 rounded-full">
           <div className="flex flex-row gap-2 items-center justify-start">
             <MapPin className="w-4 h-4 text-yellow-500 opacity-80" />
