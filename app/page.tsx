@@ -41,17 +41,17 @@ export default function LandingPage() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 gap-16 lg:gap-20 items-center justify-center w-full px-8 pt-14 lg:pt-20 lg:py-20 max-w-6xl mx-auto">
+      <div className="grid grid-cols-1 gap-16 lg:gap-20 items-center justify-center w-full mx-auto">
         <div className="flex flex-col gap-4 items-center justify-center h-full w-full">
           <Image
             src="https://utfs.io/f/dJLJpH9Hrkw3hbSz8Z2LaOUmx7jw6JrqKBblDskWdPvTZoSg"
             alt="Front Enterence of Golden Retreat Lombok Villa"
             width={700}
             height={700}
-            className="w-full h-full object-cover rounded-lg object-center lg:shadow-2xl shadow-yellow-900"
+            className="w-full h-full object-cover object-center lg:shadow-2xl shadow-yellow-900"
           />
         </div>
-        <div className="flex flex-col gap-4 px-0 lg:px-0 w-full order-first lg:w-2/3">
+        <div className="flex flex-col gap-4 w-full order-first lg:w-2/3 px-8 lg:pt-20 lg:py-20 max-w-6xl mx-auto">
           <p className="font-cinzel text-xl lg:text-2xl font-extrabold tracking-wide flex flex-col text-yellow-800/50 uppercase -mb-4">
             Private & Exclusive
           </p>
@@ -79,20 +79,12 @@ export default function LandingPage() {
                 The Villas
               </Button>
             </Link>
-            {/*  <Link href="/book">
-              <Button variant="link" className="w-fit group ">
-                <Phone className="min-w-6 min-h-6 stroke-1 text-yellow-700 group-hover:animate-ping" />{" "}
-                <p className="opacity-0 group-hover:opacity-100 transisition-all duration-500 ease-in-out text-yellow-800">
-                  Book A Call
-                </p>
-              </Button>
-            </Link> */}
           </div>
         </div>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-x-14 items-center justify-center w-full px-8 lg:px-32 py-10 my-10 lg:py-40 bg-yellow-900/10">
-        <div className="flex flex-col gap-4">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-x-14 items-center justify-center w-full  bg-yellow-900/10">
+        <div className="flex flex-col gap-4 px-8 lg:px-32 py-10 lg:py-40">
           <p className="font-cinzel text-xl lg:text-2xl font-extrabold tracking-wide flex flex-col uppercase text-yellow-900/50">
             Paradise on Earth
           </p>
@@ -123,13 +115,13 @@ export default function LandingPage() {
             alt="Destination Lombok: A Rising Tourist Destination"
             width={500}
             height={200}
-            className="flex w-full h-full object-cover rounded-lg"
+            className="flex w-full h-full object-cover"
           />
         </div>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-x-14 items-start justify-start w-full px-8  lg:px-20 xl:px-52 py-20">
-        <div className="flex flex-col gap-4">
+      <div className="flex flex-col lg:grid lg:grid-cols-2 gap-4 lg:gap-x-14 items-start justify-start w-full py-20 ">
+        <div className="flex flex-col gap-4 px-8 lg:px-20">
           <p className="font-cinzel text-xl lg:text-2xl font-extrabold tracking-wide flex flex-col uppercase text-yellow-900/50">
             An Unparalleled
           </p>
@@ -153,13 +145,13 @@ export default function LandingPage() {
             </Link>
           </div>
         </div>
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 w-full">
           <Image
             src="https://utfs.io/f/dJLJpH9Hrkw3wcK398eUX3BuqFPzTD5Kh1H9QyUilcWfbY6d"
             alt="Golden Retreat Lombok Villa"
             width={500}
             height={200}
-            className="hidden lg:flex w-full h-auto aspect-video object-cover rounded-lg"
+            className="hidden lg:flex w-full h-auto aspect-video object-cover"
           />
           <div className="hidden lg:flex flex-row items-center justify-center py-0 text-stone-900/50 font-sans text-sm italic rounded-lg">
             <p>
@@ -170,13 +162,13 @@ export default function LandingPage() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-[2fr_3fr] gap-4 items-center justify-center w-full px-8 lg:px-20 xl:px-52 lg:py-20 -mt-14 pb-14">
+      <div className="grid grid-cols-1 lg:grid-cols-[2fr_3fr] gap-4 items-center justify-center w-full -mt-14 pb-14">
         <Image
           src="https://utfs.io/f/dJLJpH9Hrkw3wcK398eUX3BuqFPzTD5Kh1H9QyUilcWfbY6d"
           alt="Golden Retreat Lombok Villa"
           width={500}
           height={200}
-          className="flex lg:hidden w-full h-auto aspect-video object-cover rounded-lg"
+          className="flex lg:hidden w-full h-auto aspect-video object-cover"
         />
       </div>
 

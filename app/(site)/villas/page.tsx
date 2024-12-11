@@ -221,7 +221,7 @@ export default function Villas() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-10 lg:gap-40 items-center px-8 py-6 lg:pt-20 lg:py-20 max-w-6xl mx-auto">
+        <div className="flex flex-col gap-10 lg:gap-40 items-center py-6 lg:pt-20 lg:py-20 max-w-6xl mx-auto">
           {/* 2 Bed */}
           <Card className="flex flex-col w-full lg:p-0 bg-transparent shadow-none border-none">
             <CardContent className="p-0">
@@ -231,9 +231,9 @@ export default function Villas() {
                   alt="Superior Luxury Villa"
                   width={500}
                   height={300}
-                  className="w-full h-full object-cover aspect-video lg:aspect-[9/10] rounded-lg shadow-lg"
+                  className="w-full h-full object-cover aspect-video lg:aspect-[9/10]"
                 />
-                <div className="md:grid md:grid-cols-2 flex flex-col gap-6 lg:gap-8 w-full px-2 lg:text-xl text-md">
+                <div className="md:grid md:grid-cols-2 flex flex-col gap-6 lg:gap-8 w-full lg:text-xl text-md px-8">
                   <div className="flex flex-col gap-2 md:col-span-2">
                     <p className="text-5xl text-yellow-900 font-bold uppercase ">
                       Superior
@@ -285,7 +285,7 @@ export default function Villas() {
                   </div>
                 </div>
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 gap-y-10 items-center justify-center pb-20 ">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 gap-y-10 items-center justify-center pb-20 px-8">
                 <p className="text-2xl lg:text-3xl text-yellow-900 opacity-50 font-bold uppercase -mt-1 md:col-span-2 lg:row-span-3 lg:col-span-1">
                   Villa Specifications
                 </p>
@@ -373,9 +373,9 @@ export default function Villas() {
                   alt="Superior Luxury Villa"
                   width={500}
                   height={300}
-                  className="w-full h-full object-cover aspect-video lg:aspect-[9/10] rounded-lg shadow-lg"
+                  className="w-full h-full object-cover aspect-video lg:aspect-[9/10]"
                 />
-                <div className="md:grid md:grid-cols-2 flex flex-col gap-6 lg:gap-8 w-full px-2 lg:text-xl text-md">
+                <div className="md:grid md:grid-cols-2 flex flex-col gap-6 lg:gap-8 w-full lg:text-xl text-md px-8">
                   <div className="flex flex-col gap-2 md:col-span-2">
                     <p className="text-5xl text-yellow-900 font-bold uppercase ">
                       Premium
@@ -427,7 +427,7 @@ export default function Villas() {
                   </div>
                 </div>
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 gap-y-10 items-center justify-center pb-20 ">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 gap-y-10 items-center justify-center pb-20 px-8">
                 <p className="text-2xl lg:text-3xl text-yellow-900 opacity-50 font-bold uppercase -mt-1 md:col-span-2 lg:row-span-3 lg:col-span-1">
                   Villa Specifications
                 </p>

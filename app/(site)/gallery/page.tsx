@@ -87,7 +87,7 @@ export default function Gallery() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-center gap-8 max-w-6xl px-10 lg:py-20 mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-center gap-8 max-w-6xl lg:py-20 mx-auto">
         {gallery.map((item) => (
           <div
             key={item.title}
@@ -102,7 +102,7 @@ export default function Gallery() {
                     width={1000}
                     height={500}
                     loading="eager"
-                    className="w-full h-full aspect-video object-cover rounded-lg hover:shadow-lg hover:scale-105 trasition-all duration-300"
+                    className="w-full h-full aspect-video object-cover hover:shadow-lg trasition-all duration-300"
                   />
                   <p className="text-sm font-sans opacity-70 italic">
                     {item.title}
