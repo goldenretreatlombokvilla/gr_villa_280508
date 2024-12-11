@@ -107,8 +107,7 @@ export default function Footer() {
               <Tooltip>
                 <TooltipTrigger>
                   <Link
-                    href="https://utfs.io/f/dJLJpH9Hrkw3ud1pFPubSOoWvunMekl0ACfLj2rIG8cQDzZm"
-                    target="_blank"
+                    href="/infopack"
                     className="hidden md:flex opacity-50 hover:opacity-100"
                   >
                     <DownloadIcon className="w-4 h-4" />

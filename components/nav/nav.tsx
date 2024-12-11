@@ -97,7 +97,7 @@ const links = [
   },
   {
     name: "Info Pack",
-    link: "https://utfs.io/f/dJLJpH9Hrkw3ud1pFPubSOoWvunMekl0ACfLj2rIG8cQDzZm",
+    link: "/infopack",
     target: "_blank"
   },
   {
@@ -204,12 +204,9 @@ export default function Nav() {
                     </Link>
                   </SheetClose>
                   <SheetClose asChild>
-                    <Link
-                      href="https://utfs.io/f/dJLJpH9Hrkw3ud1pFPubSOoWvunMekl0ACfLj2rIG8cQDzZm"
-                      target="_blank"
-                    >
+                    <Link href="/infopack" target="_blank">
                       <Button variant="link" className="w-full">
-                        Download Info Pack
+                        Info Pack 2025
                       </Button>
                     </Link>
                   </SheetClose>
