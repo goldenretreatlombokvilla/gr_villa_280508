@@ -31,10 +31,12 @@ export default function Thankyou() {
             </div>
           </div>
           <div className="hidden lg:flex flex-row py-20 items-end justify-start gap-8">
-            <Facebook className="min-w-12 min-h-12 stroke-1 text-yellow-900/50 hover:text-yellow-900" />
-            <Instagram className="min-w-12 min-h-12 stroke-1 text-yellow-900/50 hover:text-yellow-900" />
-            <Linkedin className="min-w-12 min-h-12 stroke-1 text-yellow-900/50 hover:text-yellow-900" />
-            <Youtube className="min-w-12 min-h-12 stroke-1 text-yellow-900/50 hover:text-yellow-900" />
+            <Link href="https://www.facebook.com/people/Golden-Retreat-Lombok-Villas/61569367575846/">
+              <Facebook className="min-w-12 min-h-12 stroke-1 text-yellow-900/50 hover:text-yellow-900" />
+            </Link>
+            <Link href="https://www.instagram.com/goldenretreatinternational/">
+              <Instagram className="min-w-12 min-h-12 stroke-1 text-yellow-900/50 hover:text-yellow-900" />
+            </Link>
           </div>
         </div>
       </div>

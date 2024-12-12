@@ -6,6 +6,7 @@ import PhoneInputComp from "./form/phone-input";
 import InterestSelect from "./form/interest-select";
 import { Button } from "./ui/button";
 import { DateTimePicker } from "./form/datetime";
+import Link from "next/link";
 
 export default function Bookacall() {
   return (
@@ -21,8 +22,12 @@ export default function Bookacall() {
         </p>
 
         <div className="hidden lg:flex flex-row py-20 items-end justify-start gap-8">
-          <Facebook className="min-w-12 min-h-12 stroke-1 text-yellow-900/50 hover:text-yellow-900" />
-          <Instagram className="min-w-12 min-h-12 stroke-1 text-yellow-900/50 hover:text-yellow-900" />
+          <Link href="https://www.facebook.com/profile.php?id=61569367575846">
+            <Facebook className="min-w-6 min-h-6 text-white/70 hover:text-yellow-600 stroke-1" />
+          </Link>
+          <Link href="https://www.instagram.com/goldenretreatinternational/">
+            <Instagram className="min-w-6 min-h-6 text-white/70 hover:text-yellow-600 stroke-1" />
+          </Link>
           <Linkedin className="min-w-12 min-h-12 stroke-1 text-yellow-900/50 hover:text-yellow-900" />
           <Youtube className="min-w-12 min-h-12 stroke-1 text-yellow-900/50 hover:text-yellow-900" />
         </div>
