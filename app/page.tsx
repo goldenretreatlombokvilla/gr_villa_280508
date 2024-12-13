@@ -156,7 +156,7 @@ export default function LandingPage() {
             every year but only has enough hotels and resorts to lodge
           </p>
           <p className="font-extrabold text-5xl lg:text-6xl font-cinzel text-red-500">
-            50,000 visitor
+            50,000 visitors
           </p>
           <p className="text-xl font-sans text-balance -mt-2">
             at any one time!

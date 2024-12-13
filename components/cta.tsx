@@ -3,7 +3,14 @@
 import * as React from "react";
 import { useState } from "react";
 
-import { Facebook, Instagram, Linkedin, Youtube } from "lucide-react";
+import {
+  Facebook,
+  Inbox,
+  Instagram,
+  Linkedin,
+  Phone,
+  Youtube
+} from "lucide-react";
 import { Card, CardContent } from "./ui/card";
 import { Label } from "./ui/label";
 import { Input } from "./ui/input";
@@ -79,15 +86,20 @@ export default function Cta() {
           Speak to a member of our in-house team of professionals today.
         </p>
 
-        <div className="hidden lg:flex flex-row py-20 items-end justify-start gap-8">
+        <div className="hidden lg:flex flex-row py-20 items-end justify-start gap-4">
           <Link href="https://www.facebook.com/profile.php?id=61569367575846">
-            <Facebook className="min-w-6 min-h-6 text-white/70 hover:text-yellow-600 stroke-1" />
+            <Facebook className="min-w-12 min-h-12 text-yellow-900 hover:text-yellow-600 stroke-1" />
           </Link>
           <Link href="https://www.instagram.com/goldenretreatinternational/">
-            <Instagram className="min-w-6 min-h-6 text-white/70 hover:text-yellow-600 stroke-1" />
+            <Instagram className="min-w-12 min-h-12 text-yellow-900 hover:text-yellow-600 stroke-1" />
           </Link>
-          <Linkedin className="min-w-12 min-h-12 stroke-1 text-yellow-900/50 hover:text-yellow-900" />
-          <Youtube className="min-w-12 min-h-12 stroke-1 text-yellow-900/50 hover:text-yellow-900" />
+          |
+          <Link href="mailto:contact@gondenretreatinternational.com">
+            <Inbox className="min-w-12 min-h-12 text-yellow-900 hover:text-yellow-600 stroke-1" />
+          </Link>
+          <Link href="https://wa.link/z42apg">
+            <Phone className="min-w-12 min-h-12 text-yellow-900 hover:text-yellow-600 stroke-1" />
+          </Link>
         </div>
       </div>
       <Card className="flex flex-col w-full lg:col-start-2 bg-transparent border-none shadow-none p-0">

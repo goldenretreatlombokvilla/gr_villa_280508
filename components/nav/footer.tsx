@@ -216,13 +216,11 @@ export default function Footer() {
         </p>
         <div className="hidden lg:flex flex-row gap-4">
           <Link href="https://www.facebook.com/profile.php?id=61569367575846">
-            <Facebook className="min-w-6 min-h-6 text-white/70 hover:text-yellow-600 stroke-1" />
+            <Facebook className="min-w-6 min-h-6 text-white hover:text-yellow-600 stroke-1" />
           </Link>
           <Link href="https://www.instagram.com/goldenretreatinternational/">
-            <Instagram className="min-w-6 min-h-6 text-white/70 hover:text-yellow-600 stroke-1" />
+            <Instagram className="min-w-6 min-h-6 text-white hover:text-yellow-600 stroke-1" />
           </Link>
-          <Linkedin className="min-w-4 min-h-4 stroke-1  hover:text-yellow-900 opacity-50" />
-          <Youtube className="min-w-4 min-h-4 stroke-1  hover:text-yellow-900 opacity-50" />
         </div>
       </div>
     </footer>

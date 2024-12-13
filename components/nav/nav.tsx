@@ -215,16 +215,18 @@ export default function Nav() {
               <SheetFooter className="text-sm font-sans bottom-2 items-end justify-end w-full">
                 <div className="flex flex-row gap-4">
                   <Link href="https://www.facebook.com/profile.php?id=61569367575846">
-                    <Facebook className="min-w-6 min-h-6 text-white/70 hover:text-yellow-600 stroke-1" />
+                    <Facebook className="min-w-6 min-h-6 text-white hover:text-yellow-600 stroke-1" />
                   </Link>
                   <Link href="https://www.instagram.com/goldenretreatinternational/">
-                    <Instagram className="min-w-6 min-h-6 text-white/70 hover:text-yellow-600 stroke-1" />
+                    <Instagram className="min-w-6 min-h-6 text-white hover:text-yellow-600 stroke-1" />
                   </Link>
-                  <Linkedin className="min-w-6 min-h-6 opacity-50 text-white/70 hover:text-yellow-600 stroke-1" />
-                  <Youtube className="min-w-6 min-h-6 opacity-50 text-white/70 hover:text-yellow-600 stroke-1" />
                   |
-                  <Inbox className="min-w-6 min-h-6 text-white/70 hover:text-yellow-600 stroke-1" />
-                  <Phone className="min-w-6 min-h-6 text-white/70 hover:text-yellow-600 stroke-1" />
+                  <Link href="mailto:contact@gondenretreatinternational.com">
+                    <Inbox className="min-w-6 min-h-6 text-white hover:text-yellow-600 stroke-1" />
+                  </Link>
+                  <Link href="https://wa.link/z42apg">
+                    <Phone className="min-w-6 min-h-6 text-white hover:text-yellow-600 stroke-1" />
+                  </Link>
                 </div>
               </SheetFooter>
             </SheetContent>
