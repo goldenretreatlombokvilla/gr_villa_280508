@@ -150,13 +150,13 @@ export default function LandingPage() {
         <div className="flex flex-col gap-2 font-medium text-center">
           <p className="text-xl font-sans text-balance">Lombok receives over</p>
           <p className="font-extrabold text-5xl font-cinzel text-yellow-800">
-            2,000,000 tourist
+            1,000,000 tourist
           </p>
           <p className="text-xl font-sans text-balance">
             every year but only has enough hotels and resorts to lodge
           </p>
           <p className="font-extrabold text-5xl lg:text-6xl font-cinzel text-red-500">
-            50,000 visitors
+            24,000 visitors
           </p>
           <p className="text-xl font-sans text-balance -mt-2">
             at any one time!
