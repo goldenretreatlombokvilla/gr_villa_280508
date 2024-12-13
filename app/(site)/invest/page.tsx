@@ -419,7 +419,7 @@ export default function Invest() {
                 <div className="flex flex-row lg:flex-col gap-4 lg:gap-10 w-full p-0 items-center lg:items-start group">
                   <MapPin className="min-w-20 min-h-20 lg:w-24 lg:h-24 fill-yellow-700 group-hover:fill-yellow-600 stroke-1 lg:-ml-12" />
                   <p className="text-md  font-sans text-white border-l-2 border-yellow-600/50 pl-8">
-                    The land is situated in the heart of Lombok’s most popular
+                    We are situated in the heart of Lombok’s most popular
                     attractions. Nestled in the west coast of Lombok Island and
                     located 300m away from Bangsal Beach, Bangsal Fast Boat
                     Port, we are a stones throw away from the fast boat services
