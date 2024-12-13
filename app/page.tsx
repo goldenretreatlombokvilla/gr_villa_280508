@@ -37,6 +37,18 @@ export default function LandingPage() {
               className="lg:w-screen h-fit object-contain mb-20 drop-shadow-2xl"
             />
             <h1 className=" sr-only">Golden Retreat Lombok Villas</h1>
+
+            <div className="flex flex-col gap-2 text-right">
+              <p className="font-sans text-lg text-white">
+                2 & 3 Bedroom Villas
+              </p>
+              <p className="font-sans text-lg text-white">
+                2 Starting at USD 180,000
+              </p>
+              <p className="font-sans  text-lg text-white">
+                Limited Villas Available
+              </p>
+            </div>
           </div>
         </div>
       </div>

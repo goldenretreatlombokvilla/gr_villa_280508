@@ -103,7 +103,7 @@ const VillaInvestmentLanding = () => {
             Paradise Should Never Be Out of Reach
           </h1>
           <p className="text-xl text-stone-900 max-w-2xl mx-auto font-sans uppercase font-bold">
-            Exclusive Luxury Villa Development
+            Luxury Villa
           </p>
           <p className="text-lg text-stone-900/50 max-w-2xl mx-auto font-sans uppercase">
             Just 2 Hours from Bali
@@ -171,7 +171,7 @@ const VillaInvestmentLanding = () => {
           {/* Contact Form */}
           <div className="bg-yellow-900/20 shadow-xl border border-yellow-900/50 rounded-xl p-8">
             <h2 className="text-3xl font-bold text-center mb-6 text-yellow-900">
-              Explore Your Investment
+              Find Out More
             </h2>
             <form
               onSubmit={sendEmail}

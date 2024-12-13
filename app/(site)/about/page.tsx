@@ -75,7 +75,7 @@ export default function About() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-8 items-center justify-center w-full px-8 max-w-6xl mx-auto py-10 lg:py-20">
+        <div className="flex flex-col gap-8 items-center justify-center w-full max-w-6xl mx-auto py-10 lg:py-20">
           <p className="text-4xl lg:text-5xl font-cinzel text-yellow-900 font-extrabold">
             Successful Projects
           </p>
@@ -88,7 +88,7 @@ export default function About() {
                     alt="The Chandi Boutique Resort & Spa"
                     width={500}
                     height={300}
-                    className="w-full h-auto  object-cover aspect-video rounded-lg shadow-lg"
+                    className="w-full h-auto  object-cover aspect-video"
                   />
                   <Badge
                     variant={"default"}
@@ -107,7 +107,7 @@ export default function About() {
                     alt="The Mora Royal Villa"
                     width={500}
                     height={300}
-                    className="w-full h-auto  object-cover aspect-video rounded-lg shadow-lg"
+                    className="w-full h-auto  object-cover aspect-video "
                   />
                   <Badge
                     variant={"default"}
@@ -126,7 +126,7 @@ export default function About() {
                     alt="Malimbu Cliff Villa"
                     width={500}
                     height={300}
-                    className="w-full h-auto  object-cover aspect-video rounded-lg shadow-lg"
+                    className="w-full h-auto  object-cover aspect-video "
                   />
                   <Badge
                     variant={"default"}
@@ -145,7 +145,7 @@ export default function About() {
                     alt="Villa Matahari Terbenam"
                     width={500}
                     height={300}
-                    className="w-full h-auto  object-cover aspect-video rounded-lg shadow-lg"
+                    className="w-full h-auto  object-cover aspect-video "
                   />
                   <Badge
                     variant={"default"}
@@ -167,9 +167,9 @@ export default function About() {
                 alt="Jaswin Sawirin"
                 width={500}
                 height={500}
-                className="w-full h-full lg:w-96 lg:h-96 object-cover aspect-square rounded-lg mx-auto"
+                className="w-full h-full lg:w-96 lg:h-96 object-cover aspect-square mx-auto"
               />
-              <div className="flex flex-col gap-2 ">
+              <div className="flex flex-col gap-2 px-8">
                 <div className="flex flex-col gap-2 py-4">
                   <p className="font-cinzel text-xl lg:text-3xl font-extrabold flex flex-col text-yellow-800/50 uppercase ">
                     PT Tri Karya Safani
@@ -210,7 +210,7 @@ export default function About() {
                   alt="Glenn de Souza"
                   width={500}
                   height={500}
-                  className="w-full h-full lg:w-96 lg:h-96 object-cover aspect-square rounded-lg mx-auto"
+                  className="w-full h-full lg:w-96 lg:h-96 object-cover aspect-square mx-auto"
                 />
                 <p className="font-cinzel text-3xl lg:text-4xl font-extrabold flex flex-col text-yellow-900 uppercase ">
                   Glenn de Souza
@@ -225,7 +225,7 @@ export default function About() {
                   alt="Dominique de Souza "
                   width={500}
                   height={500}
-                  className="w-full h-full lg:w-96 lg:h-96 object-cover aspect-square rounded-lg mx-auto"
+                  className="w-full h-full lg:w-96 lg:h-96 object-cover aspect-square mx-auto"
                 />
                 <p className="font-cinzel text-3xl lg:text-4xl font-extrabold flex flex-col text-yellow-900 uppercase ">
                   Dominique de Souza
@@ -235,20 +235,22 @@ export default function About() {
                 </p>
               </div>
 
-              <p className="text-md font-sans col-span-2 text-pretty">
-                Metropalis Hospitality combines a blend of technical skills,
-                operational expertise as well as creative vision for the 21st
-                century. To give unique authentic hospitality services by making
-                a difference in the lives of the people we meet and greet every
-                day.
-              </p>
-              <p className="text-md font-sans text-pretty col-span-2">
-                The team is equipped to provide pre-opening operational support,
-                sales and marketing services, from their experiences working
-                with several international hospitality chains; Accor, Sheraton,
-                Holiday Inn, Best Western at Corporate, Regional, and Hotel
-                level in Asia.
-              </p>
+              <div className="px-8 flex flex-col gap-4 col-span-2">
+                <p className="text-md font-sans col-span-2 text-pretty">
+                  Metropalis Hospitality combines a blend of technical skills,
+                  operational expertise as well as creative vision for the 21st
+                  century. To give unique authentic hospitality services by
+                  making a difference in the lives of the people we meet and
+                  greet every day.
+                </p>
+                <p className="text-md font-sans text-pretty col-span-2">
+                  The team is equipped to provide pre-opening operational
+                  support, sales and marketing services, from their experiences
+                  working with several international hospitality chains; Accor,
+                  Sheraton, Holiday Inn, Best Western at Corporate, Regional,
+                  and Hotel level in Asia.
+                </p>
+              </div>
             </div>
           </div>
         </div>

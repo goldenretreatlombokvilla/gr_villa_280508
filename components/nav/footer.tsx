@@ -156,6 +156,12 @@ export default function Footer() {
             interiors, each Villa is designed for the ultimate in luxury island
             living.
           </p>
+          <p className="text-lg font-serif font-bold mt-6">
+            Jointly Developed By
+          </p>
+          <p className="text-sm font-sans text-balance ">
+            PT Propil Land Development & PT Tri Karya Safani
+          </p>
         </div>
         <div className="flex flex-col gap-2 ">
           <p className="text-xl font-serif font-bold ">The Villas</p>

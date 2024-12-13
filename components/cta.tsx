@@ -120,7 +120,7 @@ export default function Cta() {
               <PhoneInput
                 required
                 international
-                defaultCountry="MY"
+                defaultCountry="AU"
                 value={data.phone}
                 onChange={(e) => {
                   setdata({ ...data, phone: e || "" });
