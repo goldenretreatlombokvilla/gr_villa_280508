@@ -22,8 +22,8 @@ export default function LandingPage() {
             className="w-full h-[100vh] lg:h-full  aspect-video object-cover brightness-50"
           />
         </div>
-        <div className="flex flex-col gap-4 items-center justify-start px-0 text-white w-full h-fit py-10">
-          <div className="flex flex-col items-center lg:justify-around justify-center gap-0 lg:h-screen h-[100vh] py-20 lg:py-0 ">
+        <div className="flex relative flex-col gap-4 items-center justify-start px-0 text-white w-full h-fit py-10">
+          <div className="flex flex-col items-center justify-center gap-0 lg:h-[90vh] h-[100vh] py-10 lg:py-0 ">
             <p className="uppercase font-sans text-lg lg:text-2xl tracking-[0.5em]">
               Welcome to
             </p>
@@ -34,9 +34,21 @@ export default function LandingPage() {
               height={1071}
               loading="eager"
               unoptimized
-              className="lg:w-screen h-fit object-contain mb-20 drop-shadow-2xl"
+              className="lg:max-w-4xl h-fit object-contain mb-20 drop-shadow-2xl"
             />
             <h1 className=" sr-only">Golden Retreat Lombok Villas</h1>
+
+            <div className="lg:flex flex-col gap-2 text-center w-full uppercase drop-shadow-sm font-sans text-xl font-medium absolute bottom-40">
+              <p className="uppercase font-sans text-lg lg:text-2xl tracking-[0.3em] lg:tracking-[0.5em]">
+                <span className="font-bold">2 & 3</span> Bedroom
+              </p>
+              <p className="uppercase font-sans text-lg lg:text-2xl tracking-[0.3em] lg:tracking-[0.5em]">
+                Starting at <span className="font-extrabold">USD 180,000</span>
+              </p>
+              <p className="uppercase font-sans text-lg lg:text-2xl tracking-[0.3em] lg:tracking-[0.5em]">
+                <span className="font-bold">Limited</span> Units
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -95,8 +107,11 @@ export default function LandingPage() {
             Lombok Island is fast becoming a popular choice for nature lovers
             and holiday makers. With its pristine beaches, lush rainforests, and
             abundant attractions, the Island offers unique and unforgettable
-            experiences for all tastes. From heart-racing adventure to
-            soul-healing serenity, and everything in between, Lombok has it all.
+            experiences for all tastes.
+          </p>
+          <p className="text-md font-sans text-balance">
+            From heart-racing adventure to soul-healing serenity, and everything
+            in between, Lombok has it all.
           </p>
           <div className="flex flex-row gap-4 items-end justify-start">
             <Link href="/lombok" prefetch={true}>
@@ -119,7 +134,35 @@ export default function LandingPage() {
           />
         </div>
       </div>
-
+      <div className="bg-yellow-900/10 rounded-lg py-20 px-8 lg:px-52 grid lg:grid-cols-2 gap-12 lg:gap-24 items-center justify-center w-full text-left">
+        <div className="flex flex-col w-full h-full items-center justify-center">
+          {/*           <Tchart />
+           */}{" "}
+          <Image
+            src="https://utfs.io/f/dJLJpH9Hrkw3sumPK6dtfQDR1ujgW04bv39US6XzVqYOLryH"
+            alt="Golden Retreat Lombok Villa"
+            width={500}
+            height={300}
+            className="w-full h-full object-cover aspect-video rounded-lg shadow-lg"
+            loading="eager"
+          />
+        </div>
+        <div className="flex flex-col gap-2 font-medium text-center">
+          <p className="text-xl font-sans text-balance">Lombok receives over</p>
+          <p className="font-extrabold text-5xl font-cinzel text-yellow-800">
+            2,000,000 tourist
+          </p>
+          <p className="text-xl font-sans text-balance">
+            every year but only has enough hotels and resorts to lodge
+          </p>
+          <p className="font-extrabold text-5xl lg:text-6xl font-cinzel text-red-500">
+            50,000 visitor
+          </p>
+          <p className="text-xl font-sans text-balance -mt-2">
+            at any one time!
+          </p>
+        </div>
+      </div>
       <div className="flex flex-col lg:grid lg:grid-cols-2 gap-4 lg:gap-x-14 items-start justify-start w-full py-20 ">
         <div className="flex flex-col gap-4 px-8 lg:px-20">
           <p className="font-cinzel text-xl lg:text-2xl font-extrabold tracking-wide flex flex-col uppercase text-yellow-900/50">
