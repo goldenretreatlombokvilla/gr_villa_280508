@@ -40,7 +40,7 @@ export default function LandingPage() {
 
             <div className="lg:flex flex-col gap-2 text-center w-full uppercase drop-shadow-sm font-sans text-xl font-medium absolute bottom-40">
               <p className="uppercase font-sans text-lg lg:text-2xl tracking-[0.3em] lg:tracking-[0.5em]">
-                <span className="font-bold">2 & 3</span> Bedrooms
+                <span className="font-bold">2 & 3</span> Bedroom
               </p>
               <p className="uppercase font-sans text-lg lg:text-2xl tracking-[0.3em] lg:tracking-[0.5em]">
                 Starting at <span className="font-extrabold">USD 180,000</span>
