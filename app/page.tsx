@@ -23,7 +23,7 @@ export default function LandingPage() {
           />
         </div>
         <div className="flex relative flex-col gap-4 items-center justify-start px-0 text-white w-full h-fit py-10">
-          <div className="flex flex-col items-center justify-center gap-0 lg:h-[90vh] h-[100vh] py-10 lg:py-0 ">
+          <div className="flex flex-col items-center justify-center gap-20 lg:h-[90vh] py-20 lg:py-0">
             <p className="uppercase font-sans text-lg lg:text-2xl tracking-[0.5em]">
               Welcome to
             </p>
@@ -37,8 +37,7 @@ export default function LandingPage() {
               className="lg:max-w-4xl h-fit object-contain mb-20 drop-shadow-2xl"
             />
             <h1 className=" sr-only">Golden Retreat Lombok Villas</h1>
-
-            <div className="lg:flex flex-col gap-2 text-center w-full uppercase drop-shadow-sm font-sans text-xl font-medium absolute bottom-60 lg:bottom-40">
+            <div className="lg:flex flex-col gap-2 text-center w-full uppercase drop-shadow-sm font-sans text-xl font-medium">
               <p className="uppercase font-sans text-lg lg:text-2xl tracking-[0.3em] lg:tracking-[0.5em]">
                 <span className="font-bold">2 & 3</span> Bedroom
               </p>
