@@ -23,21 +23,23 @@ export default function LandingPage() {
           />
         </div>
         <div className="flex relative flex-col gap-4 items-center justify-start px-0 text-white w-full h-fit py-10">
-          <div className="flex flex-col items-center justify-center gap-20 lg:h-[90vh] py-20 lg:py-0">
-            <p className="uppercase font-sans text-lg lg:text-2xl tracking-[0.5em]">
-              Welcome to
-            </p>
-            <Image
-              src="/brand/logo_white_long_big.png"
-              alt="Golden Retreat Lombok Villas"
-              width={2432}
-              height={1071}
-              loading="eager"
-              unoptimized
-              className="lg:max-w-4xl h-fit object-contain mb-20 drop-shadow-2xl"
-            />
+          <div className="flex flex-col items-center justify-center gap-20 lg:gap-10 h-[90vh] py-0 lg:py-0 lg:-mt-32">
+            <div className="flex flex-col gap-4 items-center justify-center">
+              <p className="uppercase font-sans text-lg lg:text-2xl tracking-[0.5em]">
+                Welcome to
+              </p>
+              <Image
+                src="/brand/logo_white_long_big.png"
+                alt="Golden Retreat Lombok Villas"
+                width={2432}
+                height={1071}
+                loading="eager"
+                unoptimized
+                className="lg:max-w-4xl h-fit object-contain drop-shadow-2xl"
+              />
+            </div>
             <h1 className=" sr-only">Golden Retreat Lombok Villas</h1>
-            <div className="lg:flex flex-col gap-2 text-center w-full uppercase drop-shadow-sm font-sans text-xl font-medium">
+            <div className="lg:flex flex-col gap-2 text-center w-full uppercase drop-shadow-sm font-sans text-xl font-medium absolute bottom-16">
               <p className="uppercase font-sans text-lg lg:text-2xl tracking-[0.3em] lg:tracking-[0.5em]">
                 <span className="font-bold">2 & 3</span> Bedroom
               </p>
@@ -52,7 +54,7 @@ export default function LandingPage() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 gap-16 lg:gap-20 items-center justify-center w-full mx-auto">
+      <div className="grid grid-cols-1 gap-16 lg:gap-20 items-center justify-center pt-16 w-full mx-auto">
         <div className="flex flex-col gap-4 items-center justify-center h-full w-full">
           <Image
             src="https://utfs.io/f/dJLJpH9Hrkw3hbSz8Z2LaOUmx7jw6JrqKBblDskWdPvTZoSg"
