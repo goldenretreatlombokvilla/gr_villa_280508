@@ -38,7 +38,7 @@ export default function LandingPage() {
             />
             <h1 className=" sr-only">Golden Retreat Lombok Villas</h1>
 
-            <div className="lg:flex flex-col gap-2 text-center w-full uppercase drop-shadow-sm font-sans text-xl font-medium absolute bottom-60">
+            <div className="lg:flex flex-col gap-2 text-center w-full uppercase drop-shadow-sm font-sans text-xl font-medium absolute bottom-60 lg:bottom-40">
               <p className="uppercase font-sans text-lg lg:text-2xl tracking-[0.3em] lg:tracking-[0.5em]">
                 <span className="font-bold">2 & 3</span> Bedroom
               </p>
