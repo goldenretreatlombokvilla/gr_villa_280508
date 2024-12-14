@@ -27,11 +27,10 @@ export default function LandingPage() {
             {/* <p className="uppercase font-sans text-lg lg:text-2xl tracking-[0.5em]">
                 Welcome to
               </p> */}
-            <p className="uppercase text-center font-sans text-xl lg:text-2xl px-8 flex flex-row flex-wrap gap-2 items-start justify-center tracking-[0.3em] font-medium">
+            <p className="uppercase text-center font-sans text-xl lg:text-2xl px-8  gap-2 items-start justify-center tracking-[0.3em] font-medium">
               {/*  <Quote className="w-3 h-3 text-white fill-white rotate-180" /> */}
-              Paradise Should{" "}
-              <span className="font-extrabold italic">Never</span> Be Out Of
-              Reach {/* <Quote className="w-3 h-3 text-white fill-white" /> */}
+              Paradise Should Never Be Out Of Reach{" "}
+              {/* <Quote className="w-3 h-3 text-white fill-white" /> */}
             </p>
             <Image
               src="/brand/logo_white_long_big.png"
