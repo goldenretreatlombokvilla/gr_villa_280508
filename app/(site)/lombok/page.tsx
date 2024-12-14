@@ -20,7 +20,10 @@ import {
   Fish,
   ImageIcon,
   LandPlot,
+  MapIcon,
+  MapPin,
   Mountain,
+  PinIcon,
   TreePalm,
   Waves
 } from "lucide-react";
@@ -200,7 +203,7 @@ export default function Lombok() {
         </div>
       </div>
 
-      <div className="flex flex-col w-full px-20 py-6 lg:pt-20 lg:py-20 max-w-6xl mx-auto">
+      {/* <div className="flex flex-col w-full px-20 py-6 lg:pt-20 lg:py-20 max-w-6xl mx-auto">
         <Carousel
           opts={{ align: "center", loop: true }}
           className="w-full flex"
@@ -225,6 +228,51 @@ export default function Lombok() {
           <CarouselPrevious />
           <CarouselNext />
         </Carousel>
+      </div> */}
+
+      <div className="grid grid-cols-1 relative lg:grid-cols-2 gap-6 lg:px-10 py-8 pt-12">
+        <div className="absolute w-full h-full">
+          <Image
+            src="https://utfs.io/f/dJLJpH9Hrkw31hETLWNSAE1eLPCn7ZqI4KBDlfHwUhJit380"
+            alt="Lombok International Airport"
+            width={2000}
+            height={2000}
+            loading="eager"
+            className="w-full brightness-50 h-full object-cover z-0"
+          />
+        </div>
+        <div className="flex flex-col gap-4 items-center justify-center px-0 z-20 text-white w-full">
+          <div className="flex flex-col gap-4 lg:gap-10 w-full justify-start items-start">
+            <p className="text-4xl lg:text-7xl font-sans font-extrabold px-8">
+              Zainuddin Abdul Madjid International Airport (LOP)
+            </p>
+            <div className="flex flex-row gap-2 items-center font-sans w-full px-8">
+              <MapPin className="min-w-4 min-h-4 stroke-1 text-white" />
+              <p>
+                <span className="font-extrabold">Praya</span>, Lombok
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="flex flex-col -gap-4 w-full pt-8 z-20 text-white items-start">
+          <p className="text-md font-sans px-8 lg:px-10">
+            Direct flights to Lombok from:
+          </p>
+          <Image
+            src="https://utfs.io/f/dJLJpH9Hrkw3bj76wEsqfwy05AzFLkTvmpo63dsY7VXnlRD8"
+            alt="Air Asia flights information"
+            width={500}
+            height={500}
+            className="w-full h-auto object-contain -mt-6"
+          />
+          <Image
+            src="https://utfs.io/f/dJLJpH9Hrkw3sO94s1dtfQDR1ujgW04bv39US6XzVqYOLryH"
+            alt="Scoot Airlines flights information"
+            width={500}
+            height={500}
+            className="w-full h-auto object-contain -mt-10"
+          />
+        </div>
       </div>
 
       <div className="flex flex-col gap-8 items-center justify-start w-full  px-8 py-6 lg:pt-20 lg:py-20 max-w-6xl mx-auto">
