@@ -2,7 +2,7 @@ import Cta from "@/components/cta";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowRightCircle } from "lucide-react";
+import { ArrowRightCircle, Quote } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -23,23 +23,28 @@ export default function LandingPage() {
           />
         </div>
         <div className="flex relative flex-col gap-4 items-center justify-start px-0 text-white w-full h-fit py-10">
-          <div className="flex flex-col items-center justify-center gap-20 lg:gap-10 h-[90vh] py-0 lg:py-0 lg:-mt-32">
-            <div className="flex flex-col gap-4 items-center justify-center">
-              <p className="uppercase font-sans text-lg lg:text-2xl tracking-[0.5em]">
+          <div className="flex flex-col items-center justify-between gap-20 lg:gap-10 h-[90vh] py-0 lg:py-0 lg:-mt-32">
+            {/* <p className="uppercase font-sans text-lg lg:text-2xl tracking-[0.5em]">
                 Welcome to
-              </p>
-              <Image
-                src="/brand/logo_white_long_big.png"
-                alt="Golden Retreat Lombok Villas"
-                width={2432}
-                height={1071}
-                loading="eager"
-                unoptimized
-                className="lg:max-w-4xl h-fit object-contain drop-shadow-2xl"
-              />
-            </div>
+              </p> */}
+            <p className="uppercase text-center font-sans text-xl lg:text-2xl px-8 flex flex-row flex-wrap gap-2 items-start justify-center tracking-[0.3em] font-medium">
+              {/*  <Quote className="w-3 h-3 text-white fill-white rotate-180" /> */}
+              Paradise Should{" "}
+              <span className="font-extrabold italic">Never</span> Be Out Of
+              Reach {/* <Quote className="w-3 h-3 text-white fill-white" /> */}
+            </p>
+            <Image
+              src="/brand/logo_white_long_big.png"
+              alt="Golden Retreat Lombok Villas"
+              width={2432}
+              height={1071}
+              loading="eager"
+              unoptimized
+              className="lg:max-w-4xl h-fit object-contain drop-shadow-2xl"
+            />
+
             <h1 className=" sr-only">Golden Retreat Lombok Villas</h1>
-            <div className="lg:flex flex-col gap-2 text-center w-full uppercase drop-shadow-sm font-sans text-xl font-medium absolute bottom-16">
+            <div className="lg:flex flex-col gap-2 text-center w-full uppercase drop-shadow-sm font-sans text-xl font-medium ">
               <p className="uppercase font-sans text-lg lg:text-2xl tracking-[0.3em] lg:tracking-[0.5em]">
                 <span className="font-bold">2 & 3</span> Bedroom
               </p>
