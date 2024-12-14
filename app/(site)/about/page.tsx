@@ -76,7 +76,7 @@ export default function About() {
           </div>
         </div>
         <div className="flex flex-col gap-8 items-center justify-center w-full max-w-6xl mx-auto py-10 lg:py-20">
-          <p className="text-4xl lg:text-5xl font-cinzel text-yellow-900 font-extrabold">
+          <p className="text-4xl lg:text-5xl font-cinzel text-yellow-900 font-extrabold px-8">
             Successful Projects
           </p>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 w-full">

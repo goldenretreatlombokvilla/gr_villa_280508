@@ -1,158 +1,400 @@
-import Book from "@/components/book";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import {
-  Dialog,
-  DialogContent,
-  DialogHeader,
-  DialogPortal,
-  DialogTitle,
-  DialogTrigger
-} from "@/components/ui/dialog";
-import { ArrowRightCircle } from "lucide-react";
-import { Metadata } from "next";
-import Image from "next/image";
-import Link from "next/link";
+"use client";
 
-export const metadata: Metadata = {
-  title: "Investment Opportunity",
-  description: "Landing Page for Meta and Google Ads"
+import React, { useState } from "react";
+import Image from "next/image";
+import {
+  CircleAlert,
+  Mail,
+  MapPin,
+  RotateCcw,
+  Sailboat,
+  Sun
+} from "lucide-react";
+import { Input } from "@/components/ui/input";
+import {
+  Select,
+  SelectContent,
+  SelectGroup,
+  SelectItem,
+  SelectTrigger,
+  SelectValue
+} from "@/components/ui/select";
+import { toast } from "@/hooks/use-toast";
+import { redirect } from "next/navigation";
+import { Label } from "@/components/ui/label";
+import { cn } from "@/lib/utils";
+import CountrySelect from "@/components/form/country-select";
+import RegionSelect from "@/components/form/region-select";
+import { Button } from "@/components/ui/button";
+import PhoneInput from "react-phone-number-input";
+import "react-phone-number-input/style.css";
+
+const VillaInvestmentLanding = () => {
+  const [isValid, setIsValid] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+
+  const [countryCode, setCountryCode] = useState("");
+  const [regionCode, setRegionCode] = useState("");
+  const [regionshow, setRegionShow] = useState(false);
+  const [infoShow, setInfoShow] = useState(false);
+
+  function handleCountryChange(value: any) {
+    setRegionShow(true);
+    setCountryCode(value);
+    setdata({ ...data, countryCode: value });
+  }
+
+  function handleRegionChange(value: any) {
+    setRegionCode(value);
+    setdata({ ...data, regionCode: value });
+  }
+
+  const [data, setdata] = useState({
+    name: "",
+    email: "",
+    purpose: "",
+    type: "",
+    time: "",
+    phone: "",
+    countryCode: "",
+    regionCode: ""
+  });
+
+  const sendEmail = async (e: any) => {
+    e.preventDefault();
+    setIsLoading(true);
+    const res = await fetch("/api/ad-lead", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(data)
+    });
+    console.log(res);
+    setdata({
+      name: "",
+      email: "",
+      purpose: "",
+      type: "",
+      time: "",
+      phone: "",
+      countryCode: "",
+      regionCode: ""
+    });
+    if (res.status === 500) {
+      toast({
+        title: "Something went wrong!",
+        description: "Please try again later."
+      });
+    } else if (res.status === 200) {
+      toast({
+        title: "Success!",
+        description: "Your message has been sent successfully."
+      });
+    }
+    redirect("/thankyou");
+  };
+
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-yellow-900/10 to-white">
+      <div className="w-full">
+        <Image
+          src="https://utfs.io/f/dJLJpH9Hrkw3pXyUf0A8fDXoAL2Jay9kEY7gbmpj3CvcG0Pu"
+          alt="Poolside View of Golden Retreat Lombok Villa"
+          width={2000}
+          height={2000}
+          loading="eager"
+          className="w-full h-full md:h-[50vh] lg:h-full aspect-video object-cover lg:object-contain"
+        />
+      </div>
+      <div className="container mx-auto px-4 py-16 max-w-6xl">
+        {/* Header */}
+        <header className="text-center mb-16">
+          <h1 className="text-5xl font-extrabold text-yellow-900 mb-4">
+            Paradise Should Never Be Out of Reach
+          </h1>
+          <p className="text-xl text-stone-900 max-w-2xl mx-auto font-sans uppercase font-bold">
+            Exclusive Luxury Villas
+          </p>
+          <p className="text-lg text-stone-900/50 max-w-2xl mx-auto font-sans uppercase">
+            Just 2 Hours from Bali
+          </p>
+        </header>
+
+        {/* Hero Section */}
+        <div className="grid md:grid-cols-2 gap-12 items-start">
+          <div>
+            <div className="space-y-6 lg:pt-10">
+              <div className="flex items-start space-x-4">
+                <Sailboat className="text-blue-600 min-w-6 min-h-6" />
+                <div>
+                  <h3 className="text-2xl font-bold text-yellow-900">
+                    Unparalleled Location
+                  </h3>
+                  <p className="text-stone-900 font-sans">
+                    33 meticulously designed luxury villas nestled in a tropical
+                    paradise, just a short boat ride from the island of Bali and
+                    famous Gili Islands.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start space-x-4">
+                <Sun className="text-yellow-500 min-w-6 min-h-6" />
+                <div>
+                  <h3 className="text-2xl font-bold text-yellow-900">
+                    Investment Opportunity
+                  </h3>
+                  <p className="text-stone-900 font-sans">
+                    Seize the opportunity to own a piece of paradise. This
+                    high-end development is both an investment with significant
+                    potential gains and a personal luxury retreat.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start space-x-4">
+                <MapPin className="text-green-600 min-w-6 min-h-6" />
+                <div>
+                  <h3 className="text-2xl font-bold text-yellow-900">
+                    Prime Real Estate
+                  </h3>
+                  <p className="text-stone-900 font-sans">
+                    Strategically located in one of Southeast Asia’s most sought
+                    after regions, Lombok’s rising star as the next Bali is
+                    poised to soar even higher.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-center justify-center space-x-4 py-6">
+                {/*                 <CircleAlert className="text-red-600 min-w-6 min-h-6" />
+                 */}{" "}
+                <div>
+                  <p className="text-lg text-stone-900 max-w-2xl font-bold mx-auto font-sans uppercase">
+                    Limited Units, Enquire Now!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Contact Form */}
+          <div className="bg-yellow-900/20 shadow-xl border border-yellow-900/50 rounded-xl p-8">
+            <h2 className="text-3xl font-bold text-left text-yellow-900">
+              Find Out More
+            </h2>
+            <form
+              onSubmit={sendEmail}
+              className="flex flex-col lg:grid grid-cols-1 gap-16 font-sans py-6 px-0"
+            >
+              <div className="flex flex-col gap-4 px-4 border border-y-0 border-r-0 border-beige relative rounded-xl max-h-fit">
+                {/* <p className="font-sans font-thin text-lg absolute -top-4 px-2 rounded-full">
+                  Your Interest
+                </p> */}
+                <Label
+                  htmlFor="purpose"
+                  className="flex flex-row gap-4 pt-4 items-center justify-between"
+                >
+                  Purpose
+                  {data.purpose !== "" && (
+                    <RotateCcw
+                      onClick={() => setdata({ ...data, purpose: "" })}
+                      className="w-4 h-4 text-black/50 cursor-pointer"
+                    />
+                  )}
+                </Label>
+                <Select
+                  value={data.purpose}
+                  required={true}
+                  onValueChange={(e) => setdata({ ...data, purpose: e })}
+                >
+                  <SelectTrigger className="w-full font-mono mb-4">
+                    <SelectValue />
+                  </SelectTrigger>
+                  <SelectContent
+                    className=" font-mono bg-black text-white"
+                    position="popper"
+                  >
+                    <SelectGroup className="flex flex-col gap-4 px-4 py-2">
+                      <SelectItem value="self-stay">Self Stay</SelectItem>
+                      <SelectItem value="investment">
+                        Investment Property
+                      </SelectItem>
+                      <SelectItem value="self-stay-investment">
+                        Self Stay & Investment Property
+                      </SelectItem>
+                    </SelectGroup>
+                  </SelectContent>
+                </Select>
+                <Label
+                  htmlFor="type"
+                  className="flex flex-row gap-4 items-center justify-between"
+                >
+                  Interested Model
+                  {data.type !== "" && (
+                    <RotateCcw
+                      onClick={() => setdata({ ...data, type: "" })}
+                      className="w-4 h-4 text-black/50 cursor-pointer"
+                    />
+                  )}
+                </Label>
+                <Select
+                  value={data.type}
+                  required
+                  onValueChange={(e) => setdata({ ...data, type: e })}
+                >
+                  <SelectTrigger className="w-full font-mono mb-4">
+                    <SelectValue />
+                  </SelectTrigger>
+                  <SelectContent
+                    className=" font-mono bg-black text-white"
+                    position="popper"
+                  >
+                    <SelectGroup className="flex flex-col gap-4 px-4 py-2">
+                      <SelectItem value="2-bedroom">
+                        Superior - 2 Bedroom Villa
+                      </SelectItem>
+                      <SelectItem value="3-bedroom">
+                        Premium - 3 Bedroom Villa
+                      </SelectItem>
+                      <SelectItem value="both">Both</SelectItem>
+                    </SelectGroup>
+                  </SelectContent>
+                </Select>
+                <Label
+                  htmlFor="time"
+                  className="flex flex-row gap-4 items-center justify-between"
+                >
+                  Prefered Time Of Contact
+                  {data.time !== "" && (
+                    <RotateCcw
+                      onClick={() => setdata({ ...data, time: "" })}
+                      className="w-4 h-4 text-black/50 cursor-pointer"
+                    />
+                  )}
+                </Label>
+                <Select
+                  value={data.time}
+                  required
+                  onValueChange={(e) => setdata({ ...data, time: e })}
+                >
+                  <SelectTrigger className="w-full font-mono mb-4">
+                    <SelectValue />
+                  </SelectTrigger>
+                  <SelectContent
+                    className=" font-mono bg-black text-white"
+                    position="popper"
+                  >
+                    <SelectGroup className="flex flex-col gap-4 px-4 py-2">
+                      <SelectItem value="Morning">Morning</SelectItem>
+                      <SelectItem value="Afternoon">Afternoon</SelectItem>
+                      <SelectItem value="Evening">Evening</SelectItem>
+                    </SelectGroup>
+                  </SelectContent>
+                </Select>
+              </div>
+              {data.time !== "" && data.type !== "" && data.purpose !== "" && (
+                <div>
+                  <div className="flex flex-col gap-4 pt-8 px-4 border border-y-0 border-r-0 border-beige relative rounded-xl">
+                    <p className="font-sans font-thin text-lg absolute -top-4 px-2 rounded-full">
+                      Your Information
+                    </p>
+                    <Label htmlFor="name">Full Name</Label>
+                    <Input
+                      type="text"
+                      name="name"
+                      id="name"
+                      required
+                      value={data.name}
+                      onChange={(e) =>
+                        setdata({ ...data, name: e.target.value })
+                      }
+                    />
+                    <Label htmlFor="email">E-mail</Label>
+                    <Input
+                      type="email"
+                      name="email"
+                      id="email"
+                      required
+                      value={data.email}
+                      onChange={(e) =>
+                        setdata({ ...data, email: e.target.value })
+                      }
+                    />
+                    <Label htmlFor="phone">Phone Number</Label>
+                    <div className="relative w-full">
+                      <PhoneInput
+                        international
+                        defaultCountry="AU"
+                        value={data.phone}
+                        onChange={(e: any) => {
+                          setdata({ ...data, phone: e || "" });
+                          setIsValid(!!e && e.length > 8);
+                        }}
+                        className={cn(
+                          "flex h-12 w-full rounded-full border border-input bg-stone-50 px-6 py-2 text-sm ring-offset-background font-mono file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 mb-4"
+                        )}
+                      />
+                    </div>
+                    {data.phone && !isValid && (
+                      <p className="text-xs italic -mt-4 text-red-500 text-right">
+                        Please enter a valid phone number
+                      </p>
+                    )}
+                    <Label htmlFor="country">Country</Label>
+                    <CountrySelect
+                      className="mb-4 font-mono"
+                      onChange={(value) => handleCountryChange(value)}
+                      priorityOptions={["AU", "CN", "GB", "MY", "RU", "SG"]}
+                      placeholder="Select Country"
+                    ></CountrySelect>
+                    {/*  <Input
+                type="hidden"
+                name="countryCode"
+                value={countryCode}
+                onChange={(e) =>
+                  setdata({ ...data, countryCode: e.target.value })
+                }
+              /> */}
+                    {regionshow !== false && (
+                      <div>
+                        <Label>Region</Label>
+                        <RegionSelect
+                          onChange={(value) => handleRegionChange(value)}
+                          className="my-4"
+                          countryCode={countryCode}
+                        ></RegionSelect>
+                      </div>
+                    )}
+                  </div>
+                  <div className="flex flex-col gap-4 pt-6 px-4">
+                    <Button
+                      type="submit"
+                      variant={"outline"}
+                      className="text-lg rounded-full h-14"
+                      disabled={isLoading}
+                    >
+                      {isLoading ? "Submitting..." : "Submit"}
+                    </Button>
+                    <p className="text-xs italic font-sans text-stone-800">
+                      *We value your privacy. Your information will not be
+                      shared with third parties.
+                    </p>
+                  </div>
+                </div>
+              )}
+            </form>
+          </div>
+        </div>
+
+        {/* Footer */}
+        <footer className="mt-16 text-center text-stone-900 font-sans">
+          <p>© 2024 Golden Retreat International. All Rights Reserved.</p>
+        </footer>
+      </div>
+    </div>
+  );
 };
 
-export default function LpOne() {
-  return (
-    <main>
-      <div className="grid grid-cols-1 lg:grid-cols-1 bg-yellow-900/10">
-        <div className="w-full">
-          <Image
-            src="https://utfs.io/f/dJLJpH9Hrkw3F8fdEjY3NDtBULj4yZxze2nb6wR7gl1iPYX0"
-            alt="Poolside View of Golden Retreat Lombok Villa"
-            width={2000}
-            height={2000}
-            loading="eager"
-            placeholder="blur"
-            blurDataURL="https://utfs.io/f/dJLJpH9Hrkw3bjYjbfsqfwy05AzFLkTvmpo63dsY7VXnlRD8"
-            className="w-full h-full md:h-[50vh] lg:h-full aspect-video object-cover lg:object-contain"
-          />
-        </div>
-        <div className="flex flex-col gap-4 px-8 lg:px-0 pb-40 pt-20 lg:py-20 w-full mx-auto lg:max-w-4xl lg:text-center lg:min-h-[100vh] lg:items-center lg:justify-center">
-          <p className="font-cinzel text-xl lg:text-2xl font-extrabold tracking-wide flex flex-col text-yellow-900/50 uppercase -mb-4">
-            Private & Exclusive
-          </p>
-          <h3 className="font-extrabold text-5xl md:text-6xl lg:text-8xl font-cinzel text-yellow-900">
-            Luxury Villas
-          </h3>
-          <p className="font-sans text-stone-900 text-md text-balance">
-            Experience a rare coalescence of luxury and exceptional value with
-            our latest development,{" "}
-            <span className="font-extrabold text-yellow-800">
-              Golden Retreat Lombok
-            </span>
-            , where every Villa has been designed with you in mind.
-          </p>
-          <p className="font-sans text-md text-stone-900/50 text-balance">
-            Nestled in the beautiful west coast of Lombok, Golden Retreat Lombok
-            showcases exquisite design, a quality build and 5-star amenities.
-          </p>
-          <div className="flex flex-row flex-wrap gap-4 w-full lg:justify-center">
-            <Button variant={"default"} className="w-fit">
-              <Link href="#book">Book A Discovery Call</Link>
-            </Button>
-          </div>
-        </div>
-      </div>
-      <div className="flex flex-col lg:grid grid-cols-2 gap-20 lg:gap-4 pb-20 lg:py-10 px-8 bg-yellow-900/10 lg:px-52 items-center justify-center lg:min-h-screen">
-        <div className="flex flex-col gap-4">
-          <p className="text-5xl lg:text-7xl  font-extrabold font-cinzel text-yellow-900">
-            The Villas
-          </p>
-          <p className="font-sans text-md">
-            Golden Retreat Lombok is a turnkey project, where each Villa is
-            designed with attention to detail, and furnished with all the
-            comforts of home.
-          </p>
-          <div className="grid grid-cols-1 lg:flex flex-col gap-6 lg:gap-4 lg:py-8 py-4 items-start">
-            <Card className="flex flex-col w-full lg:p-0 bg-transparent shadow-none border-none">
-              <CardContent className="p-0">
-                <div className="flex flex-row  gap-4 lg:gap-10 w-full p-0 lg:text-xl text-md items-center ">
-                  <ArrowRightCircle className="min-w-6 min-h-6 text-yellow-800 stroke-1" />
-                  <p className="text-md font-sans">
-                    <span className="font-bold">Superior Villa</span> - 2
-                    Bedroom
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
-            <Card className="flex flex-col w-full lg:p-0 bg-transparent shadow-none border-none">
-              <CardContent className="p-0">
-                <div className="flex flex-row  gap-4 lg:gap-10 w-full p-0 lg:text-xl text-md items-center">
-                  <ArrowRightCircle className="min-w-6 min-h-6 text-yellow-800 stroke-1" />
-                  <p className="text-md font-sans">
-                    <span className="font-bold">Premium Villa</span> - 3 Bedroom
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-        <div className="flex flex-col gap-4 items-center justify-center">
-          <Dialog>
-            <DialogTrigger asChild>
-              <div className="flex flex-col gap-2 items-center cursor-pointer w-full">
-                <Image
-                  src="https://utfs.io/f/dJLJpH9Hrkw3pXyUf0A8fDXoAL2Jay9kEY7gbmpj3CvcG0Pu"
-                  alt="Poolside View Of Villa"
-                  width={1000}
-                  height={500}
-                  loading="eager"
-                  className="w-full h-full aspect-video object-cover rounded-lg hover:shadow-lg hover:scale-105 trasition-all duration-300"
-                />
-              </div>
-            </DialogTrigger>
-            <DialogPortal>
-              <DialogContent className=" border-none shadow-none w-full h-full items-center justify-center bg-transparent">
-                <DialogHeader>
-                  <DialogTitle className="sr-only">
-                    Poolside View Of Villa
-                  </DialogTitle>
-                  <div className="flex flex-col gap-2 w-full items-center justify-center">
-                    <Image
-                      src="https://utfs.io/f/dJLJpH9Hrkw3pXyUf0A8fDXoAL2Jay9kEY7gbmpj3CvcG0Pu"
-                      alt="Poolside View Of Villa"
-                      width={1000}
-                      height={500}
-                      className="min-w-full min-h-full aspect-video object-cover rounded-lg"
-                    />
-                  </div>
-                </DialogHeader>
-              </DialogContent>
-            </DialogPortal>
-          </Dialog>
-        </div>
-      </div>
-      <div className="grid grid-cols-1 gap-4 lg:items-center lg:justify-center w-full pt-20 pb-20 px-8 mx-auto bg-yellow-900/10 lg:text-center lg:px-72">
-        <div className="flex flex-col gap-4">
-          <p className="text-5xl lg:text-7xl font-cinzel font-extrabold text-yellow-900">
-            Investment Opportunity
-          </p>
-          <p className="text-md font-sans">
-            By choosing a Golden Retreat Lombok Villa, you’re not just
-            purchasing a holiday home, you’re securing a lucrative investment
-            opportunity.
-          </p>
-          <p className="text-md font-sans opacity-50">
-            Our team of experts will handle all aspects of property management,
-            including rental bookings, maintenance, and financial reporting,
-            ensuring a hassle-free and profitable experience.
-          </p>
-          <Button variant={"default"} className="w-fit place-self-center">
-            <Link href="#book">Limited Villas Available</Link>
-          </Button>
-        </div>
-      </div>
-      <div id="book">
-        <Book />
-      </div>
-    </main>
-  );
-}
+export default VillaInvestmentLanding;
