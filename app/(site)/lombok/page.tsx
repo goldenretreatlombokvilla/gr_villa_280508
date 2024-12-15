@@ -31,6 +31,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from "next";
 import Cta from "@/components/cta";
+import Flag from "react-world-flags";
 
 const villaImages = [
   {
@@ -230,51 +231,6 @@ export default function Lombok() {
         </Carousel>
       </div> */}
 
-      <div className="grid grid-cols-1 relative lg:grid-cols-2 gap-6 lg:px-10 py-8 pt-12">
-        <div className="absolute w-full h-full">
-          <Image
-            src="https://utfs.io/f/dJLJpH9Hrkw31hETLWNSAE1eLPCn7ZqI4KBDlfHwUhJit380"
-            alt="Lombok International Airport"
-            width={2000}
-            height={2000}
-            loading="eager"
-            className="w-full brightness-50 h-full object-cover z-0"
-          />
-        </div>
-        <div className="flex flex-col gap-4 items-center justify-center px-0 z-20 text-white w-full">
-          <div className="flex flex-col gap-4 lg:gap-10 w-full justify-start items-start">
-            <p className="text-4xl lg:text-7xl font-sans font-extrabold px-8">
-              Zainuddin Abdul Madjid International Airport (LOP)
-            </p>
-            <div className="flex flex-row gap-2 items-center font-sans w-full px-8">
-              <MapPin className="min-w-4 min-h-4 stroke-1 text-white" />
-              <p>
-                <span className="font-extrabold">Praya</span>, Lombok
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="flex flex-col -gap-4 w-full pt-8 z-20 text-white items-start">
-          <p className="text-md font-sans px-8 lg:px-10">
-            Direct flights to Lombok from:
-          </p>
-          <Image
-            src="https://utfs.io/f/dJLJpH9Hrkw3bj76wEsqfwy05AzFLkTvmpo63dsY7VXnlRD8"
-            alt="Air Asia flights information"
-            width={500}
-            height={500}
-            className="w-full h-auto object-contain -mt-6"
-          />
-          <Image
-            src="https://utfs.io/f/dJLJpH9Hrkw3sO94s1dtfQDR1ujgW04bv39US6XzVqYOLryH"
-            alt="Scoot Airlines flights information"
-            width={500}
-            height={500}
-            className="w-full h-auto object-contain -mt-10"
-          />
-        </div>
-      </div>
-
       <div className="flex flex-col gap-8 items-center justify-start w-full  px-8 py-6 lg:pt-20 lg:py-20 max-w-6xl mx-auto">
         <p className="font-cinzel text-center text-5xl font-bold text-yellow-900 text-balance">
           Reasons Why Tourists are Flocking To Lombok
@@ -292,6 +248,80 @@ export default function Lombok() {
               </p>
             </div>
           ))}
+        </div>
+      </div>
+
+      <div className="grid grid-cols-1 relative lg:grid-cols-2 gap-6 lg:gap-0 lg:px-52 py-8 pt-12 my-10">
+        <div className="absolute w-full h-full">
+          <Image
+            src="https://utfs.io/f/dJLJpH9Hrkw31hETLWNSAE1eLPCn7ZqI4KBDlfHwUhJit380"
+            alt="Lombok International Airport"
+            width={2000}
+            height={2000}
+            loading="eager"
+            className="w-full brightness-50 h-full object-cover z-0"
+          />
+        </div>
+        <div className="flex flex-col gap-4 items-center justify-center px-0 z-20 text-white w-full">
+          <div className="flex flex-col gap-4 lg:gap-4 w-full justify-start items-start">
+            <p className="text-2xl lg:text-3xl font-medium px-8 lg:px-0">
+              Accessible International Airport
+            </p>
+            <p className="text-4xl lg:text-5xl font-extrabold px-8 lg:px-0">
+              Zainuddin Abdul Madjid International Airport (LOP)
+            </p>
+            <div className="flex flex-row gap-2 items-center font-sans w-full px-8 lg:px-0">
+              <MapPin className="min-w-4 min-h-4 stroke-1 text-white" />
+              <p>
+                <span className="font-extrabold">Praya</span>, Lombok
+              </p>
+            </div>
+            <p className="text-md font-sans px-8 lg:px-0 pt-8">
+              Direct flights to Lombok from:
+            </p>
+            <div className="flex flex-row gap-4 px-8 lg:px-0 py-4">
+              <Flag
+                code="ID"
+                height={500}
+                width={500}
+                className="w-16 h-16 rounded-full object-left object-cover"
+              />
+              <Flag
+                code="MY"
+                height={500}
+                width={500}
+                className="w-16 h-16 rounded-full object-left object-cover"
+              />
+              <Flag
+                code="AU"
+                height={500}
+                width={500}
+                className="w-16 h-16 rounded-full object-left object-cover"
+              />
+              <Flag
+                code="TH"
+                height={500}
+                width={500}
+                className="w-16 h-16 rounded-full object-left object-cover"
+              />
+            </div>
+          </div>
+        </div>
+        <div className="flex flex-col -gap-4 w-full pt-8 z-20 text-white items-start">
+          <Image
+            src="https://utfs.io/f/dJLJpH9Hrkw3bj76wEsqfwy05AzFLkTvmpo63dsY7VXnlRD8"
+            alt="Air Asia flights information"
+            width={500}
+            height={500}
+            className="w-full h-auto object-contain -mt-6"
+          />
+          <Image
+            src="https://utfs.io/f/dJLJpH9Hrkw3sO94s1dtfQDR1ujgW04bv39US6XzVqYOLryH"
+            alt="Scoot Airlines flights information"
+            width={500}
+            height={500}
+            className="w-full h-auto object-contain -mt-10"
+          />
         </div>
       </div>
 

@@ -27,10 +27,11 @@ export default function LandingPage() {
             {/* <p className="uppercase font-sans text-lg lg:text-2xl tracking-[0.5em]">
                 Welcome to
               </p> */}
-            <p className="uppercase text-center font-sans text-xl lg:text-2xl px-8  gap-2 items-start justify-center tracking-[0.3em] font-medium">
+            <p className="uppercase text-center font-sans text-lg lg:text-2xl px-2  gap-2 items-start justify-center tracking-[0.3em] font-medium text-balance">
               {/*  <Quote className="w-3 h-3 text-white fill-white rotate-180" /> */}
-              Paradise Should Never Be Out Of Reach{" "}
-              {/* <Quote className="w-3 h-3 text-white fill-white" /> */}
+              Paradise Should{" "}
+              <span className="font-extrabold italic">Never</span> Be Out Of
+              Reach {/* <Quote className="w-3 h-3 text-white fill-white" /> */}
             </p>
             <Image
               src="/brand/logo_white_long_big.png"
@@ -45,7 +46,7 @@ export default function LandingPage() {
             <h1 className=" sr-only">Golden Retreat Lombok Villas</h1>
             <div className="lg:flex flex-col gap-2 text-center w-full uppercase drop-shadow-sm font-sans text-xl font-medium ">
               <p className="uppercase font-sans text-lg lg:text-2xl tracking-[0.3em] lg:tracking-[0.5em]">
-                <span className="font-bold">2 & 3</span> Bedroom
+                <span className="font-bold">2 & 3</span> Bedroom Villas
               </p>
               <p className="uppercase font-sans text-lg lg:text-2xl tracking-[0.3em] lg:tracking-[0.5em]">
                 Starting at <span className="font-extrabold">USD 180,000</span>
