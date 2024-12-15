@@ -411,7 +411,7 @@ export default function Invest() {
         {/* Benefits */}
         <div className="flex flex-col gap-10 items-center justify-start w-full px-8 lg:px-52 py-20 bg-black text-white">
           <p className="text-4xl lg:text-5xl font-cinzel font-extrabold text-white">
-            Investment Benefits
+            Benefits
           </p>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 pl-8 lg:gap-20 py-6">
             <Card className="flex flex-col w-full lg:p-0 bg-transparent shadow-none border-none">

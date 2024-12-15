@@ -53,7 +53,7 @@ export default function Contact() {
           </div>
         </div>
         {/* Contact Info */}
-        <div className="flex flex-col gap-14 items-start justify-center w-full max-w-6xl mx-auto pb-20 px-4 lg:px-0">
+        <div className="flex flex-col gap-14 items-start justify-center w-full max-w-6xl mx-auto pb-20 lg:px-0">
           <Card className="flex flex-col w-full lg:p-0 bg-transparent shadow-none border-none">
             <CardContent className="p-0">
               <div className="flex flex-col gap-2 items-start justify-center">
@@ -69,9 +69,9 @@ export default function Contact() {
                   >
                     <Button
                       variant={"link"}
-                      className="p-0 text-xl lg:text-3xl"
+                      className="p-0 text-lg lg:text-3xl"
                     >
-                      +6 012 411 2260
+                      +60124112260
                     </Button>
                   </Link>
                   <p className="text-sm opacity-50 font-sans">or</p>
@@ -82,9 +82,9 @@ export default function Contact() {
                   >
                     <Button
                       variant={"link"}
-                      className="p-0 text-xl lg:text-3xl"
+                      className="p-0 text-lg lg:text-3xl"
                     >
-                      +65 9366 1372
+                      +6593661372
                     </Button>
                   </Link>
                 </div>
@@ -98,10 +98,13 @@ export default function Contact() {
                   <Mail className="min-w-4 min-h-4 stroke-1 text-yellow-900" />
                   Send an Email
                 </p>
-                <Link href="/" className=" text-yellow-900 font-sans">
+                <Link
+                  href="mailto:contact@goldenretreatinternational.com"
+                  className=" text-yellow-900 font-sans w-full items-start p-0"
+                >
                   <Button
                     variant={"link"}
-                    className="p-0 text-xl lg:text-3xl truncate"
+                    className=" text-md break-words text-wrap text-left lg:text-3xl p-0"
                   >
                     contact@goldenretreatinternational.com
                   </Button>

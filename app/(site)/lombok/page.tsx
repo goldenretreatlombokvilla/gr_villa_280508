@@ -20,10 +20,12 @@ import {
   Fish,
   ImageIcon,
   LandPlot,
+  Luggage,
   MapIcon,
   MapPin,
   Mountain,
   PinIcon,
+  Plane,
   TreePalm,
   Waves
 } from "lucide-react";
@@ -126,7 +128,7 @@ export default function Lombok() {
               className="max-w-32 z-40 -my-8 h-full object-cover"
             />
           </Link>
-          <h1 className="sr-only text-xl font-sans text-yellow-800 pt-1 font-light">
+          <h1 className="sr-only text-xl font-sans text-yellow-900 pt-1 font-light">
             Destination Lombok
           </h1>
         </div>
@@ -145,20 +147,35 @@ export default function Lombok() {
               alt="Tripadvisor Award"
               width={200}
               height={200}
-              className="w-28 h-28 absolute bottom-5 right-5 object-contain"
+              className="w-28 h-28 absolute bottom-5 left-5 object-contain"
             />
           </div>
           <div className="flex flex-col gap-6 text-balance items-start justify-center px-8">
-            <p className="font-cinzel text-yellow-800 text-5xl font-extrabold lg:text-7xl tracking-wide">
-              Lombok
+            <p className="font-cinzel text-yellow-900 text-5xl font-extrabold lg:text-7xl tracking-wide">
+              Lombok Island
             </p>
-            <p className="font-cinzel text-yellow-800 text-4xl font-semibold lg:text-5xl tracking-wide">
+
+            <p className="font-cinzel text-yellow-900 text-4xl font-semibold lg:text-5xl tracking-wide">
               The World's 5th Best Nature Destination
             </p>
             <div className="flex flex-row gap-4">
-              <p className="font-sans font-semibold text-yellow-800 text-xl uppercase">
+              <p className="font-sans font-semibold text-yellow-900 text-xl uppercase">
                 Tripadvisors Travelers' Choice Award
               </p>
+            </div>
+            <div className="flex flex-col gap-4 w-full items-start justify-center">
+              <div className="flex flex-row gap-4 items-center justify-center text-yellow-900">
+                <Plane className="min-w-4 min-h-4 stroke-1 text-yellow-900" />{" "}
+                <p className="font-sans text-lg font-bold">
+                  45 min flight from Bali
+                </p>
+              </div>
+              <div className="flex flex-row gap-4 items-center justify-center text-yellow-900">
+                <Luggage className="min-w-4 min-h-4 stroke-1 text-yellow-900" />{" "}
+                <p className="font-sans text-lg font-bold">
+                  2M tourist in 2023
+                </p>
+              </div>
             </div>
             <p className="font-sans font-semibold text-stone-900 text-md leading-7">
               Discover the unspoilt beauty of Lombok, a tropical paradise
@@ -232,18 +249,18 @@ export default function Lombok() {
       </div> */}
 
       <div className="flex flex-col gap-8 items-center justify-start w-full  px-8 py-6 lg:pt-20 lg:py-20 max-w-6xl mx-auto">
-        <p className="font-cinzel text-center text-5xl font-bold text-yellow-900 text-balance">
+        <p className="font-cinzel text-center text-4xl lg:text-5xl font-bold text-yellow-900 text-balance">
           Reasons Why Tourists are Flocking To Lombok
         </p>
 
-        <div className="flex flex-col md:flex-row gap-8 lg:gap-y-10 flex-wrap items-center justify-center px-10 lg:px-20 w-full">
+        <div className="flex flex-col md:flex-row gap-8 lg:gap-y-10 flex-wrap items-center justify-center px-4 md:px-10 lg:px-20 w-full">
           {lombokft.map((item, index) => (
             <div
               key={index}
               className="flex md:flex-col flex-row flex-wrap gap-4 items-center justify-between w-full md:w-fit"
             >
               <item.icon className="lg:w-16 w-12 h-12 lg:h-16 text-yellow-600 stroke-1" />
-              <p className="font-cinzel text-lg lg:text-xl text-stone-900 hover:text-yellow-900 font-bold">
+              <p className="font-cinzel text-lg  md:text-xl text-stone-900 hover:text-yellow-900 font-bold">
                 {item.name}
               </p>
             </div>
@@ -325,8 +342,8 @@ export default function Lombok() {
         </div>
       </div>
 
-      <div className="flex flex-col gap-4 items-center px-8 py-6 lg:pt-20 lg:py-20 max-w-6xl mx-auto ">
-        <p className="font-cinzel text-center text-5xl font-bold text-balance text-yellow-900">
+      <div className="flex flex-col gap-4 items-center px-4 py-6 lg:pt-20 lg:py-20 max-w-6xl mx-auto ">
+        <p className="font-cinzel text-center text-4xl lg:text-5xl font-bold text-balance text-yellow-900">
           Expedia: Vacation Travel Guide
         </p>
         <iframe
