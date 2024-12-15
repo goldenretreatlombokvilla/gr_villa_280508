@@ -351,30 +351,30 @@ export default function Lombok() {
             <p className="text-md font-sans px-8 lg:px-0 pt-8">
               Direct flights to Lombok from:
             </p>
-            <div className="flex flex-row justify-evenly lg:justify-start gap-6 w-full px-8 lg:px-0 py-4">
+            <div className="flex flex-row justify-start gap-4 w-full px-8 lg:px-0 py-4">
               <Flag
                 code="SG"
                 height={500}
                 width={500}
-                className="w-24 h-24 rounded-full object-left object-cover"
+                className="w-16 h-16 rounded-full object-left object-cover"
               />
               <Flag
                 code="MY"
                 height={500}
                 width={500}
-                className="w-24 h-24 rounded-full object-left object-cover"
+                className="w-16 h-16 rounded-full object-left object-cover"
               />
               <Flag
                 code="AU"
                 height={500}
                 width={500}
-                className="w-24 h-24 rounded-full object-left object-cover"
+                className="w-16 h-16 rounded-full object-left object-cover"
               />
               <Flag
                 code="TH"
                 height={500}
                 width={500}
-                className="w-24 h-24 rounded-full object-left object-cover"
+                className="w-16 h-16 rounded-full object-left object-cover"
               />
             </div>
           </div>
