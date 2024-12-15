@@ -286,7 +286,7 @@ export default function Lombok() {
 
       <div className="flex flex-col gap-4 px-6 py-8 lg:px-52 max-w-6xl mx-auto">
         <p className="font-cinzel text-center text-4xl lg:text-5xl font-bold text-yellow-900 text-balance">
-          Different Ways To Get To Lombok
+          Destination Lombok
         </p>
 
         {blogPosts.map((post) => (
