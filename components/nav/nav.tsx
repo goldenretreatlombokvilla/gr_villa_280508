@@ -46,6 +46,7 @@ const navItems = [
     name: "Villas",
     link: "/villas"
   },
+  { name: "Location", link: "/location" },
   {
     name: "Gallery",
     link: "/gallery"
@@ -90,10 +91,6 @@ const links = [
     name: "Contact Us",
     link: "/contact",
     target: "_self"
-  },
-  {
-    name: "Location",
-    link: "/location"
   },
   {
     name: "Info Pack",

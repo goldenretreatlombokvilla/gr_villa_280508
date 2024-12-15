@@ -23,11 +23,11 @@ export default function LandingPage() {
           />
         </div>
         <div className="flex relative flex-col gap-4 items-center justify-start px-0 text-white w-full h-fit py-10">
-          <div className="flex flex-col items-center justify-between gap-20 lg:gap-10 h-[90vh] py-0 lg:py-0 lg:-mt-32">
+          <div className="flex flex-col items-center justify-between gap-20 lg:gap-10 h-[90vh] py-0 lg:py-0">
             {/* <p className="uppercase font-sans text-lg lg:text-2xl tracking-[0.5em]">
                 Welcome to
               </p> */}
-            <p className="uppercase text-center font-sans text-lg lg:text-2xl px-2  gap-2 items-start justify-center tracking-[0.3em] font-medium text-balance">
+            <p className="uppercase text-center font-sans text-lg lg:text-2xl px-2  gap-2 items-start justify-center tracking-[0.3em] font-medium text-balance drop-shadow-md">
               {/*  <Quote className="w-3 h-3 text-white fill-white rotate-180" /> */}
               Paradise Should{" "}
               <span className="font-extrabold italic">Never</span> Be Out Of
@@ -44,7 +44,7 @@ export default function LandingPage() {
             />
 
             <h1 className=" sr-only">Golden Retreat Lombok Villas</h1>
-            <div className="lg:flex flex-col gap-2 text-center w-full uppercase drop-shadow-sm font-sans text-xl font-medium ">
+            <div className="lg:flex flex-col gap-2 text-center w-full uppercase drop-shadow-sm font-sans text-xl font-medium lg:pb-20">
               <p className="uppercase font-sans text-lg lg:text-2xl tracking-[0.3em] lg:tracking-[0.5em]">
                 <span className="font-bold">2 & 3</span> Bedroom Villas
               </p>
