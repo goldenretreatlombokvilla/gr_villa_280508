@@ -117,7 +117,7 @@ const VillaInvestmentLanding = () => {
             Exclusive Luxury Villas
           </p>
           <p className="text-lg text-stone-900/50 max-w-2xl mx-auto font-sans uppercase">
-            Just 2 Hours from Bali
+            Just 45 mins from Bali
           </p>
         </header>
 
