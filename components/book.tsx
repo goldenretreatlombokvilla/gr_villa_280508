@@ -117,13 +117,13 @@ export default function Book() {
             onSubmit={sendEmail}
             className="flex flex-col lg:grid grid-cols-1 gap-16 font-sans py-6 px-0"
           >
-            <div className="flex flex-col gap-4 pt-8 px-4 border border-y-0 border-r-0 border-beige relative rounded-xl max-h-fit">
+            <div className="flex flex-col gap-4 px-4 border border-y-0 border-r-0 border-beige relative rounded-xl max-h-fit">
               <p className="font-sans font-thin text-lg absolute -top-4 px-2 rounded-full">
-                Your Interest
+                Step 1: Your Interest
               </p>
               <Label
                 htmlFor="purpose"
-                className="flex flex-row gap-4 items-center justify-between"
+                className="flex flex-row gap-4 pt-8 items-center justify-between"
               >
                 Purpose
                 {data.purpose !== "" && (
@@ -160,7 +160,7 @@ export default function Book() {
                 htmlFor="type"
                 className="flex flex-row gap-4 items-center justify-between"
               >
-                Interested Model
+                Model Type
                 {data.type !== "" && (
                   <RotateCcw
                     onClick={() => setdata({ ...data, type: "" })}
@@ -191,43 +191,12 @@ export default function Book() {
                   </SelectGroup>
                 </SelectContent>
               </Select>
-              <Label
-                htmlFor="time"
-                className="flex flex-row gap-4 items-center justify-between"
-              >
-                Prefered Time Of Contact
-                {data.time !== "" && (
-                  <RotateCcw
-                    onClick={() => setdata({ ...data, time: "" })}
-                    className="w-4 h-4 text-black/50 cursor-pointer"
-                  />
-                )}
-              </Label>
-              <Select
-                value={data.time}
-                required
-                onValueChange={(e) => setdata({ ...data, time: e })}
-              >
-                <SelectTrigger className="w-full font-mono mb-4">
-                  <SelectValue />
-                </SelectTrigger>
-                <SelectContent
-                  className=" font-mono bg-black text-white"
-                  position="popper"
-                >
-                  <SelectGroup className="flex flex-col gap-4 px-4 py-2">
-                    <SelectItem value="Morning">Morning</SelectItem>
-                    <SelectItem value="Afternoon">Afternoon</SelectItem>
-                    <SelectItem value="Evening">Evening</SelectItem>
-                  </SelectGroup>
-                </SelectContent>
-              </Select>
             </div>
-            {data.time !== "" && data.type !== "" && data.purpose !== "" && (
+            {data.type !== "" && data.purpose !== "" && (
               <div>
                 <div className="flex flex-col gap-4 pt-8 px-4 border border-y-0 border-r-0 border-beige relative rounded-xl">
                   <p className="font-sans font-thin text-lg absolute -top-4 px-2 rounded-full">
-                    Your Information
+                    Step 2: Your Information
                   </p>
                   <Label htmlFor="name">Full Name</Label>
                   <Input
@@ -252,11 +221,10 @@ export default function Book() {
                   <Label htmlFor="phone">Phone Number</Label>
                   <div className="relative w-full">
                     <PhoneInput
-                      required
                       international
                       defaultCountry="AU"
                       value={data.phone}
-                      onChange={(e) => {
+                      onChange={(e: any) => {
                         setdata({ ...data, phone: e || "" });
                         setIsValid(!!e && e.length > 8);
                       }}
@@ -270,6 +238,7 @@ export default function Book() {
                       Please enter a valid phone number
                     </p>
                   )}
+
                   <Label htmlFor="country">Country</Label>
                   <CountrySelect
                     className="mb-4 font-mono"
@@ -277,14 +246,7 @@ export default function Book() {
                     priorityOptions={["AU", "CN", "GB", "MY", "RU", "SG"]}
                     placeholder="Select Country"
                   ></CountrySelect>
-                  {/*  <Input
-                type="hidden"
-                name="countryCode"
-                value={countryCode}
-                onChange={(e) =>
-                  setdata({ ...data, countryCode: e.target.value })
-                }
-              /> */}
+
                   {regionshow !== false && (
                     <div>
                       <Label>Region</Label>
@@ -295,6 +257,31 @@ export default function Book() {
                       ></RegionSelect>
                     </div>
                   )}
+                  <Label
+                    htmlFor="time"
+                    className="flex flex-row gap-4 items-center justify-between"
+                  >
+                    Prefered Time Of Contact
+                  </Label>
+                  <Select
+                    value={data.time}
+                    required
+                    onValueChange={(e) => setdata({ ...data, time: e })}
+                  >
+                    <SelectTrigger className="w-full font-mono mb-4">
+                      <SelectValue />
+                    </SelectTrigger>
+                    <SelectContent
+                      className=" font-mono bg-black text-white"
+                      position="popper"
+                    >
+                      <SelectGroup className="flex flex-col gap-4 px-4 py-2">
+                        <SelectItem value="Morning">Morning</SelectItem>
+                        <SelectItem value="Afternoon">Afternoon</SelectItem>
+                        <SelectItem value="Evening">Evening</SelectItem>
+                      </SelectGroup>
+                    </SelectContent>
+                  </Select>
                 </div>
                 <div className="flex flex-col gap-4 pt-6 px-4">
                   <Button

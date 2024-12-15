@@ -15,6 +15,7 @@ import {
   DialogTrigger
 } from "@/components/ui/dialog";
 import {
+  ArrowRight,
   Bike,
   CircleDashed,
   Fish,
@@ -102,6 +103,21 @@ const lombokft = [
   {
     icon: LandPlot,
     name: "Golf Courses"
+  }
+];
+
+const blogPosts = [
+  {
+    id: 1,
+    title:
+      "Discover Lombok: A Haven of Accessibility for International Travelers",
+    excerpt:
+      "Lombok, the idyllic island in Indonesia’s West Nusa Tenggara province, has long been a hidden gem for travelers seeking pristine beaches, majestic mountains, and rich cultural experiences.",
+    date: "December 19, 2024",
+    readTime: "5 min read",
+    category: "Accessibility",
+    icon: <Plane className="text-blue-600" />,
+    slug: "discover-lombok"
   }
 ];
 
@@ -268,6 +284,44 @@ export default function Lombok() {
         </div>
       </div>
 
+      <div className="flex flex-col gap-4 px-6 py-8 lg:px-52 max-w-6xl mx-auto">
+        <p className="font-cinzel text-center text-4xl lg:text-5xl font-bold text-yellow-900 text-balance">
+          Different Ways To Get To Lombok
+        </p>
+
+        {blogPosts.map((post) => (
+          <div
+            key={post.id}
+            className="bg-white shadow-lg rounded-xl overflow-hidden transition-all duration-300 hover:shadow-xl font-sans"
+          >
+            <div className="p-6">
+              <div className="flex items-center mb-4">
+                {post.icon}
+                <span className="ml-2 text-sm text-gray-600">
+                  {post.category}
+                </span>
+              </div>
+              <h2 className="text-2xl font-bold text-amber-900 mb-3 font-cinzel">
+                {post.title}
+              </h2>
+              <p className="text-gray-600 mb-4">{post.excerpt}</p>
+              <div className="flex justify-between items-center">
+                <div className="flex flex-row gap-2 divide-x-2 divide-gray-200">
+                  <p className="text-sm text-gray-500">{post.date}</p>
+                  <p className="text-sm text-gray-500 pl-2">{post.readTime}</p>
+                </div>
+                <a
+                  href={`/blog/${post.slug}`}
+                  className="text-amber-900 hover:text-amber-700 flex items-center"
+                >
+                  Read More <ArrowRight className="ml-2 w-5 h-5" />
+                </a>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
       <div className="grid grid-cols-1 relative lg:grid-cols-2 gap-6 lg:gap-0 lg:px-52 py-8 pt-12 my-10">
         <div className="absolute w-full h-full">
           <Image
@@ -279,6 +333,7 @@ export default function Lombok() {
             className="w-full brightness-50 h-full object-cover z-0"
           />
         </div>
+
         <div className="flex flex-col gap-4 items-center justify-center px-0 z-20 text-white w-full">
           <div className="flex flex-col gap-4 lg:gap-4 w-full justify-start items-start">
             <p className="text-2xl lg:text-3xl font-medium px-8 lg:px-0">
@@ -296,35 +351,35 @@ export default function Lombok() {
             <p className="text-md font-sans px-8 lg:px-0 pt-8">
               Direct flights to Lombok from:
             </p>
-            <div className="flex flex-row gap-4 px-8 lg:px-0 py-4">
+            <div className="flex flex-row justify-evenly lg:justify-start gap-6 w-full px-8 lg:px-0 py-4">
               <Flag
-                code="ID"
+                code="SG"
                 height={500}
                 width={500}
-                className="w-16 h-16 rounded-full object-left object-cover"
+                className="w-24 h-24 rounded-full object-left object-cover"
               />
               <Flag
                 code="MY"
                 height={500}
                 width={500}
-                className="w-16 h-16 rounded-full object-left object-cover"
+                className="w-24 h-24 rounded-full object-left object-cover"
               />
               <Flag
                 code="AU"
                 height={500}
                 width={500}
-                className="w-16 h-16 rounded-full object-left object-cover"
+                className="w-24 h-24 rounded-full object-left object-cover"
               />
               <Flag
                 code="TH"
                 height={500}
                 width={500}
-                className="w-16 h-16 rounded-full object-left object-cover"
+                className="w-24 h-24 rounded-full object-left object-cover"
               />
             </div>
           </div>
         </div>
-        <div className="flex flex-col -gap-4 w-full pt-8 z-20 text-white items-start">
+        <div className="hidden lg:flex flex-col -gap-4 w-full pt-8 z-20 text-white items-start">
           <Image
             src="https://utfs.io/f/dJLJpH9Hrkw3bj76wEsqfwy05AzFLkTvmpo63dsY7VXnlRD8"
             alt="Air Asia flights information"

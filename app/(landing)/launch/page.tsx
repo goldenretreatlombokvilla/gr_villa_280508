@@ -220,7 +220,7 @@ const VillaInvestmentLanding = () => {
                   htmlFor="type"
                   className="flex flex-row gap-4 items-center justify-between"
                 >
-                  Interested Model
+                  Model Type
                   {data.type !== "" && (
                     <RotateCcw
                       onClick={() => setdata({ ...data, type: "" })}
