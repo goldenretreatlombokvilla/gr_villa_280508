@@ -7,6 +7,7 @@ import {
   ChartSpline,
   DollarSign,
   Globe,
+  Plane,
   TrendingUp
 } from "lucide-react";
 
@@ -25,14 +26,26 @@ const blogPosts = [
   },
   {
     id: 2,
-    title: "Villa Golden Retreat: Comprehensive Payment Structure",
+    title: "Golden Retreat Lombok Villas: Comprehensive Payment Structure",
     excerpt:
-      "Discover the phased payment process for acquiring a luxury villa at Villa Golden Retreat, with added support for legal documentation and visa applications.",
+      "Discover the phased payment process for acquiring a luxury villa at Golden Retreat Lombok Villas, with added support for legal documentation and visa applications.",
     date: "December 17, 2024",
     readTime: "5 min read",
     category: "Purchasing Guide",
     icon: <ChartSpline className="text-green-600" />,
     slug: "payment-structure"
+  },
+  {
+    id: 3,
+    title:
+      "Discover Lombok: A Haven of Accessibility for International Travelers",
+    excerpt:
+      "Lombok, the idyllic island in Indonesia’s West Nusa Tenggara province, has long been a hidden gem for travelers seeking pristine beaches, majestic mountains, and rich cultural experiences.",
+    date: "December 19, 2024",
+    readTime: "5 min read",
+    category: "Accessibility",
+    icon: <Plane className="text-blue-600" />,
+    slug: "discover-lombok"
   }
 ];
 
@@ -109,9 +122,11 @@ const BlogPostsPage = () => {
                 </h2>
                 <p className="text-gray-600 mb-4">{post.excerpt}</p>
                 <div className="flex justify-between items-center">
-                  <div>
+                  <div className="flex flex-row gap-2 divide-x-2 divide-gray-200">
                     <p className="text-sm text-gray-500">{post.date}</p>
-                    <p className="text-sm text-gray-500">{post.readTime}</p>
+                    <p className="text-sm text-gray-500 pl-2">
+                      {post.readTime}
+                    </p>
                   </div>
                   <a
                     href={`/blog/${post.slug}`}

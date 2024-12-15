@@ -258,7 +258,61 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
         }}
       />
     ),
+    // Table
+    table: ({ children }) => (
+      <table
+        style={{
+          width: "100%",
+          borderCollapse: "collapse",
+          marginBottom: "20px",
+          fontFamily: "Arial, sans-serif"
+        }}
+      >
+        {children}
+      </table>
+    ),
 
+    // Table Header
+    th: ({ children }) => (
+      <th
+        style={{
+          backgroundColor: "#713f12",
+          color: "white",
+          fontWeight: "bold",
+          padding: "12px",
+          textAlign: "left",
+          borderBottom: "2px solid #ddd",
+          fontFamily: "Arial, sans-serif"
+        }}
+      >
+        {children}
+      </th>
+    ),
+
+    // Table Data
+    td: ({ children }) => (
+      <td
+        style={{
+          padding: "12px",
+          borderBottom: "1px solid #ddd",
+          fontFamily: "Arial, sans-serif"
+        }}
+      >
+        {children}
+      </td>
+    ),
+
+    // Table Row
+    tr: ({ children }) => (
+      <tr
+        style={{
+          backgroundColor: "#f2f2f2",
+          fontFamily: "Arial, sans-serif"
+        }}
+      >
+        {children}
+      </tr>
+    ),
     ...components
   };
 }
