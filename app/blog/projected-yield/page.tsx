@@ -1,4 +1,4 @@
-import Copy from "@/app/markdown/discover-lombok.mdx";
+import Copy from "@/app/markdown/projected-yield.mdx";
 import Cta from "@/components/cta";
 import {
   Breadcrumb,

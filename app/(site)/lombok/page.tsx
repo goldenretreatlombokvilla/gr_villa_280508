@@ -158,6 +158,9 @@ export default function Lombok() {
               height={700}
               className="w-full max-h-96 lg:max-h-[70vh] object-cover lg:aspect-[10/14]"
             />
+            {/* <p className="font-cinzel text-right text-white z-40 text-4xl font-extrabold lg:text-5xl tracking-wide absolute bottom-20 right-5 w-2/3">
+              The World's 5th Best Nature Destination
+            </p> */}
             <Image
               src="/lombok/tc_award.png"
               alt="Tripadvisor Award"
@@ -171,15 +174,21 @@ export default function Lombok() {
               Lombok Island
             </p>
 
-            <p className="font-cinzel text-yellow-900 text-4xl font-semibold lg:text-5xl tracking-wide">
+            {/*  <p className="font-cinzel text-yellow-900 text-4xl font-semibold lg:text-5xl tracking-wide">
               The World's 5th Best Nature Destination
             </p>
             <div className="flex flex-row gap-4">
               <p className="font-sans font-semibold text-yellow-900 text-xl uppercase">
                 Tripadvisors Travelers' Choice Award
               </p>
-            </div>
+            </div> */}
             <div className="flex flex-col gap-4 w-full items-start justify-center">
+              <div className="flex flex-row gap-4 items-center justify-center text-yellow-900">
+                <MapPin className="min-w-4 min-h-4 stroke-1 text-yellow-900" />{" "}
+                <p className="font-sans text-lg font-bold">
+                  West Nusa Tenggara
+                </p>
+              </div>
               <div className="flex flex-row gap-4 items-center justify-center text-yellow-900">
                 <Plane className="min-w-4 min-h-4 stroke-1 text-yellow-900" />{" "}
                 <p className="font-sans text-lg font-bold">
@@ -207,7 +216,7 @@ export default function Lombok() {
               thrilling adventure up Mount Rinjani, Lombok offers something for
               everyone.
             </p>
-            <Dialog>
+            {/* <Dialog>
               <DialogTrigger asChild>
                 <Button
                   variant={"default"}
@@ -232,9 +241,18 @@ export default function Lombok() {
                   </DialogHeader>
                 </DialogContent>
               </DialogPortal>
-            </Dialog>
+            </Dialog> */}
           </div>
         </div>
+      </div>
+      <div className="flex flex-col items-center justify-center w-full mx-auto">
+        <Image
+          src="https://utfs.io/f/dJLJpH9Hrkw3hoWVZA2LaOUmx7jw6JrqKBblDskWdPvTZoSg"
+          alt="Map location of Lombok and surrounding areas"
+          width={1000}
+          height={600}
+          className="w-full h-full lg:max-w-2xl lg:max-h-2xl object-contain lg:rounded-lg lg:shadow-lg"
+        />
       </div>
 
       {/* <div className="flex flex-col w-full px-20 py-6 lg:pt-20 lg:py-20 max-w-6xl mx-auto">

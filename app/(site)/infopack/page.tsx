@@ -5,7 +5,7 @@ import { Metadata } from "next";
 import { DownloadIcon } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Location",
+  title: "Info Pack 2025",
   description: `Golden Retreat Lombok Villas is a property development offering luxurious Villas set in the heart of Lombok’s best attractions.`,
   keywords: `golden retreat lombok villa, luxury villa, lombok villas, private pool, villas, island villas, island villa, private pools, poolside villa, pool villa, poolside villas, gold retreat lombok, gold retreat lombok villas, gold retreat lombok villa`
 };

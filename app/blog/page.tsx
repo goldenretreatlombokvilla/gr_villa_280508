@@ -18,7 +18,7 @@ const blogPosts = [
       "Beyond Bali: Discovering the Next Luxury Real Estate Frontier in Southeast Asia",
     excerpt:
       "Explore the emerging landscape of luxury property investments beyond traditional markets.",
-    date: "December 15, 2024",
+    date: "December 10, 2024",
     readTime: "7 min read",
     category: "Investment Insights",
     icon: <Globe className="text-amber-600" />,
@@ -29,7 +29,7 @@ const blogPosts = [
     title: "Golden Retreat Lombok Villas: Comprehensive Payment Structure",
     excerpt:
       "Discover the phased payment process for acquiring a luxury villa at Golden Retreat Lombok Villas, with added support for legal documentation and visa applications.",
-    date: "December 17, 2024",
+    date: "December 12, 2024",
     readTime: "5 min read",
     category: "Purchasing Guide",
     icon: <ChartSpline className="text-green-600" />,
@@ -41,11 +41,23 @@ const blogPosts = [
       "Discover Lombok: A Haven of Accessibility for International Travelers",
     excerpt:
       "Lombok, the idyllic island in Indonesia’s West Nusa Tenggara province, has long been a hidden gem for travelers seeking pristine beaches, majestic mountains, and rich cultural experiences.",
-    date: "December 19, 2024",
+    date: "December 15, 2024",
     readTime: "5 min read",
     category: "Accessibility",
     icon: <Plane className="text-blue-600" />,
     slug: "discover-lombok"
+  },
+  {
+    id: 4,
+    title:
+      "Unlock High Returns with Golden Retreat Lombok Villas: An Exceptional Investment Opportunity",
+    excerpt:
+      "Golden Retreat Lombok Villas offer investors a rare chance to own a piece of paradise with high projected yields and consistent rental income in one of Southeast Asia's most promising destinations.",
+    date: "December 17, 2024",
+    readTime: "7 min read",
+    category: "Investment Opportunity",
+    icon: <DollarSign className="text-green-600" />,
+    slug: "projected-yield"
   }
 ];
 
@@ -105,7 +117,7 @@ const BlogPostsPage = () => {
 
         {/* Blog Posts Grid */}
         <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-8 font-sans">
-          {filteredPosts.map((post) => (
+          {filteredPosts.reverse().map((post) => (
             <div
               key={post.id}
               className="bg-white shadow-lg rounded-xl overflow-hidden transition-all duration-300 hover:shadow-xl"

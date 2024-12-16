@@ -8,6 +8,7 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator
 } from "@/components/ui/breadcrumb";
+import Book from "@/components/book";
 
 export default function Page() {
   return (
@@ -26,7 +27,7 @@ export default function Page() {
         </Breadcrumb>
         <Copy />
       </div>
-      <Cta />
+      <Book />
     </div>
   );
 }

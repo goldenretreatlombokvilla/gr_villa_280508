@@ -1,4 +1,5 @@
 import Copy from "@/app/markdown/beyond-bali.mdx";
+import Book from "@/components/book";
 import Cta from "@/components/cta";
 import {
   Breadcrumb,
@@ -26,7 +27,7 @@ export default function Page() {
         </Breadcrumb>
         <Copy />
       </div>
-      <Cta />
+      <Book />
     </div>
   );
 }
