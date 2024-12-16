@@ -178,13 +178,13 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
       <blockquote
         style={{
           borderLeft: "4px solid #713f12",
-          paddingLeft: "15px",
+          paddingLeft: "20px",
           fontStyle: "italic",
           color: "#666",
           fontFamily: "Arial, sans-serif",
-          fontSize: "18px",
           marginLeft: "0",
-          marginRight: "0"
+          marginRight: "0",
+          lineHeight: "1"
         }}
       >
         {children}
