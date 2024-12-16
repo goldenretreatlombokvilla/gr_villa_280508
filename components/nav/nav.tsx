@@ -47,7 +47,7 @@ const navItems = [
     name: "Gallery",
     link: "/gallery"
   },
-  { name: "Articles", link: "/blog" },
+  { name: "Lombok", link: "/lombok" },
   {
     name: "Investment",
     link: "/invest"
@@ -78,7 +78,7 @@ const facilities = [
 ];
 
 const links = [
-  { name: "Lombok", link: "/lombok" },
+  { name: "Articles", link: "/blog", target: "_self" },
   {
     name: "About Us",
     link: "/about",
@@ -92,7 +92,7 @@ const links = [
   {
     name: "Info Pack",
     link: "/infopack",
-    target: "_blank"
+    target: "_self"
   },
   {
     name: "Book Now",
