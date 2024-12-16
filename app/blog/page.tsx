@@ -49,10 +49,9 @@ const blogPosts = [
   },
   {
     id: 4,
-    title:
-      "Unlock High Returns with Golden Retreat Lombok Villas: An Exceptional Investment Opportunity",
+    title: "Unlock an Exceptional Investment Opportunity",
     excerpt:
-      "Golden Retreat Lombok Villas offer investors a rare chance to own a piece of paradise with high projected yields and consistent rental income in one of Southeast Asia's most promising destinations.",
+      "Investing in luxury Lombok villas is not just about securing a slice of paradise—it’s also a smart financial decision with high projected yields.",
     date: "December 17, 2024",
     readTime: "7 min read",
     category: "Investment Opportunity",
