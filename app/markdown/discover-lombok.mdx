@@ -1,3 +1,10 @@
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger
+} from "@/components/ui/accordion";
+
 # Discover Lombok: A Haven of Accessibility for International Travelers
 
 Lombok, the idyllic island in Indonesia’s West Nusa Tenggara province, has long been a hidden gem for travelers seeking pristine beaches, majestic mountains, and rich cultural experiences. What was once considered off the beaten path is now a highly accessible destination, thanks to its well-connected international airport and multiple travel options. Whether you’re flying directly or planning a multi-leg journey, Lombok is closer than you think.
@@ -6,26 +13,98 @@ Lombok, the idyllic island in Indonesia’s West Nusa Tenggara province, has lon
 
 Lombok International Airport (Zainuddin Abdul Madjid International Airport) serves as the primary gateway to this tropical paradise. It has experienced a significant increase in international connectivity, making it easier for tourists to reach the island without detours. Here are some highlights:
 
-- **From Singapore**: Direct flights from Singapore take approximately **2.5 hours**, operated by airlines like Scoot and AirAsia. These routes are perfect for Southeast Asian travelers looking for a quick tropical getaway.
-- **From Kuala Lumpur**: Malaysia's capital offers regular direct flights to Lombok, with a flight time of about **3 hours**, operated by AirAsia and other carriers.
-
-- **From Australia**: Australian travelers, particularly from Perth, can reach Lombok in around **4 hours** via direct flights. Seasonal charter services also connect Lombok to other Australian cities.
-
-- **From Bali**: If your journey begins in Bali, Lombok is just a **30-minute flight** away, with multiple daily departures operated by airlines such as Wings Air and Garuda Indonesia.
+<Accordion type="single" collapsible>
+  <AccordionItem value="item-1">
+    <AccordionTrigger className="text-xl font-semibold">
+      From Singapore
+    </AccordionTrigger>
+    <AccordionContent className="text-sm font-sans text-pretty">
+      Direct flights from Singapore take approximately **2.5 hours**, operated
+      by airlines like Scoot and AirAsia. These routes are perfect for Southeast
+      Asian travelers looking for a quick tropical getaway.
+    </AccordionContent>
+  </AccordionItem>
+  <AccordionItem value="item-2">
+    <AccordionTrigger className="text-xl font-semibold">
+      From Kuala Lumpur, Malaysia
+    </AccordionTrigger>
+    <AccordionContent className="text-sm font-sans text-pretty">
+      Malaysia's capital offers regular direct flights to Lombok, with a flight
+      time of about **3 hours**, operated by AirAsia and other carriers.
+    </AccordionContent>
+  </AccordionItem>
+  <AccordionItem value="item-3">
+    <AccordionTrigger className="text-xl font-semibold">
+      From Perth, Australia
+    </AccordionTrigger>
+    <AccordionContent className="text-sm font-sans text-pretty">
+      Australian travelers, particularly from Perth, can reach Lombok in around
+      **4 hours** via direct flights. Seasonal charter services also connect
+      Lombok to other Australian cities.
+    </AccordionContent>
+  </AccordionItem>
+  <AccordionItem value="item-4">
+    <AccordionTrigger className="text-xl font-semibold">
+      From Bali, Indonesia
+    </AccordionTrigger>
+    <AccordionContent className="text-sm font-sans text-pretty">
+      If your journey begins in Bali, Lombok is just a **30-minute flight**
+      away, with multiple daily departures operated by airlines such as Wings
+      Air and Garuda Indonesia.
+    </AccordionContent>
+  </AccordionItem>
+</Accordion>
 
 ## Regional Connectivity
 
 Lombok’s strategic location in Southeast Asia allows for seamless connections through major transit hubs. Travelers from Europe, the Middle East, and North America often transit through cities like Singapore, Kuala Lumpur, or Jakarta before reaching Lombok.
 
-- **Jakarta to Lombok**: Indonesia’s bustling capital connects to Lombok with numerous daily flights, taking about **2 hours**.
-- **Surabaya to Lombok**: Travelers from East Java can arrive in Lombok in approximately **1.5 hours** via frequent domestic flights.
+<Accordion type="single" collapsible>
+  <AccordionItem value="item-1">
+    <AccordionTrigger className="text-xl font-semibold">
+      Jakarta to Lombok
+    </AccordionTrigger>
+    <AccordionContent className="text-sm font-sans text-pretty">
+      Indonesia’s bustling capital connects to Lombok with numerous daily
+      flights, taking about **2 hours**.
+    </AccordionContent>
+  </AccordionItem>
+  <AccordionItem value="item-2">
+    <AccordionTrigger className="text-xl font-semibold">
+      Surabaya to Lombok
+    </AccordionTrigger>
+    <AccordionContent className="text-sm font-sans text-pretty">
+      Travelers from East Java can arrive in Lombok in approximately **1.5
+      hours** via frequent domestic flights.
+    </AccordionContent>
+  </AccordionItem>
+</Accordion>
 
 ## Ferry Services for Scenic Travel
 
 For those who prefer overland and sea travel, Lombok is also accessible by ferry. This option adds an adventurous touch to your journey:
 
-- **Bali to Lombok**: Fast boats and ferries operate daily between Padang Bai in Bali and Bangsal or Senggigi in Lombok. The crossing takes about **1.5 to 2 hours** via speedboat and **4 to 5 hours** by regular ferry.
-- **Gili Islands to Lombok**: A short **15-30 minute boat ride** connects the popular Gili Islands to Lombok’s main coast.
+<Accordion type="single" collapsible>
+  <AccordionItem value="item-1">
+    <AccordionTrigger className="text-xl font-semibold">
+      Bali to Lombok
+    </AccordionTrigger>
+    <AccordionContent className="text-sm font-sans text-pretty">
+      Fast boats and ferries operate daily between Padang Bai in Bali and
+      Bangsal or Senggigi in Lombok. The crossing takes about **1.5 to 2 hours**
+      via speedboat and **4 to 5 hours** by regular ferry.
+    </AccordionContent>
+  </AccordionItem>
+  <AccordionItem value="item-2">
+    <AccordionTrigger className="text-xl font-semibold">
+      Gili Islands to Lombok
+    </AccordionTrigger>
+    <AccordionContent className="text-sm font-sans text-pretty">
+      A short **15-30 minute boat ride** connects the popular Gili Islands to
+      Lombok’s main coast.
+    </AccordionContent>
+  </AccordionItem>
+</Accordion>
 
 ## Travel Time Overview
 
