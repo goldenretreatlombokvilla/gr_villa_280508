@@ -281,7 +281,7 @@ export default function Lombok() {
         </p>
       </div>
 
-      <div className="flex flex-col items-center justify-center w-full mx-auto py-10">
+      <div className="flex flex-col items-center justify-center w-full mx-auto py-10 gap-8">
         <Image
           src="https://utfs.io/f/dJLJpH9Hrkw3hoWVZA2LaOUmx7jw6JrqKBblDskWdPvTZoSg"
           alt="Map location of Lombok and surrounding areas"

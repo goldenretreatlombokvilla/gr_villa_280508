@@ -132,12 +132,12 @@ const LocationPage = () => {
           <h2 className="text-4xl font-extrabold text-yellow-900 mb-4">
             Surrounding Attractions
           </h2>
-          <p className="text-xl font-sans text-gray-700 max-w-2xl mx-auto">
+          <p className="text-lg font-sans text-gray-700 max-w-2xl mx-auto">
             Explore the rich tapestry of Lombok's natural beauty and cultural
             heritage, all within a short drive from our villas.
           </p>
-          <p className="text-xl font-sans text-gray-700 max-w-2xl mx-auto">
-            Short 5 min walk to Bangsal Port
+          <p className="text-xl font-semibold font-sans text-gray-700 max-w-2xl mx-auto">
+            Short 5 min walk to Bangsal Port!
           </p>
         </div>
         <div className="grid md:grid-cols-3 gap-8">

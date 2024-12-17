@@ -38,7 +38,6 @@ import { ScrollArea } from "../ui/scroll-area";
 import { link } from "fs";
 
 const navItems = [
-  { name: "Home", link: "/" },
   {
     name: "Villas",
     link: "/villas"
@@ -109,7 +108,7 @@ export default function Nav() {
         <div className="fixed p-2">
           <Sheet>
             <SheetTrigger asChild>
-              <div className="p-2 bg-beige hover:bg-stone-900 rounded-full group">
+              <div className="p-2 bg-beige hover:bg-stone-900 rounded-full group z-50">
                 <Menu className="min-w-6 min-h-6 text-white stroke-1 " />
               </div>
             </SheetTrigger>
