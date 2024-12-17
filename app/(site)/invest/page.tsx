@@ -110,16 +110,6 @@ export default function Invest() {
                 rental yield, while also securing easy access to your property
                 whenever you desire.
               </p>
-              <p className="font-sans text-md text-pretty">
-                Our team will also guide you through visa applications where
-                needed, should you choose to stay for longer stretches at a
-                time. With our support, we endeavour to make the decision to
-                purchase with us your best one yet.
-              </p>
-              <p className="font-sans text-md text-pretty">
-                Contact our team to find out how you can benefit from purchasing
-                a Golden Retreat Villa with us today.
-              </p>
             </div>
             {/* <p className="font-sans text-md text-pretty">
               Contact our team to find out how you can benefit by purchasing a
@@ -173,6 +163,39 @@ export default function Invest() {
             </div>
           ))}
         </div>
+
+        <div className="bg-yellow-900/10 rounded-lg py-20 px-8 lg:px-52 grid lg:grid-cols-2 gap-12 lg:gap-24 items-center justify-center w-full text-left">
+          <div className="flex flex-col w-full h-full items-center justify-center">
+            {/*           <Tchart />
+             */}{" "}
+            <Image
+              src="https://utfs.io/f/dJLJpH9Hrkw3sumPK6dtfQDR1ujgW04bv39US6XzVqYOLryH"
+              alt="Golden Retreat Lombok Villa"
+              width={500}
+              height={300}
+              className="w-full h-full object-cover aspect-video rounded-lg shadow-lg"
+              loading="eager"
+            />
+          </div>
+          <div className="flex flex-col gap-2 font-medium text-center">
+            <p className="text-xl font-sans text-balance">
+              Lombok receives over
+            </p>
+            <p className="font-extrabold text-5xl font-cinzel text-yellow-800">
+              1,000,000 tourist
+            </p>
+            <p className="text-xl font-sans text-balance">
+              every year but only has enough hotels and resorts to lodge
+            </p>
+            <p className="font-extrabold text-5xl lg:text-6xl font-cinzel text-red-500">
+              24,000 visitors
+            </p>
+            <p className="text-xl font-sans text-balance -mt-2">
+              at any one time!
+            </p>
+          </div>
+        </div>
+
         <div className="w-full">
           <div className="flex flex-col lg:grid lg:grid-cols-2 gap-10 items-center w-full justify-center py-20">
             <Image
@@ -268,37 +291,7 @@ export default function Invest() {
             </div>
           </div>
         </div>
-        <div className="bg-yellow-900/10 rounded-lg py-20 px-8 lg:px-52 grid lg:grid-cols-2 gap-12 lg:gap-24 items-center justify-center w-full text-left">
-          <div className="flex flex-col w-full h-full items-center justify-center">
-            {/*           <Tchart />
-             */}{" "}
-            <Image
-              src="https://utfs.io/f/dJLJpH9Hrkw3sumPK6dtfQDR1ujgW04bv39US6XzVqYOLryH"
-              alt="Golden Retreat Lombok Villa"
-              width={500}
-              height={300}
-              className="w-full h-full object-cover aspect-video rounded-lg shadow-lg"
-              loading="eager"
-            />
-          </div>
-          <div className="flex flex-col gap-2 font-medium text-center">
-            <p className="text-xl font-sans text-balance">
-              Lombok receives over
-            </p>
-            <p className="font-extrabold text-5xl font-cinzel text-yellow-800">
-              1,000,000 tourist
-            </p>
-            <p className="text-xl font-sans text-balance">
-              every year but only has enough hotels and resorts to lodge
-            </p>
-            <p className="font-extrabold text-5xl lg:text-6xl font-cinzel text-red-500">
-              24,000 visitors
-            </p>
-            <p className="text-xl font-sans text-balance -mt-2">
-              at any one time!
-            </p>
-          </div>
-        </div>
+
         {/*Articles*/}
         <div className="flex flex-col gap-8 items-center justify-center w-full px-8 lg:px-52 py-10 lg:py-40 ">
           <p className="text-4xl lg:text-5xl font-cinzel text-yellow-900 font-bold">

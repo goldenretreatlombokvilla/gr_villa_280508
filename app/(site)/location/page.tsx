@@ -22,6 +22,13 @@ const blogPosts = [
 const LocationPage = () => {
   const attractions = [
     {
+      name: "Local Markets",
+      distance: "5 min drive",
+      description:
+        "Experience authentic Lombok culture and traditional handicrafts.",
+      icon: <Globe className="text-green-500" />
+    },
+    {
       name: "Kuta Beach",
       distance: "10 min drive",
       description:
@@ -34,13 +41,6 @@ const LocationPage = () => {
       description:
         "Stunning beach known for its unique pepper-like sand and turquoise waters.",
       icon: <Cloud className="text-blue-400" />
-    },
-    {
-      name: "Local Markets",
-      distance: "5 min drive",
-      description:
-        "Experience authentic Lombok culture and traditional handicrafts.",
-      icon: <Globe className="text-green-500" />
     }
   ];
 
@@ -135,6 +135,9 @@ const LocationPage = () => {
           <p className="text-xl font-sans text-gray-700 max-w-2xl mx-auto">
             Explore the rich tapestry of Lombok's natural beauty and cultural
             heritage, all within a short drive from our villas.
+          </p>
+          <p className="text-xl font-sans text-gray-700 max-w-2xl mx-auto">
+            Short 5 min walk to Bangsal Port
           </p>
         </div>
         <div className="grid md:grid-cols-3 gap-8">

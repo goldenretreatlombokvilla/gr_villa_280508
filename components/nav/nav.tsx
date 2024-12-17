@@ -38,15 +38,16 @@ import { ScrollArea } from "../ui/scroll-area";
 import { link } from "fs";
 
 const navItems = [
+  { name: "Home", link: "/" },
   {
     name: "Villas",
     link: "/villas"
   },
-  { name: "Location", link: "/location" },
   {
     name: "Gallery",
     link: "/gallery"
   },
+  { name: "Location", link: "/location" },
   { name: "Lombok", link: "/lombok" },
   {
     name: "Investment",
@@ -124,7 +125,7 @@ export default function Nav() {
                       alt="Golden Retreat Lombok Villa"
                       width={1000}
                       height={500}
-                      className="max-w-48 max-h-48 lg:min-w-60 lg:min-h-60 object-contain drop-shadow-xl -my-12 lg:-ml-8 -ml-6"
+                      className="max-w-44 max-h-44 lg:min-w-60 lg:min-h-60 object-contain drop-shadow-xl -my-12 lg:-ml-8 -ml-6"
                     />
                   </Link>
                 </SheetClose>

@@ -280,13 +280,21 @@ export default function Lombok() {
           Source: Expedia (Youtube){" "}
         </p>
       </div>
-      <div className="flex flex-col items-center justify-center w-full mx-auto">
+
+      <div className="flex flex-col items-center justify-center w-full mx-auto py-10">
         <Image
           src="https://utfs.io/f/dJLJpH9Hrkw3hoWVZA2LaOUmx7jw6JrqKBblDskWdPvTZoSg"
           alt="Map location of Lombok and surrounding areas"
           width={1000}
           height={600}
           className="w-full h-full lg:max-w-2xl lg:max-h-2xl object-contain lg:rounded-lg lg:shadow-lg"
+        />
+        <Image
+          src="https://utfs.io/f/dJLJpH9Hrkw3JMbcGuFGm1t394BWXOQz0jM2pHhDZeVrkKli"
+          alt="Map of attractions around Golden Retreat Lombok Villa"
+          width={500}
+          height={200}
+          className="w-full h-full object-cover rounded-lg"
         />
       </div>
 
