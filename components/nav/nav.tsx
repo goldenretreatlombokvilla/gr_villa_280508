@@ -124,7 +124,7 @@ export default function Nav() {
                       alt="Golden Retreat Lombok Villa"
                       width={1000}
                       height={500}
-                      className="max-w-52 max-h-52 lg:min-w-60 lg:min-h-60 object-contain drop-shadow-xl -my-12 lg:-ml-8 -ml-6"
+                      className="max-w-48 max-h-48 lg:min-w-60 lg:min-h-60 object-contain drop-shadow-xl -my-12 lg:-ml-8 -ml-6"
                     />
                   </Link>
                 </SheetClose>
@@ -145,7 +145,7 @@ export default function Nav() {
               <SheetHeader className="hidden">
                 <SheetTitle className="sr-only">GRLV</SheetTitle>
               </SheetHeader>
-              <div className="flex flex-col gap-0 lg:gap-4 items-start h-screen w-full">
+              <div className="flex flex-col gap-2 lg:gap-4 items-start h-screen w-full">
                 {navItems.map((item: any) => (
                   <SheetClose key={item.name} asChild>
                     <Link

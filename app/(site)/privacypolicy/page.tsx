@@ -178,7 +178,7 @@ export default function PrivacyPolicy() {
         We use Cookies and similar tracking technologies to track the activity
         on Our Service and store certain information. Tracking technologies used
         are beacons, tags, and scripts to collect and track information and to
-        improve and analyze Our Service. The technologies We use may include:
+        improve and analyse Our Service. The technologies We use may include:
       </p>
       <ul>
         <li>
@@ -331,7 +331,7 @@ export default function PrivacyPolicy() {
       <ul>
         <li>
           <strong>With Service Providers:</strong> We may share Your personal
-          information with Service Providers to monitor and analyze the use of
+          information with Service Providers to monitor and analyse the use of
           our Service, to contact You.
         </li>
         <li>

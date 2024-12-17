@@ -28,6 +28,7 @@ import {
   PinIcon,
   Plane,
   TreePalm,
+  Globe,
   Waves
 } from "lucide-react";
 import Image from "next/image";
@@ -118,6 +119,21 @@ const blogPosts = [
     category: "Accessibility",
     icon: <Plane className="text-blue-600" />,
     slug: "discover-lombok"
+  }
+];
+
+const blogPosts2 = [
+  {
+    id: 1,
+    title:
+      "Beyond Bali: Discovering the Next Luxury Real Estate Frontier in Southeast Asia",
+    excerpt:
+      "Explore the emerging landscape of luxury property investments beyond traditional markets.",
+    date: "December 10, 2024",
+    readTime: "7 min read",
+    category: "Investment Insights",
+    icon: <Globe className="text-amber-600" />,
+    slug: "beyond-bali"
   }
 ];
 
@@ -244,6 +260,25 @@ export default function Lombok() {
             </Dialog> */}
           </div>
         </div>
+      </div>
+      <div className="flex flex-col gap-4 items-center px-4 py-6 lg:pt-20 lg:py-20 max-w-6xl mx-auto ">
+        <p className="font-cinzel text-center text-4xl lg:text-5xl font-bold text-balance text-yellow-900">
+          Expedia: Vacation Travel Guide
+        </p>
+        <iframe
+          width="560"
+          height="315"
+          className="w-full h-full aspect-video rounded-lg"
+          src="https://www.youtube.com/embed/bl1k2-cLdV8?si=TIneix6MCQHYVpHU"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+        ></iframe>
+        <p className="text-sm font-sans opacity-70 italic">
+          Source: Expedia (Youtube){" "}
+        </p>
       </div>
       <div className="flex flex-col items-center justify-center w-full mx-auto">
         <Image
@@ -415,24 +450,38 @@ export default function Lombok() {
         </div>
       </div>
 
-      <div className="flex flex-col gap-4 items-center px-4 py-6 lg:pt-20 lg:py-20 max-w-6xl mx-auto ">
-        <p className="font-cinzel text-center text-4xl lg:text-5xl font-bold text-balance text-yellow-900">
-          Expedia: Vacation Travel Guide
-        </p>
-        <iframe
-          width="560"
-          height="315"
-          className="w-full h-full aspect-video rounded-lg"
-          src="https://www.youtube.com/embed/bl1k2-cLdV8?si=TIneix6MCQHYVpHU"
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerPolicy="strict-origin-when-cross-origin"
-          allowFullScreen
-        ></iframe>
-        <p className="text-sm font-sans opacity-70 italic">
-          Source: Expedia (Youtube){" "}
-        </p>
+      <div className="flex flex-col gap-4 px-6 py-8 lg:px-52 max-w-6xl mx-auto">
+        {blogPosts2.map((post) => (
+          <div
+            key={post.id}
+            className="bg-white shadow-lg rounded-xl overflow-hidden transition-all duration-300 hover:shadow-xl font-sans"
+          >
+            <div className="p-6">
+              <div className="flex items-center mb-4">
+                {post.icon}
+                <span className="ml-2 text-sm text-gray-600">
+                  {post.category}
+                </span>
+              </div>
+              <h2 className="text-2xl font-bold text-amber-900 mb-3 font-cinzel">
+                {post.title}
+              </h2>
+              <p className="text-gray-600 mb-4">{post.excerpt}</p>
+              <div className="flex justify-between items-center">
+                <div className="flex flex-row gap-2 divide-x-2 divide-gray-200">
+                  <p className="text-sm text-gray-500">{post.date}</p>
+                  <p className="text-sm text-gray-500 pl-2">{post.readTime}</p>
+                </div>
+                <a
+                  href={`/blog/${post.slug}`}
+                  className="text-amber-900 hover:text-amber-700 flex items-center"
+                >
+                  Read More <ArrowRight className="ml-2 w-5 h-5" />
+                </a>
+              </div>
+            </div>
+          </div>
+        ))}
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-x-14 items-center justify-center w-full py-10 mt-10 lg:py-40 bg-yellow-900/10">

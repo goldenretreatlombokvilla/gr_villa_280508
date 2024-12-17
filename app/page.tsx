@@ -140,35 +140,7 @@ export default function LandingPage() {
           />
         </div>
       </div>
-      <div className="bg-yellow-900/10 rounded-lg py-20 px-8 lg:px-52 grid lg:grid-cols-2 gap-12 lg:gap-24 items-center justify-center w-full text-left">
-        <div className="flex flex-col w-full h-full items-center justify-center">
-          {/*           <Tchart />
-           */}{" "}
-          <Image
-            src="https://utfs.io/f/dJLJpH9Hrkw3sumPK6dtfQDR1ujgW04bv39US6XzVqYOLryH"
-            alt="Golden Retreat Lombok Villa"
-            width={500}
-            height={300}
-            className="w-full h-full object-cover aspect-video rounded-lg shadow-lg"
-            loading="eager"
-          />
-        </div>
-        <div className="flex flex-col gap-2 font-medium text-center">
-          <p className="text-xl font-sans text-balance">Lombok receives over</p>
-          <p className="font-extrabold text-5xl font-cinzel text-yellow-800">
-            1,000,000 tourist
-          </p>
-          <p className="text-xl font-sans text-balance">
-            every year but only has enough hotels and resorts to lodge
-          </p>
-          <p className="font-extrabold text-5xl lg:text-6xl font-cinzel text-red-500">
-            24,000 visitors
-          </p>
-          <p className="text-xl font-sans text-balance -mt-2">
-            at any one time!
-          </p>
-        </div>
-      </div>
+
       <div className="flex flex-col lg:grid lg:grid-cols-2 gap-4 lg:gap-x-14 items-start justify-start w-full py-20 ">
         <div className="flex flex-col gap-4 px-8 lg:px-20">
           <p className="font-cinzel text-xl lg:text-2xl font-extrabold tracking-wide flex flex-col uppercase text-yellow-900/50">
@@ -194,6 +166,38 @@ export default function LandingPage() {
             </Link>
           </div>
         </div>
+        <div className="bg-yellow-900/10 rounded-lg py-20 px-8 lg:px-52 grid lg:grid-cols-2 gap-12 lg:gap-24 items-center justify-center w-full text-left">
+          <div className="flex flex-col w-full h-full items-center justify-center">
+            {/*           <Tchart />
+             */}{" "}
+            <Image
+              src="https://utfs.io/f/dJLJpH9Hrkw3sumPK6dtfQDR1ujgW04bv39US6XzVqYOLryH"
+              alt="Golden Retreat Lombok Villa"
+              width={500}
+              height={300}
+              className="w-full h-full object-cover aspect-video rounded-lg shadow-lg"
+              loading="eager"
+            />
+          </div>
+          <div className="flex flex-col gap-2 font-medium text-center">
+            <p className="text-xl font-sans text-balance">
+              Lombok receives over
+            </p>
+            <p className="font-extrabold text-5xl font-cinzel text-yellow-800">
+              1,000,000 tourist
+            </p>
+            <p className="text-xl font-sans text-balance">
+              every year but only has enough hotels and resorts to lodge
+            </p>
+            <p className="font-extrabold text-5xl lg:text-6xl font-cinzel text-red-500">
+              24,000 visitors
+            </p>
+            <p className="text-xl font-sans text-balance -mt-2">
+              at any one time!
+            </p>
+          </div>
+        </div>
+
         <div className="flex flex-col gap-4 w-full">
           <Image
             src="https://utfs.io/f/dJLJpH9Hrkw3wcK398eUX3BuqFPzTD5Kh1H9QyUilcWfbY6d"
@@ -318,10 +322,10 @@ export default function LandingPage() {
                     Restaurant, Bar & Lounge{" "}
                   </p>
                   <p className="text-md font-sans">
-                    Dine in our 5-star restaurant, serving mouth-watering local
-                    and international dishes. Spending time in our exclusive
-                    lounge is the perfect way to socialise with fellow residents
-                    and travellers.
+                    Dine in our 5-star restaurant, serving local and
+                    international delights. Or spend time in our exclusive
+                    lounge, the perfect setting to socialise with fellow
+                    residents and travellers.
                   </p>
                 </div>
               </div>

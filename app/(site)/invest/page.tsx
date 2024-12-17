@@ -8,7 +8,15 @@ import {
 } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Award, ExternalLink, FolderCheck, MapPin } from "lucide-react";
+import {
+  Award,
+  ExternalLink,
+  FolderCheck,
+  MapPin,
+  DollarSign,
+  ChartSpline,
+  ArrowRight
+} from "lucide-react";
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -20,6 +28,33 @@ export const metadata: Metadata = {
 };
 
 export default function Invest() {
+  const blogPosts = [
+    {
+      id: 1,
+      title: "Unlock an Exceptional Investment Opportunity",
+      excerpt:
+        "Investing in luxury Lombok villas is not just about securing a slice of paradise—it’s also a smart financial decision with high projected yields.",
+      date: "December 17, 2024",
+      readTime: "7 min read",
+      category: "Investment Opportunity",
+      icon: <DollarSign className="text-green-600" />,
+      slug: "projected-yield"
+    }
+  ];
+
+  const blogPosts2 = [
+    {
+      id: 1,
+      title: "Golden Retreat Lombok Villas: Comprehensive Payment Structure",
+      excerpt:
+        "Discover the phased payment process for acquiring a luxury villa at Golden Retreat Lombok Villas, with added support for legal documentation and visa applications.",
+      date: "December 12, 2024",
+      readTime: "5 min read",
+      category: "Purchasing Guide",
+      icon: <ChartSpline className="text-green-600" />,
+      slug: "payment-structure"
+    }
+  ];
   return (
     <main>
       <div className="flex flex-col gap-8 items-center justify-start w-full bg-gradient-to-b from-yellow-900/10 to-5% to-background ">
@@ -101,6 +136,42 @@ export default function Invest() {
               </Link>
             </div>
           </div>
+        </div>
+
+        <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-8 font-sans">
+          {blogPosts.map((post) => (
+            <div
+              key={post.id}
+              className="bg-white shadow-lg rounded-xl overflow-hidden transition-all duration-300 hover:shadow-xl"
+            >
+              <div className="p-6">
+                <div className="flex items-center mb-4">
+                  {post.icon}
+                  <span className="ml-2 text-sm text-gray-600">
+                    {post.category}
+                  </span>
+                </div>
+                <h2 className="text-2xl font-bold text-amber-900 mb-3 font-cinzel">
+                  {post.title}
+                </h2>
+                <p className="text-gray-600 mb-4">{post.excerpt}</p>
+                <div className="flex justify-between items-center">
+                  <div className="flex flex-row gap-2 divide-x-2 divide-gray-200">
+                    <p className="text-sm text-gray-500">{post.date}</p>
+                    <p className="text-sm text-gray-500 pl-2">
+                      {post.readTime}
+                    </p>
+                  </div>
+                  <a
+                    href={`/blog/${post.slug}`}
+                    className="text-amber-900 hover:text-amber-700 flex items-center"
+                  >
+                    Read More <ArrowRight className="ml-2 w-5 h-5" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
         <div className="w-full">
           <div className="flex flex-col lg:grid lg:grid-cols-2 gap-10 items-center w-full justify-center py-20">
@@ -387,6 +458,42 @@ export default function Invest() {
               </Button>
             </Link>
           </div>
+        </div>
+
+        <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-8 font-sans">
+          {blogPosts2.map((post) => (
+            <div
+              key={post.id}
+              className="bg-white shadow-lg rounded-xl overflow-hidden transition-all duration-300 hover:shadow-xl"
+            >
+              <div className="p-6">
+                <div className="flex items-center mb-4">
+                  {post.icon}
+                  <span className="ml-2 text-sm text-gray-600">
+                    {post.category}
+                  </span>
+                </div>
+                <h2 className="text-2xl font-bold text-amber-900 mb-3 font-cinzel">
+                  {post.title}
+                </h2>
+                <p className="text-gray-600 mb-4">{post.excerpt}</p>
+                <div className="flex justify-between items-center">
+                  <div className="flex flex-row gap-2 divide-x-2 divide-gray-200">
+                    <p className="text-sm text-gray-500">{post.date}</p>
+                    <p className="text-sm text-gray-500 pl-2">
+                      {post.readTime}
+                    </p>
+                  </div>
+                  <a
+                    href={`/blog/${post.slug}`}
+                    className="text-amber-900 hover:text-amber-700 flex items-center"
+                  >
+                    Read More <ArrowRight className="ml-2 w-5 h-5" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
 
         <div className="flex flex-col gap-8 items-center justify-start w-full px-8 lg:px-32 py-10 lg:py-40 ">
