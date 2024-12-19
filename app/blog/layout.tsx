@@ -12,7 +12,7 @@ export default function VillaLayout({
   children: React.ReactNode;
 }) {
   return (
-    <section className="z-40 relative top-0 right-0 left-0 min-h-screen bg-white w-full">
+    <section className="z-10 relative top-0 right-0 left-0 min-h-screen bg-white w-full">
       {children}
     </section>
   );
