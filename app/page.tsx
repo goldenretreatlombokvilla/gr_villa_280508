@@ -101,103 +101,7 @@ export default function LandingPage() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-x-14 items-center justify-center w-full  bg-yellow-900/10">
-        <div className="flex flex-col gap-4 px-8 lg:px-32 py-10 lg:py-40">
-          <p className="font-cinzel text-xl lg:text-2xl font-extrabold tracking-wide flex flex-col uppercase text-yellow-900/50">
-            Paradise on Earth
-          </p>
-          <h2 className="text-5xl lg:text-7xl font-cinzel font-extrabold text-yellow-900">
-            Lombok Island
-          </h2>
-          <p className="text-md font-sans text-balance">
-            Lombok Island is fast becoming a popular choice for nature lovers
-            and holiday makers. With its pristine beaches, lush rainforests, and
-            abundant attractions, the Island offers unique and unforgettable
-            experiences for all tastes.
-          </p>
-          <p className="text-md font-sans text-balance">
-            From heart-racing adventure to soul-healing serenity, and everything
-            in between, Lombok has it all.
-          </p>
-          <div className="flex flex-row gap-4 items-end justify-start">
-            <Link href="/lombok" prefetch={true}>
-              <Button
-                variant="default"
-                className="w-fit font-extrabold uppercase tracking-wider hover:drop-shadow-md"
-              >
-                Destination Lombok
-              </Button>
-            </Link>
-          </div>
-        </div>
-        <div className="flex flex-col gap-4 lg:order-first h-full w-full">
-          <Image
-            src="https://utfs.io/f/dJLJpH9Hrkw3Ybu6yZnLOdMUqSH08tvDTRnX1xNaPBF3YW5c"
-            alt="Destination Lombok: A Rising Tourist Destination"
-            width={500}
-            height={200}
-            className="flex w-full h-full object-cover"
-          />
-        </div>
-      </div>
-
-      <div className="flex flex-col lg:grid lg:grid-cols-2 gap-4 lg:gap-x-14 items-start justify-start w-full py-20 ">
-        <div className="flex flex-col gap-4 px-8 lg:px-20">
-          <p className="font-cinzel text-xl lg:text-2xl font-extrabold tracking-wide flex flex-col uppercase text-yellow-900/50">
-            An Unparalleled
-          </p>
-          <h2 className="text-4xl lg:text-6xl font-cinzel font-extrabold text-yellow-900">
-            Investment Opportunity
-          </h2>
-          <p className="text-md font-sans text-balance">
-            Golden Retreat Lombok presents an opportunity to capitalise on
-            Lombok’s fast-growing tourism industry. Already ranked one of the
-            world's top destinations for nature tourism, Lombok Island’s demand
-            for quality holiday accommodation continues to soar!
-          </p>
-          <div className="flex flex-row gap-4 items-end justify-start">
-            <Link href="/invest" prefetch={true}>
-              <Button
-                variant="default"
-                className="w-fit font-extrabold uppercase tracking-wider hover:drop-shadow-md"
-              >
-                Find Out More
-              </Button>
-            </Link>
-          </div>
-        </div>
-        <div className="bg-yellow-900/10 rounded-lg py-20 px-8 lg:px-52 grid lg:grid-cols-2 gap-12 lg:gap-24 items-center justify-center w-full text-left">
-          <div className="flex flex-col w-full h-full items-center justify-center">
-            {/*           <Tchart />
-             */}{" "}
-            <Image
-              src="https://utfs.io/f/dJLJpH9Hrkw3sumPK6dtfQDR1ujgW04bv39US6XzVqYOLryH"
-              alt="Golden Retreat Lombok Villa"
-              width={500}
-              height={300}
-              className="w-full h-full object-cover aspect-video rounded-lg shadow-lg"
-              loading="eager"
-            />
-          </div>
-          <div className="flex flex-col gap-2 font-medium text-center">
-            <p className="text-xl font-sans text-balance">
-              Lombok receives over
-            </p>
-            <p className="font-extrabold text-5xl font-cinzel text-yellow-800">
-              1,000,000 tourist
-            </p>
-            <p className="text-xl font-sans text-balance">
-              every year but only has enough hotels and resorts to lodge
-            </p>
-            <p className="font-extrabold text-5xl lg:text-6xl font-cinzel text-red-500">
-              24,000 visitors
-            </p>
-            <p className="text-xl font-sans text-balance -mt-2">
-              at any one time!
-            </p>
-          </div>
-        </div>
-
+      {/* <div className="flex flex-col lg:grid lg:grid-cols-2 gap-4 lg:gap-x-14 items-start justify-start w-full py-20 ">
         <div className="flex flex-col gap-4 w-full">
           <Image
             src="https://utfs.io/f/dJLJpH9Hrkw3wcK398eUX3BuqFPzTD5Kh1H9QyUilcWfbY6d"
@@ -213,17 +117,7 @@ export default function LandingPage() {
             </p>
           </div>
         </div>
-      </div>
-
-      <div className="grid grid-cols-1 lg:grid-cols-[2fr_3fr] gap-4 items-center justify-center w-full -mt-14 pb-14">
-        <Image
-          src="https://utfs.io/f/dJLJpH9Hrkw3wcK398eUX3BuqFPzTD5Kh1H9QyUilcWfbY6d"
-          alt="Golden Retreat Lombok Villa"
-          width={500}
-          height={200}
-          className="flex lg:hidden w-full h-auto aspect-video object-cover"
-        />
-      </div>
+      </div> */}
 
       <div className="flex flex-col gap-12 items-center justify-center w-full min-h-screen px-8 lg:px-20 xl:px-52 py-20 bg-yellow-800/10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center justify-between w-full lg:gap-14">
@@ -380,6 +274,100 @@ export default function LandingPage() {
           </Card>
         </div>
       </div>
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-x-14 items-center justify-center w-full  bg-yellow-900/10">
+        <div className="flex flex-col gap-4 px-8 lg:px-32 py-10 lg:py-40">
+          <p className="font-cinzel text-xl lg:text-2xl font-extrabold tracking-wide flex flex-col uppercase text-yellow-900/50">
+            Paradise on Earth
+          </p>
+          <h2 className="text-5xl lg:text-7xl font-cinzel font-extrabold text-yellow-900">
+            Lombok Island
+          </h2>
+          <p className="text-md font-sans text-balance">
+            Lombok Island is fast becoming a popular choice for nature lovers
+            and holiday makers. With its pristine beaches, lush rainforests, and
+            abundant attractions, the Island offers unique and unforgettable
+            experiences for all tastes.
+          </p>
+          <p className="text-md font-sans text-balance">
+            From heart-racing adventure to soul-healing serenity, and everything
+            in between, Lombok has it all.
+          </p>
+          <div className="flex flex-row gap-4 items-end justify-start">
+            <Link href="/lombok" prefetch={true}>
+              <Button
+                variant="default"
+                className="w-fit font-extrabold uppercase tracking-wider hover:drop-shadow-md"
+              >
+                Destination Lombok
+              </Button>
+            </Link>
+          </div>
+        </div>
+        <div className="flex flex-col gap-4 lg:order-first h-full w-full">
+          <Image
+            src="https://utfs.io/f/dJLJpH9Hrkw3Ybu6yZnLOdMUqSH08tvDTRnX1xNaPBF3YW5c"
+            alt="Destination Lombok: A Rising Tourist Destination"
+            width={500}
+            height={200}
+            className="flex w-full h-full object-cover"
+          />
+        </div>
+      </div>
+      <div className="bg-yellow-900/10 rounded-lg py-8 px-8 lg:px-52 grid lg:grid-cols-2 gap-4 lg:gap-24 items-center justify-center w-full text-left">
+        <div className="flex flex-col w-full h-full items-center justify-center">
+          {/*           <Tchart />
+           */}{" "}
+          <Image
+            src="https://utfs.io/f/dJLJpH9Hrkw3sumPK6dtfQDR1ujgW04bv39US6XzVqYOLryH"
+            alt="Golden Retreat Lombok Villa"
+            width={500}
+            height={300}
+            className="w-full h-full object-cover aspect-video rounded-lg shadow-lg"
+            loading="eager"
+          />
+        </div>
+        <div className="flex flex-col gap-2 font-medium text-center px-0 order-first">
+          <p className="text-xl font-sans text-balance">Lombok receives over</p>
+          <p className="font-extrabold text-5xl font-cinzel text-yellow-800">
+            1,000,000 tourist
+          </p>
+          <p className="text-xl font-sans text-balance">
+            every year but only has enough hotels and resorts to lodge
+          </p>
+          <p className="font-extrabold text-5xl lg:text-6xl font-cinzel text-red-500">
+            24,000 visitors
+          </p>
+          <p className="text-xl font-sans text-balance -mt-2">
+            at any one time!
+          </p>
+        </div>
+      </div>
+
+      <div className="flex flex-col gap-4 px-8 lg:px-20 py-10">
+        <p className="font-cinzel text-xl lg:text-2xl font-extrabold tracking-wide flex flex-col uppercase text-yellow-900/50">
+          An Unparalleled
+        </p>
+        <h2 className="text-4xl lg:text-6xl font-cinzel font-extrabold text-yellow-900">
+          Investment Opportunity
+        </h2>
+        <p className="text-md font-sans text-balance">
+          Golden Retreat Lombok presents an opportunity to capitalise on
+          Lombok’s fast-growing tourism industry. Already ranked one of the
+          world's top destinations for nature tourism, Lombok Island’s demand
+          for quality holiday accommodation continues to soar!
+        </p>
+        <div className="flex flex-row gap-4 items-end justify-start">
+          <Link href="/invest" prefetch={true}>
+            <Button
+              variant="default"
+              className="w-fit font-extrabold uppercase tracking-wider hover:drop-shadow-md"
+            >
+              Find Out More
+            </Button>
+          </Link>
+        </div>
+      </div>
+
       <Cta />
     </main>
   );

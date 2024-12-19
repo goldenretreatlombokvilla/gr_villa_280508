@@ -237,7 +237,7 @@ export default function Invest() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-start justify-start w-full py-20 px-8 lg:px-32">
             <div className="flex flex-col gap-4">
               <p className="text-5xl font-cinzel font-bold text-yellow-900">
-                Investment Opportunity
+                Our Wholistic Approach
               </p>
               <p className="text-md font-sans">
                 By choosing a Golden Retreat Lombok Villa, you’re not just
