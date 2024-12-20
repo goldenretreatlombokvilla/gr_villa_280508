@@ -101,23 +101,28 @@ export default function LandingPage() {
         </div>
       </div>
 
-      {/* <div className="flex flex-col lg:grid lg:grid-cols-2 gap-4 lg:gap-x-14 items-start justify-start w-full py-20 ">
+      <div className="flex flex-col gap-4 lg:gap-x-14 items-start justify-start w-full py-8 ">
         <div className="flex flex-col gap-4 w-full">
+          <Image
+            src="https://utfs.io/f/dJLJpH9Hrkw3pXyUf0A8fDXoAL2Jay9kEY7gbmpj3CvcG0Pu"
+            alt="Golden Retreat Lombok Villa"
+            width={500}
+            height={200}
+            className="flex w-full h-auto aspect-video object-cover"
+          />
+
           <Image
             src="https://utfs.io/f/dJLJpH9Hrkw3wcK398eUX3BuqFPzTD5Kh1H9QyUilcWfbY6d"
             alt="Golden Retreat Lombok Villa"
             width={500}
             height={200}
-            className="hidden lg:flex w-full h-auto aspect-video object-cover"
+            className="flex w-full h-auto aspect-video object-cover"
           />
-          <div className="hidden lg:flex flex-row items-center justify-center py-0 text-stone-900/50 font-sans text-sm italic rounded-lg">
-            <p>
-              Exquisite villa with private pool and deck, perfect for luxury
-              living.
-            </p>
-          </div>
+          <Button variant="link" asChild>
+            <Link href="/gallery">View Gallery</Link>
+          </Button>
         </div>
-      </div> */}
+      </div>
 
       <div className="flex flex-col gap-12 items-center justify-center w-full min-h-screen px-8 lg:px-20 xl:px-52 py-20 bg-yellow-800/10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center justify-between w-full lg:gap-14">
@@ -126,7 +131,7 @@ export default function LandingPage() {
               <CardContent className="px-0">
                 <div className="flex flex-col gap-0 lg:gap-10 items-center justify-center">
                   <Image
-                    src="https://utfs.io/f/dJLJpH9Hrkw3ZbJhQuj5zPGMQWt0kmvD298SjxYqTRlnKLFE"
+                    src="https://utfs.io/f/dJLJpH9Hrkw3STzbTcM0TP839gFjLVe25vnd4qspYbylGHrX"
                     alt="Bedroom in the Premium Luxury Villa"
                     width={500}
                     height={300}

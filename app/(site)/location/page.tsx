@@ -1,8 +1,17 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { MapPin, Globe, Sun, Cloud, Plane, ArrowRight } from "lucide-react";
+import {
+  MapPin,
+  Globe,
+  Sun,
+  Cloud,
+  Plane,
+  ArrowRight,
+  Palmtree
+} from "lucide-react";
 import Cta from "@/components/cta";
+import GiliIslandsSection from "@/components/gili";
 
 const blogPosts = [
   {
@@ -21,6 +30,13 @@ const blogPosts = [
 
 const LocationPage = () => {
   const attractions = [
+    {
+      name: "Bangsal Beach",
+      distance: "5 min walk",
+      description:
+        "Walking distance to the beach with stunning views and a relaxed atmosphere.",
+      icon: <Palmtree className="text-yellow-900" />
+    },
     {
       name: "Local Markets",
       distance: "5 min drive",
@@ -126,6 +142,8 @@ const LocationPage = () => {
         </div>
       </section>
 
+      <GiliIslandsSection />
+
       {/* Nearby Attractions */}
       <section className="px-8 lg:px-32 py-16 bg-yellow-900/10">
         <div className="text-center mb-12">
@@ -135,9 +153,6 @@ const LocationPage = () => {
           <p className="text-lg font-sans text-gray-700 max-w-2xl mx-auto">
             Explore the rich tapestry of Lombok's natural beauty and cultural
             heritage, all within a short drive from our villas.
-          </p>
-          <p className="text-xl font-semibold font-sans text-gray-700 max-w-2xl mx-auto">
-            Short 5 min walk to Bangsal Port!
           </p>
         </div>
         <div className="grid md:grid-cols-3 gap-8">
