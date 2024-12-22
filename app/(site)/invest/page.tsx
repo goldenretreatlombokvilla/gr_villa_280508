@@ -28,12 +28,36 @@ export const metadata: Metadata = {
 };
 
 export default function Invest() {
+  const investmentBenefits = [
+    {
+      id: 1,
+      icon: <MapPin className="text-yellow-900" />,
+      title: "Gateway to Lombok's Iconic Gili Islands",
+      description:
+        "Located on Lombok’s west coast, just 300m from Bangsal Beach and Bangsal Fast Boat Port, we’re perfectly positioned for exploring the famous Gili Islands—Trawangan, Air, and Meno. These idyllic islands are a top reason many tourists visit Lombok."
+    },
+    {
+      id: 2,
+      icon: <Award className="text-yellow-900" />,
+      title: "Luxury Living Redefined",
+      description:
+        "An experienced developer with a track record of four sold-out projects brings you Golden Retreat Lombok Villas. Thoughtfully designed with premium furnishings and 5-star amenities, this is your perfect escape to luxury."
+    },
+    {
+      id: 3,
+      icon: <FolderCheck className="text-yellow-900" />,
+      title: "Comprehensive Support",
+      description:
+        "We’re here to guide you through every step of your investment journey, offering dedicated support tailored to your needs. For foreign purchasers, this includes assistance with long-stay visa applications, ensuring a smooth and stress-free process."
+    }
+  ];
+
   const blogPosts = [
     {
       id: 1,
       title: "Unlock an Exceptional Investment Opportunity",
       excerpt:
-        "Investing in luxury Lombok villas is not just about securing a slice of paradise—it’s also a smart financial decision with high projected yields.",
+        "Investing in a luxury Lombok villas is not just about securing a slice of paradise—it’s also a smart financial decision with high projected yields.",
       date: "December 17, 2024",
       readTime: "7 min read",
       category: "Investment Opportunity",
@@ -47,7 +71,7 @@ export default function Invest() {
       id: 1,
       title: "Golden Retreat Lombok Villas: Comprehensive Payment Structure",
       excerpt:
-        "Discover the phased payment process for acquiring a luxury villa at Golden Retreat Lombok Villas, with added support for legal documentation and visa applications.",
+        "Discover the progressive payment process for acquiring a luxury villa at Golden Retreat Lombok Villas, with added support for legal documentation and visa applications.",
       date: "December 12, 2024",
       readTime: "5 min read",
       category: "Purchasing Guide",
@@ -128,7 +152,7 @@ export default function Invest() {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-8 font-sans">
+        <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-8 font-sans px-4">
           {blogPosts.map((post) => (
             <div
               key={post.id}
@@ -453,7 +477,7 @@ export default function Invest() {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-8 font-sans">
+        <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-8 font-sans px-4">
           {blogPosts2.map((post) => (
             <div
               key={post.id}
@@ -509,54 +533,29 @@ export default function Invest() {
           </video>
         </div>
         {/* Benefits */}
-        <div className="flex flex-col gap-10 items-center justify-start w-full px-8 lg:px-52 py-20 bg-black text-white">
-          <p className="text-4xl lg:text-5xl font-cinzel font-extrabold text-white">
-            Benefits
+        <div className="flex flex-col gap-10 items-center justify-start w-full px-8 lg:px-52 py-20">
+          <p className="text-4xl lg:text-5xl font-cinzel font-extrabold text-yellow-900">
+            Investment Benefits
           </p>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 pl-8 lg:gap-20 py-6">
-            <Card className="flex flex-col w-full lg:p-0 bg-transparent shadow-none border-none">
-              <CardContent className="p-0">
-                <div className="flex flex-row lg:flex-col gap-4 lg:gap-10 w-full p-0 items-center lg:items-start group">
-                  <MapPin className="min-w-20 min-h-20 lg:w-24 lg:h-24 fill-yellow-700 group-hover:fill-yellow-600 stroke-1 lg:-ml-12" />
-                  <p className="text-md  font-sans text-white border-l-2 border-yellow-600/50 pl-8">
-                    We are situated in the heart of Lombok’s most popular
-                    attractions. Nestled in the west coast of Lombok Island and
-                    located 300m away from Bangsal Beach, Bangsal Fast Boat
-                    Port, we are a stones throw away from the fast boat services
-                    that ferry tourists to the famous smaller Islands just off
-                    Lombok, namely Gili Terawangan, Gili Air and Gili Meno. This
-                    is by far one of the more popular attractions, and THE
-                    reason why many tourists visit Lombok.
-                  </p>
+          <div className="grid md:grid-cols-3 gap-8">
+            {investmentBenefits.map((benefits, index) => (
+              <div
+                key={index}
+                className="bg-yellow-900/10 rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300"
+              >
+                <div className="flex items-center gap-4 mb-4">
+                  {benefits.icon}
+                  <h4 className="text-xl font-bold text-yellow-900">
+                    {benefits.title}
+                  </h4>
                 </div>
-              </CardContent>
-            </Card>
-            <Card className="flex flex-col w-full lg:p-0 bg-transparent shadow-none border-none">
-              <CardContent className="p-0">
-                <div className="flex flex-row lg:flex-col gap-4 lg:gap-10 w-full p-0 items-center lg:items-start group">
-                  <Award className="min-w-20 min-h-20 lg:w-24 lg:h-24 fill-yellow-700 group-hover:fill-yellow-600 stroke-1 lg:-ml-12" />
-                  <p className="text-md font-sans text-white border-l-2 border-yellow-600/50 pl-8">
-                    Established developer with the experience and success of 4
-                    sold-out projects. Designed with you in mind, Golden Retreat
-                    Lombok Villas includes premium furnishings and 5-star
-                    amenities.
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
-            <Card className="flex flex-col w-full lg:p-0 bg-transparent shadow-none border-none">
-              <CardContent className="p-0">
-                <div className="flex flex-row lg:flex-col gap-4 lg:gap-10 w-full p-0 items-center lg:items-start group">
-                  <FolderCheck className="min-w-20 min-h-20 lg:w-24 lg:h-24 fill-yellow-700 group-hover:fill-yellow-600 stroke-1 lg:-ml-12" />
-                  <p className="text-md  font-sans text-white border-l-2 border-yellow-600/50 pl-8 ">
-                    We will lend assistance every step of the way. Including
-                    long-stay visa applications where required for foreign
-                    purchasers.
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
+                <p className="text-gray-600 font-sans">
+                  {benefits.description}
+                </p>
+              </div>
+            ))}
           </div>
+
           <Link href="/book">
             <Button
               variant="default"

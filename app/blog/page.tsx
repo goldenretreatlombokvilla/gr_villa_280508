@@ -28,7 +28,7 @@ const blogPosts = [
     id: 2,
     title: "Golden Retreat Lombok Villas: Comprehensive Payment Structure",
     excerpt:
-      "Discover the phased payment process for acquiring a luxury villa at Golden Retreat Lombok Villas, with added support for legal documentation and visa applications.",
+      "Discover the progressive payment process for acquiring a luxury villa at Golden Retreat Lombok Villas, with added support for legal documentation and visa applications.",
     date: "December 12, 2024",
     readTime: "5 min read",
     category: "Purchasing Guide",
@@ -51,7 +51,7 @@ const blogPosts = [
     id: 4,
     title: "Unlock an Exceptional Investment Opportunity",
     excerpt:
-      "Investing in luxury Lombok villas is not just about securing a slice of paradise—it’s also a smart financial decision with high projected yields.",
+      "Investing in a luxury Lombok villas is not just about securing a slice of paradise—it’s also a smart financial decision with high projected yields.",
     date: "December 17, 2024",
     readTime: "7 min read",
     category: "Investment Opportunity",
