@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { Carousel } from "@/components/ui/carousel";
 import {
   Award,
   ExternalLink,
@@ -258,6 +259,7 @@ export default function Invest() {
               </Link>
             </div>
           </div>
+
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-start justify-start w-full py-20 px-8 lg:px-32">
             <div className="flex flex-col gap-4">
               <p className="text-5xl font-cinzel font-bold text-yellow-900">

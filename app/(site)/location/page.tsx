@@ -8,6 +8,7 @@ import {
   Cloud,
   Plane,
   ArrowRight,
+  Bird,
   Palmtree
 } from "lucide-react";
 import Cta from "@/components/cta";
@@ -35,28 +36,45 @@ const LocationPage = () => {
       distance: "5 min walk",
       description:
         "Walking distance to the beach with stunning views and a relaxed atmosphere.",
-      icon: <Palmtree className="text-yellow-900" />
+      icon: <Palmtree className="text-yellow-900" />,
+      image:
+        "https://utfs.io/f/dJLJpH9Hrkw39K1snr0ph4CULED6aSFXol2jeIi7cfZVQMtR"
     },
     {
       name: "Local Markets",
       distance: "5 min drive",
       description:
         "Experience authentic Lombok culture and traditional handicrafts.",
-      icon: <Globe className="text-green-500" />
+      icon: <Globe className="text-green-500" />,
+      image:
+        "https://utfs.io/f/dJLJpH9Hrkw3ccZRLBQtZAF6PhQIJe71BGMDSRXNfascl52v"
     },
     {
-      name: "Kuta Beach",
-      distance: "10 min drive",
+      name: "Lombok Wildlife Park",
+      distance: "12 min drive",
       description:
-        "World-renowned beach with pristine white sand and crystal-clear waters.",
-      icon: <Sun className="text-yellow-500" />
+        "The first wildlife sanctuary in Lombok with 195 animals and 50 different species.",
+      icon: <Bird className="text-yellow-500" />,
+      image:
+        "https://utfs.io/f/dJLJpH9Hrkw3HSthDZ8o47KGLVT5JMX0nbiCWRIZyzPwUDrc"
     },
     {
-      name: "Tanjung Aan",
-      distance: "15 min drive",
+      name: "Gili Meno Beach",
+      distance: "20 min boat ride",
       description:
         "Stunning beach known for its unique pepper-like sand and turquoise waters.",
-      icon: <Cloud className="text-blue-400" />
+      icon: <Palmtree className="text-yellow-900" />,
+      image:
+        "https://utfs.io/f/dJLJpH9Hrkw32ZAJg6mo51eST8ARdqE4gJbxPvHDzYB0CkVu"
+    },
+    {
+      name: "Nipah Beach",
+      distance: "20 min drive",
+      description:
+        "Snow-white sandy beach with clear blue water is a famous gathering place for visitors",
+      icon: <Palmtree className="text-yellow-900" />,
+      image:
+        "https://utfs.io/f/dJLJpH9Hrkw3s0BM4ZGdtfQDR1ujgW04bv39US6XzVqYOLry"
     }
   ];
 
@@ -129,8 +147,17 @@ const LocationPage = () => {
           </div>
         </div>
         <div className="flex flex-col gap-4 items-center ">
-          <iframe
+          {/* <iframe
             src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3947.0465431403145!2d116.09684177583974!3d-8.397083291641211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwMjMnNDkuNSJTIDExNsKwMDUnNTcuOSJF!5e0!3m2!1sen!2smy!4v1732538310231!5m2!1sen!2smy"
+            className="w-full h-[500px] rounded-2xl shadow-lg"
+            allowFullScreen={true}
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe> */}
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3947.0456584984945!2d116.09683327569908!3d-8.397170284724552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dcddd105952e22d%3A0xc6e7db2574405905!2sGolden%20Retreat%20Lombok%20Villas!5e0!3m2!1sen!2smy!4v1734859770461!5m2!1sen!2smy"
+            width="600"
+            height="450"
             className="w-full h-[500px] rounded-2xl shadow-lg"
             allowFullScreen={true}
             loading="lazy"
@@ -159,20 +186,31 @@ const LocationPage = () => {
           {attractions.map((attraction, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
+              className="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 lg:first:col-span-2"
             >
-              <div className="flex items-center gap-4 mb-4">
+              <div className="flex items-center gap-4 mb-2">
                 {attraction.icon}
-                <h4 className="text-xl font-bold text-yellow-900">
+                <h4 className="text-2xl font-bold text-yellow-900">
                   {attraction.name}
                 </h4>
               </div>
-              <p className="text-gray-700 mb-2 font-sans font-medium">
-                {attraction.distance}
-              </p>
-              <p className="text-gray-600 font-sans">
-                {attraction.description}
-              </p>
+              <div className="flex flex-row gap-6 items-center justify-center">
+                <Image
+                  src={attraction.image}
+                  alt={attraction.name}
+                  width={500}
+                  height={500}
+                  className="aspect-square w-auto h-32 object-cover rounded-full"
+                />
+                <div className="flex flex-col gap-2 order-first">
+                  <p className="text-stone-500 font-sans bg-yellow-900/10 px-2 py-1 rounded-lg w-fit text-sm font-medium">
+                    {attraction.distance}
+                  </p>
+                  <p className="text-stone-700 font-sans">
+                    {attraction.description}
+                  </p>
+                </div>
+              </div>
             </div>
           ))}
         </div>
