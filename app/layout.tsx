@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     template: "%s | Golden Retreat Lombok Villas"
   },
   description:
-    "A property development offering luxurious Villas set in the heart ofLombok’s best attractions.",
+    "A property development offering luxurious villas set in the heart of Lombok’s best attractions.",
   keywords: [
     "Lombok villas",
     "luxury villa investment",

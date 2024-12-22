@@ -9,6 +9,23 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator
 } from "@/components/ui/breadcrumb";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title:
+    "Beyond Bali: Discovering the Next Luxury Real Estate Frontier in Southeast Asia",
+  description: `Discover the emerging landscape of luxury property investments beyond traditional markets.`,
+  openGraph: {
+    title:
+      "Beyond Bali: Discovering the Next Luxury Real Estate Frontier in Southeast Asia",
+    description: `Discover the emerging landscape of luxury property investments beyond traditional markets.`
+  },
+  twitter: {
+    title:
+      "Beyond Bali: Discovering the Next Luxury Real Estate Frontier in Southeast Asia",
+    description: `Discover the emerging landscape of luxury property investments beyond traditional markets.`
+  }
+};
 
 export default function Page() {
   return (

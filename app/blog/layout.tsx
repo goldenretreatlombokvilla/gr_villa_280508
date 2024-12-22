@@ -1,8 +1,11 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Blog",
-  description: `Golden Retreat Lombok Villas is a property development offering luxurious Villas set in the heart of Lombok’s best attractions.`,
+  title: {
+    default: "Golden Retreat Insights",
+    template: "%s | Golden Retreat Insights"
+  },
+  description: `Explore articles on investment opportunities, purchasing guides, and accessibility to make informed decisions about your next property investment.`,
   keywords: `golden retreat lombok villa, luxury villa, lombok villas, private pool, villas, island villas, island villa, private pools, poolside villa, pool villa, poolside villas, gold retreat lombok, gold retreat lombok villas, gold retreat lombok villa`
 };
 

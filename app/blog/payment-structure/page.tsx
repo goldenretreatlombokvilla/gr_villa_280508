@@ -9,7 +9,23 @@ import {
   BreadcrumbSeparator
 } from "@/components/ui/breadcrumb";
 import Book from "@/components/book";
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Comprehensive Payment Structure",
+  description:
+    "To ensure a seamless experience, we have established a transparent and progressive payment structure which allows guyers to maintain financial flexibility and control over their investments.",
+  openGraph: {
+    title: "Comprehensive Payment Structure",
+    description:
+      "To ensure a seamless experience, we have established a transparent and progressive payment structure which allows guyers to maintain financial flexibility and control over their investments."
+  },
+  twitter: {
+    title: "Comprehensive Payment Structure",
+    description:
+      "To ensure a seamless experience, we have established a transparent and progressive payment structure which allows guyers to maintain financial flexibility and control over their investments."
+  }
+};
 export default function Page() {
   return (
     <div className="flex flex-col w-full">

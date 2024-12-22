@@ -9,6 +9,23 @@ import {
   BreadcrumbSeparator
 } from "@/components/ui/breadcrumb";
 import Book from "@/components/book";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title:
+    "Discover Lombok: A Haven of Accessibility for International Travelers",
+  description: `Lombok, the idyllic island in Indonesia’s West Nusa Tenggara province, has long been a hidden gem for travelers seeking pristine beaches, majestic mountains, and rich cultural experiences.`,
+  openGraph: {
+    title:
+      "Discover Lombok: A Haven of Accessibility for International Travelers",
+    description: `Lombok, the idyllic island in Indonesia’s West Nusa Tenggara province, has long been a hidden gem for travelers seeking pristine beaches, majestic mountains, and rich cultural experiences.`
+  },
+  twitter: {
+    title:
+      "Discover Lombok: A Haven of Accessibility for International Travelers",
+    description: `Lombok, the idyllic island in Indonesia’s West Nusa Tenggara province, has long been a hidden gem for travelers seeking pristine beaches, majestic mountains, and rich cultural experiences.`
+  }
+};
 
 export default function Page() {
   return (
@@ -25,6 +42,7 @@ export default function Page() {
             </BreadcrumbItem>
           </BreadcrumbList>
         </Breadcrumb>
+
         <Copy />
       </div>
       <Book />

@@ -10,6 +10,24 @@ import {
 } from "@/components/ui/breadcrumb";
 import Book from "@/components/book";
 
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Unlock an Exceptional Investment Opportunity",
+  description:
+    "Investing in a luxury Lombok villas is not just about securing a slice of paradise—it’s also a smart financial decision with high projected yields.",
+  openGraph: {
+    title: "Unlock an Exceptional Investment Opportunity",
+    description:
+      "Investing in a luxury Lombok villas is not just about securing a slice of paradise—it’s also a smart financial decision with high projected yields."
+  },
+  twitter: {
+    title: "Unlock an Exceptional Investment Opportunity",
+    description:
+      "Investing in a luxury Lombok villas is not just about securing a slice of paradise—it’s also a smart financial decision with high projected yields."
+  }
+};
+
 export default function Page() {
   return (
     <div className="flex flex-col w-full">

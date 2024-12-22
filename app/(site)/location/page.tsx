@@ -47,7 +47,7 @@ const LocationPage = () => {
         "Experience authentic Lombok culture and traditional handicrafts.",
       icon: <Globe className="text-green-500" />,
       image:
-        "https://utfs.io/f/dJLJpH9Hrkw3ccZRLBQtZAF6PhQIJe71BGMDSRXNfascl52v"
+        "https://utfs.io/f/dJLJpH9Hrkw3y32q0poChO0bGNmuXl6cVZrTJE2qfHkvI1R8"
     },
     {
       name: "Lombok Wildlife Park",
