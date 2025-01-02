@@ -19,7 +19,7 @@ export default function Location() {
             Info Pack 2025
           </p>
           <Link
-            href="https://utfs.io/f/dJLJpH9Hrkw3ud1pFPubSOoWvunMekl0ACfLj2rIG8cQDzZm"
+            href="https://utfs.io/f/dJLJpH9Hrkw3qUxWv8SMBd9KPxAmiZ46NFaSwGRqO2hJYQuW"
             target="_blank"
             className="flex flex-row gap-4 items-center justify-center w-full"
           >
