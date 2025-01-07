@@ -110,14 +110,6 @@ export default function LandingPage() {
             height={200}
             className="flex w-full h-auto aspect-video object-cover"
           />
-
-          <Image
-            src="https://utfs.io/f/dJLJpH9Hrkw3wcK398eUX3BuqFPzTD5Kh1H9QyUilcWfbY6d"
-            alt="Golden Retreat Lombok Villa"
-            width={500}
-            height={200}
-            className="flex w-full h-auto aspect-video object-cover"
-          />
           <Button variant="link" asChild>
             <Link href="/gallery">View Gallery</Link>
           </Button>
