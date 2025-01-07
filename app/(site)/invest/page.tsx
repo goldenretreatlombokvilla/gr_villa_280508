@@ -537,7 +537,7 @@ export default function Invest() {
         {/* Benefits */}
         <div className="flex flex-col gap-10 items-center justify-start w-full px-8 lg:px-52 py-20">
           <p className="text-4xl lg:text-5xl font-cinzel font-extrabold text-yellow-900">
-            Investment Benefits
+            Fringe Benefits
           </p>
           <div className="grid md:grid-cols-3 gap-8">
             {investmentBenefits.map((benefits, index) => (

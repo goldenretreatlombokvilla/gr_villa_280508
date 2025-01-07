@@ -11,7 +11,7 @@ const GiliIslandsSection = () => {
     },
     {
       icon: <Ship className="w-6 h-6 text-yellow-900" />,
-      title: "Regular Boats",
+      title: "Fast Boat Shuttle Service",
       description:
         "Frequent boat services to all three Gili Islands throughout the day"
     },
