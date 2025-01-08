@@ -103,8 +103,16 @@ export default function LandingPage() {
 
       <div className="flex flex-col gap-4 lg:gap-x-14 items-start justify-start w-full py-8 ">
         <div className="flex flex-col gap-4 w-full">
-          <Image
+          {/*  <Image
             src="https://utfs.io/f/dJLJpH9Hrkw3pXyUf0A8fDXoAL2Jay9kEY7gbmpj3CvcG0Pu"
+            alt="Golden Retreat Lombok Villa"
+            width={500}
+            height={200}
+            className="flex w-full h-auto aspect-video object-cover"
+          /> */}
+
+          <Image
+            src="https://utfs.io/f/dJLJpH9Hrkw3wcK398eUX3BuqFPzTD5Kh1H9QyUilcWfbY6d"
             alt="Golden Retreat Lombok Villa"
             width={500}
             height={200}
