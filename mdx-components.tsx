@@ -8,9 +8,9 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
       <h1
         style={{
           color: "#713f12",
-          fontSize: "40px",
+          fontSize: "42px",
           fontFamily: "Cinzel, serif",
-          fontWeight: "800",
+          fontWeight: "900",
           lineHeight: "1",
           paddingBlock: "20px"
         }}
