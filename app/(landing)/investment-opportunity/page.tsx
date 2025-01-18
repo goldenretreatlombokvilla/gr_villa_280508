@@ -416,7 +416,7 @@ const VillaInvestmentLanding = () => {
 
         {/* Footer */}
         <footer className="mt-16 text-center text-stone-900 font-sans">
-          <p>© 2024 Golden Retreat International. All Rights Reserved.</p>
+          <p>© 2025 Golden Retreat International. All Rights Reserved.</p>
         </footer>
       </div>
     </div>

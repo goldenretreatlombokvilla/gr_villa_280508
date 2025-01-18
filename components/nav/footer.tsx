@@ -212,7 +212,7 @@ export default function Footer() {
       <hr className="opacity-50 py-4"></hr>
       <div className="flex flex-row gap-4 items-center font-sans justify-between lg:pb-24">
         <p className="text-sm">
-          © Golden Retreat Lombok Villa 2024 | All Rights Reserved
+          © Golden Retreat Lombok Villa 2025 | All Rights Reserved
         </p>
         <div className="hidden lg:flex flex-row gap-4">
           <Link href="https://www.facebook.com/profile.php?id=61569367575846">
