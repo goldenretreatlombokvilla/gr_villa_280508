@@ -15,7 +15,8 @@ import {
   Clock,
   Building,
   MessageCircle,
-  ArrowDownCircle
+  ArrowDownCircle,
+  Phone
 } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import {
@@ -99,11 +100,20 @@ const VillaInvestmentLanding = () => {
         />
         <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
           <div className="text-center text-white p-8 max-w-4xl">
-            <h1 className="text-5xl lg:text-6xl font-extrabold mb-6 text-balance">
+            <h1 className="text-5xl sr-only lg:text-6xl font-extrabold mb-6 text-balance">
               Golden Retreat Lombok Villas
             </h1>
-            <p className="text-2xl mb-8 font-sans text-balance uppercase tracking-wider">
-              <span className="text-lg tracking-wider uppercase font-bold flex flex-col">
+            <Image
+              src="/brand/logo_white_long_big.png"
+              alt="Golden Retreat Lombok Villas"
+              width={2432}
+              height={1071}
+              loading="eager"
+              unoptimized
+              className="lg:max-w-4xl h-fit lg:-mb-6 object-contain drop-shadow-2xl"
+            />
+            <p className="text-md mb-8 font-sans text-balance uppercase font-bold tracking-wider">
+              <span className="text-2xl tracking-wider uppercase flex font-normal flex-col">
                 Exclusive Luxury Villas
               </span>{" "}
               starting from USD 180,000
@@ -114,7 +124,9 @@ const VillaInvestmentLanding = () => {
                 size="lg"
                 className="flex flex-col py-6 mx-auto opacity-100"
               >
-                <p className="text-xl font-bold">Book a Discovery Call</p>
+                <p className=" flex flex-row gap-4 text-xl font-bold items-center justify-center">
+                  <Phone className="w-4 h-4 text-white" /> Book a Discovery Call
+                </p>
               </Button>
             </Link>
             <p className="font-sans text-sm mt-2 italic">

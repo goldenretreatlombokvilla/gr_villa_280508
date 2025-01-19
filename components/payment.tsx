@@ -6,7 +6,15 @@ import {
   Wrench,
   KeyRound
 } from "lucide-react";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardFooter,
+  CardHeader,
+  CardTitle
+} from "@/components/ui/card";
+import { Button } from "./ui/button";
+import Link from "next/link";
 
 const PaymentTimeline = () => {
   const stages = [
@@ -94,6 +102,11 @@ const PaymentTimeline = () => {
           </div>
         </div>
       </CardContent>
+      <CardFooter>
+        <Button variant={"default"} size="lg" className="text-lg" asChild>
+          <Link href="/invest">Investment Opportunity</Link>
+        </Button>
+      </CardFooter>
     </Card>
   );
 };
