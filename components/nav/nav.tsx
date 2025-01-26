@@ -90,6 +90,11 @@ const links = [
     target: "_self"
   },
   {
+    name: "Summary",
+    link: "/launch",
+    target: "_self"
+  },
+  {
     name: "Info Pack",
     link: "/infopack",
     target: "_self"
