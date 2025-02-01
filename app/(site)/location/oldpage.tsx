@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Cta from "@/components/cta";
 import { Metadata } from "next";
+import BookJourney from "@/components/book-journey";
 
 export const metadata: Metadata = {
   title: "Location",
@@ -79,7 +80,7 @@ export default function Location() {
         </div>
       </div>
 
-      <Cta />
+      <BookJourney />
     </main>
   );
 }

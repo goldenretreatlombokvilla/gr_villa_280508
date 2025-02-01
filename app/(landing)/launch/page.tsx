@@ -442,7 +442,7 @@ const VillaInvestmentLanding = () => {
                       <MessageCircle className="min-w-4 min-h-4 stroke-1 text-yellow-900" />
                       Send a Whatsapp message
                     </p>
-                    <div className="flex flex-row flex-wrap gap-4 gap-y-0 items-center justify-start">
+                    <div className="flex flex-row flex-wrap gap-4 gap-y-4 items-center justify-start">
                       <Link
                         href="https://wa.link/z42apg"
                         target="_blank"

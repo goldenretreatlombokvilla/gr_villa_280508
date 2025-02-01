@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { MapPin, Globe, Sun, Cloud, Plane, ArrowRight } from "lucide-react";
 import Cta from "@/components/cta";
+import BookJourney from "@/components/book-journey";
 
 const blogPosts = [
   {
@@ -207,7 +208,7 @@ const LocationPage = () => {
         ))}
       </div>
 
-      <Cta />
+      <BookJourney />
     </main>
   );
 };

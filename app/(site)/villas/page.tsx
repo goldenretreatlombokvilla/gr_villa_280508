@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import {
+  ExternalLink,
   Grid2X2,
   House,
   Images,
@@ -38,6 +39,7 @@ import {
   DialogTitle,
   DialogTrigger
 } from "@/components/ui/dialog";
+import BookJourney from "@/components/book-journey";
 
 const images = [
   {
@@ -241,6 +243,12 @@ export default function Villas() {
                     <p className="text-2xl lg:text-3xl text-yellow-900 opacity-50 font-bold uppercase -mt-1">
                       Luxury Villa
                     </p>
+                    <Link href={"/book"} target="_blank">
+                      <p className="text-sm font-bold font-sans flex flex-row gap-2">
+                        USD 180,000{" "}
+                        <ExternalLink className="text-yellow-900 w-4 h-4" />
+                      </p>
+                    </Link>
                     <p className="opacity-80  font-sans text-sm">
                       Our spacious 2 bedroom Villa comfortably accommodates a
                       family of 4 and comes complete with dining room, living
@@ -383,6 +391,12 @@ export default function Villas() {
                     <p className="text-2xl lg:text-3xl text-yellow-900 opacity-50 font-bold uppercase -mt-1">
                       Luxury Villa
                     </p>
+                    <Link href={"/book"} target="_blank">
+                      <p className="text-sm font-bold font-sans flex flex-row gap-2">
+                        USD 200,000{" "}
+                        <ExternalLink className="text-yellow-900 w-4 h-4" />
+                      </p>
+                    </Link>
                     <p className="opacity-80  font-sans text-sm">
                       Our spacious 3 bedroom Villa comfortably accommodates a
                       family of 6 and comes complete with dining room, living
@@ -753,7 +767,7 @@ export default function Villas() {
           />
         </video>
       </div>
-      <Cta />
+      <BookJourney />
     </main>
   );
 }

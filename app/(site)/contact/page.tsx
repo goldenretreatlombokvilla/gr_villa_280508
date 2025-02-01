@@ -7,6 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Cta from "@/components/cta";
 import { Metadata } from "next";
+import BookJourney from "@/components/book-journey";
 
 export const metadata: Metadata = {
   title: "Contact Us",
@@ -115,7 +116,7 @@ export default function Contact() {
         </div>
       </div>
 
-      <Cta />
+      <BookJourney />
     </div>
   );
 }

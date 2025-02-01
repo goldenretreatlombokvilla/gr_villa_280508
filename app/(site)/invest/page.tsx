@@ -1,3 +1,4 @@
+import BookJourney from "@/components/book-journey";
 import Cta from "@/components/cta";
 import { Tchart } from "@/components/tchart";
 import {
@@ -567,7 +568,7 @@ export default function Invest() {
             </Button>
           </Link>
         </div>
-        <Cta />
+        <BookJourney />
       </div>
     </main>
   );

@@ -36,6 +36,7 @@ import Link from "next/link";
 import { Metadata } from "next";
 import Cta from "@/components/cta";
 import Flag from "react-world-flags";
+import BookJourney from "@/components/book-journey";
 
 const villaImages = [
   {
@@ -538,7 +539,7 @@ export default function Lombok() {
           />
         </div>
       </div>
-      <Cta />
+      <BookJourney />
     </main>
   );
 }

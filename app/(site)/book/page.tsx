@@ -33,6 +33,7 @@ import { cn } from "@/lib/utils";
 import emailjs from "@emailjs/browser";
 import { redirect } from "next/navigation";
 import Book from "@/components/book";
+import BookJourney from "@/components/book-journey";
 
 export default function Bookacall() {
   const [date, setDate] = React.useState<Date>();
@@ -119,7 +120,7 @@ export default function Bookacall() {
   };
   return (
     <main>
-      <Book />
+      <BookJourney />
     </main>
   );
 }

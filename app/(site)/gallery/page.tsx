@@ -1,3 +1,4 @@
+import BookJourney from "@/components/book-journey";
 import Cta from "@/components/cta";
 import {
   Dialog,
@@ -129,7 +130,7 @@ export default function Gallery() {
           </div>
         ))}
       </div>
-      <Cta />
+      <BookJourney />
     </div>
   );
 }

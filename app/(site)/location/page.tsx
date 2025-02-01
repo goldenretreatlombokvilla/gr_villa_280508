@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 import Cta from "@/components/cta";
 import GiliIslandsSection from "@/components/gili";
+import BookJourney from "@/components/book-journey";
 
 const blogPosts = [
   {
@@ -263,7 +264,7 @@ const LocationPage = () => {
         ))}
       </div>
 
-      <Cta />
+      <BookJourney />
     </main>
   );
 };

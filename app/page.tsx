@@ -1,3 +1,4 @@
+import BookJourney from "@/components/book-journey";
 import Cta from "@/components/cta";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -373,7 +374,7 @@ export default function LandingPage() {
         </div>
       </div>
 
-      <Cta />
+      <BookJourney />
     </main>
   );
 }

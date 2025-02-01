@@ -3,6 +3,7 @@ import Link from "next/link";
 import Cta from "@/components/cta";
 import { Metadata } from "next";
 import { DownloadIcon } from "lucide-react";
+import BookJourney from "@/components/book-journey";
 
 export const metadata: Metadata = {
   title: "Info Pack 2025",
@@ -36,7 +37,7 @@ export default function Location() {
         </div>
       </div>
 
-      <Cta />
+      <BookJourney />
     </main>
   );
 }
