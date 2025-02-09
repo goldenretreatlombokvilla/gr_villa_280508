@@ -118,15 +118,15 @@ export default function BookJourney() {
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 w-full lg:py-40 bg-yellow-900/10 items-start justify-start lg:px-20 px-8 py-20">
       <div className="flex flex-col gap-2">
         <p className="text-5xl lg:text-7xl font-extrabold text-yellow-900 font-cinzel text-balance">
-          Book A Discovery Call
+          Instant Call Back
         </p>
         {/*  <p className="font-cinzel text-xl lg:text-2xl font-extrabold tracking-wide uppercase text-yellow-900/50">
           Have Questions?
         </p>
         */}
-        <p className="text-md text-stone-900/70 font-sans text-balance">
-          Schedule a one-on-one call with our in-house team of professionals
-          today.
+        <p className="text-md text-stone-900/70 font-sans">
+          Get a one-on-one call with our in-house team of professionals now.
+          Typically will reply within 5 minutes of submitting form.
         </p>
 
         {/* Progress Indicator */}
@@ -343,7 +343,7 @@ export default function BookJourney() {
                     disabled={!canSubmit || isLoading}
                     className="flex-1"
                   >
-                    {isLoading ? "Submitting..." : "Submit Form"}
+                    {isLoading ? "Submitting..." : "Submit Enquire"}
                   </Button>
                 </div>
               </div>

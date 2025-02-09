@@ -16,10 +16,10 @@ export default function FakeLeads() {
 
     const showLead = () => {
       setRecentLead(leads[Math.floor(Math.random() * leads.length)]);
-      setTimeout(() => setRecentLead(null), 8000); // Hide after 5 sec
+      setTimeout(() => setRecentLead(null), 160000); // Hide after 5 sec
     };
 
-    const interval = setInterval(showLead, 30000); // Show every 30 sec
+    const interval = setInterval(showLead, 2000000); // Show every 30 sec
     return () => clearInterval(interval);
   }, []);
 

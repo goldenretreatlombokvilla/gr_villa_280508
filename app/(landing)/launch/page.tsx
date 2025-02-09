@@ -17,7 +17,14 @@ import {
   MessageCircle,
   ArrowDownCircle,
   Phone,
-  FileText
+  FileText,
+  ExternalLink,
+  Grid2X2,
+  House,
+  KeyRound,
+  Scan,
+  UtensilsCrossed,
+  Waves
 } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import {
@@ -251,6 +258,50 @@ const VillaInvestmentLanding = () => {
           </div>
         </div>
 
+        {/*Location*/}
+        <section className="grid md:grid-cols-2 gap-12 px-8 lg:px-32 py-16 bg-white rounded-xl shadow-lg">
+          <div className="flex flex-col justify-center space-y-6">
+            <div className="flex items-center gap-4">
+              <MapPin className="text-yellow-900 w-12 h-12" />
+              <h3 className="text-3xl font-bold text-yellow-900">
+                Precise Location
+              </h3>
+            </div>
+            <p className="text-md text-gray-700 font-sans">
+              Located in the North West side of Lombok Island, just a 5 minute
+              walk away from <span className="font-bold">Bangsal Port</span>,
+              our villas offer a perfect blend of luxury and natural beauty.
+              Strategically located to provide easy access to the island's most
+              stunning attractions including the iconic{" "}
+              <span className="font-bold">Gili Islands</span>.
+            </p>
+            <div className="bg-yellow-900/10 p-6 rounded-xl">
+              <h4 className="font-bold text-xl text-yellow-900 mb-2">
+                Geographical Coordinates
+              </h4>
+              <p className="text-gray-700 font-sans">
+                Latitude: -8.397083° S
+                <br />
+                Longitude: 116.096841° E
+              </p>
+            </div>
+          </div>
+          <div className="flex flex-col gap-4 items-center ">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3947.0456584984945!2d116.09683327569908!3d-8.397170284724552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dcddd105952e22d%3A0xc6e7db2574405905!2sGolden%20Retreat%20Lombok%20Villas!5e0!3m2!1sen!2smy!4v1734859770461!5m2!1sen!2smy"
+              width="600"
+              height="450"
+              className="w-full h-[500px] rounded-2xl shadow-lg"
+              allowFullScreen={true}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <p className="text-sm italic font-sans text-stone-900/50">
+              Zoom Out to see proximity to Gili Islands and Bali.
+            </p>
+          </div>
+        </section>
+
         {/* Existing Features Section */}
         <div className="grid grid-cols-1 gap-12 items-start py-10">
           <div className="px-4 lg:px-20">
@@ -298,6 +349,307 @@ const VillaInvestmentLanding = () => {
               </div>
             </div>
           </div>
+        </div>
+
+        <div className="py-16">
+          <Card className="flex flex-col w-full lg:p-0 bg-transparent shadow-none border-none">
+            <CardContent className="p-0">
+              <p className="text-xl text-yellow-900 uppercase mb-4 px-8 py-10">
+                The Villas
+              </p>
+              <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-start justify-center">
+                {/* <Image
+                  src="https://utfs.io/f/dJLJpH9Hrkw3pXyUf0A8fDXoAL2Jay9kEY7gbmpj3CvcG0Pu"
+                  alt="Superior Luxury Villa"
+                  width={500}
+                  height={300}
+                  className="w-full h-full object-cover aspect-video lg:aspect-[9/10]"
+                /> */}
+                <div className="md:grid md:grid-cols-2 flex flex-col gap-6 lg:gap-8 w-full lg:text-xl text-md px-8">
+                  <div className="flex flex-col gap-2 md:col-span-2">
+                    <p className="text-5xl text-yellow-900 font-bold uppercase ">
+                      Superior
+                    </p>
+                    <p className="text-2xl lg:text-3xl text-yellow-900 opacity-50 font-bold uppercase -mt-1">
+                      Luxury Villa
+                    </p>
+                    <Link href={"/book"} target="_blank">
+                      <p className="text-sm font-bold font-sans flex flex-row gap-2">
+                        USD 180,000{" "}
+                        <ExternalLink className="text-yellow-900 w-4 h-4" />
+                      </p>
+                    </Link>
+                    <p className="opacity-80  font-sans text-sm">
+                      Our spacious 2 bedroom Villa comfortably accommodates a
+                      family of 4 and comes complete with dining room, living
+                      area, parking garage, and a private pool deck.
+                    </p>
+                  </div>
+                  <div className="flex flex-col gap-4 items-center justify-start md:col-span-2 pb-10 lg:pb-20">
+                    <Dialog>
+                      <DialogTrigger asChild>
+                        <div className="flex flex-col gap-2 items-center py-10 lg:py-0 cursor-pointer">
+                          <Image
+                            src="https://utfs.io/f/dJLJpH9Hrkw3uuft60bSOoWvunMekl0ACfLj2rIG8cQDzZmT"
+                            alt="2 Bedroom Layout Plan"
+                            width={500}
+                            height={200}
+                            className="w-full h-full object-contain rounded-lg hover:shadow-lg hover:scale-105 trasition-all duration-300"
+                          />
+                          <p className="text-sm font-sans opacity-70 italic">
+                            Superior Villa Layout Plan
+                          </p>
+                        </div>
+                      </DialogTrigger>
+                      <DialogPortal>
+                        <DialogContent className=" border-none shadow-none w-full h-full items-center justify-center bg-transparent">
+                          <DialogHeader>
+                            <DialogTitle className="sr-only">
+                              Official Siteplan for Superior Villa
+                            </DialogTitle>
+                            <div className="flex flex-col gap-2 w-full h-full items-center justify-center">
+                              <Image
+                                src="https://utfs.io/f/dJLJpH9Hrkw3uuft60bSOoWvunMekl0ACfLj2rIG8cQDzZmT"
+                                alt="2 Bedroom Layout Plan"
+                                width={500}
+                                height={200}
+                                className="w-full h-full object-contain rounded-lg"
+                              />
+                            </div>
+                          </DialogHeader>
+                        </DialogContent>
+                      </DialogPortal>
+                    </Dialog>
+                  </div>
+                </div>
+              </div>
+              {/*  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 gap-y-10 items-center justify-center pb-20 px-8">
+                <p className="text-2xl lg:text-3xl text-yellow-900 opacity-50 font-bold uppercase -mt-1 md:col-span-2 lg:row-span-3 lg:col-span-1">
+                  Villa Specifications
+                </p>
+                <div className="flex flex-row gap-4 items-center justify-start">
+                  <House className="min-w-8 min-h-8 lg:min-h-12 lg:min-w-12 stroke-1 text-yellow-900 opacity-80" />
+                  <div className="flex flex-col gap-0 items-start">
+                    <p className="font-semibold font-cinzel text-lg text-nowrap">
+                      2 Bed 2 Bath
+                    </p>
+                    <p className="text-sm font-sans opacity-50">
+                      Single Storey
+                    </p>
+                  </div>
+                </div>
+                <div className="flex flex-row gap-4 items-center justify-start">
+                  <Grid2X2 className="min-w-8 min-h-8 lg:min-h-12 lg:min-w-12 stroke-1 text-yellow-900 opacity-80" />
+                  <div className="flex flex-col gap-0 items-start">
+                    <p className="font-semibold font-cinzel text-lg text-nowrap">
+                      150 sqm{" "}
+                      <span className="text-xs italic font-normal font-sans">
+                        (1,615 sqft)
+                      </span>
+                    </p>
+                    <p className="text-sm font-sans opacity-50">Parcel Area</p>
+                  </div>
+                </div>
+                <div className="flex flex-row gap-4 items-center justify-start">
+                  <Scan className="min-w-8 min-h-8 lg:min-h-12 lg:min-w-12 stroke-1 text-yellow-900 opacity-80" />
+                  <div className="flex flex-col gap-0 items-start">
+                    <p className="font-semibold font-cinzel text-lg text-nowrap">
+                      103 sqm{" "}
+                      <span className="text-xs italic font-normal font-sans">
+                        (1,108 sqft)
+                      </span>
+                    </p>
+                    <p className="text-sm font-sans opacity-50">
+                      {" "}
+                      Built-Up Area
+                    </p>
+                  </div>
+                </div>
+                <div className="flex flex-row gap-4 items-center justify-start">
+                  <Waves className="min-w-8 min-h-8 lg:min-h-12 lg:min-w-12 stroke-1 text-yellow-900 opacity-80" />
+                  <div className="flex flex-col gap-0 items-start">
+                    <p className="font-semibold font-cinzel text-lg text-nowrap">
+                      2.5m x 6m{" "}
+                      <span className="text-xs italic font-normal font-sans">
+                        (8ft x 19.6ft)
+                      </span>{" "}
+                    </p>
+                    <p className="text-sm font-sans opacity-50">Pool Area</p>
+                  </div>
+                </div>
+                <div className="flex flex-row gap-4 items-center justify-start">
+                  <KeyRound className="min-w-8 min-h-8 lg:min-h-12 lg:min-w-12 stroke-1 text-yellow-900 opacity-80" />
+                  <div className="flex flex-col gap-0 items-start">
+                    <p className="font-semibold font-cinzel text-lg text-nowrap">
+                      Turnkey Villa
+                    </p>
+                    <p className="text-sm font-sans opacity-50">
+                      Fully Furnished
+                    </p>
+                  </div>
+                </div>
+                <div className="flex flex-row gap-4 items-center justify-start">
+                  <UtensilsCrossed className="min-w-8 min-h-8 lg:min-h-12 lg:min-w-12 stroke-1 text-yellow-900 opacity-80" />
+                  <div className="flex flex-col gap-0 items-start">
+                    <p className="font-semibold font-cinzel text-lg text-nowrap">
+                      Kitchen
+                    </p>
+                    <p className="text-sm font-sans opacity-50">
+                      Fully Functional
+                    </p>
+                  </div>
+                </div>
+              </div> */}
+            </CardContent>
+          </Card>
+
+          <Card className="flex flex-col w-full lg:p-0 bg-transparent shadow-none border-none">
+            <CardContent className="p-0">
+              <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-start justify-center">
+                {/* <Image
+                  src="https://utfs.io/f/dJLJpH9Hrkw3STzbTcM0TP839gFjLVe25vnd4qspYbylGHrX"
+                  alt="Superior Luxury Villa"
+                  width={500}
+                  height={300}
+                  className="w-full h-full object-cover aspect-video lg:aspect-[9/10]"
+                /> */}
+                <div className="md:grid md:grid-cols-2 flex flex-col gap-6 lg:gap-8 w-full lg:text-xl text-md px-8">
+                  <div className="flex flex-col gap-2 md:col-span-2">
+                    <p className="text-5xl text-yellow-900 font-bold uppercase ">
+                      Premium
+                    </p>
+                    <p className="text-2xl lg:text-3xl text-yellow-900 opacity-50 font-bold uppercase -mt-1">
+                      Luxury Villa
+                    </p>
+                    <Link href={"/book"} target="_blank">
+                      <p className="text-sm font-bold font-sans flex flex-row gap-2">
+                        USD 200,000{" "}
+                        <ExternalLink className="text-yellow-900 w-4 h-4" />
+                      </p>
+                    </Link>
+                    <p className="opacity-80  font-sans text-sm">
+                      Our spacious 3 bedroom Villa comfortably accommodates a
+                      family of 6 and comes complete with dining room, living
+                      area, parking garage, and a private pool deck.
+                    </p>
+                  </div>
+                  <div className="flex flex-col gap-4 items-center justify-start md:col-span-2 pb-10 lg:pb-20">
+                    <Dialog>
+                      <DialogTrigger asChild>
+                        <div className="flex flex-col gap-2 items-center py-10 lg:py-0  cursor-pointer">
+                          <Image
+                            src="https://utfs.io/f/dJLJpH9Hrkw3fFMByQhLDqapUrcI5X2oh8B9JvKe1ET4tzCf"
+                            alt="3 Bedroom Layout Plan"
+                            width={500}
+                            height={200}
+                            className="w-full h-full object-contain rounded-lg hover:shadow-lg hover:scale-105 trasition-all duration-300"
+                          />
+                          <p className="text-sm font-sans opacity-70 italic">
+                            Premium Villa Layout Plan
+                          </p>
+                        </div>
+                      </DialogTrigger>
+                      <DialogPortal>
+                        <DialogContent className=" border-none shadow-none w-full h-full items-center justify-center bg-transparent">
+                          <DialogHeader>
+                            <DialogTitle className="sr-only">
+                              Official Siteplan for Golden Retreat Lombok Villa
+                            </DialogTitle>
+                            <div className="flex flex-col gap-2 w-full items-center justify-center">
+                              <Image
+                                src="https://utfs.io/f/dJLJpH9Hrkw3fFMByQhLDqapUrcI5X2oh8B9JvKe1ET4tzCf"
+                                alt="3 Bedroom Layout Plan"
+                                width={500}
+                                height={200}
+                                className="w-full h-full object-contain rounded-lg"
+                              />
+                            </div>
+                          </DialogHeader>
+                        </DialogContent>
+                      </DialogPortal>
+                    </Dialog>
+                  </div>
+                </div>
+              </div>
+              {/*  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 gap-y-10 items-center justify-center pb-20 px-8">
+                <p className="text-2xl lg:text-3xl text-yellow-900 opacity-50 font-bold uppercase -mt-1 md:col-span-2 lg:row-span-3 lg:col-span-1">
+                  Villa Specifications
+                </p>
+                <div className="flex flex-row gap-4 items-center justify-start">
+                  <House className="min-w-8 min-h-8 lg:min-h-12 lg:min-w-12 stroke-1 text-yellow-900 opacity-80" />
+                  <div className="flex flex-col gap-0 items-start">
+                    <p className="font-semibold font-cinzel text-lg text-nowrap">
+                      3 Bed 3 Bath
+                    </p>
+                    <p className="text-sm font-sans opacity-50">
+                      Single Storey
+                    </p>
+                  </div>
+                </div>
+                <div className="flex flex-row gap-4 items-center justify-start">
+                  <Grid2X2 className="min-w-8 min-h-8 lg:min-h-12 lg:min-w-12 stroke-1 text-yellow-900 opacity-80" />
+                  <div className="flex flex-col gap-0 items-start">
+                    <p className="font-semibold font-cinzel text-lg text-nowrap">
+                      187 sqm{" "}
+                      <span className="text-xs italic font-normal font-sans">
+                        (2,013 sqft)
+                      </span>
+                    </p>
+                    <p className="text-sm font-sans opacity-50">Parcel Area</p>
+                  </div>
+                </div>
+                <div className="flex flex-row gap-4 items-center justify-start">
+                  <Scan className="min-w-8 min-h-8 lg:min-h-12 lg:min-w-12 stroke-1 text-yellow-900 opacity-80" />
+                  <div className="flex flex-col gap-0 items-start">
+                    <p className="font-semibold font-cinzel text-lg text-nowrap">
+                      135 sqm{" "}
+                      <span className="text-xs italic font-normal font-sans">
+                        (1,453 sqft)
+                      </span>
+                    </p>
+                    <p className="text-sm font-sans opacity-50">
+                      {" "}
+                      Built-Up Area
+                    </p>
+                  </div>
+                </div>
+                <div className="flex flex-row gap-4 items-center justify-start">
+                  <Waves className="min-w-8 min-h-8 lg:min-h-12 lg:min-w-12 stroke-1 text-yellow-900 opacity-80" />
+                  <div className="flex flex-col gap-0 items-start">
+                    <p className="font-semibold font-cinzel text-lg text-nowrap">
+                      3m x 6m{" "}
+                      <span className="text-xs italic font-normal font-sans">
+                        (9.8ft x 19.6ft)
+                      </span>{" "}
+                    </p>
+                    <p className="text-sm font-sans opacity-50">Pool Area</p>
+                  </div>
+                </div>
+                <div className="flex flex-row gap-4 items-center justify-start">
+                  <KeyRound className="min-w-8 min-h-8 lg:min-h-12 lg:min-w-12 stroke-1 text-yellow-900 opacity-80" />
+                  <div className="flex flex-col gap-0 items-start">
+                    <p className="font-semibold font-cinzel text-lg text-nowrap">
+                      Turnkey Villa
+                    </p>
+                    <p className="text-sm font-sans opacity-50">
+                      Fully Furnished
+                    </p>
+                  </div>
+                </div>
+                <div className="flex flex-row gap-4 items-center justify-start">
+                  <UtensilsCrossed className="min-w-8 min-h-8 lg:min-h-12 lg:min-w-12 stroke-1 text-yellow-900 opacity-80" />
+                  <div className="flex flex-col gap-0 items-start">
+                    <p className="font-semibold font-cinzel text-lg text-nowrap">
+                      Kitchen
+                    </p>
+                    <p className="text-sm font-sans opacity-50">
+                      Fully Functional
+                    </p>
+                  </div>
+                </div>
+              </div> */}
+            </CardContent>
+          </Card>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-center gap-8 max-w-6xl py-10 lg:py-20 mx-auto">
@@ -437,7 +789,7 @@ const VillaInvestmentLanding = () => {
           <PaymentTimeline />
         </div>
 
-        <div className="bg-red-600 text-white p-4 rounded-lg text-center mt-8">
+        <div className="bg-red-600 text-white p-4 rounded-lg text-center mt-8 mb-10">
           <p className="text-2xl font-bold">🔥 Limited Time Launch Offer</p>
           <p className="font-sans px-12">
             Special pricing available for the first 5 villas only.{" "}
