@@ -16,7 +16,8 @@ import {
   Building,
   MessageCircle,
   ArrowDownCircle,
-  Phone
+  Phone,
+  FileText
 } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import {
@@ -49,6 +50,8 @@ import {
 } from "@/components/ui/dialog";
 import { Card, CardContent } from "@/components/ui/card";
 import PaymentTimeline from "@/components/payment";
+import FakeLeads from "@/components/form/fakeleads";
+import WhatsappButton from "@/components/form/whatsapp";
 
 const gallery = [
   {
@@ -88,6 +91,8 @@ const VillaInvestmentLanding = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-yellow-900/10 to-white">
+      <FakeLeads />
+      <WhatsappButton />
       {/* Hero Section with CTA */}
       <div className="relative w-full h-[70vh]">
         <Image
@@ -118,6 +123,34 @@ const VillaInvestmentLanding = () => {
               </span>{" "}
               starting from USD 180,000
             </p>
+            <div className="flex flex-col gap-4">
+              <Link href="#book">
+                <Button
+                  variant={"default"}
+                  size="lg"
+                  className="text-lg justify-center gap-4   opacity-100 w-full font-sans"
+                >
+                  <Phone className="w-4 h-4 text-white" /> Book a Discovery Call
+                </Button>
+              </Link>
+
+              {/* New CTA: Get Info Pack */}
+              <Link href="/infopack">
+                <Button
+                  variant={"outline"}
+                  size="lg"
+                  className="text-lg justify-center font-sans gap-4 text-beige w-full bg-white"
+                >
+                  <FileText className="w-4 h-4" />
+                  Get Your Free Info Pack
+                </Button>
+              </Link>
+
+              <p className="text-sm italic mt-2">
+                Limited to 15 downloads this month!
+              </p>
+            </div>
+            {/* 
             <Link href="#book">
               <Button
                 variant={"default"}
@@ -131,7 +164,7 @@ const VillaInvestmentLanding = () => {
             </Link>
             <p className="font-sans text-sm mt-2 italic">
               Special pricing for first 5 villas only!
-            </p>
+            </p> */}
           </div>
         </div>
       </div>

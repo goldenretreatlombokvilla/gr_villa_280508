@@ -343,7 +343,7 @@ export default function BookJourney() {
                     disabled={!canSubmit || isLoading}
                     className="flex-1"
                   >
-                    {isLoading ? "Submitting..." : "Schedule Call"}
+                    {isLoading ? "Submitting..." : "Submit Form"}
                   </Button>
                 </div>
               </div>
