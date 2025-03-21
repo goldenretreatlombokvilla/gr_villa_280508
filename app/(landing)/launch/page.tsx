@@ -267,7 +267,7 @@ const VillaInvestmentLanding = () => {
             </div>
           </div>
         </div>
-        <div className="container bg-yellow-900/10 px-8 lg:px-32 py-8 max-w-md rounded-xl shadow-lg mb-20 mx-auto">
+        <div className="container bg-yellow-900/10 px-8 lg:px-32 py-8 max-w-md lg:max-w-full rounded-xl shadow-lg mb-20 mx-auto">
           <h3 className="text-2xl font-bold mb-4 text-yellow-900">
             Investment Opportunity
           </h3>
@@ -394,13 +394,6 @@ const VillaInvestmentLanding = () => {
                 The Villas
               </p>
               <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-start justify-center">
-                {/* <Image
-                  src="https://utfs.io/f/dJLJpH9Hrkw3pXyUf0A8fDXoAL2Jay9kEY7gbmpj3CvcG0Pu"
-                  alt="Superior Luxury Villa"
-                  width={500}
-                  height={300}
-                  className="w-full h-full object-cover aspect-video lg:aspect-[9/10]"
-                /> */}
                 <div className="md:grid md:grid-cols-2 flex flex-col gap-6 lg:gap-8 w-full lg:text-xl text-md px-8">
                   <div className="flex flex-col gap-2 md:col-span-2">
                     <p className="text-5xl text-yellow-900 font-bold uppercase ">
@@ -459,96 +452,12 @@ const VillaInvestmentLanding = () => {
                   </div>
                 </div>
               </div>
-              {/*  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 gap-y-10 items-center justify-center pb-20 px-8">
-                <p className="text-2xl lg:text-3xl text-yellow-900 opacity-50 font-bold uppercase -mt-1 md:col-span-2 lg:row-span-3 lg:col-span-1">
-                  Villa Specifications
-                </p>
-                <div className="flex flex-row gap-4 items-center justify-start">
-                  <House className="min-w-8 min-h-8 lg:min-h-12 lg:min-w-12 stroke-1 text-yellow-900 opacity-80" />
-                  <div className="flex flex-col gap-0 items-start">
-                    <p className="font-semibold font-cinzel text-lg text-nowrap">
-                      2 Bed 2 Bath
-                    </p>
-                    <p className="text-sm font-sans opacity-50">
-                      Single Storey
-                    </p>
-                  </div>
-                </div>
-                <div className="flex flex-row gap-4 items-center justify-start">
-                  <Grid2X2 className="min-w-8 min-h-8 lg:min-h-12 lg:min-w-12 stroke-1 text-yellow-900 opacity-80" />
-                  <div className="flex flex-col gap-0 items-start">
-                    <p className="font-semibold font-cinzel text-lg text-nowrap">
-                      150 sqm{" "}
-                      <span className="text-xs italic font-normal font-sans">
-                        (1,615 sqft)
-                      </span>
-                    </p>
-                    <p className="text-sm font-sans opacity-50">Parcel Area</p>
-                  </div>
-                </div>
-                <div className="flex flex-row gap-4 items-center justify-start">
-                  <Scan className="min-w-8 min-h-8 lg:min-h-12 lg:min-w-12 stroke-1 text-yellow-900 opacity-80" />
-                  <div className="flex flex-col gap-0 items-start">
-                    <p className="font-semibold font-cinzel text-lg text-nowrap">
-                      103 sqm{" "}
-                      <span className="text-xs italic font-normal font-sans">
-                        (1,108 sqft)
-                      </span>
-                    </p>
-                    <p className="text-sm font-sans opacity-50">
-                      {" "}
-                      Built-Up Area
-                    </p>
-                  </div>
-                </div>
-                <div className="flex flex-row gap-4 items-center justify-start">
-                  <Waves className="min-w-8 min-h-8 lg:min-h-12 lg:min-w-12 stroke-1 text-yellow-900 opacity-80" />
-                  <div className="flex flex-col gap-0 items-start">
-                    <p className="font-semibold font-cinzel text-lg text-nowrap">
-                      2.5m x 6m{" "}
-                      <span className="text-xs italic font-normal font-sans">
-                        (8ft x 19.6ft)
-                      </span>{" "}
-                    </p>
-                    <p className="text-sm font-sans opacity-50">Pool Area</p>
-                  </div>
-                </div>
-                <div className="flex flex-row gap-4 items-center justify-start">
-                  <KeyRound className="min-w-8 min-h-8 lg:min-h-12 lg:min-w-12 stroke-1 text-yellow-900 opacity-80" />
-                  <div className="flex flex-col gap-0 items-start">
-                    <p className="font-semibold font-cinzel text-lg text-nowrap">
-                      Turnkey Villa
-                    </p>
-                    <p className="text-sm font-sans opacity-50">
-                      Fully Furnished
-                    </p>
-                  </div>
-                </div>
-                <div className="flex flex-row gap-4 items-center justify-start">
-                  <UtensilsCrossed className="min-w-8 min-h-8 lg:min-h-12 lg:min-w-12 stroke-1 text-yellow-900 opacity-80" />
-                  <div className="flex flex-col gap-0 items-start">
-                    <p className="font-semibold font-cinzel text-lg text-nowrap">
-                      Kitchen
-                    </p>
-                    <p className="text-sm font-sans opacity-50">
-                      Fully Functional
-                    </p>
-                  </div>
-                </div>
-              </div> */}
             </CardContent>
           </Card>
 
           <Card className="flex flex-col w-full lg:p-0 bg-transparent shadow-none border-none">
             <CardContent className="p-0">
               <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-start justify-center">
-                {/* <Image
-                  src="https://utfs.io/f/dJLJpH9Hrkw3STzbTcM0TP839gFjLVe25vnd4qspYbylGHrX"
-                  alt="Superior Luxury Villa"
-                  width={500}
-                  height={300}
-                  className="w-full h-full object-cover aspect-video lg:aspect-[9/10]"
-                /> */}
                 <div className="md:grid md:grid-cols-2 flex flex-col gap-6 lg:gap-8 w-full lg:text-xl text-md px-8">
                   <div className="flex flex-col gap-2 md:col-span-2">
                     <p className="text-5xl text-yellow-900 font-bold uppercase ">
@@ -607,83 +516,6 @@ const VillaInvestmentLanding = () => {
                   </div>
                 </div>
               </div>
-              {/*  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 gap-y-10 items-center justify-center pb-20 px-8">
-                <p className="text-2xl lg:text-3xl text-yellow-900 opacity-50 font-bold uppercase -mt-1 md:col-span-2 lg:row-span-3 lg:col-span-1">
-                  Villa Specifications
-                </p>
-                <div className="flex flex-row gap-4 items-center justify-start">
-                  <House className="min-w-8 min-h-8 lg:min-h-12 lg:min-w-12 stroke-1 text-yellow-900 opacity-80" />
-                  <div className="flex flex-col gap-0 items-start">
-                    <p className="font-semibold font-cinzel text-lg text-nowrap">
-                      3 Bed 3 Bath
-                    </p>
-                    <p className="text-sm font-sans opacity-50">
-                      Single Storey
-                    </p>
-                  </div>
-                </div>
-                <div className="flex flex-row gap-4 items-center justify-start">
-                  <Grid2X2 className="min-w-8 min-h-8 lg:min-h-12 lg:min-w-12 stroke-1 text-yellow-900 opacity-80" />
-                  <div className="flex flex-col gap-0 items-start">
-                    <p className="font-semibold font-cinzel text-lg text-nowrap">
-                      187 sqm{" "}
-                      <span className="text-xs italic font-normal font-sans">
-                        (2,013 sqft)
-                      </span>
-                    </p>
-                    <p className="text-sm font-sans opacity-50">Parcel Area</p>
-                  </div>
-                </div>
-                <div className="flex flex-row gap-4 items-center justify-start">
-                  <Scan className="min-w-8 min-h-8 lg:min-h-12 lg:min-w-12 stroke-1 text-yellow-900 opacity-80" />
-                  <div className="flex flex-col gap-0 items-start">
-                    <p className="font-semibold font-cinzel text-lg text-nowrap">
-                      135 sqm{" "}
-                      <span className="text-xs italic font-normal font-sans">
-                        (1,453 sqft)
-                      </span>
-                    </p>
-                    <p className="text-sm font-sans opacity-50">
-                      {" "}
-                      Built-Up Area
-                    </p>
-                  </div>
-                </div>
-                <div className="flex flex-row gap-4 items-center justify-start">
-                  <Waves className="min-w-8 min-h-8 lg:min-h-12 lg:min-w-12 stroke-1 text-yellow-900 opacity-80" />
-                  <div className="flex flex-col gap-0 items-start">
-                    <p className="font-semibold font-cinzel text-lg text-nowrap">
-                      3m x 6m{" "}
-                      <span className="text-xs italic font-normal font-sans">
-                        (9.8ft x 19.6ft)
-                      </span>{" "}
-                    </p>
-                    <p className="text-sm font-sans opacity-50">Pool Area</p>
-                  </div>
-                </div>
-                <div className="flex flex-row gap-4 items-center justify-start">
-                  <KeyRound className="min-w-8 min-h-8 lg:min-h-12 lg:min-w-12 stroke-1 text-yellow-900 opacity-80" />
-                  <div className="flex flex-col gap-0 items-start">
-                    <p className="font-semibold font-cinzel text-lg text-nowrap">
-                      Turnkey Villa
-                    </p>
-                    <p className="text-sm font-sans opacity-50">
-                      Fully Furnished
-                    </p>
-                  </div>
-                </div>
-                <div className="flex flex-row gap-4 items-center justify-start">
-                  <UtensilsCrossed className="min-w-8 min-h-8 lg:min-h-12 lg:min-w-12 stroke-1 text-yellow-900 opacity-80" />
-                  <div className="flex flex-col gap-0 items-start">
-                    <p className="font-semibold font-cinzel text-lg text-nowrap">
-                      Kitchen
-                    </p>
-                    <p className="text-sm font-sans opacity-50">
-                      Fully Functional
-                    </p>
-                  </div>
-                </div>
-              </div> */}
             </CardContent>
           </Card>
         </div>
