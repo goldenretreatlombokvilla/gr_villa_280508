@@ -24,7 +24,8 @@ import {
   KeyRound,
   Scan,
   UtensilsCrossed,
-  Waves
+  Waves,
+  CircleCheck
 } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import {
@@ -62,28 +63,24 @@ import WhatsappButton from "@/components/form/whatsapp";
 
 const gallery = [
   {
-    image: "https://utfs.io/f/dJLJpH9Hrkw3DhFmCTQIsYNhnRFiP9UlSuprcb35Jy4X12x7",
-    title: "Front Enterence"
-  },
-  {
-    image: "https://utfs.io/f/dJLJpH9Hrkw3Y1KKJxnLOdMUqSH08tvDTRnX1xNaPBF3YW5c",
-    title: "Living Room"
-  },
-  {
-    image: "https://utfs.io/f/dJLJpH9Hrkw3pXyUf0A8fDXoAL2Jay9kEY7gbmpj3CvcG0Pu",
-    title: "Private Pool View"
-  },
-  {
-    image: "https://utfs.io/f/dJLJpH9Hrkw3wcK398eUX3BuqFPzTD5Kh1H9QyUilcWfbY6d",
-    title: "Yoga Deck"
-  },
-  {
     image: "https://utfs.io/f/dJLJpH9Hrkw3STzbTcM0TP839gFjLVe25vnd4qspYbylGHrX",
     title: "Bedroom Front View"
   },
   {
     image: "https://utfs.io/f/dJLJpH9Hrkw3ZbJhQuj5zPGMQWt0kmvD298SjxYqTRlnKLFE",
     title: "Bedroom Side View"
+  },
+  {
+    image: "https://utfs.io/f/dJLJpH9Hrkw3pXyUf0A8fDXoAL2Jay9kEY7gbmpj3CvcG0Pu",
+    title: "Private Pool View"
+  },
+  {
+    image: "https://utfs.io/f/dJLJpH9Hrkw3Y1KKJxnLOdMUqSH08tvDTRnX1xNaPBF3YW5c",
+    title: "Living Room"
+  },
+  {
+    image: "https://utfs.io/f/dJLJpH9Hrkw3wcK398eUX3BuqFPzTD5Kh1H9QyUilcWfbY6d",
+    title: "Yoga Deck"
   }
 ];
 
@@ -98,17 +95,19 @@ const VillaInvestmentLanding = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-yellow-900/10 to-white">
-      <FakeLeads />
-      <WhatsappButton />
+      {/*       <FakeLeads />
+       */}
+      {/*       <WhatsappButton />
+       */}{" "}
       {/* Hero Section with CTA */}
-      <div className="relative w-full h-[70vh]">
+      <div className="relative w-full">
         <Image
           src="https://utfs.io/f/dJLJpH9Hrkw3pXyUf0A8fDXoAL2Jay9kEY7gbmpj3CvcG0Pu"
           alt="Poolside View of Golden Retreat Lombok Villa"
           width={2000}
           height={2000}
           loading="eager"
-          className="w-full h-full object-cover brightness-75"
+          className="w-full h-screen object-cover brightness-75"
         />
         <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
           <div className="text-center text-white p-8 max-w-4xl">
@@ -124,18 +123,12 @@ const VillaInvestmentLanding = () => {
               unoptimized
               className="lg:max-w-4xl h-fit lg:-mb-6 object-contain drop-shadow-2xl"
             />
-            <p className="text-md mb-8 font-sans text-balance uppercase font-bold tracking-wider">
-              <span className="text-2xl tracking-wider uppercase flex font-normal flex-col">
-                Exclusive Luxury Villas
-              </span>{" "}
-              starting from USD 180,000
-            </p>
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col lg:flex-row items-center justify-center gap-4 mx-auto">
               <Link href="#book">
                 <Button
                   variant={"default"}
                   size="lg"
-                  className="text-lg justify-center gap-4   opacity-100 w-full font-sans"
+                  className="text-lg justify-between gap-4 opacity-100 w-72 font-sans"
                 >
                   <Phone className="w-4 h-4 text-white" /> Book a Discovery Call
                 </Button>
@@ -144,20 +137,43 @@ const VillaInvestmentLanding = () => {
               {/* New CTA: Get Info Pack */}
               <Link href="/infopack">
                 <Button
-                  variant={"outline"}
+                  variant={"default"}
                   size="lg"
-                  className="text-lg justify-center font-sans gap-4 text-beige w-full bg-white"
+                  className="text-lg justify-between gap-4 opacity-100 w-72 font-sans"
                 >
-                  <FileText className="w-4 h-4" />
-                  Get Your Free Info Pack
+                  <FileText className="w-4 h-4 text-white" />
+                  Download Brochure (pdf)
+                </Button>
+              </Link>
+            </div>
+
+            {/* <p className="text-md py-4 font-sans text-balance uppercase font-bold tracking-wider">
+              starting from USD 180,000
+            </p> 
+            <div className="flex flex-col lg:flex-row gap-4">
+              <Link href="#book">
+                <Button
+                  variant={"default"}
+                  size="lg"
+                  className="text-lg justify-between gap-4 opacity-100 w-72 font-sans"
+                >
+                  <Phone className="w-4 h-4 text-white" /> Book a Discovery Call
                 </Button>
               </Link>
 
-              <p className="text-sm italic mt-2">
-                Limited to 15 downloads this month!
-              </p>
+              {/* New CTA: Get Info Pack 
+              <Link href="/infopack">
+                <Button
+                  variant={"default"}
+                  size="lg"
+                  className="text-lg justify-between gap-4 opacity-100 w-72 font-sans"
+                >
+                  <FileText className="w-4 h-4 text-white" />
+                  Download Info Pack
+                </Button>
+              </Link>
             </div>
-            {/* 
+            
             <Link href="#book">
               <Button
                 variant={"default"}
@@ -175,41 +191,47 @@ const VillaInvestmentLanding = () => {
           </div>
         </div>
       </div>
-
       <div className="container mx-auto px-4 pt-16 py-6 max-w-6xl">
-        {/* Trust Indicators */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 mb-16 text-center text-xl text-balance px-4">
-          <div className="p-4">
-            <Building className="w-12 h-12 mx-auto mb-4 text-yellow-900 stroke-1 fill-yellow-900/10" />
-            <p className="font-bold text-4xl  mb-2">33</p>
-            <p className="font-sans uppercase font-light">Luxury Villas</p>
-          </div>
-          <div className="p-4">
-            <Trophy className="w-12 h-12 mx-auto mb-4 text-yellow-900 stroke-1 fill-yellow-900/10" />
-            <p className="font-bold text-4xl  mb-2">4</p>
-            <p className="font-sans uppercase font-light">
-              Successful Projects
-            </p>
-          </div>
-          <div className="p-4">
-            <Clock className="w-12 h-12 mx-auto mb-4 text-yellow-900 stroke-1 fill-yellow-900/10" />
-            <p className="font-bold text-4xl  mb-2">12</p>
-            <p className="font-sans uppercase font-light">Months Build Time</p>
-          </div>
-          <div className="p-4">
-            <Banknote className="w-12 h-12 mx-auto mb-4 text-yellow-900 stroke-1 fill-yellow-900/10" />
-            <p className="font-bold text-4xl  mb-2">15-20%</p>
-            <p className="font-sans uppercase font-light">Projected Yield</p>
+        <div className="flex flex-col min-h-screen">
+          <p className="text-2xl flex font-normal items-center justify-center flex-col py-14">
+            A Project Like No Other
+          </p>
+          {/* Trust Indicators */}
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 mb-16 text-center text-xl text-balance px-4">
+            <div className="p-4">
+              <Building className="w-12 h-12 mx-auto mb-4 text-yellow-900 stroke-1 fill-yellow-900/10" />
+              <p className="font-bold text-4xl  mb-2">33</p>
+              <p className="font-sans uppercase font-light">Luxury Villas</p>
+            </div>
+            <div className="p-4">
+              <Trophy className="w-12 h-12 mx-auto mb-4 text-yellow-900 stroke-1 fill-yellow-900/10" />
+              <p className="font-bold text-4xl  mb-2">4</p>
+              <p className="font-sans uppercase font-light">
+                Successful Projects
+              </p>
+            </div>
+            <div className="p-4">
+              <Clock className="w-12 h-12 mx-auto mb-4 text-yellow-900 stroke-1 fill-yellow-900/10" />
+              <p className="font-bold text-4xl  mb-2">12</p>
+              <p className="font-sans uppercase font-light">
+                Months Build Time
+              </p>
+            </div>
+            <div className="p-4">
+              <Banknote className="w-12 h-12 mx-auto mb-4 text-yellow-900 stroke-1 fill-yellow-900/10" />
+              <p className="font-bold text-4xl  mb-2">15-20%</p>
+              <p className="font-sans uppercase font-light">Projected Yield</p>
+            </div>
           </div>
         </div>
 
         {/* Project Introduction */}
         <div className="bg-white rounded-xl shadow-lg p-8 mb-16">
           <p className="text-xl text-yellow-900 uppercase mb-4">About Us</p>
-          <h2 className="text-4xl font-extrabold text-yellow-900 mb-6">
+          <p className="text-4xl font-extrabold text-yellow-900 leading-relaxed">
             Golden Retreat Lombok Villas
-          </h2>
-          <div className="grid md:grid-cols-2 gap-8 font-sans">
+          </p>
+          <div className="grid md:grid-cols-2 gap-8 font-sans py-4">
             <div>
               <p className="text-md mb-4">
                 Launched in December 2024, Golden Retreat Lombok Villas
@@ -243,21 +265,35 @@ const VillaInvestmentLanding = () => {
                 <Link href="/villas">Discover Our Villas</Link>
               </Button>
             </div>
-            <div className="bg-yellow-900/10 p-6 rounded-lg">
-              <h3 className="text-2xl font-bold mb-4 text-yellow-900">
-                Investment Highlights
-              </h3>
-              <ul className="space-y-2 text-md font-medium">
-                <li>✓ Flexible payment structure</li>
-                <li>✓ Rental management available</li>
-                <li>✓ Prime location near Bali</li>
-                <li>✓ Strong capital appreciation potential</li>
-                <li>✓ Limited time launch prices</li>
-              </ul>
-            </div>
           </div>
         </div>
-
+        <div className="container bg-yellow-900/10 px-8 lg:px-32 py-8 max-w-md rounded-xl shadow-lg mb-20 mx-auto">
+          <h3 className="text-2xl font-bold mb-4 text-yellow-900">
+            Investment Opportunity
+          </h3>
+          <ul className="space-y-4 text-md font-medium">
+            <li className="flex items-center group">
+              <CircleCheck className="h-6 w-6 mr-4 group-hover:text-green-800 text-green-500 transistion duration-300 ease-in-out" />{" "}
+              Rental Management Available
+            </li>
+            <li className="flex items-center group">
+              <CircleCheck className="h-6 w-6 mr-4 group-hover:text-green-800 text-green-500 transistion duration-300 ease-in-out" />{" "}
+              Daily Flights from Australia
+            </li>
+            <li className="flex items-center group">
+              <CircleCheck className="h-6 w-6 mr-4 group-hover:text-green-800 text-green-500 transistion duration-300 ease-in-out" />{" "}
+              Strong Capital Appreciation Potential
+            </li>
+            <li className="flex items-center group ">
+              <CircleCheck className="h-6 w-6 mr-4 group-hover:text-green-800 text-green-500 transition duration-300 ease-in-out" />{" "}
+              Rolling Payment Structure
+            </li>
+            <li className="flex items-center group">
+              <CircleCheck className="h-6 w-6 mr-4 group-hover:text-green-800 text-green-500 transistion duration-300 ease-in-out" />{" "}
+              Limited Time Launch Prices
+            </li>
+          </ul>
+        </div>
         {/*Location*/}
         <section className="grid md:grid-cols-2 gap-12 px-8 lg:px-32 py-16 bg-white rounded-xl shadow-lg">
           <div className="flex flex-col justify-center space-y-6">
@@ -701,7 +737,7 @@ const VillaInvestmentLanding = () => {
         </div>
 
         {/* Developer Credentials */}
-        <div className="bg-stone-900 text-white rounded-xl p-8 pb-16">
+        <div className="bg-stone-900 text-white rounded-xl p-8 pb-16 pt-10">
           <h2 className="text-4xl font-bold mb-4">Backed by Excellence</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div>
@@ -785,16 +821,17 @@ const VillaInvestmentLanding = () => {
           </div>
         </div>
 
-        <div className="my-16">
+        {/*   <div className="my-16">
           <PaymentTimeline />
-        </div>
+        </div> */}
 
-        <div className="bg-red-600 text-white p-4 rounded-lg text-center mt-8 mb-10">
-          <p className="text-2xl font-bold">🔥 Limited Time Launch Offer</p>
-          <p className="font-sans px-12">
-            Special pricing available for the first 5 villas only.{" "}
-            <span className="font-extrabold uppercase">Don't miss out!</span>
-          </p>
+        <div className="bg-teal-600/80 text-white p-4 rounded-lg text-center mt-8 mb-10">
+          <p className="text-xl font-bold">Limited Time Launch Offer!</p>
+          {/*  <p className="font-sans px-12">
+            <span className="font-extrabold uppercase">
+              Fill up form below to get special offer
+            </span>
+          </p> */}
         </div>
 
         <div id="book" className="">
