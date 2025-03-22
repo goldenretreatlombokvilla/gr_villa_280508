@@ -128,7 +128,7 @@ const LocationPage = () => {
           <div className="flex items-center gap-4">
             <MapPin className="text-yellow-900 w-12 h-12" />
             <h3 className="text-3xl font-bold text-yellow-900">
-              Precise Location
+              Prime Location
             </h3>
           </div>
           <p className="text-md text-gray-700 font-sans">

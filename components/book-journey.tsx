@@ -52,12 +52,12 @@ export default function BookJourney() {
   const purpose = [
     { id: 1, title: "Self Stay", value: "selfstay" },
     { id: 2, title: "Investment Property", value: "investment" },
-    { id: 3, title: "Agent", value: "agent" },
-    { id: 4, title: "Both", value: "both" }
+    { id: 3, title: "Property Agent", value: "agent" }
   ];
   const models = [
     { id: 1, title: "2 Bedroom Villa", value: "2-bed" },
-    { id: 2, title: "3 Bedroom Villa", value: "3-bed" }
+    { id: 2, title: "3 Bedroom Villa", value: "3-bed" },
+    { id: 3, title: "Both", value: "both" }
   ];
 
   function handleCountryChange(value: any) {
@@ -118,16 +118,15 @@ export default function BookJourney() {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 w-full lg:py-40 bg-yellow-900/10 items-start justify-start lg:px-20 px-8 py-20">
       <div className="flex flex-col gap-2">
-        <p className="text-5xl lg:text-7xl font-extrabold text-yellow-900 font-cinzel text-balance leading-relaxed">
+        <p className="text-5xl lg:text-7xl font-extrabold text-yellow-900 font-cinzel text-balance leading-snug">
           Instant Call Back
         </p>
         {/*  <p className="font-cinzel text-xl lg:text-2xl font-extrabold tracking-wide uppercase text-yellow-900/50">
           Have Questions?
         </p>
         */}
-        <p className="text-md text-stone-900/70 font-sans">
-          Get a one-on-one call with our in-house team of professionals now.
-          Will reply within 5 minutes of submitting form.
+        <p className="text-md text-stone-900/70 font-sans text-balance">
+          Book a one-on-one call with our in-house team of professionals.
         </p>
 
         {/* Progress Indicator */}
@@ -159,9 +158,9 @@ export default function BookJourney() {
 
                   <div className="space-y-2 font-sans px-4">
                     <div className="flex flex-col gap-2 pb-2">
-                      <Label>Purchase Interest</Label>
+                      <Label>Form Interest</Label>
                       <p className="text-sm text-stone-900/50 font-sans font-normal">
-                        What type of purchase are you interested in?
+                        What are you interested in?
                       </p>
                     </div>
                     <div className="flex flex-col gap-4 font-sans">

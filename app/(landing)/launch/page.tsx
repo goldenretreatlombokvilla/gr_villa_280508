@@ -25,7 +25,8 @@ import {
   Scan,
   UtensilsCrossed,
   Waves,
-  CircleCheck
+  CircleCheck,
+  Map
 } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import {
@@ -64,11 +65,11 @@ import WhatsappButton from "@/components/form/whatsapp";
 const gallery = [
   {
     image: "https://utfs.io/f/dJLJpH9Hrkw3STzbTcM0TP839gFjLVe25vnd4qspYbylGHrX",
-    title: "Bedroom Front View"
+    title: "Master Bedroom (Front View)"
   },
   {
     image: "https://utfs.io/f/dJLJpH9Hrkw3ZbJhQuj5zPGMQWt0kmvD298SjxYqTRlnKLFE",
-    title: "Bedroom Side View"
+    title: "Master Bedroom (Side View)"
   },
   {
     image: "https://utfs.io/f/dJLJpH9Hrkw3pXyUf0A8fDXoAL2Jay9kEY7gbmpj3CvcG0Pu",
@@ -191,13 +192,13 @@ const VillaInvestmentLanding = () => {
           </div>
         </div>
       </div>
-      <div className="container mx-auto px-4 pt-16 py-6 max-w-6xl">
-        <div className="flex flex-col min-h-screen">
+      <div className="container mx-auto px-4 py-6 max-w-6xl">
+        <div className="flex flex-col min-h-screen items-center justify-center">
           <p className="text-2xl flex font-normal items-center justify-center flex-col py-14">
             A Project Like No Other
           </p>
           {/* Trust Indicators */}
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 mb-16 text-center text-xl text-balance px-4">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12  text-center text-xl text-balance px-4">
             <div className="p-4">
               <Building className="w-12 h-12 mx-auto mb-4 text-yellow-900 stroke-1 fill-yellow-900/10" />
               <p className="font-bold text-4xl  mb-2">33</p>
@@ -226,9 +227,10 @@ const VillaInvestmentLanding = () => {
         </div>
 
         {/* Project Introduction */}
+
         <div className="bg-white rounded-xl shadow-lg p-8 mb-16">
-          <p className="text-xl text-yellow-900 uppercase mb-4">About Us</p>
-          <p className="text-4xl font-extrabold text-yellow-900 leading-relaxed">
+          <p className="text-xl text-yellow-900 uppercase">About Us</p>
+          <p className="text-4xl font-extrabold text-yellow-900 leading-tight">
             Golden Retreat Lombok Villas
           </p>
           <div className="grid md:grid-cols-2 gap-8 font-sans py-4">
@@ -249,11 +251,11 @@ const VillaInvestmentLanding = () => {
                 </li>
                 <li className="flex items-center">
                   <CheckCircle2 className="text-green-600 mr-2" />
-                  Only 15% initial payment required
+                  5-Star ammenities including gym and spa
                 </li>
                 <li className="flex items-center">
                   <CheckCircle2 className="text-green-600 mr-2" />
-                  Projected yield of 15-20%
+                  Professional management services
                 </li>
               </ul>
               <Button
@@ -271,7 +273,7 @@ const VillaInvestmentLanding = () => {
           <h3 className="text-2xl font-bold mb-4 text-yellow-900">
             Investment Opportunity
           </h3>
-          <ul className="space-y-4 text-md font-medium">
+          <ul className="space-y-4 text-md font-semibold font-sans">
             <li className="flex items-center group">
               <CircleCheck className="h-6 w-6 mr-4 group-hover:text-green-800 text-green-500 transistion duration-300 ease-in-out" />{" "}
               Rental Management Available
@@ -296,29 +298,40 @@ const VillaInvestmentLanding = () => {
         </div>
         {/*Location*/}
         <section className="grid md:grid-cols-2 gap-12 px-8 lg:px-32 py-16 bg-white rounded-xl shadow-lg">
-          <div className="flex flex-col justify-center space-y-6">
-            <div className="flex items-center gap-4">
-              <MapPin className="text-yellow-900 w-12 h-12" />
+          <div className="flex flex-col justify-center space-y-8">
+            <div className="flex items-center gap-2">
+              <Map className="text-yellow-900 w-8 h-8" />
               <h3 className="text-3xl font-bold text-yellow-900">
-                Precise Location
+                Prime Location
               </h3>
             </div>
             <p className="text-md text-gray-700 font-sans">
               Located in the North West side of Lombok Island, just a 5 minute
-              walk away from <span className="font-bold">Bangsal Port</span>,
-              our villas offer a perfect blend of luxury and natural beauty.
+              walk away from{" "}
+              <a
+                href="https://maps.app.goo.gl/DbbmXFDcmB6TudfFA"
+                className="font-bold text-beige underline"
+              >
+                Bangsal Port
+              </a>
+              , our villas offer a perfect blend of luxury and natural beauty.
               Strategically located to provide easy access to the island's most
               stunning attractions including the iconic{" "}
-              <span className="font-bold">Gili Islands</span>.
+              <a
+                href="https://maps.app.goo.gl/g4814KQnpvYCFkxz8"
+                className="font-bold text-beige underline"
+              >
+                Gili Islands
+              </a>
+              .
             </p>
-            <div className="bg-yellow-900/10 p-6 rounded-xl">
-              <h4 className="font-bold text-xl text-yellow-900 mb-2">
-                Geographical Coordinates
+            <div className="bg-yellow-900/10 p-6 rounded-xl flex flex-col gap-2 py-6">
+              <h4 className="font-bold flex flex-row items-center gap-2 text-xl text-yellow-900">
+                <MapPin className="w-4 h-4 text-yellow-900" /> Site Address
               </h4>
               <p className="text-gray-700 font-sans">
-                Latitude: -8.397083° S
-                <br />
-                Longitude: 116.096841° E
+                Jl. Bangsal Baru, Pemenang Bar, Kec. Pemenang, Kabupaten Lombok
+                Utara, Nusa Tenggara Timur 83352, Indonesia
               </p>
             </div>
           </div>
@@ -339,7 +352,7 @@ const VillaInvestmentLanding = () => {
         </section>
 
         {/* Existing Features Section */}
-        <div className="grid grid-cols-1 gap-12 items-start py-10">
+        <div className="grid grid-cols-1 gap-12 items-start py-10 pt-32">
           <div className="px-4 lg:px-20">
             <div className="space-y-6 lg:pt-10">
               <div className="flex items-start space-x-4">
@@ -569,7 +582,7 @@ const VillaInvestmentLanding = () => {
         </div>
 
         {/* Developer Credentials */}
-        <div className="bg-stone-900 text-white rounded-xl p-8 pb-16 pt-10">
+        <div className="bg-yellow-900/10 rounded-xl p-8 pb-16 pt-10">
           <h2 className="text-4xl font-bold mb-4">Backed by Excellence</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div>
