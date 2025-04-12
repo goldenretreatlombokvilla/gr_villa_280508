@@ -103,6 +103,30 @@ export default function LandingPage() {
       </div>
 
       <div className="flex flex-col gap-4 lg:gap-x-14 items-start justify-start w-full py-8 ">
+        <div className="flex flex-col gap-4 w-full order-first lg:w-2/3 px-8 lg:pt-20 lg:py-20 max-w-6xl mx-auto">
+          <p className="font-cinzel text-xl lg:text-2xl font-extrabold tracking-wide flex flex-col text-yellow-800/50 uppercase -mb-4">
+            High Demand - High Projected Yield
+          </p>
+          <h3 className="font-extrabold text-5xl md:text-6xl lg:text-8xl font-cinzel text-yellow-800">
+            15% Return On Investment
+          </h3>
+          <p className="font-sans text-stone-900 text-md text-balance">
+            Located just 20 mins away from Gili Islands, which receives over
+            1,000,000 visitors a year, Golden Retreat Lombok Villas is perfectly
+            positioned to take advantage of the growing demand for quality
+            accommodation in Lombok.
+          </p>
+          <div className="flex flex-row flex-wrap gap-4 pb-8">
+            <Link href="/villas" prefetch={true}>
+              <Button
+                variant="default"
+                className="w-fit font-extrabold uppercase tracking-wider hover:drop-shadow-md"
+              >
+                Future Return on Investment
+              </Button>
+            </Link>
+          </div>
+        </div>
         <div className="flex flex-col gap-4 w-full">
           {/*  <Image
             src="https://utfs.io/f/dJLJpH9Hrkw3pXyUf0A8fDXoAL2Jay9kEY7gbmpj3CvcG0Pu"

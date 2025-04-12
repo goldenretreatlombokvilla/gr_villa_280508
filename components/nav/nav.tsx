@@ -39,12 +39,12 @@ import { link } from "fs";
 
 const navItems = [
   {
-    name: "Villas",
+    name: "The Villas",
     link: "/villas"
   },
   {
-    name: "Gallery",
-    link: "/gallery"
+    name: "The Team",
+    link: "/about"
   },
   { name: "Location", link: "/location" },
   { name: "Lombok", link: "/lombok" },

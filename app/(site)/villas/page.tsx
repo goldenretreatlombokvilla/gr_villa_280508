@@ -72,6 +72,37 @@ const siteplan = [
   }
 ];
 
+const gallery = [
+  {
+    image: "https://utfs.io/f/dJLJpH9Hrkw3DhFmCTQIsYNhnRFiP9UlSuprcb35Jy4X12x7",
+    title: "Front Enterence"
+  },
+  {
+    image: "https://utfs.io/f/dJLJpH9Hrkw3Y1KKJxnLOdMUqSH08tvDTRnX1xNaPBF3YW5c",
+    title: "Living Room"
+  },
+  {
+    image: "https://utfs.io/f/dJLJpH9Hrkw3pXyUf0A8fDXoAL2Jay9kEY7gbmpj3CvcG0Pu",
+    title: "Private Pool View"
+  },
+  {
+    image: "https://utfs.io/f/dJLJpH9Hrkw3wcK398eUX3BuqFPzTD5Kh1H9QyUilcWfbY6d",
+    title: "Yoga Deck"
+  },
+  {
+    image: "https://utfs.io/f/dJLJpH9Hrkw3STzbTcM0TP839gFjLVe25vnd4qspYbylGHrX",
+    title: "Bedroom Front View"
+  },
+  {
+    image: "https://utfs.io/f/dJLJpH9Hrkw3ZbJhQuj5zPGMQWt0kmvD298SjxYqTRlnKLFE",
+    title: "Bedroom Side View"
+  },
+  {
+    image: "https://utfs.io/f/dJLJpH9Hrkw3fmFEKjqhLDqapUrcI5X2oh8B9JvKe1ET4tzC",
+    title: "Bathroom"
+  }
+];
+
 export default function Villas() {
   return (
     <main>
@@ -223,6 +254,51 @@ export default function Villas() {
             </div>
           </div>
         </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-center gap-8 max-w-6xl lg:py-20 mx-auto">
+          {gallery.map((item) => (
+            <div
+              key={item.title}
+              className="flex flex-col gap-4 items-center justify-center lg:first:col-span-3"
+            >
+              <Dialog>
+                <DialogTrigger asChild>
+                  <div className="flex flex-col gap-2 items-center cursor-pointer w-full">
+                    <Image
+                      src={item.image}
+                      alt="Golden Retreat Lombok Villa"
+                      width={1000}
+                      height={500}
+                      loading="eager"
+                      className="w-full h-full aspect-video object-cover hover:shadow-lg trasition-all duration-300"
+                    />
+                    <p className="text-sm font-sans opacity-70 italic">
+                      {item.title}
+                    </p>
+                  </div>
+                </DialogTrigger>
+                <DialogPortal>
+                  <DialogContent className=" border-none shadow-none w-full h-full items-center justify-center bg-transparent">
+                    <DialogHeader>
+                      <DialogTitle className="sr-only">
+                        {item.title}
+                      </DialogTitle>
+                      <div className="flex flex-col gap-2 w-full items-center justify-center">
+                        <Image
+                          src={item.image}
+                          alt="Golden Retreat Lombok Villa"
+                          width={1000}
+                          height={500}
+                          className="min-w-full min-h-full aspect-video object-cover rounded-lg"
+                        />
+                      </div>
+                    </DialogHeader>
+                  </DialogContent>
+                </DialogPortal>
+              </Dialog>
+            </div>
+          ))}
+        </div>
+
         <div className="flex flex-col gap-10 lg:gap-40 items-center py-6 lg:pt-20 lg:py-20 max-w-6xl mx-auto">
           {/* 2 Bed */}
           <Card className="flex flex-col w-full lg:p-0 bg-transparent shadow-none border-none">
@@ -663,7 +739,7 @@ export default function Villas() {
           </div>
         </div>
         {/* Gallery Section */}
-        <div className="flex flex-col gap-4 items-center w-full px-8 py-6 lg:pt-20 lg:py-20 max-w-6xl mx-auto">
+        {/* <div className="flex flex-col gap-4 items-center w-full px-8 py-6 lg:pt-20 lg:py-20 max-w-6xl mx-auto">
           <div className="flex flex-col gap-8 lg:gap-4 items-center justify-center">
             <p className="text-yellow-900 text-center text-balance text-4xl lg:text-5xl font-extrabold">
               Experience Luxury Living
@@ -745,7 +821,7 @@ export default function Villas() {
               </Link>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
 
       <div className=" flex flex-col gap-8 items-center justify-start w-full px-8 lg:px-32 py-10 lg:py-10 ">
