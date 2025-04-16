@@ -29,8 +29,14 @@ const SeminarLanding = () => {
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+  const [data, setdata] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    message: ""
+  });
 
-  const handleSubmit = async (e: any) => {
+  /*  const handleSubmit = async (e: any) => {
     e.preventDefault();
     setIsLoading(true);
 
@@ -46,6 +52,38 @@ const SeminarLanding = () => {
       setPhone("");
       setMessage("");
     }, 1500);
+  }; */
+
+  const handleSubmit = async (e: any) => {
+    e.preventDefault();
+    setIsLoading(true);
+    const res = await fetch("/api/seminar-lead", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(data)
+    });
+    if (res.status === 500) {
+      toast({
+        title: "Something went wrong!",
+        description: "Please try again later."
+      });
+    } else if (res.status === 200) {
+      toast({
+        title: "Success!",
+        description: "Your message has been sent successfully."
+      });
+      setIsLoading(false);
+      setdata({
+        name: "",
+        email: "",
+        phone: "",
+        message: ""
+      });
+      window.location.href = "/thankyou";
+    }
+    setIsLoading(false);
   };
 
   return (
@@ -267,8 +305,8 @@ const SeminarLanding = () => {
                 <Label htmlFor="name">Full Name</Label>
                 <Input
                   id="name"
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
+                  value={data.name}
+                  onChange={(e) => setdata({ ...data, name: e.target.value })}
                   placeholder="Enter your full name"
                   required
                 />
@@ -278,8 +316,8 @@ const SeminarLanding = () => {
                 <Input
                   id="email"
                   type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
+                  value={data.email}
+                  onChange={(e) => setdata({ ...data, email: e.target.value })}
                   placeholder="Enter your email address"
                   required
                 />
@@ -289,8 +327,9 @@ const SeminarLanding = () => {
               <Label htmlFor="phone">Phone Number</Label>
               <Input
                 id="phone"
-                value={phone}
-                onChange={(e) => setPhone(e.target.value)}
+                value={data.phone}
+                onChange={(e) => setdata({ ...data, phone: e.target.value })}
+                type="tel"
                 placeholder="Enter your phone number"
                 required
               />
@@ -299,8 +338,8 @@ const SeminarLanding = () => {
               <Label htmlFor="message">Questions or Comments (Optional)</Label>
               <Textarea
                 id="message"
-                value={message}
-                onChange={(e) => setMessage(e.target.value)}
+                value={data.message}
+                onChange={(e) => setdata({ ...data, message: e.target.value })}
                 placeholder="Any specific topics you'd like us to cover?"
                 rows={4}
               />
