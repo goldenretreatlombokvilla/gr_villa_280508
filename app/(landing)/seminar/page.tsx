@@ -66,7 +66,7 @@ const SeminarLanding = () => {
               Discovery Seminar
             </h1>
             <p className="text-xl md:text-2xl mb-8 font-sans text-balance">
-              Join us for an insightful session on investment opportunities
+              Join us for an insightful session on an investment opportunity.
             </p>
             <div className="flex flex-col md:flex-row items-center justify-center gap-4 mx-auto">
               <Link href="#register">
@@ -90,6 +90,9 @@ const SeminarLanding = () => {
                 </Button>
               </Link>
             </div>
+            <p className="font-sans py-6">
+              Starting at<span className="font-bold"> USD 180,000</span>
+            </p>
           </div>
         </div>
       </div>
@@ -109,22 +112,28 @@ const SeminarLanding = () => {
             <div className="p-6 bg-white rounded-xl shadow-lg">
               <Calendar className="w-12 h-12 mx-auto mb-4 text-yellow-900 stroke-1 fill-yellow-900/10" />
               <p className="font-bold text-xl mb-2">Date</p>
-              <p className="font-sans">3 May 2025</p>
+              <p className="font-sans">
+                3 May 2025<br></br> Saturday
+              </p>
             </div>
             <div className="p-6 bg-white rounded-xl shadow-lg">
               <Clock className="w-12 h-12 mx-auto mb-4 text-yellow-900 stroke-1 fill-yellow-900/10" />
               <p className="font-bold text-xl mb-2">Time</p>
-              <p className="font-sans">3:00 PM - 4:00 PM</p>
+              <p className="font-sans">
+                3:00 PM <br></br>onwards
+              </p>
             </div>
             <div className="p-6 bg-white rounded-xl shadow-lg">
               <MapPin className="w-12 h-12 mx-auto mb-4 text-yellow-900 stroke-1 fill-yellow-900/10" />
               <p className="font-bold text-xl mb-2">Venue</p>
-              <p className="font-sans">Concorde Hotel</p>
+              <p className="font-sans">
+                Concorde Hotel, <br></br>Kuala Lumpur
+              </p>
             </div>
             <div className="p-6 bg-white rounded-xl shadow-lg">
               <Coffee className="w-12 h-12 mx-auto mb-4 text-yellow-900 stroke-1 fill-yellow-900/10" />
               <p className="font-bold text-xl mb-2">Refreshments</p>
-              <p className="font-sans">High Tea Provided</p>
+              <p className="font-sans">Coffee/Tea + Light Refreshments</p>
             </div>
           </div>
         </div>
@@ -240,7 +249,7 @@ const SeminarLanding = () => {
           <p className="text-xl font-bold">Limited Seats Available!</p>
           <p className="font-sans px-12 mt-2">
             <span className="font-bold">
-              Register now to secure your spot at this exclusive event
+              Register now to secure our<br></br> Special Launch Promotion!
             </span>
           </p>
         </div>
