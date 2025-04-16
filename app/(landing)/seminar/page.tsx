@@ -91,7 +91,7 @@ const SeminarLanding = () => {
               </Link>
             </div>
             <p className="font-sans py-6">
-              Starting at<span className="font-bold"> USD 180,000</span>
+              Starting at<span className="font-bold"> USD 162,000</span>
             </p>
           </div>
         </div>
@@ -120,7 +120,7 @@ const SeminarLanding = () => {
               <Clock className="w-12 h-12 mx-auto mb-4 text-yellow-900 stroke-1 fill-yellow-900/10" />
               <p className="font-bold text-xl mb-2">Time</p>
               <p className="font-sans">
-                3:00 PM <br></br>onwards
+                3:00 PM <br></br>Start Time
               </p>
             </div>
             <div className="p-6 bg-white rounded-xl shadow-lg">
@@ -133,7 +133,9 @@ const SeminarLanding = () => {
             <div className="p-6 bg-white rounded-xl shadow-lg">
               <Coffee className="w-12 h-12 mx-auto mb-4 text-yellow-900 stroke-1 fill-yellow-900/10" />
               <p className="font-bold text-xl mb-2">Refreshments</p>
-              <p className="font-sans">Coffee/Tea + Light Refreshments</p>
+              <p className="font-sans">
+                Coffee/Tea + <br></br>Light Refreshments
+              </p>
             </div>
           </div>
         </div>
