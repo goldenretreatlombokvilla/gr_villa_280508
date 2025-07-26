@@ -149,7 +149,7 @@ const VillaInvestmentLanding = () => {
             </div>
 
             {/* <p className="text-md py-4 font-sans text-balance uppercase font-bold tracking-wider">
-              starting from USD 180,000
+              starting from USD 200,000
             </p> 
             <div className="flex flex-col lg:flex-row gap-4">
               <Link href="#book">
@@ -417,7 +417,7 @@ const VillaInvestmentLanding = () => {
                     </p>
                     <Link href={"/book"} target="_blank">
                       <p className="text-sm font-bold font-sans flex flex-row gap-2">
-                        USD 180,000{" "}
+                        USD 200,000{" "}
                         <ExternalLink className="text-yellow-900 w-4 h-4" />
                       </p>
                     </Link>
@@ -481,7 +481,7 @@ const VillaInvestmentLanding = () => {
                     </p>
                     <Link href={"/book"} target="_blank">
                       <p className="text-sm font-bold font-sans flex flex-row gap-2">
-                        USD 200,000{" "}
+                        USD 250,000{" "}
                         <ExternalLink className="text-yellow-900 w-4 h-4" />
                       </p>
                     </Link>

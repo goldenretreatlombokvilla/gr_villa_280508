@@ -321,7 +321,7 @@ export default function Villas() {
                     </p>
                     <Link href={"/book"} target="_blank">
                       <p className="text-sm font-bold font-sans flex flex-row gap-2">
-                        USD 180,000{" "}
+                        USD 200,000{" "}
                         <ExternalLink className="text-yellow-900 w-4 h-4" />
                       </p>
                     </Link>
@@ -469,7 +469,7 @@ export default function Villas() {
                     </p>
                     <Link href={"/book"} target="_blank">
                       <p className="text-sm font-bold font-sans flex flex-row gap-2">
-                        USD 200,000{" "}
+                        USD 250,000{" "}
                         <ExternalLink className="text-yellow-900 w-4 h-4" />
                       </p>
                     </Link>

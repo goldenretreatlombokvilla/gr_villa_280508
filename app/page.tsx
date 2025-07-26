@@ -50,7 +50,7 @@ export default function LandingPage() {
                 <span className="font-bold">2 & 3</span> Bedroom Villas
               </p>
               <p className="uppercase font-sans text-lg lg:text-2xl tracking-[0.3em] lg:tracking-[0.5em]">
-                Starting at <span className="font-extrabold">USD 180,000</span>
+                Starting at <span className="font-extrabold">USD 200,000</span>
               </p>
               <p className="uppercase font-sans text-lg lg:text-2xl tracking-[0.3em] lg:tracking-[0.5em]">
                 <span className="font-bold">Limited</span> Units
@@ -176,7 +176,7 @@ export default function LandingPage() {
                         <p className="text-sm font-sans opacity-80">
                           starting at{" "}
                         </p>
-                        <Badge variant={"default"}>USD 180,000</Badge>
+                        <Badge variant={"default"}>USD 200,000</Badge>
                       </div>
                       <Button variant="ghost" size="icon">
                         <ArrowRightCircle className="min-w-6 min-h-6 stroke-1 text-yellow-600 group-hover:text-white group-hover:fill-yellow-800 group-hover:-rotate-45 transition-all duration-500 ease-in-out group-hover:scale-110" />
@@ -212,7 +212,7 @@ export default function LandingPage() {
                         <p className="text-sm font-sans opacity-80">
                           starting at{" "}
                         </p>
-                        <Badge variant={"default"}>USD 200,000</Badge>
+                        <Badge variant={"default"}>USD 250,000</Badge>
                       </div>
                       <Button variant="ghost" size="icon">
                         <ArrowRightCircle className="min-w-6 min-h-6 stroke-1 text-yellow-600 group-hover:text-white group-hover:fill-yellow-800 group-hover:-rotate-45 transition-all duration-500 ease-in-out group-hover:scale-110" />

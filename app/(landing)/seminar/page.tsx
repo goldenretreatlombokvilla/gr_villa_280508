@@ -22,8 +22,13 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { Card, CardContent } from "@/components/ui/card";
 import { Textarea } from "@/components/ui/textarea";
+import Recaptcha from "@/components/recaptcha";
+import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
 
 const SeminarLanding = () => {
+  const handleRecaptchaVerify = (token: string) => {
+    console.log("Recaptcha token:", token);
+  };
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
@@ -295,68 +300,86 @@ const SeminarLanding = () => {
         </div>
 
         {/* Registration Form */}
-        <div id="register" className="bg-white rounded-xl shadow-lg p-8 mb-16">
-          <h2 className="text-3xl font-bold mb-6 text-yellow-900">
-            Register for the Seminar
-          </h2>
-          <form onSubmit={handleSubmit} className="space-y-6 max-w-2xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="space-y-2">
-                <Label htmlFor="name">Full Name</Label>
-                <Input
-                  id="name"
-                  value={data.name}
-                  onChange={(e) => setdata({ ...data, name: e.target.value })}
-                  placeholder="Enter your full name"
-                  required
-                />
-              </div>
-              <div className="space-y-2">
-                <Label htmlFor="email">Email Address</Label>
-                <Input
-                  id="email"
-                  type="email"
-                  value={data.email}
-                  onChange={(e) => setdata({ ...data, email: e.target.value })}
-                  placeholder="Enter your email address"
-                  required
-                />
-              </div>
-            </div>
-            <div className="space-y-2">
-              <Label htmlFor="phone">Phone Number</Label>
-              <Input
-                id="phone"
-                value={data.phone}
-                onChange={(e) => setdata({ ...data, phone: e.target.value })}
-                type="tel"
-                placeholder="Enter your phone number"
-                required
-              />
-            </div>
-            <div className="space-y-2">
-              <Label htmlFor="message">Questions or Comments (Optional)</Label>
-              <Textarea
-                id="message"
-                value={data.message}
-                onChange={(e) => setdata({ ...data, message: e.target.value })}
-                placeholder="Any specific topics you'd like us to cover?"
-                rows={4}
-              />
-            </div>
-            <Button
-              type="submit"
-              className="w-full py-6 text-lg"
-              disabled={isLoading}
+        <GoogleReCaptchaProvider
+          reCaptchaKey={process.env.NEXT_PUBLIC_RECAPTCHA_KEY || ""}
+          language="en"
+        >
+          <div
+            id="register"
+            className="bg-white rounded-xl shadow-lg p-8 mb-16"
+          >
+            <h2 className="text-3xl font-bold mb-6 text-yellow-900">
+              Register for the Seminar
+            </h2>
+            <form
+              onSubmit={handleSubmit}
+              className="space-y-6 max-w-2xl mx-auto"
             >
-              {isLoading ? "Registering..." : "Register Now"}
-            </Button>
-            <p className="text-center text-sm text-gray-500 font-sans">
-              By registering, you agree to receive communications about this and
-              future events.
-            </p>
-          </form>
-        </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="space-y-2">
+                  <Label htmlFor="name">Full Name</Label>
+                  <Input
+                    id="name"
+                    value={data.name}
+                    onChange={(e) => setdata({ ...data, name: e.target.value })}
+                    placeholder="Enter your full name"
+                    required
+                  />
+                </div>
+                <div className="space-y-2">
+                  <Label htmlFor="email">Email Address</Label>
+                  <Input
+                    id="email"
+                    type="email"
+                    value={data.email}
+                    onChange={(e) =>
+                      setdata({ ...data, email: e.target.value })
+                    }
+                    placeholder="Enter your email address"
+                    required
+                  />
+                </div>
+              </div>
+              <div className="space-y-2">
+                <Label htmlFor="phone">Phone Number</Label>
+                <Input
+                  id="phone"
+                  value={data.phone}
+                  onChange={(e) => setdata({ ...data, phone: e.target.value })}
+                  type="tel"
+                  placeholder="Enter your phone number"
+                  required
+                />
+              </div>
+              <div className="space-y-2">
+                <Label htmlFor="message">
+                  Questions or Comments (Optional)
+                </Label>
+                <Textarea
+                  id="message"
+                  value={data.message}
+                  onChange={(e) =>
+                    setdata({ ...data, message: e.target.value })
+                  }
+                  placeholder="Any specific topics you'd like us to cover?"
+                  rows={4}
+                />
+              </div>
+              <Recaptcha onVerify={handleRecaptchaVerify} />
+              <Button
+                type="submit"
+                className="w-full py-6 text-lg"
+                disabled={isLoading}
+              >
+                {isLoading ? "Registering..." : "Register Now"}
+              </Button>
+              <p className="text-center text-sm text-gray-500 font-sans">
+                By registering, you agree to receive communications about this
+                and future events.
+              </p>
+            </form>
+          </div>
+        </GoogleReCaptchaProvider>
       </div>
     </div>
   );
