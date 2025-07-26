@@ -42,7 +42,10 @@ export default function BookingPage() {
         </p>
         <div className="flex flex-col lg:flex-row gap-4 lg:gap-10 p-4 px-10 lg:px-52">
           {frames.map((frame) => (
-            <div className="flex flex-col gap-4 items-center justify-end first:rotate-3 last:-rotate-6 relative hover:rotate-0 hover:scale-105 transition-all duration-500 ease-in-out">
+            <div
+              key={frame.src}
+              className="flex flex-col gap-4 items-center justify-end first:rotate-3 last:-rotate-6 relative hover:rotate-0 hover:scale-105 transition-all duration-500 ease-in-out"
+            >
               <Image
                 width={500}
                 height={500}
