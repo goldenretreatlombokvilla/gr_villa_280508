@@ -40,6 +40,7 @@ import {
   DialogTrigger
 } from "@/components/ui/dialog";
 import BookJourney from "@/components/book-journey";
+import PromoLink from "@/components/promolink";
 
 const images = [
   {
@@ -319,12 +320,19 @@ export default function Villas() {
                     <p className="text-2xl lg:text-3xl text-yellow-900 opacity-50 font-bold uppercase -mt-1">
                       Luxury Villa
                     </p>
-                    <Link href={"/book"} target="_blank">
-                      <p className="text-sm font-bold font-sans flex flex-row gap-2">
-                        USD 200,000{" "}
-                        <ExternalLink className="text-yellow-900 w-4 h-4" />
-                      </p>
-                    </Link>
+                    <Button
+                      variant={"link"}
+                      className="flex flex-row gap-2 w-fit p-0"
+                      size={"icon"}
+                      asChild
+                    >
+                      <Link href={"#book-journey"}>
+                        <p className="text-sm font-bold font-sans flex flex-row gap-2">
+                          USD 200,000{" "}
+                          <ExternalLink className="text-yellow-900 w-4 h-4" />
+                        </p>
+                      </Link>
+                    </Button>
                     <p className="opacity-80  font-sans text-sm">
                       Our spacious 2 bedroom Villa comfortably accommodates a
                       family of 4 and comes complete with dining room, living
@@ -448,7 +456,6 @@ export default function Villas() {
               </div>
             </CardContent>
           </Card>
-
           <Card className="flex flex-col w-full lg:p-0 bg-transparent shadow-none border-none">
             <CardContent className="p-0">
               <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-start justify-center">
@@ -467,12 +474,19 @@ export default function Villas() {
                     <p className="text-2xl lg:text-3xl text-yellow-900 opacity-50 font-bold uppercase -mt-1">
                       Luxury Villa
                     </p>
-                    <Link href={"/book"} target="_blank">
-                      <p className="text-sm font-bold font-sans flex flex-row gap-2">
-                        USD 250,000{" "}
-                        <ExternalLink className="text-yellow-900 w-4 h-4" />
-                      </p>
-                    </Link>
+                    <Button
+                      variant="link"
+                      size="icon"
+                      className="flex flex-row gap-2 w-fit p-0"
+                      asChild
+                    >
+                      <Link href={"#book-journey"}>
+                        <p className="text-sm font-bold font-sans flex flex-row gap-2">
+                          USD 250,000{" "}
+                          <ExternalLink className="text-yellow-900 w-4 h-4" />
+                        </p>
+                      </Link>
+                    </Button>
                     <p className="opacity-80  font-sans text-sm">
                       Our spacious 3 bedroom Villa comfortably accommodates a
                       family of 6 and comes complete with dining room, living
@@ -596,6 +610,7 @@ export default function Villas() {
               </div>
             </CardContent>
           </Card>
+          <PromoLink />
         </div>
         {/* Furnishings Section */}
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-4 items-start px-8 py-6 lg:pt-20 lg:py-20 max-w-6xl mx-auto w-full">
@@ -843,7 +858,9 @@ export default function Villas() {
           />
         </video>
       </div>
-      <BookJourney />
+      <div className="" id="book-journey">
+        <BookJourney />
+      </div>
     </main>
   );
 }

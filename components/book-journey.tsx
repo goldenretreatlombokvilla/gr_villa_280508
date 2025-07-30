@@ -118,15 +118,16 @@ export default function BookJourney() {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 w-full lg:py-40 bg-yellow-900/10 items-start justify-start lg:px-20 px-8 py-20">
       <div className="flex flex-col gap-2">
-        <p className="text-5xl lg:text-7xl font-extrabold text-yellow-900 font-cinzel text-balance leading-snug">
-          Instant Call Back
+        <p className="text-4xl lg:text-7xl font-extrabold text-yellow-900 font-cinzel text-balance">
+          Get Launch Price Now
         </p>
-        {/*  <p className="font-cinzel text-xl lg:text-2xl font-extrabold tracking-wide uppercase text-yellow-900/50">
-          Have Questions?
+        <p className="font-cinzel text-xl lg:text-2xl font-extrabold tracking-wide uppercase text-yellow-900/50">
+          Only For Next 5 Villas!
         </p>
-        */}
+
         <p className="text-md text-stone-900/70 font-sans text-balance">
-          Book a one-on-one call with our in-house team of professionals.
+          Send us your details to book a free discovery call with us. We will be
+          in contact within the next 24 hours after submitting this form.
         </p>
 
         {/* Progress Indicator */}

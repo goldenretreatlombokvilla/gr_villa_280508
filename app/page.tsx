@@ -6,6 +6,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRightCircle, Quote } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import PromoLink from "@/components/promolink";
 
 export default function LandingPage() {
   return (
@@ -168,7 +169,10 @@ export default function LandingPage() {
                     </p>
                     <div className="flex flex-row gap-4 mb-8">
                       <p className="text-sm font-sans uppercase font-bold text-yellow-900 opacity-80">
-                        2 Bedroom | 150 sqm (1,615 sqft)
+                        2 Bedroom{" "}
+                        <span className="font-medium">
+                          | 150 sqm (1,615 sqft)
+                        </span>
                       </p>
                     </div>
                     <div className="col-span-2 flex flex-row gap-4 items-center justify-between">
@@ -178,6 +182,7 @@ export default function LandingPage() {
                         </p>
                         <Badge variant={"default"}>USD 200,000</Badge>
                       </div>
+
                       <Button variant="ghost" size="icon">
                         <ArrowRightCircle className="min-w-6 min-h-6 stroke-1 text-yellow-600 group-hover:text-white group-hover:fill-yellow-800 group-hover:-rotate-45 transition-all duration-500 ease-in-out group-hover:scale-110" />
                       </Button>
@@ -204,7 +209,10 @@ export default function LandingPage() {
                     </p>
                     <div className="flex flex-row gap-4 mb-8">
                       <p className="text-sm font-sans uppercase text-nowrap font-bold text-yellow-900 opacity-80">
-                        3 Bedroom | 187 sqm (2,013 sqft)
+                        3 Bedroom{" "}
+                        <span className="font-medium">
+                          | 187 sqm (2,013 sqft)
+                        </span>
                       </p>
                     </div>
                     <div className="col-span-2 flex flex-row gap-4 items-center justify-between">
@@ -223,6 +231,9 @@ export default function LandingPage() {
               </CardContent>
             </Card>
           </Link>
+        </div>
+        <div className="-my-10">
+          <PromoLink />
         </div>
       </div>
 
@@ -398,7 +409,9 @@ export default function LandingPage() {
         </div>
       </div>
 
-      <BookJourney />
+      <div className="" id="book-journey">
+        <BookJourney />
+      </div>
     </main>
   );
 }
