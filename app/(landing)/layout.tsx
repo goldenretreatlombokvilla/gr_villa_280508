@@ -1,3 +1,4 @@
+import Drag from "@/components/follower_pointer";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {

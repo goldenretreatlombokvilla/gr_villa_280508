@@ -1,3 +1,6 @@
+"use client";
+
+import Drag from "@/components/follower_pointer";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -7,6 +10,7 @@ import {
   CardHeader,
   CardTitle
 } from "@/components/ui/card";
+import { motion } from "motion/react";
 import Image from "next/image";
 
 const frames = [
@@ -59,11 +63,11 @@ export default function BookingPage() {
             </div>
           ))}
         </div>
-        <div className=" min-h-screen flex flex-col gap-2 items-start justify-center px-10">
-          <h2 className="text-3xl font-bold text-stone-200 py-2">
+        <div className=" min-h-screen flex flex-col gap-2 items-start justify-center px-10 lg:max-w-2xl">
+          <h2 className="text-3xl lg:text-5xl font-bold text-stone-200 py-2">
             The Property
           </h2>
-          <p className="text-md text-muted font-sans">
+          <p className="text-md lg:text-lg text-muted font-sans">
             <span className="font-serif font-bold">
               Golden Retreat Lombok Villas
             </span>{" "}
@@ -71,15 +75,31 @@ export default function BookingPage() {
             at the doorway to one of the most popular tourist destinations in
             Indonesia, Gili Islands.
           </p>
-          <p className="text-md text-muted font-sans">
+          <p className="text-md lg:text-lg text-muted font-sans">
             This property represents a calculated approach to luxury real estate
             investment. Situated just a two-hour boat ride from Bali, our
             location offers a perfect balance of accessibility and exclusivity.
           </p>
-          <Button variant={"default"} size="lg" className="mt-8">
+          <Button variant={"default"} size="lg" className="mt-8 lg:text-xl">
             Learn More
           </Button>
         </div>
+
+        <motion.div
+          initial={{ width: 0 }}
+          whileInView={{ width: "100%" }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+          className="w-full h-[500px] relative overflow-hidden"
+        >
+          <Image
+            width={1000}
+            height={500}
+            src="https://0ip50gjf5z.ufs.sh/f/dJLJpH9Hrkw3pXyUf0A8fDXoAL2Jay9kEY7gbmpj3CvcG0Pu"
+            alt="hero"
+            className="w-full h-full object-cover object-center"
+          />
+        </motion.div>
 
         <div className=" min-h-screen flex flex-col gap-2 items-start justify-center px-10">
           <h2 className="text-3xl font-bold text-stone-200 py-2">The Villas</h2>
@@ -98,9 +118,7 @@ export default function BookingPage() {
           </div>
         </div>
         <div className=" min-h-screen flex flex-col gap-2 items-start justify-center px-10">
-          <h2 className="text-3xl font-bold text-stone-200 py-2">
-            The Timeline
-          </h2>
+          <h2 className="text-3xl font-bold text-stone-200 py-2">Roadmap</h2>
           <p className="text-md text-muted font-sans">
             Our villas are built-to-order and will be ready to move in after 12
             months of build time. Once ready, the property will be available for
