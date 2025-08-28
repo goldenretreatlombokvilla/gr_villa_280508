@@ -1,4 +1,5 @@
 import { link } from "fs";
+
 import {
   DownloadIcon,
   Facebook,
@@ -211,9 +212,17 @@ export default function Footer() {
       </div>
       <hr className="opacity-50 py-4"></hr>
       <div className="flex flex-row gap-4 items-center font-sans justify-between lg:pb-24">
-        <p className="text-sm">
-          © Golden Retreat Lombok Villa 2025 | All Rights Reserved
-        </p>
+        <div className="flex flex-col gap-2 items-start justify-center">
+          <p className="text-sm">
+            © Golden Retreat Lombok Villa 2025 | All Rights Reserved
+          </p>
+          <p className="text-sm">
+            Website by{" "}
+            <Link href="https://www.slmcreatives.com" target="_blank">
+              SLM Creatives
+            </Link>
+          </p>
+        </div>
         <div className="hidden lg:flex flex-row gap-4">
           <Link href="https://www.facebook.com/profile.php?id=61569367575846">
             <Facebook className="min-w-6 min-h-6 text-white hover:text-yellow-600 stroke-1" />
